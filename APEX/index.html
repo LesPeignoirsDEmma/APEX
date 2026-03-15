@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>APEX — Système de Vie</title>
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="APEX">
+<meta name="theme-color" content="#7B68EE">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --bg:#080810;--bg2:#0E0E1A;--card:#13131E;--card2:#1A1A28;--card3:#20202F;
+  --border:rgba(255,255,255,0.055);--border2:rgba(255,255,255,0.11);--border3:rgba(255,255,255,0.18);
+  --purple:#7B68EE;--pl:#9D8FFF;--pd:rgba(123,104,238,0.13);
+  --teal:#00C9C8;--td:rgba(0,201,200,0.13);
+  --coral:#FF7070;--cd:rgba(255,112,112,0.13);
+  --gold:#F7C948;--gd:rgba(247,201,72,0.13);
+  --green:#4ADE80;--gnd:rgba(74,222,128,0.13);
+  --blue:#60A5FA;--bld:rgba(96,165,250,0.13);
+  --text:#F2F2FA;--t2:rgba(242,242,250,0.55);--t3:rgba(242,242,250,0.28);
+  --font:'Inter',sans-serif;--font2:'Space Grotesk',sans-serif;
+  --r:16px;--rsm:10px;--rxs:7px;
+  --ease:cubic-bezier(0.4,0,0.2,1);
+}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--font);overflow:hidden}
+.app{display:flex;flex-direction:column;height:100vh;overflow:hidden}
+@media(min-width:800px){.app{flex-direction:row}}
+
+/* SIDEBAR */
+.sidebar{display:none}
+@media(min-width:800px){
+  .sidebar{display:flex;flex-direction:column;width:220px;min-width:220px;
+    background:var(--bg2);border-right:1px solid var(--border);padding:26px 14px 22px;gap:3px}
+}
+.logo{font-family:var(--font2);font-size:20px;font-weight:800;padding:4px 12px 26px;letter-spacing:-.5px}
+.logo span{background:linear-gradient(135deg,var(--pl),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.snav{display:flex;align-items:center;gap:10px;padding:10px 13px;border-radius:var(--rsm);
+  cursor:pointer;color:var(--t2);font-size:13px;font-weight:500;border:none;background:none;
+  text-align:left;width:100%;transition:all .18s var(--ease)}
+.snav:hover{background:var(--card);color:var(--text)}
+.snav.active{background:var(--pd);color:var(--pl);font-weight:600}
+.snav .ni{font-size:16px}
+.sb-bottom{margin-top:auto;padding:13px;background:var(--card);border-radius:var(--rsm);border:1px solid var(--border)}
+.sb-day{font-family:var(--font2);font-size:34px;font-weight:800;line-height:1}
+.sb-dt{font-size:11.5px;color:var(--t2);margin-top:3px}
+
+/* MAIN */
+.main{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+/* BOTTOM NAV */
+.bnav{display:flex;background:var(--bg2);border-top:1px solid var(--border);
+  padding:5px 0 max(10px,env(safe-area-inset-bottom))}
+@media(min-width:800px){.bnav{display:none}}
+.bni{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:4px 2px;cursor:pointer;background:none;border:none;color:var(--t3);
+  font-size:9px;font-family:var(--font);font-weight:700;letter-spacing:.4px;
+  text-transform:uppercase;transition:color .18s}
+.bni.active{color:var(--pl)}
+.bni .ni{font-size:20px;line-height:1.1}
+
+/* PAGES */
+.page{display:none;padding:26px 18px 80px;min-height:100%}
+.page.active{display:block}
+@media(min-width:800px){.page{padding:42px 50px 60px}}
+
+/* TYPOGRAPHY */
+h1{font-family:var(--font2);font-size:28px;font-weight:800;line-height:1.15;letter-spacing:-.5px}
+h2{font-family:var(--font2);font-size:21px;font-weight:700;letter-spacing:-.3px}
+h3{font-size:14.5px;font-weight:600}
+.slbl{font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--t3);margin-bottom:9px}
+.page-hdr{margin-bottom:28px}
+.page-hdr p{color:var(--t2);font-size:13px;margin-top:4px}
+.sub{color:var(--t2);font-size:13.5px;margin-top:5px}
+
+/* CARDS */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:13px}
+.card-sm{background:var(--card);border:1px solid var(--border);border-radius:var(--rsm);padding:13px 15px}
+
+/* GREETING */
+.greeting{margin-bottom:22px}
+.timetag{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;color:var(--pl);margin-bottom:7px}
+.timetag::before{content:'';display:block;width:5px;height:5px;border-radius:50%;
+  background:var(--pl);box-shadow:0 0 8px var(--purple);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* WHY BANNER */
+.why-banner{background:linear-gradient(135deg,rgba(123,104,238,0.11),rgba(0,201,200,0.05));
+  border:1px solid rgba(123,104,238,0.2);border-radius:var(--r);
+  padding:16px 18px;margin-bottom:16px;cursor:pointer;transition:all .2s var(--ease)}
+.why-banner:hover{border-color:rgba(123,104,238,0.38)}
+.why-lbl{font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--pl);margin-bottom:6px}
+.why-txt{font-size:14.5px;font-weight:600;color:var(--text);line-height:1.5;font-style:italic}
+.why-edit{font-size:10.5px;color:var(--t3);margin-top:6px}
+
+/* QUOTE */
+.quote-card{background:linear-gradient(135deg,var(--pd),var(--td));
+  border:1px solid rgba(123,104,238,0.16);border-radius:var(--r);
+  padding:16px 18px;margin-bottom:14px;text-align:center}
+.quote-txt{font-size:13.5px;font-style:italic;color:var(--text);line-height:1.65;margin-bottom:6px}
+.quote-auth{font-size:10.5px;color:var(--t3);font-weight:600;letter-spacing:.4px}
+
+/* PROGRESS RING */
+.ring-wrap{display:flex;align-items:center;gap:16px;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:13px}
+.ring-wrap svg{transform:rotate(-90deg);flex-shrink:0}
+.prog-lbl{font-size:11.5px;color:var(--t2);margin-bottom:2px}
+.prog-val{font-family:var(--font2);font-size:34px;font-weight:800;line-height:1}
+.prog-sub{font-size:12px;color:var(--t2);margin-top:2px}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:16px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--rsm);padding:13px 8px;text-align:center}
+.stat-val{font-family:var(--font2);font-size:24px;font-weight:800;line-height:1}
+.stat-lbl{font-size:9px;color:var(--t3);margin-top:3px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+
+/* MIT */
+.mit-list{display:flex;flex-direction:column;gap:8px}
+.mit-item{display:flex;align-items:center;gap:12px;padding:12px 14px;
+  background:var(--card2);border-radius:var(--rsm);border:1px solid var(--border);transition:all .18s}
+.mit-item.done{opacity:.42}
+.mit-num{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:10.5px;font-weight:700;flex-shrink:0}
+.mn1{background:var(--gd);color:var(--gold)}
+.mn2{background:var(--pd);color:var(--pl)}
+.mn3{background:var(--td);color:var(--teal)}
+.mit-txt{flex:1;font-size:13px;font-weight:500}
+.mit-item.done .mit-txt{text-decoration:line-through;color:var(--t3)}
+
+/* DEEP WORK SCHEDULE TIMELINE */
+.schedule-wrap{margin-bottom:16px}
+.schedule-block{display:flex;align-items:stretch;gap:0;margin-bottom:3px;border-radius:var(--rsm);overflow:hidden}
+.sb-time{font-size:10px;font-weight:600;color:var(--t3);width:44px;flex-shrink:0;
+  display:flex;align-items:center;padding:0 6px 0 0;font-family:var(--font2)}
+.sb-bar{flex:1;padding:9px 12px;border-radius:var(--rsm)}
+.sb-bar.dw{background:linear-gradient(90deg,rgba(123,104,238,0.2),rgba(123,104,238,0.08));
+  border:1px solid rgba(123,104,238,0.25)}
+.sb-bar.rest{background:rgba(0,201,200,0.07);border:1px solid rgba(0,201,200,0.15)}
+.sb-bar.warmup{background:rgba(247,201,72,0.07);border:1px solid rgba(247,201,72,0.15)}
+.sb-bar.lunch{background:rgba(74,222,128,0.07);border:1px solid rgba(74,222,128,0.15)}
+.sb-bar.light{background:rgba(255,255,255,0.03);border:1px solid var(--border)}
+.sb-bar.review{background:rgba(96,165,250,0.07);border:1px solid rgba(96,165,250,0.15)}
+.sb-type{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px}
+.sb-bar.dw .sb-type{color:var(--pl)}
+.sb-bar.rest .sb-type{color:var(--teal)}
+.sb-bar.warmup .sb-type{color:var(--gold)}
+.sb-bar.lunch .sb-type{color:var(--green)}
+.sb-bar.light .sb-type{color:var(--t3)}
+.sb-bar.review .sb-type{color:var(--blue)}
+.sb-task{font-size:13px;font-weight:500;color:var(--text);line-height:1.3}
+.sb-dur{font-size:10px;color:var(--t3);margin-top:2px}
+.dw-session-badge{display:inline-flex;align-items:center;justify-content:center;
+  width:17px;height:17px;border-radius:50%;background:var(--pd);
+  color:var(--pl);font-size:9px;font-weight:800;margin-right:5px;vertical-align:middle}
+
+/* DOMAIN BADGE */
+.dbadge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:20px;font-size:10px;font-weight:600}
+.db-business{background:var(--pd);color:var(--pl)}
+.db-personal{background:var(--td);color:var(--teal)}
+.db-sport{background:var(--cd);color:var(--coral)}
+
+/* CHECK BUTTON */
+.chk{width:21px;height:21px;border-radius:50%;border:1.5px solid var(--border2);
+  background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;transition:all .18s}
+.chk.done{border-color:var(--green);background:var(--green)}
+.chk.done::after{content:'✓';color:#000;font-size:10px;font-weight:800}
+
+/* TASK ITEMS */
+.task-item{display:flex;align-items:flex-start;gap:11px;padding:12px 0;
+  border-bottom:1px solid var(--border)}
+.task-item:last-child{border-bottom:none}
+.task-check{width:19px;height:19px;border-radius:5px;border:1.5px solid var(--border2);
+  background:none;cursor:pointer;flex-shrink:0;margin-top:1px;
+  display:flex;align-items:center;justify-content:center;transition:all .18s}
+.task-check.done{background:var(--green);border-color:var(--green)}
+.task-check.done::after{content:'✓';color:#000;font-size:9px;font-weight:800}
+.task-content{flex:1;min-width:0}
+.task-title{font-size:13px;font-weight:500;margin-bottom:4px;word-break:break-word;line-height:1.35}
+.task-item.done .task-title{text-decoration:line-through;color:var(--t3)}
+.task-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.task-date{font-size:10px;color:var(--t3)}
+.task-del{background:none;border:none;cursor:pointer;color:var(--t3);font-size:14px;
+  padding:3px;opacity:0;transition:opacity .15s;flex-shrink:0}
+.task-item:hover .task-del{opacity:1}
+.priority-high{border-left:2.5px solid var(--coral);padding-left:9px}
+.priority-medium{border-left:2.5px solid var(--gold);padding-left:9px}
+.priority-low{border-left:2.5px solid var(--teal);padding-left:9px}
+
+/* TABS */
+.tabs{display:flex;gap:3px;background:var(--card);border-radius:var(--rsm);padding:3px;margin-bottom:16px}
+.tab{flex:1;padding:7px 4px;background:none;border:none;border-radius:7px;cursor:pointer;
+  font-family:var(--font);font-size:11.5px;font-weight:600;color:var(--t3);transition:all .18s}
+.tab.active{background:var(--card2);color:var(--text)}
+
+/* FORMS */
+.add-form{background:var(--card2);border:1px solid var(--border2);border-radius:var(--r);padding:16px;margin-top:10px}
+.form-row{display:flex;gap:8px;margin-bottom:9px}
+.form-row:last-child{margin-bottom:0}
+.finput{flex:1;background:var(--card);border:1px solid var(--border2);border-radius:var(--rsm);
+  padding:10px 12px;color:var(--text);font-family:var(--font);font-size:13px;outline:none;
+  transition:border-color .18s}
+.finput:focus{border-color:var(--purple)}
+.finput::placeholder{color:var(--t3)}
+textarea.finput{resize:vertical;min-height:60px;line-height:1.5}
+.fselect{background:var(--card);border:1px solid var(--border2);border-radius:var(--rsm);
+  padding:10px 12px;color:var(--text);font-family:var(--font);font-size:12px;outline:none;cursor:pointer}
+.btn{background:var(--purple);color:#fff;border:none;border-radius:var(--rsm);
+  padding:10px 16px;font-family:var(--font);font-size:13px;font-weight:600;
+  cursor:pointer;transition:all .18s var(--ease)}
+.btn:hover{background:var(--pl);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-sm{padding:7px 12px;font-size:11.5px}
+.btn-ghost{background:transparent;border:1px solid var(--border2);color:var(--t2)}
+.btn-ghost:hover{background:var(--card2);color:var(--text)}
+.btn-teal{background:var(--teal);color:#000}
+.btn-teal:hover{opacity:.85;background:var(--teal)}
+.btn-gold{background:var(--gold);color:#000}
+.btn-gold:hover{opacity:.85;background:var(--gold)}
+.add-toggle{display:flex;align-items:center;gap:8px;padding:11px 14px;
+  background:var(--card2);border:1px dashed var(--border2);border-radius:var(--rsm);
+  cursor:pointer;color:var(--t2);font-size:13px;font-family:var(--font);
+  width:100%;text-align:left;transition:all .18s;margin-top:9px}
+.add-toggle:hover{border-color:var(--purple);color:var(--pl)}
+
+/* WEEK GRID */
+.week-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.week-nav-btn{background:var(--card2);border:1px solid var(--border2);border-radius:var(--rsm);
+  padding:7px 12px;cursor:pointer;color:var(--t2);font-size:13px;transition:all .18s;font-family:var(--font)}
+.week-nav-btn:hover{background:var(--card3);color:var(--text)}
+.week-nav-btn.today-btn{background:var(--pd);border-color:rgba(123,104,238,0.25);color:var(--pl);font-weight:600}
+.week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:18px}
+.wday{display:flex;flex-direction:column;align-items:center;gap:3px}
+.wday-name{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--t3)}
+.wday-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:13px;font-weight:600;cursor:pointer;transition:all .18s}
+.wday-num:hover{background:var(--card2)}
+.wday-num.today{background:var(--purple);color:#fff;font-weight:700}
+.wday-num.selected:not(.today){background:var(--pd);color:var(--pl)}
+.wday-num.has-schedule{position:relative}
+.wday-num.has-schedule::after{content:'';position:absolute;bottom:-1px;right:-1px;
+  width:6px;height:6px;background:var(--green);border-radius:50%;border:1px solid var(--bg)}
+.wday-dots{display:flex;gap:2px;height:4px}
+.wdot{width:4px;height:4px;border-radius:50%}
+.wk-panel{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px}
+.wk-panel-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px}
+
+/* GOALS */
+.goal-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:11px}
+.goal-hdr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:9px}
+.goal-title{font-size:15px;font-weight:700;line-height:1.3}
+.goal-pct{font-family:var(--font2);font-size:21px;font-weight:800;color:var(--pl);line-height:1}
+.pbar{width:100%;height:5px;background:var(--card2);border-radius:3px;margin:9px 0 12px;overflow:hidden}
+.pfill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--purple),var(--pl));transition:width .8s var(--ease)}
+.kr-item{display:flex;align-items:center;gap:9px;padding:8px 0;border-top:1px solid var(--border)}
+.kr-chk{width:16px;height:16px;border-radius:4px;border:1.5px solid var(--border2);
+  cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .18s}
+.kr-chk.done{background:var(--purple);border-color:var(--purple)}
+.kr-chk.done::after{content:'✓';color:#fff;font-size:8.5px;font-weight:700}
+.kr-txt{font-size:12.5px;color:var(--t2);flex:1}
+.kr-item.done .kr-txt{text-decoration:line-through;color:var(--t3)}
+
+/* HABITS */
+.habit-card{background:var(--card);border-radius:var(--r);padding:16px 18px;margin-bottom:11px;position:relative;overflow:hidden}
+.habit-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:2px 0 0 2px}
+.hc-business::before{background:var(--purple)}.hc-personal::before{background:var(--teal)}.hc-sport::before{background:var(--coral)}
+.habit-hdr{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.habit-emoji{font-size:24px;line-height:1}
+.habit-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.habit-stats-txt{font-size:11px;color:var(--t3)}
+.streak-pill{display:flex;align-items:center;gap:3px;font-size:12.5px;font-weight:800;font-family:var(--font2);color:var(--gold)}
+.fire-anim{animation:fireGlow 2s ease-in-out infinite}
+@keyframes fireGlow{0%,100%{text-shadow:0 0 8px #f7c94880}50%{text-shadow:0 0 16px #ff7070a0}}
+.habit-today-btn{width:100%;padding:9px;border-radius:var(--rsm);font-family:var(--font);
+  font-size:12.5px;font-weight:600;cursor:pointer;transition:all .2s;margin-bottom:11px;border:1px solid var(--border2)}
+.habit-today-btn.done{background:var(--gnd);border-color:var(--green);color:var(--green)}
+.habit-today-btn:not(.done){background:var(--card2);color:var(--t2)}
+.grid30{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.g30-cell{aspect-ratio:1;border-radius:3px;background:var(--card2);cursor:pointer;transition:background .15s}
+.g30-cell.done{background:var(--green)}
+.g30-cell.today{outline:1.5px solid var(--purple);outline-offset:-1px}
+
+/* SETTINGS */
+.setting-group{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:14px}
+.setting-row{display:flex;align-items:center;justify-content:space-between;
+  padding:10px 0;border-bottom:1px solid var(--border)}
+.setting-row:last-child{border-bottom:none}
+.setting-label{font-size:13.5px;font-weight:500}
+.setting-desc{font-size:11px;color:var(--t3);margin-top:2px}
+.setting-control{flex-shrink:0;margin-left:12px}
+.deep-work-preview{background:var(--card2);border:1px solid var(--border2);border-radius:var(--rsm);
+  padding:14px;margin-top:14px}
+.dw-preview-bar{display:flex;height:28px;border-radius:6px;overflow:hidden;gap:2px;margin-top:8px}
+.dw-seg{display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;
+  letter-spacing:.5px;text-transform:uppercase;transition:flex .4s var(--ease)}
+
+/* PLANNING MODAL */
+.plan-task-item{display:flex;align-items:center;gap:10px;padding:10px 12px;
+  background:var(--card2);border-radius:var(--rsm);border:1px solid var(--border);margin-bottom:6px}
+.plan-order-badge{width:22px;height:22px;border-radius:50%;background:var(--pd);color:var(--pl);
+  font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font2)}
+.plan-task-txt{flex:1;font-size:13px;font-weight:500}
+.plan-move-btn{background:none;border:1px solid var(--border2);border-radius:5px;
+  cursor:pointer;color:var(--t2);font-size:12px;padding:3px 6px;transition:all .15s}
+.plan-move-btn:hover{background:var(--card3);color:var(--text)}
+.plan-priority-badge{font-size:10px;font-weight:600;padding:2px 7px;border-radius:10px}
+.pp-high{background:var(--cd);color:var(--coral)}
+.pp-medium{background:var(--gd);color:var(--gold)}
+.pp-low{background:var(--td);color:var(--teal)}
+
+/* MODALS */
+.modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);
+  z-index:300;align-items:flex-end;justify-content:center;overflow:hidden}
+.modal-ov.open{display:flex}
+@media(min-width:800px){.modal-ov{align-items:center}}
+.modal{background:var(--bg2);border:1px solid var(--border2);
+  border-radius:var(--r) var(--r) 0 0;padding:22px 20px;width:100%;
+  max-width:520px;position:relative;animation:slideUp .28s var(--ease);
+  max-height:90vh;overflow-y:auto}
+@media(min-width:800px){.modal{border-radius:var(--r);max-height:85vh}}
+@keyframes slideUp{from{transform:translateY(60px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-title{font-family:var(--font2);font-size:17px;font-weight:700;margin-bottom:5px}
+.modal-sub{font-size:12.5px;color:var(--t2);margin-bottom:16px;line-height:1.5}
+.modal-close{position:absolute;top:16px;right:18px;background:none;border:none;
+  color:var(--t2);font-size:21px;cursor:pointer;line-height:1;padding:2px}
+
+/* WHY */
+.why-goals{background:linear-gradient(135deg,rgba(123,104,238,0.1),rgba(0,201,200,0.05));
+  border:1px solid rgba(123,104,238,0.2);border-radius:var(--r);padding:18px;margin-bottom:20px}
+.wg-label{font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--pl);margin-bottom:8px}
+.wg-text{font-size:15px;font-weight:700;color:var(--text);line-height:1.5;cursor:pointer}
+.wg-quote{font-size:11.5px;color:var(--t3);margin-top:7px;font-style:italic;line-height:1.5}
+
+/* PLAN TOMORROW BTN */
+.plan-btn{display:flex;align-items:center;gap:10px;padding:14px 16px;
+  background:linear-gradient(135deg,rgba(247,201,72,0.1),rgba(123,104,238,0.08));
+  border:1px solid rgba(247,201,72,0.25);border-radius:var(--r);
+  cursor:pointer;transition:all .2s;width:100%;margin-bottom:14px}
+.plan-btn:hover{border-color:rgba(247,201,72,0.45);transform:translateY(-1px)}
+.plan-btn-icon{font-size:24px}
+.plan-btn-txt{flex:1}
+.plan-btn-title{font-size:14px;font-weight:700;color:var(--gold)}
+.plan-btn-sub{font-size:11.5px;color:var(--t2);margin-top:2px}
+.plan-btn-arrow{font-size:18px;color:var(--t3)}
+
+/* UTILS */
+.hidden{display:none!important}
+.mt-4{margin-top:4px}.mt-8{margin-top:8px}.mt-12{margin-top:12px}.mt-16{margin-top:16px}.mt-20{margin-top:20px}
+.mb-4{margin-bottom:4px}.mb-8{margin-bottom:8px}.mb-12{margin-bottom:12px}
+.flex{display:flex}.ac{align-items:center}.jb{justify-content:space-between}.gap-8{gap:8px}.gap-12{gap:12px}
+.del-btn{background:none;border:none;cursor:pointer;color:var(--t3);font-size:11.5px;
+  padding:3px 6px;border-radius:4px;transition:all .15s;font-family:var(--font)}
+.del-btn:hover{color:var(--coral);background:var(--cd)}
+.desc-sm{font-size:11px;color:var(--t3);line-height:1.5;margin-top:3px}
+/* TOGGLE SWITCH */
+.tog{position:relative;display:inline-block;width:38px;height:21px;flex-shrink:0}
+.tog input{opacity:0;width:0;height:0}
+.tog-sl{position:absolute;cursor:pointer;inset:0;background:var(--card3);border-radius:21px;transition:.2s;border:1px solid var(--border2)}
+.tog-sl:before{content:'';position:absolute;height:15px;width:15px;left:2px;bottom:2px;background:var(--t3);border-radius:50%;transition:.2s}
+.tog input:checked+.tog-sl{background:var(--pd);border-color:var(--purple)}
+.tog input:checked+.tog-sl:before{transform:translateX(17px);background:var(--pl)}
+/* NOTIF BANNER */
+.notif-banner{display:flex;align-items:center;gap:12px;padding:13px 15px;
+  border-radius:var(--rsm);margin-bottom:12px;border:1px solid}
+.notif-banner.perm-ok{background:var(--gnd);border-color:var(--green)}
+.notif-banner.perm-no{background:var(--pd);border-color:rgba(123,104,238,0.3)}
+.notif-banner.perm-denied{background:var(--cd);border-color:rgba(255,112,112,0.3)}
+.empty{text-align:center;padding:32px 16px;color:var(--t3)}
+.empty .ei{font-size:36px;margin-bottom:9px}
+.empty p{font-size:13px;line-height:1.6}
+.sep{height:1px;background:var(--border);margin:14px 0}
+.tag-planned{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:10px;
+  background:var(--gnd);color:var(--green);font-size:10px;font-weight:700;letter-spacing:.4px}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+
+<!-- ═══ SIDEBAR ═══ -->
+<nav class="sidebar">
+  <div class="logo">APEX<span>.</span></div>
+  <button class="snav active" onclick="goPage('today',this)"><span class="ni">🎯</span>Aujourd'hui</button>
+  <button class="snav" onclick="goPage('week',this)"><span class="ni">📅</span>Semaine</button>
+  <button class="snav" onclick="goPage('tasks',this)"><span class="ni">✅</span>Tâches</button>
+  <button class="snav" onclick="goPage('goals',this)"><span class="ni">💡</span>Objectifs</button>
+  <button class="snav" onclick="goPage('habits',this)"><span class="ni">🔥</span>Habitudes</button>
+  <button class="snav" onclick="openSettings()"><span class="ni">⚙️</span>Réglages</button>
+  <div class="sb-bottom mt-20">
+    <div class="sb-day" id="sb-day"></div>
+    <div class="sb-dt" id="sb-dt"></div>
+  </div>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+
+<!-- ─── TODAY ─── -->
+<div class="page active" id="page-today">
+  <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px">
+    <div class="greeting" style="margin-bottom:0">
+      <div class="timetag" id="time-tag">Bonjour</div>
+      <h1 id="greeting-name">Léo 👋</h1>
+      <div class="sub" id="today-date"></div>
+    </div>
+    <button onclick="openSettings()" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--rsm);padding:8px 10px;cursor:pointer;font-size:17px;margin-top:4px;flex-shrink:0">⚙️</button>
+  </div>
+
+  <div class="why-banner" id="why-banner" onclick="openWhy()">
+    <div class="why-lbl">✦ Mon Pourquoi</div>
+    <div class="why-txt" id="why-text-today">Appuyez ici pour définir votre raison profonde...</div>
+    <div class="why-edit">✏️ Modifier</div>
+  </div>
+
+  <div class="quote-card" id="quote-card"></div>
+
+  <div class="ring-wrap">
+    <svg width="68" height="68" viewBox="0 0 68 68">
+      <circle cx="34" cy="34" r="27" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="6"/>
+      <circle id="prog-circle" cx="34" cy="34" r="27" fill="none" stroke="url(#pgrd)"
+        stroke-width="6" stroke-dasharray="169.65" stroke-dashoffset="169.65" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="pgrd" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#7B68EE"/><stop offset="100%" stop-color="#00C9C8"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <div>
+      <div class="prog-lbl">Avancement du jour</div>
+      <div class="prog-val" id="prog-pct">0%</div>
+      <div class="prog-sub" id="prog-sub">0 tâches accomplies</div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card"><div class="stat-val" id="s-streak">0</div><div class="stat-lbl">🔥 Série</div></div>
+    <div class="stat-card"><div class="stat-val" id="s-week">0</div><div class="stat-lbl">✅ Semaine</div></div>
+    <div class="stat-card"><div class="stat-val" id="s-habits">0%</div><div class="stat-lbl">💡 Habits</div></div>
+  </div>
+
+  <!-- Plan tomorrow button -->
+  <button class="plan-btn" onclick="openPlanModal(tomorrowDate())">
+    <div class="plan-btn-icon">🗓️</div>
+    <div class="plan-btn-txt">
+      <div class="plan-btn-title">Préparer demain</div>
+      <div class="plan-btn-sub">Planifiez votre journée & générez votre Deep Work</div>
+    </div>
+    <div class="plan-btn-arrow">→</div>
+  </button>
+
+  <!-- Deep Work Schedule (if generated) -->
+  <div id="today-schedule-section"></div>
+
+  <div class="slbl">3 Priorités du jour</div>
+  <div class="mit-list" id="mit-list"></div>
+
+  <div class="mt-20">
+    <div class="slbl">Toutes les tâches d'aujourd'hui</div>
+    <div id="today-tasks-list"></div>
+  </div>
+</div>
+
+<!-- ─── WEEK ─── -->
+<div class="page" id="page-week">
+  <div class="page-hdr">
+    <h2>Semaine</h2>
+  </div>
+  <div class="week-nav">
+    <button class="week-nav-btn" onclick="changeWeek(-1)">← Préc.</button>
+    <span id="week-range" style="font-size:13px;color:var(--t2);font-weight:600;text-align:center"></span>
+    <button class="week-nav-btn today-btn" onclick="goCurrentWeek()" id="week-today-btn">Auj.</button>
+    <button class="week-nav-btn" onclick="changeWeek(1)">Suiv. →</button>
+  </div>
+  <div class="week-grid" id="week-grid"></div>
+  <div class="wk-panel">
+    <div class="wk-panel-hdr">
+      <h3 id="sel-day-title">Sélectionnez un jour</h3>
+      <div style="display:flex;gap:6px">
+        <button class="btn btn-sm btn-gold" onclick="openPlanModal(selDay)">🗓 Planifier</button>
+        <button class="btn btn-sm" onclick="goPageAndAdd()">+ Tâche</button>
+      </div>
+    </div>
+    <div id="week-day-tasks"></div>
+  </div>
+</div>
+
+<!-- ─── TASKS ─── -->
+<div class="page" id="page-tasks">
+  <div class="page-hdr"><h2>Mes Tâches</h2><p>Organisées par domaine de vie</p></div>
+  <div class="tabs">
+    <button class="tab active" onclick="filterTasks('all',this)">Tout</button>
+    <button class="tab" onclick="filterTasks('business',this)">💼</button>
+    <button class="tab" onclick="filterTasks('personal',this)">🧠</button>
+    <button class="tab" onclick="filterTasks('sport',this)">💪</button>
+  </div>
+  <div id="tasks-list"></div>
+  <button class="add-toggle" onclick="toggleTaskForm()"><span>＋</span> Nouvelle tâche</button>
+  <div id="task-form" class="add-form hidden">
+    <div class="form-row">
+      <input class="finput" id="f-task-title" placeholder="Titre de la tâche..." onkeypress="tkPress(event)">
+    </div>
+    <div class="form-row">
+      <select class="fselect" id="f-task-domain">
+        <option value="business">💼 Business</option>
+        <option value="personal">🧠 Personnel</option>
+        <option value="sport">💪 Sport</option>
+      </select>
+      <select class="fselect" id="f-task-priority">
+        <option value="high">🔴 Urgent</option>
+        <option value="medium">🟡 Normal</option>
+        <option value="low">🟢 Secondaire</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <input type="date" class="finput" id="f-task-date">
+    </div>
+    <div class="form-row">
+      <button class="btn" onclick="addTask()">Ajouter</button>
+      <button class="btn btn-ghost" onclick="toggleTaskForm()">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── GOALS ─── -->
+<div class="page" id="page-goals">
+  <div class="page-hdr"><h2>Mes Objectifs</h2><p>Méthode OKR — Start With Why</p></div>
+  <div class="why-goals">
+    <div class="wg-label">✦ Mon Pourquoi — La Fondation</div>
+    <div class="wg-text" id="why-goals-text" onclick="openWhy()">Définissez votre raison profonde...</div>
+    <div class="wg-quote">« Les gens n'achètent pas ce que vous faites, ils achètent pourquoi vous le faites. » — Simon Sinek</div>
+  </div>
+  <div class="slbl">Objectifs du trimestre (OKR)</div>
+  <div id="goals-list"></div>
+  <button class="add-toggle" onclick="toggleGoalForm()"><span>＋</span> Nouvel objectif OKR</button>
+  <div id="goal-form" class="add-form hidden">
+    <div class="form-row"><input class="finput" id="f-goal-title" placeholder="Mon objectif principal..."></div>
+    <div class="form-row">
+      <select class="fselect" id="f-goal-domain">
+        <option value="business">💼 Business</option>
+        <option value="personal">🧠 Personnel</option>
+        <option value="sport">💪 Sport</option>
+      </select>
+    </div>
+    <div class="desc-sm mb-8">Résultats clés mesurables :</div>
+    <div class="form-row"><input class="finput" id="f-kr1" placeholder="Résultat clé 1..."></div>
+    <div class="form-row"><input class="finput" id="f-kr2" placeholder="Résultat clé 2..."></div>
+    <div class="form-row"><input class="finput" id="f-kr3" placeholder="Résultat clé 3..."></div>
+    <div class="form-row">
+      <button class="btn" onclick="addGoal()">Créer</button>
+      <button class="btn btn-ghost" onclick="toggleGoalForm()">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── HABITS ─── -->
+<div class="page" id="page-habits">
+  <div class="page-hdr"><h2>Mes Habitudes</h2><p>La constance quotidienne crée l'excellence</p></div>
+  <div id="habits-list"></div>
+  <button class="add-toggle" onclick="toggleHabitForm()"><span>＋</span> Nouvelle habitude</button>
+  <div id="habit-form" class="add-form hidden">
+    <div class="form-row">
+      <input class="finput" id="f-habit-emoji" placeholder="🔥" style="width:52px;flex:none">
+      <input class="finput" id="f-habit-name" placeholder="Nom de l'habitude..." onkeypress="hbPress(event)">
+    </div>
+    <div class="form-row">
+      <select class="fselect" id="f-habit-domain">
+        <option value="business">💼 Business</option>
+        <option value="personal">🧠 Personnel</option>
+        <option value="sport">💪 Sport</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <button class="btn" onclick="addHabit()">Créer</button>
+      <button class="btn btn-ghost" onclick="toggleHabitForm()">Annuler</button>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- BOTTOM NAV -->
+<nav class="bnav">
+  <button class="bni active" onclick="goPage('today',this)"><span class="ni">🎯</span>Auj.</button>
+  <button class="bni" onclick="goPage('week',this)"><span class="ni">📅</span>Semaine</button>
+  <button class="bni" onclick="goPage('tasks',this)"><span class="ni">✅</span>Tâches</button>
+  <button class="bni" onclick="goPage('goals',this)"><span class="ni">💡</span>OKR</button>
+  <button class="bni" onclick="goPage('habits',this)"><span class="ni">🔥</span>Habits</button>
+</nav>
+</div>
+
+<!-- ═══ WHY MODAL ═══ -->
+<div class="modal-ov" id="why-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('why-modal')">×</button>
+    <div class="modal-title">✦ Mon Pourquoi</div>
+    <div class="modal-sub">Selon Simon Sinek, les leaders inspirants commencent par leur <em>pourquoi</em> — votre raison profonde qui vous donne de l'énergie même les jours difficiles.</div>
+    <textarea class="finput" id="why-input" rows="4" placeholder="Ex : Je construis mes boutiques pour offrir la liberté à ma famille et prouver que la volonté peut tout..."></textarea>
+    <div class="form-row mt-8">
+      <button class="btn" onclick="saveWhy()" style="flex:1">Ancrer mon Pourquoi</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SETTINGS MODAL ═══ -->
+<div class="modal-ov" id="settings-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('settings-modal')">×</button>
+    <div class="modal-title">⚙️ Réglages</div>
+    <div class="modal-sub">Configurez votre système de Deep Work.</div>
+
+    <div class="setting-group">
+      <div class="slbl mb-8">Identité</div>
+      <div class="setting-row">
+        <div><div class="setting-label">Prénom</div></div>
+        <div class="setting-control"><input class="finput" id="s-name" style="width:110px;text-align:right" placeholder="Léo"></div>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <div class="slbl mb-8">🧠 Deep Work (Méthode Cal Newport)</div>
+      <div class="setting-row">
+        <div><div class="setting-label">Début de journée</div><div class="setting-desc">Heure de démarrage</div></div>
+        <div class="setting-control"><input type="time" class="finput" id="s-start" style="width:100px"></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Fin de journée</div></div>
+        <div class="setting-control"><input type="time" class="finput" id="s-end" style="width:100px"></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Durée Deep Work</div><div class="setting-desc">Rythme ultradien optimal : 90 min</div></div>
+        <div class="setting-control">
+          <select class="fselect" id="s-dw-dur">
+            <option value="60">60 min</option>
+            <option value="90">90 min ★</option>
+            <option value="120">120 min</option>
+            <option value="150">150 min</option>
+          </select>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Pause entre blocs</div><div class="setting-desc">Récupération cognitive active</div></div>
+        <div class="setting-control">
+          <select class="fselect" id="s-rest-dur">
+            <option value="10">10 min</option>
+            <option value="15">15 min</option>
+            <option value="20">20 min ★</option>
+            <option value="30">30 min</option>
+          </select>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Minimum Deep Work</div><div class="setting-desc">Sessions par jour</div></div>
+        <div class="setting-control">
+          <select class="fselect" id="s-min-dw">
+            <option value="1">1 session</option>
+            <option value="2">2 sessions ★</option>
+            <option value="3">3 sessions</option>
+            <option value="4">4 sessions</option>
+          </select>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Échauffement matin</div><div class="setting-desc">Rituel d'intention avant le 1er bloc</div></div>
+        <div class="setting-control">
+          <select class="fselect" id="s-warmup">
+            <option value="10">10 min</option>
+            <option value="15">15 min</option>
+            <option value="20">20 min ★</option>
+            <option value="30">30 min</option>
+          </select>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Pause déjeuner</div></div>
+        <div class="setting-control">
+          <select class="fselect" id="s-lunch-dur">
+            <option value="30">30 min</option>
+            <option value="45">45 min</option>
+            <option value="60">60 min ★</option>
+            <option value="90">90 min</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="dw-preview-wrap" class="deep-work-preview">
+      <div class="slbl mb-4">Aperçu de votre journée type</div>
+      <div id="dw-day-preview"></div>
+      <div class="dw-preview-bar" id="dw-bar"></div>
+    </div>
+
+    <div class="setting-group" style="margin-top:14px">
+      <div class="slbl mb-8">🔔 Notifications</div>
+      <div id="notif-perm-wrap" style="margin-bottom:12px"></div>
+      <button class="btn btn-sm btn-ghost" style="width:100%;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:8px" onclick="testNotif()">
+        🔔 Envoyer une notification test
+      </button>
+      <div class="setting-row">
+        <div><div class="setting-label">Début Deep Work</div><div class="setting-desc">Notif au démarrage de chaque bloc</div></div>
+        <div class="setting-control"><label class="tog"><input type="checkbox" id="s-notif-dw"><span class="tog-sl"></span></label></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Fin de bloc / Pause</div><div class="setting-desc">Notif quand le bloc se termine</div></div>
+        <div class="setting-control"><label class="tog"><input type="checkbox" id="s-notif-end"><span class="tog-sl"></span></label></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Rappel habitudes</div><div class="setting-desc">Si pas toutes cochées à cette heure</div></div>
+        <div class="setting-control" style="display:flex;align-items:center;gap:8px">
+          <input type="time" class="finput" id="s-habit-time" style="width:90px">
+          <label class="tog"><input type="checkbox" id="s-notif-habit"><span class="tog-sl"></span></label>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Planifier demain</div><div class="setting-desc">Si demain n'est pas encore planifié</div></div>
+        <div class="setting-control" style="display:flex;align-items:center;gap:8px">
+          <input type="time" class="finput" id="s-plan-time" style="width:90px">
+          <label class="tog"><input type="checkbox" id="s-notif-plan"><span class="tog-sl"></span></label>
+        </div>
+      </div>
+    </div>
+
+        <div class="setting-group" style="margin-top:14px">
+      <div class="slbl mb-8">📱 Widget iPhone</div>
+      <div class="modal-sub" style="margin-bottom:12px;font-size:11px">
+        Connectez le widget Scriptable. <a href="https://jsonbin.io" target="_blank" style="color:#6366F1">Créez un compte JSONBin gratuit</a> → Account → API Keys → copiez votre Master Key.
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Master Key JSONBin</div><div class="setting-desc">jsonbin.io → Account → API Keys</div></div>
+        <div class="setting-control"><input class="finput" id="s-jsonbin-key" type="password" onfocus="if(!this.value)this.value=D.settings.jsonbinKey||''" style="width:130px" placeholder="$2a$..."></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Bin ID</div><div class="setting-desc">Généré automatiquement</div></div>
+        <div class="setting-control" style="display:flex;gap:8px;align-items:center">
+          <input class="finput" id="s-jsonbin-id" onfocus="if(!this.value)this.value=D.settings.jsonbinId||''" style="width:105px;font-size:10px" placeholder="auto" readonly>
+          <button class="btn btn-sm" onclick="setupJsonBin()" style="font-size:11px;padding:4px 10px">Créer</button>
+        </div>
+      </div>
+      <button class="btn btn-sm btn-ghost" style="width:100%;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px" onclick="syncWidget(true)">
+        ☁️ Synchroniser le widget maintenant
+      </button>
+      <div id="widget-sync-status" style="text-align:center;font-size:11px;margin-top:6px;color:#8B8BA8"></div>
+    </div>
+
+<div class="form-row mt-12">
+      <button class="btn" onclick="saveSettings()" style="flex:1">Sauvegarder les réglages</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PLANNING MODAL ═══ -->
+<div class="modal-ov" id="plan-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('plan-modal')">×</button>
+    <div class="modal-title" id="plan-modal-title">🗓 Planifier la journée</div>
+    <div class="modal-sub" id="plan-modal-sub">Organisez vos tâches et laissez APEX structurer votre Deep Work.</div>
+
+    <div id="plan-tasks-section">
+      <div class="slbl">Tâches du jour (réorganisez par priorité)</div>
+      <div id="plan-tasks-list"></div>
+      <button class="add-toggle" onclick="togglePlanTaskForm()" style="margin-top:8px"><span>＋</span> Ajouter une tâche</button>
+      <div id="plan-add-form" class="add-form hidden mt-8">
+        <div class="form-row"><input class="finput" id="p-task-title" placeholder="Titre..." onkeypress="ptPress(event)"></div>
+        <div class="form-row">
+          <select class="fselect" id="p-task-domain">
+            <option value="business">💼 Business</option>
+            <option value="personal">🧠 Personnel</option>
+            <option value="sport">💪 Sport</option>
+          </select>
+          <select class="fselect" id="p-task-priority">
+            <option value="high">🔴 Urgent</option>
+            <option value="medium">🟡 Normal</option>
+            <option value="low">🟢 Secondaire</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <button class="btn btn-sm" onclick="addPlanTask()">Ajouter</button>
+          <button class="btn btn-ghost btn-sm" onclick="togglePlanTaskForm()">Annuler</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+    <div id="plan-schedule-section">
+      <div class="slbl">Planning Deep Work généré</div>
+      <div id="plan-schedule-preview"></div>
+    </div>
+
+    <div class="form-row mt-12">
+      <button class="btn btn-gold" onclick="generateAndShow()" style="flex:1">⚡ Générer le planning</button>
+    </div>
+    <div class="form-row mt-8">
+      <button class="btn" onclick="savePlan()" id="save-plan-btn" style="flex:1;display:none">✅ Confirmer ce planning</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SCHEDULE VIEW MODAL ═══ -->
+<div class="modal-ov" id="sched-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('sched-modal')">×</button>
+    <div class="modal-title" id="sched-modal-title">📋 Planning du jour</div>
+    <div class="modal-sub" id="sched-modal-sub"></div>
+    <div id="sched-modal-content"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════════════════════════
+const SK = 'apex_v3';
+const DEFAULTS = {
+  why:'', tasks:[], habits:[], goals:[],
+  hc:{},         // {habitId: {dateStr: bool}}
+  schedules:{},  // {dateStr: [block,...]}
+  planOrders:{}, // {dateStr: [taskId,...]}
+  settings:{
+    name:'Léo', workStart:'09:00', workEnd:'18:30',
+    dwDuration:90, restDuration:20, minDW:2,
+    warmup:20, lunchDuration:60,
+    notifDW:true, notifEnd:true, notifHabit:true, notifPlan:true,
+    habitReminderTime:'19:00', planReminderTime:'20:00', jsonbinKey:'', jsonbinId:'',
+  }
+};
+let D = (() => {
+  try{
+    const raw = JSON.parse(localStorage.getItem(SK)||'{}');
+    return {
+      ...DEFAULTS,...raw,
+      settings:{...DEFAULTS.settings,...(raw.settings||{})}
+    };
+  }catch(e){return {...DEFAULTS};}
+})();
+let _wSyncT;
+  function save(){ localStorage.setItem(SK, JSON.stringify(D)); if(D.settings.jsonbinKey&&D.settings.jsonbinId){clearTimeout(_wSyncT);_wSyncT=setTimeout(syncWidget,3000);} }
+
+// ═══════════════════════════════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════════════════════════════
+const DAYS = ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+const MONTHS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).substr(2,5); }
+function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+function today(){ const d=new Date(); return ds(d); }
+function tomorrowDate(){ const d=new Date(); d.setDate(d.getDate()+1); return ds(d); }
+function ds(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+function parseDate(str){ return new Date(str+'T00:00:00'); }
+function niceDate(str){ const d=parseDate(str); return `${d.getDate()} ${MONTHS[d.getMonth()]}`; }
+function dateLbl(str){
+  const t=today();
+  if(str===t) return '📍 Aujourd\'hui';
+  const tm=new Date(t); tm.setDate(tm.getDate()+1);
+  if(str===ds(tm)) return '➡️ Demain';
+  return niceDate(str);
+}
+function weekOf(ref){
+  const days=[]; const d=parseDate(ref); const dow=d.getDay();
+  const mon=new Date(d); mon.setDate(d.getDate()-((dow+6)%7));
+  for(let i=0;i<7;i++){ const x=new Date(mon); x.setDate(mon.getDate()+i); days.push(ds(x)); }
+  return days;
+}
+function last30(){
+  const days=[]; const now=new Date();
+  for(let i=29;i>=0;i--){ const d=new Date(now); d.setDate(now.getDate()-i); days.push(ds(d)); }
+  return days;
+}
+function t2m(timeStr){ // "09:30" → minutes
+  const [h,m]=timeStr.split(':').map(Number); return h*60+m;
+}
+function m2t(minutes){ // minutes → "09:30"
+  const h=Math.floor(minutes/60); const m=minutes%60;
+  return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+}
+function durFmt(min){
+  if(min<60) return `${min} min`;
+  const h=Math.floor(min/60); const m=min%60;
+  return m?`${h}h${String(m).padStart(2,'0')}`:`${h}h`;
+}
+// Day of year
+function dayOfYear(d){ const s=new Date(d.getFullYear(),0,0); return Math.floor((d-s)/86400000); }
+
+// ═══════════════════════════════════════════════════════════════
+// QUOTES — 50 citations, une différente chaque jour
+// ═══════════════════════════════════════════════════════════════
+const QUOTES=[
+  {t:'Votre vision de là où vous voulez aller est votre plus grand actif.',a:'Robin Sharma'},
+  {t:'La discipline est le pont entre les objectifs et les accomplissements.',a:'Jim Rohn'},
+  {t:'Le succès n\'est pas final, l\'échec n\'est pas fatal : c\'est le courage de continuer qui compte.',a:'Winston Churchill'},
+  {t:'Ce que vous faites chaque jour compte plus que ce que vous faites de temps en temps.',a:'Gretchen Rubin'},
+  {t:'Les gens n\'achètent pas ce que vous faites, ils achètent pourquoi vous le faites.',a:'Simon Sinek'},
+  {t:'Un objectif sans plan n\'est qu\'un souhait.',a:'Antoine de Saint-Exupéry'},
+  {t:'La productivité n\'est jamais un accident. C\'est toujours le résultat d\'un engagement envers l\'excellence.',a:'Paul J. Meyer'},
+  {t:'Commencez par la fin en tête.',a:'Stephen Covey'},
+  {t:'Chaque action est un vote pour le type de personne que vous voulez devenir.',a:'James Clear'},
+  {t:'La motivation vous met en route. L\'habitude vous maintient en mouvement.',a:'Jim Ryun'},
+  {t:'Ce n\'est pas ce que nous faisons parfois qui façonne notre vie — c\'est ce que nous faisons constamment.',a:'Tony Robbins'},
+  {t:'Travaillez en profondeur ou devenez obsolète.',a:'Cal Newport'},
+  {t:'Vous ne montez pas un montagne pour que le monde vous voit. Vous montez pour voir le monde.',a:'David McCullough Jr.'},
+  {t:'Le secret du changement est de concentrer toute votre énergie non pas à combattre l\'ancien, mais à construire le nouveau.',a:'Socrate'},
+  {t:'L\'excellence est un art gagné par l\'entraînement et l\'habitude.',a:'Aristote'},
+  {t:'Les grandes choses ne sont jamais faites par impulsion, mais par une série de petites choses réunies.',a:'Vincent Van Gogh'},
+  {t:'Faites ce qui est difficile pendant que c\'est facile.',a:'Lao Tseu'},
+  {t:'Votre temps est limité. Ne le gaspillez pas à vivre la vie de quelqu\'un d\'autre.',a:'Steve Jobs'},
+  {t:'Si vous ne construisez pas votre rêve, quelqu\'un vous emploiera pour construire le sien.',a:'Tony Gaskins'},
+  {t:'Le moment présent était autrefois l\'avenir que vous espériez.',a:'Unknown'},
+  {t:'Le succès c\'est aller d\'échec en échec sans perdre son enthousiasme.',a:'Winston Churchill'},
+  {t:'Votre cerveau est pour avoir des idées, pas pour les retenir.',a:'David Allen'},
+  {t:'Concentrez-vous sur ce que vous contrôlez et laissez aller le reste.',a:'Marc Aurèle'},
+  {t:'La peur de souffrir est pire que la souffrance elle-même.',a:'Paulo Coelho'},
+  {t:'N\'attendez pas. Le temps ne sera jamais parfaitement opportun.',a:'Napoleon Hill'},
+  {t:'Chaque maître a d\'abord été un débutant.',a:'Robin Sharma'},
+  {t:'Visualisez vos priorités de manière si claire qu\'elles deviennent incontournables.',a:'Gary Keller'},
+  {t:'La vitesse est inutile si vous courez dans la mauvaise direction.',a:'Gandhi'},
+  {t:'Dormez suffisamment. La performance cognitive commence là.',a:'Matthew Walker'},
+  {t:'Le Deep Work est la capacité de se concentrer sans distraction sur une tâche cognitivement exigeante.',a:'Cal Newport'},
+  {t:'Votre calendrier est votre autobiographie.',a:'Unknown'},
+  {t:'Faire plus n\'est pas toujours la réponse. Faire mieux l\'est souvent.',a:'Unknown'},
+  {t:'Les limites sont source de créativité.',a:'T.S. Eliot'},
+  {t:'Dites non à presque tout pour pouvoir dire oui à ce qui compte vraiment.',a:'Warren Buffett'},
+  {t:'Le flux naît quand le défi rencontre la compétence.',a:'Mihaly Csikszentmihalyi'},
+  {t:'La clarté est la forme la plus haute de la productivité.',a:'Unknown'},
+  {t:'Agissez comme si ce que vous faites faisait une différence. Ça en fait une.',a:'William James'},
+  {t:'Toute grande réalisation a nécessité du temps.',a:'Maya Angelou'},
+  {t:'Ce n\'est pas ce que vous portez, c\'est ce que vous accomplissez.',a:'Unknown'},
+  {t:'La première heure de la journée est la gouvernante du reste.',a:'H.W. Beecher'},
+  {t:'Vous êtes la somme de vos cinq habitudes les plus fréquentes.',a:'James Clear'},
+  {t:'Un plan simple exécuté avec vigueur vaut mieux qu\'un plan brillant inexécuté.',a:'George Patton'},
+  {t:'Le talent est courant. L\'engagement envers votre art ne l\'est pas.',a:'Stephen King'},
+  {t:'Chaque soir, réfléchissez à ce que vous avez accompli. Chaque matin, décidez à quoi vous vous engagez.',a:'Unknown'},
+  {t:'La procrastination est le voleur du temps, le tueur des rêves.',a:'Victor Hugo'},
+  {t:'La force ne vient pas de la capacité physique mais d\'une volonté indomptable.',a:'Gandhi'},
+  {t:'Faites de chaque journée votre chef-d\'œuvre.',a:'John Wooden'},
+  {t:'Ce qui se mesure s\'améliore.',a:'Peter Drucker'},
+  {t:'Investissez les trois premières heures de votre journée dans vous-même.',a:'Robin Sharma'},
+  {t:'L\'inaction engendre le doute et la peur. L\'action engendre confiance et courage.',a:'Dale Carnegie'},
+];
+function dayQuote(){
+  const now=new Date();
+  // Seed unique par jour : combinaison de l'année, du mois et du jour
+  const seed=(now.getFullYear()*366+dayOfYear(now)+now.getDate()*13+now.getMonth()*7);
+  return QUOTES[seed%QUOTES.length];
+}
+
+// ═══════════════════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════════════════
+let curPage='today';
+let selDay=today();
+let weekOffset=0;
+
+function goPage(name,el){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.bni,.snav').forEach(b=>b.classList.remove('active'));
+  if(el) el.classList.add('active');
+  curPage=name;
+  render(name);
+}
+function render(p){
+  switch(p){
+    case'today':  renderToday();  break;
+    case'week':   renderWeek();   break;
+    case'tasks':  renderTasks();  break;
+    case'goals':  renderGoals();  break;
+    case'habits': renderHabits(); break;
+  }
+}
+function goPageAndAdd(){
+  goPage('tasks',document.querySelectorAll('.bni')[2]);
+  document.querySelectorAll('.bni').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.bni')[2].classList.add('active');
+  setTimeout(()=>{if(document.getElementById('task-form').classList.contains('hidden'))toggleTaskForm();},150);
+}
+function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+
+// ═══════════════════════════════════════════════════════════════
+// SIDEBAR DATE
+// ═══════════════════════════════════════════════════════════════
+function updateSidebarDate(){
+  const now=new Date();
+  const sd=document.getElementById('sb-day');
+  const sdt=document.getElementById('sb-dt');
+  if(sd) sd.textContent=now.getDate();
+  if(sdt) sdt.textContent=`${MONTHS[now.getMonth()]} ${now.getFullYear()}`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// TODAY
+// ═══════════════════════════════════════════════════════════════
+function renderToday(){
+  const now=new Date(); const h=now.getHours();
+  let tag='Bonne nuit ✨';
+  if(h>=5&&h<12) tag='Bonjour ☀️';
+  else if(h>=12&&h<18) tag='Bon après-midi ⚡';
+  else if(h>=18&&h<22) tag='Bonne soirée 🌙';
+  document.getElementById('time-tag').textContent=tag;
+  document.getElementById('greeting-name').textContent=`${D.settings.name||'Léo'} 👋`;
+  document.getElementById('today-date').textContent=
+    `${DAYS[now.getDay()]} ${now.getDate()} ${MONTHS[now.getMonth()]} ${now.getFullYear()}`;
+
+  const w=D.why||'Appuyez ici pour définir votre raison profonde...';
+  document.getElementById('why-text-today').textContent=w;
+
+  const q=dayQuote();
+  document.getElementById('quote-card').innerHTML=
+    `<div class="quote-txt">"${esc(q.t)}"</div><div class="quote-auth">— ${esc(q.a)}</div>`;
+
+  const t=today();
+  const todayTasks=D.tasks.filter(x=>x.date===t);
+  const done=todayTasks.filter(x=>x.done).length;
+  const total=todayTasks.length;
+  const pct=total>0?Math.round(done/total*100):0;
+  document.getElementById('prog-pct').textContent=pct+'%';
+  document.getElementById('prog-sub').textContent=`${done} / ${total} tâche${total!==1?'s':''} accomplie${done!==1?'s':''}`;
+  const circ=169.65;
+  document.getElementById('prog-circle').style.strokeDashoffset=circ-(pct/100)*circ;
+
+  document.getElementById('s-streak').textContent=calcMaxStreak();
+  document.getElementById('s-week').textContent=calcWeekDone();
+  document.getElementById('s-habits').textContent=calcTodayHabits()+'%';
+
+  // Deep Work schedule section
+  const schSec=document.getElementById('today-schedule-section');
+  if(D.schedules[t]&&D.schedules[t].length>0){
+    schSec.innerHTML=`
+      <div class="flex ac jb mb-8">
+        <div class="slbl" style="margin-bottom:0">🧠 Planning Deep Work du jour</div>
+        <span class="tag-planned">✓ Planifié</span>
+      </div>
+      <div class="schedule-wrap">${scheduleHTML(D.schedules[t])}</div>`;
+  } else {
+    schSec.innerHTML='';
+  }
+
+  // MIT
+  const mit=document.getElementById('mit-list');
+  // If schedule exists, use plan order; otherwise sort by priority
+  let top3;
+  if(D.planOrders[t]&&D.planOrders[t].length>0){
+    top3=D.planOrders[t].map(id=>D.tasks.find(x=>x.id===id)).filter(Boolean).slice(0,3);
+  } else {
+    top3=[...todayTasks].filter(x=>!x.done).sort((a,b)=>{
+      const o={high:0,medium:1,low:2};return o[a.priority]-o[b.priority];
+    }).slice(0,3);
+  }
+
+  if(!todayTasks.length){
+    mit.innerHTML=`<div class="empty"><div class="ei">✨</div><p>Aucune tâche aujourd'hui.<br>Préparez demain ou ajoutez des tâches !</p></div>`;
+  } else {
+    mit.innerHTML=top3.map((tk,i)=>`
+      <div class="mit-item ${tk.done?'done':''}">
+        <div class="mit-num ${['mn1','mn2','mn3'][i]}">${i+1}</div>
+        <div class="mit-txt">${esc(tk.title)}</div>
+        <button class="chk ${tk.done?'done':''}" onclick="toggleTask('${tk.id}')"></button>
+      </div>`).join('');
+  }
+
+  const tl=document.getElementById('today-tasks-list');
+  tl.innerHTML=todayTasks.length?`<div class="card" style="padding:0 15px">${todayTasks.map(tk=>taskHTML(tk)).join('')}</div>`:'';
+}
+
+function calcMaxStreak(){
+  if(!D.habits.length) return 0;
+  let max=0;
+  D.habits.forEach(h=>{
+    let s=0; const now=new Date();
+    for(let i=0;i<60;i++){
+      const d=new Date(now); d.setDate(now.getDate()-i);
+      if((D.hc[h.id]||{})[ds(d)]){ s++; } else if(i>0) break;
+    }
+    max=Math.max(max,s);
+  });
+  return max;
+}
+function calcWeekDone(){ const wd=weekOf(today()); return D.tasks.filter(t=>t.done&&wd.includes(t.date)).length; }
+function calcTodayHabits(){
+  if(!D.habits.length) return 0;
+  const t=today();
+  return Math.round(D.habits.filter(h=>(D.hc[h.id]||{})[t]).length/D.habits.length*100);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SCHEDULE HTML RENDERER
+// ═══════════════════════════════════════════════════════════════
+function scheduleHTML(blocks){
+  return blocks.map(b=>{
+    const task=b.taskId?D.tasks.find(t=>t.id===b.taskId):null;
+    const dur=b.end-b.start;
+    let typeLabel='',icon='';
+    switch(b.type){
+      case'warmup':  typeLabel='Échauffement'; icon='🌅'; break;
+      case'deepwork':typeLabel=`Deep Work #${b.session}`; icon='🧠'; break;
+      case'rest':    typeLabel='Pause active'; icon='☕'; break;
+      case'lunch':   typeLabel='Déjeuner'; icon='🍽️'; break;
+      case'light':   typeLabel='Tâches légères'; icon='📋'; break;
+      case'review':  typeLabel='Bilan de journée'; icon='📝'; break;
+    }
+    return `
+      <div class="schedule-block">
+        <div class="sb-time">${m2t(b.start)}</div>
+        <div class="sb-bar ${b.type}">
+          <div class="sb-type">${icon} ${typeLabel} · ${durFmt(dur)}</div>
+          ${task?`<div class="sb-task">${esc(task.title)}</div>`:''}
+          ${b.label&&!task?`<div class="sb-task">${esc(b.label)}</div>`:''}
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DEEP WORK SCHEDULING ALGORITHM
+// Psychology sources:
+// - Ultradian rhythm (Kleitman 1963): 90-min focus cycles
+// - Circadian peak: 9-11am optimal for cognitive tasks
+// - Attention Residue (Sophie Leroy): no task switching during DW
+// - Cal Newport: batch DW, protect morning blocks
+// - Zeigarnik effect: end-of-day review closes open loops
+// ═══════════════════════════════════════════════════════════════
+function generateSchedule(taskIds, targetDate){
+  const s=D.settings;
+  const start=t2m(s.workStart||'09:00');
+  const end=t2m(s.workEnd||'18:30');
+  const dwDur=parseInt(s.dwDuration)||90;
+  const restDur=parseInt(s.restDuration)||20;
+  const warmup=parseInt(s.warmup)||20;
+  const lunchDur=parseInt(s.lunchDuration)||60;
+  const minDW=parseInt(s.minDW)||2;
+
+  // Fetch tasks in priority order
+  const tasks=taskIds.map(id=>D.tasks.find(t=>t.id===id)).filter(Boolean);
+
+  const blocks=[];
+  let cur=start;
+
+  // 1. WARMUP (ritual d'intention — active le mode intentionnel)
+  blocks.push({type:'warmup',start:cur,end:cur+warmup,label:'Rituel matinal · Révision du plan & intention'});
+  cur+=warmup;
+
+  // 2. DEEP WORK BLOCKS (pic cognitif matinal)
+  let dwCount=0;
+  const highTasks=tasks.filter(t=>t.priority==='high');
+  const medTasks=tasks.filter(t=>t.priority==='medium');
+  const lowTasks=tasks.filter(t=>t.priority==='low');
+  // Sort for DW: high first, then medium, then low
+  const dwQueue=[...highTasks,...medTasks];
+  const lightQueue=[...lowTasks];
+
+  while(cur+dwDur<=end && dwQueue.length>0 && dwCount<Math.max(minDW,dwQueue.length)){
+    const task=dwQueue.shift();
+    dwCount++;
+    blocks.push({type:'deepwork',start:cur,end:cur+dwDur,taskId:task.id,session:dwCount});
+    cur+=dwDur;
+
+    // Lunch break after 2 DW sessions if it's around noon
+    if(dwCount===2 && cur>=11*60 && cur<=14*60 && cur+lunchDur<=end){
+      blocks.push({type:'lunch',start:cur,end:cur+lunchDur,label:'Déjeuner · Récupération & digestion'});
+      cur+=lunchDur;
+      // Continue with more DW if tasks remain (afternoon secondary peak ~15h)
+    } else if(dwQueue.length>0 && cur+restDur+dwDur<=end){
+      // Active rest between DW blocks
+      blocks.push({type:'rest',start:cur,end:cur+restDur,label:'Pause active · Marche · Respiration'});
+      cur+=restDur;
+    }
+  }
+
+  // 3. LIGHT TASKS (post-déjeuner — creux cognitif)
+  // Add remaining medium tasks that didn't get DW slots
+  const remainingTasks=[...dwQueue,...lightQueue];
+  const lightSlotDur=30;
+  remainingTasks.forEach(task=>{
+    if(cur+lightSlotDur<=end){
+      blocks.push({type:'light',start:cur,end:cur+lightSlotDur,taskId:task.id});
+      cur+=lightSlotDur+5; // 5 min transition
+    }
+  });
+
+  // 4. REVIEW (effet Zeigarnik : fermer les boucles ouvertes)
+  if(cur+20<=end){
+    blocks.push({type:'review',start:cur,end:cur+20,label:'Bilan de journée · Fermer les boucles · Planifier demain'});
+  }
+
+  return blocks;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// TASKS
+// ═══════════════════════════════════════════════════════════════
+let tkFilter='all';
+function taskHTML(tk){
+  const dl={business:'💼 Business',personal:'🧠 Personnel',sport:'💪 Sport'};
+  const dc={business:'db-business',personal:'db-personal',sport:'db-sport'};
+  return `
+    <div class="task-item ${tk.done?'done':''} priority-${tk.priority}" id="ti-${tk.id}">
+      <button class="task-check ${tk.done?'done':''}" onclick="toggleTask('${tk.id}')"></button>
+      <div class="task-content">
+        <div class="task-title">${esc(tk.title)}</div>
+        <div class="task-meta">
+          <span class="dbadge ${dc[tk.domain]}">${dl[tk.domain]}</span>
+          ${tk.date?`<span class="task-date">${dateLbl(tk.date)}</span>`:''}
+        </div>
+      </div>
+      <button class="task-del" onclick="delTask('${tk.id}')">🗑</button>
+    </div>`;
+}
+function renderTasks(){
+  const list=document.getElementById('tasks-list');
+  let filtered=tkFilter==='all'?[...D.tasks]:D.tasks.filter(t=>t.domain===tkFilter);
+  const po={high:0,medium:1,low:2};
+  filtered.sort((a,b)=>{
+    if(a.done!==b.done) return a.done?1:-1;
+    if(po[a.priority]!==po[b.priority]) return po[a.priority]-po[b.priority];
+    if(a.date&&b.date) return a.date.localeCompare(b.date);
+    if(a.date) return -1; if(b.date) return 1; return 0;
+  });
+  if(!filtered.length){
+    list.innerHTML=`<div class="empty"><div class="ei">✅</div><p>Aucune tâche ici.<br>Créez-en une ci-dessous !</p></div>`;
+    return;
+  }
+  const grps={};
+  filtered.forEach(t=>{ const k=t.date||'_'; if(!grps[k]) grps[k]=[]; grps[k].push(t); });
+  const keys=Object.keys(grps).sort((a,b)=>{
+    if(a==='_') return 1; if(b==='_') return -1; return a.localeCompare(b);
+  });
+  list.innerHTML=keys.map(k=>`
+    <div class="mb-12">
+      <div class="slbl mb-4">${k==='_'?'Sans date':dateLbl(k)}</div>
+      <div class="card" style="padding:0 15px">${grps[k].map(t=>taskHTML(t)).join('')}</div>
+    </div>`).join('');
+}
+function filterTasks(f,el){
+  tkFilter=f;
+  document.querySelectorAll('#page-tasks .tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active'); renderTasks();
+}
+function toggleTaskForm(){
+  const f=document.getElementById('task-form'); f.classList.toggle('hidden');
+  if(!f.classList.contains('hidden')){
+    document.getElementById('f-task-title').focus();
+    document.getElementById('f-task-date').value=today();
+  }
+}
+function tkPress(e){ if(e.key==='Enter') addTask(); }
+function addTask(){
+  const title=document.getElementById('f-task-title').value.trim();
+  if(!title) return;
+  D.tasks.push({id:uid(),title,domain:document.getElementById('f-task-domain').value,
+    priority:document.getElementById('f-task-priority').value,
+    date:document.getElementById('f-task-date').value||null,done:false,createdAt:Date.now()});
+  save();
+  document.getElementById('f-task-title').value='';
+  document.getElementById('task-form').classList.add('hidden');
+  renderTasks();
+  if(curPage==='today') renderToday();
+}
+function toggleTask(id){
+  const t=D.tasks.find(x=>x.id===id); if(!t) return;
+  t.done=!t.done; save(); render(curPage);
+}
+function delTask(id){ D.tasks=D.tasks.filter(t=>t.id!==id); save(); render(curPage); }
+
+// ═══════════════════════════════════════════════════════════════
+// WEEK (with navigation)
+// ═══════════════════════════════════════════════════════════════
+function weekRefDate(){
+  const d=new Date(); d.setDate(d.getDate()+weekOffset*7); return ds(d);
+}
+function changeWeek(dir){ weekOffset+=dir; if(weekOffset===0) selDay=today(); renderWeek(); }
+function goCurrentWeek(){ weekOffset=0; selDay=today(); renderWeek(); }
+function renderWeek(){
+  const ref=weekRefDate();
+  const t=today();
+  const wd=weekOf(ref);
+  const s=parseDate(wd[0]); const e=parseDate(wd[6]);
+  document.getElementById('week-range').textContent=
+    `${s.getDate()} ${MONTHS[s.getMonth()].substr(0,4)}. → ${e.getDate()} ${MONTHS[e.getMonth()].substr(0,4)}.`;
+
+  const todayBtn=document.getElementById('week-today-btn');
+  todayBtn.textContent=weekOffset===0?'◉ Actuelle':'↩ Aujourd\'hui';
+
+  const grid=document.getElementById('week-grid');
+  // If selDay not in this week, reset to first day of week
+  if(!wd.includes(selDay)) selDay=wd.includes(t)?t:wd[0];
+
+  grid.innerHTML=wd.map(d=>{
+    const dt=parseDate(d);
+    const tasks=D.tasks.filter(x=>x.date===d);
+    const hasSched=!!D.schedules[d]&&D.schedules[d].length>0;
+    const isT=d===t, isSel=d===selDay;
+    const bc=tasks.filter(x=>x.domain==='business').length;
+    const pc=tasks.filter(x=>x.domain==='personal').length;
+    const sc=tasks.filter(x=>x.domain==='sport').length;
+    return `
+      <div class="wday">
+        <div class="wday-name">${DAYS[dt.getDay()]}</div>
+        <div class="wday-num ${isT?'today':''}${isSel&&!isT?' selected':''}${hasSched?' has-schedule':''}" onclick="selWeekDay('${d}')">
+          ${dt.getDate()}
+        </div>
+        <div class="wday-dots">
+          ${bc?`<div class="wdot" style="background:var(--purple)"></div>`:''}
+          ${pc?`<div class="wdot" style="background:var(--teal)"></div>`:''}
+          ${sc?`<div class="wdot" style="background:var(--coral)"></div>`:''}
+        </div>
+      </div>`;
+  }).join('');
+  renderWeekDay();
+}
+function selWeekDay(d){ selDay=d; renderWeek(); }
+function renderWeekDay(){
+  const dt=parseDate(selDay);
+  document.getElementById('sel-day-title').textContent=
+    `${DAYS[dt.getDay()]} ${dt.getDate()} ${MONTHS[dt.getMonth()]}`;
+  const tasks=D.tasks.filter(t=>t.date===selDay);
+  const sched=D.schedules[selDay];
+  const c=document.getElementById('week-day-tasks');
+  let html='';
+  if(sched&&sched.length){
+    html+=`<div class="flex ac gap-8 mb-12">
+      <span class="tag-planned">🧠 Planning Deep Work</span>
+      <button class="btn btn-sm btn-ghost" onclick="viewSchedule('${selDay}')">Voir le planning</button>
+    </div>`;
+  }
+  if(!tasks.length){
+    html+=`<div class="empty" style="padding:20px"><p>Aucune tâche ce jour</p></div>`;
+  } else {
+    html+=`<div style="padding:0">${tasks.map(t=>taskHTML(t)).join('')}</div>`;
+  }
+  c.innerHTML=html;
+}
+function viewSchedule(dateStr){
+  const dt=parseDate(dateStr);
+  document.getElementById('sched-modal-title').textContent=
+    `🧠 Planning — ${DAYS[dt.getDay()]} ${dt.getDate()} ${MONTHS[dt.getMonth()]}`;
+  document.getElementById('sched-modal-sub').textContent='Votre planning Deep Work pour cette journée.';
+  document.getElementById('sched-modal-content').innerHTML=
+    `<div class="schedule-wrap">${scheduleHTML(D.schedules[dateStr])}</div>`;
+  document.getElementById('sched-modal').classList.add('open');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// GOALS
+// ═══════════════════════════════════════════════════════════════
+function renderGoals(){
+  document.getElementById('why-goals-text').textContent=D.why||'Définissez votre raison profonde...';
+  const list=document.getElementById('goals-list');
+  if(!D.goals.length){
+    list.innerHTML=`<div class="empty"><div class="ei">💡</div><p>Aucun objectif.<br>Créez votre premier OKR !</p></div>`;
+    return;
+  }
+  const dl={business:'💼 Business',personal:'🧠 Personnel',sport:'💪 Sport'};
+  const dc={business:'db-business',personal:'db-personal',sport:'db-sport'};
+  list.innerHTML=D.goals.map(g=>{
+    const done=g.krs.filter(k=>k.done).length;
+    const pct=g.krs.length?Math.round(done/g.krs.length*100):0;
+    return `
+      <div class="goal-card">
+        <div class="goal-hdr">
+          <div><div class="goal-title">${esc(g.title)}</div>
+            <span class="dbadge ${dc[g.domain]}" style="margin-top:6px;display:inline-flex">${dl[g.domain]}</span>
+          </div>
+          <div style="text-align:right">
+            <div class="goal-pct">${pct}%</div>
+            <button class="del-btn" onclick="delGoal('${g.id}')">Supprimer</button>
+          </div>
+        </div>
+        <div class="pbar"><div class="pfill" style="width:${pct}%"></div></div>
+        ${g.krs.map(kr=>`
+          <div class="kr-item ${kr.done?'done':''}">
+            <div class="kr-chk ${kr.done?'done':''}" onclick="toggleKR('${g.id}','${kr.id}')"></div>
+            <div class="kr-txt">${esc(kr.text)}</div>
+          </div>`).join('')}
+      </div>`;
+  }).join('');
+}
+function toggleGoalForm(){ document.getElementById('goal-form').classList.toggle('hidden'); }
+function addGoal(){
+  const title=document.getElementById('f-goal-title').value.trim(); if(!title) return;
+  const krs=['f-kr1','f-kr2','f-kr3'].map(id=>document.getElementById(id).value.trim())
+    .filter(Boolean).map(text=>({id:uid(),text,done:false}));
+  D.goals.push({id:uid(),title,domain:document.getElementById('f-goal-domain').value,krs,createdAt:Date.now()});
+  save(); ['f-goal-title','f-kr1','f-kr2','f-kr3'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('goal-form').classList.add('hidden'); renderGoals();
+}
+function toggleKR(gid,kid){
+  const g=D.goals.find(x=>x.id===gid); if(!g) return;
+  const k=g.krs.find(x=>x.id===kid); if(!k) return;
+  k.done=!k.done; save(); renderGoals();
+}
+function delGoal(id){ D.goals=D.goals.filter(g=>g.id!==id); save(); renderGoals(); }
+
+// ═══════════════════════════════════════════════════════════════
+// HABITS
+// ═══════════════════════════════════════════════════════════════
+function renderHabits(){
+  const list=document.getElementById('habits-list');
+  if(!D.habits.length){
+    list.innerHTML=`<div class="empty"><div class="ei">🔥</div><p>Aucune habitude définie.<br>Commencez par une seule, faites-la chaque jour.</p></div>`;
+    return;
+  }
+  const t=today(); const days=last30();
+  const dc={business:'hc-business',personal:'hc-personal',sport:'hc-sport'};
+  list.innerHTML=D.habits.map(h=>{
+    const comps=D.hc[h.id]||{};
+    let streak=0; const now=new Date();
+    for(let i=0;i<60;i++){
+      const d=new Date(now); d.setDate(now.getDate()-i);
+      if(comps[ds(d)]){ streak++; } else if(i>0) break;
+    }
+    const totalDone=days.filter(d=>comps[d]).length;
+    const todayDone=!!comps[t];
+    return `
+      <div class="habit-card ${dc[h.domain]}">
+        <div class="habit-hdr">
+          <div class="habit-emoji">${h.emoji||'🎯'}</div>
+          <div style="flex:1">
+            <div class="habit-name">${esc(h.name)}</div>
+            <div class="habit-stats-txt">${totalDone}/30 jours ce mois</div>
+          </div>
+          <div style="text-align:right">
+            <div class="streak-pill ${streak>=3?'fire-anim':''}">🔥 ${streak}</div>
+            <div style="font-size:9px;color:var(--t3);text-align:center">jours</div>
+          </div>
+          <button class="del-btn" onclick="delHabit('${h.id}')" style="margin-left:4px">×</button>
+        </div>
+        <button class="habit-today-btn ${todayDone?'done':''}" onclick="toggleHabit('${h.id}','${t}')">
+          ${todayDone?'✓ Accompli aujourd\'hui !':'○ Marquer comme fait aujourd\'hui'}
+        </button>
+        <div class="slbl mb-4">30 derniers jours</div>
+        <div class="grid30">
+          ${days.map(d=>{
+            const done=!!comps[d]; const isT=d===t;
+            return `<div class="g30-cell ${done?'done':''} ${isT?'today':''}" onclick="toggleHabit('${h.id}','${d}')" title="${d}"></div>`;
+          }).join('')}
+        </div>
+      </div>`;
+  }).join('');
+}
+function toggleHabitForm(){ document.getElementById('habit-form').classList.toggle('hidden'); }
+function hbPress(e){ if(e.key==='Enter') addHabit(); }
+function addHabit(){
+  const name=document.getElementById('f-habit-name').value.trim(); if(!name) return;
+  D.habits.push({id:uid(),name,emoji:document.getElementById('f-habit-emoji').value.trim()||'🎯',
+    domain:document.getElementById('f-habit-domain').value,createdAt:Date.now()});
+  save(); document.getElementById('f-habit-name').value='';
+  document.getElementById('f-habit-emoji').value='';
+  document.getElementById('habit-form').classList.add('hidden'); renderHabits();
+}
+function toggleHabit(hid,date){
+  if(!D.hc[hid]) D.hc[hid]={};
+  D.hc[hid][date]=!D.hc[hid][date]; save(); renderHabits();
+  if(curPage==='today') renderToday();
+}
+function delHabit(id){ D.habits=D.habits.filter(h=>h.id!==id); delete D.hc[id]; save(); renderHabits(); }
+
+// ═══════════════════════════════════════════════════════════════
+// SETTINGS
+// ═══════════════════════════════════════════════════════════════
+function openSettings(){
+  const s=D.settings;
+  document.getElementById('s-name').value=s.name||'Léo';
+  document.getElementById('s-start').value=s.workStart||'09:00';
+  document.getElementById('s-end').value=s.workEnd||'18:30';
+  document.getElementById('s-dw-dur').value=s.dwDuration||90;
+  document.getElementById('s-rest-dur').value=s.restDuration||20;
+  document.getElementById('s-min-dw').value=s.minDW||2;
+  document.getElementById('s-warmup').value=s.warmup||20;
+  document.getElementById('s-lunch-dur').value=s.lunchDuration||60;
+  document.getElementById('s-notif-dw').checked = s.notifDW !== false;
+  document.getElementById('s-notif-end').checked = s.notifEnd !== false;
+  document.getElementById('s-notif-habit').checked = s.notifHabit !== false;
+  document.getElementById('s-notif-plan').checked = s.notifPlan !== false;
+  document.getElementById('s-habit-time').value = s.habitReminderTime||'19:00';
+  document.getElementById('s-plan-time').value = s.planReminderTime||'20:00';
+  renderNotifPermBanner();
+  updateDWPreview();
+  document.getElementById('settings-modal').classList.add('open');
+  // Live preview on change
+  ['s-start','s-end','s-dw-dur','s-rest-dur','s-min-dw','s-warmup','s-lunch-dur'].forEach(id=>{
+    document.getElementById(id).onchange=updateDWPreview;
+  });
+}
+function updateDWPreview(){
+  const start=t2m(document.getElementById('s-start').value||'09:00');
+  const end=t2m(document.getElementById('s-end').value||'18:30');
+  const dw=parseInt(document.getElementById('s-dw-dur').value)||90;
+  const rest=parseInt(document.getElementById('s-rest-dur').value)||20;
+  const minDW=parseInt(document.getElementById('s-min-dw').value)||2;
+  const wu=parseInt(document.getElementById('s-warmup').value)||20;
+  const lunch=parseInt(document.getElementById('s-lunch-dur').value)||60;
+  const total=end-start;
+
+  // Generate preview
+  let blocks=[];
+  let cur=start;
+  blocks.push({type:'warmup',dur:wu,label:'Rituel'});cur+=wu;
+  for(let i=0;i<minDW;i++){
+    if(cur+dw>end) break;
+    blocks.push({type:'deepwork',dur:dw,label:`DW ${i+1}`});cur+=dw;
+    if(i===1&&cur+lunch<=end){
+      blocks.push({type:'lunch',dur:lunch,label:'Déjeuner'});cur+=lunch;
+    } else if(i<minDW-1&&cur+rest<=end){
+      blocks.push({type:'rest',dur:rest,label:'Pause'});cur+=rest;
+    }
+  }
+  if(cur+20<=end){ blocks.push({type:'review',dur:20,label:'Bilan'});cur+=20; }
+  if(cur<end) blocks.push({type:'light',dur:end-cur,label:'Tâches légères'});
+
+  const clr={warmup:'var(--gold)',deepwork:'var(--purple)',rest:'var(--teal)',
+    lunch:'var(--green)',light:'rgba(255,255,255,0.12)',review:'var(--blue)'};
+  const totalDur=end-start||1;
+  const bar=document.getElementById('dw-bar');
+  bar.innerHTML=blocks.map(b=>`
+    <div class="dw-seg" style="flex:${b.dur/totalDur};background:${clr[b.type]}22;
+      border-left:2px solid ${clr[b.type]};color:${clr[b.type]}">
+      ${b.dur>=40?b.label:''}
+    </div>`).join('');
+
+  const dwBlocks=blocks.filter(b=>b.type==='deepwork');
+  const totalDW=dwBlocks.reduce((s,b)=>s+b.dur,0);
+  document.getElementById('dw-day-preview').innerHTML=`
+    <div style="font-size:12px;color:var(--t2);margin-bottom:6px">
+      ${m2t(start)} → ${m2t(end)} ·
+      <span style="color:var(--pl);font-weight:700">${dwBlocks.length}× Deep Work</span> ·
+      <span style="color:var(--gold)">${durFmt(totalDW)} de focus profond</span>
+    </div>`;
+}
+function saveSettings(){
+  D.settings={
+    name:document.getElementById('s-name').value.trim()||'Léo',
+    workStart:document.getElementById('s-start').value,
+    workEnd:document.getElementById('s-end').value,
+    dwDuration:parseInt(document.getElementById('s-dw-dur').value),
+    restDuration:parseInt(document.getElementById('s-rest-dur').value),
+    minDW:parseInt(document.getElementById('s-min-dw').value),
+    warmup:parseInt(document.getElementById('s-warmup').value),
+    lunchDuration:parseInt(document.getElementById('s-lunch-dur').value),
+    notifDW:document.getElementById('s-notif-dw').checked,
+    notifEnd:document.getElementById('s-notif-end').checked,
+    notifHabit:document.getElementById('s-notif-habit').checked,
+    notifPlan:document.getElementById('s-notif-plan').checked,
+    habitReminderTime:document.getElementById('s-habit-time').value,
+    planReminderTime:document.getElementById('s-plan-time').value,
+    jsonbinKey:document.getElementById('s-jsonbin-key').value.trim(),
+    jsonbinId:document.getElementById('s-jsonbin-id').value.trim(),
+  };
+  scheduleTodayNotifications();
+  save(); closeModal('settings-modal'); render(curPage);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PLANNING MODAL
+// ═══════════════════════════════════════════════════════════════
+let planDate='';
+let planOrder=[];
+let pendingSchedule=null;
+
+function openPlanModal(targetDate){
+  planDate=targetDate;
+  pendingSchedule=null;
+  document.getElementById('save-plan-btn').style.display='none';
+
+  const dt=parseDate(targetDate);
+  document.getElementById('plan-modal-title').textContent=
+    `🗓 Planifier — ${DAYS[dt.getDay()]} ${dt.getDate()} ${MONTHS[dt.getMonth()]}`;
+  document.getElementById('plan-modal-sub').textContent=
+    'Organisez vos tâches et laissez APEX structurer votre Deep Work selon la méthode Cal Newport.';
+
+  // Init plan order from saved or default (priority sort)
+  const dayTasks=D.tasks.filter(t=>t.date===targetDate);
+  if(D.planOrders[targetDate]){
+    planOrder=[...D.planOrders[targetDate]];
+    // Add any new tasks not yet in order
+    dayTasks.forEach(t=>{ if(!planOrder.includes(t.id)) planOrder.push(t.id); });
+  } else {
+    const po={high:0,medium:1,low:2};
+    planOrder=dayTasks.sort((a,b)=>po[a.priority]-po[b.priority]).map(t=>t.id);
+  }
+
+  document.getElementById('plan-schedule-preview').innerHTML='';
+  document.getElementById('plan-add-form').classList.add('hidden');
+  renderPlanTasks();
+  document.getElementById('plan-modal').classList.add('open');
+}
+
+function renderPlanTasks(){
+  const list=document.getElementById('plan-tasks-list');
+  const tasks=planOrder.map(id=>D.tasks.find(t=>t.id===id)).filter(Boolean);
+  if(!tasks.length){
+    list.innerHTML=`<div class="empty" style="padding:20px"><p>Aucune tâche pour ce jour.<br>Ajoutez-en ci-dessous !</p></div>`;
+    return;
+  }
+  const pp={high:'pp-high',medium:'pp-medium',low:'pp-low'};
+  const pl={high:'Urgent',medium:'Normal',low:'Secondaire'};
+  list.innerHTML=tasks.map((tk,i)=>`
+    <div class="plan-task-item" id="pti-${tk.id}">
+      <div class="plan-order-badge">${i+1}</div>
+      <div class="plan-task-txt">${esc(tk.title)}</div>
+      <span class="plan-priority-badge ${pp[tk.priority]}">${pl[tk.priority]}</span>
+      <button class="plan-move-btn" onclick="movePlanTask('${tk.id}',-1)" ${i===0?'disabled':''}>↑</button>
+      <button class="plan-move-btn" onclick="movePlanTask('${tk.id}',1)" ${i===tasks.length-1?'disabled':''}>↓</button>
+    </div>`).join('');
+}
+
+function movePlanTask(id,dir){
+  const idx=planOrder.indexOf(id); if(idx<0) return;
+  const newIdx=idx+dir;
+  if(newIdx<0||newIdx>=planOrder.length) return;
+  [planOrder[idx],planOrder[newIdx]]=[planOrder[newIdx],planOrder[idx]];
+  renderPlanTasks();
+}
+
+function togglePlanTaskForm(){
+  document.getElementById('plan-add-form').classList.toggle('hidden');
+  if(!document.getElementById('plan-add-form').classList.contains('hidden'))
+    document.getElementById('p-task-title').focus();
+}
+function ptPress(e){ if(e.key==='Enter') addPlanTask(); }
+function addPlanTask(){
+  const title=document.getElementById('p-task-title').value.trim(); if(!title) return;
+  const task={id:uid(),title,domain:document.getElementById('p-task-domain').value,
+    priority:document.getElementById('p-task-priority').value,date:planDate,done:false,createdAt:Date.now()};
+  D.tasks.push(task); save();
+  planOrder.push(task.id);
+  document.getElementById('p-task-title').value='';
+  document.getElementById('plan-add-form').classList.add('hidden');
+  renderPlanTasks();
+}
+
+function generateAndShow(){
+  if(planOrder.length===0){
+    document.getElementById('plan-schedule-preview').innerHTML=
+      `<div class="empty" style="padding:16px"><p>Ajoutez des tâches d'abord !</p></div>`; return;
+  }
+  pendingSchedule=generateSchedule(planOrder,planDate);
+  document.getElementById('plan-schedule-preview').innerHTML=
+    `<div class="schedule-wrap">${scheduleHTML(pendingSchedule)}</div>`;
+  document.getElementById('save-plan-btn').style.display='flex';
+}
+
+function savePlan(){
+  if(!pendingSchedule) return;
+  D.planOrders[planDate]=[...planOrder];
+  D.schedules[planDate]=pendingSchedule;
+  save();
+  closeModal('plan-modal');
+  render(curPage);
+  if(curPage==='today') renderToday();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WHY MODAL
+// ═══════════════════════════════════════════════════════════════
+function openWhy(){
+  document.getElementById('why-input').value=D.why||'';
+  document.getElementById('why-modal').classList.add('open');
+  setTimeout(()=>document.getElementById('why-input').focus(),300);
+}
+function saveWhy(){
+  D.why=document.getElementById('why-input').value.trim(); save();
+  closeModal('why-modal'); render(curPage);
+}
+
+// Close modals on overlay click
+document.querySelectorAll('.modal-ov').forEach(ov=>{
+  ov.addEventListener('click',function(e){ if(e.target===this) closeModal(this.id); });
+});
+
+// ═══════════════════════════════════════════════════════════════
+// NOTIFICATIONS
+// ═══════════════════════════════════════════════════════════════
+let _notifTimeouts = [];
+
+function renderNotifPermBanner(){
+  const wrap = document.getElementById('notif-perm-wrap');
+  if(!wrap) return;
+  if(!('Notification' in window)){
+    wrap.innerHTML=`<div class="notif-banner perm-denied"><span>❌</span><span style="font-size:12.5px">Notifications non supportées sur ce navigateur.</span></div>`;
+    return;
+  }
+  const perm = Notification.permission;
+  if(perm==='granted'){
+    wrap.innerHTML=`<div class="notif-banner perm-ok"><span>✅</span><span style="font-size:12.5px;color:var(--green);font-weight:600">Notifications activées — prêt à vous alerter !</span></div>`;
+  } else if(perm==='denied'){
+    wrap.innerHTML=`<div class="notif-banner perm-denied"><span>🚫</span><div><div style="font-size:12.5px;font-weight:600;color:var(--coral)">Notifications bloquées</div><div style="font-size:11px;color:var(--t3);margin-top:2px">Allez dans les réglages de votre navigateur pour les réactiver.</div></div></div>`;
+  } else {
+    wrap.innerHTML=`<div class="notif-banner perm-no"><span>🔔</span><div style="flex:1"><div style="font-size:12.5px;font-weight:600;color:var(--pl)">Activer les notifications</div><div style="font-size:11px;color:var(--t3);margin-top:2px">Recevez vos alertes Deep Work et rappels quotidiens.</div></div><button class="btn btn-sm" onclick="requestNotifPermission()">Activer</button></div>`;
+  }
+}
+
+async function requestNotifPermission(){
+  if(!('Notification' in window)) return;
+  const perm = await Notification.requestPermission();
+  renderNotifPermBanner();
+  if(perm==='granted'){
+    scheduleTodayNotifications();
+    setTimeout(()=>{
+      showNotif('🔔 APEX activé !','Les notifications Deep Work sont prêtes.','apex-test');
+    }, 500);
+  }
+}
+
+async function testNotif(){
+  if(!('Notification' in window)){
+    alert('Votre navigateur ne supporte pas les notifications.');
+    return;
+  }
+  if(Notification.permission !== 'granted'){
+    const perm = await Notification.requestPermission();
+    renderNotifPermBanner();
+    if(perm !== 'granted') return;
+  }
+  const msgs = [
+    { title:'🧠 Deep Work #1 — Go !', body:'Ferme tout le reste. Concentration totale.\nFocus : Analyser les performances Shopify' },
+    { title:'✅ Bloc terminé — Bravo !', body:'☕ 20 min de pause méritée. Éloigne-toi de l\'écran.' },
+    { title:'🔥 Rappel habitudes', body:'2/4 habitudes cochées aujourd\'hui. Il reste du temps !' },
+    { title:'🗓 Prépare ta journée de demain', body:'5 minutes pour planifier ton Deep Work. Ta version future te remerciera.' },
+  ];
+  const m = msgs[Math.floor(Math.random() * msgs.length)];
+  await showNotif(m.title, m.body, 'apex-test-' + Date.now());
+}
+
+async function showNotif(title, body, tag='apex'){
+  if(Notification.permission!=='granted') return;
+  try {
+    if('serviceWorker' in navigator){
+      const reg = await navigator.serviceWorker.ready;
+      await reg.showNotification(title,{body,icon:'./apple-touch-icon.png',badge:'./apple-touch-icon.png',
+        vibrate:[200,100,200],tag,data:{action:'open'}});
+    } else {
+      new Notification(title,{body,icon:'./apple-touch-icon.png',tag});
+    }
+  } catch(e){ new Notification(title,{body,tag}); }
+}
+
+function clearNotifs(){
+  _notifTimeouts.forEach(id=>clearTimeout(id));
+  _notifTimeouts=[];
+}
+
+function msUntilTime(timeStr){
+  const now=new Date();
+  const [h,m]=timeStr.split(':').map(Number);
+  const target=new Date(now); target.setHours(h,m,0,0);
+  return target.getTime()-now.getTime();
+}
+function msUntilMin(min){
+  return msUntilTime(m2t(min));
+}
+
+function scheduleTodayNotifications(){
+  clearNotifs();
+  if(Notification.permission!=='granted') return;
+  const s=D.settings; const t=today();
+
+  // ── Deep Work start & end
+  const schedule=D.schedules[t];
+  if(schedule && schedule.length){
+    schedule.forEach(block=>{
+      if(block.type!=='deepwork') return;
+      const task=D.tasks.find(x=>x.id===block.taskId);
+      const taskName=task?task.title:'Session focus';
+
+      // Début : alerte 1 min avant + exactement à l'heure
+      if(s.notifDW!==false){
+        const delay1=msUntilMin(block.start-1);
+        if(delay1>0) _notifTimeouts.push(setTimeout(()=>{
+          showNotif(`🧠 Deep Work dans 1 minute`,`Prépare-toi. Ferme tout le reste.`,'dw-soon');
+        }, delay1));
+        const delay2=msUntilMin(block.start);
+        if(delay2>0) _notifTimeouts.push(setTimeout(()=>{
+          showNotif(`🧠 Deep Work #${block.session} — Go !`,`${taskName}\nConcentration totale.`,'dw-start');
+        }, delay2));
+      }
+
+      // Fin : félicitations + rappel pause
+      if(s.notifEnd!==false){
+        const delayEnd=msUntilMin(block.end);
+        if(delayEnd>0) _notifTimeouts.push(setTimeout(()=>{
+          const rest=s.restDuration||20;
+          showNotif(`✅ Bloc #${block.session} terminé — Bravo !`,`☕ ${rest} min de pause méritée. Éloigne-toi de l'écran.`,'dw-end');
+        }, delayEnd));
+      }
+    });
+  }
+
+  // ── Rappel habitudes
+  if(s.notifHabit!==false){
+    const delay=msUntilTime(s.habitReminderTime||'19:00');
+    if(delay>0) _notifTimeouts.push(setTimeout(()=>{
+      const total=D.habits.length;
+      if(!total) return;
+      const done=D.habits.filter(h=>(D.hc[h.id]||{})[today()]).length;
+      if(done<total){
+        showNotif('🔥 Rappel habitudes',`${done}/${total} cochées aujourd'hui. Il reste du temps !`,'habits');
+      }
+    }, delay));
+  }
+
+  // ── Rappel planning demain
+  if(s.notifPlan!==false){
+    const delay=msUntilTime(s.planReminderTime||'20:00');
+    if(delay>0) _notifTimeouts.push(setTimeout(()=>{
+      const tmr=tomorrowDate();
+      if(!D.schedules[tmr]){
+        showNotif('🗓 Prépare ta journée de demain','5 minutes pour planifier ton Deep Work. Ta version future te remerciera.','plan');
+      }
+    }, delay));
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SAMPLE DATA
+// ═══════════════════════════════════════════════════════════════
+function seedData(){
+  const t=today(); const tm=tomorrowDate();
+  D.tasks=[
+    {id:uid(),title:'Analyser les performances de la boutique Shopify',domain:'business',priority:'high',date:t,done:false,createdAt:Date.now()},
+    {id:uid(),title:'Répondre aux emails clients en attente',domain:'business',priority:'medium',date:t,done:false,createdAt:Date.now()},
+    {id:uid(),title:'Séance sport — 30 min cardio',domain:'sport',priority:'high',date:t,done:false,createdAt:Date.now()},
+    {id:uid(),title:'Préparer la campagne email Klaviyo',domain:'business',priority:'high',date:tm,done:false,createdAt:Date.now()},
+    {id:uid(),title:'Écrire l\'article de blog SEO',domain:'business',priority:'medium',date:tm,done:false,createdAt:Date.now()},
+  ];
+  D.habits=[
+    {id:uid(),name:'Méditation',emoji:'🧘',domain:'personal',createdAt:Date.now()},
+    {id:uid(),name:'Sport quotidien',emoji:'💪',domain:'sport',createdAt:Date.now()},
+    {id:uid(),name:'Lecture 20 min',emoji:'📚',domain:'personal',createdAt:Date.now()},
+    {id:uid(),name:'Dashboard Shopify',emoji:'📊',domain:'business',createdAt:Date.now()},
+  ];
+  D.goals=[{
+    id:uid(),title:'Atteindre 10 000 € de CA mensuel',domain:'business',
+    krs:[
+      {id:uid(),text:'Lancer 2 nouvelles collections produits',done:false},
+      {id:uid(),text:'Doubler le trafic organique SEO',done:false},
+      {id:uid(),text:'Atteindre 500 abonnés email qualifiés',done:false},
+    ],createdAt:Date.now()
+  }];
+  save();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════
+function init(){
+  if(!D.tasks.length&&!D.habits.length&&!D.goals.length) seedData();
+  selDay=today();
+  document.getElementById('f-task-date').value=today();
+  updateSidebarDate();
+  renderToday();
+  setInterval(()=>{ if(curPage==='today') renderToday(); updateSidebarDate(); },60000);
+
+  // PWA — Service Worker
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg=>{ console.log('[APEX] SW enregistré:', reg.scope); })
+      .catch(err=>console.warn('[APEX] SW non enregistré (normal en local):', err));
+  }
+
+  // Notifications — si déjà accordées, planifier
+  if('Notification' in window && Notification.permission==='granted'){
+    scheduleTodayNotifications();
+  }
+
+  // Replanifier les notifs à minuit
+  const now=new Date();
+  const msToMidnight=(new Date(now.getFullYear(),now.getMonth(),now.getDate()+1,0,1)-now);
+  setTimeout(()=>{ scheduleTodayNotifications(); setInterval(scheduleTodayNotifications,86400000); }, msToMidnight);
+}
+
+  // ── Widget JSONBin sync ───────────────────────────────────────────────
+  async function setupJsonBin(){
+    const key=document.getElementById('s-jsonbin-key').value.trim();
+    if(!key){alert("Entre ta Master Key JSONBin d'abord.");return;}
+    const el=document.getElementById('widget-sync-status');
+    el.textContent='Création du bin…'; el.style.color='#8B8BA8';
+    try{
+      const r=await fetch('https://api.jsonbin.io/v3/b',{method:'POST',
+        headers:{'Content-Type':'application/json','X-Master-Key':key,
+          'X-Bin-Name':'APEX Widget','X-Bin-Private':'false'},
+        body:JSON.stringify(buildWidgetPayload())});
+      const j=await r.json();
+      if(j.metadata&&j.metadata.id){
+        document.getElementById('s-jsonbin-id').value=j.metadata.id;
+        el.textContent='✅ Bin créé ! Bin ID : '+j.metadata.id;
+        el.style.color='#22D3EE';
+      } else { el.textContent='Erreur : '+(j.message||'inconnue'); el.style.color='#F87171'; }
+    } catch(e){ el.textContent='Erreur réseau'; el.style.color='#F87171'; }
+  }
+
+  function buildWidgetPayload(){
+    const td=today();
+    const todayTasks=(D.tasks||[]).filter(t=>t.date===td||(!t.date&&!t.done));
+    const todayDone=todayTasks.filter(t=>t.done).length;
+    const habits=D.habits||[];
+    const hc=D.hc||{};
+    const habDone=habits.filter(h=>hc[h.id]&&hc[h.id][td]).length;
+    const sched=(D.schedules&&D.schedules[td])||[];
+    const now=new Date();
+    const nowMin=now.getHours()*60+now.getMinutes();
+    const nextDW=sched.find(b=>b.type==='deepwork'&&(parseInt(b.start.split(':')[0])*60+parseInt(b.start.split(':')[1]))>nowMin);
+    return{date:td,name:D.settings.name||'Léo',tasksDone:todayDone,
+      tasksTotal:todayTasks.length,habitsDone:habDone,habitsTotal:habits.length,
+      nextDW:nextDW?nextDW.start:null,syncedAt:new Date().toISOString()};
+  }
+
+  async function syncWidget(manual=false){
+    const key=D.settings.jsonbinKey, id=D.settings.jsonbinId;
+    if(!key||!id) return;
+    const el=document.getElementById('widget-sync-status');
+    if(el&&manual){ el.textContent='Synchronisation…'; el.style.color='#8B8BA8'; }
+    try{
+      const r=await fetch('https://api.jsonbin.io/v3/b/'+id,{method:'PUT',
+        headers:{'Content-Type':'application/json','X-Master-Key':key},
+        body:JSON.stringify(buildWidgetPayload())});
+      const j=await r.json();
+      if(el&&manual){ el.textContent=j.record?'✅ Widget synchronisé !':'Erreur sync'; el.style.color=j.record?'#22D3EE':'#F87171'; }
+    } catch(e){ if(el&&manual){ el.textContent='Erreur réseau'; el.style.color='#F87171'; } }
+  }
+
+init();
+</script>
+</body>
+</html>
