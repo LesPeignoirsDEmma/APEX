@@ -1,14 +1,15 @@
 // APEX Service Worker — PWA + Notification support
-const CACHE_NAME = 'apex-cache-v1';
+const CACHE_NAME = 'apex-cache-v2';
 const CACHE_URLS = [
-  './APEX — Mon Système de Vie.html',
+  './',
+  './index.html',
   './manifest.json',
-  './icon.svg',
+  './apple-touch-icon.png',
 ];
 
 // ── INSTALL: cache les fichiers pour mode hors-ligne
 self.addEventListener('install', e => {
-  console.log('[SW] Install');
+  console.log('[SW] Install v2');
   e.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll(CACHE_URLS).catch(err => {
@@ -19,12 +20,17 @@ self.addEventListener('install', e => {
   self.skipWaiting();
 });
 
-// ── ACTIVATE
+// ── ACTIVATE: supprime TOUS les anciens caches
 self.addEventListener('activate', e => {
-  console.log('[SW] Activate');
+  console.log('[SW] Activate v2 — nettoyage ancien cache');
   e.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+      Promise.all(keys.map(k => {
+        if (k !== CACHE_NAME) {
+          console.log('[SW] Suppression cache:', k);
+          return caches.delete(k);
+        }
+      }))
     )
   );
   self.clients.claim();
@@ -53,23 +59,21 @@ self.addEventListener('notificationclick', e => {
   const action = e.notification.data && e.notification.data.action;
   e.waitUntil(
     self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clients => {
-      // Si l'app est déjà ouverte, la mettre en avant
       for (const client of clients) {
-        if (client.url.includes('APEX') && 'focus' in client) {
+        if (client.url.includes('github.io') && 'focus' in client) {
           client.focus();
           if (action) client.postMessage({ type: 'NOTIF_ACTION', action });
           return;
         }
       }
-      // Sinon, ouvrir l'app
       if (self.clients.openWindow) {
-        return self.clients.openWindow('./APEX — Mon Système de Vie.html');
+        return self.clients.openWindow('./');
       }
     })
   );
 });
 
-// ── MESSAGE: reçoit des instructions depuis l'app principale
+// ── MESSAGE
 self.addEventListener('message', e => {
   if (e.data && e.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
