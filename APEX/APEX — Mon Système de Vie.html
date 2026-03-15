@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="APEX">
 <meta name="theme-color" content="#7B68EE">
-<link rel="apple-touch-icon" href="icon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -1705,10 +1705,10 @@ async function showNotif(title, body, tag='apex'){
   try {
     if('serviceWorker' in navigator){
       const reg = await navigator.serviceWorker.ready;
-      await reg.showNotification(title,{body,icon:'./icon.svg',badge:'./icon.svg',
+      await reg.showNotification(title,{body,icon:'./apple-touch-icon.png',badge:'./apple-touch-icon.png',
         vibrate:[200,100,200],tag,data:{action:'open'}});
     } else {
-      new Notification(title,{body,icon:'./icon.svg',tag});
+      new Notification(title,{body,icon:'./apple-touch-icon.png',tag});
     }
   } catch(e){ new Notification(title,{body,tag}); }
 }
