@@ -1,0 +1,24 @@
+{
+  "name": "APEX — Mon Système de Vie",
+  "short_name": "APEX",
+  "description": "Deep Work · OKR · Habitudes · Planning",
+  "start_url": "./APEX — Mon Système de Vie.html",
+  "display": "standalone",
+  "background_color": "#080810",
+  "theme_color": "#7B68EE",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
