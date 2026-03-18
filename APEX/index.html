@@ -784,6 +784,8 @@ html[data-theme="light"]{
 /* ═══ OVERDUE BANNER ═══ */
 .overdue-banner{background:rgba(247,201,72,.08);border:1px solid rgba(247,201,72,.25);border-radius:var(--rsm);padding:10px 14px;margin-bottom:12px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:#F7C948}
 </style>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 <svg id="apex-icons" xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -1679,21 +1681,22 @@ html[data-theme="light"]{
     </div>
 
     <div class="setting-group" style="margin-top:14px">
-      <div class="slbl mb-8">☁️ Sync Mac ↔ iPhone</div>
+      <div class="slbl mb-8">☁️ Sync Temps Réel (Firebase)</div>
       <div class="setting-desc" style="margin-bottom:10px">
-        Synchronisation automatique entre tous vos appareils via <strong>JSONBin.io</strong> (gratuit).
-        <br>1. Créez un compte sur <strong>jsonbin.io</strong>
-        <br>2. Créez un <strong>Bin</strong> (JSON vide <code>{}</code>) → copiez son ID
-        <br>3. Dans <em>API Keys</em> → copiez votre <em>Master Key</em>
+        Sync instantanée entre tous vos appareils via <strong>Firebase</strong> (gratuit).
+        <br>1. <a href="https://console.firebase.google.com" target="_blank" style="color:var(--purple)">console.firebase.google.com</a> → Nouveau projet
+        <br>2. Activez <strong>Firestore Database</strong> (mode production)
+        <br>3. <em>Paramètres → Vos apps → Web</em> → copiez le JSON <code>firebaseConfig</code>
+        <br>4. Choisissez un <strong>ID de sync</strong> (même valeur sur tous vos appareils)
       </div>
       <div class="form-row">
-        <input class="finput" id="s-sync-bin" placeholder="Bin ID (ex: 64abc…)" style="flex:1">
+        <textarea class="finput" id="s-sync-cfg" placeholder='{"apiKey":"AIza...","authDomain":"xxx.firebaseapp.com","projectId":"xxx"}' style="flex:1;height:90px;resize:vertical;font-size:11px;font-family:monospace;line-height:1.4"></textarea>
       </div>
-      <div class="form-row">
-        <input class="finput" id="s-sync-key" type="password" placeholder="Master Key ($2a$10$…)" style="flex:1">
+      <div class="form-row" style="margin-top:6px">
+        <input class="finput" id="s-sync-doc" placeholder="ID de sync (ex: leo-apex-perso)" style="flex:1">
       </div>
       <div style="display:flex;gap:8px;margin-top:6px">
-        <button class="btn btn-sm btn-ghost" onclick="testSyncConnection()" style="flex:1">🔌 Tester la connexion</button>
+        <button class="btn btn-sm btn-ghost" onclick="testSyncConnection()" style="flex:1">🔌 Tester &amp; connecter</button>
         <button class="btn btn-sm btn-ghost" onclick="manualSync()" style="flex:1"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0"><use href="#ico-refresh"/></svg> Sync maintenant</button>
       </div>
       <div id="sync-test-status" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px"></div>
@@ -1828,8 +1831,8 @@ const DEFAULTS = {
     notifDW:true, notifEnd:true, notifHabit:true, notifPlan:true,
     habitReminderTime:'19:00', planReminderTime:'20:00',
     claudeApiKey:'',
-    syncBinId:'',
-    syncKey:'',
+    firebaseConfig:'',
+    syncDocId:'',
     theme:'dark',
   }
 };
@@ -1842,12 +1845,12 @@ let D = (() => {
     };
   }catch(e){return {...DEFAULTS};}
 })();
-let _syncTimer=null, _syncPending=false;
+let _syncTimer=null, _syncPending=false, _dirty=false, _db=null, _unsubscribe=null;
 function save(){
   D._localTs=Date.now();
+  _dirty=true;
   localStorage.setItem(SK, JSON.stringify(D));
-  // Sync auto — debounce 2s pour ne pas spammer l'API
-  if(D.settings.syncBinId&&D.settings.syncKey){
+  if(D.settings.firebaseConfig&&D.settings.syncDocId){
     clearTimeout(_syncTimer);
     _syncTimer=setTimeout(pushSync,2000);
   }
@@ -1866,148 +1869,104 @@ function setSyncBadge(state, label){
 }
 
 async function pushSync(){
-  const {syncBinId:binId, syncKey:key}=D.settings;
-  if(!binId||!key) return;
+  if(!_db) return;
+  const docId=D.settings.syncDocId;
+  if(!docId) return;
   setSyncBadge('syncing','Sync...');
   try{
-    const r=await fetch(`https://api.jsonbin.io/v3/b/${binId}`,{
-      method:'PUT',
-      headers:{'Content-Type':'application/json','X-Master-Key':key},
-      body:JSON.stringify({...D,_device:(navigator.platform||'unknown')})
-    });
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    setSyncBadge('synced','Synced ✓');
-    setTimeout(()=>setSyncBadge('','Sync'),4000);
+    await _db.collection('apex').doc(docId).set({...D,_device:(navigator.platform||'unknown')});
+    _dirty=false;
+    setSyncBadge('synced','Sauvé ✓');
+    setTimeout(()=>setSyncBadge('','Sync'),3000);
   }catch(e){
-    console.warn('[APEX Sync] Push failed:',e.message);
     setSyncBadge('error','Erreur sync');
-    setTimeout(()=>setSyncBadge('','Sync'),5000);
+    console.error('pushSync error:',e);
+    setTimeout(pushSync,10000);
   }
 }
 
-async function pullSync(silent=false){
-  const {syncBinId:binId, syncKey:key}=D.settings;
-  if(!binId||!key) return false;
-  if(!silent) setSyncBadge('syncing','Pull...');
-  try{
-    const r=await fetch(`https://api.jsonbin.io/v3/b/${binId}/latest`,{
-      headers:{'X-Master-Key':key}
-    });
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const json=await r.json();
-    const remote=json.record;
-    if(!remote||typeof remote!=='object') throw new Error('Format invalide');
-    const localTs=D._localTs||0;
-    const remoteTs=remote._localTs||0;
-    const remoteSettings=remote.settings||{};
-    // Toujours fusionner les settings "partagés" entre appareils (clé API, nom, etc.)
-    // même si le remote n'est pas plus récent — pour éviter de perdre la clé API
-    const sharedSettingsKeys=['claudeApiKey','name','why','theme','notifHabits','notifPlan','habitReminderTime','planReminderTime'];
-    sharedSettingsKeys.forEach(k=>{
-      if(remoteSettings[k]&&!D.settings[k]) D.settings[k]=remoteSettings[k];
-    });
-    // Si la version distante est plus récente, on charge tout
-    if(remoteTs>localTs+5000){ // marge 5s pour éviter les conflits sur le même appareil
-      // Préserver les credentials sync locaux pour ne pas se déconnecter
-      const localSyncBinId=D.settings.syncBinId;
-      const localSyncKey=D.settings.syncKey;
-      const merged={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...remoteSettings}};
-      Object.assign(D,merged);
-      // Restaurer les credentials sync si le remote les avait vides
-      if(!D.settings.syncBinId&&localSyncBinId) D.settings.syncBinId=localSyncBinId;
-      if(!D.settings.syncKey&&localSyncKey) D.settings.syncKey=localSyncKey;
-      localStorage.setItem(SK,JSON.stringify(D));
-      if(!silent){
-        setSyncBadge('synced','Mis à jour ✓');
-        setTimeout(()=>setSyncBadge('','Sync'),3000);
-        render(window.curPage||'today');
-        showToast('✅ Données mises à jour depuis l\'autre appareil');
-      }
-      return true;
-    } else {
-      localStorage.setItem(SK,JSON.stringify(D)); // sauver les settings fusionnés
-      if(!silent){
-        setSyncBadge('synced','À jour ✓');
-        setTimeout(()=>setSyncBadge('','Sync'),3000);
-        showToast('✅ Paramètres synchronisés');
-      }
-      return false;
-    }
-  }catch(e){
-    console.warn('[APEX Sync] Pull failed:',e.message);
-    if(!silent) setSyncBadge('error','Erreur '+e.message);
-    setTimeout(()=>setSyncBadge('','Sync'),5000);
-    return false;
-  }
-}
+
+
+
 
 function manualSync(){
-  const {syncBinId,syncKey}=D.settings;
-  if(!syncBinId||!syncKey){
+  const {firebaseConfig,syncDocId}=D.settings;
+  if(!firebaseConfig||!syncDocId){
     openSettings();
-    showToast('⚙️ Configurez d\'abord le Sync dans les Réglages','error');
+    showToast('⚙️ Configurez d\'abord Firebase dans les Réglages','error');
     return;
   }
-  pullSync(false);
+  if(_dirty) pushSync();
+  else showToast('✅ Données déjà synchronisées','');
 }
 
 async function initSync(){
-  const {syncBinId,syncKey}=D.settings;
-  if(!syncBinId||!syncKey) return;
-  setSyncBadge('syncing','Connexion...');
-  // Au démarrage : pull silencieux
-  const updated=await pullSync(true);
-  if(!updated){
-    setSyncBadge('synced','Synced ✓');
-    setTimeout(()=>setSyncBadge('','Sync'),3000);
+  const cfg=D.settings.firebaseConfig;
+  const docId=D.settings.syncDocId;
+  if(!cfg||!docId) return;
+  let config;
+  try{ config=typeof cfg==='string'?JSON.parse(cfg):cfg; }
+  catch(e){ showToast('❌ Config Firebase invalide','error'); return; }
+  try{
+    if(!firebase.apps.length) firebase.initializeApp(config);
+    _db=firebase.firestore();
+    _db.enablePersistence({synchronizeTabs:false}).catch(()=>{});
+    setSyncBadge('syncing','Connexion...');
+    if(_unsubscribe) _unsubscribe();
+    _unsubscribe=_db.collection('apex').doc(docId).onSnapshot((snap)=>{
+      if(!snap.exists){
+        pushSync();
+        return;
+      }
+      const remote=snap.data();
+      const remoteTs=remote._localTs||0;
+      const localTs=D._localTs||0;
+      if(remoteTs>localTs+5000&&!_dirty){
+        const savedDocId=D.settings.syncDocId;
+        const savedCfg=D.settings.firebaseConfig;
+        const merged={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...(remote.settings||{})}};
+        Object.assign(D,merged);
+        D.settings.syncDocId=savedDocId;
+        D.settings.firebaseConfig=savedCfg;
+        localStorage.setItem(SK,JSON.stringify(D));
+        renderAll();
+        setSyncBadge('synced','Mis à jour ✓');
+        setTimeout(()=>setSyncBadge('','Sync'),3000);
+      } else {
+        setSyncBadge('synced','Connecté ✓');
+        setTimeout(()=>setSyncBadge('','Sync'),3000);
+      }
+    },(err)=>{
+      setSyncBadge('error','Erreur');
+      console.error('Firebase listener error:',err);
+    });
+  }catch(e){
+    setSyncBadge('error','Config invalide');
+    console.error('Firebase init error:',e);
   }
-  // Pull toutes les 30 secondes
-  if(window._syncInterval) clearInterval(window._syncInterval);
-  window._syncInterval=setInterval(()=>{
-    if(D.settings.syncBinId&&D.settings.syncKey) pullSync(true);
-  }, 30*1000);
-  // Pull immédiat quand on revient sur l'app (onglet ou fenêtre)
-  document.removeEventListener('visibilitychange',_onVisibility);
-  document.addEventListener('visibilitychange',_onVisibility);
-  window.removeEventListener('focus',_onFocus);
-  window.addEventListener('focus',_onFocus);
-}
-let _lastFocusPull=0;
-function _onVisibility(){
-  if(document.visibilityState==='visible') _triggerFocusPull();
-}
-function _onFocus(){
-  _triggerFocusPull();
-}
-async function _triggerFocusPull(){
-  if(!D.settings.syncBinId||!D.settings.syncKey) return;
-  const now=Date.now();
-  if(now-_lastFocusPull<5000) return; // anti-spam 5s
-  _lastFocusPull=now;
-  setSyncBadge('syncing','Sync...');
-  await pullSync(true);
 }
 
 async function testSyncConnection(){
-  const binId=document.getElementById('s-sync-bin').value.trim();
-  const rawKey=document.getElementById('s-sync-key').value;
-  // Si le champ affiche le placeholder bullets, utiliser la clé sauvegardée
-  const key=(rawKey&&rawKey!=='••••••••')?rawKey.trim():(D.settings.syncKey||'');
+  const rawCfg=document.getElementById('s-sync-cfg').value.trim();
+  const docId=document.getElementById('s-sync-doc').value.trim();
   const statusEl=document.getElementById('sync-test-status');
-  if(!binId||!key){statusEl.textContent='⚠️ Remplissez les deux champs';statusEl.style.color='#F59E0B';return;}
+  if(!rawCfg||!docId){statusEl.textContent='⚠️ Remplissez les deux champs';statusEl.style.color='#F59E0B';return;}
   statusEl.textContent='⏳ Test en cours...'; statusEl.style.color='var(--t2)';
+  let config;
+  try{ config=JSON.parse(rawCfg); }
+  catch(e){ statusEl.textContent='❌ JSON Firebase invalide'; statusEl.style.color='var(--coral)'; return; }
   try{
-    const r=await fetch(`https://api.jsonbin.io/v3/b/${binId}/latest`,{
-      headers:{'X-Master-Key':key,'X-Bin-Meta':false}
-    });
-    if(r.ok){
-      statusEl.textContent='✅ Connexion réussie !'; statusEl.style.color='#10B981';
-    } else {
-      const err=await r.json().catch(()=>({}));
-      statusEl.textContent='❌ Erreur '+r.status+' — '+(err.message||'vérifiez votre clé et Bin ID'); statusEl.style.color='#ef4444';
-    }
+    if(!firebase.apps.length) firebase.initializeApp(config);
+    const db=firebase.firestore();
+    await db.collection('apex').doc(docId).get();
+    statusEl.textContent='✅ Firebase connecté !'; statusEl.style.color='var(--green)';
+    // Sauvegarder et lancer le listener
+    D.settings.firebaseConfig=rawCfg;
+    D.settings.syncDocId=docId;
+    save();
+    initSync();
   }catch(e){
-    statusEl.textContent='❌ Erreur réseau: '+e.message; statusEl.style.color='#ef4444';
+    statusEl.textContent='❌ Échec : '+e.message; statusEl.style.color='var(--coral)';
   }
 }
 
@@ -2726,8 +2685,8 @@ function openSettings(){
   document.getElementById('s-habit-time').value = s.habitReminderTime||'19:00';
   document.getElementById('s-plan-time').value = s.planReminderTime||'20:00';
   document.getElementById('s-claude-key').value = s.claudeApiKey||'';
-  document.getElementById('s-sync-bin').value = s.syncBinId||'';
-  const keyEl=document.getElementById('s-sync-key'); if(keyEl) keyEl.value=s.syncKey?'••••••••':'';
+  document.getElementById('s-sync-cfg').value = s.firebaseConfig||'';
+  document.getElementById('s-sync-doc').value = s.syncDocId||'';
   document.getElementById('sync-test-status').textContent='';
   renderProjectsList();
   renderNotifPermBanner();
@@ -2801,8 +2760,8 @@ function saveSettings(){
     planReminderTime:document.getElementById('s-plan-time').value,
     claudeApiKey:(document.getElementById('s-claude-key').value||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'')||D.settings.claudeApiKey||'',
     theme:document.getElementById('s-theme')?.value||D.settings.theme||'dark',
-    syncBinId:document.getElementById('s-sync-bin').value.trim()||'',
-    syncKey:(()=>{const v=document.getElementById('s-sync-key').value.trim();return(v&&v!=='••••••••')?v:(D.settings.syncKey||'');})(),
+    firebaseConfig:document.getElementById('s-sync-cfg').value.trim()||D.settings.firebaseConfig||'',
+    syncDocId:document.getElementById('s-sync-doc').value.trim()||'',
     _onboarded:D.settings._onboarded,
   };
   scheduleTodayNotifications();
