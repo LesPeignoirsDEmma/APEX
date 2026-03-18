@@ -2725,7 +2725,7 @@ function saveSettings(){
     notifPlan:document.getElementById('s-notif-plan').checked,
     habitReminderTime:document.getElementById('s-habit-time').value,
     planReminderTime:document.getElementById('s-plan-time').value,
-    claudeApiKey:document.getElementById('s-claude-key').value.trim()||D.settings.claudeApiKey||'',
+    claudeApiKey:(document.getElementById('s-claude-key').value||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'')||D.settings.claudeApiKey||'',
     theme:document.getElementById('s-theme')?.value||D.settings.theme||'dark',
     syncBinId:document.getElementById('s-sync-bin').value.trim()||'',
     syncKey:(()=>{const v=document.getElementById('s-sync-key').value.trim();return(v&&v!=='••••••••')?v:(D.settings.syncKey||'');})(),
@@ -3254,7 +3254,11 @@ async function sendAIMessage(){
 }
 
 async function callClaude(){
-  const key=D.settings.claudeApiKey; if(!key) return 'Configure ta clé API dans les Réglages.';
+  // Sanitize key — strip whitespace, newlines, invisible chars
+  const raw=D.settings.claudeApiKey||'';
+  const key=raw.replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+  if(!key) return '⚙️ Configure ta clé API Claude dans **Réglages** (clé commençant par `sk-ant-`).';
+  if(!key.startsWith('sk-ant-')) return '⚠️ Clé API invalide — elle doit commencer par `sk-ant-`. Vérifie dans Réglages.';
   const msgs=(D.conversations||[]).slice(-20).map(c=>({role:c.role==='user'?'user':'assistant',content:c.content}));
   try{
     const r=await fetch('https://api.anthropic.com/v1/messages',{
@@ -3264,7 +3268,15 @@ async function callClaude(){
     });
     if(!r.ok){ const e=await r.json(); return `❌ ${e.error?.message||'Erreur API ('+r.status+')' }`; }
     const d=await r.json(); return d.content[0].text;
-  }catch(e){ return `❌ Erreur réseau: ${e.message}`; }
+  }catch(e){
+    if(e.message.includes('pattern')||e.message.includes('header')){
+      return '⚠️ Clé API malformée (caractère invalide). Retourne dans Réglages, efface la clé et recolle-la proprement.';
+    }
+    if(e.message.includes('Failed to fetch')||e.message.includes('CORS')){
+      return '🌐 Impossible de joindre l\'API Anthropic. Vérifie ta connexion internet.';
+    }
+    return `❌ Erreur réseau: ${e.message}`;
+  }
 }
 
 function buildAIContext(){
@@ -4036,8 +4048,8 @@ async function analyzeAndSaveProject(){
   status.textContent='APEX IA analyse votre boutique...';
 
   let name,emoji,color,description;
-  const key=D.settings.claudeApiKey;
-  if(key){
+  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+  if(key&&key.startsWith('sk-ant-')){
     try{
       const r=await fetch('https://api.anthropic.com/v1/messages',{
         method:'POST',
@@ -4916,7 +4928,7 @@ function toggleQCMic(){
 }
 
 async function _analyzeWithAPEX(transcript){
-  const key=D.settings.claudeApiKey;
+  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
   const status=document.getElementById('qc-ai-status');
   const result=document.getElementById('qc-apex-result');
   const actions=document.getElementById('qc-result-actions');
