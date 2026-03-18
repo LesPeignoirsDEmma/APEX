@@ -203,6 +203,11 @@ async function main() {
       };
     } catch(e) { console.error(`  Ã¢ÂÂ Finance error:`, e.message); }
 
+    // Total all-time (tout le CA de la boutique)
+    try {
+      const tot = await computeCRO(shop, token, 36500);
+      result.boutiques[id].finance.allTime = { revenue: tot.revenue, orders: tot.orders };
+    } catch(e) { console.error('[allTime]', e.message); }
     // CRO pour les 3 pÃÂ©riodes
     result.boutiques[id].cro = {};
     for (const period of [7, 30, 90]) {
