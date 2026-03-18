@@ -3781,8 +3781,8 @@ function renderFinKPIs(){
   // Revenus (depuis cache Shopify ou saisie manuelle)
   let totalRev=0;
   const projs=D.projects||DEFAULT_PROJECTS;
- const _periodKeyMap={'7d':7,'30d':30,'3m':90};
-  const _pk=_pe,'total':'allTime'riodKeyMap[_finPeriod];
+ const _periodKeyMap={'7d':7,'30d':30,'3m':90,'total':'allTime'};
+  const _pk=_periodKeyMap[_finPeriod];
   projs.forEach(p=>{
     const c=getShopifyCache(p.id);
     const pd=_pk&&c.byPeriod&&c.byPeriod[_pk];
@@ -3868,10 +3868,10 @@ async function syncShopify(projectId){
     if(!bData||!bData.finance) throw new Error('Aucune donnée pour cette boutique dans shopify-data.json');
     const fin=bData.finance;
     setShopifyCache(projectId,{revenue:fin.revenue||0, orders:fin.orders||0, currency:fin.currency||'EUR', syncedAt:Date.now(),
-    byPeriod:{7:bData.cro&&bData.cro[7]?{revenue:bData.cro[7].revenue,orders:bData.cro[7].orders}:null,30:bData.cro&&bData.cro[30]?{revenue:bData.cro[30].revenue,orders:bData.cro[30].orders}:null,90:bData.cro&&bData.cro[90]?{revenue:bData.cro[90].revenue,orders:bData.cro[90].orders}:null}
+    byPeriod:{7:bData.cro&&bData.cro[7]?{revenue:bData.cro[7].revenue,orders:bData.cro[7].orders}:null,30:bData.cro&&bData.cro[30]?{revenue:bData.cro[30].revenue,orders:bData.cro[30].orders}:null,90:bData.cro&&bData.cro[90]?{revenue:bData.cro[90].revenue,orders:bData.cro[90].orders}:null,allTime:bData.finance&&bData.finance.allTime||null}
     });
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
-    showToast('✅ '+fin.orders+' comm,allTime:bData.finance&&bData.finance.allTime||nullandes synchronisées');
+    showToast('✅ '+fin.orders+' commandes synchronisées');
     renderFinance();
   }catch(err){
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
