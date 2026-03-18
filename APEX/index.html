@@ -3868,7 +3868,7 @@ async function syncShopify(projectId){
     const fin=bData.finance;
     setShopifyCache(projectId,{revenue:fin.revenue||0, orders:fin.orders||0, currency:fin.currency||'EUR', syncedAt:Date.now(),
       byPeriod:{7:fin[7]||null, 30:fin[30]||null, 90:fin[90]||null}
-    };
+    });
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
     showToast('✅ '+fin.orders+' commandes synchronisées');
     renderFinance();
