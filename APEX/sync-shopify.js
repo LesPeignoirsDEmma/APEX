@@ -1,12 +1,12 @@
-// APEX — Shopify Sync Script (GitHub Actions)
+// APEX â Shopify Sync Script (GitHub Actions)
 // Lit les configs depuis le secret SHOPIFY_CONFIGS (JSON array)
-// Fetch les données Shopify côté serveur (pas de CORS) pour 3 périodes
-// Sauvegarde les résultats dans shopify-data.json
+// Fetch les donnÃ©es Shopify cÃ´tÃ© serveur (pas de CORS) pour 3 pÃ©riodes
+// Sauvegarde les rÃ©sultats dans shopify-data.json
 
 const https = require('https');
 const fs = require('fs');
 
-// ── HELPERS ──────────────────────────────────────────────────────────────────
+// ââ HELPERS ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 function shopFetch(shop, token, path) {
   return new Promise((resolve) => {
@@ -23,15 +23,15 @@ function shopFetch(shop, token, path) {
       res.on('end', () => {
         try {
           const json = JSON.parse(data);
-          if (json.errors) console.error('  ⚠️ Shopify API error on', path.split('?')[0], ':', JSON.stringify(json.errors));
+          if (json.errors) console.error('  â ï¸ Shopify API error on', path.split('?')[0], ':', JSON.stringify(json.errors));
           resolve(json);
         }
         catch(e) {
-          console.error('  ⚠️ Parse error on', path.split('?')[0], '- status:', res.statusCode);
+          console.error('  â ï¸ Parse error on', path.split('?')[0], '- status:', res.statusCode);
           resolve(null);
         }
       });
-    }).on('error', (e) => { console.error('  ⚠️ Network error:', e.message); resolve(null); });
+    }).on('error', (e) => { console.error('  â ï¸ Network error:', e.message); resolve(null); });
   });
 }
 
@@ -41,7 +41,7 @@ function dateFrom(daysAgo) {
   return d.toISOString().split('T')[0];
 }
 
-// ── CALCUL CRO POUR UNE BOUTIQUE + UNE PÉRIODE ───────────────────────────────
+// ââ CALCUL CRO POUR UNE BOUTIQUE + UNE PÃRIODE âââââââââââââââââââââââââââââââ
 
 async function computeCRO(shop, token, period) {
   const from = dateFrom(period);
@@ -60,31 +60,31 @@ async function computeCRO(shop, token, period) {
   const products = (prodData && prodData.products) || [];
   const checkouts = (checkoutData && checkoutData.checkouts) || [];
   const customers = (custData && custData.customers) || [];
-  console.log('    → orders:', orders.length, '| products:', products.length, '| checkouts:', checkouts.length, '| customers:', customers.length);
+  console.log('    â orders:', orders.length, '| products:', products.length, '| checkouts:', checkouts.length, '| customers:', customers.length);
 
-  // ── Revenue & commandes ──
+  // ââ Revenue & commandes ââ
   const paid = orders.filter(o => ['paid','partially_paid','partially_refunded'].includes(o.financial_status));
   const revenue = paid.reduce((s, o) => s + parseFloat(o.total_price || 0), 0);
   const aov = paid.length ? revenue / paid.length : 0;
   const currency = paid[0] ? paid[0].currency : 'EUR';
 
-  // ── Remboursements ──
+  // ââ Remboursements ââ
   const refunds = orders.filter(o => o.financial_status === 'refunded').length;
   const refundRate = orders.length ? Math.round(refunds / orders.length * 100) : 0;
 
-  // ── Remises ──
+  // ââ Remises ââ
   const discountOrders = paid.filter(o => o.discount_codes && o.discount_codes.length > 0).length;
   const discountRate = paid.length ? Math.round(discountOrders / paid.length * 100) : 0;
   const totalDiscounts = paid.reduce((s, o) => s + parseFloat(o.total_discounts || 0), 0);
   const discountShare = revenue ? Math.round(totalDiscounts / revenue * 100) : 0;
 
-  // ── Tendance (1ère vs 2ème moitié) ──
+  // ââ Tendance (1Ã¨re vs 2Ã¨me moitiÃ©) ââ
   const half1 = paid.filter(o => new Date(o.created_at) < new Date(mid));
   const half2 = paid.filter(o => new Date(o.created_at) >= new Date(mid));
   const revenueHalf1 = half1.reduce((s, o) => s + parseFloat(o.total_price || 0), 0);
   const revenueHalf2 = half2.reduce((s, o) => s + parseFloat(o.total_price || 0), 0);
 
-  // ── Top produits ──
+  // ââ Top produits ââ
   const prodMap = {};
   paid.forEach(o => {
     (o.line_items || []).forEach(li => {
@@ -101,7 +101,7 @@ async function computeCRO(shop, token, period) {
   const top3Revenue = topProducts.slice(0, 3).reduce((s, p) => s + p.revenue, 0);
   const top3RevenueShare = revenue ? Math.round(top3Revenue / revenue * 100) : 0;
 
-  // ── Timing ──
+  // ââ Timing ââ
   const hourly = {}, daily = {};
   paid.forEach(o => {
     const d = new Date(o.created_at);
@@ -111,7 +111,7 @@ async function computeCRO(shop, token, period) {
     daily[dw] = (daily[dw] || 0) + 1;
   });
 
-  // ── Clients ──
+  // ââ Clients ââ
   const customerIds = new Set();
   const returningIds = new Set();
   paid.forEach(o => {
@@ -125,13 +125,13 @@ async function computeCRO(shop, token, period) {
   const returningOrders = paid.filter(o => o.customer && returningIds.has(o.customer.id));
   const avgOrdersPerRepeat = returningIds.size ? (returningOrders.length / returningIds.size).toFixed(1) : 0;
 
-  // ── LTV & VIP ──
+  // ââ LTV & VIP ââ
   let totalLTV = 0;
   customers.forEach(c => { totalLTV += parseFloat(c.total_spent || 0); });
   const avgLTV = customers.length ? Math.round(totalLTV / customers.length) : 0;
   const vipCustomers = customers.filter(c => parseInt(c.orders_count || 0) >= 3).length;
 
-  // ── Abandon panier ──
+  // ââ Abandon panier ââ
   const abandonedCheckouts = checkouts.filter(c => !c.completed_at);
   const totalCheckouts = checkouts.length;
   const abandonedValue = abandonedCheckouts.reduce((s, c) => s + parseFloat(c.total_price || 0), 0);
@@ -145,9 +145,10 @@ async function computeCRO(shop, token, period) {
   });
   const topAbandoned = Object.entries(abandonMap)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 5);
+    .slice(0, 5)
+    .map(([name, count]) => ({ name, count }));
 
-  // ── Produits sans vente ──
+  // ââ Produits sans vente ââ
   const soldProductTitles = new Set(Object.keys(prodMap));
   const activeProducts = products.filter(p => p.status === 'active');
   const zeroSaleProducts = activeProducts
@@ -156,7 +157,7 @@ async function computeCRO(shop, token, period) {
     .slice(0, 20);
   const totalProducts = activeProducts.length;
 
-  // ── Nouveaux produits ──
+  // ââ Nouveaux produits ââ
   const newProductsAdded = products.filter(p => new Date(p.created_at) >= fromDate).length;
 
   return {
@@ -172,25 +173,25 @@ async function computeCRO(shop, token, period) {
   };
 }
 
-// ── MAIN ─────────────────────────────────────────────────────────────────────
+// ââ MAIN âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 async function main() {
   const configRaw = process.env.SHOPIFY_CONFIGS;
   if (!configRaw) {
-    console.error('❌ Secret SHOPIFY_CONFIGS manquant');
+    console.error('â Secret SHOPIFY_CONFIGS manquant');
     process.exit(1);
   }
 
   let configs;
   try { configs = JSON.parse(configRaw); }
-  catch(e) { console.error('❌ SHOPIFY_CONFIGS JSON invalide:', e.message); process.exit(1); }
+  catch(e) { console.error('â SHOPIFY_CONFIGS JSON invalide:', e.message); process.exit(1); }
 
   const result = { lastUpdated: new Date().toISOString(), boutiques: {} };
 
   for (const cfg of configs) {
     const { id, shop, token } = cfg;
-    if (!id || !shop || !token) { console.warn(`⚠️ Config invalide:`, cfg); continue; }
-    console.log(`🔄 Sync ${shop}...`);
+    if (!id || !shop || !token) { console.warn(`â ï¸ Config invalide:`, cfg); continue; }
+    console.log(`ð Sync ${shop}...`);
 
     result.boutiques[id] = { finance: {}, cro: {} };
 
@@ -200,24 +201,24 @@ async function main() {
       result.boutiques[id].finance = {
         revenue: fin.revenue, orders: fin.orders, currency: fin.currency, syncedAt: fin.syncedAt
       };
-    } catch(e) { console.error(`  ❌ Finance error:`, e.message); }
+    } catch(e) { console.error(`  â Finance error:`, e.message); }
 
-    // CRO pour les 3 périodes
+    // CRO pour les 3 pÃ©riodes
     result.boutiques[id].cro = {};
     for (const period of [7, 30, 90]) {
       try {
-        console.log(`  📊 Période ${period}j...`);
+        console.log(`  ð PÃ©riode ${period}j...`);
         result.boutiques[id].cro[period] = await computeCRO(shop, token, period);
-      } catch(e) { console.error(`  ❌ CRO ${period}j error:`, e.message); }
+      } catch(e) { console.error(`  â CRO ${period}j error:`, e.message); }
     }
 
-    console.log(`  ✅ ${shop} done`);
+    console.log(`  â ${shop} done`);
   }
 
   // Sauvegarder dans APEX/ (dossier servi par GitHub Pages = lespeignoirsdemma.github.io/APEX/APEX/)
   const outPath = 'APEX/shopify-data.json';
   fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
-  console.log('✅ ' + outPath + ' saved');
+  console.log('â ' + outPath + ' saved');
 }
 
-main().catch(e => { console.error('❌', e); process.exit(1); });
+main().catch(e => { console.error('â', e); process.exit(1); });
