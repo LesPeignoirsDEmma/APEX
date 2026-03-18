@@ -1196,7 +1196,8 @@ html[data-theme="light"]{
     <button class="fin-period-btn" onclick="setFinPeriod('30d',this)">30 jours</button>
     <button class="fin-period-btn" onclick="setFinPeriod('3m',this)">3 mois</button>
     <button class="fin-period-btn" onclick="setFinPeriod('year',this)">Cette année</button>
-  </div>
+
+        <button class="fin-period-btn" onclick="setFinPeriod('total',this)">Total</button>  </div>
 
   <!-- KPIs GLOBAUX -->
   <div class="fin-kpi">
@@ -3724,7 +3725,7 @@ function renderFinShops(){
   projs.forEach(p=>{
     const cred=(D.shopifyCreds||{})[p.id];
     const cache=getShopifyCache(p.id);
-      const _pkMap={'7d':7,'30d':30,'3m':90};
+      const _pkMap={'7d':7,'30d':30,'3m':90,'total':'allTime'};
       const _pkk=_pkMap[_finPeriod];
       const _pd=_pkk&&cache.byPeriod&&cache.byPeriod[_pkk];
       const rev=(_pd?_pd.revenue:cache.revenue)||0;
@@ -3781,7 +3782,7 @@ function renderFinKPIs(){
   let totalRev=0;
   const projs=D.projects||DEFAULT_PROJECTS;
  const _periodKeyMap={'7d':7,'30d':30,'3m':90};
-  const _pk=_periodKeyMap[_finPeriod];
+  const _pk=_pe,'total':'allTime'riodKeyMap[_finPeriod];
   projs.forEach(p=>{
     const c=getShopifyCache(p.id);
     const pd=_pk&&c.byPeriod&&c.byPeriod[_pk];
@@ -3870,7 +3871,7 @@ async function syncShopify(projectId){
     byPeriod:{7:bData.cro&&bData.cro[7]?{revenue:bData.cro[7].revenue,orders:bData.cro[7].orders}:null,30:bData.cro&&bData.cro[30]?{revenue:bData.cro[30].revenue,orders:bData.cro[30].orders}:null,90:bData.cro&&bData.cro[90]?{revenue:bData.cro[90].revenue,orders:bData.cro[90].orders}:null}
     });
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
-    showToast('✅ '+fin.orders+' commandes synchronisées');
+    showToast('✅ '+fin.orders+' comm,allTime:bData.finance&&bData.finance.allTime||nullandes synchronisées');
     renderFinance();
   }catch(err){
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
