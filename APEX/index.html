@@ -3915,67 +3915,134 @@ function renderCRO(){
   el.innerHTML=html;
 }
 
-function renderCROCard(p,data){
-  const {orders,revenue,aov,topProducts,hourly,daily,returning,newCust,refunds,refundRate}=data;
-  const convColor=n=>n>=3?'#10B981':n>=2?'#F59E0B':'#ef4444';
-  // Top heures
-  const topHour=hourly?Object.entries(hourly).sort((a,b)=>b[1]-a[1])[0]:null;
-  const topDay=daily?Object.entries(daily).sort((a,b)=>b[1]-a[1])[0]:null;
-  const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
-  return `<div class="card" style="margin-bottom:20px;padding:20px">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-      <strong style="font-size:15px">${p.emoji||'🏪'} ${p.name}</strong>
-      <button class="btn btn-sm btn-ghost" onclick="syncCRO('${p.id}')" style="font-size:11px">${ico('refresh',11)} Actualiser</button>
-    </div>
-    <!-- KPIs principaux -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-bottom:16px">
-      ${kpiBox('CA total',fmtEur(revenue),'var(--pl)')}
-      ${kpiBox('Commandes',orders,'var(--text)')}
-      ${kpiBox('Panier moyen',fmtEur(aov),'#10B981')}
-      ${kpiBox('Remboursements',refundRate+'%',refundRate>5?'#ef4444':'#10B981')}
-      ${topHour?kpiBox('Heure de pointe',topHour[0]+'h ('+topHour[1]+' cmd)','#F59E0B'):''}
-      ${topDay?kpiBox('Meilleur jour',jours[topDay[0]]+' ('+topDay[1]+' cmd)','#8B5CF6'):''}
-    </div>
-    <!-- Top produits -->
-    ${topProducts&&topProducts.length?`
-    <div style="margin-bottom:14px">
-      <div style="font-size:11px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Top Produits</div>
-      ${topProducts.slice(0,5).map((pr,i)=>`
-        <div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)">
-          <span style="font-size:11px;color:var(--t3);width:14px">${i+1}</span>
-          <span style="flex:1;font-size:13px;color:var(--text)">${escHtml(pr.name.slice(0,40))}</span>
-          <span style="font-size:12px;color:var(--t2)">${pr.qty} ventes</span>
-          <span style="font-size:12px;font-weight:600;color:var(--pl)">${fmtEur(pr.revenue)}</span>
-        </div>`).join('')}
-    </div>`:''}
-    <!-- Clients -->
-    ${(newCust||returning)?`
-    <div style="margin-bottom:14px">
-      <div style="font-size:11px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Clients</div>
-      <div style="display:flex;gap:12px">
-        <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">
-          <div style="font-size:18px;font-weight:700;color:var(--pl)">${newCust||0}</div>
-          <div style="font-size:11px;color:var(--t2)">Nouveaux</div>
-        </div>
-        <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">
-          <div style="font-size:18px;font-weight:700;color:#10B981">${returning||0}</div>
-          <div style="font-size:11px;color:var(--t2)">Fidèles</div>
-        </div>
-        <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">
-          <div style="font-size:18px;font-weight:700;color:#F59E0B">${returning&&newCust?Math.round(returning/(newCust+returning)*100):0}%</div>
-          <div style="font-size:11px;color:var(--t2)">Rétention</div>
-        </div>
-      </div>
-    </div>`:''}
-    ${data.aiAnalysis?`<div style="background:var(--card2);border-radius:10px;padding:14px;font-size:13px;line-height:1.6;color:var(--text)">${mdToHtml(data.aiAnalysis)}</div>`:''}
-  </div>`;
+function section(title,content){
+  return '<div style="margin-bottom:18px">'
+    +'<div style="font-size:10px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;padding-bottom:4px;border-bottom:1px solid var(--border)">'+title+'</div>'
+    +content+'</div>';
+}
+function kpiBox(label,val,color,sub){
+  return '<div style="background:var(--card2);border-radius:10px;padding:12px;text-align:center">'
+    +'<div style="font-size:18px;font-weight:700;color:'+color+'">'+val+'</div>'
+    +'<div style="font-size:10px;color:var(--t3);margin-top:2px">'+label+'</div>'
+    +(sub?'<div style="font-size:9px;color:var(--t3);margin-top:1px">'+sub+'</div>':'')
+    +'</div>';
+}
+function trendBar(label,val,max,color){
+  const pct=max?Math.round(val/max*100):0;
+  return '<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">'
+    +'<span style="font-size:11px;color:var(--t2);width:28px;flex-shrink:0">'+label+'</span>'
+    +'<div style="flex:1;background:var(--card2);border-radius:99px;height:6px;overflow:hidden">'
+    +'<div style="width:'+pct+'%;height:100%;background:'+color+';border-radius:99px"></div></div>'
+    +'<span style="font-size:11px;color:var(--text);width:20px;text-align:right">'+val+'</span></div>';
 }
 
-function kpiBox(label,val,color){
-  return `<div style="background:var(--card2);border-radius:8px;padding:10px;text-align:center">
-    <div style="font-size:17px;font-weight:700;color:${color}">${val}</div>
-    <div style="font-size:10px;color:var(--t3);margin-top:2px">${label}</div>
-  </div>`;
+function renderCROCard(p,data){
+  const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  const {orders,revenue,aov,topProducts,hourly,daily,returning,newCust,refunds,refundRate,
+    totalProducts,zeroSaleProducts,discountOrders,discountRate,revenueHalf1,revenueHalf2,
+    avgOrdersPerRepeat,top3RevenueShare,currency,period,syncedAt}=data;
+
+  const topHourEntry=hourly?Object.entries(hourly).sort((a,b)=>b[1]-a[1])[0]:null;
+  const topDayEntry=daily?Object.entries(daily).sort((a,b)=>b[1]-a[1])[0]:null;
+  const maxHourVal=hourly?Math.max(...Object.values(hourly)):1;
+  const maxDayVal=daily?Math.max(...Object.values(daily)):1;
+  const trend=revenueHalf2>revenueHalf1?'+':'';
+  const trendPct=revenueHalf1?Math.round((revenueHalf2-revenueHalf1)/revenueHalf1*100):0;
+  const retRate=newCust+returning?Math.round(returning/(newCust+returning)*100):0;
+  const syncAgo=syncedAt?Math.round((Date.now()-syncedAt)/60000)+'min':'—';
+
+  return '<div class="card" style="margin-bottom:20px;padding:0;overflow:hidden">'
+    // Header avec couleur boutique
+    +'<div style="padding:14px 16px;background:var(--card2);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)">'
+    +'<div style="display:flex;align-items:center;gap:8px">'
+    +'<span style="font-size:18px">'+(p.emoji||'🏪')+'</span>'
+    +'<div><div style="font-weight:700;font-size:14px">'+escHtml(p.name)+'</div>'
+    +'<div style="font-size:10px;color:var(--t3)">'+period+' jours · sync il y a '+syncAgo+'</div></div></div>'
+    +'<div style="display:flex;gap:6px">'
+    +'<button class="btn btn-sm btn-ghost" onclick="syncCRO(\''+p.id+'\')" style="font-size:11px">'+ico('refresh',11)+' Sync</button>'
+    +'<button class="btn btn-sm" onclick="runCROAnalysisSingle(\''+p.id+'\')" style="font-size:11px">'+ico('sparkles',11)+' IA</button>'
+    +'</div></div>'
+    +'<div style="padding:16px">'
+
+    // KPIs principaux
+    +section('📊 Performance globale',
+      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">'
+      +kpiBox('CA total',fmtEur(revenue),'var(--pl)')
+      +kpiBox('Commandes',orders,'var(--text)')
+      +kpiBox('Panier moyen',fmtEur(aov),'#10B981')
+      +kpiBox('Taux retour',refundRate+'%',refundRate>5?'#ef4444':'#10B981',refunds+' remb.')
+      +(discountRate!=null?kpiBox('Taux promo',discountRate+'%',discountRate>30?'#F59E0B':'var(--t2)',discountOrders+' cmd'):'')
+      +(top3RevenueShare!=null?kpiBox('Conc. top 3',top3RevenueShare+'%',top3RevenueShare>70?'#F59E0B':'#10B981','du CA'):'')
+      +'</div>')
+
+    // Tendance CA
+    +(revenueHalf1!=null?section('📈 Tendance sur la période',
+      '<div style="display:flex;gap:10px;align-items:center">'
+      +'<div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">'
+      +'<div style="font-size:11px;color:var(--t2);margin-bottom:2px">1ère moitié</div>'
+      +'<div style="font-size:15px;font-weight:700">'+fmtEur(revenueHalf1)+'</div></div>'
+      +'<div style="font-size:18px;color:'+(trendPct>=0?'#10B981':'#ef4444')+'">'+trend+trendPct+'%</div>'
+      +'<div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">'
+      +'<div style="font-size:11px;color:var(--t2);margin-bottom:2px">2ème moitié</div>'
+      +'<div style="font-size:15px;font-weight:700;color:'+(trendPct>=0?'#10B981':'#ef4444')+'">'+fmtEur(revenueHalf2)+'</div></div>'
+      +'</div>'):'')
+
+    // Clients
+    +section('👥 Clients',
+      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">'
+      +kpiBox('Nouveaux',newCust||0,'var(--pl)')
+      +kpiBox('Fidèles',returning||0,'#10B981')
+      +kpiBox('Rétention',retRate+'%',retRate>20?'#10B981':retRate>10?'#F59E0B':'#ef4444')
+      +'</div>'
+      +(avgOrdersPerRepeat?'<div style="margin-top:8px;font-size:12px;color:var(--t2)">Clients fidèles : en moyenne <strong style="color:var(--text)">'+avgOrdersPerRepeat+' commandes</strong> sur la période</div>':''))
+
+    // Jours de la semaine
+    +(daily?section('📅 Jours de la semaine',
+      jours.map(function(j,i){return trendBar(j,daily[i]||0,maxDayVal,'var(--pl)');}).join('')):'')
+
+    // Heures de pointe (agrégées par tranches)
+    +(hourly?section('🕐 Heures de pointe',
+      (function(){
+        var slots=[['Matin 6-11',0],['Midi 12-13',0],['Après-midi 14-17',0],['Soir 18-21',0],['Nuit 22-5',0]];
+        Object.entries(hourly).forEach(function(e){
+          var h=parseInt(e[0]),v=e[1];
+          if(h>=6&&h<=11)slots[0][1]+=v;
+          else if(h>=12&&h<=13)slots[1][1]+=v;
+          else if(h>=14&&h<=17)slots[2][1]+=v;
+          else if(h>=18&&h<=21)slots[3][1]+=v;
+          else slots[4][1]+=v;
+        });
+        var maxSlot=Math.max.apply(null,slots.map(function(s){return s[1];}));
+        return slots.map(function(s){return trendBar(s[0],s[1],maxSlot,'#8B5CF6');}).join('');
+      })()):'')
+
+    // Top produits
+    +(topProducts&&topProducts.length?section('🏆 Top produits',
+      topProducts.slice(0,8).map(function(pr,i){
+        var barW=topProducts[0].revenue?Math.round(pr.revenue/topProducts[0].revenue*100):0;
+        return '<div style="margin-bottom:8px">'
+          +'<div style="display:flex;justify-content:space-between;margin-bottom:2px">'
+          +'<span style="font-size:12px;color:var(--text)">'+escHtml(pr.name.slice(0,45))+'</span>'
+          +'<span style="font-size:12px;font-weight:600;color:var(--pl)">'+fmtEur(pr.revenue)+'</span></div>'
+          +'<div style="display:flex;align-items:center;gap:6px">'
+          +'<div style="flex:1;background:var(--card2);border-radius:99px;height:4px">'
+          +'<div style="width:'+barW+'%;height:100%;background:var(--pl);border-radius:99px"></div></div>'
+          +'<span style="font-size:10px;color:var(--t3)">'+pr.qty+' ventes</span></div></div>';
+      }).join('')):'')
+
+    // Produits sans vente
+    +(zeroSaleProducts&&zeroSaleProducts.length?section('⚠️ Produits sans vente ('+zeroSaleProducts.length+')',
+      '<div style="font-size:12px;color:var(--t2)">'
+      +zeroSaleProducts.slice(0,6).map(function(n){return '• '+escHtml(n);}).join('<br>')
+      +(zeroSaleProducts.length>6?'<br><span style="color:var(--t3)">+ '+(zeroSaleProducts.length-6)+' autres</span>':'')
+      +'</div>'):'')
+
+    // Analyse IA
+    +(data.aiAnalysis?section('🤖 Analyse & Recommandations APEX IA',
+      '<div style="background:var(--bg2);border-radius:10px;padding:14px;font-size:13px;line-height:1.7;color:var(--text)">'+mdToHtml(data.aiAnalysis)+'</div>')
+      :'<div style="text-align:center;padding:12px;font-size:12px;color:var(--t2)">Clique sur <strong>IA</strong> pour obtenir des recommandations CRO personnalisées</div>')
+
+    +'</div></div>';
 }
 
 async function syncCRO(projectId){
@@ -3983,87 +4050,176 @@ async function syncCRO(projectId){
   const btn=document.getElementById('cro-sync-btn');
   if(btn){btn.textContent='⏳ Chargement...';btn.disabled=true;}
   const now=new Date();
-  const from=new Date(now-_croPeriod*24*60*60*1000).toISOString().split('T')[0];
+  const fromDate=new Date(now-_croPeriod*24*60*60*1000);
+  const from=fromDate.toISOString().split('T')[0];
+  const mid=new Date(fromDate.getTime()+(now-fromDate)/2).toISOString();
+  const headers={'X-Shopify-Access-Token':cred.token,'Content-Type':'application/json'};
   try{
-    // Fetch orders avec line_items
-    const url=`https://${cred.shop}/admin/api/2024-01/orders.json?status=any&limit=250&created_at_min=${from}T00:00:00&fields=id,total_price,currency,created_at,financial_status,customer,line_items,refunds`;
-    const r=await fetch(url,{headers:{'X-Shopify-Access-Token':cred.token,'Content-Type':'application/json'}});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const {orders=[]}=await r.json();
-    const paid=orders.filter(o=>['paid','partially_paid'].includes(o.financial_status));
-    const revenue=paid.reduce((s,o)=>s+parseFloat(o.total_price||0),0);
+    // Fetch orders (avec tous les champs utiles)
+    const ordUrl='https://'+cred.shop+'/admin/api/2024-01/orders.json?status=any&limit=250&created_at_min='+from+'T00:00:00'
+      +'&fields=id,total_price,subtotal_price,currency,created_at,financial_status,customer,line_items,refunds,discount_codes,tags';
+    const ordRes=await fetch(ordUrl,{headers:headers});
+    if(!ordRes.ok) throw new Error('Orders: HTTP '+ordRes.status);
+    const {orders=[]}=await ordRes.json();
+
+    // Fetch products (read_products scope)
+    let allProducts=[];
+    try{
+      const prodRes=await fetch('https://'+cred.shop+'/admin/api/2024-01/products.json?limit=250&fields=id,title,status,variants',{headers:headers});
+      if(prodRes.ok){ const pd=await prodRes.json(); allProducts=pd.products||[]; }
+    }catch(e){}
+
+    const paid=orders.filter(function(o){return ['paid','partially_paid'].includes(o.financial_status);});
+    const revenue=paid.reduce(function(s,o){return s+parseFloat(o.total_price||0);},0);
     const aov=paid.length?revenue/paid.length:0;
-    // Top produits
+
+    // Produits vendus (depuis line_items)
     const prodMap={};
-    paid.forEach(o=>(o.line_items||[]).forEach(li=>{
-      if(!prodMap[li.title]) prodMap[li.title]={name:li.title,qty:0,revenue:0};
-      prodMap[li.title].qty+=li.quantity||1;
-      prodMap[li.title].revenue+=parseFloat(li.price||0)*(li.quantity||1);
-    }));
-    const topProducts=Object.values(prodMap).sort((a,b)=>b.revenue-a.revenue);
-    // Heures & jours de pointe
-    const hourly={}, daily={};
-    paid.forEach(o=>{
-      const d=new Date(o.created_at);
-      const h=d.getHours(); hourly[h]=(hourly[h]||0)+1;
-      const dw=d.getDay(); daily[dw]=(daily[dw]||0)+1;
+    paid.forEach(function(o){
+      (o.line_items||[]).forEach(function(li){
+        var k=li.title;
+        if(!prodMap[k]) prodMap[k]={name:k,qty:0,revenue:0};
+        prodMap[k].qty+=li.quantity||1;
+        prodMap[k].revenue+=parseFloat(li.price||0)*(li.quantity||1);
+      });
     });
-    // Clients nouveaux vs récurrents
-    const custIds=paid.map(o=>o.customer?.id).filter(Boolean);
-    const seen={}, newCust=[], ret=[];
-    custIds.forEach(id=>{ seen[id]=(seen[id]||0)+1; });
-    Object.entries(seen).forEach(([id,n])=>{ if(n>1)ret.push(id); else newCust.push(id); });
+    const topProducts=Object.values(prodMap).sort(function(a,b){return b.revenue-a.revenue;});
+
+    // Produits sans aucune vente sur la période
+    const soldNames=Object.keys(prodMap);
+    const zeroSaleProducts=allProducts
+      .filter(function(pr){return pr.status==='active'&&!soldNames.includes(pr.title);})
+      .map(function(pr){return pr.title;});
+
+    // Heures & jours
+    const hourly={}, daily={};
+    paid.forEach(function(o){
+      var d=new Date(o.created_at);
+      var h=d.getHours(); hourly[h]=(hourly[h]||0)+1;
+      var dw=d.getDay(); daily[dw]=(daily[dw]||0)+1;
+    });
+
+    // Clients nouveaux vs fidèles + fréquence rachat
+    const custMap={};
+    paid.forEach(function(o){
+      if(o.customer&&o.customer.id){
+        var id=o.customer.id;
+        custMap[id]=(custMap[id]||0)+1;
+      }
+    });
+    var newCust=0, returning=0, totalRepeatOrders=0;
+    Object.values(custMap).forEach(function(n){
+      if(n>1){returning++;totalRepeatOrders+=n;}else{newCust++;}
+    });
+    var avgOrdersPerRepeat=returning?Math.round(totalRepeatOrders/returning*10)/10:0;
+
     // Remboursements
-    const refunds=orders.filter(o=>(o.refunds||[]).length>0).length;
+    const refunds=orders.filter(function(o){return (o.refunds||[]).length>0;}).length;
     const refundRate=orders.length?Math.round(refunds/orders.length*100):0;
-    _croCache[projectId]={orders:paid.length,revenue,aov,topProducts,hourly,daily,newCust:newCust.length,returning:ret.length,refunds,refundRate,period:_croPeriod,syncedAt:Date.now()};
+
+    // Promos / réductions
+    const discountOrders=paid.filter(function(o){return (o.discount_codes||[]).length>0;}).length;
+    const discountRate=paid.length?Math.round(discountOrders/paid.length*100):0;
+
+    // Tendance : CA 1ère moitié vs 2ème moitié de la période
+    const midTime=new Date(mid).getTime();
+    var rev1=0,rev2=0;
+    paid.forEach(function(o){
+      var t=new Date(o.created_at).getTime();
+      if(t<midTime) rev1+=parseFloat(o.total_price||0);
+      else rev2+=parseFloat(o.total_price||0);
+    });
+
+    // Concentration des revenus (top 3 produits)
+    var top3Rev=topProducts.slice(0,3).reduce(function(s,p){return s+p.revenue;},0);
+    var top3RevenueShare=revenue?Math.round(top3Rev/revenue*100):0;
+
+    _croCache[projectId]={
+      orders:paid.length,revenue,aov,topProducts,hourly,daily,
+      newCust,returning,avgOrdersPerRepeat,
+      refunds,refundRate,
+      discountOrders,discountRate,
+      revenueHalf1:Math.round(rev1),revenueHalf2:Math.round(rev2),
+      top3RevenueShare,
+      totalProducts:allProducts.length,
+      zeroSaleProducts,
+      currency:paid[0]?paid[0].currency:'EUR',
+      period:_croPeriod,syncedAt:Date.now()
+    };
     renderCRO();
-    showToast(`✅ ${paid.length} commandes analysées`);
+    showToast('✅ '+paid.length+' commandes analysées'+(allProducts.length?' · '+allProducts.length+' produits':''));
   }catch(err){
     showToast('❌ '+err.message,'error');
+    console.error('[CRO]',err);
   }finally{
-    if(btn){btn.innerHTML=`${ico('refresh',13)} Sync données`;btn.disabled=false;}
+    if(btn){btn.innerHTML=ico('refresh',13)+' Sync données';btn.disabled=false;}
   }
 }
 
 async function syncAllCRO(){
-  const projs=(D.projects||[]).filter(p=>(D.shopifyCreds||{})[p.id]);
-  for(const p of projs) await syncCRO(p.id);
+  const projs=(D.projects||[]).filter(function(p){return (D.shopifyCreds||{})[p.id];});
+  for(var i=0;i<projs.length;i++) await syncCRO(projs[i].id);
+}
+
+async function runCROAnalysisSingle(projectId){
+  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+  if(!key||!key.startsWith('sk-ant-')){ showToast('⚠️ Clé API Claude requise','error'); return; }
+  const d=_croCache[projectId]; if(!d){ showToast('⚠️ Sync d\'abord','error'); return; }
+  const proj=(D.projects||[]).find(function(p){return p.id===projectId;})||{name:projectId};
+  const topH=d.hourly?Object.entries(d.hourly).sort(function(a,b){return b[1]-a[1];})[0]:null;
+  const topDw=d.daily?Object.entries(d.daily).sort(function(a,b){return b[1]-a[1];})[0]:null;
+  const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  const trendPct=d.revenueHalf1?Math.round((d.revenueHalf2-d.revenueHalf1)/d.revenueHalf1*100):0;
+  _croCache[projectId].aiAnalysis='⏳ Analyse en cours...';
+  renderCRO();
+  const context=
+    '=== DONNÉES BOUTIQUE: '+proj.name+' ('+d.period+' derniers jours) ===\n\n'
+    +'PERFORMANCE:\n'
+    +'- CA: '+fmtEur(d.revenue)+' | Commandes: '+d.orders+' | Panier moyen: '+fmtEur(d.aov)+'\n'
+    +'- Tendance: '+(trendPct>=0?'+':'')+trendPct+'% (1ère vs 2ème moitié de période)\n'
+    +'- Taux remboursement: '+d.refundRate+'% ('+d.refunds+' cmd remboursées)\n'
+    +'- Taux promo/réduction: '+d.discountRate+'% des commandes\n'
+    +'- Concentration top 3 produits: '+d.top3RevenueShare+'% du CA\n\n'
+    +'CLIENTS:\n'
+    +'- Nouveaux: '+d.newCust+' | Fidèles: '+d.returning+' | Taux rétention: '+(d.newCust+d.returning?Math.round(d.returning/(d.newCust+d.returning)*100):0)+'%\n'
+    +'- Fréquence rachat clients fidèles: '+d.avgOrdersPerRepeat+' commandes/client\n\n'
+    +'PRODUITS:\n'
+    +'- Catalogue total: '+(d.totalProducts||'N/A')+' produits actifs\n'
+    +'- Produits sans vente sur la période: '+(d.zeroSaleProducts?d.zeroSaleProducts.length:0)+'\n'
+    +(d.zeroSaleProducts&&d.zeroSaleProducts.length?'- Liste dead stock: '+d.zeroSaleProducts.slice(0,5).join(', ')+'\n':'')
+    +'- Top produits: '+((d.topProducts||[]).slice(0,8).map(function(p){return p.name+' ('+p.qty+' ventes, '+fmtEur(p.revenue)+')';}).join(' | '))+'\n\n'
+    +'TIMING:\n'
+    +'- Heure de pointe: '+(topH?topH[0]+'h ('+topH[1]+' cmd)':'N/A')+'\n'
+    +'- Meilleur jour: '+(topDw?jours[topDw[0]]+' ('+topDw[1]+' cmd)':'N/A')+'\n';
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:AI_MODEL,max_tokens:1200,
+        system:'Tu es un expert CRO e-commerce avec 10 ans d\'expérience sur Shopify. Tu analyses des données réelles de boutiques et fournis des recommandations ultra-concrètes et actionnables. Tu identifies les opportunités cachées, les fuites de conversion et les leviers de croissance rapide. Tu utilises le markdown (gras, listes) pour structurer tes réponses.',
+        messages:[{role:'user',content:
+          'Analyse ces données e-commerce et fournis:\n'
+          +'1. **Diagnostic rapide** (3 points clés positifs/négatifs)\n'
+          +'2. **Top 3 actions prioritaires** avec impact estimé et comment les mettre en place concrètement\n'
+          +'3. **Opportunités cachées** basées sur les données (ex: dead stock, timing, rétention)\n'
+          +'4. **Alerte** si quelque chose est anormal (remboursements trop élevés, tendance négative, etc.)\n\n'
+          +context}]})
+    });
+    const json=await r.json();
+    _croCache[projectId].aiAnalysis=(json.content&&json.content[0])?json.content[0].text:'Erreur API';
+  }catch(e){
+    _croCache[projectId].aiAnalysis='Erreur: '+e.message;
+  }
+  renderCRO();
 }
 
 async function runCROAnalysis(){
-  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
-  if(!key||!key.startsWith('sk-ant-')){ showToast('⚠️ Clé API Claude requise dans Réglages','error'); return; }
-  const projs=(D.projects||[]).filter(p=>_croCache[p.id]);
+  const projs=(D.projects||[]).filter(function(p){return _croCache[p.id];});
   if(!projs.length){ showToast('⚠️ Sync les données d\'abord','error'); return; }
   const btn=document.getElementById('cro-ai-btn');
   if(btn){btn.textContent='⏳ Analyse...';btn.disabled=true;}
-  for(const proj of projs){
-    const d=_croCache[proj.id];
-    const topH=d.hourly?Object.entries(d.hourly).sort((a,b)=>b[1]-a[1])[0]:null;
-    const topDw=d.daily?Object.entries(d.daily).sort((a,b)=>b[1]-a[1])[0]:null;
-    const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
-    const topProdsStr=(d.topProducts||[]).slice(0,5).map(function(pr){return pr.name+' ('+pr.qty+' ventes, '+fmtEur(pr.revenue)+')';}).join(', ');
-    const context='Boutique: '+proj.name+'\n'
-      +'Période: '+d.period+' jours\n'
-      +'CA: '+fmtEur(d.revenue)+' | Commandes: '+d.orders+' | Panier moyen: '+fmtEur(d.aov)+'\n'
-      +'Taux remboursement: '+d.refundRate+'%\n'
-      +'Nouveaux clients: '+d.newCust+' | Clients fidèles: '+d.returning+'\n'
-      +'Top produits: '+topProdsStr+'\n'
-      +'Heure de pointe: '+(topH?topH[0]+'h ('+topH[1]+' cmd)':'N/A')+'\n'
-      +'Meilleur jour: '+(topDw?jours[topDw[0]]+' ('+topDw[1]+' cmd)':'N/A');
-    try{
-      const r=await fetch('https://api.anthropic.com/v1/messages',{
-        method:'POST',
-        headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-        body:JSON.stringify({model:AI_MODEL,max_tokens:800,messages:[{role:'user',content:'Tu es un expert CRO e-commerce. Analyse ces données et donne 3-5 recommandations concrètes et actionnables pour améliorer les conversions et le CA. Sois direct et spécifique.\n\n'+context}]})
-      });
-      const json=await r.json();
-      _croCache[proj.id].aiAnalysis=(json.content&&json.content[0])?json.content[0].text:'';
-    }catch(e){ _croCache[proj.id].aiAnalysis='Erreur: '+e.message; }
-  }
-  renderCRO();
-  if(btn){btn.innerHTML=`${ico('sparkles',13)} Analyse IA`;btn.disabled=false;}
+  for(var i=0;i<projs.length;i++) await runCROAnalysisSingle(projs[i].id);
+  if(btn){btn.innerHTML=ico('sparkles',13)+' Analyse IA';btn.disabled=false;}
 }
 
 // ── SHOPIFY MODAL ──
