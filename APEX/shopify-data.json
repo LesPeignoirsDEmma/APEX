@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T12:06:28.585Z",
+  "lastUpdated": "2026-03-18T12:11:51.780Z",
   "boutiques": {
     "proj_mmvwfi56": {
       "finance": {
         "revenue": 0,
         "orders": 0,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T12:06:28.917Z"
+        "syncedAt": "2026-03-18T12:11:52.175Z"
       },
       "cro": {
         "7": {
@@ -40,7 +40,7 @@
           "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "syncedAt": "2026-03-18T12:06:29.144Z"
+          "syncedAt": "2026-03-18T12:11:52.416Z"
         },
         "30": {
           "period": 30,
@@ -73,7 +73,7 @@
           "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "syncedAt": "2026-03-18T12:06:29.388Z"
+          "syncedAt": "2026-03-18T12:11:52.658Z"
         },
         "90": {
           "period": 90,
@@ -106,7 +106,7 @@
           "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "syncedAt": "2026-03-18T12:06:29.625Z"
+          "syncedAt": "2026-03-18T12:11:52.892Z"
         }
       }
     }
