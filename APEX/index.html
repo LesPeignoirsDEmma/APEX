@@ -1946,6 +1946,16 @@ async function initSync(){
   }
 }
 
+// Recheck connexion quand on revient sur l'app
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'){
+    if(_db) setSyncBadge('synced','Connecté ✓');
+    else if(D.settings.firebaseConfig&&D.settings.syncDocId) initSync();
+  } else {
+    setSyncBadge('','Sync');
+  }
+});
+
 async function testSyncConnection(){
   const rawCfg=document.getElementById('s-sync-cfg').value.trim();
   const docId=document.getElementById('s-sync-doc').value.trim();
