@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T19:19:56.455Z",
+  "lastUpdated": "2026-03-18T19:25:40.873Z",
   "boutiques": {
-    "proj_mmvwfi56": {
+    "proj_mmw65etx": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T19:19:57.392Z",
+        "syncedAt": "2026-03-18T19:25:41.881Z",
         "allTime": {
           "revenue": 12016,
           "orders": 199
@@ -116,7 +116,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:19:59.510Z"
+          "syncedAt": "2026-03-18T19:25:43.562Z"
         },
         "30": {
           "period": 30,
@@ -266,7 +266,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:20:00.520Z"
+          "syncedAt": "2026-03-18T19:25:44.344Z"
         },
         "90": {
           "period": 90,
@@ -423,16 +423,16 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:20:01.412Z"
+          "syncedAt": "2026-03-18T19:25:45.146Z"
         }
       }
     },
-    "proj_mmw65etx": {
+    "proj_mmwdkmr6": {
       "finance": {
         "revenue": 549,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T19:20:02.195Z",
+        "syncedAt": "2026-03-18T19:25:45.803Z",
         "allTime": {
           "revenue": 549,
           "orders": 9
@@ -513,7 +513,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:20:03.710Z"
+          "syncedAt": "2026-03-18T19:25:46.934Z"
         },
         "30": {
           "period": 30,
@@ -641,7 +641,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:20:04.347Z"
+          "syncedAt": "2026-03-18T19:25:47.506Z"
         },
         "90": {
           "period": 90,
@@ -769,7 +769,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:20:05.007Z"
+          "syncedAt": "2026-03-18T19:25:48.039Z"
         }
       }
     }
