@@ -1866,10 +1866,23 @@ async function pullSync(silent=false){
     if(!remote||typeof remote!=='object') throw new Error('Format invalide');
     const localTs=D._localTs||0;
     const remoteTs=remote._localTs||0;
-    // Si la version distante est plus récente, on la charge
+    const remoteSettings=remote.settings||{};
+    // Toujours fusionner les settings "partagés" entre appareils (clé API, nom, etc.)
+    // même si le remote n'est pas plus récent — pour éviter de perdre la clé API
+    const sharedSettingsKeys=['claudeApiKey','name','why','theme','notifHabits','notifPlan','habitReminderTime','planReminderTime'];
+    sharedSettingsKeys.forEach(k=>{
+      if(remoteSettings[k]&&!D.settings[k]) D.settings[k]=remoteSettings[k];
+    });
+    // Si la version distante est plus récente, on charge tout
     if(remoteTs>localTs+5000){ // marge 5s pour éviter les conflits sur le même appareil
-      const merged={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...(remote.settings||{})}};
+      // Préserver les credentials sync locaux pour ne pas se déconnecter
+      const localSyncBinId=D.settings.syncBinId;
+      const localSyncKey=D.settings.syncKey;
+      const merged={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...remoteSettings}};
       Object.assign(D,merged);
+      // Restaurer les credentials sync si le remote les avait vides
+      if(!D.settings.syncBinId&&localSyncBinId) D.settings.syncBinId=localSyncBinId;
+      if(!D.settings.syncKey&&localSyncKey) D.settings.syncKey=localSyncKey;
       localStorage.setItem(SK,JSON.stringify(D));
       if(!silent){
         setSyncBadge('synced','Mis à jour ✓');
@@ -1879,10 +1892,11 @@ async function pullSync(silent=false){
       }
       return true;
     } else {
+      localStorage.setItem(SK,JSON.stringify(D)); // sauver les settings fusionnés
       if(!silent){
         setSyncBadge('synced','À jour ✓');
         setTimeout(()=>setSyncBadge('','Sync'),3000);
-        showToast('✅ Déjà à jour — aucune donnée plus récente');
+        showToast('✅ Paramètres synchronisés');
       }
       return false;
     }
@@ -1908,14 +1922,37 @@ async function initSync(){
   const {syncBinId,syncKey}=D.settings;
   if(!syncBinId||!syncKey) return;
   setSyncBadge('syncing','Connexion...');
-  // Au démarrage : pull silencieux. Si données plus récentes → reload
+  // Au démarrage : pull silencieux
   const updated=await pullSync(true);
   if(!updated){
     setSyncBadge('synced','Synced ✓');
     setTimeout(()=>setSyncBadge('','Sync'),3000);
   }
-  // Sync automatique toutes les 3 minutes si l'app est ouverte
-  setInterval(()=>pullSync(true), 3*60*1000);
+  // Pull toutes les 30 secondes
+  if(window._syncInterval) clearInterval(window._syncInterval);
+  window._syncInterval=setInterval(()=>{
+    if(D.settings.syncBinId&&D.settings.syncKey) pullSync(true);
+  }, 30*1000);
+  // Pull immédiat quand on revient sur l'app (onglet ou fenêtre)
+  document.removeEventListener('visibilitychange',_onVisibility);
+  document.addEventListener('visibilitychange',_onVisibility);
+  window.removeEventListener('focus',_onFocus);
+  window.addEventListener('focus',_onFocus);
+}
+let _lastFocusPull=0;
+function _onVisibility(){
+  if(document.visibilityState==='visible') _triggerFocusPull();
+}
+function _onFocus(){
+  _triggerFocusPull();
+}
+async function _triggerFocusPull(){
+  if(!D.settings.syncBinId||!D.settings.syncKey) return;
+  const now=Date.now();
+  if(now-_lastFocusPull<5000) return; // anti-spam 5s
+  _lastFocusPull=now;
+  setSyncBadge('syncing','Sync...');
+  await pullSync(true);
 }
 
 async function testSyncConnection(){
