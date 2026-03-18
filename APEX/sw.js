@@ -1,8 +1,8 @@
-// APEX IA — Service Worker v6
-// Network-first pour index.html (mises à jour instantanées)
-// Cache-first pour les assets statiques (icônes, manifest)
+// APEX IA â Service Worker v6
+// Network-first pour index.html (mises Ã  jour instantanÃ©es)
+// Cache-first pour les assets statiques (icÃ´nes, manifest)
 
-const CACHE = 'apex-v6';
+const CACHE = 'apex-v7';
 const STATIC = ['./manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -24,12 +24,12 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
 
-  // index.html → network-first (toujours la version fraîche, fallback cache si offline)
+  // index.html â network-first (toujours la version fraÃ®che, fallback cache si offline)
   if (url.pathname.endsWith('/') || url.pathname.endsWith('index.html')) {
     e.respondWith(
       fetch(e.request)
         .then(res => {
-          // Mettre à jour le cache avec la nouvelle version
+          // Mettre Ã  jour le cache avec la nouvelle version
           const clone = res.clone();
           caches.open(CACHE).then(c => c.put(e.request, clone));
           return res;
@@ -39,13 +39,13 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // Assets statiques → cache-first
+  // Assets statiques â cache-first
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request).catch(() => caches.match('./index.html')))
   );
 });
 
-// Notifs push — ouvrir l'app au clic
+// Notifs push â ouvrir l'app au clic
 self.addEventListener('notificationclick', e => {
   e.notification.close();
   e.waitUntil(
@@ -55,3 +55,4 @@ self.addEventListener('notificationclick', e => {
     })
   );
 });
+apex-v7
