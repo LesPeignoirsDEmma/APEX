@@ -3939,8 +3939,10 @@ function trendBar(label,val,max,color){
 function renderCROCard(p,data){
   const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
   const {orders,revenue,aov,topProducts,hourly,daily,returning,newCust,refunds,refundRate,
-    totalProducts,zeroSaleProducts,discountOrders,discountRate,revenueHalf1,revenueHalf2,
-    avgOrdersPerRepeat,top3RevenueShare,currency,period,syncedAt}=data;
+    totalProducts,zeroSaleProducts,newProductsAdded,discountOrders,discountRate,discountShare,totalDiscounts,
+    revenueHalf1,revenueHalf2,avgOrdersPerRepeat,top3RevenueShare,
+    abandonedCheckouts,totalCheckouts,abandonRate,abandonedValue,topAbandoned,
+    avgLTV,vipCustomers,currency,period,syncedAt}=data;
 
   const topHourEntry=hourly?Object.entries(hourly).sort((a,b)=>b[1]-a[1])[0]:null;
   const topDayEntry=daily?Object.entries(daily).sort((a,b)=>b[1]-a[1])[0]:null;
@@ -3971,9 +3973,23 @@ function renderCROCard(p,data){
       +kpiBox('Commandes',orders,'var(--text)')
       +kpiBox('Panier moyen',fmtEur(aov),'#10B981')
       +kpiBox('Taux retour',refundRate+'%',refundRate>5?'#ef4444':'#10B981',refunds+' remb.')
-      +(discountRate!=null?kpiBox('Taux promo',discountRate+'%',discountRate>30?'#F59E0B':'var(--t2)',discountOrders+' cmd'):'')
-      +(top3RevenueShare!=null?kpiBox('Conc. top 3',top3RevenueShare+'%',top3RevenueShare>70?'#F59E0B':'#10B981','du CA'):'')
+      +kpiBox('Taux promo',discountRate+'%',discountRate>40?'#F59E0B':'var(--t2)',fmtEur(totalDiscounts||0)+' offerts')
+      +kpiBox('Conc. top 3',top3RevenueShare+'%',top3RevenueShare>70?'#F59E0B':'#10B981','du CA')
       +'</div>')
+
+    // Abandon panier — LA métrique CRO
+    +(abandonRate!=null?section('🛒 Abandon de panier',
+      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px">'
+      +kpiBox('Taux abandon',abandonRate+'%',abandonRate>70?'#ef4444':abandonRate>50?'#F59E0B':'#10B981',totalCheckouts+' checkouts')
+      +kpiBox('CA abandonné',fmtEur(abandonedValue),abandonedValue>1000?'#ef4444':'#F59E0B')
+      +kpiBox('Paniers perdus',abandonedCheckouts||0,'var(--t2)')
+      +'</div>'
+      +(topAbandoned&&topAbandoned.length?'<div style="font-size:11px;color:var(--t2);margin-bottom:4px;font-weight:600">Produits les plus abandonnés :</div>'
+        +topAbandoned.map(function(a){return '<div style="display:flex;justify-content:space-between;padding:3px 0;font-size:12px;border-bottom:1px solid var(--border)">'
+          +'<span>'+escHtml(a.name.slice(0,42))+'</span>'
+          +'<span style="color:#F59E0B;font-weight:600">'+a.count+' fois</span></div>';}).join('')
+        :''))
+      :'')
 
     // Tendance CA
     +(revenueHalf1!=null?section('📈 Tendance sur la période',
@@ -3989,12 +4005,14 @@ function renderCROCard(p,data){
 
     // Clients
     +section('👥 Clients',
-      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">'
+      '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px">'
       +kpiBox('Nouveaux',newCust||0,'var(--pl)')
       +kpiBox('Fidèles',returning||0,'#10B981')
       +kpiBox('Rétention',retRate+'%',retRate>20?'#10B981':retRate>10?'#F59E0B':'#ef4444')
-      +'</div>'
-      +(avgOrdersPerRepeat?'<div style="margin-top:8px;font-size:12px;color:var(--t2)">Clients fidèles : en moyenne <strong style="color:var(--text)">'+avgOrdersPerRepeat+' commandes</strong> sur la période</div>':''))
+      +(avgLTV?kpiBox('LTV moy.',fmtEur(avgLTV),'#8B5CF6','lifetime value'):'')
+      +(vipCustomers?kpiBox('Clients VIP',vipCustomers,'#F59E0B','3+ commandes'):'')
+      +(avgOrdersPerRepeat?kpiBox('Fréq. rachat',avgOrdersPerRepeat+'x','#10B981','cmd/client fidèle'):'')
+      +'</div>')
 
     // Jours de la semaine
     +(daily?section('📅 Jours de la semaine',
@@ -4054,26 +4072,52 @@ async function syncCRO(projectId){
   const from=fromDate.toISOString().split('T')[0];
   const mid=new Date(fromDate.getTime()+(now-fromDate)/2).toISOString();
   const headers={'X-Shopify-Access-Token':cred.token,'Content-Type':'application/json'};
+  const base='https://'+cred.shop+'/admin/api/2024-01';
+
+  async function shopFetch(path){
+    try{ const r=await fetch(base+path,{headers:headers}); if(r.ok) return await r.json(); }catch(e){}
+    return null;
+  }
+
   try{
-    // Fetch orders (avec tous les champs utiles)
-    const ordUrl='https://'+cred.shop+'/admin/api/2024-01/orders.json?status=any&limit=250&created_at_min='+from+'T00:00:00'
-      +'&fields=id,total_price,subtotal_price,currency,created_at,financial_status,customer,line_items,refunds,discount_codes,tags';
-    const ordRes=await fetch(ordUrl,{headers:headers});
-    if(!ordRes.ok) throw new Error('Orders: HTTP '+ordRes.status);
-    const {orders=[]}=await ordRes.json();
+    // ── Fetch parallèle de toutes les sources ──
+    const [ordData,prodData,checkoutData,custData]=await Promise.all([
+      shopFetch('/orders.json?status=any&limit=250&created_at_min='+from+'T00:00:00'
+        +'&fields=id,total_price,subtotal_price,currency,created_at,financial_status,customer,line_items,refunds,discount_codes,total_discounts'),
+      shopFetch('/products.json?limit=250&fields=id,title,status,variants,created_at'),
+      shopFetch('/checkouts.json?limit=250&created_at_min='+from+'T00:00:00'
+        +'&fields=id,total_price,created_at,completed_at,line_items,customer_locale'),
+      shopFetch('/customers.json?limit=250&created_at_min='+from+'T00:00:00'
+        +'&fields=id,orders_count,total_spent,created_at,tags')
+    ]);
 
-    // Fetch products (read_products scope)
-    let allProducts=[];
-    try{
-      const prodRes=await fetch('https://'+cred.shop+'/admin/api/2024-01/products.json?limit=250&fields=id,title,status,variants',{headers:headers});
-      if(prodRes.ok){ const pd=await prodRes.json(); allProducts=pd.products||[]; }
-    }catch(e){}
+    const orders=(ordData&&ordData.orders)||[];
+    const allProducts=(prodData&&prodData.products)||[];
+    const checkouts=(checkoutData&&checkoutData.checkouts)||[];
+    const customers=(custData&&custData.customers)||[];
 
+    // ── COMMANDES ──
     const paid=orders.filter(function(o){return ['paid','partially_paid'].includes(o.financial_status);});
     const revenue=paid.reduce(function(s,o){return s+parseFloat(o.total_price||0);},0);
     const aov=paid.length?revenue/paid.length:0;
+    const totalDiscounts=paid.reduce(function(s,o){return s+parseFloat(o.total_discounts||0);},0);
 
-    // Produits vendus (depuis line_items)
+    // ── PANIERS ABANDONNÉS ──
+    const abandonedCheckouts=checkouts.filter(function(c){return !c.completed_at;});
+    const abandonedValue=abandonedCheckouts.reduce(function(s,c){return s+parseFloat(c.total_price||0);},0);
+    const totalCheckouts=checkouts.length;
+    const abandonRate=totalCheckouts?Math.round(abandonedCheckouts.length/totalCheckouts*100):null;
+    // Produits les plus abandonnés
+    const abandonMap={};
+    abandonedCheckouts.forEach(function(c){
+      (c.line_items||[]).forEach(function(li){
+        abandonMap[li.title]=(abandonMap[li.title]||0)+1;
+      });
+    });
+    const topAbandoned=Object.entries(abandonMap).sort(function(a,b){return b[1]-a[1];}).slice(0,5)
+      .map(function(e){return {name:e[0],count:e[1]};});
+
+    // ── PRODUITS ──
     const prodMap={};
     paid.forEach(function(o){
       (o.line_items||[]).forEach(function(li){
@@ -4084,26 +4128,18 @@ async function syncCRO(projectId){
       });
     });
     const topProducts=Object.values(prodMap).sort(function(a,b){return b.revenue-a.revenue;});
-
-    // Produits sans aucune vente sur la période
     const soldNames=Object.keys(prodMap);
     const zeroSaleProducts=allProducts
       .filter(function(pr){return pr.status==='active'&&!soldNames.includes(pr.title);})
       .map(function(pr){return pr.title;});
+    // Nouveaux produits ajoutés sur la période
+    const newProductsAdded=allProducts.filter(function(pr){return pr.created_at&&pr.created_at>=from+'T00:00:00';}).length;
 
-    // Heures & jours
-    const hourly={}, daily={};
-    paid.forEach(function(o){
-      var d=new Date(o.created_at);
-      var h=d.getHours(); hourly[h]=(hourly[h]||0)+1;
-      var dw=d.getDay(); daily[dw]=(daily[dw]||0)+1;
-    });
-
-    // Clients nouveaux vs fidèles + fréquence rachat
+    // ── CLIENTS ──
     const custMap={};
     paid.forEach(function(o){
       if(o.customer&&o.customer.id){
-        var id=o.customer.id;
+        var id=String(o.customer.id);
         custMap[id]=(custMap[id]||0)+1;
       }
     });
@@ -4112,16 +4148,27 @@ async function syncCRO(projectId){
       if(n>1){returning++;totalRepeatOrders+=n;}else{newCust++;}
     });
     var avgOrdersPerRepeat=returning?Math.round(totalRepeatOrders/returning*10)/10:0;
+    // LTV depuis customers API
+    var totalLTV=customers.reduce(function(s,c){return s+parseFloat(c.total_spent||0);},0);
+    var avgLTV=customers.length?Math.round(totalLTV/customers.length):0;
+    var vipCustomers=customers.filter(function(c){return parseInt(c.orders_count||0)>=3;}).length;
 
-    // Remboursements
+    // ── TIMING ──
+    const hourly={}, daily={};
+    paid.forEach(function(o){
+      var d=new Date(o.created_at);
+      hourly[d.getHours()]=(hourly[d.getHours()]||0)+1;
+      daily[d.getDay()]=(daily[d.getDay()]||0)+1;
+    });
+
+    // ── REMBOURSEMENTS & PROMOS ──
     const refunds=orders.filter(function(o){return (o.refunds||[]).length>0;}).length;
     const refundRate=orders.length?Math.round(refunds/orders.length*100):0;
-
-    // Promos / réductions
-    const discountOrders=paid.filter(function(o){return (o.discount_codes||[]).length>0;}).length;
+    const discountOrders=paid.filter(function(o){return parseFloat(o.total_discounts||0)>0;}).length;
     const discountRate=paid.length?Math.round(discountOrders/paid.length*100):0;
+    const discountShare=revenue?Math.round(totalDiscounts/revenue*100):0;
 
-    // Tendance : CA 1ère moitié vs 2ème moitié de la période
+    // ── TENDANCE ──
     const midTime=new Date(mid).getTime();
     var rev1=0,rev2=0;
     paid.forEach(function(o){
@@ -4129,25 +4176,26 @@ async function syncCRO(projectId){
       if(t<midTime) rev1+=parseFloat(o.total_price||0);
       else rev2+=parseFloat(o.total_price||0);
     });
-
-    // Concentration des revenus (top 3 produits)
     var top3Rev=topProducts.slice(0,3).reduce(function(s,p){return s+p.revenue;},0);
     var top3RevenueShare=revenue?Math.round(top3Rev/revenue*100):0;
 
     _croCache[projectId]={
-      orders:paid.length,revenue,aov,topProducts,hourly,daily,
-      newCust,returning,avgOrdersPerRepeat,
-      refunds,refundRate,
-      discountOrders,discountRate,
-      revenueHalf1:Math.round(rev1),revenueHalf2:Math.round(rev2),
+      orders:paid.length, revenue, aov, topProducts, hourly, daily,
+      newCust, returning, avgOrdersPerRepeat, avgLTV, vipCustomers,
+      refunds, refundRate,
+      discountOrders, discountRate, discountShare, totalDiscounts,
+      abandonedCheckouts:abandonedCheckouts.length, totalCheckouts, abandonRate, abandonedValue, topAbandoned,
+      revenueHalf1:Math.round(rev1), revenueHalf2:Math.round(rev2),
       top3RevenueShare,
-      totalProducts:allProducts.length,
-      zeroSaleProducts,
+      totalProducts:allProducts.length, zeroSaleProducts, newProductsAdded,
       currency:paid[0]?paid[0].currency:'EUR',
-      period:_croPeriod,syncedAt:Date.now()
+      period:_croPeriod, syncedAt:Date.now()
     };
     renderCRO();
-    showToast('✅ '+paid.length+' commandes analysées'+(allProducts.length?' · '+allProducts.length+' produits':''));
+    var msg='✅ '+paid.length+' cmd';
+    if(allProducts.length) msg+=' · '+allProducts.length+' produits';
+    if(abandonRate!==null) msg+=' · '+abandonRate+'% abandon panier';
+    showToast(msg);
   }catch(err){
     showToast('❌ '+err.message,'error');
     console.error('[CRO]',err);
@@ -4172,21 +4220,32 @@ async function runCROAnalysisSingle(projectId){
   const trendPct=d.revenueHalf1?Math.round((d.revenueHalf2-d.revenueHalf1)/d.revenueHalf1*100):0;
   _croCache[projectId].aiAnalysis='⏳ Analyse en cours...';
   renderCRO();
+  const retentionRate=d.newCust+d.returning?Math.round(d.returning/(d.newCust+d.returning)*100):0;
   const context=
     '=== DONNÉES BOUTIQUE: '+proj.name+' ('+d.period+' derniers jours) ===\n\n'
     +'PERFORMANCE:\n'
     +'- CA: '+fmtEur(d.revenue)+' | Commandes: '+d.orders+' | Panier moyen: '+fmtEur(d.aov)+'\n'
     +'- Tendance: '+(trendPct>=0?'+':'')+trendPct+'% (1ère vs 2ème moitié de période)\n'
     +'- Taux remboursement: '+d.refundRate+'% ('+d.refunds+' cmd remboursées)\n'
-    +'- Taux promo/réduction: '+d.discountRate+'% des commandes\n'
+    +'- Part de CA offerte en remises: '+(d.discountShare||0)+'% ('+fmtEur(d.totalDiscounts||0)+' de remises)\n'
+    +'- Commandes avec promo: '+d.discountRate+'% des commandes\n'
     +'- Concentration top 3 produits: '+d.top3RevenueShare+'% du CA\n\n'
-    +'CLIENTS:\n'
-    +'- Nouveaux: '+d.newCust+' | Fidèles: '+d.returning+' | Taux rétention: '+(d.newCust+d.returning?Math.round(d.returning/(d.newCust+d.returning)*100):0)+'%\n'
-    +'- Fréquence rachat clients fidèles: '+d.avgOrdersPerRepeat+' commandes/client\n\n'
+    +'ABANDON DE PANIER:\n'
+    +(d.abandonRate!=null
+      ?'- Taux abandon: '+d.abandonRate+'% ('+d.abandonedCheckouts+' checkouts abandonnés / '+(d.totalCheckouts||0)+' total)\n'
+       +'- CA abandonné (non récupéré): '+fmtEur(d.abandonedValue||0)+'\n'
+       +(d.topAbandoned&&d.topAbandoned.length?'- Produits les plus abandonnés: '+d.topAbandoned.map(function(a){return a[0]+' (x'+a[1]+')';}).join(', ')+'\n':'')
+      :'- Données abandon panier non disponibles\n')
+    +'\nCLIENTS:\n'
+    +'- Nouveaux: '+d.newCust+' | Fidèles: '+d.returning+' | Taux rétention: '+retentionRate+'%\n'
+    +'- Fréquence rachat clients fidèles: '+d.avgOrdersPerRepeat+' commandes/client\n'
+    +'- LTV moyenne: '+fmtEur(d.avgLTV||0)+' par client\n'
+    +'- Clients VIP (3+ commandes): '+(d.vipCustomers||0)+'\n\n'
     +'PRODUITS:\n'
     +'- Catalogue total: '+(d.totalProducts||'N/A')+' produits actifs\n'
     +'- Produits sans vente sur la période: '+(d.zeroSaleProducts?d.zeroSaleProducts.length:0)+'\n'
     +(d.zeroSaleProducts&&d.zeroSaleProducts.length?'- Liste dead stock: '+d.zeroSaleProducts.slice(0,5).join(', ')+'\n':'')
+    +'- Nouveaux produits ajoutés: '+(d.newProductsAdded||0)+'\n'
     +'- Top produits: '+((d.topProducts||[]).slice(0,8).map(function(p){return p.name+' ('+p.qty+' ventes, '+fmtEur(p.revenue)+')';}).join(' | '))+'\n\n'
     +'TIMING:\n'
     +'- Heure de pointe: '+(topH?topH[0]+'h ('+topH[1]+' cmd)':'N/A')+'\n'
@@ -4196,13 +4255,15 @@ async function runCROAnalysisSingle(projectId){
       method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
       body:JSON.stringify({model:AI_MODEL,max_tokens:1200,
-        system:'Tu es un expert CRO e-commerce avec 10 ans d\'expérience sur Shopify. Tu analyses des données réelles de boutiques et fournis des recommandations ultra-concrètes et actionnables. Tu identifies les opportunités cachées, les fuites de conversion et les leviers de croissance rapide. Tu utilises le markdown (gras, listes) pour structurer tes réponses.',
+        system:'Tu es un expert CRO e-commerce avec 10 ans d\'expérience sur Shopify. Tu analyses des données réelles de boutiques et fournis des recommandations ultra-concrètes et actionnables. Tu identifies les opportunités cachées, les fuites de conversion, les problèmes de rétention, et les leviers de croissance rapide. Sois direct, précis et actionnable. Tu utilises le markdown (gras, listes) pour structurer tes réponses.',
         messages:[{role:'user',content:
           'Analyse ces données e-commerce et fournis:\n'
-          +'1. **Diagnostic rapide** (3 points clés positifs/négatifs)\n'
-          +'2. **Top 3 actions prioritaires** avec impact estimé et comment les mettre en place concrètement\n'
-          +'3. **Opportunités cachées** basées sur les données (ex: dead stock, timing, rétention)\n'
-          +'4. **Alerte** si quelque chose est anormal (remboursements trop élevés, tendance négative, etc.)\n\n'
+          +'1. **Diagnostic rapide** (points clés positifs et négatifs)\n'
+          +'2. **Top 3 actions prioritaires** avec impact estimé et comment les mettre en place concrètement sur Shopify\n'
+          +'3. **Abandon de panier** : si le taux est élevé, explique comment le réduire (flows Klaviyo, offre de récupération, etc.)\n'
+          +'4. **Rétention & LTV** : comment fidéliser davantage et augmenter la valeur vie client\n'
+          +'5. **Opportunités cachées** basées sur les données (dead stock à liquider, timing des campagnes, segments VIP à activer)\n'
+          +'6. **Alerte** si quelque chose est anormal (remboursements élevés, tendance négative, trop de remises)\n\n'
           +context}]})
     });
     const json=await r.json();
