@@ -133,7 +133,7 @@ async function computeCRO(shop, token, period) {
 
   // Ã¢ÂÂÃ¢ÂÂ Abandon panier Ã¢ÂÂÃ¢ÂÂ
   const abandonedCheckouts = checkouts.filter(c => !c.completed_at);
-  const totalCheckouts = checkouts.length;
+  const totalCheckouts = checkouts.length + paid.length;
   const abandonedValue = abandonedCheckouts.reduce((s, c) => s + parseFloat(c.total_price || 0), 0);
   const abandonRate = totalCheckouts ? Math.round(abandonedCheckouts.length / totalCheckouts * 100) : null;
   const abandonMap = {};
