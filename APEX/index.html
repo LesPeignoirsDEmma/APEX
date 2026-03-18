@@ -847,6 +847,7 @@ html[data-theme="light"]{
   <button class="snav" onclick="goPage('habits',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-flame"/></svg></span>Habitudes</button>
   <button class="snav" onclick="goPage('focus',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></span>Focus</button>
   <button class="snav" onclick="goPage('decisions',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-book-open"/></svg></span>Décisions</button>
+  <button class="snav" onclick="goPage('cro',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-cpu"/></svg></span>Analytics</button>
   <button class="snav" onclick="openSettings()"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></span>Réglages</button>
   <div class="sb-bottom mt-20">
     <div class="sb-day" id="sb-day"></div>
@@ -1429,6 +1430,25 @@ html[data-theme="light"]{
 
 
 <!-- ─── DÉCISIONS ─── -->
+<!-- PAGE CRO -->
+<div class="page" id="page-cro">
+  <div class="page-hdr">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <div><h2>Analytics & CRO</h2><p>Analyse approfondie de vos boutiques Shopify</p></div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-sm btn-ghost" onclick="syncAllCRO()" id="cro-sync-btn"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-refresh"/></svg> Sync données</button>
+        <button class="btn btn-sm" onclick="runCROAnalysis()" id="cro-ai-btn"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sparkles"/></svg> Analyse IA</button>
+      </div>
+    </div>
+  </div>
+  <div id="cro-period-tabs" style="display:flex;gap:6px;margin-bottom:18px;flex-wrap:wrap">
+    <button class="btn btn-sm active" id="cro-tab-7" onclick="setCROPeriod(7,this)">7 jours</button>
+    <button class="btn btn-sm btn-ghost" id="cro-tab-30" onclick="setCROPeriod(30,this)">30 jours</button>
+    <button class="btn btn-sm btn-ghost" id="cro-tab-90" onclick="setCROPeriod(90,this)">90 jours</button>
+  </div>
+  <div id="cro-content"></div>
+</div>
+
 <div class="page" id="page-decisions">
   <div class="page-hdr">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
@@ -1459,6 +1479,7 @@ html[data-theme="light"]{
   <button class="more-item" id="more-habits" onclick="moreNav('habits')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-flame"/></svg></span>Habitudes</button>
   <button class="more-item" id="more-focus" onclick="moreNav('focus')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></span>Focus</button>
   <button class="more-item" id="more-decisions" onclick="moreNav('decisions')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-book-open"/></svg></span>Décisions</button>
+  <button class="more-item" id="more-cro" onclick="moreNav('cro')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-cpu"/></svg></span>Analytics</button>
   <div style="border-top:1px solid var(--border);margin:4px 0"></div>
   <button class="more-item" onclick="closeMoreMenu();openSettings()"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></span>Réglages</button>
 </div>
@@ -2092,7 +2113,7 @@ let curPage='today';
 let selDay=today();
 let weekOffset=0;
 
-const MORE_PAGES=['goals','habits','focus','decisions'];
+const MORE_PAGES=['goals','habits','focus','decisions','cro'];
 function goPage(name,el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const pg=document.getElementById('page-'+name);
@@ -2124,6 +2145,7 @@ function render(p){
     case'finance':  renderFinance();  break;
     case'focus':     renderFocus();     break;
     case'decisions': renderDecisions(); break;
+    case'cro':       renderCRO();       break;
   }
 }
 function goPageAndAdd(){
@@ -3248,13 +3270,35 @@ function renderAIMessages(){
     div.className=`ai-msg ${c.role}`;
     const isApex=c.role==='apex';
     div.innerHTML=`<div class="ai-avatar ${c.role}">${isApex?'A':'👤'}</div>
-      <div class="ai-bubble">${escHtml(c.content)}</div>`;
+      <div class="ai-bubble">${isApex?mdToHtml(c.content):escHtml(c.content)}</div>`;
     container.appendChild(div);
   });
   container.scrollTop=container.scrollHeight;
 }
 
 function escHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function mdToHtml(s){
+  // Escape HTML first, then apply markdown
+  let t=s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // Headers
+  t=t.replace(/^### (.+)$/gm,'<strong style="font-size:13px;color:var(--text)">$1</strong>');
+  t=t.replace(/^## (.+)$/gm,'<strong style="font-size:14px;color:var(--text)">$1</strong>');
+  t=t.replace(/^# (.+)$/gm,'<strong style="font-size:15px;color:var(--text)">$1</strong>');
+  // Bold
+  t=t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  // Italic
+  t=t.replace(/\*(.+?)\*/g,'<em>$1</em>');
+  // Bullet lists
+  t=t.replace(/^[-•] (.+)$/gm,'<li>$1</li>');
+  t=t.replace(/(<li>.*<\/li>)/gs, m => '<ul style="margin:6px 0 6px 16px;padding:0">'+m+'</ul>');
+  // Numbered lists
+  t=t.replace(/^\d+\. (.+)$/gm,'<li>$1</li>');
+  // Code inline
+  t=t.replace(/`([^`]+)`/g,'<code style="background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px">$1</code>');
+  // Newlines
+  t=t.replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
+  return t;
+}
 
 function aiKeydown(e){ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); sendAIMessage(); } }
 
@@ -3828,6 +3872,191 @@ async function syncAllShopify(){
   const projs=D.projects||DEFAULT_PROJECTS;
   const creds=D.shopifyCreds||{};
   for(const p of projs){ if(creds[p.id]) await syncShopify(p.id); }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CRO / ANALYTICS
+// ═══════════════════════════════════════════════════════════════
+let _croPeriod=30;
+const _croCache={};
+
+function setCROPeriod(days,el){
+  _croPeriod=days;
+  document.querySelectorAll('#cro-period-tabs .btn').forEach(b=>{b.classList.remove('active');b.classList.add('btn-ghost');});
+  el.classList.add('active'); el.classList.remove('btn-ghost');
+  renderCRO();
+}
+
+function renderCRO(){
+  const el=document.getElementById('cro-content'); if(!el) return;
+  const projs=(D.projects||[]).filter(p=>(D.shopifyCreds||{})[p.id]);
+  if(!projs.length){
+    el.innerHTML=`<div class="empty-state"><div class="ei"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-cpu"/></svg></div>
+      <p>Connectez une boutique Shopify dans <strong>Finances → Connexion Shopify</strong> pour voir vos analytics.</p>
+      <button class="btn btn-sm" onclick="goPage('finance',null)" style="margin-top:8px">Aller dans Finances</button></div>`;
+    return;
+  }
+  const html=projs.map(p=>{
+    const data=_croCache[p.id];
+    if(!data) return `<div class="card" style="margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <strong>${p.emoji||'🏪'} ${p.name}</strong>
+        <button class="btn btn-sm" onclick="syncCRO('${p.id}')">Charger les données</button>
+      </div></div>`;
+    return renderCROCard(p,data);
+  }).join('');
+  el.innerHTML=html;
+}
+
+function renderCROCard(p,data){
+  const {orders,revenue,aov,topProducts,hourly,daily,returning,newCust,refunds,refundRate}=data;
+  const convColor=n=>n>=3?'#10B981':n>=2?'#F59E0B':'#ef4444';
+  // Top heures
+  const topHour=hourly?Object.entries(hourly).sort((a,b)=>b[1]-a[1])[0]:null;
+  const topDay=daily?Object.entries(daily).sort((a,b)=>b[1]-a[1])[0]:null;
+  const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  return `<div class="card" style="margin-bottom:20px;padding:20px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <strong style="font-size:15px">${p.emoji||'🏪'} ${p.name}</strong>
+      <button class="btn btn-sm btn-ghost" onclick="syncCRO('${p.id}')" style="font-size:11px">${ico('refresh',11)} Actualiser</button>
+    </div>
+    <!-- KPIs principaux -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-bottom:16px">
+      ${kpiBox('CA total',fmtEur(revenue),'var(--pl)')}
+      ${kpiBox('Commandes',orders,'var(--text)')}
+      ${kpiBox('Panier moyen',fmtEur(aov),'#10B981')}
+      ${kpiBox('Remboursements',refundRate+'%',refundRate>5?'#ef4444':'#10B981')}
+      ${topHour?kpiBox('Heure de pointe',topHour[0]+'h ('+topHour[1]+' cmd)','#F59E0B'):''}
+      ${topDay?kpiBox('Meilleur jour',jours[topDay[0]]+' ('+topDay[1]+' cmd)','#8B5CF6'):''}
+    </div>
+    <!-- Top produits -->
+    ${topProducts&&topProducts.length?`
+    <div style="margin-bottom:14px">
+      <div style="font-size:11px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Top Produits</div>
+      ${topProducts.slice(0,5).map((pr,i)=>`
+        <div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:11px;color:var(--t3);width:14px">${i+1}</span>
+          <span style="flex:1;font-size:13px;color:var(--text)">${escHtml(pr.name.slice(0,40))}</span>
+          <span style="font-size:12px;color:var(--t2)">${pr.qty} ventes</span>
+          <span style="font-size:12px;font-weight:600;color:var(--pl)">${fmtEur(pr.revenue)}</span>
+        </div>`).join('')}
+    </div>`:''}
+    <!-- Clients -->
+    ${(newCust||returning)?`
+    <div style="margin-bottom:14px">
+      <div style="font-size:11px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Clients</div>
+      <div style="display:flex;gap:12px">
+        <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">
+          <div style="font-size:18px;font-weight:700;color:var(--pl)">${newCust||0}</div>
+          <div style="font-size:11px;color:var(--t2)">Nouveaux</div>
+        </div>
+        <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">
+          <div style="font-size:18px;font-weight:700;color:#10B981">${returning||0}</div>
+          <div style="font-size:11px;color:var(--t2)">Fidèles</div>
+        </div>
+        <div style="flex:1;background:var(--card2);border-radius:8px;padding:10px;text-align:center">
+          <div style="font-size:18px;font-weight:700;color:#F59E0B">${returning&&newCust?Math.round(returning/(newCust+returning)*100):0}%</div>
+          <div style="font-size:11px;color:var(--t2)">Rétention</div>
+        </div>
+      </div>
+    </div>`:''}
+    ${data.aiAnalysis?`<div style="background:var(--card2);border-radius:10px;padding:14px;font-size:13px;line-height:1.6;color:var(--text)">${mdToHtml(data.aiAnalysis)}</div>`:''}
+  </div>`;
+}
+
+function kpiBox(label,val,color){
+  return `<div style="background:var(--card2);border-radius:8px;padding:10px;text-align:center">
+    <div style="font-size:17px;font-weight:700;color:${color}">${val}</div>
+    <div style="font-size:10px;color:var(--t3);margin-top:2px">${label}</div>
+  </div>`;
+}
+
+async function syncCRO(projectId){
+  const cred=(D.shopifyCreds||{})[projectId]; if(!cred) return;
+  const btn=document.getElementById('cro-sync-btn');
+  if(btn){btn.textContent='⏳ Chargement...';btn.disabled=true;}
+  const now=new Date();
+  const from=new Date(now-_croPeriod*24*60*60*1000).toISOString().split('T')[0];
+  try{
+    // Fetch orders avec line_items
+    const url=`https://${cred.shop}/admin/api/2024-01/orders.json?status=any&limit=250&created_at_min=${from}T00:00:00&fields=id,total_price,currency,created_at,financial_status,customer,line_items,refunds`;
+    const r=await fetch(url,{headers:{'X-Shopify-Access-Token':cred.token,'Content-Type':'application/json'}});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const {orders=[]}=await r.json();
+    const paid=orders.filter(o=>['paid','partially_paid'].includes(o.financial_status));
+    const revenue=paid.reduce((s,o)=>s+parseFloat(o.total_price||0),0);
+    const aov=paid.length?revenue/paid.length:0;
+    // Top produits
+    const prodMap={};
+    paid.forEach(o=>(o.line_items||[]).forEach(li=>{
+      if(!prodMap[li.title]) prodMap[li.title]={name:li.title,qty:0,revenue:0};
+      prodMap[li.title].qty+=li.quantity||1;
+      prodMap[li.title].revenue+=parseFloat(li.price||0)*(li.quantity||1);
+    }));
+    const topProducts=Object.values(prodMap).sort((a,b)=>b.revenue-a.revenue);
+    // Heures & jours de pointe
+    const hourly={}, daily={};
+    paid.forEach(o=>{
+      const d=new Date(o.created_at);
+      const h=d.getHours(); hourly[h]=(hourly[h]||0)+1;
+      const dw=d.getDay(); daily[dw]=(daily[dw]||0)+1;
+    });
+    // Clients nouveaux vs récurrents
+    const custIds=paid.map(o=>o.customer?.id).filter(Boolean);
+    const seen={}, newCust=[], ret=[];
+    custIds.forEach(id=>{ seen[id]=(seen[id]||0)+1; });
+    Object.entries(seen).forEach(([id,n])=>{ if(n>1)ret.push(id); else newCust.push(id); });
+    // Remboursements
+    const refunds=orders.filter(o=>(o.refunds||[]).length>0).length;
+    const refundRate=orders.length?Math.round(refunds/orders.length*100):0;
+    _croCache[projectId]={orders:paid.length,revenue,aov,topProducts,hourly,daily,newCust:newCust.length,returning:ret.length,refunds,refundRate,period:_croPeriod,syncedAt:Date.now()};
+    renderCRO();
+    showToast(`✅ ${paid.length} commandes analysées`);
+  }catch(err){
+    showToast('❌ '+err.message,'error');
+  }finally{
+    if(btn){btn.innerHTML=`${ico('refresh',13)} Sync données`;btn.disabled=false;}
+  }
+}
+
+async function syncAllCRO(){
+  const projs=(D.projects||[]).filter(p=>(D.shopifyCreds||{})[p.id]);
+  for(const p of projs) await syncCRO(p.id);
+}
+
+async function runCROAnalysis(){
+  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+  if(!key||!key.startsWith('sk-ant-')){ showToast('⚠️ Clé API Claude requise dans Réglages','error'); return; }
+  const projs=(D.projects||[]).filter(p=>_croCache[p.id]);
+  if(!projs.length){ showToast('⚠️ Sync les données d\'abord','error'); return; }
+  const btn=document.getElementById('cro-ai-btn');
+  if(btn){btn.textContent='⏳ Analyse...';btn.disabled=true;}
+  for(const proj of projs){
+    const d=_croCache[proj.id];
+    const topH=d.hourly?Object.entries(d.hourly).sort((a,b)=>b[1]-a[1])[0]:null;
+    const topDw=d.daily?Object.entries(d.daily).sort((a,b)=>b[1]-a[1])[0]:null;
+    const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+    const topProdsStr=(d.topProducts||[]).slice(0,5).map(function(pr){return pr.name+' ('+pr.qty+' ventes, '+fmtEur(pr.revenue)+')';}).join(', ');
+    const context='Boutique: '+proj.name+'\n'
+      +'Période: '+d.period+' jours\n'
+      +'CA: '+fmtEur(d.revenue)+' | Commandes: '+d.orders+' | Panier moyen: '+fmtEur(d.aov)+'\n'
+      +'Taux remboursement: '+d.refundRate+'%\n'
+      +'Nouveaux clients: '+d.newCust+' | Clients fidèles: '+d.returning+'\n'
+      +'Top produits: '+topProdsStr+'\n'
+      +'Heure de pointe: '+(topH?topH[0]+'h ('+topH[1]+' cmd)':'N/A')+'\n'
+      +'Meilleur jour: '+(topDw?jours[topDw[0]]+' ('+topDw[1]+' cmd)':'N/A');
+    try{
+      const r=await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',
+        headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+        body:JSON.stringify({model:AI_MODEL,max_tokens:800,messages:[{role:'user',content:'Tu es un expert CRO e-commerce. Analyse ces données et donne 3-5 recommandations concrètes et actionnables pour améliorer les conversions et le CA. Sois direct et spécifique.\n\n'+context}]})
+      });
+      const json=await r.json();
+      _croCache[proj.id].aiAnalysis=(json.content&&json.content[0])?json.content[0].text:'';
+    }catch(e){ _croCache[proj.id].aiAnalysis='Erreur: '+e.message; }
+  }
+  renderCRO();
+  if(btn){btn.innerHTML=`${ico('sparkles',13)} Analyse IA`;btn.disabled=false;}
 }
 
 // ── SHOPIFY MODAL ──
