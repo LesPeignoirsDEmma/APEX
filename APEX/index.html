@@ -875,7 +875,7 @@ html[data-theme="light"]{
       <button onclick="openWeeklyReview()" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--rsm);padding:8px 10px;cursor:pointer;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--t2);flex-shrink:0" title="Revue hebdomadaire"><svg class="apex-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-calendar-check"/></svg><span style="display:none" class="desktop-only">Revue</span></button>
       <button onclick="goPage('focus',null)" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--rsm);padding:8px 10px;cursor:pointer;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--t2);flex-shrink:0" title="Session Focus"><svg class="apex-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></button>
       <button onclick="openSearch()" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--rsm);padding:8px 10px;cursor:pointer;font-size:17px;flex-shrink:0;color:var(--t2)" title="Recherche (/)"><svg class="apex-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-search"/></svg></button>
-      <div id="sync-badge" onclick="manualSync()" title="Sync Mac ↔ iPhone"><span class="sync-dot"></span><span id="sync-label">Sync</span></div>
+      <div id="sync-badge" onclick="manualSync()" title="Sync Firebase" style="width:8px;height:8px;border-radius:50%;background:#444;flex-shrink:0;cursor:pointer;transition:background 0.4s ease"></div>
       <button onclick="openSettings()" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--rsm);padding:8px 10px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--t2)"><svg class="apex-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></button>
     </div>
   </div>
@@ -1862,10 +1862,10 @@ function save(){
 // ═══════════════════════════════════════════════════════════════
 function setSyncBadge(state, label){
   const badge=document.getElementById('sync-badge');
-  const lbl=document.getElementById('sync-label');
-  if(!badge||!lbl) return;
-  badge.className=''; badge.classList.add(state);
-  lbl.textContent=label;
+  if(!badge) return;
+  const colors={synced:'#4ADE80', syncing:'#F7C948', error:'#FF7070', '':'#444'};
+  badge.style.background=colors[state]||'#444';
+  badge.title=label||'Sync Firebase';
 }
 
 async function pushSync(){
