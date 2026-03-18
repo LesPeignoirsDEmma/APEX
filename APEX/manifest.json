@@ -1,23 +1,17 @@
 {
-  "name": "APEX — Mon Système de Vie",
+  "name": "APEX IA",
   "short_name": "APEX",
-  "description": "Deep Work · OKR · Habitudes · Planning",
-  "start_url": "./",
+  "description": "Ton second cerveau — focus, finances, habitudes, objectifs",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#080810",
-  "theme_color": "#7B68EE",
-  "orientation": "portrait-primary",
+  "theme_color": "#080810",
+  "orientation": "any",
   "icons": [
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icon-512.png",
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='112' fill='%23080810'/><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237B68EE'/><stop offset='100%25' stop-color='%2300C9C8'/></linearGradient></defs><text x='256' y='340' font-family='system-ui,sans-serif' font-size='260' font-weight='900' text-anchor='middle' fill='url(%23g)'>A</text></svg>",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]
