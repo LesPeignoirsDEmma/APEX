@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T16:07:59.244Z",
+  "lastUpdated": "2026-03-18T16:21:00.390Z",
   "boutiques": {
     "proj_mmw65etx": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T16:08:01.499Z"
+        "syncedAt": "2026-03-18T16:21:02.635Z"
       },
       "cro": {
         "7": {
@@ -103,16 +103,16 @@
           "abandonRate": 100,
           "abandonedValue": 69,
           "topAbandoned": [
-            [
-              "Chaussons d’intérieur — Gris",
-              1
-            ],
-            [
-              "Robe Peignoir Coton Léger",
-              1
-            ]
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
+            },
+            {
+              "name": "Robe Peignoir Coton Léger",
+              "count": 1
+            }
           ],
-          "syncedAt": "2026-03-18T16:08:02.510Z"
+          "syncedAt": "2026-03-18T16:21:03.482Z"
         },
         "30": {
           "period": 30,
@@ -241,28 +241,28 @@
           "abandonRate": 100,
           "abandonedValue": 463,
           "topAbandoned": [
-            [
-              "Peignoir Rose Rayé – Femme",
-              2
-            ],
-            [
-              "Peignoir Chic Satin Homme",
-              1
-            ],
-            [
-              "Peignoir Coton",
-              1
-            ],
-            [
-              "Peignoir Nid d’Abeille Manche Courte",
-              1
-            ],
-            [
-              "Peignoir Polaire Luxe - Homme",
-              1
-            ]
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "count": 2
+            },
+            {
+              "name": "Peignoir Chic Satin Homme",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Coton",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Manche Courte",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "count": 1
+            }
           ],
-          "syncedAt": "2026-03-18T16:08:03.472Z"
+          "syncedAt": "2026-03-18T16:21:04.243Z"
         },
         "90": {
           "period": 90,
@@ -398,28 +398,28 @@
           "abandonRate": 97,
           "abandonedValue": 1611,
           "topAbandoned": [
-            [
-              "Peignoir Éponge Rose Rayé",
-              5
-            ],
-            [
-              "Peignoir Rose Rayé – Femme",
-              3
-            ],
-            [
-              "Peignoir De Bain Fille",
-              2
-            ],
-            [
-              "Ensemble de Nuit 4 Pièces – Femme",
-              2
-            ],
-            [
-              "Peignoir Éponge Vert Rayé",
-              1
-            ]
+            {
+              "name": "Peignoir Éponge Rose Rayé",
+              "count": 5
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "count": 3
+            },
+            {
+              "name": "Peignoir De Bain Fille",
+              "count": 2
+            },
+            {
+              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "count": 2
+            },
+            {
+              "name": "Peignoir Éponge Vert Rayé",
+              "count": 1
+            }
           ],
-          "syncedAt": "2026-03-18T16:08:04.406Z"
+          "syncedAt": "2026-03-18T16:21:05.040Z"
         }
       }
     }
