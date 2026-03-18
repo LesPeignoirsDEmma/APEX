@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T15:56:13.077Z",
+  "lastUpdated": "2026-03-18T16:07:59.244Z",
   "boutiques": {
-    "proj_mmvwfi56": {
+    "proj_mmw65etx": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T15:56:15.154Z"
+        "syncedAt": "2026-03-18T16:08:01.499Z"
       },
       "cro": {
         "7": {
@@ -112,7 +112,7 @@
               1
             ]
           ],
-          "syncedAt": "2026-03-18T15:56:15.919Z"
+          "syncedAt": "2026-03-18T16:08:02.510Z"
         },
         "30": {
           "period": 30,
@@ -262,7 +262,7 @@
               1
             ]
           ],
-          "syncedAt": "2026-03-18T15:56:16.727Z"
+          "syncedAt": "2026-03-18T16:08:03.472Z"
         },
         "90": {
           "period": 90,
@@ -272,8 +272,8 @@
           "currency": "EUR",
           "refunds": 21,
           "refundRate": 17,
-          "revenueHalf1": 2542,
-          "revenueHalf2": 4120,
+          "revenueHalf1": 2612,
+          "revenueHalf2": 4051,
           "discountOrders": 57,
           "discountRate": 54,
           "discountShare": 9,
@@ -419,7 +419,7 @@
               1
             ]
           ],
-          "syncedAt": "2026-03-18T15:56:17.501Z"
+          "syncedAt": "2026-03-18T16:08:04.406Z"
         }
       }
     }
