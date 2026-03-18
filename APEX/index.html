@@ -3867,7 +3867,7 @@ async function syncShopify(projectId){
     if(!bData||!bData.finance) throw new Error('Aucune donnée pour cette boutique dans shopify-data.json');
     const fin=bData.finance;
     setShopifyCache(projectId,{revenue:fin.revenue||0, orders:fin.orders||0, currency:fin.currency||'EUR', syncedAt:Date.now(),
-      byPeriod:{7:fin[7]||null, 30:fin[30]||null, 90:fin[90]||null}
+    byPeriod:{7:bData.cro&&bData.cro[7]?{revenue:bData.cro[7].revenue,orders:bData.cro[7].orders}:null,30:bData.cro&&bData.cro[30]?{revenue:bData.cro[30].revenue,orders:bData.cro[30].orders}:null,90:bData.cro&&bData.cro[90]?{revenue:bData.cro[90].revenue,orders:bData.cro[90].orders}:null}
     });
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
     showToast('✅ '+fin.orders+' commandes synchronisées');
@@ -4081,7 +4081,7 @@ async function syncCRO(projectId){
     if(!bData||!bData.cro) throw new Error('Aucune donnée CRO pour cette boutique');
     const croData=bData.cro[_croPeriod]||bData.cro[30]||Object.values(bData.cro)[0];
     if(!croData) throw new Error('Aucune donnée pour la période '+_croPeriod+'j');
-    _croCache[projectId]=croData;
+    _croCache[projectId]=bData.cro;
     renderCRO();
     var msg='✅ '+croData.orders+' cmd · '+croData.period+'j';
     if(croData.abandonRate!==null&&croData.abandonRate!==undefined) msg+=' · '+croData.abandonRate+'% abandon';
