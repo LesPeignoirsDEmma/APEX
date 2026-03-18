@@ -3780,7 +3780,13 @@ function renderFinKPIs(){
   // Revenus (depuis cache Shopify ou saisie manuelle)
   let totalRev=0;
   const projs=D.projects||DEFAULT_PROJECTS;
-  projs.forEach(p=>{ const c=getShopifyCache(p.id); totalRev+=(c.revenue||0); });
+ const _periodKeyMap={'7d':7,'30d':30,'3m':90};
+  const _pk=_periodKeyMap[_finPeriod];
+  projs.forEach(p=>{
+    const c=getShopifyCache(p.id);
+    const pd=_pk&&c.byPeriod&&c.byPeriod[_pk];
+    totalRev+=(pd?pd.revenue:c.revenue)||0;
+  });
   // + revenus manuels
   (D.manualRevenues||[]).filter(r=>r.date>=from&&r.date<=to).forEach(r=>totalRev+=parseFloat(r.amount)||0);
 
@@ -3860,7 +3866,9 @@ async function syncShopify(projectId){
     const bData=data.boutiques&&data.boutiques[projectId];
     if(!bData||!bData.finance) throw new Error('Aucune donnée pour cette boutique dans shopify-data.json');
     const fin=bData.finance;
-    setShopifyCache(projectId,{revenue:fin.revenue,orders:fin.orders,currency:fin.currency||'EUR',syncedAt:Date.now()});
+    setShopifyCache(projectId,{revenue:fin.revenue||0, orders:fin.orders||0, currency:fin.currency||'EUR', syncedAt:Date.now(),
+      byPeriod:{7:fin[7]||null, 30:fin[30]||null, 90:fin[90]||null}
+    };
     if(btn){btn.innerHTML=ico('refresh',13)+' Sync Shopify';btn.disabled=false;}
     showToast('✅ '+fin.orders+' commandes synchronisées');
     renderFinance();
@@ -3899,12 +3907,14 @@ function renderCRO(){
     return;
   }
   const html=projs.map(p=>{
-    const data=_croCache[p.id];
-    if(!data) return `<div class="card" style="margin-bottom:16px">
+    const allPeriods=_croCache[p.id];
+    if(!allPeriods) return `<div class="card" style="margin-bottom:16px">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <strong>${p.emoji||'🏪'} ${p.name}</strong>
         <button class="btn btn-sm" onclick="syncCRO('${p.id}')">Charger les données</button>
       </div></div>`;
+    const data=allPeriods[_croPeriod]||allPeriods[30]||Object.values(allPeriods)[0];
+    if(!data) return `<div class="card" style="margin-bottom:16px"><p style="color:var(--t2);font-size:13px">Pas de données pour ${_croPeriod}j</p></div>`;
     return renderCROCard(p,data);
   }).join('');
   el.innerHTML=html;
@@ -4203,18 +4213,9 @@ async function _syncCROLegacy(projectId){
     var top3Rev=topProducts.slice(0,3).reduce(function(s,p){return s+p.revenue;},0);
     var top3RevenueShare=revenue?Math.round(top3Rev/revenue*100):0;
 
-    _croCache[projectId]={
-      orders:paid.length, revenue, aov, topProducts, hourly, daily,
-      newCust, returning, avgOrdersPerRepeat, avgLTV, vipCustomers,
-      refunds, refundRate,
-      discountOrders, discountRate, discountShare, totalDiscounts,
-      abandonedCheckouts:abandonedCheckouts.length, totalCheckouts, abandonRate, abandonedValue, topAbandoned,
-      revenueHalf1:Math.round(rev1), revenueHalf2:Math.round(rev2),
-      top3RevenueShare,
-      totalProducts:allProducts.length, zeroSaleProducts, newProductsAdded,
-      currency:paid[0]?paid[0].currency:'EUR',
-      period:_croPeriod, syncedAt:Date.now()
-    };
+_croCache[projectId]=bData.cro;
+    const croData=bData.cro[_croPeriod]||bData.cro[30]||Object.values(bData.cro)[0];
+    if(!croData) throw new Error('Aucune donnée pour la période '+_croPeriod+'j');
     renderCRO();
     var msg='✅ '+paid.length+' cmd';
     if(allProducts.length) msg+=' · '+allProducts.length+' produits';
