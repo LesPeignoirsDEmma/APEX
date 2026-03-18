@@ -3847,6 +3847,8 @@ function fmtEur(n){ return new Intl.NumberFormat('fr-FR',{style:'currency',curre
 // ── SHOPIFY SYNC ──
 async function syncShopify(projectId){
   const cred=(D.shopifyCreds||{})[projectId]; if(!cred) return openShopifyModal(projectId);
+  const token=(cred.token||'').replace(/[\s\u200B-\u200D\uFEFF\u2022]/g,'');
+  if(!token){ showToast('⚠️ Token Shopify invalide','error'); return; }
   const {from}=finPeriodDates();
   const btn=document.getElementById('fin-sync-btn');
   if(btn){btn.textContent='⏳ Sync...';btn.disabled=true;}
@@ -3855,7 +3857,7 @@ async function syncShopify(projectId){
   const url=`https://${cred.shop}/admin/api/2024-01/orders.json?status=any&limit=250&created_at_min=${from}T00:00:00&fields=id,total_price,currency,created_at,financial_status`;
   try{
     // Tentative directe (fonctionne si CORS est activé sur le Custom App)
-    const r=await fetch(url,{headers:{'X-Shopify-Access-Token':cred.token,'Content-Type':'application/json'}});
+    const r=await fetch(url,{headers:{'X-Shopify-Access-Token':token,'Content-Type':'application/json'}});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const data=await r.json();
     const orders=data.orders||[];
@@ -4065,13 +4067,15 @@ function renderCROCard(p,data){
 
 async function syncCRO(projectId){
   const cred=(D.shopifyCreds||{})[projectId]; if(!cred) return;
+  const token=(cred.token||'').replace(/[\s\u200B-\u200D\uFEFF\u2022]/g,'');
+  if(!token){ showToast('⚠️ Token Shopify invalide — reconfigure la boutique','error'); return; }
   const btn=document.getElementById('cro-sync-btn');
   if(btn){btn.textContent='⏳ Chargement...';btn.disabled=true;}
   const now=new Date();
   const fromDate=new Date(now-_croPeriod*24*60*60*1000);
   const from=fromDate.toISOString().split('T')[0];
   const mid=new Date(fromDate.getTime()+(now-fromDate)/2).toISOString();
-  const headers={'X-Shopify-Access-Token':cred.token,'Content-Type':'application/json'};
+  const headers={'X-Shopify-Access-Token':token,'Content-Type':'application/json'};
   const base='https://'+cred.shop+'/admin/api/2024-01';
 
   async function shopFetch(path){
@@ -4299,7 +4303,7 @@ function openShopifyModal(projectId){
 function saveShopifyCred(){
   const projId=document.getElementById('f-shop-proj-id').value;
   let shop=document.getElementById('f-shop-url').value.trim();
-  const token=document.getElementById('f-shop-token').value.trim();
+  const token=document.getElementById('f-shop-token').value.replace(/[\s\u200B-\u200D\uFEFF\u2022]/g,'');
   if(!shop||!token){ showToast('Remplissez les deux champs','error'); return; }
   if(!shop.includes('.')) shop+='.myshopify.com';
   D.shopifyCreds=D.shopifyCreds||{};
