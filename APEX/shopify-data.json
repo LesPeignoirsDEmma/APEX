@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T17:00:11.602Z",
+  "lastUpdated": "2026-03-18T17:58:17.043Z",
   "boutiques": {
     "proj_mmw65etx": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T17:00:14.096Z"
+        "syncedAt": "2026-03-18T17:58:19.502Z"
       },
       "cro": {
         "7": {
@@ -99,8 +99,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 2,
-          "abandonRate": 100,
+          "totalCheckouts": 8,
+          "abandonRate": 25,
           "abandonedValue": 69,
           "topAbandoned": [
             {
@@ -112,7 +112,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T17:00:15.136Z"
+          "syncedAt": "2026-03-18T17:58:20.292Z"
         },
         "30": {
           "period": 30,
@@ -122,8 +122,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1226,
-          "revenueHalf2": 468,
+          "revenueHalf1": 1279,
+          "revenueHalf2": 414,
           "discountOrders": 11,
           "discountRate": 42,
           "discountShare": 4,
@@ -237,8 +237,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 9,
-          "abandonRate": 100,
+          "totalCheckouts": 35,
+          "abandonRate": 26,
           "abandonedValue": 463,
           "topAbandoned": [
             {
@@ -262,7 +262,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T17:00:16.049Z"
+          "syncedAt": "2026-03-18T17:58:21.132Z"
         },
         "90": {
           "period": 90,
@@ -394,8 +394,8 @@
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 31,
-          "totalCheckouts": 32,
-          "abandonRate": 97,
+          "totalCheckouts": 138,
+          "abandonRate": 22,
           "abandonedValue": 1611,
           "topAbandoned": [
             {
@@ -419,7 +419,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T17:00:16.952Z"
+          "syncedAt": "2026-03-18T17:58:22.029Z"
         }
       }
     }
