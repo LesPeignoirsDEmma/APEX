@@ -1,0 +1,34 @@
+name: Shopify Sync
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Toutes les heures
+  workflow_dispatch:        # Déclenchement manuel possible
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Shopify sync
+        env:
+          SHOPIFY_CONFIGS: ${{ secrets.SHOPIFY_CONFIGS }}
+        run: node sync-shopify.js
+
+      - name: Commit & push data
+        run: |
+          git config user.name "APEX Bot"
+          git config user.email "apex-bot@users.noreply.github.com"
+          git add shopify-data.json
+          git diff --staged --quiet || git commit -m "sync: Shopify data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
