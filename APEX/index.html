@@ -3724,8 +3724,11 @@ function renderFinShops(){
   projs.forEach(p=>{
     const cred=(D.shopifyCreds||{})[p.id];
     const cache=getShopifyCache(p.id);
-    const rev=cache.revenue||0;
-    const orders=cache.orders||0;
+      const _pkMap={'7d':7,'30d':30,'3m':90};
+      const _pkk=_pkMap[_finPeriod];
+      const _pd=_pkk&&cache.byPeriod&&cache.byPeriod[_pkk];
+      const rev=(_pd?_pd.revenue:cache.revenue)||0;
+      const orders=(_pd?_pd.orders:cache.orders)||0;
     const synced=cache.syncedAt?new Date(cache.syncedAt).toLocaleString('fr-FR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'Jamais';
     html+=`<div class="fin-shop-row">
       <div class="fin-shop-dot" style="background:${p.color}"></div>
