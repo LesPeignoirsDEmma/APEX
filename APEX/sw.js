@@ -1,8 +1,8 @@
-// APEX IA — Service Worker v5
+// APEX IA — Service Worker v6
 // Network-first pour index.html (mises à jour instantanées)
 // Cache-first pour les assets statiques (icônes, manifest)
 
-const CACHE = 'apex-v5';
+const CACHE = 'apex-v6';
 const STATIC = ['./manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
