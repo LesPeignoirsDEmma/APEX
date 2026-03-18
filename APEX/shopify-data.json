@@ -1,12 +1,438 @@
 {
-  "lastUpdated": "2026-03-18T19:04:09.315Z",
+  "lastUpdated": "2026-03-18T19:19:56.455Z",
   "boutiques": {
     "proj_mmvwfi56": {
+      "finance": {
+        "revenue": 1694,
+        "orders": 26,
+        "currency": "EUR",
+        "syncedAt": "2026-03-18T19:19:57.392Z",
+        "allTime": {
+          "revenue": 12016,
+          "orders": 199
+        }
+      },
+      "cro": {
+        "7": {
+          "period": 7,
+          "revenue": 351,
+          "orders": 6,
+          "aov": 59,
+          "currency": "EUR",
+          "refunds": 0,
+          "refundRate": 0,
+          "revenueHalf1": 351,
+          "revenueHalf2": 0,
+          "discountOrders": 3,
+          "discountRate": 50,
+          "discountShare": 5,
+          "totalDiscounts": 18,
+          "newCust": 6,
+          "returning": 0,
+          "avgOrdersPerRepeat": 0,
+          "avgLTV": 29,
+          "vipCustomers": 0,
+          "topProducts": [
+            {
+              "name": "Peignoir Satin 4 Pièces – Femme",
+              "qty": 1,
+              "revenue": 75
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 1,
+              "revenue": 70
+            },
+            {
+              "name": "Peignoir Court Capuche - Femme",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Robe Peignoir Coton Léger",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
+              "name": "Peignoir Satin Homme",
+              "qty": 1,
+              "revenue": 50
+            }
+          ],
+          "top3RevenueShare": 58,
+          "hourly": {
+            "7": 1,
+            "9": 2,
+            "15": 1,
+            "20": 1,
+            "22": 1
+          },
+          "daily": {
+            "3": 2,
+            "4": 1,
+            "5": 1,
+            "6": 2
+          },
+          "totalProducts": 178,
+          "zeroSaleProducts": [
+            "Cape de Bain Bébé Cerf",
+            "Cape de Bain Bébé Dinosaure",
+            "Cape de Bain Bébé Éponge",
+            "Cape de Bain Bébé Koala",
+            "Cape de Bain Bébé Lapin",
+            "Cape de Bain Bébé Lion",
+            "Cape de Bain Coton",
+            "Cape de Bain Gaufré",
+            "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur — Rose",
+            "Ensemble de Nuit 4 Pièces – Femme",
+            "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+            "Ensemble de Nuit Satin – Femme",
+            "Ensemble Peignoir Et Robe De Chambre Femme",
+            "Ensemble Peignoir Satin & Dentelle – Femme",
+            "Ensemble Robe De Nuit Et Peignoir",
+            "Garantie de Livraison",
+            "Kimono Perle Femme",
+            "Peignoir À Capuche Femme Doux"
+          ],
+          "newProductsAdded": 1,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 8,
+          "abandonRate": 25,
+          "abandonedValue": 69,
+          "topAbandoned": [
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
+            },
+            {
+              "name": "Robe Peignoir Coton Léger",
+              "count": 1
+            }
+          ],
+          "syncedAt": "2026-03-18T19:19:59.510Z"
+        },
+        "30": {
+          "period": 30,
+          "revenue": 1694,
+          "orders": 26,
+          "aov": 65,
+          "currency": "EUR",
+          "refunds": 0,
+          "refundRate": 0,
+          "revenueHalf1": 1279,
+          "revenueHalf2": 414,
+          "discountOrders": 11,
+          "discountRate": 42,
+          "discountShare": 4,
+          "totalDiscounts": 67,
+          "newCust": 26,
+          "returning": 0,
+          "avgOrdersPerRepeat": 0,
+          "avgLTV": 31,
+          "vipCustomers": 0,
+          "topProducts": [
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "qty": 5,
+              "revenue": 402
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 3,
+              "revenue": 203
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "qty": 3,
+              "revenue": 179
+            },
+            {
+              "name": "Peignoir De Bain Absorbant Femme",
+              "qty": 1,
+              "revenue": 130
+            },
+            {
+              "name": "Peignoir Polaire Enfant",
+              "qty": 2,
+              "revenue": 115
+            },
+            {
+              "name": "Peignoir Flanelle Enfant",
+              "qty": 2,
+              "revenue": 111
+            },
+            {
+              "name": "Peignoir Long d’Hiver - Femme",
+              "qty": 1,
+              "revenue": 90
+            },
+            {
+              "name": "Peignoir Satin 4 Pièces – Femme",
+              "qty": 1,
+              "revenue": 75
+            },
+            {
+              "name": "Peignoir Court Capuche - Femme",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Peignoir Satin à Motif Homme",
+              "qty": 1,
+              "revenue": 60
+            }
+          ],
+          "top3RevenueShare": 46,
+          "hourly": {
+            "2": 1,
+            "7": 1,
+            "8": 2,
+            "9": 4,
+            "10": 2,
+            "11": 1,
+            "12": 2,
+            "13": 1,
+            "15": 4,
+            "16": 2,
+            "17": 1,
+            "18": 2,
+            "19": 1,
+            "20": 1,
+            "22": 1
+          },
+          "daily": {
+            "0": 4,
+            "1": 5,
+            "2": 2,
+            "3": 5,
+            "4": 3,
+            "5": 4,
+            "6": 3
+          },
+          "totalProducts": 178,
+          "zeroSaleProducts": [
+            "Cape de Bain Bébé Cerf",
+            "Cape de Bain Bébé Dinosaure",
+            "Cape de Bain Bébé Éponge",
+            "Cape de Bain Bébé Koala",
+            "Cape de Bain Bébé Lapin",
+            "Cape de Bain Bébé Lion",
+            "Cape de Bain Coton",
+            "Cape de Bain Gaufré",
+            "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur — Rose",
+            "Ensemble de Nuit 4 Pièces – Femme",
+            "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+            "Ensemble de Nuit Satin – Femme",
+            "Ensemble Peignoir Et Robe De Chambre Femme",
+            "Ensemble Peignoir Satin & Dentelle – Femme",
+            "Ensemble Robe De Nuit Et Peignoir",
+            "Garantie de Livraison",
+            "Kimono Perle Femme",
+            "Peignoir À Capuche Femme Doux"
+          ],
+          "newProductsAdded": 1,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 35,
+          "abandonRate": 26,
+          "abandonedValue": 463,
+          "topAbandoned": [
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "count": 2
+            },
+            {
+              "name": "Peignoir Chic Satin Homme",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Coton",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Manche Courte",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "count": 1
+            }
+          ],
+          "syncedAt": "2026-03-18T19:20:00.520Z"
+        },
+        "90": {
+          "period": 90,
+          "revenue": 6663,
+          "orders": 106,
+          "aov": 63,
+          "currency": "EUR",
+          "refunds": 21,
+          "refundRate": 17,
+          "revenueHalf1": 2612,
+          "revenueHalf2": 4051,
+          "discountOrders": 57,
+          "discountRate": 54,
+          "discountShare": 9,
+          "totalDiscounts": 629,
+          "newCust": 104,
+          "returning": 1,
+          "avgOrdersPerRepeat": "2.0",
+          "avgLTV": 30,
+          "vipCustomers": 0,
+          "topProducts": [
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "qty": 11,
+              "revenue": 911
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 9,
+              "revenue": 623
+            },
+            {
+              "name": "Peignoir Éponge Rose Rayé",
+              "qty": 10,
+              "revenue": 599
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "qty": 6,
+              "revenue": 359
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "qty": 6,
+              "revenue": 358
+            },
+            {
+              "name": "Peignoir Flanelle Enfant",
+              "qty": 6,
+              "revenue": 310
+            },
+            {
+              "name": "Peignoir Elégant Flanelle",
+              "qty": 4,
+              "revenue": 280
+            },
+            {
+              "name": "Peignoir Polaire Couple",
+              "qty": 4,
+              "revenue": 280
+            },
+            {
+              "name": "Peignoir Satin 4 Pièces – Femme",
+              "qty": 3,
+              "revenue": 205
+            },
+            {
+              "name": "Peignoir Long d’Hiver - Femme",
+              "qty": 2,
+              "revenue": 180
+            }
+          ],
+          "top3RevenueShare": 32,
+          "hourly": {
+            "0": 1,
+            "2": 2,
+            "3": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 4,
+            "9": 9,
+            "10": 4,
+            "11": 7,
+            "12": 5,
+            "13": 2,
+            "14": 10,
+            "15": 9,
+            "16": 9,
+            "17": 5,
+            "18": 10,
+            "19": 8,
+            "20": 6,
+            "21": 9,
+            "22": 1,
+            "23": 1
+          },
+          "daily": {
+            "0": 18,
+            "1": 12,
+            "2": 18,
+            "3": 13,
+            "4": 15,
+            "5": 17,
+            "6": 13
+          },
+          "totalProducts": 178,
+          "zeroSaleProducts": [
+            "Cape de Bain Bébé Dinosaure",
+            "Cape de Bain Bébé Éponge",
+            "Cape de Bain Bébé Koala",
+            "Cape de Bain Bébé Lapin",
+            "Cape de Bain Bébé Lion",
+            "Cape de Bain Gaufré",
+            "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur — Rose",
+            "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+            "Ensemble de Nuit Satin – Femme",
+            "Ensemble Peignoir Et Robe De Chambre Femme",
+            "Ensemble Robe De Nuit Et Peignoir",
+            "Garantie de Livraison",
+            "Kimono Perle Femme",
+            "Peignoir À Capuche Femme Doux",
+            "Peignoir Absorbant Homme",
+            "Peignoir Bébé Gris",
+            "Peignoir Bébé Rose",
+            "Peignoir Bébé Violet",
+            "Peignoir Capuche - Femme"
+          ],
+          "newProductsAdded": 59,
+          "abandonedCheckouts": 31,
+          "totalCheckouts": 138,
+          "abandonRate": 22,
+          "abandonedValue": 1611,
+          "topAbandoned": [
+            {
+              "name": "Peignoir Éponge Rose Rayé",
+              "count": 5
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "count": 3
+            },
+            {
+              "name": "Peignoir De Bain Fille",
+              "count": 2
+            },
+            {
+              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "count": 2
+            },
+            {
+              "name": "Peignoir Éponge Vert Rayé",
+              "count": 1
+            }
+          ],
+          "syncedAt": "2026-03-18T19:20:01.412Z"
+        }
+      }
+    },
+    "proj_mmw65etx": {
       "finance": {
         "revenue": 549,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T19:04:21.673Z",
+        "syncedAt": "2026-03-18T19:20:02.195Z",
         "allTime": {
           "revenue": 549,
           "orders": 9
@@ -87,7 +513,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:04:23.589Z"
+          "syncedAt": "2026-03-18T19:20:03.710Z"
         },
         "30": {
           "period": 30,
@@ -215,7 +641,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:04:24.285Z"
+          "syncedAt": "2026-03-18T19:20:04.347Z"
         },
         "90": {
           "period": 90,
@@ -343,7 +769,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:04:24.979Z"
+          "syncedAt": "2026-03-18T19:20:05.007Z"
         }
       }
     }
