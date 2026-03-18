@@ -1649,13 +1649,20 @@ html[data-theme="light"]{
       <div id="add-project-form" class="hidden" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px">
         <div style="font-size:12px;color:var(--t2);margin-bottom:2px">Collez l'URL de votre boutique — APEX IA détecte automatiquement le nom, la niche et la couleur.</div>
         <input class="finput" id="f-proj-url" placeholder="https://monsite.com ou monsite.myshopify.com..." oninput="resetProjAnalysis()">
-        <div id="proj-analysis-preview" class="hidden" style="background:var(--card3);border:1px solid var(--border2);border-radius:var(--rsm);padding:10px 12px;display:flex;align-items:center;gap:10px">
-          <span id="proj-prev-emoji" style="font-size:22px">🛍</span>
-          <div style="flex:1">
-            <div id="proj-prev-name" style="font-weight:600;font-size:13px"></div>
-            <div id="proj-prev-desc" style="font-size:11px;color:var(--t2);margin-top:2px"></div>
+        <div id="proj-analysis-preview" class="hidden" style="border-radius:var(--rsm);overflow:hidden;border:1px solid var(--border2)">
+          <div id="proj-prev-banner" style="height:6px;width:100%;background:var(--pl)"></div>
+          <div style="padding:10px 12px;display:flex;align-items:center;gap:10px;background:var(--card3)">
+            <div id="proj-prev-icon" style="width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;background:var(--card2)">
+              <span id="proj-prev-emoji">🛍</span>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:6px">
+                <div id="proj-prev-name" style="font-weight:700;font-size:13px"></div>
+                <div id="proj-prev-color" style="width:10px;height:10px;border-radius:50%;flex-shrink:0"></div>
+              </div>
+              <div id="proj-prev-desc" style="font-size:11px;color:var(--t2);margin-top:3px;line-height:1.4"></div>
+            </div>
           </div>
-          <div id="proj-prev-color" style="width:14px;height:14px;border-radius:50%;flex-shrink:0"></div>
         </div>
         <div id="proj-analyze-status" style="font-size:12px;color:var(--t2);text-align:center;min-height:16px"></div>
         <div style="display:flex;gap:8px">
@@ -4313,38 +4320,66 @@ async function analyzeAndSaveProject(){
   const url=document.getElementById('f-proj-url').value.trim(); if(!url) return;
   const btn=document.getElementById('proj-analyze-btn');
   const status=document.getElementById('proj-analyze-status');
-  btn.disabled=true; btn.textContent='⏳ Analyse en cours...';
+  btn.disabled=true; btn.innerHTML=`${ico('sparkles',13)} Analyse en cours...`;
   status.textContent='APEX IA analyse votre boutique...';
 
-  let name,emoji,color,description;
+  // Extraire infos depuis l'URL
+  const rawDomain=url.replace(/https?:\/\//,'').replace(/\/.*/,'').replace(/^www\./,'');
+  const isShopify=rawDomain.includes('myshopify.com')||url.includes('myshopify');
+  const domainWords=rawDomain.split('.')[0].replace(/[-_]/g,' ');
+
+  let name,emoji,color,description,niche,target;
   const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
   if(key&&key.startsWith('sk-ant-')){
     try{
+      const prompt='URL: '+url+'\n'
+        +'Domaine: '+rawDomain+'\n'
+        +(isShopify?'Type: Boutique Shopify e-commerce\n':'')
+        +'\nAnalyse cette boutique/projet en te basant sur le nom de domaine, les mots qu\'il contient, et ce que tu sais éventuellement de ce site.\n'
+        +'Déduis : la niche produit, le marché cible, le positionnement probable.\n\n'
+        +'Réponds UNIQUEMENT avec ce JSON (sans markdown, sans texte autour) :\n'
+        +'{\n'
+        +'"name": "Nom commercial court et propre (2-3 mots max)",\n'
+        +'"emoji": "1 seul emoji parfaitement représentatif du produit vendu (pas un sac générique)",\n'
+        +'"color": "couleur hex qui colle à l\'univers de la marque (ex: mode femme=#E879A0, sport=#22D3EE, luxe=#C9A84C, nature=#4ADE80)",\n'
+        +'"description": "1 phrase : niche produit + marché cible + positionnement (ex: Robes bohème pour femmes 25-40 ans, positionnement lifestyle premium)",\n'
+        +'"niche": "mot-clé niche en 1-3 mots (ex: lingerie, accessoires bébé, nutrition sportive)",\n'
+        +'"target": "cible en 3 mots max (ex: femmes actives, parents, hommes 30-45)"\n'
+        +'}';
       const r=await fetch('https://api.anthropic.com/v1/messages',{
         method:'POST',
         headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-        body:JSON.stringify({
-          model:AI_MODEL,max_tokens:300,
-          system:'Tu analyses des URLs de boutiques/sites web. Réponds UNIQUEMENT avec un objet JSON valide, sans aucun texte avant ou après.',
-          messages:[{role:'user',content:`Analyse cette URL: ${url}\n\nRéponds avec ce JSON exact (sans markdown):\n{"name":"Nom court de la boutique","emoji":"1 emoji qui représente la niche","color":"couleur hex vive qui correspond à la marque","description":"Description de la boutique et son marché en 1 phrase max"}\n\nSi tu ne connais pas le site, déduis-le depuis le nom de domaine.`}]
-        })
+        body:JSON.stringify({model:AI_MODEL,max_tokens:400,
+          system:'Tu es un expert en e-commerce et analyse de marché. Tu analyses des URLs pour identifier précisément la niche, le positionnement et le marché cible. Tu réponds UNIQUEMENT avec du JSON valide, rien d\'autre.',
+          messages:[{role:'user',content:prompt}]})
       });
       const d=await r.json();
-      const text=d.content?.[0]?.text||'';
+      const text=(d.content&&d.content[0])?d.content[0].text:'';
       const m=text.match(/\{[\s\S]*?\}/);
       if(m){
         const p=JSON.parse(m[0]);
-        name=p.name; emoji=p.emoji; color=p.color; description=p.description;
+        name=p.name; emoji=p.emoji; color=p.color;
+        description=p.description; niche=p.niche; target=p.target;
       }
-    }catch(e){ /* fallback */ }
+    }catch(e){ console.warn('analyzeProject:',e.message); }
   }
-  // Fallback si pas de clé ou erreur
+  // Fallback intelligent si pas de clé ou erreur
   if(!name){
-    const domain=url.replace(/https?:\/\//,'').replace(/\/.*/,'').replace(/^www\./,'');
-    const base=domain.split('.')[0];
-    name=base.charAt(0).toUpperCase()+base.slice(1);
-    emoji='🛍'; color='#7B68EE';
-    description='Boutique en ligne — '+url;
+    const words=domainWords.charAt(0).toUpperCase()+domainWords.slice(1);
+    name=words;
+    // Détection niche par mots-clés dans le domaine
+    const dl=domainWords.toLowerCase();
+    if(dl.match(/bebe|baby|enfant|kid/)){emoji='👶';color='#93C5FD';}
+    else if(dl.match(/mode|fashion|robe|dress|cloth/)){emoji='👗';color='#F472B6';}
+    else if(dl.match(/sport|fit|gym|run/)){emoji='💪';color='#22D3EE';}
+    else if(dl.match(/food|cook|eat|cuisine|gourmand/)){emoji='🍽';color='#FB923C';}
+    else if(dl.match(/beauty|beaute|cosmet|skin|soin/)){emoji='💄';color='#E879A0';}
+    else if(dl.match(/tech|digital|app|web/)){emoji='💻';color='#818CF8';}
+    else if(dl.match(/pet|animal|chien|chat|dog|cat/)){emoji='🐾';color='#A78BFA';}
+    else if(dl.match(/maison|home|deco|meuble/)){emoji='🏠';color='#34D399';}
+    else if(dl.match(/bijou|jewel|gold|silver/)){emoji='💎';color='#C9A84C';}
+    else{emoji='🛍';color='#7B68EE';}
+    description=isShopify?'Boutique Shopify — '+rawDomain:'Projet — '+rawDomain;
   }
   color=color||'#7B68EE';
 
@@ -4353,12 +4388,22 @@ async function analyzeAndSaveProject(){
   document.getElementById('proj-prev-name').textContent=name;
   document.getElementById('proj-prev-desc').textContent=description||'';
   document.getElementById('proj-prev-color').style.background=color;
+  document.getElementById('proj-prev-banner').style.background=color;
+  document.getElementById('proj-prev-icon').style.background=color+'22';
   document.getElementById('proj-analysis-preview').classList.remove('hidden');
-  status.textContent='✅ Analyse terminée — projet ajouté !';
+  // Afficher niche + cible si disponibles
+  const descEl=document.getElementById('proj-prev-desc');
+  if(descEl){
+    let extra='';
+    if(niche) extra+='<span style="background:var(--card3);border-radius:4px;padding:1px 6px;font-size:10px;margin-right:4px">'+escHtml(niche)+'</span>';
+    if(target) extra+='<span style="background:var(--card3);border-radius:4px;padding:1px 6px;font-size:10px">👥 '+escHtml(target)+'</span>';
+    descEl.innerHTML=(description?escHtml(description)+'<br>':'')+extra;
+  }
+  status.textContent='✅ Analyse terminée !';
 
   const id='proj_'+Date.now().toString(36);
   D.projects=D.projects||[];
-  D.projects.push({id,name,emoji,color,description,url});
+  D.projects.push({id,name,emoji,color,description,niche,target,url});
   save();
   document.getElementById('f-proj-url').value='';
   btn.disabled=false; btn.innerHTML=`${ico('search',13)} Analyser &amp; Ajouter`;
