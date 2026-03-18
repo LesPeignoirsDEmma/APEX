@@ -206,8 +206,8 @@ async function main() {
     console.log(`  ✅ ${shop} done`);
   }
 
-  // Sauvegarder dans le dossier de l'app (APEX/APEX/ = dossier servi par GitHub Pages)
-  const outPath = 'APEX/APEX/shopify-data.json';
+  // Sauvegarder dans APEX/ (dossier servi par GitHub Pages = lespeignoirsdemma.github.io/APEX/APEX/)
+  const outPath = 'APEX/shopify-data.json';
   fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
   console.log('✅ ' + outPath + ' saved');
 }
