@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T19:31:22.400Z",
+  "lastUpdated": "2026-03-18T21:40:13.335Z",
   "boutiques": {
-    "proj_mmw65etx": {
+    "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T19:31:24.873Z",
+        "syncedAt": "2026-03-18T21:40:15.425Z",
         "allTime": {
           "revenue": 12016,
           "orders": 199
@@ -116,7 +116,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:31:26.604Z"
+          "syncedAt": "2026-03-18T21:40:17.603Z"
         },
         "30": {
           "period": 30,
@@ -266,7 +266,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:31:27.395Z"
+          "syncedAt": "2026-03-18T21:40:18.348Z"
         },
         "90": {
           "period": 90,
@@ -423,46 +423,51 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:31:28.139Z"
+          "syncedAt": "2026-03-18T21:40:19.284Z"
         }
       }
     },
-    "proj_mmwdkmr6": {
+    "proj_mmwj8je8": {
       "finance": {
-        "revenue": 549,
-        "orders": 9,
+        "revenue": 604,
+        "orders": 10,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T19:31:28.744Z",
+        "syncedAt": "2026-03-18T21:40:20.869Z",
         "allTime": {
-          "revenue": 549,
-          "orders": 9
+          "revenue": 604,
+          "orders": 10
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 125,
-          "orders": 2,
-          "aov": 62,
+          "revenue": 180,
+          "orders": 3,
+          "aov": 60,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 70,
-          "revenueHalf2": 55,
+          "revenueHalf2": 110,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 2,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 42,
+          "avgLTV": 45,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
               "revenue": 70
+            },
+            {
+              "name": "Kimono Chinois Fille",
+              "qty": 1,
+              "revenue": 55
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
@@ -473,11 +478,12 @@
           "top3RevenueShare": 100,
           "hourly": {
             "12": 1,
-            "13": 1
+            "13": 1,
+            "20": 1
           },
           "daily": {
             "1": 1,
-            "3": 1
+            "3": 2
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -504,8 +510,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 3,
-          "abandonRate": 33,
+          "totalCheckouts": 4,
+          "abandonRate": 25,
           "abandonedValue": 120,
           "topAbandoned": [
             {
@@ -513,28 +519,33 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:31:29.965Z"
+          "syncedAt": "2026-03-18T21:40:22.479Z"
         },
         "30": {
           "period": 30,
-          "revenue": 549,
-          "orders": 9,
-          "aov": 61,
+          "revenue": 604,
+          "orders": 10,
+          "aov": 60,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 105,
-          "revenueHalf2": 444,
+          "revenueHalf1": 150,
+          "revenueHalf2": 454,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 9,
+          "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 50,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Kimono Chinois Fille",
+              "qty": 2,
+              "revenue": 110
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
@@ -552,11 +563,6 @@
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
-              "name": "Kimono Chinois Fille",
               "qty": 1,
               "revenue": 55
             },
@@ -586,7 +592,7 @@
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 35,
+          "top3RevenueShare": 40,
           "hourly": {
             "8": 1,
             "10": 1,
@@ -594,13 +600,13 @@
             "13": 3,
             "18": 1,
             "19": 1,
-            "20": 1
+            "20": 2
           },
           "daily": {
             "0": 2,
             "1": 2,
             "2": 1,
-            "3": 1,
+            "3": 2,
             "6": 3
           },
           "totalProducts": 205,
@@ -628,8 +634,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 11,
-          "abandonRate": 18,
+          "totalCheckouts": 12,
+          "abandonRate": 17,
           "abandonedValue": 245,
           "topAbandoned": [
             {
@@ -641,28 +647,33 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:31:30.631Z"
+          "syncedAt": "2026-03-18T21:40:23.099Z"
         },
         "90": {
           "period": 90,
-          "revenue": 549,
-          "orders": 9,
-          "aov": 61,
+          "revenue": 604,
+          "orders": 10,
+          "aov": 60,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 549,
+          "revenueHalf2": 604,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 9,
+          "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Kimono Chinois Fille",
+              "qty": 2,
+              "revenue": 110
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
@@ -680,11 +691,6 @@
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
-              "name": "Kimono Chinois Fille",
               "qty": 1,
               "revenue": 55
             },
@@ -714,7 +720,7 @@
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 35,
+          "top3RevenueShare": 40,
           "hourly": {
             "8": 1,
             "10": 1,
@@ -722,13 +728,13 @@
             "13": 3,
             "18": 1,
             "19": 1,
-            "20": 1
+            "20": 2
           },
           "daily": {
             "0": 2,
             "1": 2,
             "2": 1,
-            "3": 1,
+            "3": 2,
             "6": 3
           },
           "totalProducts": 205,
@@ -756,8 +762,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 11,
-          "abandonRate": 18,
+          "totalCheckouts": 12,
+          "abandonRate": 17,
           "abandonedValue": 245,
           "topAbandoned": [
             {
@@ -769,7 +775,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T19:31:31.203Z"
+          "syncedAt": "2026-03-18T21:40:23.735Z"
         }
       }
     }
