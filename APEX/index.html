@@ -3846,7 +3846,7 @@ function fmtEur(n){ return new Intl.NumberFormat('fr-FR',{style:'currency',curre
 
 // ── SHOPIFY SYNC ──
 async function syncShopify(projectId){
-  const cred=(D.shopifyCreds||{})[projectId]; if(!cred) return openShopifyModal(projectId);
+  
   const btn=document.getElementById('fin-sync-btn');
   if(btn){btn.textContent='⏳ Sync...';btn.disabled=true;}
   try{
@@ -4056,7 +4056,7 @@ function renderCROCard(p,data){
 }
 
 async function syncCRO(projectId){
-  const cred=(D.shopifyCreds||{})[projectId]; if(!cred) return;
+  
   const btn=document.getElementById('cro-sync-btn');
   if(btn){btn.textContent='⏳ Chargement...';btn.disabled=true;}
   try{
