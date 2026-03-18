@@ -222,4 +222,4 @@ async function main() {
 }
 
 main().catch(e => { console.error('Ã¢ÂÂ', e); process.exit(1); });
-finance incluse
+// finance incluse
