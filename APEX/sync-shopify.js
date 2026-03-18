@@ -21,10 +21,17 @@ function shopFetch(shop, token, path) {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        try { resolve(JSON.parse(data)); }
-        catch(e) { resolve(null); }
+        try {
+          const json = JSON.parse(data);
+          if (json.errors) console.error('  ⚠️ Shopify API error on', path.split('?')[0], ':', JSON.stringify(json.errors));
+          resolve(json);
+        }
+        catch(e) {
+          console.error('  ⚠️ Parse error on', path.split('?')[0], '- status:', res.statusCode);
+          resolve(null);
+        }
       });
-    }).on('error', () => resolve(null));
+    }).on('error', (e) => { console.error('  ⚠️ Network error:', e.message); resolve(null); });
   });
 }
 
@@ -53,6 +60,7 @@ async function computeCRO(shop, token, period) {
   const products = (prodData && prodData.products) || [];
   const checkouts = (checkoutData && checkoutData.checkouts) || [];
   const customers = (custData && custData.customers) || [];
+  console.log('    → orders:', orders.length, '| products:', products.length, '| checkouts:', checkouts.length, '| customers:', customers.length);
 
   // ── Revenue & commandes ──
   const paid = orders.filter(o => ['paid','partially_paid','partially_refunded'].includes(o.financial_status));
