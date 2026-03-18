@@ -1,12 +1,16 @@
 {
-  "lastUpdated": "2026-03-18T17:58:17.043Z",
+  "lastUpdated": "2026-03-18T18:10:52.999Z",
   "boutiques": {
     "proj_mmw65etx": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-18T17:58:19.502Z"
+        "syncedAt": "2026-03-18T18:10:55.067Z",
+        "allTime": {
+          "revenue": 12016,
+          "orders": 199
+        }
       },
       "cro": {
         "7": {
@@ -112,7 +116,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T17:58:20.292Z"
+          "syncedAt": "2026-03-18T18:11:00.665Z"
         },
         "30": {
           "period": 30,
@@ -262,7 +266,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T17:58:21.132Z"
+          "syncedAt": "2026-03-18T18:11:01.528Z"
         },
         "90": {
           "period": 90,
@@ -419,7 +423,7 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-18T17:58:22.029Z"
+          "syncedAt": "2026-03-18T18:11:02.559Z"
         }
       }
     }
