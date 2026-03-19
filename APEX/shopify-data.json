@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-19T11:09:34.311Z",
+  "lastUpdated": "2026-03-19T14:38:55.059Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T11:09:36.746Z",
+        "syncedAt": "2026-03-19T14:38:58.065Z",
         "allTime": {
           "revenue": 12016,
           "orders": 199
@@ -103,7 +103,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:38.914Z"
+          "syncedAt": "2026-03-19T14:39:01.238Z"
         },
         "30": {
           "period": 30,
@@ -256,7 +256,7 @@
           "sessions": 438,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:39.688Z"
+          "syncedAt": "2026-03-19T14:39:02.076Z"
         },
         "90": {
           "period": 90,
@@ -266,8 +266,8 @@
           "currency": "EUR",
           "refunds": 17,
           "refundRate": 14,
-          "revenueHalf1": 2255,
-          "revenueHalf2": 4051,
+          "revenueHalf1": 2309,
+          "revenueHalf2": 3997,
           "discountOrders": 53,
           "discountRate": 52,
           "discountShare": 9,
@@ -387,14 +387,14 @@
             "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 59,
-          "abandonedCheckouts": 30,
-          "totalCheckouts": 132,
-          "abandonRate": 23,
-          "abandonedValue": 1551,
+          "abandonedCheckouts": 29,
+          "totalCheckouts": 131,
+          "abandonRate": 22,
+          "abandonedValue": 1491,
           "topAbandoned": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "count": 5
+              "count": 4
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -413,10 +413,10 @@
               "count": 1
             }
           ],
-          "sessions": 1650,
-          "conversionRate": 6.1,
+          "sessions": 1638,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:40.616Z"
+          "syncedAt": "2026-03-19T14:39:03.346Z"
         },
         "365": {
           "period": 365,
@@ -547,14 +547,14 @@
             "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 30,
-          "totalCheckouts": 232,
+          "abandonedCheckouts": 29,
+          "totalCheckouts": 231,
           "abandonRate": 13,
-          "abandonedValue": 1551,
+          "abandonedValue": 1491,
           "topAbandoned": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "count": 5
+              "count": 4
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -573,10 +573,10 @@
               "count": 1
             }
           ],
-          "sessions": 2900,
+          "sessions": 2888,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:41.456Z"
+          "syncedAt": "2026-03-19T14:39:04.302Z"
         }
       }
     },
@@ -585,7 +585,7 @@
         "revenue": 794,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T11:09:43.307Z",
+        "syncedAt": "2026-03-19T14:39:06.025Z",
         "allTime": {
           "revenue": 794,
           "orders": 12
@@ -687,7 +687,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:45.522Z"
+          "syncedAt": "2026-03-19T14:39:07.538Z"
         },
         "30": {
           "period": 30,
@@ -821,7 +821,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:46.161Z"
+          "syncedAt": "2026-03-19T14:39:08.308Z"
         },
         "90": {
           "period": 90,
@@ -955,7 +955,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:46.871Z"
+          "syncedAt": "2026-03-19T14:39:09.004Z"
         },
         "365": {
           "period": 365,
@@ -1089,7 +1089,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T11:09:47.482Z"
+          "syncedAt": "2026-03-19T14:39:10.125Z"
         }
       }
     }
