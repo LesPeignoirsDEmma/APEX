@@ -1034,6 +1034,16 @@ html[data-theme="light"]{
     <div class="stat-card"><div class="stat-val" id="s-habits">0%</div><div class="stat-lbl">Habitudes</div></div>
   </div>
 
+  <!-- Banner bilan du soir (affiché après 20h) -->
+  <div id="evening-banner" style="display:none;background:linear-gradient(135deg,rgba(123,104,238,0.15),rgba(45,212,191,0.1));border:1px solid rgba(123,104,238,0.3);border-radius:var(--r);padding:14px 16px;margin-bottom:12px;cursor:pointer;display:none;align-items:center;gap:12px" onclick="openEveningRecap()">
+    <div style="font-size:22px;flex-shrink:0">🌙</div>
+    <div style="flex:1">
+      <div style="font-size:13px;font-weight:700;color:var(--text)">Bilan du soir</div>
+      <div style="font-size:12px;color:var(--t2);margin-top:2px">Prends 2 minutes pour faire le point sur ta journée</div>
+    </div>
+    <div style="color:var(--pl);font-size:16px">→</div>
+  </div>
+
   <!-- Plan tomorrow button -->
   <button class="plan-btn" onclick="openPlanModal(tomorrowDate())">
     <div class="plan-btn-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg class="apex-ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-calendar-check"/></svg></div>
@@ -2079,7 +2089,7 @@ function getBUSINESSES(){
 const DEFAULTS = {
   why:'', tasks:[], habits:[], goals:[], notes:[], events:[], conversations:[],
   projects: [],
-  focusSessions:[], weeklyReviews:[], decisions:[], kpis:{},
+  focusSessions:[], weeklyReviews:[], eveningRecaps:[], decisions:[], kpis:{},
   expenses:[],    // [{id,date,amount,category,projectId,label}]
   adSnapshots:[],  // [{id,dateFrom,dateTo,platform,spend,convValue,impressions,clicks,conversions,campaigns,source,createdAt}]
   shopifyCreds:{},// {projectId:{shop,token}}
@@ -2497,6 +2507,13 @@ function renderToday(){
 
   const tl=document.getElementById('today-tasks-list');
   tl.innerHTML=todayTasks.length?`<div class="card" style="padding:0 15px">${todayTasks.map(tk=>taskHTML(tk)).join('')}</div>`:'';
+
+  // Banner bilan du soir après 20h
+  const eb=document.getElementById('evening-banner');
+  if(eb){
+    const alreadyDone=(D.eveningRecaps||[]).some(r=>r.date===t);
+    eb.style.display=(h>=20&&!alreadyDone)?'flex':'none';
+  }
 }
 
 function calcMaxStreak(){
@@ -5082,15 +5099,12 @@ function generateGAdsScript(){
     'var APEX_DOC_ID         = "'+cfg.syncDocId+'";',
     '',
     '// ── Fetch campagnes pour une période ──────────────────',
-    'function fetchCampaigns(range) {',
-    '  var it = AdsApp.campaigns()',
-    '    .withCondition("campaign.status = ENABLED")',
-    '    .forDateRange(range)',
-    '    .orderBy("metrics.cost_micros DESC")',
-    '    .get();',
+    'function fetchCampaigns(range, rangeEnd) {',
+    '  var sel=AdsApp.campaigns().withCondition("campaign.status = ENABLED").orderBy("metrics.cost_micros DESC");',
+    '  var it=rangeEnd ? sel.forDateRange(range,rangeEnd).get() : sel.forDateRange(range).get();',
     '  var camps=[],spend=0,convVal=0,impr=0,clicks=0,conv=0;',
     '  while (it.hasNext()) {',
-    '    var c=it.next(); var s=c.getStatsFor(range);',
+    '    var c=it.next(); var s=rangeEnd ? c.getStatsFor(range,rangeEnd) : c.getStatsFor(range);',
     '    var row={name:c.getName(),spend:s.getCost(),convValue:s.getConversionValue(),',
     '      impressions:s.getImpressions(),clicks:s.getClicks(),conversions:s.getConversions()};',
     '    camps.push(row);',
@@ -5143,20 +5157,14 @@ function generateGAdsScript(){
     '}',
     '',
     '// ── Fetch previous period for N vs N-1 ────────────────',
-    'function fetchPrev(daysRange) {',
+    'function fetchPrev(startCurr, endCurr) {',
     '  var now=new Date();',
-    '  var tz=AdsApp.currentAccount().getTimeZone();',
-    '  var fmt=function(d){return Utilities.formatDate(d,tz,"yyyyMMdd");};',
-    '  var endCurr=new Date(now-1*86400000);',
-    '  var startCurr=new Date(now-daysRange*86400000);',
-    '  var startPrev=new Date(now-daysRange*2*86400000);',
-    '  var endPrev=new Date(startCurr-1*86400000);',
     '  var it=AdsApp.campaigns()',
     '    .withCondition("campaign.status = ENABLED")',
-    '    .forDateRange(fmt(startPrev),fmt(endPrev))',
+    '    .forDateRange(startPrev,endPrev)',
     '    .get();',
     '  var spend=0,convVal=0,impr=0,clicks=0,conv=0;',
-    '  while(it.hasNext()){var c=it.next();var s=c.getStatsFor(fmt(startPrev),fmt(endPrev));',
+    '  while(it.hasNext()){var c=it.next();var s=c.getStatsFor(startPrev,endPrev);',
     '    spend+=s.getCost();convVal+=s.getConversionValue();',
     '    impr+=s.getImpressions();clicks+=s.getClicks();conv+=s.getConversions();}',
     '  return {prevSpend:spend,prevConvValue:convVal,prevImpressions:impr,prevClicks:clicks,prevConversions:conv};',
@@ -5177,10 +5185,19 @@ function generateGAdsScript(){
     '',
     'function main(){',
     '  Logger.log("APEX sync démarré...");',
+    '  var tz=AdsApp.currentAccount().getTimeZone();',
+    '  var fmt=function(d){return Utilities.formatDate(d,tz,"yyyyMMdd");};',
+    '  var now=new Date();',
+    '  var yesterday=fmt(new Date(now.getTime()-1*86400000));',
+    '  var start7   =fmt(new Date(now.getTime()-7*86400000));',
+    '  var start30  =fmt(new Date(now.getTime()-30*86400000));',
+    '  var start90  =fmt(new Date(now.getTime()-90*86400000));',
+    '  var start365 =fmt(new Date(now.getTime()-365*86400000));',
+    '',
     '  var p7   = fetchCampaigns("LAST_7_DAYS");',
     '  var p30  = fetchCampaigns("LAST_30_DAYS");',
-    '  var p90  = fetchCampaigns("LAST_90_DAYS");',
-    '  var p365 = fetchCampaigns("LAST_365_DAYS");',
+    '  var p90  = fetchCampaigns(start90, yesterday);',
+    '  var p365 = fetchCampaigns(start365, yesterday);',
     '',
     '  // Devices (30j)',
     '  p30.devices  = fetchDevices("LAST_30_DAYS");',
@@ -5191,9 +5208,9 @@ function generateGAdsScript(){
     '  p7.keywords  = fetchKeywords("LAST_7_DAYS");',
     '',
     '  // N vs N-1',
-    '  var prev7  = fetchPrev(7);  Object.assign(p7,  prev7);',
-    '  var prev30 = fetchPrev(30); Object.assign(p30, prev30);',
-    '  var prev90 = fetchPrev(90); Object.assign(p90, prev90);',
+    '  var prev7  = fetchPrev(start7,  yesterday); Object.assign(p7,  prev7);',
+    '  var prev30 = fetchPrev(start30, yesterday); Object.assign(p30, prev30);',
+    '  var prev90 = fetchPrev(start90, yesterday); Object.assign(p90, prev90);',
     '',
     '  var url="https://firestore.googleapis.com/v1/projects/"+FIREBASE_PROJECT_ID',
     '    +"/databases/(default)/documents/adSync/"+APEX_DOC_ID+"?key="+FIREBASE_API_KEY;',
@@ -6620,6 +6637,111 @@ function renderFocusHistory(){
 // ═══════════════════════════════════════════════════════════════
 // WEEKLY REVIEW
 // ═══════════════════════════════════════════════════════════════
+function openEveningRecap(){
+  const t=today();
+  const now=new Date();
+  const todayTasks=D.tasks.filter(x=>x.date===t);
+  const done=todayTasks.filter(x=>x.done);
+  const notDone=todayTasks.filter(x=>!x.done);
+  // Stats
+  document.getElementById('er-date-label').textContent=
+    now.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('er-stat-tasks').textContent=`${done.length}/${todayTasks.length}`;
+  document.getElementById('er-stat-habits').textContent=calcTodayHabits()+'%';
+  const focusToday=(D.focusSessions||[]).filter(s=>s.date===t).length;
+  document.getElementById('er-stat-focus').textContent=focusToday||'0';
+  // Liste tâches
+  const tl=document.getElementById('er-tasks-list');
+  if(tl){
+    const html=[
+      ...done.map(tk=>`<div style="display:flex;align-items:center;gap:8px;padding:6px 10px;background:rgba(74,222,128,0.07);border-radius:var(--rsm);border:1px solid rgba(74,222,128,0.15)"><span style="color:#4ADE80;font-size:13px">✅</span><span style="font-size:12px;color:var(--text);flex:1">${esc(tk.title)}</span></div>`),
+      ...notDone.map(tk=>`<div style="display:flex;align-items:center;gap:8px;padding:6px 10px;background:rgba(239,68,68,0.06);border-radius:var(--rsm);border:1px solid rgba(239,68,68,0.12)"><span style="color:#ef4444;font-size:13px">○</span><span style="font-size:12px;color:var(--t2);flex:1">${esc(tk.title)}</span></div>`)
+    ].join('');
+    tl.innerHTML=html||'<p style="color:var(--t2);font-size:12px;text-align:center;padding:6px">Aucune t\u00e2che aujourd\u2019hui</p>';
+  }
+  // Pré-remplir si déjà sauvé aujourd'hui
+  const existing=(D.eveningRecaps||[]).find(r=>r.date===t);
+  document.getElementById('er-win').value=existing?.win||'';
+  document.getElementById('er-block').value=existing?.block||'';
+  document.getElementById('er-next').value=existing?.next||'';
+  document.getElementById('er-note').value=existing?.note||'';
+  document.getElementById('er-ai-result').style.display='none';
+  // Historique
+  renderErHistory();
+  openModal('evening-recap-modal');
+}
+
+function renderErHistory(){
+  const list=document.getElementById('er-history-list'); if(!list) return;
+  const recaps=(D.eveningRecaps||[]).slice(0,7);
+  if(!recaps.length){ list.innerHTML='<p style="color:var(--t2);font-size:12px;text-align:center;padding:6px">Aucun bilan enregistré</p>'; return; }
+  list.innerHTML=recaps.map(r=>{
+    const d=new Date(r.date+'T12:00:00');
+    const label=d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'});
+    return `<div style="padding:10px 12px;background:var(--card2);border-radius:var(--rsm);margin-bottom:6px;border:1px solid var(--border)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <span style="font-size:12px;font-weight:600;color:var(--text)">${label}</span>
+        <span style="font-size:11px;color:var(--t3)">${r.tasksDone||0}/${r.tasksTotal||0} tâches</span>
+      </div>
+      ${r.win?`<div style="font-size:11px;color:var(--t2);margin-bottom:2px">🌟 ${esc(r.win.slice(0,80))}${r.win.length>80?'…':''}</div>`:''}
+      ${r.next?`<div style="font-size:11px;color:var(--t2)">🎯 ${esc(r.next.slice(0,80))}${r.next.length>80?'…':''}</div>`:''}
+    </div>`;
+  }).join('');
+}
+
+function saveEveningRecap(){
+  const t=today();
+  const todayTasks=D.tasks.filter(x=>x.date===t);
+  const recap={
+    id:uid(), date:t, ts:Date.now(),
+    tasksDone:todayTasks.filter(x=>x.done).length,
+    tasksTotal:todayTasks.length,
+    habitsPct:calcTodayHabits(),
+    win:document.getElementById('er-win').value.trim(),
+    block:document.getElementById('er-block').value.trim(),
+    next:document.getElementById('er-next').value.trim(),
+    note:document.getElementById('er-note').value.trim()
+  };
+  D.eveningRecaps=D.eveningRecaps||[];
+  const idx=D.eveningRecaps.findIndex(r=>r.date===t);
+  if(idx>=0) D.eveningRecaps[idx]={...D.eveningRecaps[idx],...recap};
+  else D.eveningRecaps.unshift(recap);
+  if(D.eveningRecaps.length>90) D.eveningRecaps=D.eveningRecaps.slice(0,90);
+  save();
+  renderErHistory();
+  // Cacher le banner
+  const eb=document.getElementById('evening-banner');
+  if(eb) eb.style.display='none';
+  showToast('🌙 Bilan du soir sauvegardé','');
+  closeModal('evening-recap-modal');
+}
+
+async function erGenerateAI(){
+  const t=today();
+  const todayTasks=D.tasks.filter(x=>x.date===t);
+  const done=todayTasks.filter(x=>x.done);
+  const notDone=todayTasks.filter(x=>!x.done);
+  const win=document.getElementById('er-win').value.trim();
+  const block=document.getElementById('er-block').value.trim();
+  const next=document.getElementById('er-next').value.trim();
+  const note=document.getElementById('er-note').value.trim();
+  const ctx=`Bilan de journée — ${new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'})}
+Tâches accomplies (${done.length}/${todayTasks.length}): ${done.map(t=>t.title).join(', ')||'aucune'}
+Tâches non faites: ${notDone.map(t=>t.title).join(', ')||'aucune'}
+Habitudes: ${calcTodayHabits()}%
+Victoire du jour: ${win||'non renseigné'}
+Freins: ${block||'non renseigné'}
+Priorité demain: ${next||'non renseigné'}
+Note: ${note||''}`;
+  const res=document.getElementById('er-ai-result');
+  res.style.display='block';
+  res.textContent='✦ Génération en cours...';
+  try{
+    const reply=await callAI([{role:'user',content:`Tu es APEX, coach personnel. Fais un bilan concis et motivant de cette journée en 3-4 phrases. Sois direct, bienveillant, constructif. Termine par une phrase d’encouragement pour demain.\n\n`+ctx}]);
+    res.textContent=reply;
+  }catch(e){res.textContent='Erreur IA. Vérifiez votre clé API.';}
+}
+
 function openWeeklyReview(){
   const t=today();
   const tasksThisWeek=(D.tasks||[]).filter(tk=>tk.done&&weekOf(t).includes(tk.date));
@@ -7093,6 +7215,50 @@ init();
 
 
 <!-- WEEKLY REVIEW MODAL -->
+<!-- BILAN DU SOIR MODAL -->
+<div class="modal-ov" id="evening-recap-modal">
+  <div class="modal" style="max-width:520px;max-height:92vh;overflow-y:auto">
+    <div class="modal-hdr">
+      <h3 style="display:flex;align-items:center;gap:8px">🌙 Bilan du soir</h3>
+      <button class="mc" onclick="closeModal('evening-recap-modal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="er-date-label" style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:14px"></div>
+
+      <!-- Stats auto -->
+      <div class="wr-stat-row" style="margin-bottom:18px">
+        <div class="wr-stat"><div class="wr-stat-val" id="er-stat-tasks">—</div><div class="wr-stat-lbl">Tâches faites</div></div>
+        <div class="wr-stat"><div class="wr-stat-val" id="er-stat-habits">—</div><div class="wr-stat-lbl">Habitudes</div></div>
+        <div class="wr-stat"><div class="wr-stat-val" id="er-stat-focus">—</div><div class="wr-stat-lbl">Focus sessions</div></div>
+      </div>
+
+      <!-- Liste tâches du jour -->
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:8px">Tâches du jour</div>
+        <div id="er-tasks-list" style="display:flex;flex-direction:column;gap:5px"></div>
+      </div>
+
+      <!-- Questions de réflexion -->
+      <div class="wr-question"><label>🌟 Ce que j'ai accompli aujourd'hui</label><textarea id="er-win" rows="2" placeholder="Ta plus belle victoire du jour, même petite..."></textarea></div>
+      <div class="wr-question"><label>🚧 Ce qui m'a freiné</label><textarea id="er-block" rows="2" placeholder="Distractions, blocages, mauvaise décision..."></textarea></div>
+      <div class="wr-question"><label>🎯 Ma priorité #1 pour demain</label><textarea id="er-next" rows="2" placeholder="La chose la plus importante à faire demain..."></textarea></div>
+      <div class="wr-question"><label>💡 Note libre</label><textarea id="er-note" rows="2" placeholder="Une pensée, une idée, une émotion..."></textarea></div>
+
+      <div style="display:flex;gap:8px;margin-top:4px">
+        <button class="btn btn-ghost" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px" onclick="erGenerateAI()"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sparkles"/></svg> Résumé IA</button>
+        <button class="btn" style="flex:1" onclick="saveEveningRecap()">Sauvegarder</button>
+      </div>
+      <div id="er-ai-result" style="display:none;margin-top:12px;background:var(--card2);border-radius:var(--rsm);padding:12px;font-size:13px;color:var(--text);line-height:1.6;border:1px solid var(--border2)"></div>
+
+      <!-- Historique -->
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:10px">Bilans récents</div>
+        <div id="er-history-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal-ov" id="weekly-review-modal">
   <div class="modal" style="max-width:520px;max-height:90vh;overflow-y:auto">
     <div class="modal-hdr"><h3 style="display:flex;align-items:center;gap:8px"><svg class="apex-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-calendar-check"/></svg> Revue Hebdomadaire</h3><button class="mc" onclick="closeModal('weekly-review-modal')">✕</button></div>
