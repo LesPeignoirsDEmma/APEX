@@ -810,6 +810,66 @@ html[data-theme="light"]{
 .module-ia-btn:hover{background:rgba(123,104,238,.1);border-color:var(--purple)}
 
 /* ── AI CHAT SIDEBAR ─────────────────────────────────── */
+.ad-widget{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px}
+.ad-widget-title{font-size:10px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ad-widget-title svg{opacity:.6}
+.ad-kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:480px){.ad-kpi-grid{grid-template-columns:repeat(4,1fr)}}
+.ad-kpi{background:var(--card2);border-radius:10px;padding:11px;text-align:center}
+.ad-kpi .av{font-size:19px;font-weight:700;line-height:1.2}
+.ad-kpi .al{font-size:10px;color:var(--t3);margin-top:2px}
+.ad-camp-table{width:100%;border-collapse:collapse;font-size:11px}
+.ad-camp-table th{font-size:10px;font-weight:600;color:var(--t3);padding:3px 6px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+.ad-camp-table th:first-child{text-align:left}
+.ad-camp-table td{padding:5px 6px;text-align:right;border-bottom:1px solid var(--border2,var(--border))}
+.ad-camp-table td:first-child{text-align:left;font-weight:500;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ad-camp-table tr:last-child td{border-bottom:none}
+.ad-progress{background:var(--card2);border-radius:99px;height:8px;overflow:hidden;margin-top:4px}
+.ad-progress-fill{height:100%;border-radius:99px;transition:width .3s}
+.ad-alert-item{display:flex;align-items:flex-start;gap:8px;padding:8px 10px;border-radius:8px;margin-bottom:4px;font-size:12px}
+.ad-alert-warn{background:#f59e0b18;border:1px solid #f59e0b40}
+.ad-alert-err{background:#ef444418;border:1px solid #ef444440}
+.ad-alert-ok{background:#22c55e18;border:1px solid #22c55e40}
+.ad-sparkbar{display:flex;align-items:flex-end;gap:3px;height:40px}
+.ad-sparkbar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px}
+.ad-sparkbar-fill{width:100%;border-radius:3px 3px 0 0;min-height:2px;transition:height .3s}
+.ad-sparkbar-lbl{font-size:9px;color:var(--t3);white-space:nowrap}
+.ad-device-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.ad-device-icon{font-size:16px;width:22px;text-align:center;flex-shrink:0}
+.ad-device-name{font-size:11px;font-weight:500;width:70px;flex-shrink:0}
+.ad-device-bar{flex:1;background:var(--card2);border-radius:99px;height:6px;overflow:hidden}
+.ad-device-fill{height:100%;border-radius:99px}
+.ad-device-val{font-size:11px;font-weight:600;width:40px;text-align:right;flex-shrink:0}
+.ad-health-ring{position:relative;width:80px;height:80px;flex-shrink:0}
+.ad-health-ring canvas{position:absolute;top:0;left:0}
+.ad-widget-toggle{display:flex;flex-wrap:wrap;gap:6px;padding:12px 0}
+.wgt-chip{padding:5px 10px;border-radius:99px;border:1px solid var(--border);background:none;font-size:11px;cursor:pointer;color:var(--t2);transition:.15s}
+.wgt-chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.roas-compare-box{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.roas-box{background:var(--card2);border-radius:10px;padding:12px;text-align:center}
+.roas-box .rv{font-size:26px;font-weight:800;line-height:1}
+.roas-box .rl{font-size:10px;color:var(--t3);margin-top:4px}
+.roas-box .rd{font-size:11px;color:var(--t2);margin-top:3px}
+.vs-badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:600;padding:2px 6px;border-radius:99px}
+.vs-up{background:#22c55e22;color:#22c55e}
+.vs-dn{background:#ef444422;color:#ef4444}
+.vs-eq{background:var(--card2);color:var(--t2)}
+.cro-view-tab{padding:5px 12px;border-radius:16px;border:1px solid var(--border);background:none;color:var(--t2);font-size:12px;cursor:pointer;transition:.15s}
+.cro-view-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.ad-kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:14px}
+@media(min-width:480px){.ad-kpi-grid{grid-template-columns:repeat(4,1fr)}}
+.ad-kpi{background:var(--card2);border-radius:10px;padding:11px;text-align:center}
+.ad-kpi .av{font-size:19px;font-weight:700;line-height:1.2}
+.ad-kpi .al{font-size:10px;color:var(--t3);margin-top:2px}
+.ad-snap-row{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:8px;background:var(--card2);margin-bottom:6px}
+.ad-snap-name{flex:1;font-size:12px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ad-snap-metric{text-align:right;min-width:50px}
+.ad-snap-metric .mv{font-size:13px;font-weight:700}
+.ad-snap-metric .ml{font-size:10px;color:var(--t3)}
+.roas-hi{color:#22c55e}.roas-mid{color:#f59e0b}.roas-lo{color:#ef4444}
+.ad-empty-state{text-align:center;padding:32px 20px;color:var(--t2)}
+.ad-empty-state svg{opacity:.3;margin-bottom:12px}
+.ad-script-box{background:var(--card2);border-radius:8px;padding:12px;font-size:11px;font-family:monospace;white-space:pre-wrap;word-break:break-all;max-height:220px;overflow-y:auto;margin:12px 0;color:var(--t2);border:1px solid var(--border)}
 #ai-layout{display:flex;height:calc(var(--vh,1vh)*100 - 124px);overflow:hidden;position:relative}
 #ai-sidebar{width:205px;flex-shrink:0;border-right:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column;background:var(--bg);transition:left .25s}
 #ai-sidebar-hdr{padding:10px 8px 8px;border-bottom:1px solid var(--border);flex-shrink:0}
@@ -1528,12 +1588,20 @@ html[data-theme="light"]{
       </div>
     </div>
   </div>
-  <div id="cro-period-tabs" style="display:flex;gap:6px;margin-bottom:18px;flex-wrap:wrap">
-    <button class="btn btn-sm active" id="cro-tab-7" onclick="setCROPeriod(7,this)">7 jours</button>
-    <button class="btn btn-sm btn-ghost" id="cro-tab-30" onclick="setCROPeriod(30,this)">30 jours</button>
-    <button class="btn btn-sm btn-ghost" id="cro-tab-90" onclick="setCROPeriod(90,this)">90 jours</button>
+  <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:18px">
+    <div id="cro-period-tabs" style="display:flex;gap:6px;flex-wrap:wrap">
+      <button class="btn btn-sm active" id="cro-tab-7" onclick="setCROPeriod(7,this)">7j</button>
+      <button class="btn btn-sm btn-ghost" id="cro-tab-30" onclick="setCROPeriod(30,this)">30j</button>
+      <button class="btn btn-sm btn-ghost" id="cro-tab-90" onclick="setCROPeriod(90,this)">90j</button>
+      <button class="btn btn-sm btn-ghost" id="cro-tab-365" onclick="setCROPeriod(365,this)">Tout</button>
+    </div>
+    <div style="display:flex;gap:6px;margin-left:auto">
+      <button class="cro-view-tab active" id="cv-shops" onclick="setCROView('shops',this)">🏪 Boutiques</button>
+      <button class="cro-view-tab" id="cv-ads" onclick="setCROView('ads',this)">📣 Pubs</button>
+    </div>
   </div>
   <div id="cro-content"></div>
+  <div id="ads-content" style="display:none"></div>
 </div>
 
 <div class="page" id="page-decisions">
@@ -1572,6 +1640,114 @@ html[data-theme="light"]{
 </div>
 </div>
 
+<!-- ═══ AD ENTRY MODAL ═══ -->
+<div class="modal-ov" id="ad-entry-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('ad-entry-modal')">×</button>
+    <div class="modal-title">📣 Saisir données pub</div>
+    <div class="modal-sub">Entrez les métriques de votre compte Google Ads pour la période.</div>
+    <input type="hidden" id="ad-entry-id">
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Plateforme</label>
+        <select class="fselect" id="ad-entry-platform" style="width:100%">
+          <option>Google Ads</option><option>Meta</option><option>TikTok</option><option>Autre</option>
+        </select></div>
+    </div>
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Du</label><input class="finput" type="date" id="ad-entry-from"></div>
+      <div style="flex:1"><label class="flbl">Au</label><input class="finput" type="date" id="ad-entry-to"></div>
+    </div>
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Dépenses (€)</label><input class="finput" type="number" id="ad-entry-spend" placeholder="0" oninput="calcAdROAS()"></div>
+      <div style="flex:1"><label class="flbl">CA attribué (€)</label><input class="finput" type="number" id="ad-entry-conv" placeholder="0" oninput="calcAdROAS()"></div>
+    </div>
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Impressions</label><input class="finput" type="number" id="ad-entry-impr" placeholder="0"></div>
+      <div style="flex:1"><label class="flbl">Clics</label><input class="finput" type="number" id="ad-entry-clicks" placeholder="0"></div>
+    </div>
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Conversions</label><input class="finput" type="number" id="ad-entry-convs" placeholder="0"></div>
+      <div style="flex:1"><label class="flbl">ROAS rapporté Google Ads</label><input class="finput" type="number" step="0.01" id="ad-entry-reported-roas" placeholder="ex: 3.2" oninput="calcAdROAS()"></div>
+      <div style="flex:1" id="ad-roas-preview" style="display:flex;align-items:center;justify-content:center;padding-top:16px;font-size:24px;font-weight:700;color:var(--accent)"></div>
+    </div>
+    <div class="form-row mt-8">
+      <button class="btn" onclick="saveAdEntry()" style="flex:1">Enregistrer</button>
+      <button class="btn btn-ghost" onclick="closeModal('ad-entry-modal')">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ GADS SETUP MODAL ═══ -->
+<div class="modal-ov" id="gads-setup-modal">
+  <div class="modal" style="max-height:90vh;overflow-y:auto">
+    <button class="modal-close" onclick="closeModal('gads-setup-modal')">×</button>
+    <div class="modal-title">🔗 Connecter Google Ads</div>
+    <div class="modal-sub">Un script Google Ads envoie automatiquement vos métriques dans APEX chaque jour.</div>
+    <div style="margin:14px 0">
+      <div style="font-size:12px;font-weight:600;margin-bottom:4px;color:var(--t2)">ÉTAPES</div>
+      <div style="font-size:12px;color:var(--text);line-height:1.7">
+        <div style="margin-bottom:4px">1. Dans Google Ads → <strong>Outils → Scripts</strong> → bouton <strong>+</strong></div>
+        <div style="margin-bottom:4px">2. Colle le script ci-dessous et clique <strong>Autoriser</strong></div>
+        <div style="margin-bottom:4px">3. Planifie-le en <strong>Quotidien</strong> et sauvegarde</div>
+        <div style="margin-bottom:8px">4. Dans Firebase Console → Firestore → <strong>Règles</strong>, ajoute :</div>
+        <div class="ad-script-box" style="font-size:10px" id="gads-firestore-rules">match /adSync/{docId} {
+  allow read, write: if true;
+}</div>
+        <button class="btn btn-sm btn-ghost" style="margin-bottom:10px" onclick="copyGAdsRules()">📋 Copier les règles</button>
+      </div>
+      <div style="font-size:12px;font-weight:600;margin-bottom:4px;color:var(--t2)">SCRIPT GOOGLE ADS</div>
+      <div class="ad-script-box" id="gads-script-box">Chargement...</div>
+      <button class="btn" onclick="copyGAdsScript()" style="width:100%">📋 Copier le script</button>
+    </div>
+    <div id="gads-last-sync" style="font-size:11px;color:var(--t3);text-align:center;margin-top:8px"></div>
+  </div>
+</div>
+<!-- ═══ AD SETTINGS MODAL ═══ -->
+<div class="modal-ov" id="ad-settings-modal">
+  <div class="modal" style="max-height:90vh;overflow-y:auto">
+    <button class="modal-close" onclick="closeModal('ad-settings-modal')">×</button>
+    <div class="modal-title">⚙️ Paramètres Analytics</div>
+    <div style="display:flex;gap:8px;margin-bottom:16px">
+      <button class="cro-view-tab active" id="ads-cfg-tab-obj" onclick="switchAdsCfgTab('obj',this)">Objectifs</button>
+      <button class="cro-view-tab" id="ads-cfg-tab-wgt" onclick="switchAdsCfgTab('wgt',this)">Widgets</button>
+    </div>
+    <!-- OBJECTIFS TAB -->
+    <div id="ads-cfg-obj">
+      <div class="form-row">
+        <div style="flex:1"><label class="flbl">Budget mensuel (€)</label>
+          <input class="finput" type="number" id="cfg-budget-monthly" placeholder="ex: 2000" oninput="saveAdCfg()"></div>
+        <div style="flex:1"><label class="flbl">ROAS cible</label>
+          <input class="finput" type="number" step="0.1" id="cfg-target-roas" placeholder="ex: 3.0" oninput="saveAdCfg()"></div>
+      </div>
+      <div class="form-row">
+        <div style="flex:1"><label class="flbl">Marge produit (%)</label>
+          <input class="finput" type="number" id="cfg-margin-pct" placeholder="ex: 30" oninput="saveAdCfg()">
+          <div style="font-size:10px;color:var(--t3);margin-top:3px">Sert à calculer le Breakeven ROAS</div></div>
+        <div style="flex:1"><label class="flbl">CAC cible (€)</label>
+          <input class="finput" type="number" id="cfg-target-cac" placeholder="ex: 25" oninput="saveAdCfg()"></div>
+      </div>
+      <div style="font-size:11px;font-weight:600;color:var(--t2);margin:10px 0 6px">Seuils d'alerte</div>
+      <div class="form-row">
+        <div style="flex:1"><label class="flbl">Alerte si ROAS &lt;</label>
+          <input class="finput" type="number" step="0.1" id="cfg-alert-roas" placeholder="ex: 2.0" oninput="saveAdCfg()"></div>
+        <div style="flex:1"><label class="flbl">Alerte si dépenses &gt; % budget</label>
+          <input class="finput" type="number" id="cfg-alert-spend" placeholder="ex: 90" oninput="saveAdCfg()"></div>
+      </div>
+    </div>
+    <!-- WIDGETS TAB -->
+    <div id="ads-cfg-wgt" style="display:none">
+      <div style="font-size:12px;color:var(--t2);margin-bottom:8px">Choisir les blocs à afficher dans la section Pubs :</div>
+      <div class="ad-widget-toggle" id="ads-widget-chips"></div>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="btn btn-sm btn-ghost" onclick="resetAdWidgets()">Tout afficher</button>
+        <button class="btn btn-sm btn-ghost" onclick="minimalAdWidgets()">Mode minimal</button>
+      </div>
+    </div>
+    <div class="form-row mt-12">
+      <button class="btn" onclick="closeModal('ad-settings-modal');renderAdsSection()" style="flex:1">Appliquer</button>
+    </div>
+  </div>
+</div>
 <!-- ═══ WHY MODAL ═══ -->
 <div class="modal-ov" id="why-modal">
   <div class="modal">
@@ -1899,6 +2075,7 @@ const DEFAULTS = {
   projects: [],
   focusSessions:[], weeklyReviews:[], decisions:[], kpis:{},
   expenses:[],    // [{id,date,amount,category,projectId,label}]
+  adSnapshots:[],  // [{id,dateFrom,dateTo,platform,spend,convValue,impressions,clicks,conversions,campaigns,source,createdAt}]
   shopifyCreds:{},// {projectId:{shop,token}}
   finNotes:'',    // notes marge libres
   hc:{},         // {habitId: {dateStr: bool}}
@@ -1914,6 +2091,14 @@ const DEFAULTS = {
     firebaseConfig:'',
     syncDocId:'',
     theme:'dark',
+    // ── Google Ads / Analytics settings ──
+    adWidgets:['roas_compare','mer','breakeven','budget','cac_ltv','trends','alerts','shopify','campaigns','keywords','devices','attribution','period_vs','health'],
+    adBudgetMonthly:0,   // monthly ad budget €
+    adTargetRoas:3,      // target ROAS
+    adMarginPct:30,      // product margin %
+    adTargetCac:0,       // target CAC €
+    adAlertRoasMin:2,    // alert if ROAS < this
+    adAlertSpendPct:90,  // alert if spend > this % of budget
   }
 };
 let D = (() => {
@@ -2002,6 +2187,7 @@ async function initSync(){
     _db=firebase.firestore();
     _db.enablePersistence({synchronizeTabs:false}).catch(()=>{});
     setSyncBadge('syncing','Connexion...');
+    setTimeout(initAdSync, 1500); // Start listening for Google Ads auto-sync
     if(_unsubscribe) _unsubscribe();
     _unsubscribe=_db.collection('apex').doc(docId).onSnapshot((snap)=>{
       if(!snap.exists){
@@ -4130,11 +4316,898 @@ async function syncAllShopify(){
 let _croPeriod=30;
 const _croCache={};
 
+// ── ADS STATE ──────────────────────────────────
+let _adsView='shops';
+let _adUnsubscribe=null;
+let _adsPeriod=30;
+let _adAutoData=null; // {p7,p30,p90,p365,syncedAt} multi-period cache
+
+// ─── WIDGET REGISTRY ────────────────────────────────────────
+const AD_WIDGETS=[
+  {id:'roas_compare', label:'Comparaison ROAS',   icon:'📊'},
+  {id:'mer',          label:'MER / Blended ROAS',  icon:'🔀'},
+  {id:'breakeven',    label:'Breakeven ROAS',       icon:'⚖️'},
+  {id:'budget',       label:'Budget mensuel',       icon:'💰'},
+  {id:'cac_ltv',      label:'CAC & LTV:CAC',        icon:'👤'},
+  {id:'trends',       label:'Tendances ROAS',        icon:'📈'},
+  {id:'alerts',       label:'Alertes',              icon:'🔔'},
+  {id:'shopify',      label:'Comparaison Shopify',  icon:'🏪'},
+  {id:'campaigns',    label:'Tableau campagnes',    icon:'📋'},
+  {id:'keywords',     label:'Top mots-clés',        icon:'🔑'},
+  {id:'devices',      label:'Répartition appareils',icon:'📱'},
+  {id:'attribution',  label:'Gap attribution',      icon:'🔍'},
+  {id:'period_vs',    label:'N vs N-1',             icon:'↔️'},
+  {id:'health',       label:'Score de santé',       icon:'🏥'},
+];
+function adWidgetOn(id){
+  const w=D.settings.adWidgets;
+  if(!w) return true; // default all on
+  return w.includes(id);
+}
+
+// ─── VIEW / PERIOD SWITCH ────────────────────────────────────
+function setCROView(view,btn){
+  _adsView=view;
+  document.querySelectorAll('.cro-view-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const shops=view==='shops';
+  document.getElementById('cro-content').style.display=shops?'':'none';
+  document.getElementById('cro-period-tabs').style.display=shops?'flex':'none';
+  document.getElementById('ads-content').style.display=shops?'none':'';
+  if(!shops) renderAdsSection();
+}
+function setAdsPeriod(days,btn){
+  _adsPeriod=days;
+  document.querySelectorAll('#ads-period-tabs button').forEach(b=>{b.classList.remove('active');b.classList.add('btn-ghost');});
+  btn.classList.add('active'); btn.classList.remove('btn-ghost');
+  _croPeriod=days===365?90:days;
+  renderAdsSection();
+}
+
+// ─── AD SETTINGS MODAL ──────────────────────────────────────
+let _adsCfgTab='obj';
+function openAdSettingsModal(){
+  const s=D.settings;
+  document.getElementById('cfg-budget-monthly').value=s.adBudgetMonthly||'';
+  document.getElementById('cfg-target-roas').value=s.adTargetRoas||'';
+  document.getElementById('cfg-margin-pct').value=s.adMarginPct||'';
+  document.getElementById('cfg-target-cac').value=s.adTargetCac||'';
+  document.getElementById('cfg-alert-roas').value=s.adAlertRoasMin||'';
+  document.getElementById('cfg-alert-spend').value=s.adAlertSpendPct||'';
+  renderWidgetChips();
+  switchAdsCfgTab(_adsCfgTab, document.getElementById('ads-cfg-tab-'+_adsCfgTab));
+  document.getElementById('ad-settings-modal').classList.add('open');
+}
+function switchAdsCfgTab(tab,btn){
+  _adsCfgTab=tab;
+  document.querySelectorAll('#ad-settings-modal .cro-view-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('ads-cfg-obj').style.display=tab==='obj'?'':'none';
+  document.getElementById('ads-cfg-wgt').style.display=tab==='wgt'?'':'none';
+}
+function saveAdCfg(){
+  D.settings.adBudgetMonthly = parseFloat(document.getElementById('cfg-budget-monthly').value)||0;
+  D.settings.adTargetRoas    = parseFloat(document.getElementById('cfg-target-roas').value)||3;
+  D.settings.adMarginPct     = parseFloat(document.getElementById('cfg-margin-pct').value)||30;
+  D.settings.adTargetCac     = parseFloat(document.getElementById('cfg-target-cac').value)||0;
+  D.settings.adAlertRoasMin  = parseFloat(document.getElementById('cfg-alert-roas').value)||2;
+  D.settings.adAlertSpendPct = parseFloat(document.getElementById('cfg-alert-spend').value)||90;
+  save();
+}
+function renderWidgetChips(){
+  const el=document.getElementById('ads-widget-chips'); if(!el) return;
+  el.innerHTML=AD_WIDGETS.map(w=>{
+    const on=adWidgetOn(w.id);
+    return '<button class="wgt-chip'+(on?' on':'')+'" onclick="toggleAdWidget(\''+w.id+'\',this)">'+w.icon+' '+w.label+'</button>';
+  }).join('');
+}
+function toggleAdWidget(id,btn){
+  if(!D.settings.adWidgets) D.settings.adWidgets=[...AD_WIDGETS.map(w=>w.id)];
+  const i=D.settings.adWidgets.indexOf(id);
+  if(i>=0) D.settings.adWidgets.splice(i,1); else D.settings.adWidgets.push(id);
+  btn.classList.toggle('on');
+  save();
+}
+function resetAdWidgets(){
+  D.settings.adWidgets=AD_WIDGETS.map(w=>w.id);
+  renderWidgetChips(); save();
+}
+function minimalAdWidgets(){
+  D.settings.adWidgets=['roas_compare','budget','campaigns','alerts'];
+  renderWidgetChips(); save();
+}
+
+// ─── ROAS PREVIEW IN ENTRY MODAL ────────────────────────────
+function calcAdROAS(){
+  const sp=parseFloat(document.getElementById('ad-entry-spend').value)||0;
+  const cv=parseFloat(document.getElementById('ad-entry-conv').value)||0;
+  const el=document.getElementById('ad-roas-preview');
+  if(!el) return;
+  if(sp>0){
+    const r=(cv/sp).toFixed(2);
+    const cls=r>=3?'roas-hi':r>=1.5?'roas-mid':'roas-lo';
+    el.innerHTML='<div class="'+cls+'" style="font-size:22px;font-weight:700">x'+r+'</div><div style="font-size:10px;color:var(--t3)">ROAS calc.</div>';
+  } else { el.innerHTML=''; }
+}
+
+// ─── ENTRY MODAL ────────────────────────────────────────────
+function openAdEntryModal(id){
+  const modal=document.getElementById('ad-entry-modal');
+  const today_=today();
+  if(id){
+    const s=(D.adSnapshots||[]).find(x=>x.id===id);
+    if(!s) return;
+    document.getElementById('ad-entry-id').value=s.id;
+    document.getElementById('ad-entry-platform').value=s.platform||'Google Ads';
+    document.getElementById('ad-entry-from').value=s.dateFrom||today_;
+    document.getElementById('ad-entry-to').value=s.dateTo||today_;
+    document.getElementById('ad-entry-spend').value=s.spend||'';
+    document.getElementById('ad-entry-conv').value=s.convValue||'';
+    document.getElementById('ad-entry-impr').value=s.impressions||'';
+    document.getElementById('ad-entry-clicks').value=s.clicks||'';
+    document.getElementById('ad-entry-convs').value=s.conversions||'';
+    document.getElementById('ad-entry-reported-roas').value=s.reportedRoas||'';
+  } else {
+    document.getElementById('ad-entry-id').value='';
+    document.getElementById('ad-entry-platform').value='Google Ads';
+    document.getElementById('ad-entry-from').value=today_;
+    document.getElementById('ad-entry-to').value=today_;
+    ['ad-entry-spend','ad-entry-conv','ad-entry-impr','ad-entry-clicks','ad-entry-convs','ad-entry-reported-roas']
+      .forEach(fid=>{document.getElementById(fid).value='';});
+  }
+  calcAdROAS();
+  modal.classList.add('open');
+}
+function saveAdEntry(){
+  const snap={
+    id:          document.getElementById('ad-entry-id').value||uid(),
+    platform:    document.getElementById('ad-entry-platform').value,
+    dateFrom:    document.getElementById('ad-entry-from').value,
+    dateTo:      document.getElementById('ad-entry-to').value,
+    spend:       parseFloat(document.getElementById('ad-entry-spend').value)||0,
+    convValue:   parseFloat(document.getElementById('ad-entry-conv').value)||0,
+    impressions: parseInt(document.getElementById('ad-entry-impr').value)||0,
+    clicks:      parseInt(document.getElementById('ad-entry-clicks').value)||0,
+    conversions: parseInt(document.getElementById('ad-entry-convs').value)||0,
+    reportedRoas:parseFloat(document.getElementById('ad-entry-reported-roas').value)||0,
+    source:'manual', createdAt:Date.now()
+  };
+  if(!snap.dateFrom){showToast('Sélectionne une date','error');return;}
+  if(!D.adSnapshots) D.adSnapshots=[];
+  const idx=D.adSnapshots.findIndex(x=>x.id===snap.id);
+  if(idx>=0) D.adSnapshots[idx]=snap; else D.adSnapshots.unshift(snap);
+  save(); closeModal('ad-entry-modal'); renderAdsSection();
+  showToast('✅ Données pub enregistrées','');
+}
+function deleteAdSnapshot(id){
+  if(!confirm('Supprimer cette entrée ?')) return;
+  D.adSnapshots=(D.adSnapshots||[]).filter(x=>x.id!==id);
+  save(); renderAdsSection();
+}
+
+// ─── FIREBASE AUTO-SYNC ──────────────────────────────────────
+function initAdSync(){
+  if(!_db||!D.settings.syncDocId) return;
+  if(_adUnsubscribe) _adUnsubscribe();
+  _adUnsubscribe=_db.collection('adSync').doc(D.settings.syncDocId).onSnapshot(snap=>{
+    if(!snap.exists) return;
+    const raw=snap.data(); if(!raw) return;
+    function parsePeriod(obj){
+      if(!obj) return null;
+      const camps=typeof obj.campaigns==='string'?JSON.parse(obj.campaigns||'[]'):(obj.campaigns||[]);
+      const kws  =typeof obj.keywords==='string'?JSON.parse(obj.keywords||'[]'):(obj.keywords||[]);
+      const devs =typeof obj.devices==='string'?JSON.parse(obj.devices||'{}'):(obj.devices||{});
+      const prevData=obj.prevSpend!==undefined?{
+        spend:parseFloat(obj.prevSpend||0),convValue:parseFloat(obj.prevConvValue||0),
+        impressions:parseInt(obj.prevImpressions||0),clicks:parseInt(obj.prevClicks||0),
+        conversions:parseFloat(obj.prevConversions||0)
+      }:null;
+      return {
+        spend:parseFloat(obj.totalSpend||0),convValue:parseFloat(obj.totalConvValue||0),
+        impressions:parseInt(obj.totalImpressions||0),clicks:parseInt(obj.totalClicks||0),
+        conversions:parseFloat(obj.totalConversions||0),
+        reportedRoas:parseFloat(obj.reportedRoas||0),
+        dateFrom:obj.dateFrom||'',dateTo:obj.dateTo||'',
+        campaigns:camps, keywords:kws, devices:devs, prevData
+      };
+    }
+    _adAutoData={
+      p7:   parsePeriod(raw.p7),   p30:parsePeriod(raw.p30),
+      p90:  parsePeriod(raw.p90),  p365:parsePeriod(raw.p365),
+      syncedAt:parseInt(raw.updatedAt||Date.now())
+    };
+    if(_adsView==='ads') renderAdsSection();
+    showToast('📣 Google Ads synchronisé','');
+  });
+}
+
+// ─── DATA HELPERS ────────────────────────────────────────────
+function roasColor(r){return r>=3?'roas-hi':r>=1.5?'roas-mid':'roas-lo';}
+function roasFmt(r){return 'x'+r.toFixed(2);}
+function fmtK(v){return v>=1e6?'€'+(v/1e6).toFixed(1)+'M':v>=1000?'€'+(v/1000).toFixed(1)+'k':'€'+Math.round(v);}
+function fmtNum(v){return v>=1e6?(v/1e6).toFixed(1)+'M':v>=1000?(v/1000).toFixed(1)+'k':String(Math.round(v));}
+function fmtCurrency2(v){return fmtK(v);}
+function pctChange(curr,prev){
+  if(!prev||prev===0) return null;
+  const d=Math.round((curr-prev)/prev*100);
+  if(d>0) return '<span class="vs-badge vs-up">▲ '+d+'%</span>';
+  if(d<0) return '<span class="vs-badge vs-dn">▼ '+Math.abs(d)+'%</span>';
+  return '<span class="vs-badge vs-eq">= 0%</span>';
+}
+
+function getAdPeriodData(period){
+  if(_adAutoData){
+    const key='p'+period;
+    const d=_adAutoData[key];
+    if(d&&(d.spend>0||d.impressions>0)) return {...d,source:'auto'};
+    if(period===365&&_adAutoData.p90&&_adAutoData.p90.spend>0)
+      return {..._adAutoData.p90,source:'auto_fallback'};
+  }
+  const snaps=D.adSnapshots||[];
+  if(!snaps.length) return null;
+  const cutoff=period===365?null:new Date(Date.now()-period*86400000).toISOString().slice(0,10);
+  const filtered=cutoff?snaps.filter(s=>!s.dateFrom||s.dateFrom>=cutoff):snaps;
+  if(!filtered.length) return null;
+  const agg={spend:0,convValue:0,impressions:0,clicks:0,conversions:0,reportedRoas:0,campaigns:[],keywords:[],devices:{},prevData:null,source:'manual'};
+  let rCount=0;
+  filtered.forEach(s=>{
+    agg.spend+=s.spend||0; agg.convValue+=s.convValue||0;
+    agg.impressions+=s.impressions||0; agg.clicks+=s.clicks||0;
+    agg.conversions+=s.conversions||0;
+    if(s.reportedRoas){agg.reportedRoas+=s.reportedRoas;rCount++;}
+    (s.campaigns||[]).forEach(c=>agg.campaigns.push(c));
+  });
+  if(rCount) agg.reportedRoas/=rCount;
+  return agg;
+}
+
+function getShopifyPeriodData(period){
+  const projs=D.projects||[];
+  let totSess=0,totRev=0,totOrders=0,found=false;
+  const lp=period===365?90:period;
+  projs.forEach(p=>{
+    const cache=_croCache[p.id]; if(!cache) return;
+    const d=cache[lp]||cache[30]; if(!d) return;
+    found=true;
+    totSess+=(d.sessions||0); totRev+=(d.revenue||0); totOrders+=(d.orders||0);
+  });
+  if(!found) return null;
+  const convRate=totSess>0?Math.round(totOrders/totSess*1000)/10:null;
+  return {sessions:totSess,revenue:totRev,orders:totOrders,convRate};
+}
+
+// ─── INDIVIDUAL WIDGET RENDERERS ─────────────────────────────
+
+function wRoasCompare(data){
+  if(!adWidgetOn('roas_compare')) return '';
+  const apexRoas=data.spend>0?data.convValue/data.spend:0;
+  const gRoas=data.reportedRoas||0;
+  const gap=gRoas>0&&apexRoas>0?Math.round((gRoas-apexRoas)/apexRoas*100):null;
+  const gapHtml=gap!==null
+    ?'<div style="font-size:10px;color:var(--t3);margin-top:6px;text-align:center">Écart attribution : '+(gap>0?'+':'')+gap+'%</div>'
+    :'';
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">📊 Comparaison ROAS</div>'
+    +'<div class="roas-compare-box">'
+      +'<div class="roas-box"><div class="rv '+roasColor(apexRoas)+'">'+roasFmt(apexRoas)+'</div>'
+        +'<div class="rl">ROAS APEX</div><div class="rd">CA Shopify ÷ Dépenses</div></div>'
+      +'<div class="roas-box"><div class="rv '+roasColor(gRoas)+'">'+roasFmt(gRoas)+'</div>'
+        +'<div class="rl">ROAS Google Ads</div><div class="rd">Attr. last-click</div></div>'
+    +'</div>'
+    +gapHtml+'</div>';
+}
+
+function wMer(data, shopify){
+  if(!adWidgetOn('mer')) return '';
+  if(!shopify||!shopify.revenue) return '';
+  const mer=data.spend>0?shopify.revenue/data.spend:0;
+  const tgt=D.settings.adTargetRoas||3;
+  const color=roasColor(mer);
+  const pct=Math.min(100,Math.round(mer/tgt*100));
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">🔀 MER — Marketing Efficiency Ratio</div>'
+    +'<div style="display:flex;align-items:center;gap:16px">'
+      +'<div style="text-align:center">'
+        +'<div style="font-size:32px;font-weight:800;class='+color+'"><span class="'+color+'">'+roasFmt(mer)+'</span></div>'
+        +'<div style="font-size:10px;color:var(--t3)">CA total Shopify ÷ Dépenses pub</div>'
+      +'</div>'
+      +'<div style="flex:1">'
+        +'<div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px">'
+          +'<span>vs cible '+roasFmt(tgt)+'</span><span>'+pct+'%</span></div>'
+        +'<div class="ad-progress"><div class="ad-progress-fill" style="width:'+pct+'%;background:'+(mer>=tgt?'#22c55e':mer>=tgt*0.8?'#f59e0b':'#ef4444')+'"></div></div>'
+        +'<div style="font-size:10px;color:var(--t3);margin-top:4px">MER = vrai ROAS business (inclut revenu organique)</div>'
+      +'</div>'
+    +'</div></div>';
+}
+
+function wBreakeven(data){
+  if(!adWidgetOn('breakeven')) return '';
+  const margin=D.settings.adMarginPct||30;
+  const beRoas=margin>0?100/margin:0;
+  const apexRoas=data.spend>0?data.convValue/data.spend:0;
+  const gRoas=data.reportedRoas||apexRoas;
+  const surplus=gRoas>0?gRoas-beRoas:0;
+  const profitEst=surplus>0&&data.spend>0?data.spend*(surplus):0;
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">⚖️ Breakeven ROAS</div>'
+    +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px">'
+      +'<div class="ad-kpi"><div class="av" style="color:#f59e0b">'+roasFmt(beRoas)+'</div><div class="al">Breakeven (marge '+margin+'%)</div></div>'
+      +'<div class="ad-kpi"><div class="av '+roasColor(gRoas)+'">'+roasFmt(gRoas)+'</div><div class="al">ROAS actuel</div></div>'
+      +'<div class="ad-kpi"><div class="av '+(surplus>0?'roas-hi':'roas-lo')+'">'+(surplus>0?'+':'')+surplus.toFixed(2)+'</div><div class="al">Surplus</div></div>'
+    +'</div>'
+    +(profitEst>0?'<div style="font-size:11px;color:#22c55e;padding:6px 8px;background:#22c55e18;border-radius:6px">✅ Bénéfice estimé : '+fmtK(profitEst)+' sur la période</div>':'')
+    +(surplus<=0&&gRoas>0?'<div style="font-size:11px;color:#ef4444;padding:6px 8px;background:#ef444418;border-radius:6px">⚠️ ROAS sous le seuil de rentabilité (besoin min. '+roasFmt(beRoas)+')</div>':'')
+    +'<div style="font-size:10px;color:var(--t3);margin-top:6px">Ajuster la marge dans ⚙️ Paramètres</div>'
+    +'</div>';
+}
+
+function wBudget(data){
+  if(!adWidgetOn('budget')) return '';
+  const budget=D.settings.adBudgetMonthly||0;
+  if(!budget&&!data.spend) return '';
+  // Estimate monthly spend from period data
+  const days=_adsPeriod===365?365:_adsPeriod;
+  const dailySpend=data.spend&&days?data.spend/days:0;
+  const now=new Date();
+  const daysInMonth=new Date(now.getFullYear(),now.getMonth()+1,0).getDate();
+  const daysPassed=now.getDate();
+  const projMonthly=Math.round(dailySpend*daysInMonth);
+  const spendSoFar=budget?Math.round(dailySpend*daysPassed):data.spend;
+  const pct=budget?Math.min(120,Math.round(spendSoFar/budget*100)):0;
+  const color=pct>=100?'#ef4444':pct>=80?'#f59e0b':'#22c55e';
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">💰 Budget mensuel</div>'
+    +'<div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">'
+      +'<div style="flex:1">'
+        +'<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px">'
+          +'<span style="font-weight:600">'+fmtK(spendSoFar)+' dépensé</span>'
+          +(budget?'<span style="color:var(--t2)">/ '+fmtK(budget)+' budget</span>':'<span style="color:var(--t3)">Budget non défini</span>')
+        +'</div>'
+        +'<div class="ad-progress"><div class="ad-progress-fill" style="width:'+Math.min(100,pct)+'%;background:'+color+'"></div></div>'
+        +(budget?'<div style="font-size:10px;color:var(--t3);margin-top:3px">'+pct+'% du budget · Projection : '+fmtK(projMonthly)+'/mois</div>':'')
+      +'</div>'
+      +(budget?'<div style="font-size:22px;font-weight:800;color:'+color+'">'+pct+'%</div>':'')
+    +'</div>'
+    +(!budget?'<button class="btn btn-sm btn-ghost" onclick="openAdSettingsModal()">Définir un budget →</button>':'')
+    +'</div>';
+}
+
+function wCacLtv(data, shopify){
+  if(!adWidgetOn('cac_ltv')) return '';
+  const newCusts=shopify?shopify.orders:data.conversions||0;
+  const cac=newCusts>0&&data.spend>0?data.spend/newCusts:0;
+  const targetCac=D.settings.adTargetCac||0;
+  // LTV from Shopify CRO cache
+  let avgLtv=0;
+  (D.projects||[]).forEach(p=>{
+    const cache=_croCache[p.id]; if(!cache) return;
+    const d=cache[30]||cache[7];
+    if(d&&d.avgLTV) avgLtv=Math.max(avgLtv,d.avgLTV);
+  });
+  const ratio=cac>0&&avgLtv>0?avgLtv/cac:0;
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">👤 CAC & LTV</div>'
+    +'<div class="ad-kpi-grid" style="grid-template-columns:repeat(3,1fr)">'
+      +'<div class="ad-kpi"><div class="av '+(targetCac>0?(cac<=targetCac?'roas-hi':'roas-lo'):'')+'">'+fmtK(cac)+'</div>'
+        +'<div class="al">CAC</div>'+(targetCac?'<div class="al">cible '+fmtK(targetCac)+'</div>':'')+'</div>'
+      +'<div class="ad-kpi"><div class="av">'+fmtK(avgLtv)+'</div><div class="al">LTV moy. (Shopify)</div></div>'
+      +'<div class="ad-kpi"><div class="av '+(ratio>=3?'roas-hi':ratio>=1.5?'roas-mid':'roas-lo')+'">'+(ratio>0?ratio.toFixed(1)+'x':'—')+'</div><div class="al">LTV:CAC</div></div>'
+    +'</div>'
+    +(ratio>0&&ratio<1?'<div style="font-size:11px;color:#ef4444;margin-top:8px;padding:5px 8px;background:#ef444418;border-radius:6px">⚠️ LTV:CAC < 1 — tu perds de l\'argent sur chaque client</div>':'')
+    +(ratio>=3?'<div style="font-size:11px;color:#22c55e;margin-top:8px;padding:5px 8px;background:#22c55e18;border-radius:6px">✅ LTV:CAC excellent (≥ 3x)</div>':'')
+    +'</div>';
+}
+
+function wTrends(){
+  if(!adWidgetOn('trends')) return '';
+  // Build from multi-period auto data or snapshots
+  const pts=[];
+  if(_adAutoData){
+    [{key:'p7',lbl:'7j'},{key:'p30',lbl:'30j'},{key:'p90',lbl:'90j'},{key:'p365',lbl:'1an'}].forEach(p=>{
+      const d=_adAutoData[p.key];
+      if(d&&d.spend>0) pts.push({lbl:p.lbl,roas:d.convValue/d.spend,spend:d.spend});
+    });
+  }
+  if(pts.length<2){
+    // from manual snapshots
+    const snaps=(D.adSnapshots||[]).slice(0,6).reverse();
+    snaps.forEach(s=>{
+      if(s.spend>0) pts.push({lbl:s.dateFrom?s.dateFrom.slice(5):'—',roas:s.convValue/s.spend,spend:s.spend});
+    });
+  }
+  if(pts.length<2) return '';
+  const maxR=Math.max(...pts.map(p=>p.roas),0.1);
+  const bars=pts.map(p=>{
+    const h=Math.round(p.roas/maxR*100);
+    const c=roasColor(p.roas);
+    return '<div class="ad-sparkbar-col">'
+      +'<div class="ad-sparkbar-fill" style="height:'+h+'%;background:var(--accent);opacity:'+(c==='roas-hi'?1:c==='roas-mid'?0.7:0.4)+'"></div>'
+      +'<div class="ad-sparkbar-lbl">'+p.lbl+'</div>'
+      +'</div>';
+  }).join('');
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">📈 Tendances ROAS</div>'
+    +'<div class="ad-sparkbar">'+bars+'</div>'
+    +'</div>';
+}
+
+function wAlerts(data, shopify){
+  if(!adWidgetOn('alerts')) return '';
+  const alerts=[];
+  const apexRoas=data.spend>0?data.convValue/data.spend:0;
+  const minRoas=D.settings.adAlertRoasMin||2;
+  const budget=D.settings.adBudgetMonthly||0;
+  const targetRoas=D.settings.adTargetRoas||3;
+  if(apexRoas>0&&apexRoas<minRoas)
+    alerts.push({type:'err',msg:'ROAS APEX ('+roasFmt(apexRoas)+') sous le seuil d\'alerte ('+roasFmt(minRoas)+')'});
+  const margin=D.settings.adMarginPct||30;
+  const beRoas=margin>0?100/margin:0;
+  if(apexRoas>0&&apexRoas<beRoas)
+    alerts.push({type:'err',msg:'ROAS sous le breakeven ('+roasFmt(beRoas)+') — campagnes non rentables'});
+  if(budget>0){
+    const days=_adsPeriod===365?365:_adsPeriod;
+    const daily=data.spend/days;
+    const daysInMonth=new Date(new Date().getFullYear(),new Date().getMonth()+1,0).getDate();
+    const proj=daily*daysInMonth;
+    const budgetPct=proj/budget*100;
+    const alertPct=D.settings.adAlertSpendPct||90;
+    if(budgetPct>=alertPct)
+      alerts.push({type:'warn',msg:'Projection mensuelle ('+fmtK(proj)+') atteint '+Math.round(budgetPct)+'% du budget'});
+  }
+  const ctr=data.impressions>0?data.clicks/data.impressions*100:0;
+  if(ctr>0&&ctr<1) alerts.push({type:'warn',msg:'CTR faible ('+ctr.toFixed(2)+'%) — vérifier les annonces et la pertinence des mots-clés'});
+  if(apexRoas>=targetRoas)
+    alerts.push({type:'ok',msg:'ROAS au-dessus de la cible ('+roasFmt(targetRoas)+') ✅'});
+  if(!alerts.length) return '';
+  const icons={err:'🔴',warn:'🟡',ok:'🟢'};
+  const classes={err:'ad-alert-err',warn:'ad-alert-warn',ok:'ad-alert-ok'};
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">🔔 Alertes</div>'
+    +alerts.map(a=>'<div class="ad-alert-item '+classes[a.type]+'">'+icons[a.type]+' <span>'+a.msg+'</span></div>').join('')
+    +'</div>';
+}
+
+function wShopify(data, shopify){
+  if(!adWidgetOn('shopify')||!shopify) return '';
+  const apexRoas=data.spend>0?data.convValue/data.spend:0;
+  const roasReel=data.spend>0&&shopify.revenue>0?shopify.revenue/data.spend:0;
+  const attrGap=roasReel>0&&apexRoas>0?Math.round((roasReel-apexRoas)/apexRoas*100):null;
+  const inner='<div class="ad-kpi-grid" style="grid-template-columns:repeat(4,1fr)">'
+    +(shopify.sessions?'<div class="ad-kpi"><div class="av">'+fmtNum(shopify.sessions)+'</div><div class="al">Visiteurs est.</div></div>':'')
+    +'<div class="ad-kpi"><div class="av">'+fmtK(shopify.revenue)+'</div><div class="al">CA total</div></div>'
+    +'<div class="ad-kpi"><div class="av">'+shopify.orders+'</div><div class="al">Commandes</div></div>'
+    +(roasReel>0?'<div class="ad-kpi"><div class="av '+roasColor(roasReel)+'">'+roasFmt(roasReel)+'</div><div class="al">ROAS réel</div></div>':'')
+    +'</div>'
+    +(attrGap!==null&&Math.abs(attrGap)>5
+      ?'<div style="font-size:10px;color:var(--t3);margin-top:8px;padding:5px 8px;background:var(--card2);border-radius:6px">ℹ️ Écart attribution : Google Ads sur-attribue de '+Math.abs(attrGap)+'% par rapport au CA Shopify réel</div>'
+      :'');
+  if(!adWidgetOn('attribution')) return '<div class="ad-widget"><div class="ad-widget-title">🏪 Comparaison Shopify</div>'+inner+'</div>';
+  return '<div class="ad-widget"><div class="ad-widget-title">🏪 Comparaison Shopify</div>'+inner+'</div>';
+}
+
+function wCampaigns(data){
+  if(!adWidgetOn('campaigns')) return '';
+  const camps=data.campaigns||[];
+  if(!camps.length) return '';
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">📋 Campagnes</div>'
+    +'<div style="overflow-x:auto"><table class="ad-camp-table">'
+    +'<thead><tr><th style="text-align:left">Campagne</th><th>Dépenses</th><th>CA att.</th><th>ROAS</th><th>Impr.</th><th>CTR</th><th>CPC</th></tr></thead>'
+    +'<tbody>'
+    +camps.slice(0,15).map(c=>{
+      const cr=c.spend>0?c.convValue/c.spend:0;
+      const ctr=c.impressions>0?c.clicks/c.impressions*100:0;
+      const cpc=c.clicks>0?c.spend/c.clicks:0;
+      return '<tr>'
+        +'<td>'+escHtml(c.name||'—')+'</td>'
+        +'<td>'+fmtK(c.spend||0)+'</td>'
+        +'<td>'+fmtK(c.convValue||0)+'</td>'
+        +'<td class="'+roasColor(cr)+'" style="font-weight:700">'+roasFmt(cr)+'</td>'
+        +'<td>'+fmtNum(c.impressions||0)+'</td>'
+        +'<td>'+ctr.toFixed(1)+'%</td>'
+        +'<td>€'+cpc.toFixed(2)+'</td>'
+        +'</tr>';
+    }).join('')
+    +'</tbody></table></div></div>';
+}
+
+function wKeywords(data){
+  if(!adWidgetOn('keywords')) return '';
+  const kws=data.keywords||[];
+  if(!kws.length) return '';
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">🔑 Top mots-clés</div>'
+    +'<div style="overflow-x:auto"><table class="ad-camp-table">'
+    +'<thead><tr><th style="text-align:left">Mot-clé</th><th>Dépenses</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Conversions</th></tr></thead>'
+    +'<tbody>'
+    +kws.slice(0,15).map(k=>{
+      const ctr=k.impressions>0?k.clicks/k.impressions*100:0;
+      const cpc=k.clicks>0?k.spend/k.clicks:0;
+      return '<tr>'
+        +'<td>'+escHtml(k.name||'—')+'</td>'
+        +'<td>'+fmtK(k.spend||0)+'</td>'
+        +'<td>'+fmtNum(k.clicks||0)+'</td>'
+        +'<td>'+ctr.toFixed(1)+'%</td>'
+        +'<td>€'+cpc.toFixed(2)+'</td>'
+        +'<td>'+Math.round(k.conversions||0)+'</td>'
+        +'</tr>';
+    }).join('')
+    +'</tbody></table></div></div>';
+}
+
+function wDevices(data){
+  if(!adWidgetOn('devices')) return '';
+  const devs=data.devices||{};
+  const keys=Object.keys(devs);
+  if(!keys.length) return '';
+  const icons={MOBILE:'📱',DESKTOP:'🖥️',TABLET:'📟'};
+  const labels={MOBILE:'Mobile',DESKTOP:'Desktop',TABLET:'Tablette'};
+  const totalSpend=keys.reduce((s,k)=>s+(devs[k].spend||0),0)||1;
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">📱 Répartition appareils</div>'
+    +'<div style="overflow-x:auto"><table class="ad-camp-table">'
+    +'<thead><tr><th style="text-align:left">Appareil</th><th>Dépenses</th><th>%</th><th>Impr.</th><th>CTR</th><th>Conv.</th><th>ROAS</th></tr></thead>'
+    +'<tbody>'
+    +keys.sort((a,b)=>(devs[b].spend||0)-(devs[a].spend||0)).map(k=>{
+      const d=devs[k];
+      const pct=Math.round((d.spend||0)/totalSpend*100);
+      const ctr=d.impressions>0?d.clicks/d.impressions*100:0;
+      const roas=d.spend>0&&d.convValue>0?d.convValue/d.spend:0;
+      return '<tr>'
+        +'<td>'+(icons[k]||'📊')+' '+(labels[k]||k)+'</td>'
+        +'<td>'+fmtK(d.spend||0)+'</td>'
+        +'<td>'+pct+'%</td>'
+        +'<td>'+fmtNum(d.impressions||0)+'</td>'
+        +'<td>'+ctr.toFixed(1)+'%</td>'
+        +'<td>'+Math.round(d.conversions||0)+'</td>'
+        +'<td class="'+roasColor(roas)+'" style="font-weight:700">'+(roas>0?roasFmt(roas):'—')+'</td>'
+        +'</tr>';
+    }).join('')
+    +'</tbody></table></div></div>';
+}
+
+function wPeriodVs(data){
+  if(!adWidgetOn('period_vs')||!data.prevData) return '';
+  const prev=data.prevData;
+  const curr=data;
+  const roasC=curr.spend>0?curr.convValue/curr.spend:0;
+  const roasP=prev.spend>0?prev.convValue/prev.spend:0;
+  const ctrC=curr.impressions>0?curr.clicks/curr.impressions*100:0;
+  const ctrP=prev.impressions>0?prev.clicks/prev.impressions*100:0;
+  const rows=[
+    ['ROAS',roasFmt(roasC),roasFmt(roasP),pctChange(roasC,roasP)],
+    ['Dépenses',fmtK(curr.spend),fmtK(prev.spend),pctChange(curr.spend,prev.spend)],
+    ['CA att.',fmtK(curr.convValue),fmtK(prev.convValue),pctChange(curr.convValue,prev.convValue)],
+    ['Impressions',fmtNum(curr.impressions),fmtNum(prev.impressions),pctChange(curr.impressions,prev.impressions)],
+    ['CTR',ctrC.toFixed(2)+'%',ctrP.toFixed(2)+'%',pctChange(ctrC,ctrP)],
+  ];
+  const periodLbl={7:'7j préc.',30:'30j préc.',90:'90j préc.',365:'An préc.'}[_adsPeriod]||'Période préc.';
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">↔️ N vs N-1</div>'
+    +'<table class="ad-camp-table" style="width:100%">'
+    +'<thead><tr><th style="text-align:left">Métrique</th><th>Actuel</th><th>'+periodLbl+'</th><th>Évolution</th></tr></thead>'
+    +'<tbody>'
+    +rows.map(r=>'<tr><td style="text-align:left">'+r[0]+'</td><td>'+r[1]+'</td><td style="color:var(--t2)">'+r[2]+'</td><td>'+r[3]+'</td></tr>').join('')
+    +'</tbody></table></div>';
+}
+
+function wHealth(data, shopify){
+  if(!adWidgetOn('health')) return '';
+  let score=0; const checks=[];
+  const roas=data.spend>0?data.convValue/data.spend:0;
+  const target=D.settings.adTargetRoas||3;
+  const margin=D.settings.adMarginPct||30;
+  const beRoas=margin>0?100/margin:0;
+  const ctr=data.impressions>0?data.clicks/data.impressions*100:0;
+  const budget=D.settings.adBudgetMonthly||0;
+
+  if(roas>=target){score+=25;checks.push({ok:true,msg:'ROAS au-dessus de la cible'});}
+  else if(roas>=beRoas){score+=12;checks.push({ok:null,msg:'ROAS rentable mais sous la cible'});}
+  else {checks.push({ok:false,msg:'ROAS sous le seuil de rentabilité'});}
+
+  if(ctr>=2){score+=20;checks.push({ok:true,msg:'CTR excellent (≥2%)'});}
+  else if(ctr>=1){score+=10;checks.push({ok:null,msg:'CTR acceptable (1-2%)'});}
+  else if(ctr>0){checks.push({ok:false,msg:'CTR faible (<1%)'});}
+
+  if(shopify&&shopify.sessions>0){score+=15;checks.push({ok:true,msg:'Données visiteurs Shopify disponibles'});}
+  if(data.campaigns&&data.campaigns.length>0){score+=15;checks.push({ok:true,msg:'Détail campagnes disponible'});}
+  if(data.keywords&&data.keywords.length>0){score+=15;checks.push({ok:true,msg:'Données mots-clés disponibles'});}
+  if(_adAutoData){score+=10;checks.push({ok:true,msg:'Sync automatique active'});}
+  else {checks.push({ok:null,msg:'Sync manuelle — considère le script auto'});}
+
+  score=Math.min(100,score);
+  const color=score>=70?'#22c55e':score>=40?'#f59e0b':'#ef4444';
+  const icons={true:'✅',false:'❌',null:'⚠️'};
+  return '<div class="ad-widget">'
+    +'<div class="ad-widget-title">🏥 Score de santé pub</div>'
+    +'<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px">'
+      +'<div style="text-align:center;flex-shrink:0">'
+        +'<div style="font-size:36px;font-weight:800;color:'+color+'">'+score+'</div>'
+        +'<div style="font-size:10px;color:var(--t3)">/100</div>'
+      +'</div>'
+      +'<div style="flex:1">'
+        +'<div class="ad-progress"><div class="ad-progress-fill" style="width:'+score+'%;background:'+color+'"></div></div>'
+        +'<div style="font-size:10px;color:var(--t3);margin-top:3px">'+(score>=70?'Bonne santé':score>=40?'Amélioration possible':'Action requise')+'</div>'
+      +'</div>'
+    +'</div>'
+    +'<div style="display:flex;flex-direction:column;gap:3px">'
+    +checks.slice(0,5).map(c=>'<div style="font-size:11px;display:flex;gap:5px"><span>'+icons[String(c.ok)]+'</span><span>'+c.msg+'</span></div>').join('')
+    +'</div></div>';
+}
+
+// ─── MAIN RENDER ─────────────────────────────────────────────
+function renderAdsSection(){
+  const el=document.getElementById('ads-content'); if(!el) return;
+  const data=getAdPeriodData(_adsPeriod);
+  const shopify=getShopifyPeriodData(_adsPeriod);
+  const periodLbl={7:'7 jours',30:'30 jours',90:'90 jours',365:'Tout'}[_adsPeriod]||(_adsPeriod+'j');
+  const syncBadge=_adAutoData
+    ?'<span style="font-size:10px;color:#22c55e;font-weight:400"> · ● auto-sync</span>'
+    :'<span style="font-size:10px;color:var(--t3);font-weight:400"> · ● manuel</span>';
+
+  let html='';
+  // Period tabs
+  html+='<div id="ads-period-tabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px">'
+    +[7,30,90,365].map(d=>{
+      const lbl={7:'7j',30:'30j',90:'90j',365:'Tout'}[d];
+      const act=d===_adsPeriod?' active':'  btn-ghost';
+      return '<button class="btn btn-sm'+act+'" onclick="setAdsPeriod('+d+',this)">'+lbl+'</button>';
+    }).join('')+'</div>';
+
+  // Header
+  html+='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:8px;flex-wrap:wrap">'
+    +'<div style="font-size:14px;font-weight:700">'+periodLbl+syncBadge+'</div>'
+    +'<div style="display:flex;gap:6px">'
+    +'<button class="btn btn-sm btn-ghost" onclick="openAdSettingsModal()">⚙️ Paramètres</button>'
+    +'<button class="btn btn-sm btn-ghost" onclick="openGAdsSetupModal()">🔗 Script auto</button>'
+    +'<button class="btn btn-sm" onclick="openAdEntryModal()">+ Saisir</button>'
+    +'</div></div>';
+
+  if(!data){
+    html+='<div class="ad-empty-state">'
+      +'<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>'
+      +'<div style="font-size:15px;font-weight:600;margin:10px 0 6px">Aucune donnée pub pour cette période</div>'
+      +'<p style="font-size:12px;margin-bottom:14px">Connecte le script Google Ads ou saisis tes métriques manuellement.</p>'
+      +'<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'
+      +'<button class="btn" onclick="openAdEntryModal()">+ Saisir</button>'
+      +'<button class="btn btn-ghost" onclick="openGAdsSetupModal()">🔗 Script Google Ads</button>'
+      +'</div></div>';
+    el.innerHTML=html; return;
+  }
+
+  // Render all enabled widgets
+  html+=wAlerts(data, shopify);
+  html+=wRoasCompare(data);
+  html+=wMer(data, shopify);
+  html+=wBreakeven(data);
+  html+=wBudget(data);
+  html+=wCacLtv(data, shopify);
+  html+=wTrends();
+  html+=wPeriodVs(data);
+  html+=wShopify(data, shopify);
+  html+=wCampaigns(data);
+  html+=wKeywords(data);
+  html+=wDevices(data);
+  html+=wHealth(data, shopify);
+
+  // Manual snapshots list
+  if(data.source==='manual'){
+    const cutoff=_adsPeriod===365?null:new Date(Date.now()-_adsPeriod*86400000).toISOString().slice(0,10);
+    const filtered=(D.adSnapshots||[]).filter(s=>!cutoff||!s.dateFrom||s.dateFrom>=cutoff);
+    if(filtered.length){
+      html+='<div class="ad-widget">'
+        +'<div class="ad-widget-title">📂 Saisies manuelles</div>';
+      filtered.slice(0,8).forEach(s=>{
+        const sr=s.spend>0?s.convValue/s.spend:0;
+        html+='<div class="ad-snap-row">'
+          +'<div style="font-size:15px;margin-right:4px">'+(s.platform==='Meta'?'📘':s.platform==='TikTok'?'🎵':'📣')+'</div>'
+          +'<div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">'+escHtml(s.platform)+'</div>'
+            +'<div style="font-size:10px;color:var(--t3)">'+s.dateFrom+(s.dateTo&&s.dateTo!==s.dateFrom?' → '+s.dateTo:'')+'</div></div>'
+          +'<div class="ad-snap-metric"><div class="mv '+roasColor(sr)+'">'+roasFmt(sr)+'</div><div class="ml">ROAS</div></div>'
+          +'<div class="ad-snap-metric"><div class="mv">'+fmtK(s.spend)+'</div><div class="ml">Dépenses</div></div>'
+          +'<div class="ad-snap-metric"><div class="mv">'+(s.impressions?fmtNum(s.impressions):'—')+'</div><div class="ml">Impr.</div></div>'
+          +'<div style="display:flex;gap:2px;margin-left:4px">'
+            +'<button style="background:none;border:none;cursor:pointer;color:var(--t3);font-size:13px;padding:2px" onclick="openAdEntryModal(\''+s.id+'\')">✏️</button>'
+            +'<button style="background:none;border:none;cursor:pointer;color:var(--t3);font-size:13px;padding:2px" onclick="deleteAdSnapshot(\''+s.id+'\')">🗑</button>'
+          +'</div></div>';
+      });
+      html+='</div>';
+    }
+  }
+
+  el.innerHTML=html;
+}
+
+// ─── GADS SCRIPT SETUP ───────────────────────────────────────
+function openGAdsSetupModal(){
+  document.getElementById('gads-setup-modal').classList.add('open');
+  generateGAdsScript();
+  const info=document.getElementById('gads-last-sync');
+  if(info&&_adAutoData&&_adAutoData.syncedAt){
+    const ago=Math.round((Date.now()-_adAutoData.syncedAt)/60000);
+    info.textContent='Dernière sync auto : il y a '+(ago<60?ago+'min':(ago/60).toFixed(1)+'h');
+  } else if(info){ info.textContent='Aucune sync auto détectée'; }
+}
+
+function generateGAdsScript(){
+  const box=document.getElementById('gads-script-box'); if(!box) return;
+  let cfg={apiKey:'',projectId:'',syncDocId:D.settings.syncDocId||''};
+  try{
+    const raw=D.settings.firebaseConfig;
+    const c=typeof raw==='string'?JSON.parse(raw):raw;
+    cfg.apiKey=c.apiKey||''; cfg.projectId=c.projectId||'';
+  }catch(e){}
+  if(!cfg.projectId||!cfg.syncDocId){
+    box.textContent='⚠️ Configurez Firebase dans Réglages pour générer le script.'; return;
+  }
+  const lines=[
+    '// Script APEX – Google Ads → Firebase (multi-périodes + devices + keywords)',
+    '// Fréquence recommandée : Quotidien',
+    '',
+    'var FIREBASE_PROJECT_ID = "'+cfg.projectId+'";',
+    'var FIREBASE_API_KEY    = "'+cfg.apiKey+'";',
+    'var APEX_DOC_ID         = "'+cfg.syncDocId+'";',
+    '',
+    '// ── Fetch campagnes pour une période ──────────────────',
+    'function fetchCampaigns(range) {',
+    '  var it = AdsApp.campaigns()',
+    '    .withCondition("campaign.status = ENABLED")',
+    '    .forDateRange(range)',
+    '    .orderBy("metrics.cost_micros DESC")',
+    '    .get();',
+    '  var camps=[],spend=0,convVal=0,impr=0,clicks=0,conv=0;',
+    '  while (it.hasNext()) {',
+    '    var c=it.next(); var s=c.getStatsFor(range);',
+    '    var row={name:c.getName(),spend:s.getCost(),convValue:s.getConversionValue(),',
+    '      impressions:s.getImpressions(),clicks:s.getClicks(),conversions:s.getConversions()};',
+    '    camps.push(row);',
+    '    spend+=row.spend;convVal+=row.convValue;impr+=row.impressions;',
+    '    clicks+=row.clicks;conv+=row.conversions;',
+    '  }',
+    '  var reportedRoas=spend>0?convVal/spend:0;',
+    '  return {campaigns:JSON.stringify(camps),totalSpend:spend,totalConvValue:convVal,',
+    '    totalImpressions:impr,totalClicks:clicks,totalConversions:conv,reportedRoas:reportedRoas};',
+    '}',
+    '',
+    '// ── Fetch keywords top 20 ──────────────────────────────',
+    'function fetchKeywords(range) {',
+    '  var it = AdsApp.keywords()',
+    '    .withCondition("campaign.status = ENABLED")',
+    '    .forDateRange(range)',
+    '    .orderBy("metrics.cost_micros DESC")',
+    '    .withLimit(20)',
+    '    .get();',
+    '  var kws=[];',
+    '  while(it.hasNext()){',
+    '    var k=it.next(); var s=k.getStatsFor(range);',
+    '    kws.push({name:k.getText(),spend:s.getCost(),impressions:s.getImpressions(),',
+    '      clicks:s.getClicks(),conversions:s.getConversions()});',
+    '  }',
+    '  return JSON.stringify(kws);',
+    '}',
+    '',
+    '// ── Fetch device breakdown ─────────────────────────────',
+    'function fetchDevices(range) {',
+    '  var devs={MOBILE:{spend:0,impressions:0,clicks:0,conversions:0,convValue:0},',
+    '    DESKTOP:{spend:0,impressions:0,clicks:0,conversions:0,convValue:0},',
+    '    TABLET:{spend:0,impressions:0,clicks:0,conversions:0,convValue:0}};',
+    '  // Use campaign-level stats per device segment',
+    '  var report = AdsApp.report(',
+    '    "SELECT device, cost_micros, impressions, clicks, conversions, conversions_value" +',
+    '    " FROM campaign WHERE campaign.status = ENABLED AND segments.date DURING " + range);',
+    '  var rows=report.rows();',
+    '  while(rows.hasNext()){',
+    '    var row=rows.next();',
+    '    var d=String(row["device"]).toUpperCase();',
+    '    if(!devs[d]) devs[d]={spend:0,impressions:0,clicks:0,conversions:0,convValue:0};',
+    '    devs[d].spend      +=parseFloat(row["cost_micros"]||0)/1e6;',
+    '    devs[d].impressions+=parseInt(row["impressions"]||0);',
+    '    devs[d].clicks     +=parseInt(row["clicks"]||0);',
+    '    devs[d].conversions+=parseFloat(row["conversions"]||0);',
+    '    devs[d].convValue  +=parseFloat(row["conversions_value"]||0);',
+    '  }',
+    '  return JSON.stringify(devs);',
+    '}',
+    '',
+    '// ── Fetch previous period for N vs N-1 ────────────────',
+    'function fetchPrev(daysRange) {',
+    '  var now=new Date();',
+    '  var tz=AdsApp.currentAccount().getTimeZone();',
+    '  var fmt=function(d){return Utilities.formatDate(d,tz,"yyyyMMdd");};',
+    '  var endCurr=new Date(now-1*86400000);',
+    '  var startCurr=new Date(now-daysRange*86400000);',
+    '  var startPrev=new Date(now-daysRange*2*86400000);',
+    '  var endPrev=new Date(startCurr-1*86400000);',
+    '  var it=AdsApp.campaigns()',
+    '    .withCondition("campaign.status = ENABLED")',
+    '    .forDateRange(fmt(startPrev),fmt(endPrev))',
+    '    .get();',
+    '  var spend=0,convVal=0,impr=0,clicks=0,conv=0;',
+    '  while(it.hasNext()){var c=it.next();var s=c.getStatsFor(fmt(startPrev),fmt(endPrev));',
+    '    spend+=s.getCost();convVal+=s.getConversionValue();',
+    '    impr+=s.getImpressions();clicks+=s.getClicks();conv+=s.getConversions();}',
+    '  return {prevSpend:spend,prevConvValue:convVal,prevImpressions:impr,prevClicks:clicks,prevConversions:conv};',
+    '}',
+    '',
+    'function toFields(obj){',
+    '  var f={};',
+    '  Object.keys(obj).forEach(function(k){',
+    '    var v=obj[k];',
+    '    if(typeof v===\'string\') f[k]={stringValue:v};',
+    '    else if(typeof v===\'number\') f[k]={doubleValue:v};',
+    '    else f[k]={stringValue:String(v)};',
+    '  });',
+    '  return f;',
+    '}',
+    '',
+    'function toMapField(obj){ return {mapValue:{fields:toFields(obj)}}; }',
+    '',
+    'function main(){',
+    '  Logger.log("APEX sync démarré...");',
+    '  var p7   = fetchCampaigns("LAST_7_DAYS");',
+    '  var p30  = fetchCampaigns("LAST_30_DAYS");',
+    '  var p90  = fetchCampaigns("LAST_90_DAYS");',
+    '  var p365 = fetchCampaigns("LAST_365_DAYS");',
+    '',
+    '  // Devices (30j)',
+    '  p30.devices  = fetchDevices("LAST_30_DAYS");',
+    '  p7.devices   = fetchDevices("LAST_7_DAYS");',
+    '',
+    '  // Keywords (30j)',
+    '  p30.keywords = fetchKeywords("LAST_30_DAYS");',
+    '  p7.keywords  = fetchKeywords("LAST_7_DAYS");',
+    '',
+    '  // N vs N-1',
+    '  var prev7  = fetchPrev(7);  Object.assign(p7,  prev7);',
+    '  var prev30 = fetchPrev(30); Object.assign(p30, prev30);',
+    '  var prev90 = fetchPrev(90); Object.assign(p90, prev90);',
+    '',
+    '  var url="https://firestore.googleapis.com/v1/projects/"+FIREBASE_PROJECT_ID',
+    '    +"/databases/(default)/documents/adSync/"+APEX_DOC_ID+"?key="+FIREBASE_API_KEY;',
+    '',
+    '  var body={fields:{',
+    '    p7:   toMapField(p7),',
+    '    p30:  toMapField(p30),',
+    '    p90:  toMapField(p90),',
+    '    p365: toMapField(p365),',
+    '    updatedAt:{integerValue:String(Date.now())}',
+    '  }};',
+    '',
+    '  var resp=UrlFetchApp.fetch(url,{method:"PATCH",payload:JSON.stringify(body),',
+    '    contentType:"application/json",muteHttpExceptions:true});',
+    '  var roas30=p30.totalSpend>0?(p30.totalConvValue/p30.totalSpend).toFixed(2):"N/A";',
+    '  Logger.log("APEX OK | 30j ROAS="+roas30+" | HTTP "+resp.getResponseCode());',
+    '}'
+  ];
+  box.textContent=lines.join('\n');
+}
+
+function copyGAdsScript(){
+  const box=document.getElementById('gads-script-box'); if(!box) return;
+  navigator.clipboard.writeText(box.textContent)
+    .then(()=>showToast('📋 Script copié !',''))
+    .catch(()=>{
+      const ta=document.createElement('textarea'); ta.value=box.textContent;
+      document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+      document.body.removeChild(ta); showToast('📋 Script copié !','');
+    });
+}
+
+function copyGAdsRules(){
+  const rules=document.getElementById('gads-firestore-rules'); if(!rules) return;
+  navigator.clipboard.writeText(rules.textContent)
+    .then(()=>showToast('📋 Règles copiées !',''))
+    .catch(()=>{});
+}
+
+
 function setCROPeriod(days,el){
   _croPeriod=days;
   document.querySelectorAll('#cro-period-tabs .btn').forEach(b=>{b.classList.remove('active');b.classList.add('btn-ghost');});
   el.classList.add('active'); el.classList.remove('btn-ghost');
   renderCRO();
+  // Keep ads period in sync if both tabs show
+  if(_adsView==='ads') renderAdsSection();
 }
 
 function renderCRO(){
@@ -4334,6 +5407,8 @@ async function syncCRO(projectId){
     const croData=bData.cro[_croPeriod]||bData.cro[30]||Object.values(bData.cro)[0];
     if(!croData) throw new Error('Aucune donnée pour la période '+_croPeriod+'j');
     _croCache[projectId]=bData.cro;
+    // Also ensure period 365 (all-time) is available if present
+    if(bData.cro&&!bData.cro[365]&&bData.cro[90]) _croCache[projectId][365]=bData.cro[90]; // fallback
     renderCRO();
     var msg='✅ '+croData.orders+' cmd · '+croData.period+'j';
     if(croData.abandonRate!==null&&croData.abandonRate!==undefined) msg+=' · '+croData.abandonRate+'% abandon';
