@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-19T08:00:16.564Z",
+  "lastUpdated": "2026-03-19T09:49:58.161Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T08:00:19.316Z",
+        "syncedAt": "2026-03-19T09:50:00.692Z",
         "allTime": {
           "revenue": 12016,
           "orders": 199
@@ -100,7 +100,10 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-19T08:00:21.344Z"
+          "sessions": 63,
+          "conversionRate": 6.3,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:03.065Z"
         },
         "30": {
           "period": 30,
@@ -250,7 +253,10 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-19T08:00:22.035Z"
+          "sessions": 438,
+          "conversionRate": 5.9,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:03.807Z"
         },
         "90": {
           "period": 90,
@@ -407,7 +413,170 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-19T08:00:22.860Z"
+          "sessions": 1650,
+          "conversionRate": 6.1,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:04.567Z"
+        },
+        "365": {
+          "period": 365,
+          "revenue": 12016,
+          "orders": 199,
+          "aov": 60,
+          "currency": "EUR",
+          "refunds": 51,
+          "refundRate": 20,
+          "revenueHalf1": 0,
+          "revenueHalf2": 12016,
+          "discountOrders": 134,
+          "discountRate": 67,
+          "discountShare": 10,
+          "totalDiscounts": 1145,
+          "newCust": 197,
+          "returning": 1,
+          "avgOrdersPerRepeat": "2.0",
+          "avgLTV": 30,
+          "vipCustomers": 0,
+          "topProducts": [
+            {
+              "name": "Peignoir Éponge Rose Rayé",
+              "qty": 60,
+              "revenue": 3594
+            },
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "qty": 15,
+              "revenue": 1251
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 9,
+              "revenue": 623
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "qty": 10,
+              "revenue": 599
+            },
+            {
+              "name": "Peignoir Rayé Coloré - Unisexe",
+              "qty": 5,
+              "revenue": 450
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "qty": 6,
+              "revenue": 358
+            },
+            {
+              "name": "Peignoir Flanelle Enfant",
+              "qty": 6,
+              "revenue": 310
+            },
+            {
+              "name": "Peignoir Elégant Flanelle",
+              "qty": 4,
+              "revenue": 280
+            },
+            {
+              "name": "Peignoir Polaire Couple",
+              "qty": 4,
+              "revenue": 280
+            },
+            {
+              "name": "Peignoir Satin 4 Pièces – Femme",
+              "qty": 4,
+              "revenue": 270
+            }
+          ],
+          "top3RevenueShare": 46,
+          "hourly": {
+            "0": 1,
+            "2": 2,
+            "3": 1,
+            "5": 1,
+            "6": 1,
+            "7": 3,
+            "8": 4,
+            "9": 14,
+            "10": 7,
+            "11": 14,
+            "12": 7,
+            "13": 8,
+            "14": 21,
+            "15": 15,
+            "16": 13,
+            "17": 12,
+            "18": 25,
+            "19": 17,
+            "20": 13,
+            "21": 13,
+            "22": 4,
+            "23": 3
+          },
+          "daily": {
+            "0": 36,
+            "1": 29,
+            "2": 37,
+            "3": 32,
+            "4": 21,
+            "5": 25,
+            "6": 19
+          },
+          "totalProducts": 178,
+          "zeroSaleProducts": [
+            "Cape de Bain Bébé Dinosaure",
+            "Cape de Bain Bébé Éponge",
+            "Cape de Bain Bébé Koala",
+            "Cape de Bain Bébé Lapin",
+            "Cape de Bain Bébé Lion",
+            "Cape de Bain Gaufré",
+            "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur — Rose",
+            "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+            "Ensemble de Nuit Satin – Femme",
+            "Ensemble Peignoir Et Robe De Chambre Femme",
+            "Ensemble Robe De Nuit Et Peignoir",
+            "Garantie de Livraison",
+            "Kimono Perle Femme",
+            "Peignoir À Capuche Femme Doux",
+            "Peignoir Absorbant Homme",
+            "Peignoir Bébé Gris",
+            "Peignoir Bébé Rose",
+            "Peignoir Bébé Violet",
+            "Peignoir Capuche - Femme"
+          ],
+          "newProductsAdded": 179,
+          "abandonedCheckouts": 31,
+          "totalCheckouts": 233,
+          "abandonRate": 13,
+          "abandonedValue": 1611,
+          "topAbandoned": [
+            {
+              "name": "Peignoir Éponge Rose Rayé",
+              "count": 5
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "count": 3
+            },
+            {
+              "name": "Peignoir De Bain Fille",
+              "count": 2
+            },
+            {
+              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "count": 2
+            },
+            {
+              "name": "Peignoir Éponge Vert Rayé",
+              "count": 1
+            }
+          ],
+          "sessions": 2913,
+          "conversionRate": 6.8,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:05.275Z"
         }
       }
     },
@@ -416,7 +585,7 @@
         "revenue": 794,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T08:00:24.264Z",
+        "syncedAt": "2026-03-19T09:50:06.457Z",
         "allTime": {
           "revenue": 794,
           "orders": 12
@@ -515,7 +684,10 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-19T08:00:25.672Z"
+          "sessions": 63,
+          "conversionRate": 6.3,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:07.570Z"
         },
         "30": {
           "period": 30,
@@ -646,7 +818,10 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-19T08:00:26.269Z"
+          "sessions": 175,
+          "conversionRate": 6.9,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:08.104Z"
         },
         "90": {
           "period": 90,
@@ -777,7 +952,144 @@
               "count": 1
             }
           ],
-          "syncedAt": "2026-03-19T08:00:26.806Z"
+          "sessions": 175,
+          "conversionRate": 6.9,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:08.724Z"
+        },
+        "365": {
+          "period": 365,
+          "revenue": 794,
+          "orders": 12,
+          "aov": 66,
+          "currency": "EUR",
+          "refunds": 0,
+          "refundRate": 0,
+          "revenueHalf1": 0,
+          "revenueHalf2": 794,
+          "discountOrders": 0,
+          "discountRate": 0,
+          "discountShare": 0,
+          "totalDiscounts": 0,
+          "newCust": 12,
+          "returning": 0,
+          "avgOrdersPerRepeat": 0,
+          "avgLTV": 53,
+          "vipCustomers": 0,
+          "topProducts": [
+            {
+              "name": "Chemise Kimono Grande Taille",
+              "qty": 2,
+              "revenue": 140
+            },
+            {
+              "name": "Kimono Chinois Fille",
+              "qty": 2,
+              "revenue": 110
+            },
+            {
+              "name": "Kimono Plage Fleuri Femme",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Robe Kimono Manches Longues",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Kimono Femme Long Noir Et Blanc",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Kimono Long Manche Ample",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Robe Chinoise Kimono Enfant",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
+              "name": "Cardigan Style Kimono Homme",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 1,
+              "revenue": 50
+            }
+          ],
+          "top3RevenueShare": 39,
+          "hourly": {
+            "1": 1,
+            "8": 1,
+            "10": 1,
+            "12": 1,
+            "13": 3,
+            "18": 1,
+            "19": 1,
+            "20": 2,
+            "21": 1
+          },
+          "daily": {
+            "0": 2,
+            "1": 2,
+            "2": 1,
+            "3": 3,
+            "4": 1,
+            "6": 3
+          },
+          "totalProducts": 205,
+          "zeroSaleProducts": [
+            "Abaya Kimono Grande Taille",
+            "Brassière Kimono Bébé",
+            "Brassière Kimono Nouveau Né",
+            "Cardigan Chemise Kimono",
+            "Cardigan Homme Façon Kimono",
+            "Cardigan Kimono Coton Homme",
+            "Cardigan Kimono Femme Grande Taille",
+            "Cardigan Kimono Homme Drapé",
+            "Cardigan Kimono Noir Court Femme",
+            "Chemise Col Kimono Homme",
+            "Chemise Facon Kimono",
+            "Chemise Facon Kimono Homme",
+            "Chemise Femme Style Kimono",
+            "Chemise Imprimé Kimono",
+            "Chemise Kimono Blanche Homme",
+            "Chemise Kimono Bleue",
+            "Chemise Kimono Femme",
+            "Chemise Kimono Femme Grande Taille",
+            "Chemise Kimono Homme Japonais",
+            "Chemise Kimono Homme Noir"
+          ],
+          "newProductsAdded": 205,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 14,
+          "abandonRate": 14,
+          "abandonedValue": 245,
+          "topAbandoned": [
+            {
+              "name": "Manteau Kimono Épais Homme",
+              "count": 1
+            },
+            {
+              "name": "Kimono Abaya Femme",
+              "count": 1
+            }
+          ],
+          "sessions": 175,
+          "conversionRate": 6.9,
+          "sessionsSource": "estimated",
+          "syncedAt": "2026-03-19T09:50:09.247Z"
         }
       }
     }
