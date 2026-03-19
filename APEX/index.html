@@ -783,6 +783,31 @@ html[data-theme="light"]{
 .qc-result-body{font-size:12px;color:var(--t2);line-height:1.45}
 /* ═══ OVERDUE BANNER ═══ */
 .overdue-banner{background:rgba(247,201,72,.08);border:1px solid rgba(247,201,72,.25);border-radius:var(--rsm);padding:10px 14px;margin-bottom:12px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:#F7C948}
+
+/* ── AI REDESIGN ─────────────────────────────────────── */
+.ai-briefing{background:linear-gradient(135deg,rgba(123,104,238,.13),rgba(0,201,200,.08));
+  border:1px solid rgba(123,104,238,.25);border-radius:16px;padding:18px 20px;margin-bottom:16px;position:relative}
+.ai-briefing-label{font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--pl);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ai-briefing-content{font-size:13.5px;color:var(--text);line-height:1.7}
+.ai-briefing-loading{display:flex;align-items:center;gap:8px;color:var(--t2);font-size:13px}
+.ai-briefing-loading span{width:6px;height:6px;border-radius:50%;background:var(--purple);animation:blink 1.2s infinite}
+.ai-briefing-loading span:nth-child(2){animation-delay:.2s}
+.ai-briefing-loading span:nth-child(3){animation-delay:.4s}
+.ai-briefing-dismiss{position:absolute;top:10px;right:14px;background:none;border:none;
+  color:var(--t3);font-size:20px;cursor:pointer;padding:0;line-height:1}
+.ai-briefing-dismiss:hover{color:var(--t2)}
+.ai-actions-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.ai-action-card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:16px 14px;cursor:pointer;transition:all .2s;text-align:left}
+.ai-action-card:hover{border-color:var(--purple);background:var(--card2);transform:translateY(-1px)}
+.ai-action-icon{font-size:22px;margin-bottom:8px}
+.ai-action-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px}
+.ai-action-desc{font-size:11.5px;color:var(--t2);line-height:1.4}
+.module-ia-btn{background:none;border:1px solid rgba(123,104,238,.3);cursor:pointer;color:var(--pl);
+  font-size:11px;font-weight:700;display:flex;align-items:center;gap:4px;padding:5px 10px;
+  border-radius:20px;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.module-ia-btn:hover{background:rgba(123,104,238,.1);border-color:var(--purple)}
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
@@ -974,7 +999,7 @@ html[data-theme="light"]{
 
 <!-- ─── TASKS ─── -->
 <div class="page" id="page-tasks">
-  <div class="page-hdr"><h2>Mes Tâches</h2><p>Organisées par domaine de vie</p></div>
+  <div class="page-hdr" style="display:flex;justify-content:space-between;align-items:center"><div><h2>Mes Tâches</h2><p>Organisées par domaine de vie</p></div><button class="module-ia-btn" onclick="moduleAI('tasks')">✦ IA</button></div>
   <div class="tabs">
     <button class="tab active" onclick="filterTasks('all',this)">Tout</button>
     <button class="tab" onclick="filterTasks('business',this)" title="Business"><svg class="apex-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-briefcase"/></svg></button>
@@ -1017,7 +1042,7 @@ html[data-theme="light"]{
 
 <!-- ─── GOALS ─── -->
 <div class="page" id="page-goals">
-  <div class="page-hdr"><h2>Mes Objectifs</h2><p>Méthode OKR — Start With Why</p></div>
+  <div class="page-hdr" style="display:flex;justify-content:space-between;align-items:center"><div><h2>Mes Objectifs</h2><p>Méthode OKR — Start With Why</p></div><button class="module-ia-btn" onclick="moduleAI('goals')">✦ IA</button></div>
   <div class="why-goals">
     <div class="wg-label">✦ Mon Pourquoi — La Fondation</div>
     <div class="wg-text" id="why-goals-text" onclick="openWhy()">Définissez votre raison profonde...</div>
@@ -1048,7 +1073,7 @@ html[data-theme="light"]{
 
 <!-- ─── HABITS ─── -->
 <div class="page" id="page-habits">
-  <div class="page-hdr"><h2>Mes Habitudes</h2><p>La constance quotidienne crée l'excellence</p></div>
+  <div class="page-hdr" style="display:flex;justify-content:space-between;align-items:center"><div><h2>Mes Habitudes</h2><p>La constance quotidienne crée l'excellence</p></div><button class="module-ia-btn" onclick="moduleAI('habits')">✦ IA</button></div>
   <div id="habits-heatmap" class="heatmap-wrap"></div>
   <div id="habits-list"></div>
   <button class="add-toggle" onclick="toggleHabitForm()"><span>＋</span> Nouvelle habitude</button>
@@ -1073,33 +1098,55 @@ html[data-theme="light"]{
 
 <!-- PAGE IA -->
 <div class="page" id="page-ai">
-  <div class="page-hdr">
-    <h2><svg class="apex-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sparkles"/></svg> APEX IA</h2>
-    <p>Votre stratège business IA — posez n'importe quelle question</p>
-  </div>
   <!-- Pas de clé API -->
   <div id="ai-no-key" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;margin:16px 0">
     <div style="width:40px;height:40px;margin:0 auto 14px;opacity:.55;color:var(--t2)"><svg class="apex-ico" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-key"/></svg></div>
     <p style="color:var(--text);font-weight:600;margin-bottom:6px">Clé API Claude requise</p>
-    <p style="color:var(--t2);font-size:13px;margin-bottom:16px">Ajoutez votre clé API dans les Réglages pour activer l'agent IA.</p>
+    <p style="color:var(--t2);font-size:13px;margin-bottom:16px">Ajoutez votre clé Anthropic dans les Réglages.</p>
     <button class="btn btn-sm" onclick="document.getElementById('settings-modal').classList.add('open')"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg> Réglages</button>
   </div>
   <!-- Interface IA -->
-  <div id="ai-wrap" style="display:flex;flex-direction:column;gap:10px">
-    <!-- Suggestions rapides (dynamiques) -->
-    <div id="ai-suggestions" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px"></div>
-    <div id="ai-messages" style="min-height:180px;max-height:40vh;overflow-y:auto;padding:8px 0;display:flex;flex-direction:column;gap:10px">
-      <div id="ai-empty" style="text-align:center;color:var(--t2);padding:30px 0;font-size:13px">
-        <div style="width:36px;height:36px;margin:0 auto 10px;opacity:.4;color:var(--t2)"><svg class="apex-ico" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sparkles"/></svg></div>
-        Posez une question ou choisissez une suggestion ci-dessus
+  <div id="ai-wrap" style="display:none;flex-direction:column;gap:0">
+    <!-- Briefing proactif -->
+    <div class="ai-briefing" id="ai-briefing">
+      <button class="ai-briefing-dismiss" onclick="dismissBriefing()">×</button>
+      <div class="ai-briefing-label">✦ Briefing IA</div>
+      <div id="ai-briefing-content" class="ai-briefing-loading"><span></span><span></span><span></span>&nbsp; Analyse en cours...</div>
+    </div>
+    <!-- Cartes d'action -->
+    <div class="ai-actions-grid" id="ai-actions">
+      <div class="ai-action-card" onclick="aiQuickAction('priorities')">
+        <div class="ai-action-icon">🎯</div>
+        <div class="ai-action-title">Mes priorités</div>
+        <div class="ai-action-desc">Tâches et objectifs du jour, sur quoi focus</div>
+      </div>
+      <div class="ai-action-card" onclick="aiQuickAction('boutiques')">
+        <div class="ai-action-icon">🏪</div>
+        <div class="ai-action-title">Mes boutiques</div>
+        <div class="ai-action-desc">Performance e-com, opportunités et actions</div>
+      </div>
+      <div class="ai-action-card" onclick="aiQuickAction('semaine')">
+        <div class="ai-action-icon">📈</div>
+        <div class="ai-action-title">Bilan semaine</div>
+        <div class="ai-action-desc">Habitudes, tâches, revenus — ce qui a marché</div>
+      </div>
+      <div class="ai-action-card" onclick="aiQuickAction('coach')">
+        <div class="ai-action-icon">🧠</div>
+        <div class="ai-action-title">Coach mindset</div>
+        <div class="ai-action-desc">Challenge ma vision, identifie mes blocages</div>
       </div>
     </div>
-    <div style="display:flex;gap:8px;align-items:flex-end">
-      <textarea class="finput" id="ai-input" rows="2" placeholder="Votre message..." style="flex:1;resize:none" onkeydown="aiKeydown(event)"></textarea>
-      <button id="ai-mic-btn" onclick="toggleMic()" title="Dicter un message" style="width:46px;height:46px;border-radius:50%;background:var(--card2);border:1px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;transition:all .2s;color:var(--t2)"><svg class="apex-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-mic"/></svg></button>
+    <!-- Chat -->
+    <div id="ai-messages" style="min-height:100px;max-height:45vh;overflow-y:auto;padding:8px 0;display:flex;flex-direction:column;gap:10px">
+      <div id="ai-empty" style="display:none"></div>
+    </div>
+    <!-- Input -->
+    <div style="display:flex;gap:8px;align-items:flex-end;padding-top:12px;border-top:1px solid var(--border);margin-top:8px">
+      <textarea class="finput" id="ai-input" rows="2" placeholder="Message à APEX IA..." style="flex:1;resize:none" onkeydown="aiKeydown(event)"></textarea>
+      <button id="ai-mic-btn" onclick="toggleMic()" title="Dicter" style="width:46px;height:46px;border-radius:50%;background:var(--card2);border:1px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;transition:all .2s;color:var(--t2)"><svg class="apex-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-mic"/></svg></button>
       <button class="btn" onclick="sendAIMessage()" style="height:46px;padding:0 16px">▶</button>
     </div>
-    <div style="display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px">
       <span style="font-size:11px;color:var(--t2)">Shift+Entrée pour sauter une ligne</span>
       <button class="btn btn-ghost btn-sm" onclick="clearAIConversation()"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-trash"/></svg> Effacer</button>
     </div>
@@ -1186,7 +1233,7 @@ html[data-theme="light"]{
 <div class="page" id="page-finance">
   <div class="page-hdr">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <div><h2>Finances</h2><p>Revenus, dépenses & marge nette</p></div>
+      <div><h2>Finances</h2><p>Revenus, dépenses & marge nette</p></div><button class="module-ia-btn" onclick="moduleAI('finance')">✦ IA</button>
       <div style="display:flex;gap:6px">
         <button class="btn btn-sm btn-ghost" onclick="openAddExpense('recurring')" style="gap:5px;display:flex;align-items:center"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-repeat"/></svg> Abonnement</button>
         <button class="btn btn-sm" onclick="openAddExpense('once')">+ Dépense</button>
@@ -1868,6 +1915,16 @@ function setSyncBadge(state, label){
   badge.title=label||'Sync Firebase';
 }
 
+// Recheck connexion quand on revient sur l'app
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'){
+    if(_db) setSyncBadge('synced','Connecté ✓');
+    else if(D.settings.firebaseConfig&&D.settings.syncDocId) initSync();
+  } else {
+    setSyncBadge('','Sync');
+  }
+});
+
 async function pushSync(){
   if(!_db) return;
   const docId=D.settings.syncDocId;
@@ -1945,16 +2002,6 @@ async function initSync(){
     console.error('Firebase init error:',e);
   }
 }
-
-// Recheck connexion quand on revient sur l'app
-document.addEventListener('visibilitychange',()=>{
-  if(document.visibilityState==='visible'){
-    if(_db) setSyncBadge('synced','Connecté ✓');
-    else if(D.settings.firebaseConfig&&D.settings.syncDocId) initSync();
-  } else {
-    setSyncBadge('','Sync');
-  }
-});
 
 async function testSyncConnection(){
   const rawCfg=document.getElementById('s-sync-cfg').value.trim();
@@ -3225,7 +3272,20 @@ function renderAI(){
   if(noKeyEl) noKeyEl.style.display=hasKey?'none':'block';
   if(wrapEl) wrapEl.style.display=hasKey?'flex':'none';
   if(!hasKey) return;
-  // Suggestions dynamiques selon les projets
+  // Briefing proactif
+  const briefingKey='apex_briefing_'+today();
+  const cached=sessionStorage.getItem(briefingKey);
+  const briefingEl=document.getElementById('ai-briefing');
+  const briefingContent=document.getElementById('ai-briefing-content');
+  if(D._briefingDismissed===today()){
+    if(briefingEl) briefingEl.style.display='none';
+  } else if(cached){
+    if(briefingContent){ briefingContent.className='ai-briefing-content'; briefingContent.innerHTML=formatAIMsg(cached); }
+  } else { generateBriefing(); }
+  // Cartes d'action visibles seulement si pas de conversation
+  const actionsEl=document.getElementById('ai-actions');
+  if(actionsEl) actionsEl.style.display=(D.conversations&&D.conversations.length>0)?'none':'grid';
+  // Suggestions dynamiques selon les projets (conservé pour compatibilité)
   const sugg=document.getElementById('ai-suggestions');
   if(sugg){
     const projs=D.projects||DEFAULT_PROJECTS;
@@ -3236,6 +3296,60 @@ function renderAI(){
     sugg.innerHTML=html;
   }
   renderAIMessages();
+}
+
+
+async function generateBriefing(){
+  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+  if(!key) return;
+  const el=document.getElementById('ai-briefing-content'); if(!el) return;
+  el.className='ai-briefing-loading';
+  el.innerHTML='<span></span><span></span><span></span>&nbsp; Analyse en cours...';
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:300,system:buildAIContext(),
+        messages:[{role:'user',content:'Briefing ultra-concis en 2-3 points max. Observe mes données et dis-moi ce qui est le plus important MAINTENANT. Direct, factuel, actionnable. Format: points courts avec emoji. Pas de blabla.'}]})
+    });
+    if(!r.ok) throw new Error('API '+r.status);
+    const d=await r.json(); const text=d.content[0].text;
+    sessionStorage.setItem('apex_briefing_'+today(),text);
+    el.className='ai-briefing-content'; el.innerHTML=formatAIMsg(text);
+  }catch(e){ el.className='ai-briefing-content'; el.innerHTML='<span style="color:var(--t2);font-size:12px">Briefing indisponible</span>'; }
+}
+
+function dismissBriefing(){
+  D._briefingDismissed=today(); save();
+  const el=document.getElementById('ai-briefing'); if(el) el.style.display='none';
+}
+
+function aiQuickAction(type){
+  const prompts={
+    priorities:'Analyse mes tâches, objectifs et habitudes. Dis-moi exactement sur quoi me concentrer en priorité aujourd\'hui et pourquoi.',
+    boutiques:'Analyse les performances de mes boutiques e-commerce. Identifie les 3 actions les plus impactantes à faire cette semaine.',
+    semaine:'Fais un bilan de ma semaine : habitudes cochées, tâches accomplies, revenus. Ce qui a marché, ce que j\'améliore.',
+    coach:'Agis comme mon coach. Analyse mon contexte et challenge ma façon de penser. Qu\'est-ce que je fais bien et qu\'est-ce que je devrais faire différemment ?'
+  };
+  const actionsEl=document.getElementById('ai-actions'); if(actionsEl) actionsEl.style.display='none';
+  const input=document.getElementById('ai-input');
+  if(input){ input.value=prompts[type]||''; sendAIMessage(); }
+}
+
+function moduleAI(module){
+  const contextMap={
+    tasks:'Analyse mes tâches en cours : '+JSON.stringify((D.tasks||[]).slice(0,12).map(t=>({title:t.title,priority:t.priority,done:t.done,date:t.date}))),
+    habits:'Analyse mes habitudes et ma constance : '+JSON.stringify((D.habits||[]).map(h=>({name:h.name,streak:h.streak||0}))),
+    goals:'Analyse mes objectifs OKR : '+JSON.stringify((D.goals||[]).slice(0,8).map(g=>({title:g.title,done:g.done,why:g.why}))),
+    finance:'Analyse mes finances et boutiques Shopify avec les données disponibles et donne-moi 3 actions concrètes.'
+  };
+  const prompt=(contextMap[module]||'Analyse ce module.')+' Donne-moi 3 insights actionnables et directs.';
+  goPage('ai');
+  setTimeout(()=>{
+    const actionsEl=document.getElementById('ai-actions'); if(actionsEl) actionsEl.style.display='none';
+    const input=document.getElementById('ai-input');
+    if(input){ input.value=prompt; sendAIMessage(); }
+  },250);
 }
 
 function renderAIMessages(){
@@ -3292,6 +3406,7 @@ async function sendAIMessage(){
   if(_aiTyping) return;
   const input=document.getElementById('ai-input');
   const text=input.value.trim(); if(!text) return;
+  const _ac=document.getElementById('ai-actions'); if(_ac) _ac.style.display='none';
   input.value=''; input.style.height='auto';
   D.conversations=D.conversations||[];
   D.conversations.push({role:'user',content:text,ts:Date.now()});
@@ -3350,8 +3465,9 @@ function buildAIContext(){
   const agoals=(D.goals||[]).filter(g=>!g.done).slice(0,6);
   const hc=D.hc||{};
   const todayHab=(D.habits||[]).filter(h=>hc[h.id]&&hc[h.id][td]).length;
-  return `Tu es APEX, le second cerveau et stratège business de ${D.settings.name||"l'entrepreneur"}.
+  return `Tu es APEX, le second cerveau et stratège business de ${D.settings.name||"l'entrepreneur"}, propulsé par Claude d'Anthropic.
 Tu parles TOUJOURS en français. Tu es direct, précis, concret et actionnable. Tes réponses sont structurées mais pas trop longues.
+Si on te demande quelle IA tu utilises ou qui tu es, réponds que tu es APEX propulsé par Claude (Anthropic) — jamais GPT ou OpenAI.
 
 CONTEXTE DU JOUR (${td}):
 - Tâches en cours: ${ttasks.length>0?ttasks.map(t=>'• '+t.title+' ['+t.priority+']').join('\n'):'Aucune tâche aujourd\'hui'}
@@ -3943,7 +4059,7 @@ function renderCROCard(p,data){
     totalProducts,zeroSaleProducts,newProductsAdded,discountOrders,discountRate,discountShare,totalDiscounts,
     revenueHalf1,revenueHalf2,avgOrdersPerRepeat,top3RevenueShare,
     abandonedCheckouts,totalCheckouts,abandonRate,abandonedValue,topAbandoned,
-    avgLTV,vipCustomers,currency,period,syncedAt}=data;
+    avgLTV,vipCustomers,currency,period,syncedAt,sessions,conversionRate,sessionsSource}=data;
 
   const topHourEntry=hourly?Object.entries(hourly).sort((a,b)=>b[1]-a[1])[0]:null;
   const topDayEntry=daily?Object.entries(daily).sort((a,b)=>b[1]-a[1])[0]:null;
@@ -3954,13 +4070,18 @@ function renderCROCard(p,data){
   const retRate=newCust+returning?Math.round(returning/(newCust+returning)*100):0;
   const syncAgo=syncedAt?Math.round((Date.now()-syncedAt)/60000)+'min':'—';
 
+  const croScore=calcCROScore(data);
+  const scoreColor=croScoreColor(croScore);
   return '<div class="card" style="margin-bottom:20px;padding:0;overflow:hidden">'
     // Header avec couleur boutique
     +'<div style="padding:14px 16px;background:var(--card2);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)">'
     +'<div style="display:flex;align-items:center;gap:8px">'
     +'<span style="font-size:18px">'+(p.emoji||'🏪')+'</span>'
-    +'<div><div style="font-weight:700;font-size:14px">'+escHtml(p.name)+'</div>'
-    +'<div style="font-size:10px;color:var(--t3)">'+period+' jours · sync il y a '+syncAgo+'</div></div></div>'
+    +'<div><div style="display:flex;align-items:center;gap:6px">'
+    +'<span style="font-weight:700;font-size:14px">'+escHtml(p.name)+'</span>'
+    +'<span style="font-size:10px;font-weight:700;color:'+scoreColor+';background:'+scoreColor+'22;padding:1px 6px;border-radius:99px">'+croScore+'</span>'
+    +'</div>'
+    +'<div style="font-size:10px;color:var(--t3)">'+period+' jours · sync il y a '+syncAgo+' · '+croScoreLabel(croScore)+'</div></div></div>'
     +'<div style="display:flex;gap:6px">'
     +'<button class="btn btn-sm btn-ghost" onclick="syncCRO(\''+p.id+'\')" style="font-size:11px">'+ico('refresh',11)+' Sync</button>'
     +'<button class="btn btn-sm" onclick="runCROAnalysisSingle(\''+p.id+'\')" style="font-size:11px">'+ico('sparkles',11)+' IA</button>'
@@ -3976,6 +4097,8 @@ function renderCROCard(p,data){
       +kpiBox('Taux retour',refundRate+'%',refundRate>5?'#ef4444':'#10B981',refunds+' remb.')
       +kpiBox('Taux promo',discountRate+'%',discountRate>40?'#F59E0B':'var(--t2)',fmtEur(totalDiscounts||0)+' offerts')
       +kpiBox('Conc. top 3',top3RevenueShare+'%',top3RevenueShare>70?'#F59E0B':'#10B981','du CA')
+      +(data.sessions?kpiBox('Visiteurs est.',data.sessions.toLocaleString(),'#8B5CF6','~estimation'):'') 
+      +(data.conversionRate!=null?kpiBox('Taux conv.',data.conversionRate+'%',data.conversionRate>3?'#10B981':data.conversionRate>1.5?'#F59E0B':'#ef4444','cmd/visiteurs'):'') 
       +'</div>')
 
     // Abandon panier — LA métrique CRO
@@ -4057,9 +4180,14 @@ function renderCROCard(p,data){
       +'</div>'):'')
 
     // Analyse IA
-    +(data.aiAnalysis?section('🤖 Analyse & Recommandations APEX IA',
-      '<div style="background:var(--bg2);border-radius:10px;padding:14px;font-size:13px;line-height:1.7;color:var(--text)">'+mdToHtml(data.aiAnalysis)+'</div>')
-      :'<div style="text-align:center;padding:12px;font-size:12px;color:var(--t2)">Clique sur <strong>IA</strong> pour obtenir des recommandations CRO personnalisées</div>')
+    +(data.aiAnalysis
+      ?section('🤖 Audit & Recommandations APEX IA'+(data.aiScore?'&nbsp;<span style="font-size:11px;font-weight:700;color:'+croScoreColor(data.aiScore)+'">Score: '+data.aiScore+'/100</span>':''),
+        '<div style="background:var(--bg2);border-radius:10px;padding:14px;font-size:13px;line-height:1.7;color:var(--text)">'+mdToHtml(data.aiAnalysis)+'</div>')
+      :'<div style="text-align:center;padding:16px;font-size:12px;color:var(--t2);">'
+        +'<div style="font-size:28px;margin-bottom:8px">🤖</div>'
+        +'<div style="font-weight:600;margin-bottom:4px">Audit IA disponible</div>'
+        +'<div>Clique sur <strong>IA</strong> pour lancer l\'audit CRO complet<br>par claude-sonnet — analyse ultra-détaillée</div>'
+        +'</div>')
 
     +'</div></div>';
 }
@@ -4230,67 +4358,136 @@ async function syncAllCRO(){
   for(var i=0;i<projs.length;i++) await syncCRO(projs[i].id);
 }
 
+function calcCROScore(d){
+  if(!d) return 0;
+  let score=50; // base
+  // Tendance CA
+  if(d.revenueHalf1){
+    const t=((d.revenueHalf2||0)-(d.revenueHalf1||0))/(d.revenueHalf1||1)*100;
+    if(t>=10) score+=12; else if(t>=0) score+=6; else if(t>=-10) score-=5; else score-=12;
+  }
+  // Abandon panier
+  if(d.abandonRate!=null){
+    if(d.abandonRate<=50) score+=12; else if(d.abandonRate<=65) score+=6;
+    else if(d.abandonRate<=75) score-=5; else score-=12;
+  }
+  // Rétention
+  const tot=(d.newCust||0)+(d.returning||0);
+  const ret=tot?Math.round((d.returning||0)/tot*100):0;
+  if(ret>=25) score+=10; else if(ret>=10) score+=5; else if(ret<5) score-=8;
+  // Remboursements
+  if((d.refundRate||0)<=3) score+=8; else if((d.refundRate||0)<=7) score+=3;
+  else if((d.refundRate||0)>15) score-=12; else score-=6;
+  // Concentration produits
+  if((d.top3RevenueShare||0)<50) score+=5; else if((d.top3RevenueShare||0)>80) score-=8;
+  return Math.max(0,Math.min(100,score));
+}
+
+function croScoreColor(s){ return s>=75?'#10B981':s>=50?'#F59E0B':'#ef4444'; }
+function croScoreLabel(s){ return s>=75?'Bonne santé':s>=50?'À optimiser':'Critique'; }
+
 async function runCROAnalysisSingle(projectId){
   const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
-  if(!key||!key.startsWith('sk-ant-')){ showToast('⚠️ Clé API Claude requise','error'); return; }
-  const d=_croCache[projectId]; if(!d){ showToast('⚠️ Sync d\'abord','error'); return; }
+  if(!key||!key.startsWith('sk-ant-')){ showToast('⚠️ Clé API Claude requise dans Réglages','error'); return; }
+  const allData=_croCache[projectId]; if(!allData){ showToast('⚠️ Sync les données d\'abord','error'); return; }
+  const periodKey=String(_croPeriod);
+  const d=allData[periodKey]||allData['30']||Object.values(allData)[0];
+  if(!d){ showToast('⚠️ Pas de données pour cette période','error'); return; }
+
   const proj=(D.projects||[]).find(function(p){return p.id===projectId;})||{name:projectId};
+  const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+  const trendPct=d.revenueHalf1?Math.round(((d.revenueHalf2||0)-(d.revenueHalf1||0))/(d.revenueHalf1||1)*100):0;
+  const retentionRate=(d.newCust||0)+(d.returning||0)?Math.round((d.returning||0)/((d.newCust||0)+(d.returning||0))*100):0;
   const topH=d.hourly?Object.entries(d.hourly).sort(function(a,b){return b[1]-a[1];})[0]:null;
   const topDw=d.daily?Object.entries(d.daily).sort(function(a,b){return b[1]-a[1];})[0]:null;
-  const jours=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
-  const trendPct=d.revenueHalf1?Math.round((d.revenueHalf2-d.revenueHalf1)/d.revenueHalf1*100):0;
-  _croCache[projectId].aiAnalysis='⏳ Analyse en cours...';
+
+  // Store pending at correct period level (bug fix: was storing at outer cache level)
+  if(!_croCache[projectId][periodKey]) _croCache[projectId][periodKey]={};
+  _croCache[projectId][periodKey].aiAnalysis='⏳ Analyse APEX IA en cours (claude-sonnet)...';
+  _croCache[projectId][periodKey].aiScore=null;
   renderCRO();
-  const retentionRate=d.newCust+d.returning?Math.round(d.returning/(d.newCust+d.returning)*100):0;
+
+  const hourlyDistrib=d.hourly?
+    'Matin(6-11)='+[6,7,8,9,10,11].reduce(function(s,h){return s+(d.hourly[h]||0);},0)
+    +' | Midi(12-13)='+[12,13].reduce(function(s,h){return s+(d.hourly[h]||0);},0)
+    +' | Après-midi(14-17)='+[14,15,16,17].reduce(function(s,h){return s+(d.hourly[h]||0);},0)
+    +' | Soir(18-21)='+[18,19,20,21].reduce(function(s,h){return s+(d.hourly[h]||0);},0)
+    +' | Nuit(22-5)='+[22,23,0,1,2,3,4,5].reduce(function(s,h){return s+(d.hourly[h]||0);},0)
+    :'N/A';
+
+  const abandonRecup=d.abandonedValue?Math.round(d.abandonedValue*0.3):'N/A';
+
   const context=
-    '=== DONNÉES BOUTIQUE: '+proj.name+' ('+d.period+' derniers jours) ===\n\n'
-    +'PERFORMANCE:\n'
-    +'- CA: '+fmtEur(d.revenue)+' | Commandes: '+d.orders+' | Panier moyen: '+fmtEur(d.aov)+'\n'
-    +'- Tendance: '+(trendPct>=0?'+':'')+trendPct+'% (1ère vs 2ème moitié de période)\n'
-    +'- Taux remboursement: '+d.refundRate+'% ('+d.refunds+' cmd remboursées)\n'
-    +'- Part de CA offerte en remises: '+(d.discountShare||0)+'% ('+fmtEur(d.totalDiscounts||0)+' de remises)\n'
-    +'- Commandes avec promo: '+d.discountRate+'% des commandes\n'
-    +'- Concentration top 3 produits: '+d.top3RevenueShare+'% du CA\n\n'
-    +'ABANDON DE PANIER:\n'
+    '=== AUDIT COMPLET — BOUTIQUE: '+escHtml(proj.name)+' ('+d.period+' derniers jours) ===\n\n'
+    +'[PERFORMANCE FINANCIÈRE]\n'
+    +'• CA total: '+fmtEur(d.revenue||0)+'\n'
+    +'• Commandes: '+(d.orders||0)+' | Panier moyen (AOV): '+fmtEur(d.aov||0)+'\n'
+    +'• Tendance CA (1ère vs 2ème moitié): '+(trendPct>=0?'+':'')+trendPct+'%\n'
+    +'• Remboursements: '+(d.refundRate||0)+'% ('+(d.refunds||0)+' cmd)\n'
+    +'• CA en remises: '+fmtEur(d.totalDiscounts||0)+' ('+(d.discountShare||0)+'% du CA) | '+(d.discountRate||0)+'% des cmd avec promo\n'
+    +'• Concentration top 3 produits: '+(d.top3RevenueShare||0)+'% du CA\n\n'
+    +'[TUNNEL DE CONVERSION]\n'
     +(d.abandonRate!=null
-      ?'- Taux abandon: '+d.abandonRate+'% ('+d.abandonedCheckouts+' checkouts abandonnés / '+(d.totalCheckouts||0)+' total)\n'
-       +'- CA abandonné (non récupéré): '+fmtEur(d.abandonedValue||0)+'\n'
-       +(d.topAbandoned&&d.topAbandoned.length?'- Produits les plus abandonnés: '+d.topAbandoned.map(function(a){return a[0]+' (x'+a[1]+')';}).join(', ')+'\n':'')
-      :'- Données abandon panier non disponibles\n')
-    +'\nCLIENTS:\n'
-    +'- Nouveaux: '+d.newCust+' | Fidèles: '+d.returning+' | Taux rétention: '+retentionRate+'%\n'
-    +'- Fréquence rachat clients fidèles: '+d.avgOrdersPerRepeat+' commandes/client\n'
-    +'- LTV moyenne: '+fmtEur(d.avgLTV||0)+' par client\n'
-    +'- Clients VIP (3+ commandes): '+(d.vipCustomers||0)+'\n\n'
-    +'PRODUITS:\n'
-    +'- Catalogue total: '+(d.totalProducts||'N/A')+' produits actifs\n'
-    +'- Produits sans vente sur la période: '+(d.zeroSaleProducts?d.zeroSaleProducts.length:0)+'\n'
-    +(d.zeroSaleProducts&&d.zeroSaleProducts.length?'- Liste dead stock: '+d.zeroSaleProducts.slice(0,5).join(', ')+'\n':'')
-    +'- Nouveaux produits ajoutés: '+(d.newProductsAdded||0)+'\n'
-    +'- Top produits: '+((d.topProducts||[]).slice(0,8).map(function(p){return p.name+' ('+p.qty+' ventes, '+fmtEur(p.revenue)+')';}).join(' | '))+'\n\n'
-    +'TIMING:\n'
-    +'- Heure de pointe: '+(topH?topH[0]+'h ('+topH[1]+' cmd)':'N/A')+'\n'
-    +'- Meilleur jour: '+(topDw?jours[topDw[0]]+' ('+topDw[1]+' cmd)':'N/A')+'\n';
+      ?'• Taux abandon checkout: '+(d.abandonRate||0)+'% ('+(d.abandonedCheckouts||0)+' abandons / '+(d.totalCheckouts||0)+' checkouts)\n'
+       +'• CA abandonné: '+fmtEur(d.abandonedValue||0)+' | Récupérable (30%): '+fmtEur(abandonRecup)+'\n'
+       +(d.topAbandoned&&d.topAbandoned.length?'• Top abandons: '+d.topAbandoned.map(function(a){return a.name+' ('+a.count+'x)';}).join(', ')+'\n':'')
+      :'• Données abandon panier non disponibles\n')
+    +'\n[CLIENTS & RÉTENTION]\n'
+    +'• Nouveaux clients: '+(d.newCust||0)+' | Fidèles: '+(d.returning||0)+' | Rétention: '+retentionRate+'%\n'
+    +'• LTV moyenne: '+fmtEur(d.avgLTV||0)+' | Fréquence rachat: '+(d.avgOrdersPerRepeat||0)+'x\n'
+    +'• Clients VIP (3+ cmd): '+(d.vipCustomers||0)+'\n\n'
+    +'[CATALOGUE PRODUITS]\n'
+    +'• Produits actifs: '+(d.totalProducts||'N/A')+' | Sans vente: '+(d.zeroSaleProducts?d.zeroSaleProducts.length:0)+'\n'
+    +(d.zeroSaleProducts&&d.zeroSaleProducts.length?'• Dead stock: '+d.zeroSaleProducts.slice(0,10).join(', ')+'\n':'')
+    +'• Nouveaux produits ajoutés: '+(d.newProductsAdded||0)+'\n'
+    +'• Top produits:\n'
+    +((d.topProducts||[]).slice(0,10).map(function(p,i){
+      return '  '+(i+1)+'. '+p.name+' → '+p.qty+' ventes, '+fmtEur(p.revenue);
+    }).join('\n'))+'\n\n'
+    +'[TIMING & COMPORTEMENT]\n'
+    +'• Heure de pointe: '+(topH?topH[0]+'h00 ('+topH[1]+' cmd)':'N/A')+'\n'
+    +'• Meilleur jour: '+(topDw?jours[parseInt(topDw[0])]+' ('+topDw[1]+' cmd)':'N/A')+'\n'
+    +'• Distribution horaire: '+hourlyDistrib+'\n';
+
   try{
     const r=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:AI_MODEL,max_tokens:1200,
-        system:'Tu es un expert CRO e-commerce avec 10 ans d\'expérience sur Shopify. Tu analyses des données réelles de boutiques et fournis des recommandations ultra-concrètes et actionnables. Tu identifies les opportunités cachées, les fuites de conversion, les problèmes de rétention, et les leviers de croissance rapide. Sois direct, précis et actionnable. Tu utilises le markdown (gras, listes) pour structurer tes réponses.',
+      body:JSON.stringify({
+        model:'claude-sonnet-4-5',
+        max_tokens:2500,
+        system:'Tu es un expert CRO e-commerce et consultant Shopify d\'élite avec 15 ans d\'expérience, spécialisé dans la maximisation du CA des boutiques Shopify de 0 à 1M€/an. Tu fournis des analyses ultra-concrètes, chiffrées et actionnables — JAMAIS de conseils génériques. Chaque recommandation est spécifique aux données de la boutique, avec des étapes Shopify précises et un impact estimé en euros. Format: markdown avec sections et émojis. Langue: français.',
         messages:[{role:'user',content:
-          'Analyse ces données e-commerce et fournis:\n'
-          +'1. **Diagnostic rapide** (points clés positifs et négatifs)\n'
-          +'2. **Top 3 actions prioritaires** avec impact estimé et comment les mettre en place concrètement sur Shopify\n'
-          +'3. **Abandon de panier** : si le taux est élevé, explique comment le réduire (flows Klaviyo, offre de récupération, etc.)\n'
-          +'4. **Rétention & LTV** : comment fidéliser davantage et augmenter la valeur vie client\n'
-          +'5. **Opportunités cachées** basées sur les données (dead stock à liquider, timing des campagnes, segments VIP à activer)\n'
-          +'6. **Alerte** si quelque chose est anormal (remboursements élevés, tendance négative, trop de remises)\n\n'
-          +context}]})
+          'Réalise un audit CRO complet de cette boutique. Structure exactement ainsi:\n\n'
+          +'## 🏥 Score de santé global\n'
+          +'Un score **XX/100** avec label (Excellent/Bon/À optimiser/Critique) et une phrase de synthèse.\n\n'
+          +'## 💡 Diagnostic express\n'
+          +'**3 forces** et **3 faiblesses critiques**, chacune avec la donnée chiffrée précise.\n\n'
+          +'## 🎯 Top 3 actions prioritaires (impact immédiat ≤30 jours)\n'
+          +'Pour chaque action: **Titre**, pourquoi c\'est urgent (données), comment le faire sur Shopify (étapes concrètes), **impact estimé: +X€/mois**.\n\n'
+          +'## 🛒 Plan de récupération abandon panier\n'
+          +'Analyse du taux, CA récupérable calculé, plan en 3 étapes (email J+1/J+3/J+7, SMS, popup exit-intent), outils recommandés (Klaviyo, SMSBump, Recart), ROI estimé.\n\n'
+          +'## 💎 Maximiser LTV & fidélisation\n'
+          +'Analyse nouveaux vs fidèles, actions pour augmenter LTV (programme fidélité, post-achat, cross-sell/upsell avec produits du catalogue), objectif LTV cible.\n\n'
+          +'## 📦 Stratégie catalogue & pricing\n'
+          +'Analyse concentration CA, dead stock (comment liquider), bundles recommandés basés sur les top produits, AOV à cibler.\n\n'
+          +'## ⚡ Opportunités & alertes\n'
+          +'2-3 insights non-évidents: meilleur timing pub (heure/jour), segments à activer, alertes critiques (remboursements, tendance, dépendance produit).\n\n'
+          +context}]
+      })
     });
     const json=await r.json();
-    _croCache[projectId].aiAnalysis=(json.content&&json.content[0])?json.content[0].text:'Erreur API';
+    const text=(json.content&&json.content[0]&&json.content[0].text)||('Erreur API: '+(json.error&&json.error.message||JSON.stringify(json)));
+    const pk=String(_croPeriod);
+    if(_croCache[projectId][pk]){
+      _croCache[projectId][pk].aiAnalysis=text;
+      // Extract score from text for display
+      const scoreMatch=text.match(/\*\*(\d+)\/100\*\*/);
+      _croCache[projectId][pk].aiScore=scoreMatch?parseInt(scoreMatch[1]):null;
+    }
   }catch(e){
-    _croCache[projectId].aiAnalysis='Erreur: '+e.message;
+    const pk=String(_croPeriod);
+    if(_croCache[projectId]&&_croCache[projectId][pk]) _croCache[projectId][pk].aiAnalysis='❌ Erreur réseau: '+e.message;
   }
   renderCRO();
 }
