@@ -4566,7 +4566,8 @@ function initAdSync(){
       p90:  parsePeriod(raw.p90),  p365:parsePeriod(raw.p365),
       syncedAt:parseInt(raw.updatedAt||Date.now())
     };
-    if(_adsView==='ads') renderAdsSection();
+    console.log('[APEX adSync] data reçue — p30.spend=',_adAutoData.p30&&_adAutoData.p30.spend,'p7.spend=',_adAutoData.p7&&_adAutoData.p7.spend);
+    if(_adsView==='pubs') renderAdsSection();
     showToast('📣 Google Ads synchronisé','');
   });
 }
@@ -4589,8 +4590,8 @@ function getAdPeriodData(period){
   if(_adAutoData){
     const key='p'+period;
     const d=_adAutoData[key];
-    if(d&&(d.spend>0||d.impressions>0)) return {...d,source:'auto'};
-    if(period===365&&_adAutoData.p90&&_adAutoData.p90.spend>0)
+    if(d&&d.spend!==undefined) return {...d,source:'auto'};
+    if(period===365&&_adAutoData.p90&&_adAutoData.p90.spend!==undefined)
       return {..._adAutoData.p90,source:'auto_fallback'};
   }
   const snaps=D.adSnapshots||[];
