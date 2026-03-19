@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-19T18:00:28.080Z",
+  "lastUpdated": "2026-03-19T21:00:14.413Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1694,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T18:00:35.014Z",
+        "syncedAt": "2026-03-19T21:00:17.374Z",
         "allTime": {
           "revenue": 12016,
           "orders": 199
@@ -103,7 +103,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:40.227Z"
+          "syncedAt": "2026-03-19T21:00:22.533Z"
         },
         "30": {
           "period": 30,
@@ -256,7 +256,7 @@
           "sessions": 438,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:40.910Z"
+          "syncedAt": "2026-03-19T21:00:23.370Z"
         },
         "90": {
           "period": 90,
@@ -290,8 +290,8 @@
             },
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "qty": 7,
-              "revenue": 419
+              "qty": 8,
+              "revenue": 479
             },
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
@@ -329,7 +329,7 @@
               "revenue": 180
             }
           ],
-          "top3RevenueShare": 30,
+          "top3RevenueShare": 31,
           "hourly": {
             "0": 1,
             "2": 2,
@@ -416,7 +416,7 @@
           "sessions": 1638,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:41.699Z"
+          "syncedAt": "2026-03-19T21:00:24.717Z"
         },
         "365": {
           "period": 365,
@@ -576,7 +576,7 @@
           "sessions": 2888,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:42.874Z"
+          "syncedAt": "2026-03-19T21:00:25.574Z"
         }
       }
     },
@@ -585,7 +585,7 @@
         "revenue": 794,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T18:00:44.439Z",
+        "syncedAt": "2026-03-19T21:00:32.518Z",
         "allTime": {
           "revenue": 794,
           "orders": 12
@@ -687,7 +687,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:45.773Z"
+          "syncedAt": "2026-03-19T21:00:33.851Z"
         },
         "30": {
           "period": 30,
@@ -821,7 +821,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:46.431Z"
+          "syncedAt": "2026-03-19T21:00:34.509Z"
         },
         "90": {
           "period": 90,
@@ -955,7 +955,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:46.929Z"
+          "syncedAt": "2026-03-19T21:00:35.158Z"
         },
         "365": {
           "period": 365,
@@ -1089,7 +1089,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T18:00:47.664Z"
+          "syncedAt": "2026-03-19T21:00:35.854Z"
         }
       }
     }
