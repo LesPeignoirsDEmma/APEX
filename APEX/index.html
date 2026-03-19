@@ -1335,7 +1335,7 @@ html[data-theme="light"]{
   </div>
 
   <!-- PÉRIODE -->
-  <div class="fin-period-bar">
+  <div class="fin-period-bar" id="fin-period-bar">
     <button class="fin-period-btn active" onclick="setFinPeriod('month',this)">Ce mois</button>
     <button class="fin-period-btn" onclick="setFinPeriod('7d',this)">7 jours</button>
     <button class="fin-period-btn" onclick="setFinPeriod('30d',this)">30 jours</button>
@@ -1345,6 +1345,13 @@ html[data-theme="light"]{
         <button class="fin-period-btn" onclick="setFinPeriod('total',this)">Total</button>  </div>
   <div id="fin-shop-bar" style="margin-bottom:6px"></div>
 
+  <!-- TABS FINANCES / PUBS -->
+  <div style="display:flex;gap:6px;margin-bottom:14px">
+    <button class="cro-view-tab active" id="fv-finances" onclick="setFinView('finances',this)">💰 Finances</button>
+    <button class="cro-view-tab" id="fv-pubs" onclick="setFinView('pubs',this)">📣 Pubs</button>
+  </div>
+
+  <div id="fin-main-content">
   <!-- KPIs GLOBAUX -->
   <div class="fin-kpi">
     <div class="fin-kpi-card">
@@ -1417,6 +1424,9 @@ html[data-theme="light"]{
     <div class="setting-desc" style="margin-bottom:12px">Connectez vos boutiques Shopify pour synchroniser automatiquement vos ventes. Créez une <strong>Custom App</strong> dans votre admin Shopify → Apps → Développer des apps.</div>
     <div id="fin-shopify-creds"></div>
   </div>
+  </div><!-- /fin-main-content -->
+
+  <div id="ads-content" style="display:none"></div>
 </div>
 
 <!-- MODAL DÉPENSE -->
@@ -1595,13 +1605,9 @@ html[data-theme="light"]{
       <button class="btn btn-sm btn-ghost" id="cro-tab-90" onclick="setCROPeriod(90,this)">90j</button>
       <button class="btn btn-sm btn-ghost" id="cro-tab-365" onclick="setCROPeriod(365,this)">Tout</button>
     </div>
-    <div style="display:flex;gap:6px;margin-left:auto">
-      <button class="cro-view-tab active" id="cv-shops" onclick="setCROView('shops',this)">🏪 Boutiques</button>
-      <button class="cro-view-tab" id="cv-ads" onclick="setCROView('ads',this)">📣 Pubs</button>
-    </div>
+
   </div>
   <div id="cro-content"></div>
-  <div id="ads-content" style="display:none"></div>
 </div>
 
 <div class="page" id="page-decisions">
@@ -4348,13 +4354,23 @@ function adWidgetOn(id){
 // ─── VIEW / PERIOD SWITCH ────────────────────────────────────
 function setCROView(view,btn){
   _adsView=view;
-  document.querySelectorAll('.cro-view-tab').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const shops=view==='shops';
-  document.getElementById('cro-content').style.display=shops?'':'none';
-  document.getElementById('cro-period-tabs').style.display=shops?'flex':'none';
-  document.getElementById('ads-content').style.display=shops?'none':'';
-  if(!shops) renderAdsSection();
+  document.querySelectorAll('#page-cro .cro-view-tab').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  document.getElementById('cro-content').style.display='';
+  document.getElementById('cro-period-tabs').style.display='flex';
+}
+function setFinView(view,btn){
+  _adsView=view;
+  document.querySelectorAll('#page-finance .cro-view-tab').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  const isPubs=view==='pubs';
+  const main=document.getElementById('fin-main-content');
+  const ads=document.getElementById('ads-content');
+  if(main) main.style.display=isPubs?'none':'';
+  if(ads)  ads.style.display=isPubs?'':'none';
+  const pb=document.getElementById('fin-period-bar');
+  if(pb) pb.style.display=isPubs?'none':'';
+  if(isPubs) renderAdsSection();
 }
 function setAdsPeriod(days,btn){
   _adsPeriod=days;
