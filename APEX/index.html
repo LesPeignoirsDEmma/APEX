@@ -5316,7 +5316,7 @@ function saveGAdsProjectLink(){
   try{ const raw=D.settings.firebaseConfig; const c=typeof raw==='string'?JSON.parse(raw):raw; cfg.projectId=c.projectId||''; cfg.apiKey=c.apiKey||''; }catch(e){}
   // Set adSyncDocId for selected project (use project id as doc id)
   const projs=D.projects||[];
-  projs.forEach(p=>{ if(p.id===projId) p.adSyncDocId=p.adSyncDocId||p.id; });
+  projs.forEach(p=>{ if(p.id===projId) p.adSyncDocId=p.adSyncDocId||D.settings.syncDocId||p.id; });
   save();
   generateGAdsScript();
   initAdSync();
@@ -5337,147 +5337,187 @@ function generateGAdsScript(){
   if(!cfg.projectId||!cfg.syncDocId){
     box.textContent='⚠️ Configurez Firebase dans Réglages pour générer le script.'; return;
   }
-  const lines=[
-    '// Script APEX – Google Ads → Firebase (multi-périodes + devices + keywords)',
-    '// Fréquence recommandée : Quotidien',
-    '',
-    'var FIREBASE_PROJECT_ID = "'+cfg.projectId+'";',
-    'var FIREBASE_API_KEY    = "'+cfg.apiKey+'";',
-    'var APEX_DOC_ID         = "'+cfg.syncDocId+'";',
-    '',
-    '// ── Fetch campagnes pour une période ──────────────────',
-    'function fetchCampaigns(range, rangeEnd) {',
-    '  var sel=AdsApp.campaigns().withCondition("campaign.status = ENABLED").orderBy("metrics.cost_micros DESC");',
-    '  var it=rangeEnd ? sel.forDateRange(range,rangeEnd).get() : sel.forDateRange(range).get();',
-    '  var camps=[],spend=0,convVal=0,impr=0,clicks=0,conv=0;',
-    '  while (it.hasNext()) {',
-    '    var c=it.next(); var s=rangeEnd ? c.getStatsFor(range,rangeEnd) : c.getStatsFor(range);',
-    '    var row={name:c.getName(),spend:s.getCost(),convValue:s.getConversionValue(),',
-    '      impressions:s.getImpressions(),clicks:s.getClicks(),conversions:s.getConversions()};',
-    '    camps.push(row);',
-    '    spend+=row.spend;convVal+=row.convValue;impr+=row.impressions;',
-    '    clicks+=row.clicks;conv+=row.conversions;',
-    '  }',
-    '  var reportedRoas=spend>0?convVal/spend:0;',
-    '  return {campaigns:JSON.stringify(camps),totalSpend:spend,totalConvValue:convVal,',
-    '    totalImpressions:impr,totalClicks:clicks,totalConversions:conv,reportedRoas:reportedRoas};',
-    '}',
-    '',
-    '// ── Fetch keywords top 20 ──────────────────────────────',
-    'function fetchKeywords(range) {',
-    '  var it = AdsApp.keywords()',
-    '    .withCondition("campaign.status = ENABLED")',
-    '    .forDateRange(range)',
-    '    .orderBy("metrics.cost_micros DESC")',
-    '    .withLimit(20)',
-    '    .get();',
-    '  var kws=[];',
-    '  while(it.hasNext()){',
-    '    var k=it.next(); var s=k.getStatsFor(range);',
-    '    kws.push({name:k.getText(),spend:s.getCost(),impressions:s.getImpressions(),',
-    '      clicks:s.getClicks(),conversions:s.getConversions()});',
-    '  }',
-    '  return JSON.stringify(kws);',
-    '}',
-    '',
-    '// ── Fetch device breakdown ─────────────────────────────',
-    'function fetchDevices(range) {',
-    '  var devs={MOBILE:{spend:0,impressions:0,clicks:0,conversions:0},',
-    '    DESKTOP:{spend:0,impressions:0,clicks:0,conversions:0},',
-    '    TABLET:{spend:0,impressions:0,clicks:0,conversions:0}};',
-    '  var report = AdsApp.report(',
-    '    "SELECT segments.device, metrics.cost_micros, metrics.impressions," +',
-    '    " metrics.clicks, metrics.conversions" +',
-    '    " FROM campaign WHERE campaign.status = \'ENABLED\'" +',
-    '    " DURING " + range);',
-    '  var rows=report.rows();',
-    '  while(rows.hasNext()){',
-    '    var row=rows.next();',
-    '    var raw=String(row["segments.device"]||"").replace("DEVICE_","");',
-    '    var d=raw==="CONNECTED_TV"?"OTHER":raw;',
-    '    if(!devs[d]) devs[d]={spend:0,impressions:0,clicks:0,conversions:0};',
-    '    devs[d].spend      +=parseFloat(row["metrics.cost_micros"]||0)/1e6;',
-    '    devs[d].impressions+=parseInt(row["metrics.impressions"]||0);',
-    '    devs[d].clicks     +=parseInt(row["metrics.clicks"]||0);',
-    '    devs[d].conversions+=parseFloat(row["metrics.conversions"]||0);',
-    '  }',
-    '  return JSON.stringify(devs);',
-    '}',
-    '',
-    '// ── Fetch previous period for N vs N-1 ────────────────',
-    'function fetchPrev(startCurr, endCurr) {',
-    '  var now=new Date();',
-    '  var it=AdsApp.campaigns()',
-    '    .withCondition("campaign.status = ENABLED")',
-    '    .forDateRange(startPrev,endPrev)',
-    '    .get();',
-    '  var spend=0,convVal=0,impr=0,clicks=0,conv=0;',
-    '  while(it.hasNext()){var c=it.next();var s=c.getStatsFor(startPrev,endPrev);',
-    '    spend+=s.getCost();convVal+=s.getConversionValue();',
-    '    impr+=s.getImpressions();clicks+=s.getClicks();conv+=s.getConversions();}',
-    '  return {prevSpend:spend,prevConvValue:convVal,prevImpressions:impr,prevClicks:clicks,prevConversions:conv};',
-    '}',
-    '',
-    'function toFields(obj){',
-    '  var f={};',
-    '  Object.keys(obj).forEach(function(k){',
-    '    var v=obj[k];',
-    '    if(typeof v===\'string\') f[k]={stringValue:v};',
-    '    else if(typeof v===\'number\') f[k]={doubleValue:v};',
-    '    else f[k]={stringValue:String(v)};',
-    '  });',
-    '  return f;',
-    '}',
-    '',
-    'function toMapField(obj){ return {mapValue:{fields:toFields(obj)}}; }',
-    '',
-    'function main(){',
-    '  Logger.log("APEX sync démarré...");',
-    '  var tz=AdsApp.currentAccount().getTimeZone();',
-    '  var fmt=function(d){return Utilities.formatDate(d,tz,"yyyyMMdd");};',
-    '  var now=new Date();',
-    '  var yesterday=fmt(new Date(now.getTime()-1*86400000));',
-    '  var start7   =fmt(new Date(now.getTime()-7*86400000));',
-    '  var start30  =fmt(new Date(now.getTime()-30*86400000));',
-    '  var start90  =fmt(new Date(now.getTime()-90*86400000));',
-    '  var start365 =fmt(new Date(now.getTime()-365*86400000));',
-    '',
-    '  var p7   = fetchCampaigns("LAST_7_DAYS");',
-    '  var p30  = fetchCampaigns("LAST_30_DAYS");',
-    '  var p90  = fetchCampaigns(start90, yesterday);',
-    '  var p365 = fetchCampaigns(start365, yesterday);',
-    '',
-    '  // Devices (30j)',
-    '  p30.devices  = fetchDevices("LAST_30_DAYS");',
-    '  p7.devices   = fetchDevices("LAST_7_DAYS");',
-    '',
-    '  // Keywords (30j)',
-    '  p30.keywords = fetchKeywords("LAST_30_DAYS");',
-    '  p7.keywords  = fetchKeywords("LAST_7_DAYS");',
-    '',
-    '  // N vs N-1',
-    '  var prev7  = fetchPrev(start7,  yesterday); Object.assign(p7,  prev7);',
-    '  var prev30 = fetchPrev(start30, yesterday); Object.assign(p30, prev30);',
-    '  var prev90 = fetchPrev(start90, yesterday); Object.assign(p90, prev90);',
-    '',
-    '  var url="https://firestore.googleapis.com/v1/projects/"+FIREBASE_PROJECT_ID',
-    '    +"/databases/(default)/documents/adSync/"+APEX_DOC_ID+"?key="+FIREBASE_API_KEY;',
-    '',
-    '  var body={fields:{',
-    '    p7:   toMapField(p7),',
-    '    p30:  toMapField(p30),',
-    '    p90:  toMapField(p90),',
-    '    p365: toMapField(p365),',
-    '    updatedAt:{integerValue:String(Date.now())}',
-    '  }};',
-    '',
-    '  var resp=UrlFetchApp.fetch(url,{method:"PATCH",payload:JSON.stringify(body),',
-    '    contentType:"application/json",muteHttpExceptions:true});',
-    '  var roas30=p30.totalSpend>0?(p30.totalConvValue/p30.totalSpend).toFixed(2):"N/A";',
-    '  Logger.log("APEX OK | 30j ROAS="+roas30+" | HTTP "+resp.getResponseCode());',
-    '}'
-  ];
-  box.textContent=lines.join('\n');
+  // Build the correct script inline (same as apex-gads-script.js)
+  const pid=cfg.projectId, akey=cfg.apiKey, docId=cfg.syncDocId;
+  const script=`// Script APEX – Google Ads → Firebase (multi-périodes + devices + keywords)
+// Fréquence recommandée : Quotidien
+
+var FIREBASE_PROJECT_ID = "${pid}";
+var FIREBASE_API_KEY    = "${akey}";
+var APEX_DOC_ID         = "${docId}";
+
+// ── Convertit yyyyMMdd → YYYY-MM-DD ──
+function toGaqlDate(d) {
+  return d.slice(0,4) + '-' + d.slice(4,6) + '-' + d.slice(6,8);
+}
+
+// ── Fetch campagnes via GAQL (inclut Standard + PMax + tous types) ──
+function fetchCampaigns(start, end) {
+  var s = toGaqlDate(start), e = toGaqlDate(end);
+  var query =
+    "SELECT campaign.name, metrics.cost_micros, metrics.conversions_value," +
+    " metrics.impressions, metrics.clicks, metrics.conversions" +
+    " FROM campaign" +
+    " WHERE campaign.status = 'ENABLED'" +
+    " AND segments.date BETWEEN '" + s + "' AND '" + e + "'";
+  var report = AdsApp.report(query);
+  var rows   = report.rows();
+  var campMap = {};
+  while (rows.hasNext()) {
+    var row  = rows.next();
+    var name = row['campaign.name'] || 'Inconnu';
+    if (!campMap[name]) campMap[name] = {name:name,spend:0,convValue:0,impressions:0,clicks:0,conversions:0};
+    campMap[name].spend       += parseFloat(row['metrics.cost_micros']       || 0) / 1e6;
+    campMap[name].convValue   += parseFloat(row['metrics.conversions_value'] || 0);
+    campMap[name].impressions += parseInt(  row['metrics.impressions']        || 0);
+    campMap[name].clicks      += parseInt(  row['metrics.clicks']             || 0);
+    campMap[name].conversions += parseFloat(row['metrics.conversions']        || 0);
+  }
+  var camps = [], keys = Object.keys(campMap);
+  for (var i = 0; i < keys.length; i++) camps.push(campMap[keys[i]]);
+  camps.sort(function(a,b){ return b.spend - a.spend; });
+  var totalSpend=0, totalConvVal=0, totalImpr=0, totalClicks=0, totalConv=0;
+  for (var j = 0; j < camps.length; j++) {
+    totalSpend += camps[j].spend; totalConvVal += camps[j].convValue;
+    totalImpr  += camps[j].impressions; totalClicks += camps[j].clicks; totalConv += camps[j].conversions;
+  }
+  return {
+    campaigns: JSON.stringify(camps), totalSpend: totalSpend, totalConvValue: totalConvVal,
+    totalImpressions: totalImpr, totalClicks: totalClicks, totalConversions: totalConv,
+    reportedRoas: totalSpend > 0 ? totalConvVal / totalSpend : 0
+  };
+}
+
+// ── Fetch keywords top 20 (campagnes standard — PMax n'a pas de keywords) ──
+function fetchKeywords(range) {
+  var it = AdsApp.keywords()
+    .withCondition("Status = ENABLED")
+    .withCondition("CampaignStatus = ENABLED")
+    .forDateRange(range).withLimit(20).get();
+  var kws = [];
+  while (it.hasNext()) {
+    var k = it.next(), s = k.getStatsFor(range);
+    kws.push({name:k.getText(),spend:s.getCost(),impressions:s.getImpressions(),
+      clicks:s.getClicks(),conversions:s.getConversions()});
+  }
+  kws.sort(function(a,b){ return b.spend - a.spend; });
+  return JSON.stringify(kws);
+}
+
+// ── Fetch device breakdown via GAQL ──
+function fetchDevices(start, end) {
+  var s = toGaqlDate(start), e = toGaqlDate(end);
+  var devs = {
+    MOBILE:{spend:0,impressions:0,clicks:0,conversions:0},
+    DESKTOP:{spend:0,impressions:0,clicks:0,conversions:0},
+    TABLET:{spend:0,impressions:0,clicks:0,conversions:0}
+  };
+  var report = AdsApp.report(
+    "SELECT segments.device, metrics.cost_micros, metrics.impressions," +
+    " metrics.clicks, metrics.conversions FROM campaign" +
+    " WHERE campaign.status = 'ENABLED'" +
+    " AND segments.date BETWEEN '" + s + "' AND '" + e + "'"
+  );
+  var rows = report.rows();
+  while (rows.hasNext()) {
+    var row = rows.next();
+    var raw = String(row["segments.device"] || "").replace(/^DEVICE_/, "");
+    var d   = (raw === "CONNECTED_TV") ? "OTHER" : raw;
+    if (!devs[d]) devs[d] = {spend:0,impressions:0,clicks:0,conversions:0};
+    devs[d].spend       += parseFloat(row["metrics.cost_micros"] || 0) / 1e6;
+    devs[d].impressions += parseInt(  row["metrics.impressions"] || 0);
+    devs[d].clicks      += parseInt(  row["metrics.clicks"]      || 0);
+    devs[d].conversions += parseFloat(row["metrics.conversions"] || 0);
+  }
+  return JSON.stringify(devs);
+}
+
+// ── Fetch période précédente (N-1) via GAQL ──
+function fetchPrev(startCurr, endCurr) {
+  var tz  = AdsApp.currentAccount().getTimeZone();
+  var fmt = function(d) { return Utilities.formatDate(d, tz, "yyyyMMdd"); };
+  var ms  = new Date(toGaqlDate(startCurr)).getTime();
+  var me  = new Date(toGaqlDate(endCurr)).getTime();
+  var diff = me - ms + 86400000;
+  var startPrev = fmt(new Date(ms - diff));
+  var endPrev   = fmt(new Date(ms - 86400000));
+  var s = toGaqlDate(startPrev), e = toGaqlDate(endPrev);
+  var report = AdsApp.report(
+    "SELECT metrics.cost_micros, metrics.conversions_value, metrics.impressions," +
+    " metrics.clicks, metrics.conversions FROM campaign" +
+    " WHERE campaign.status = 'ENABLED'" +
+    " AND segments.date BETWEEN '" + s + "' AND '" + e + "'"
+  );
+  var rows = report.rows();
+  var spend=0, convVal=0, impr=0, clicks=0, conv=0;
+  while (rows.hasNext()) {
+    var row = rows.next();
+    spend   += parseFloat(row['metrics.cost_micros']       || 0) / 1e6;
+    convVal += parseFloat(row['metrics.conversions_value'] || 0);
+    impr    += parseInt(  row['metrics.impressions']       || 0);
+    clicks  += parseInt(  row['metrics.clicks']            || 0);
+    conv    += parseFloat(row['metrics.conversions']       || 0);
+  }
+  return {prevSpend:spend,prevConvValue:convVal,prevImpressions:impr,prevClicks:clicks,prevConversions:conv};
+}
+
+function toFields(obj) {
+  var f = {};
+  Object.keys(obj).forEach(function(k) {
+    var v = obj[k];
+    if (typeof v === 'string')      f[k] = {stringValue: v};
+    else if (typeof v === 'number') f[k] = {doubleValue: v};
+    else                            f[k] = {stringValue: String(v)};
+  });
+  return f;
+}
+function toMapField(obj) { return {mapValue:{fields:toFields(obj)}}; }
+
+function main() {
+  Logger.log("APEX sync démarré...");
+  var tz  = AdsApp.currentAccount().getTimeZone();
+  var fmt = function(d) { return Utilities.formatDate(d, tz, "yyyyMMdd"); };
+  var now = new Date();
+  var yesterday = fmt(new Date(now.getTime() -   1 * 86400000));
+  var start7    = fmt(new Date(now.getTime() -   7 * 86400000));
+  var start30   = fmt(new Date(now.getTime() -  30 * 86400000));
+  var start90   = fmt(new Date(now.getTime() -  90 * 86400000));
+  var start365  = fmt(new Date(now.getTime() - 365 * 86400000));
+
+  var p7   = fetchCampaigns(start7,   yesterday);
+  var p30  = fetchCampaigns(start30,  yesterday);
+  var p90  = fetchCampaigns(start90,  yesterday);
+  var p365 = fetchCampaigns(start365, yesterday);
+
+  Logger.log("Campagnes 30j: spend=" + p30.totalSpend.toFixed(2) + " convValue=" + p30.totalConvValue.toFixed(2));
+
+  p7.devices  = fetchDevices(start7,  yesterday);
+  p30.devices = fetchDevices(start30, yesterday);
+  p7.keywords  = fetchKeywords("LAST_7_DAYS");
+  p30.keywords = fetchKeywords("LAST_30_DAYS");
+
+  var prev7  = fetchPrev(start7,  yesterday); Object.assign(p7,  prev7);
+  var prev30 = fetchPrev(start30, yesterday); Object.assign(p30, prev30);
+  var prev90 = fetchPrev(start90, yesterday); Object.assign(p90, prev90);
+
+  var url = "https://firestore.googleapis.com/v1/projects/" + FIREBASE_PROJECT_ID
+    + "/databases/(default)/documents/adSync/" + APEX_DOC_ID
+    + "?key=" + FIREBASE_API_KEY;
+
+  var body = {fields:{
+    p7:   toMapField(p7),  p30: toMapField(p30),
+    p90:  toMapField(p90), p365: toMapField(p365),
+    updatedAt: {integerValue: String(Date.now())}
+  }};
+
+  var resp = UrlFetchApp.fetch(url, {
+    method:"PATCH", payload:JSON.stringify(body),
+    contentType:"application/json", muteHttpExceptions:true
+  });
+  var roas30 = p30.totalSpend > 0 ? (p30.totalConvValue / p30.totalSpend).toFixed(2) : "N/A";
+  Logger.log("APEX OK | 30j spend=" + p30.totalSpend.toFixed(2) + " convValue=" + p30.totalConvValue.toFixed(2) + " ROAS=" + roas30 + " | HTTP " + resp.getResponseCode());
+}`;
+  box.textContent=script;
 }
 
 function copyGAdsScript(){
