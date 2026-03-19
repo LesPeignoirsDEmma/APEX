@@ -1355,10 +1355,11 @@ html[data-theme="light"]{
         <button class="fin-period-btn" onclick="setFinPeriod('total',this)">Total</button>  </div>
   <div id="fin-shop-bar" style="margin-bottom:6px"></div>
 
-  <!-- TABS FINANCES / PUBS -->
+  <!-- TABS FINANCES / PUBS / COÛTS -->
   <div style="display:flex;gap:6px;margin-bottom:14px">
     <button class="cro-view-tab active" id="fv-finances" onclick="setFinView('finances',this)">💰 Finances</button>
     <button class="cro-view-tab" id="fv-pubs" onclick="setFinView('pubs',this)">📣 Pubs</button>
+    <button class="cro-view-tab" id="fv-couts" onclick="setFinView('couts',this)">🏭 Co\u00fbts</button>
   </div>
 
   <div id="fin-main-content">
@@ -1437,6 +1438,7 @@ html[data-theme="light"]{
   </div><!-- /fin-main-content -->
 
   <div id="ads-content" style="display:none"></div>
+  <div id="cogs-content" style="display:none"></div>
 </div>
 
 <!-- MODAL DÉPENSE -->
@@ -1699,6 +1701,10 @@ html[data-theme="light"]{
     <button class="modal-close" onclick="closeModal('gads-setup-modal')">×</button>
     <div class="modal-title">🔗 Connecter Google Ads</div>
     <div class="modal-sub">Un script Google Ads envoie automatiquement vos métriques dans APEX chaque jour.</div>
+    <div style="margin:10px 0 14px">
+      <label class="flbl">Associer à la boutique</label>
+      <select class="finput" id="gads-project-select" onchange="saveGAdsProjectLink()"></select>
+    </div>
     <div style="margin:14px 0">
       <div style="font-size:12px;font-weight:600;margin-bottom:4px;color:var(--t2)">ÉTAPES</div>
       <div style="font-size:12px;color:var(--text);line-height:1.7">
@@ -1716,6 +1722,31 @@ html[data-theme="light"]{
       <button class="btn" onclick="copyGAdsScript()" style="width:100%">📋 Copier le script</button>
     </div>
     <div id="gads-last-sync" style="font-size:11px;color:var(--t3);text-align:center;margin-top:8px"></div>
+  </div>
+</div>
+<!-- ═══ COGS MODAL ═══ -->
+<div class="modal-ov" id="cogs-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('cogs-modal')">×</button>
+    <div class="modal-title">🏭 Coût produit (COGS)</div>
+    <div class="modal-sub">Entrez le coût total des produits vendus pour une période.</div>
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Boutique</label>
+        <select class="finput" id="cogs-boutique"></select></div>
+      <div style="flex:1"><label class="flbl">Mois</label>
+        <input class="finput" type="month" id="cogs-month"></div>
+    </div>
+    <div class="form-row">
+      <div style="flex:1"><label class="flbl">Montant COGS (€)</label>
+        <input class="finput" type="number" step="0.01" id="cogs-amount" placeholder="ex: 1200"></div>
+    </div>
+    <label class="flbl">Note (optionnel)</label>
+    <input class="finput" id="cogs-note" placeholder="ex: Fournisseur AliExpress Mars">
+    <input type="hidden" id="cogs-edit-id">
+    <div style="display:flex;gap:8px;margin-top:14px">
+      <button class="btn" style="flex:1" onclick="saveCogsEntry()">Enregistrer</button>
+      <button class="btn btn-ghost" onclick="closeModal('cogs-modal')">Annuler</button>
+    </div>
   </div>
 </div>
 <!-- ═══ AD SETTINGS MODAL ═══ -->
@@ -2092,6 +2123,7 @@ const DEFAULTS = {
   focusSessions:[], weeklyReviews:[], eveningRecaps:[], decisions:[], kpis:{},
   expenses:[],    // [{id,date,amount,category,projectId,label}]
   adSnapshots:[],  // [{id,dateFrom,dateTo,platform,spend,convValue,impressions,clicks,conversions,campaigns,source,createdAt}]
+  cogsEntries:[], // [{id,date,projectId,amount,note}]
   shopifyCreds:{},// {projectId:{shop,token}}
   finNotes:'',    // notes marge libres
   hc:{},         // {habitId: {dateStr: bool}}
@@ -4398,13 +4430,17 @@ function setFinView(view,btn){
   document.querySelectorAll('#page-finance .cro-view-tab').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
   const isPubs=view==='pubs';
+  const isCouts=view==='couts';
   const main=document.getElementById('fin-main-content');
   const ads=document.getElementById('ads-content');
-  if(main) main.style.display=isPubs?'none':'';
+  const cogs=document.getElementById('cogs-content');
+  if(main) main.style.display=(isPubs||isCouts)?'none':'';
   if(ads)  ads.style.display=isPubs?'':'none';
+  if(cogs) cogs.style.display=isCouts?'':'none';
   const pb=document.getElementById('fin-period-bar');
-  if(pb) pb.style.display=isPubs?'none':'';
+  if(pb) pb.style.display=(isPubs||isCouts)?'none':'';
   if(isPubs) renderAdsSection();
+  if(isCouts) renderCogsSection();
 }
 function setAdsPeriod(days,btn){
   _adsPeriod=days;
@@ -4536,39 +4572,51 @@ function deleteAdSnapshot(id){
 }
 
 // ─── FIREBASE AUTO-SYNC ──────────────────────────────────────
+// ─── AD DATA HELPERS ─────────────────────────────────────────
+function parsePeriodData(obj){
+  if(!obj) return null;
+  const camps=typeof obj.campaigns==='string'?JSON.parse(obj.campaigns||'[]'):(obj.campaigns||[]);
+  const kws  =typeof obj.keywords==='string'?JSON.parse(obj.keywords||'[]'):(obj.keywords||[]);
+  const devs =typeof obj.devices==='string'?JSON.parse(obj.devices||'{}'):(obj.devices||{});
+  const prevData=obj.prevSpend!==undefined?{
+    spend:parseFloat(obj.prevSpend||0),convValue:parseFloat(obj.prevConvValue||0),
+    impressions:parseInt(obj.prevImpressions||0),clicks:parseInt(obj.prevClicks||0),
+    conversions:parseFloat(obj.prevConversions||0)
+  }:null;
+  return {
+    spend:parseFloat(obj.totalSpend||0),convValue:parseFloat(obj.totalConvValue||0),
+    impressions:parseInt(obj.totalImpressions||0),clicks:parseInt(obj.totalClicks||0),
+    conversions:parseFloat(obj.totalConversions||0),
+    reportedRoas:parseFloat(obj.reportedRoas||0),
+    dateFrom:obj.dateFrom||'',dateTo:obj.dateTo||'',
+    campaigns:camps, keywords:kws, devices:devs, prevData
+  };
+}
+
+let _adUnsubscribers={};
 function initAdSync(){
-  if(!_db||!D.settings.syncDocId) return;
-  if(_adUnsubscribe) _adUnsubscribe();
-  _adUnsubscribe=_db.collection('adSync').doc(D.settings.syncDocId).onSnapshot(snap=>{
-    if(!snap.exists) return;
-    const raw=snap.data(); if(!raw) return;
-    function parsePeriod(obj){
-      if(!obj) return null;
-      const camps=typeof obj.campaigns==='string'?JSON.parse(obj.campaigns||'[]'):(obj.campaigns||[]);
-      const kws  =typeof obj.keywords==='string'?JSON.parse(obj.keywords||'[]'):(obj.keywords||[]);
-      const devs =typeof obj.devices==='string'?JSON.parse(obj.devices||'{}'):(obj.devices||{});
-      const prevData=obj.prevSpend!==undefined?{
-        spend:parseFloat(obj.prevSpend||0),convValue:parseFloat(obj.prevConvValue||0),
-        impressions:parseInt(obj.prevImpressions||0),clicks:parseInt(obj.prevClicks||0),
-        conversions:parseFloat(obj.prevConversions||0)
-      }:null;
-      return {
-        spend:parseFloat(obj.totalSpend||0),convValue:parseFloat(obj.totalConvValue||0),
-        impressions:parseInt(obj.totalImpressions||0),clicks:parseInt(obj.totalClicks||0),
-        conversions:parseFloat(obj.totalConversions||0),
-        reportedRoas:parseFloat(obj.reportedRoas||0),
-        dateFrom:obj.dateFrom||'',dateTo:obj.dateTo||'',
-        campaigns:camps, keywords:kws, devices:devs, prevData
+  if(!_db) return;
+  // Unsubscribe existing
+  Object.values(_adUnsubscribers).forEach(fn=>{ try{fn();}catch(e){} });
+  _adUnsubscribers={};
+  if(!_adAutoData) _adAutoData={};
+  const projs=D.projects||[];
+  projs.forEach(proj=>{
+    const docId=proj.adSyncDocId;
+    if(!docId) return;
+    const unsub=_db.collection('adSync').doc(docId).onSnapshot(snap=>{
+      if(!snap.exists) return;
+      const raw=snap.data(); if(!raw) return;
+      _adAutoData[proj.id]={
+        p7:parsePeriodData(raw.p7),p30:parsePeriodData(raw.p30),
+        p90:parsePeriodData(raw.p90),p365:parsePeriodData(raw.p365),
+        syncedAt:parseInt(raw.updatedAt||Date.now())
       };
-    }
-    _adAutoData={
-      p7:   parsePeriod(raw.p7),   p30:parsePeriod(raw.p30),
-      p90:  parsePeriod(raw.p90),  p365:parsePeriod(raw.p365),
-      syncedAt:parseInt(raw.updatedAt||Date.now())
-    };
-    console.log('[APEX adSync] data reçue — p30.spend=',_adAutoData.p30&&_adAutoData.p30.spend,'p7.spend=',_adAutoData.p7&&_adAutoData.p7.spend);
-    if(_adsView==='pubs') renderAdsSection();
-    showToast('📣 Google Ads synchronisé','');
+      console.log('[APEX adSync]',proj.name,'p30.spend=',_adAutoData[proj.id].p30&&_adAutoData[proj.id].p30.spend);
+      if(_adsView==='pubs') renderAdsSection();
+      showToast('📣 '+proj.name+' Google Ads synchronisé','');
+    });
+    _adUnsubscribers[proj.id]=unsub;
   });
 }
 
@@ -4587,29 +4635,194 @@ function pctChange(curr,prev){
 }
 
 function getAdPeriodData(period){
-  if(_adAutoData){
+  if(_adAutoData&&Object.keys(_adAutoData).length>0){
     const key='p'+period;
-    const d=_adAutoData[key];
-    if(d&&d.spend!==undefined) return {...d,source:'auto'};
-    if(period===365&&_adAutoData.p90&&_adAutoData.p90.spend!==undefined)
-      return {..._adAutoData.p90,source:'auto_fallback'};
+    // Determine which project(s) to aggregate
+    const projIds=(_finShop==='all')
+      ?Object.keys(_adAutoData)
+      :[_finShop].filter(id=>_adAutoData[id]);
+    let agg=null;
+    projIds.forEach(pid=>{
+      const pd=_adAutoData[pid];
+      if(!pd) return;
+      let d=pd[key];
+      if(!d||d.spend===undefined){
+        if(period===365&&pd.p90&&pd.p90.spend!==undefined) d=pd.p90;
+        else return;
+      }
+      if(!agg){
+        agg={...d,campaigns:[...(d.campaigns||[])],source:'auto'};
+      } else {
+        agg.spend+=d.spend; agg.convValue+=d.convValue;
+        agg.impressions+=d.impressions; agg.clicks+=d.clicks; agg.conversions+=d.conversions;
+        agg.campaigns=[...agg.campaigns,...(d.campaigns||[])];
+      }
+    });
+    if(agg){
+      agg.campaigns.sort((a,b)=>b.spend-a.spend);
+      agg.reportedRoas=agg.spend>0?agg.convValue/agg.spend:0;
+      return agg;
+    }
   }
+  // Fallback: manual snapshots
   const snaps=D.adSnapshots||[];
   if(!snaps.length) return null;
   const cutoff=period===365?null:new Date(Date.now()-period*86400000).toISOString().slice(0,10);
   const filtered=cutoff?snaps.filter(s=>!s.dateFrom||s.dateFrom>=cutoff):snaps;
   if(!filtered.length) return null;
-  const agg={spend:0,convValue:0,impressions:0,clicks:0,conversions:0,reportedRoas:0,campaigns:[],keywords:[],devices:{},prevData:null,source:'manual'};
+  const agg2={spend:0,convValue:0,impressions:0,clicks:0,conversions:0,reportedRoas:0,campaigns:[],keywords:[],devices:{},prevData:null,source:'manual'};
   let rCount=0;
   filtered.forEach(s=>{
-    agg.spend+=s.spend||0; agg.convValue+=s.convValue||0;
-    agg.impressions+=s.impressions||0; agg.clicks+=s.clicks||0;
-    agg.conversions+=s.conversions||0;
-    if(s.reportedRoas){agg.reportedRoas+=s.reportedRoas;rCount++;}
-    (s.campaigns||[]).forEach(c=>agg.campaigns.push(c));
+    agg2.spend+=s.spend||0; agg2.convValue+=s.convValue||0;
+    agg2.impressions+=s.impressions||0; agg2.clicks+=s.clicks||0; agg2.conversions+=s.conversions||0;
+    if(s.reportedRoas){agg2.reportedRoas+=s.reportedRoas;rCount++;}
+    (s.campaigns||[]).forEach(c=>agg2.campaigns.push(c));
   });
-  if(rCount) agg.reportedRoas/=rCount;
-  return agg;
+  if(rCount) agg2.reportedRoas/=rCount;
+  return agg2;
+}
+
+// ─── COGS / FOURNISSEURS ──────────────────────────────────────
+function calcRealMarginPct(period){
+  const {from,to}=finPeriodDates();
+  // Coût produit pour la période
+  const cogsList=(D.cogsEntries||[]).filter(e=>{
+    const d=e.date+'-01';
+    return d>=from&&d<=to&&(_finShop==='all'||e.projectId===_finShop||!e.projectId);
+  });
+  const totalCogs=cogsList.reduce((s,e)=>s+(parseFloat(e.amount)||0),0);
+  if(!totalCogs) return null; // No COGS data → use settings default
+  // Revenue from Shopify
+  let totalRev=0;
+  const allProjs=D.projects||[];
+  const projs=_finShop==='all'?allProjs:allProjs.filter(p=>p.id===_finShop);
+  const _pkMap={'7d':7,'30d':30,'3m':90,'total':'allTime'};
+  const _pk=_pkMap[_finPeriod];
+  projs.forEach(p=>{
+    const cache=getShopifyCache(p.id);
+    const pd=_pk&&cache.byPeriod&&cache.byPeriod[_pk];
+    totalRev+=(pd?pd.revenue:cache.revenue)||0;
+  });
+  if(!totalRev) return null;
+  const margin=Math.round((1-totalCogs/totalRev)*100);
+  return Math.max(0,Math.min(99,margin));
+}
+
+function renderCogsSection(){
+  const el=document.getElementById('cogs-content'); if(!el) return;
+  const {from,to}=finPeriodDates();
+  const allProjs=D.projects||[];
+  const projs=_finShop==='all'?allProjs:allProjs.filter(p=>p.id===_finShop);
+  const biz=getBUSINESSES();
+  // Compute totals
+  const entries=(D.cogsEntries||[]).filter(e=>{
+    const d=e.date+'-01';
+    return d>=from&&d<=to&&(projs.length===allProjs.length||projs.some(p=>p.id===e.projectId));
+  }).sort((a,b)=>b.date.localeCompare(a.date));
+  const totalCogs=entries.reduce((s,e)=>s+(parseFloat(e.amount)||0),0);
+  const realMargin=calcRealMarginPct();
+  let html='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">'
+    +'<div style="font-size:14px;font-weight:700">Coûts produits (COGS)</div>'
+    +'<button class="btn btn-sm" onclick="openCogsModal()">+ Ajouter</button>'
+    +'</div>';
+  // KPI row
+  html+='<div class="fin-kpi" style="margin-bottom:16px">'
+    +'<div class="fin-kpi-card"><div class="fin-kpi-val">'+fmtEur(totalCogs)+'</div><div class="fin-kpi-lbl">COGS total période</div></div>'
+    +(realMargin!==null
+      ?'<div class="fin-kpi-card" style="border:1px solid #22c55e33"><div class="fin-kpi-val" style="color:#22c55e">'+realMargin+'%</div><div class="fin-kpi-lbl">Marge réelle calculée</div></div>'
+      :'<div class="fin-kpi-card" style="opacity:.5"><div class="fin-kpi-val">?%</div><div class="fin-kpi-lbl">Marge (ajouter CA Shopify)</div></div>')
+    +(realMargin!==null
+      ?'<div class="fin-kpi-card"><div class="fin-kpi-val" style="color:#f59e0b">x'+(100/realMargin).toFixed(2)+'</div><div class="fin-kpi-lbl">Breakeven ROAS calculé</div></div>'
+      :'')
+    +'</div>';
+  if(realMargin!==null&&D.settings.adMarginPct!==realMargin){
+    html+='<div style="font-size:11px;padding:8px 10px;background:#f59e0b18;border-radius:6px;color:#f59e0b;margin-bottom:12px">'
+      +'⚠️ Ta marge réelle est '+realMargin+'% (calculée). Dans Paramètres Pubs, la marge est réglée à '+D.settings.adMarginPct+'%. '
+      +'<button class="btn btn-sm" style="margin-left:6px;font-size:10px" onclick="D.settings.adMarginPct='+realMargin+';save();renderCogsSection();showToast(\'✅ Marge mise à jour\',\'\')">Mettre à jour →</button>'
+      +'</div>';
+  }
+  // Entries list
+  if(!entries.length){
+    html+='<div style="text-align:center;padding:24px 0;color:var(--t3)">'
+      +'<div style="font-size:32px;margin-bottom:8px">🏭</div>'
+      +'<div style="font-size:14px;font-weight:600;margin-bottom:6px">Aucune entrée fournisseur</div>'
+      +'<p style="font-size:12px;margin-bottom:12px">Ajoute le coût de tes produits pour calculer ta marge réelle.</p>'
+      +'<button class="btn" onclick="openCogsModal()">+ Ajouter un coût</button>'
+      +'</div>';
+  } else {
+    html+='<div>';
+    entries.forEach(e=>{
+      const pName=biz[e.projectId]?biz[e.projectId].name:(e.projectId||'Général');
+      html+='<div class="exp-item">'
+        +'<div class="exp-cat-dot">🏭</div>'
+        +'<div style="flex:1;min-width:0">'
+          +'<div class="exp-label">'+(escHtml(e.note)||'Coût produit')+'</div>'
+          +'<div class="exp-proj">'+escHtml(pName)+' · '+e.date+'</div>'
+        +'</div>'
+        +'<div class="exp-amount">-'+fmtEur(e.amount)+'</div>'
+        +'<button class="btn btn-sm btn-ghost" onclick="openCogsModal(\''+e.id+'\')" style="padding:2px 6px;color:var(--t2)">'+ico('pencil',11)+'</button>'
+        +'<button class="btn btn-sm btn-ghost" onclick="deleteCogsEntry(\''+e.id+'\')" style="padding:2px 6px;color:#ef4444">'+ico('trash',11)+'</button>'
+      +'</div>';
+    });
+    html+='</div>';
+  }
+  el.innerHTML=html;
+}
+
+function openCogsModal(editId){
+  const projs=D.projects||[];
+  let selEl=document.getElementById('cogs-boutique');
+  selEl.innerHTML=projs.map(p=>'<option value="'+p.id+'">'+escHtml(p.name)+'</option>').join('');
+  const now=new Date();
+  const defaultMonth=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+  document.getElementById('cogs-month').value=defaultMonth;
+  document.getElementById('cogs-amount').value='';
+  document.getElementById('cogs-note').value='';
+  document.getElementById('cogs-edit-id').value='';
+  if(editId){
+    const e=(D.cogsEntries||[]).find(x=>x.id===editId);
+    if(e){
+      document.getElementById('cogs-edit-id').value=e.id;
+      document.getElementById('cogs-boutique').value=e.projectId||'';
+      document.getElementById('cogs-month').value=e.date||defaultMonth;
+      document.getElementById('cogs-amount').value=e.amount||'';
+      document.getElementById('cogs-note').value=e.note||'';
+    }
+  } else if(_finShop!=='all'){
+    selEl.value=_finShop;
+  }
+  document.getElementById('cogs-modal').classList.add('open');
+}
+
+function saveCogsEntry(){
+  const amount=parseFloat(document.getElementById('cogs-amount').value)||0;
+  if(!amount){showToast('Montant requis','error');return;}
+  const editId=document.getElementById('cogs-edit-id').value;
+  const entry={
+    id:editId||'cogs_'+Date.now(),
+    projectId:document.getElementById('cogs-boutique').value,
+    date:document.getElementById('cogs-month').value,
+    amount:amount,
+    note:document.getElementById('cogs-note').value.trim()
+  };
+  if(!D.cogsEntries) D.cogsEntries=[];
+  if(editId){
+    const idx=D.cogsEntries.findIndex(e=>e.id===editId);
+    if(idx>=0) D.cogsEntries[idx]=entry; else D.cogsEntries.push(entry);
+  } else {
+    D.cogsEntries.push(entry);
+  }
+  save();
+  closeModal('cogs-modal');
+  renderCogsSection();
+  showToast('✅ Coût enregistré','');
+}
+
+function deleteCogsEntry(id){
+  if(!confirm('Supprimer cette entrée ?')) return;
+  D.cogsEntries=(D.cogsEntries||[]).filter(e=>e.id!==id);
+  save();
+  renderCogsSection();
 }
 
 function getShopifyPeriodData(period){
@@ -4673,7 +4886,9 @@ function wMer(data, shopify){
 
 function wBreakeven(data){
   if(!adWidgetOn('breakeven')) return '';
-  const margin=D.settings.adMarginPct||30;
+  const realM=calcRealMarginPct();
+  const margin=realM!==null?realM:(D.settings.adMarginPct||30);
+  const marginLabel=realM!==null?'marge réelle '+margin+'%':'marge '+margin+'%';
   const beRoas=margin>0?100/margin:0;
   const apexRoas=data.spend>0?data.convValue/data.spend:0;
   const gRoas=data.reportedRoas||apexRoas;
@@ -4682,7 +4897,7 @@ function wBreakeven(data){
   return '<div class="ad-widget">'
     +'<div class="ad-widget-title">⚖️ Breakeven ROAS</div>'
     +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px">'
-      +'<div class="ad-kpi"><div class="av" style="color:#f59e0b">'+roasFmt(beRoas)+'</div><div class="al">Breakeven (marge '+margin+'%)</div></div>'
+      +'<div class="ad-kpi"><div class="av" style="color:#f59e0b">'+roasFmt(beRoas)+'</div><div class="al">Breakeven ('+marginLabel+')</div></div>'
       +'<div class="ad-kpi"><div class="av '+roasColor(gRoas)+'">'+roasFmt(gRoas)+'</div><div class="al">ROAS actuel</div></div>'
       +'<div class="ad-kpi"><div class="av '+(surplus>0?'roas-hi':'roas-lo')+'">'+(surplus>0?'+':'')+surplus.toFixed(2)+'</div><div class="al">Surplus</div></div>'
     +'</div>'
@@ -4791,8 +5006,9 @@ function wAlerts(data, shopify){
   const targetRoas=D.settings.adTargetRoas||3;
   if(apexRoas>0&&apexRoas<minRoas)
     alerts.push({type:'err',msg:'ROAS APEX ('+roasFmt(apexRoas)+') sous le seuil d\'alerte ('+roasFmt(minRoas)+')'});
-  const margin=D.settings.adMarginPct||30;
-  const beRoas=margin>0?100/margin:0;
+  const realMAlert=calcRealMarginPct();
+  const marginAlert=realMAlert!==null?realMAlert:(D.settings.adMarginPct||30);
+  const beRoas=marginAlert>0?100/marginAlert:0;
   if(apexRoas>0&&apexRoas<beRoas)
     alerts.push({type:'err',msg:'ROAS sous le breakeven ('+roasFmt(beRoas)+') — campagnes non rentables'});
   if(budget>0){
@@ -4992,7 +5208,7 @@ function renderAdsSection(){
   const data=getAdPeriodData(_adsPeriod);
   const shopify=getShopifyPeriodData(_adsPeriod);
   const periodLbl={7:'7 jours',30:'30 jours',90:'90 jours',365:'Tout'}[_adsPeriod]||(_adsPeriod+'j');
-  const syncBadge=_adAutoData
+  const syncBadge=(_adAutoData&&Object.keys(_adAutoData).length>0)
     ?'<span style="font-size:10px;color:#22c55e;font-weight:400"> · ● auto-sync</span>'
     :'<span style="font-size:10px;color:var(--t3);font-weight:400"> · ● manuel</span>';
 
@@ -5071,18 +5287,48 @@ function renderAdsSection(){
 
 // ─── GADS SCRIPT SETUP ───────────────────────────────────────
 function openGAdsSetupModal(){
+  // Populate boutique selector
+  const sel=document.getElementById('gads-project-select');
+  if(sel){
+    const projs=D.projects||[];
+    sel.innerHTML='<option value="">-- Sélectionner une boutique --</option>'
+      +projs.map(p=>'<option value="'+p.id+'">'+escHtml(p.name)+'</option>').join('');
+    // Pre-select if only one project or if one already has adSyncDocId
+    const linked=projs.find(p=>p.adSyncDocId);
+    if(linked) sel.value=linked.id;
+    else if(projs.length===1) sel.value=projs[0].id;
+  }
   document.getElementById('gads-setup-modal').classList.add('open');
   generateGAdsScript();
   const info=document.getElementById('gads-last-sync');
-  if(info&&_adAutoData&&_adAutoData.syncedAt){
-    const ago=Math.round((Date.now()-_adAutoData.syncedAt)/60000);
+  const lastSyncs=_adAutoData?Object.values(_adAutoData).map(d=>d.syncedAt||0).filter(Boolean):[];
+  const lastSync=lastSyncs.length?Math.max(...lastSyncs):0;
+  if(info&&lastSync){
+    const ago=Math.round((Date.now()-lastSync)/60000);
     info.textContent='Dernière sync auto : il y a '+(ago<60?ago+'min':(ago/60).toFixed(1)+'h');
   } else if(info){ info.textContent='Aucune sync auto détectée'; }
+}
+function saveGAdsProjectLink(){
+  const sel=document.getElementById('gads-project-select');
+  if(!sel||!sel.value) return;
+  const projId=sel.value;
+  let cfg={projectId:'',apiKey:''};
+  try{ const raw=D.settings.firebaseConfig; const c=typeof raw==='string'?JSON.parse(raw):raw; cfg.projectId=c.projectId||''; cfg.apiKey=c.apiKey||''; }catch(e){}
+  // Set adSyncDocId for selected project (use project id as doc id)
+  const projs=D.projects||[];
+  projs.forEach(p=>{ if(p.id===projId) p.adSyncDocId=p.adSyncDocId||p.id; });
+  save();
+  generateGAdsScript();
+  initAdSync();
 }
 
 function generateGAdsScript(){
   const box=document.getElementById('gads-script-box'); if(!box) return;
-  let cfg={apiKey:'',projectId:'',syncDocId:D.settings.syncDocId||''};
+  const sel=document.getElementById('gads-project-select');
+  const projId=sel&&sel.value;
+  const proj=projId&&(D.projects||[]).find(p=>p.id===projId);
+  const adDocId=proj&&proj.adSyncDocId?proj.adSyncDocId:(projId||D.settings.syncDocId||'');
+  let cfg={apiKey:'',projectId:'',syncDocId:adDocId};
   try{
     const raw=D.settings.firebaseConfig;
     const c=typeof raw==='string'?JSON.parse(raw):raw;
