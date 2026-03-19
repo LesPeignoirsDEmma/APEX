@@ -808,6 +808,43 @@ html[data-theme="light"]{
   font-size:11px;font-weight:700;display:flex;align-items:center;gap:4px;padding:5px 10px;
   border-radius:20px;transition:all .2s;white-space:nowrap;flex-shrink:0}
 .module-ia-btn:hover{background:rgba(123,104,238,.1);border-color:var(--purple)}
+
+/* ── AI CHAT SIDEBAR ─────────────────────────────────── */
+#ai-layout{display:flex;height:calc(var(--vh,1vh)*100 - 124px);overflow:hidden;position:relative}
+#ai-sidebar{width:205px;flex-shrink:0;border-right:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column;background:var(--bg);transition:left .25s}
+#ai-sidebar-hdr{padding:10px 8px 8px;border-bottom:1px solid var(--border);flex-shrink:0}
+#ai-new-btn{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:7px 10px;color:var(--text);cursor:pointer;font-size:12.5px;display:flex;align-items:center;gap:6px;transition:background .2s;font-weight:600}
+#ai-new-btn:hover{background:rgba(123,104,238,.15);border-color:var(--purple);color:var(--pl)}
+#ai-folders-list{flex:1;overflow-y:auto;padding:6px 4px}
+.ai-folder-hdr{display:flex;align-items:center;gap:5px;padding:5px 8px;font-size:10.5px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;border-radius:6px;margin-top:4px}
+.ai-folder-hdr:hover{background:var(--card2);color:var(--text)}
+.ai-folder-hdr .afold-arrow{font-size:8px;margin-left:auto;transition:transform .2s;color:var(--t3)}
+.ai-folder-hdr.collapsed .afold-arrow{transform:rotate(-90deg)}
+.ai-folder-items{display:flex;flex-direction:column;gap:1px}
+.ai-folder-hdr.collapsed+.ai-folder-items{display:none}
+.ai-chat-item{padding:6px 8px 6px 22px;font-size:12px;color:var(--t2);cursor:pointer;border-radius:6px;display:flex;align-items:center;gap:5px;line-height:1.3;position:relative;overflow:hidden}
+.ai-chat-item:hover{background:var(--card2);color:var(--text)}
+.ai-chat-item.active{background:rgba(123,104,238,.15);color:var(--pl);font-weight:600}
+.ai-chat-item .aci-del{display:none;position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--t3);cursor:pointer;font-size:14px;padding:1px 4px;line-height:1;border-radius:3px}
+.ai-chat-item:hover .aci-del{display:block}
+.ai-chat-item .aci-del:hover{color:#ef4444;background:rgba(239,68,68,.1)}
+.ai-chat-item .aci-title{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ai-main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0;padding-left:14px}
+#ai-chat-hdr{display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--border);margin-bottom:10px;flex-shrink:0}
+#ai-chat-title-txt{font-size:13px;font-weight:600;color:var(--text);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ai-sidebar-toggle{display:none;background:none;border:1px solid var(--border);border-radius:6px;padding:4px 8px;cursor:pointer;color:var(--t2);font-size:15px;flex-shrink:0}
+#ai-sidebar-toggle:hover{background:var(--card2)}
+.ai-sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:99}
+.ai-sidebar-overlay.open{display:block}
+#ai-messages{flex:1;overflow-y:auto;padding:6px 0;display:flex;flex-direction:column;gap:10px}
+#ai-welcome{flex-shrink:0}
+#ai-input-row{display:flex;gap:8px;align-items:flex-end;padding-top:10px;border-top:1px solid var(--border);margin-top:6px;flex-shrink:0}
+@media(max-width:700px){
+  #ai-sidebar{position:fixed;left:-215px;top:0;bottom:0;z-index:100;width:210px;padding-top:56px}
+  #ai-sidebar.open{left:0;box-shadow:4px 0 24px rgba(0,0,0,.3)}
+  #ai-sidebar-toggle{display:flex;align-items:center;justify-content:center}
+  #ai-main{padding-left:0}
+}
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
@@ -1098,61 +1135,57 @@ html[data-theme="light"]{
 
 <!-- PAGE IA -->
 <div class="page" id="page-ai">
-  <!-- Pas de clé API -->
-  <div id="ai-no-key" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;margin:16px 0">
-    <div style="width:40px;height:40px;margin:0 auto 14px;opacity:.55;color:var(--t2)"><svg class="apex-ico" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-key"/></svg></div>
-    <p style="color:var(--text);font-weight:600;margin-bottom:6px">Clé API Claude requise</p>
-    <p style="color:var(--t2);font-size:13px;margin-bottom:16px">Ajoutez votre clé Anthropic dans les Réglages.</p>
-    <button class="btn btn-sm" onclick="document.getElementById('settings-modal').classList.add('open')"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg> Réglages</button>
-  </div>
-  <!-- Interface IA -->
-  <div id="ai-wrap" style="display:none;flex-direction:column;gap:0">
-    <!-- Briefing proactif -->
-    <div class="ai-briefing" id="ai-briefing">
-      <button class="ai-briefing-dismiss" onclick="dismissBriefing()">×</button>
-      <div class="ai-briefing-label">✦ Briefing IA</div>
-      <div id="ai-briefing-content" class="ai-briefing-loading"><span></span><span></span><span></span>&nbsp; Analyse en cours...</div>
-    </div>
-    <!-- Cartes d'action -->
-    <div class="ai-actions-grid" id="ai-actions">
-      <div class="ai-action-card" onclick="aiQuickAction('priorities')">
-        <div class="ai-action-icon">🎯</div>
-        <div class="ai-action-title">Mes priorités</div>
-        <div class="ai-action-desc">Tâches et objectifs du jour, sur quoi focus</div>
+  <div class="ai-sidebar-overlay" id="ai-sidebar-overlay" onclick="closeChatSidebar()"></div>
+  <div id="ai-layout">
+    <!-- SIDEBAR -->
+    <div id="ai-sidebar">
+      <div id="ai-sidebar-hdr">
+        <button id="ai-new-btn" onclick="newChat()">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Nouveau chat
+        </button>
       </div>
-      <div class="ai-action-card" onclick="aiQuickAction('boutiques')">
-        <div class="ai-action-icon">🏪</div>
-        <div class="ai-action-title">Mes boutiques</div>
-        <div class="ai-action-desc">Performance e-com, opportunités et actions</div>
-      </div>
-      <div class="ai-action-card" onclick="aiQuickAction('semaine')">
-        <div class="ai-action-icon">📈</div>
-        <div class="ai-action-title">Bilan semaine</div>
-        <div class="ai-action-desc">Habitudes, tâches, revenus — ce qui a marché</div>
-      </div>
-      <div class="ai-action-card" onclick="aiQuickAction('coach')">
-        <div class="ai-action-icon">🧠</div>
-        <div class="ai-action-title">Coach mindset</div>
-        <div class="ai-action-desc">Challenge ma vision, identifie mes blocages</div>
-      </div>
+      <div id="ai-folders-list"></div>
     </div>
-    <!-- Chat -->
-    <div id="ai-messages" style="min-height:100px;max-height:45vh;overflow-y:auto;padding:8px 0;display:flex;flex-direction:column;gap:10px">
-      <div id="ai-empty" style="display:none"></div>
-    </div>
-    <!-- Input -->
-    <div style="display:flex;gap:8px;align-items:flex-end;padding-top:12px;border-top:1px solid var(--border);margin-top:8px">
-      <textarea class="finput" id="ai-input" rows="2" placeholder="Message à APEX IA..." style="flex:1;resize:none" onkeydown="aiKeydown(event)"></textarea>
-      <button id="ai-mic-btn" onclick="toggleMic()" title="Dicter" style="width:46px;height:46px;border-radius:50%;background:var(--card2);border:1px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;transition:all .2s;color:var(--t2)"><svg class="apex-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-mic"/></svg></button>
-      <button class="btn" onclick="sendAIMessage()" style="height:46px;padding:0 16px">▶</button>
-    </div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px">
-      <span style="font-size:11px;color:var(--t2)">Shift+Entrée pour sauter une ligne</span>
-      <button class="btn btn-ghost btn-sm" onclick="clearAIConversation()"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-trash"/></svg> Effacer</button>
+    <!-- MAIN CHAT -->
+    <div id="ai-main">
+      <div id="ai-no-key" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;margin:16px 0">
+        <div style="width:40px;height:40px;margin:0 auto 14px;opacity:.55;color:var(--t2)"><svg class="apex-ico" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-key"/></svg></div>
+        <p style="color:var(--text);font-weight:600;margin-bottom:6px">Cle API Claude requise</p>
+        <p style="color:var(--t2);font-size:13px;margin-bottom:16px">Ajoutez votre cle Anthropic dans les Reglages.</p>
+        <button class="btn btn-sm" onclick="openSettings()"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg> Reglages</button>
+      </div>
+      <div id="ai-chat-hdr">
+        <button id="ai-sidebar-toggle" onclick="toggleChatSidebar()">&#9776;</button>
+        <div id="ai-chat-title-txt">Nouveau chat</div>
+        <button class="btn btn-sm btn-ghost" onclick="newChat()" style="flex-shrink:0;font-size:11px">+ Nouveau</button>
+      </div>
+      <div id="ai-welcome">
+        <div class="ai-briefing" id="ai-briefing">
+          <button class="ai-briefing-dismiss" onclick="dismissBriefing()">x</button>
+          <div class="ai-briefing-label">&#10022; Briefing IA</div>
+          <div id="ai-briefing-content" class="ai-briefing-loading"><span></span><span></span><span></span>&nbsp; Analyse en cours...</div>
+        </div>
+        <div class="ai-actions-grid" id="ai-actions">
+          <div class="ai-action-card" onclick="aiQuickAction('priorities')"><div class="ai-action-icon">&#127919;</div><div class="ai-action-title">Mes priorites</div><div class="ai-action-desc">Taches et objectifs du jour</div></div>
+          <div class="ai-action-card" onclick="aiQuickAction('boutiques')"><div class="ai-action-icon">&#127978;</div><div class="ai-action-title">Mes boutiques</div><div class="ai-action-desc">Performance e-com et actions</div></div>
+          <div class="ai-action-card" onclick="aiQuickAction('semaine')"><div class="ai-action-icon">&#128200;</div><div class="ai-action-title">Bilan semaine</div><div class="ai-action-desc">Habitudes, taches, revenus</div></div>
+          <div class="ai-action-card" onclick="aiQuickAction('coach')"><div class="ai-action-icon">&#129504;</div><div class="ai-action-title">Coach mindset</div><div class="ai-action-desc">Challenge ma vision et blocages</div></div>
+        </div>
+      </div>
+      <div id="ai-messages"><div id="ai-empty" style="text-align:center;padding:20px;color:var(--t2);font-size:13px;display:none">Commence une conversation</div></div>
+      <div id="ai-input-row">
+        <textarea class="finput" id="ai-input" rows="2" placeholder="Message a APEX IA..." style="flex:1;resize:none" onkeydown="aiKeydown(event)"></textarea>
+        <button id="ai-mic-btn" onclick="toggleMic()" title="Dicter" style="width:46px;height:46px;border-radius:50%;background:var(--card2);border:1px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;transition:all .2s;color:var(--t2)"><svg class="apex-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-mic"/></svg></button>
+        <button class="btn" onclick="sendAIMessage()" style="height:46px;padding:0 16px;flex-shrink:0">&#9658;</button>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:5px;flex-shrink:0">
+        <span style="font-size:11px;color:var(--t3)">Shift+Entree pour sauter une ligne</span>
+        <button class="btn btn-ghost btn-sm" onclick="clearAIConversation()"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-trash"/></svg> Effacer</button>
+      </div>
     </div>
   </div>
 </div>
-
 <!-- PAGE NOTES -->
 <div class="page" id="page-notes">
   <div class="page-hdr">
@@ -2034,6 +2067,7 @@ const DAYS = ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
 const MONTHS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
 function uid(){ return Date.now().toString(36)+Math.random().toString(36).substr(2,5); }
 function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+function escHtml(s){ return esc(s); }
 function today(){ const d=new Date(); return ds(d); }
 function tomorrowDate(){ const d=new Date(); d.setDate(d.getDate()+1); return ds(d); }
 function ds(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
@@ -2167,7 +2201,7 @@ function render(p){
     case'tasks':    renderTasks();    break;
     case'goals':    renderGoals();    break;
     case'habits':   renderHabits();   break;
-    case'ai':       renderAI();       break;
+    case'ai':       initChats();renderAI();       break;
     case'notes':    renderNotes();    break;
     case'calendar': renderCalendar(); break;
     case'finance':  renderFinance();  break;
@@ -2230,6 +2264,7 @@ function renderToday(){
   document.getElementById('s-streak').textContent=calcMaxStreak();
   document.getElementById('s-week').textContent=calcWeekDone();
   document.getElementById('s-habits').textContent=calcTodayHabits()+'%';
+  initChats();renderChatSidebar();
   renderAnalytics();
 
   // Deep Work schedule section
@@ -3260,60 +3295,170 @@ function setBizFilter(biz, barId, renderFn){
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// AGENT IA — CLAUDE API
+// AGENT IA — CLAUDE API  |  Multi-conversations + Dossiers
 // ═══════════════════════════════════════════════════════════════════════
-let _aiTyping=false, _editNoteTimer=null;
 const AI_MODEL='claude-haiku-4-5-20251001';
+let _aiTyping=false, _editNoteTimer=null;
+
+function getChatFolders(){
+  const projs=(D.projects&&D.projects.length>0)?D.projects:DEFAULT_PROJECTS;
+  const f=projs.map(function(p){return{id:p.id,name:p.name,emoji:p.emoji||'🏪'};});
+  f.push({id:'mindset',name:'Mindset',emoji:'🧠'});
+  f.push({id:'autre',name:'Autre',emoji:'📁'});
+  return f;
+}
+
+function initChats(){
+  D.chats=D.chats||[];
+  if(D.conversations&&D.conversations.length>0&&D.chats.length===0){
+    var first={id:uid(),title:'Conversation importée',folderId:'autre',
+      messages:D.conversations.map(function(m){return{role:m.role,content:m.content,ts:m.ts||Date.now()};}),
+      createdAt:Date.now(),updatedAt:Date.now()};
+    D.chats.push(first);
+    D.activeChatId=first.id;
+    D.conversations=[];
+    save();
+  }
+  if(!D.activeChatId||!D.chats.find(function(c){return c.id===D.activeChatId;})){
+    D.activeChatId=D.chats.length>0?D.chats[D.chats.length-1].id:null;
+  }
+}
+
+function getActiveChat(){
+  if(!D.activeChatId) return null;
+  return D.chats.find(function(c){return c.id===D.activeChatId;})||null;
+}
+function getActiveMsgs(){
+  var c=getActiveChat(); return c?c.messages:[];
+}
+
+function newChat(folderId){
+  var fid=folderId||((D.projects&&D.projects[0])?D.projects[0].id:'autre');
+  var chat={id:uid(),title:'Nouveau chat',folderId:fid,messages:[],createdAt:Date.now(),updatedAt:Date.now()};
+  D.chats=D.chats||[];
+  D.chats.push(chat);
+  D.activeChatId=chat.id;
+  save();
+  renderAI();
+  closeChatSidebar();
+  var inp=document.getElementById('ai-input'); if(inp) inp.focus();
+}
+
+function openChat(chatId){
+  D.activeChatId=chatId; save(); renderAI(); closeChatSidebar();
+}
+
+function deleteChatById(chatId,e){
+  if(e){e.stopPropagation();}
+  if(!confirm('Supprimer cette conversation ?')) return;
+  D.chats=(D.chats||[]).filter(function(c){return c.id!==chatId;});
+  if(D.activeChatId===chatId) D.activeChatId=D.chats.length>0?D.chats[D.chats.length-1].id:null;
+  save(); renderAI();
+}
+
+function autotitleChat(chat){
+  if(!chat||chat.title!=='Nouveau chat') return;
+  var firstUser=(chat.messages||[]).find(function(m){return m.role==='user';});
+  if(firstUser) chat.title=firstUser.content.slice(0,42)+(firstUser.content.length>42?'…':'');
+}
+
+function renderChatSidebar(){
+  var el=document.getElementById('ai-folders-list'); if(!el) return;
+  var folders=getChatFolders();
+  var chats=D.chats||[];
+  var collKey='apex_cf_collapsed';
+  var coll={}; try{coll=JSON.parse(sessionStorage.getItem(collKey)||'{}');}catch(e){}
+  var html='';
+  folders.forEach(function(f){
+    var fc=chats.filter(function(c){return c.folderId===f.id;}).sort(function(a,b){return b.updatedAt-a.updatedAt;});
+    var isCollapsed=!!coll[f.id];
+    html+='<div class="ai-folder">';
+    html+='<div class="ai-folder-hdr'+(isCollapsed?' collapsed':'')+'" onclick="toggleChatFolder(\''+f.id+'\')">';
+    html+='<span>'+f.emoji+'</span>';
+    html+='<span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+escHtml(f.name)+'</span>';
+    html+='<span class="afold-arrow">&#9662;</span>';
+    html+='</div>';
+    html+='<div class="ai-folder-items">';
+    if(fc.length===0){
+      html+='<div style="padding:4px 8px 4px 22px;font-size:11px;color:var(--t3);font-style:italic">Vide</div>';
+    } else {
+      fc.forEach(function(ch){
+        var isAct=ch.id===D.activeChatId;
+        html+='<div class="ai-chat-item'+(isAct?' active':'')+'" onclick="openChat(\''+ch.id+'\')">';
+        html+='<span class="aci-title">'+escHtml(ch.title)+'</span>';
+        html+='<button class="aci-del" onclick="deleteChatById(\''+ch.id+'\',event)" title="Supprimer">×</button>';
+        html+='</div>';
+      });
+    }
+    html+='</div>';
+    html+='<div style="padding:2px 8px 2px 22px"><button style="background:none;border:none;color:var(--t3);font-size:11px;cursor:pointer;padding:2px 0;display:flex;align-items:center;gap:3px" onclick="newChat(\''+f.id+'\')">';
+    html+='<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Nouveau';
+    html+='</button></div></div>';
+  });
+  el.innerHTML=html;
+}
+
+function toggleChatFolder(folderId){
+  var k='apex_cf_collapsed'; var coll={};
+  try{coll=JSON.parse(sessionStorage.getItem(k)||'{}');}catch(e){}
+  coll[folderId]=!coll[folderId];
+  sessionStorage.setItem(k,JSON.stringify(coll));
+  renderChatSidebar();
+}
+
+function toggleChatSidebar(){
+  var sb=document.getElementById('ai-sidebar');
+  var ov=document.getElementById('ai-sidebar-overlay');
+  if(sb) sb.classList.toggle('open');
+  if(ov) ov.classList.toggle('open');
+}
+function closeChatSidebar(){
+  var sb=document.getElementById('ai-sidebar');
+  var ov=document.getElementById('ai-sidebar-overlay');
+  if(sb) sb.classList.remove('open');
+  if(ov) ov.classList.remove('open');
+}
 
 function renderAI(){
-  const hasKey=!!(D.settings.claudeApiKey);
-  const noKeyEl=document.getElementById('ai-no-key');
-  const wrapEl=document.getElementById('ai-wrap');
+  initChats();
+  var hasKey=!!(D.settings.claudeApiKey);
+  var noKeyEl=document.getElementById('ai-no-key');
   if(noKeyEl) noKeyEl.style.display=hasKey?'none':'block';
-  if(wrapEl) wrapEl.style.display=hasKey?'flex':'none';
+  renderChatSidebar();
   if(!hasKey) return;
-  // Briefing proactif
-  const briefingKey='apex_briefing_'+today();
-  const cached=sessionStorage.getItem(briefingKey);
-  const briefingEl=document.getElementById('ai-briefing');
-  const briefingContent=document.getElementById('ai-briefing-content');
+  var chat=getActiveChat();
+  var titleEl=document.getElementById('ai-chat-title-txt');
+  if(titleEl) titleEl.textContent=chat?chat.title:'Nouveau chat';
+  var briefingKey='apex_briefing_'+today();
+  var cached=sessionStorage.getItem(briefingKey);
+  var briefingEl=document.getElementById('ai-briefing');
+  var briefingContent=document.getElementById('ai-briefing-content');
   if(D._briefingDismissed===today()){
     if(briefingEl) briefingEl.style.display='none';
   } else if(cached){
-    if(briefingContent){ briefingContent.className='ai-briefing-content'; briefingContent.innerHTML=formatAIMsg(cached); }
+    if(briefingContent){briefingContent.className='ai-briefing-content';briefingContent.innerHTML=formatAIMsg(cached);}
   } else { generateBriefing(); }
-  // Cartes d'action visibles seulement si pas de conversation
-  const actionsEl=document.getElementById('ai-actions');
-  if(actionsEl) actionsEl.style.display=(D.conversations&&D.conversations.length>0)?'none':'grid';
-  // Suggestions dynamiques selon les projets (conservé pour compatibilité)
-  const sugg=document.getElementById('ai-suggestions');
-  if(sugg){
-    const projs=D.projects||DEFAULT_PROJECTS;
-    let html=`<button class="btn btn-sm btn-ghost" onclick="aiSuggest('Analyse mes priorités du jour et donne-moi un plan d\\'action')">${ico('bar-chart',12)} Mes priorités</button>`;
-    projs.slice(0,3).forEach(p=>{
-      html+=`<button class="btn btn-sm btn-ghost" onclick="aiSuggest('Donne-moi des idées concrètes pour développer ${escHtml(p.name)}')">${p.emoji} ${escHtml(p.name)}</button>`;
-    });
-    sugg.innerHTML=html;
-  }
+  var msgs=getActiveMsgs();
+  var welcomeEl=document.getElementById('ai-welcome');
+  var actionsEl=document.getElementById('ai-actions');
+  if(welcomeEl) welcomeEl.style.display=msgs.length>0?'none':'block';
+  if(actionsEl) actionsEl.style.display=msgs.length>0?'none':'grid';
   renderAIMessages();
 }
 
-
 async function generateBriefing(){
-  const key=(D.settings.claudeApiKey||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'');
+  var key=(D.settings.claudeApiKey||'').replace(/[\s​-‍﻿]/g,'');
   if(!key) return;
-  const el=document.getElementById('ai-briefing-content'); if(!el) return;
+  var el=document.getElementById('ai-briefing-content'); if(!el) return;
   el.className='ai-briefing-loading';
   el.innerHTML='<span></span><span></span><span></span>&nbsp; Analyse en cours...';
   try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
+    var r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
       body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:300,system:buildAIContext(),
-        messages:[{role:'user',content:'Briefing ultra-concis en 2-3 points max. Observe mes données et dis-moi ce qui est le plus important MAINTENANT. Direct, factuel, actionnable. Format: points courts avec emoji. Pas de blabla.'}]})
-    });
+        messages:[{role:'user',content:'Briefing ultra-concis en 2-3 points max. Observe mes données et dis-moi ce qui est le plus important MAINTENANT. Direct, factuel, actionnable. Format: points courts avec emoji. Pas de blabla.'}]})});
     if(!r.ok) throw new Error('API '+r.status);
-    const d=await r.json(); const text=d.content[0].text;
+    var d=await r.json(); var text=d.content[0].text;
     sessionStorage.setItem('apex_briefing_'+today(),text);
     el.className='ai-briefing-content'; el.innerHTML=formatAIMsg(text);
   }catch(e){ el.className='ai-briefing-content'; el.innerHTML='<span style="color:var(--t2);font-size:12px">Briefing indisponible</span>'; }
@@ -3321,174 +3466,157 @@ async function generateBriefing(){
 
 function dismissBriefing(){
   D._briefingDismissed=today(); save();
-  const el=document.getElementById('ai-briefing'); if(el) el.style.display='none';
+  var el=document.getElementById('ai-briefing'); if(el) el.style.display='none';
 }
 
 function aiQuickAction(type){
-  const prompts={
-    priorities:'Analyse mes tâches, objectifs et habitudes. Dis-moi exactement sur quoi me concentrer en priorité aujourd\'hui et pourquoi.',
-    boutiques:'Analyse les performances de mes boutiques e-commerce. Identifie les 3 actions les plus impactantes à faire cette semaine.',
-    semaine:'Fais un bilan de ma semaine : habitudes cochées, tâches accomplies, revenus. Ce qui a marché, ce que j\'améliore.',
-    coach:'Agis comme mon coach. Analyse mon contexte et challenge ma façon de penser. Qu\'est-ce que je fais bien et qu\'est-ce que je devrais faire différemment ?'
+  var prompts={
+    priorities:"Analyse mes tâches, objectifs et habitudes. Dis-moi exactement sur quoi me concentrer en priorité aujourd'hui et pourquoi.",
+    boutiques:"Analyse les performances de mes boutiques e-commerce. Identifie les 3 actions les plus impactantes à faire cette semaine.",
+    semaine:"Fais un bilan de ma semaine : habitudes cochées, tâches accomplies, revenus. Ce qui a marché, ce que j'améliore.",
+    coach:"Agis comme mon coach. Analyse mon contexte et challenge ma façon de penser. Qu'est-ce que je fais bien et qu'est-ce que je devrais faire différemment ?"
   };
-  const actionsEl=document.getElementById('ai-actions'); if(actionsEl) actionsEl.style.display='none';
-  const input=document.getElementById('ai-input');
+  var welcomeEl=document.getElementById('ai-welcome'); if(welcomeEl) welcomeEl.style.display='none';
+  var actionsEl=document.getElementById('ai-actions'); if(actionsEl) actionsEl.style.display='none';
+  var input=document.getElementById('ai-input');
   if(input){ input.value=prompts[type]||''; sendAIMessage(); }
 }
 
 function moduleAI(module){
-  const contextMap={
-    tasks:'Analyse mes tâches en cours : '+JSON.stringify((D.tasks||[]).slice(0,12).map(t=>({title:t.title,priority:t.priority,done:t.done,date:t.date}))),
-    habits:'Analyse mes habitudes et ma constance : '+JSON.stringify((D.habits||[]).map(h=>({name:h.name,streak:h.streak||0}))),
-    goals:'Analyse mes objectifs OKR : '+JSON.stringify((D.goals||[]).slice(0,8).map(g=>({title:g.title,done:g.done,why:g.why}))),
+  var labels={tasks:'Tâches',habits:'Habitudes',goals:'Objectifs',finance:'Finances'};
+  var contextMap={
+    tasks:'Analyse mes tâches en cours : '+JSON.stringify((D.tasks||[]).slice(0,12).map(function(t){return{title:t.title,priority:t.priority,done:t.done,date:t.date};})),
+    habits:'Analyse mes habitudes et ma constance : '+JSON.stringify((D.habits||[]).map(function(h){return{name:h.name,streak:h.streak||0};})),
+    goals:'Analyse mes objectifs OKR : '+JSON.stringify((D.goals||[]).slice(0,8).map(function(g){return{title:g.title,done:g.done,why:g.why};})),
     finance:'Analyse mes finances et boutiques Shopify avec les données disponibles et donne-moi 3 actions concrètes.'
   };
-  const prompt=(contextMap[module]||'Analyse ce module.')+' Donne-moi 3 insights actionnables et directs.';
+  var prompt=(contextMap[module]||'Analyse ce module.')+' Donne-moi 3 insights actionnables et directs.';
+  var fid=(module==='habits'||module==='goals')?'mindset':((D.projects&&D.projects[0])?D.projects[0].id:'autre');
+  var chat={id:uid(),title:'Analyse '+( labels[module]||module),folderId:fid,messages:[],createdAt:Date.now(),updatedAt:Date.now()};
+  D.chats=D.chats||[];
+  D.chats.push(chat);
+  D.activeChatId=chat.id;
   goPage('ai');
-  setTimeout(()=>{
-    const actionsEl=document.getElementById('ai-actions'); if(actionsEl) actionsEl.style.display='none';
-    const input=document.getElementById('ai-input');
+  setTimeout(function(){
+    renderAI();
+    var welcomeEl=document.getElementById('ai-welcome'); if(welcomeEl) welcomeEl.style.display='none';
+    var input=document.getElementById('ai-input');
     if(input){ input.value=prompt; sendAIMessage(); }
-  },250);
+  },200);
 }
 
 function renderAIMessages(){
-  const container=document.getElementById('ai-messages'); if(!container) return;
-  const emptyEl=document.getElementById('ai-empty');
-  const convs=D.conversations||[];
-  if(convs.length===0){ if(emptyEl) emptyEl.style.display='block'; return; }
-  if(emptyEl) emptyEl.style.display='none';
-  const msgs=container.querySelectorAll('.ai-msg');
-  msgs.forEach(m=>m.remove());
-  convs.forEach(c=>{
-    const div=document.createElement('div');
-    div.className=`ai-msg ${c.role}`;
-    const isApex=c.role==='apex';
-    div.innerHTML=`<div class="ai-avatar ${c.role}">${isApex?'A':'👤'}</div>
-      <div class="ai-bubble">${isApex?mdToHtml(c.content):escHtml(c.content)}</div>`;
-    container.appendChild(div);
-  });
+  var container=document.getElementById('ai-messages'); if(!container) return;
+  var msgs=getActiveMsgs();
+  var welcomeEl=document.getElementById('ai-welcome');
+  if(msgs.length===0){
+    container.innerHTML='';
+    if(welcomeEl) welcomeEl.style.display='block';
+    return;
+  }
+  if(welcomeEl) welcomeEl.style.display='none';
+  container.innerHTML=msgs.map(function(m){
+    var isUser=m.role==='user';
+    return '<div class="ai-msg '+(isUser?'user':'apex')+'">'
+      +'<div class="ai-avatar '+(isUser?'user':'apex')+'">'+(isUser?(D.settings.name||'Toi')[0].toUpperCase():'A')+'</div>'
+      +'<div class="ai-bubble">'+(isUser?escHtml(m.content):formatAIMsg(m.content))+'</div>'
+      +'</div>';
+  }).join('');
   container.scrollTop=container.scrollHeight;
-}
-
-function escHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-function mdToHtml(s){
-  // Escape HTML first, then apply markdown
-  let t=s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  // Headers
-  t=t.replace(/^### (.+)$/gm,'<strong style="font-size:13px;color:var(--text)">$1</strong>');
-  t=t.replace(/^## (.+)$/gm,'<strong style="font-size:14px;color:var(--text)">$1</strong>');
-  t=t.replace(/^# (.+)$/gm,'<strong style="font-size:15px;color:var(--text)">$1</strong>');
-  // Bold
-  t=t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
-  // Italic
-  t=t.replace(/\*(.+?)\*/g,'<em>$1</em>');
-  // Bullet lists
-  t=t.replace(/^[-•] (.+)$/gm,'<li>$1</li>');
-  t=t.replace(/(<li>.*<\/li>)/gs, m => '<ul style="margin:6px 0 6px 16px;padding:0">'+m+'</ul>');
-  // Numbered lists
-  t=t.replace(/^\d+\. (.+)$/gm,'<li>$1</li>');
-  // Code inline
-  t=t.replace(/`([^`]+)`/g,'<code style="background:var(--card2);padding:1px 5px;border-radius:4px;font-size:12px">$1</code>');
-  // Newlines
-  t=t.replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
-  return t;
 }
 
 function aiKeydown(e){ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); sendAIMessage(); } }
-
-function aiSuggest(text){
-  document.getElementById('ai-input').value=text;
-  sendAIMessage();
-}
+function aiSuggest(text){ var input=document.getElementById('ai-input'); if(!input) return; input.value=text; sendAIMessage(); }
 
 async function sendAIMessage(){
   if(_aiTyping) return;
-  const input=document.getElementById('ai-input');
-  const text=input.value.trim(); if(!text) return;
-  const _ac=document.getElementById('ai-actions'); if(_ac) _ac.style.display='none';
-  input.value=''; input.style.height='auto';
-  D.conversations=D.conversations||[];
-  D.conversations.push({role:'user',content:text,ts:Date.now()});
-  if(D.conversations.length>40) D.conversations=D.conversations.slice(-40);
-  save();
-  renderAIMessages();
-  // Add typing indicator
-  _aiTyping=true;
-  const container=document.getElementById('ai-messages');
-  const typingDiv=document.createElement('div');
-  typingDiv.className='ai-msg apex'; typingDiv.id='ai-typing-indicator';
-  typingDiv.innerHTML=`<div class="ai-avatar apex">A</div>
-    <div class="ai-bubble ai-typing"><span></span><span></span><span></span></div>`;
-  container.appendChild(typingDiv);
-  container.scrollTop=container.scrollHeight;
-  const response=await callClaude();
-  typingDiv.remove();
-  _aiTyping=false;
-  if(response){
-    D.conversations.push({role:'apex',content:response,ts:Date.now()});
-    if(D.conversations.length>40) D.conversations=D.conversations.slice(-40);
-    save();
+  var input=document.getElementById('ai-input');
+  var text=(input?input.value:'').trim(); if(!text) return;
+  if(input){ input.value=''; input.style.height='auto'; }
+  if(!D.activeChatId){
+    var fid=(D.projects&&D.projects[0])?D.projects[0].id:'autre';
+    var nc={id:uid(),title:'Nouveau chat',folderId:fid,messages:[],createdAt:Date.now(),updatedAt:Date.now()};
+    D.chats=D.chats||[]; D.chats.push(nc); D.activeChatId=nc.id;
   }
-  renderAIMessages();
+  var chat=getActiveChat(); if(!chat) return;
+  chat.messages=chat.messages||[];
+  chat.messages.push({role:'user',content:text,ts:Date.now()});
+  if(chat.messages.length>40) chat.messages=chat.messages.slice(-40);
+  chat.updatedAt=Date.now();
+  autotitleChat(chat);
+  var titleEl=document.getElementById('ai-chat-title-txt');
+  if(titleEl) titleEl.textContent=chat.title;
+  var welcomeEl=document.getElementById('ai-welcome'); if(welcomeEl) welcomeEl.style.display='none';
+  save(); renderAIMessages(); renderChatSidebar();
+  _aiTyping=true;
+  var container=document.getElementById('ai-messages');
+  var typingDiv=document.createElement('div');
+  typingDiv.className='ai-msg apex'; typingDiv.id='ai-typing-indicator';
+  typingDiv.innerHTML='<div class="ai-avatar apex">A</div><div class="ai-bubble ai-typing"><span></span><span></span><span></span></div>';
+  if(container){container.appendChild(typingDiv);container.scrollTop=container.scrollHeight;}
+  try{
+    var response=await callClaude();
+    typingDiv.remove();
+    var c2=getActiveChat();
+    if(c2&&response){
+      c2.messages.push({role:'apex',content:response,ts:Date.now()});
+      if(c2.messages.length>40) c2.messages=c2.messages.slice(-40);
+      c2.updatedAt=Date.now();
+      save();
+    }
+  }catch(ex){
+    typingDiv.remove();
+    var c3=getActiveChat();
+    if(c3){c3.messages.push({role:'apex',content:'Erreur: '+ex.message,ts:Date.now()});}
+    save();
+  }finally{
+    _aiTyping=false;
+  }
+  renderAIMessages(); renderChatSidebar();
 }
 
 async function callClaude(){
-  // Sanitize key — strip whitespace, newlines, invisible chars
-  const raw=D.settings.claudeApiKey||'';
-  const key=raw.replace(/[\s\u200B-\u200D\uFEFF]/g,'');
-  if(!key) return '⚙️ Configure ta clé API Claude dans **Réglages** (clé commençant par `sk-ant-`).';
-  if(!key.startsWith('sk-ant-')) return '⚠️ Clé API invalide — elle doit commencer par `sk-ant-`. Vérifie dans Réglages.';
-  const msgs=(D.conversations||[]).slice(-20).map(c=>({role:c.role==='user'?'user':'assistant',content:c.content}));
+  var raw=D.settings.claudeApiKey||'';
+  var key=raw.replace(/[\s​-‍﻿]/g,'');
+  if(!key) return 'Configure ta cle API Claude dans Reglages (sk-ant-...).';
+  if(!key.startsWith('sk-ant-')) return 'Cle API invalide - elle doit commencer par sk-ant-. Verifie dans Reglages.';
+  var msgs=getActiveMsgs().slice(-20).map(function(c){return{role:c.role==='user'?'user':'assistant',content:c.content};});
   try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
+    var r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:AI_MODEL,max_tokens:1024,system:buildAIContext(),messages:msgs})
-    });
-    if(!r.ok){ const e=await r.json(); return `❌ ${e.error?.message||'Erreur API ('+r.status+')' }`; }
-    const d=await r.json(); return d.content[0].text;
+      body:JSON.stringify({model:AI_MODEL,max_tokens:1024,system:buildAIContext(),messages:msgs})});
+    if(!r.ok){var e=await r.json();return 'Erreur API: '+(e.error&&e.error.message||r.status);}
+    var d=await r.json(); return d.content[0].text;
   }catch(e){
-    if(e.message.includes('pattern')||e.message.includes('header')){
-      return '⚠️ Clé API malformée (caractère invalide). Retourne dans Réglages, efface la clé et recolle-la proprement.';
-    }
-    if(e.message.includes('Failed to fetch')||e.message.includes('CORS')){
-      return '🌐 Impossible de joindre l\'API Anthropic. Vérifie ta connexion internet.';
-    }
-    return `❌ Erreur réseau: ${e.message}`;
+    if(e.message.includes('Failed to fetch')) return 'Impossible de joindre Anthropic. Verifie ta connexion.';
+    return 'Erreur reseau: '+e.message;
   }
 }
 
 function buildAIContext(){
-  const td=today();
-  const ttasks=(D.tasks||[]).filter(t=>t.date===td&&!t.done);
-  const agoals=(D.goals||[]).filter(g=>!g.done).slice(0,6);
-  const hc=D.hc||{};
-  const todayHab=(D.habits||[]).filter(h=>hc[h.id]&&hc[h.id][td]).length;
-  return `Tu es APEX, le second cerveau et stratège business de ${D.settings.name||"l'entrepreneur"}, propulsé par Claude d'Anthropic.
-Tu parles TOUJOURS en français. Tu es direct, précis, concret et actionnable. Tes réponses sont structurées mais pas trop longues.
-Si on te demande quelle IA tu utilises ou qui tu es, réponds que tu es APEX propulsé par Claude (Anthropic) — jamais GPT ou OpenAI.
-
-CONTEXTE DU JOUR (${td}):
-- Tâches en cours: ${ttasks.length>0?ttasks.map(t=>'• '+t.title+' ['+t.priority+']').join('\n'):'Aucune tâche aujourd\'hui'}
-- Habitudes cochées: ${todayHab}/${(D.habits||[]).length}
-- Objectifs actifs: ${agoals.length>0?agoals.map(g=>'• '+g.title).join(', '):'Aucun objectif défini'}
-
-SES PROJETS & BOUTIQUES:
-${((D.projects&&D.projects.length>0)?D.projects:DEFAULT_PROJECTS).map(p=>`• ${p.emoji} ${p.name}${p.description?' — '+p.description:''}`).join('\n')}
-
-SA VISION (Why): ${D.why||'Non définie'}
-
-INSTRUCTIONS:
-- Pour les décisions business, utilise ton expertise en e-commerce, marketing digital, Shopify
-- Pour la productivité, réfère-toi aux méthodes Deep Work, OKR, Pareto
-- Sois concis mais complet. Utilise des emojis avec modération pour structurer.`;
+  var td=today();
+  var ttasks=(D.tasks||[]).filter(function(t){return t.date===td&&!t.done;});
+  var agoals=(D.goals||[]).filter(function(g){return !g.done;}).slice(0,6);
+  var hc=D.hc||{};
+  var todayHab=(D.habits||[]).filter(function(h){return hc[h.id]&&hc[h.id][td];}).length;
+  var projs=(D.projects&&D.projects.length>0)?D.projects:DEFAULT_PROJECTS;
+  return "Tu es APEX, le second cerveau et stratege business de "+(D.settings.name||"l'entrepreneur")+", propulse par Claude d'Anthropic.\n"
+    +"Tu parles TOUJOURS en francais. Tu es direct, precis, concret et actionnable.\n"
+    +"Si on te demande quelle IA tu utilises, reponds APEX propulse par Claude (Anthropic) — jamais GPT ou OpenAI.\n\n"
+    +"CONTEXTE DU JOUR ("+td+"):\n"
+    +"- Taches en cours: "+(ttasks.length>0?ttasks.map(function(t){return '* '+t.title+' ['+t.priority+']';}).join(', '):'Aucune')+"\n"
+    +"- Habitudes cochees: "+todayHab+"/"+(D.habits||[]).length+"\n"
+    +"- Objectifs actifs: "+(agoals.length>0?agoals.map(function(g){return g.title;}).join(', '):'Aucun')+"\n\n"
+    +"SES PROJETS & BOUTIQUES:\n"
+    +projs.map(function(p){return "- "+p.emoji+" "+p.name+(p.description?" -- "+p.description:"");}).join("\n")+"\n\n"
+    +"SA VISION: "+(D.why||'Non definie')+"\n\n"
+    +"INSTRUCTIONS: Expertise e-commerce, Shopify, marketing digital. Productivite Deep Work, OKR, Pareto. Concis et actionnable.";
 }
 
 function clearAIConversation(){
-  D.conversations=[];save();renderAIMessages();
-  const emptyEl=document.getElementById('ai-empty');
-  if(emptyEl) emptyEl.style.display='block';
+  var chat=getActiveChat();
+  if(chat){chat.messages=[];chat.title='Nouveau chat';chat.updatedAt=Date.now();save();}
+  renderAI();
 }
 
 // ═══════════════════════════════════════════════════════════════════════
