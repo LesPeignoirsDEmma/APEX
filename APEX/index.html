@@ -4205,14 +4205,20 @@ function renderFinExpenses(){
 
 function renderFinKPIs(){
   const {from,to}=finPeriodDates();
-  // Dépenses
+  // Dépenses manuelles
   const exps=(D.expenses||[]).filter(e=>e.date>=from&&e.date<=to);
-  const totalExp=exps.reduce((s,e)=>s+(parseFloat(e.amount)||0),0);
+  const totalManualExp=exps.reduce((s,e)=>s+(parseFloat(e.amount)||0),0);
+  // Dépenses pub Google Ads — mapping période Finance → période Ads
+  const _adPeriodMap={month:30,'7d':7,'30d':30,'3m':90,'year':365,'total':365};
+  const adPeriod=_adPeriodMap[_finPeriod]||30;
+  const adData=getAdPeriodData(adPeriod);
+  const adSpend=adData&&adData.spend>0?adData.spend:0;
+  const totalExp=totalManualExp+adSpend;
   // Revenus (depuis cache Shopify ou saisie manuelle)
   let totalRev=0;
   const allProjs=D.projects||DEFAULT_PROJECTS;
   const projs=_finShop==='all'?allProjs:allProjs.filter(p=>p.id===_finShop);
- const _periodKeyMap={'7d':7,'30d':30,'3m':90,'total':'allTime'};
+  const _periodKeyMap={'7d':7,'30d':30,'3m':90,'total':'allTime'};
   const _pk=_periodKeyMap[_finPeriod];
   projs.forEach(p=>{
     const c=getShopifyCache(p.id);
@@ -4231,7 +4237,12 @@ function renderFinKPIs(){
     el.className='fin-kpi-val '+(cls||'');
   };
   setEl('fin-ca-total',totalRev>0?fmtEur(totalRev):'Sync requis','neu');
-  setEl('fin-exp-total',fmtEur(totalExp),'neg');
+  // Dépenses : afficher sous-texte pub si dispo
+  const expEl=document.getElementById('fin-exp-total');
+  if(expEl){
+    expEl.className='fin-kpi-val neg';
+    expEl.innerHTML=fmtEur(totalExp)+(adSpend>0?`<div style="font-size:10px;color:var(--t2);font-weight:500;margin-top:2px">dont ${fmtEur(adSpend)} pub</div>`:'');
+  }
   setEl('fin-margin-val',totalRev>0?fmtEur(margin):(margin<0?fmtEur(margin):'—'), totalRev>0?(margin>=0?'pos':'neg'):'');
   setEl('fin-margin-pct',totalRev>0?marginPct+'%':'—', totalRev>0?(marginPct>=0?'pos':'neg'):'');
 
@@ -4239,20 +4250,26 @@ function renderFinKPIs(){
   const bar=document.getElementById('fin-margin-bar');
   if(bar) bar.style.width=(totalRev>0?Math.max(0,Math.min(100,marginPct)):0)+'%';
 
-  // Breakdown par catégorie
+  // Breakdown par catégorie (+ ligne pub auto si dispo)
   const breakdown=document.getElementById('fin-breakdown');
   if(breakdown){
     const byCat={};
     exps.forEach(e=>{ const c=e.category||'autre'; byCat[c]=(byCat[c]||0)+(parseFloat(e.amount)||0); });
+    // Ajouter le spend pub auto (seulement si pas déjà compté comme dépense manuelle catégorie pub)
+    const manualPubTotal=byCat['pub']||0;
+    if(adSpend>0){
+      byCat['pub']=(manualPubTotal+adSpend);
+    }
     const maxBCat=Math.max(...Object.values(byCat),1);
     breakdown.innerHTML=Object.entries(byCat).sort((a,b)=>b[1]-a[1]).map(([c,v])=>{
       const cat=EXP_CATS[c]||EXP_CATS.autre;
       const pct=Math.round((v/maxBCat)*100);
+      const isAdsCat=c==='pub'&&adSpend>0;
       return `<div class="fin-breakdown-row">
         <span style="font-size:15px;flex-shrink:0">${cat.emoji}</span>
         <div style="flex:1;min-width:0">
           <div style="display:flex;justify-content:space-between;margin-bottom:3px">
-            <span style="font-size:12px;color:var(--text)">${cat.label}</span>
+            <span style="font-size:12px;color:var(--text)">${cat.label}${isAdsCat?' <span style="font-size:10px;color:var(--t3)">(Google Ads inclus)</span>':''}</span>
             <span style="font-size:12px;font-weight:700;font-family:var(--font2);color:var(--text)">${fmtEur(v)}</span>
           </div>
           <div style="height:3px;background:var(--card2);border-radius:2px;overflow:hidden">
