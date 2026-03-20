@@ -2000,12 +2000,9 @@ html[data-theme="light"]{
 
     <div class="setting-group" style="margin-top:14px">
       <div class="slbl mb-8">☁️ Sync Temps Réel</div>
-      <div id="sync-status-block" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;background:var(--card2);border-radius:10px">
-        <div>
-          <div id="sync-status-label" style="font-size:13px;font-weight:600;color:var(--text)">—</div>
-          <div id="sync-status-sub" style="font-size:11px;color:var(--t3);margin-top:2px">Synchronisation automatique entre appareils</div>
-        </div>
-        <button class="btn btn-sm btn-ghost" onclick="manualSync()">↻ Sync</button>
+      <div id="sync-status-block" style="padding:12px 14px;background:var(--card2);border-radius:10px">
+        <div id="sync-status-label" style="font-size:13px;font-weight:600;color:var(--text)">—</div>
+        <div style="font-size:11px;color:var(--t3);margin-top:2px">Synchronisation automatique entre appareils</div>
       </div>
     </div>
 
@@ -3489,6 +3486,8 @@ function init(){
 
   // Sync auto au démarrage
   initSync();
+  // initAdSync indépendant — Firebase déjà initialisé via auth
+  setTimeout(initAdSync, 1000);
 
   // Replanifier les notifs à minuit
   const now=new Date();
