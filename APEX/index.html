@@ -1999,25 +1999,14 @@ html[data-theme="light"]{
     </div>
 
     <div class="setting-group" style="margin-top:14px">
-      <div class="slbl mb-8">☁️ Sync Temps Réel (Firebase)</div>
-      <div class="setting-desc" style="margin-bottom:10px">
-        Sync instantanée entre tous vos appareils via <strong>Firebase</strong> (gratuit).
-        <br>1. <a href="https://console.firebase.google.com" target="_blank" style="color:var(--purple)">console.firebase.google.com</a> → Nouveau projet
-        <br>2. Activez <strong>Firestore Database</strong> (mode production)
-        <br>3. <em>Paramètres → Vos apps → Web</em> → copiez le JSON <code>firebaseConfig</code>
-        <br>4. Choisissez un <strong>ID de sync</strong> (même valeur sur tous vos appareils)
+      <div class="slbl mb-8">☁️ Sync Temps Réel</div>
+      <div id="sync-status-block" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;background:var(--card2);border-radius:10px">
+        <div>
+          <div id="sync-status-label" style="font-size:13px;font-weight:600;color:var(--text)">—</div>
+          <div id="sync-status-sub" style="font-size:11px;color:var(--t3);margin-top:2px">Synchronisation automatique entre appareils</div>
+        </div>
+        <button class="btn btn-sm btn-ghost" onclick="manualSync()">↻ Sync</button>
       </div>
-      <div class="form-row">
-        <textarea class="finput" id="s-sync-cfg" placeholder='{"apiKey":"AIza...","authDomain":"xxx.firebaseapp.com","projectId":"xxx"}' style="flex:1;height:90px;resize:vertical;font-size:11px;font-family:monospace;line-height:1.4"></textarea>
-      </div>
-      <div class="form-row" style="margin-top:6px">
-        <input class="finput" id="s-sync-doc" placeholder="ID de sync (ex: leo-apex-perso)" style="flex:1">
-      </div>
-      <div style="display:flex;gap:8px;margin-top:6px">
-        <button class="btn btn-sm btn-ghost" onclick="testSyncConnection()" style="flex:1">🔌 Tester &amp; connecter</button>
-        <button class="btn btn-sm btn-ghost" onclick="manualSync()" style="flex:1"><svg class="apex-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0"><use href="#ico-refresh"/></svg> Sync maintenant</button>
-      </div>
-      <div id="sync-test-status" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px"></div>
     </div>
 
     <div class="setting-group" style="margin-top:14px">
@@ -2286,29 +2275,7 @@ async function initSync(){
   }
 }
 
-async function testSyncConnection(){
-  const rawCfg=document.getElementById('s-sync-cfg').value.trim();
-  const docId=document.getElementById('s-sync-doc').value.trim();
-  const statusEl=document.getElementById('sync-test-status');
-  if(!rawCfg||!docId){statusEl.textContent='⚠️ Remplissez les deux champs';statusEl.style.color='#F59E0B';return;}
-  statusEl.textContent='⏳ Test en cours...'; statusEl.style.color='var(--t2)';
-  let config;
-  try{ config=JSON.parse(rawCfg); }
-  catch(e){ statusEl.textContent='❌ JSON Firebase invalide'; statusEl.style.color='var(--coral)'; return; }
-  try{
-    if(!firebase.apps.length) firebase.initializeApp(config);
-    const db=firebase.firestore();
-    await db.collection('apex').doc(docId).get();
-    statusEl.textContent='✅ Firebase connecté !'; statusEl.style.color='var(--green)';
-    // Sauvegarder et lancer le listener
-    D.settings.firebaseConfig=rawCfg;
-    D.settings.syncDocId=docId;
-    save();
-    initSync();
-  }catch(e){
-    statusEl.textContent='❌ Échec : '+e.message; statusEl.style.color='var(--coral)';
-  }
-}
+// testSyncConnection() supprimé — sync automatique via Firebase Auth
 
 // ═══════════════════════════════════════════════════════════════
 // UTILS
@@ -3045,9 +3012,12 @@ function openSettings(){
   document.getElementById('s-habit-time').value = s.habitReminderTime||'19:00';
   document.getElementById('s-plan-time').value = s.planReminderTime||'20:00';
   document.getElementById('s-claude-key').value = s.claudeApiKey||'';
-  document.getElementById('s-sync-cfg').value = s.firebaseConfig||'';
-  document.getElementById('s-sync-doc').value = s.syncDocId||'';
-  document.getElementById('sync-test-status').textContent='';
+  // Mettre à jour le statut sync
+  const syncLabel=document.getElementById('sync-status-label');
+  if(syncLabel&&typeof _authUser!=='undefined'){
+    if(_authUser) updateSyncStatus('● Connecté · '+(_authUser.email||''),'#22c55e');
+    else updateSyncStatus('Non connecté','var(--t3)');
+  }
   renderProjectsList();
   renderNotifPermBanner();
   updateDWPreview();
@@ -3120,8 +3090,8 @@ function saveSettings(){
     planReminderTime:document.getElementById('s-plan-time').value,
     claudeApiKey:(document.getElementById('s-claude-key').value||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'')||D.settings.claudeApiKey||'',
     theme:document.getElementById('s-theme')?.value||D.settings.theme||'dark',
-    firebaseConfig:document.getElementById('s-sync-cfg').value.trim()||D.settings.firebaseConfig||'',
-    syncDocId:document.getElementById('s-sync-doc').value.trim()||'',
+    firebaseConfig:D.settings.firebaseConfig||'',
+    syncDocId:D.settings.syncDocId||'',
     _onboarded:D.settings._onboarded,
   };
   scheduleTodayNotifications();
@@ -7537,10 +7507,14 @@ function _ensureFirebaseInit(){
   }catch(e){console.error('Firebase init error',e);return false;}
 }
 
-// ── Chargement des données depuis Firestore ──
+let _userDataUnsubscribe=null;
+let _lastLocalTs=0;
+
+// ── Chargement + écoute temps réel des données utilisateur ──
 async function loadUserData(uid){
   try{
     if(!_ensureFirebaseInit()) return;
+    // Chargement initial
     const doc=await _db.collection('users').doc(uid).collection('data').doc('appData').get();
     if(doc.exists){
       const remote=doc.data().payload?JSON.parse(doc.data().payload):{};
@@ -7548,8 +7522,48 @@ async function loadUserData(uid){
       D={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...(remote.settings||{})}};
       if(savedCfg) D.settings.firebaseConfig=savedCfg;
       localStorage.setItem(SK,JSON.stringify(D));
+      _lastLocalTs=D._localTs||0;
     }
-  }catch(e){console.error('loadUserData error',e);}
+    // Écoute temps réel — sync silencieux depuis autres appareils
+    if(_userDataUnsubscribe) _userDataUnsubscribe();
+    _userDataUnsubscribe=_db.collection('users').doc(uid).collection('data').doc('appData')
+      .onSnapshot(snap=>{
+        if(!snap.exists||!snap.data().payload) return;
+        const remote=JSON.parse(snap.data().payload);
+        // Ignorer si c'est notre propre écriture (même timestamp)
+        if(remote._localTs&&remote._localTs<=_lastLocalTs) return;
+        _lastLocalTs=remote._localTs||0;
+        const savedCfg=D.settings.firebaseConfig;
+        D={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...(remote.settings||{})}};
+        if(savedCfg) D.settings.firebaseConfig=savedCfg;
+        localStorage.setItem(SK,JSON.stringify(D));
+        // Re-render page courante silencieusement
+        if(typeof curPage!=='undefined'){
+          if(curPage==='today') renderToday();
+          else if(curPage==='tasks') renderTasks&&renderTasks();
+          else if(curPage==='habits') renderHabits&&renderHabits();
+          else if(curPage==='goals') renderGoals&&renderGoals();
+          else if(curPage==='finance') renderFinance&&renderFinance();
+          else if(curPage==='notes') renderNotes&&renderNotes();
+        }
+        updateSyncStatus('● Sync · ' + new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}),'var(--teal)');
+      });
+    updateSyncStatus('● Connecté · '+(_authUser?.email||''),'#22c55e');
+  }catch(e){
+    console.error('loadUserData error',e);
+    updateSyncStatus('⚠ Sync indisponible','#f59e0b');
+  }
+}
+
+function updateSyncStatus(label,color){
+  const el=document.getElementById('sync-status-label');
+  if(el){el.textContent=label;el.style.color=color||'var(--text)';}
+}
+
+function manualSync(){
+  if(!_authUser){showToast('Non connecté','error');return;}
+  saveUserData();
+  showToast('Sync en cours… ✅');
 }
 
 // ── Sauvegarde vers Firestore (debounced 2s) ──
