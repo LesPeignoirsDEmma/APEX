@@ -1,33 +1,33 @@
 {
-  "lastUpdated": "2026-03-20T11:57:20.744Z",
+  "lastUpdated": "2026-03-20T14:31:55.100Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1739,
-        "orders": 27,
+        "revenue": 1774,
+        "orders": 28,
         "currency": "EUR",
-        "syncedAt": "2026-03-20T11:57:24.267Z",
+        "syncedAt": "2026-03-20T14:31:57.793Z",
         "allTime": {
-          "revenue": 12061,
+          "revenue": 12042,
           "orders": 200
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 222,
-          "orders": 4,
-          "aov": 55,
+          "revenue": 257,
+          "orders": 5,
+          "aov": 51,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 177,
-          "revenueHalf2": 45,
+          "revenueHalf2": 80,
           "discountOrders": 3,
-          "discountRate": 75,
-          "discountShare": 8,
+          "discountRate": 60,
+          "discountShare": 7,
           "totalDiscounts": 18,
-          "newCust": 4,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 32,
@@ -52,18 +52,24 @@
               "name": "Peignoir Nid d’Abeille Manche Courte",
               "qty": 1,
               "revenue": 50
+            },
+            {
+              "name": "Cape de Bain Bébé Koala",
+              "qty": 1,
+              "revenue": 35
             }
           ],
-          "top3RevenueShare": 86,
+          "top3RevenueShare": 74,
           "hourly": {
             "7": 1,
             "9": 1,
+            "13": 1,
             "20": 1,
             "23": 1
           },
           "daily": {
             "4": 1,
-            "5": 1,
+            "5": 2,
             "6": 2
           },
           "totalProducts": 178,
@@ -71,7 +77,6 @@
             "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
-            "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
             "Cape de Bain Coton",
@@ -87,12 +92,13 @@
             "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
-            "Peignoir À Capuche Femme Doux"
+            "Peignoir À Capuche Femme Doux",
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 5,
-          "abandonRate": 20,
+          "totalCheckouts": 6,
+          "abandonRate": 17,
           "abandonedValue": 49,
           "topAbandoned": [
             {
@@ -100,26 +106,26 @@
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 6.3,
+          "sessions": 75,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:26.814Z"
+          "syncedAt": "2026-03-20T14:32:01.033Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1739,
-          "orders": 27,
-          "aov": 64,
+          "revenue": 1774,
+          "orders": 28,
+          "aov": 63,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1279,
-          "revenueHalf2": 459,
+          "revenueHalf2": 494,
           "discountOrders": 12,
-          "discountRate": 44,
+          "discountRate": 43,
           "discountShare": 4,
           "totalDiscounts": 72,
-          "newCust": 27,
+          "newCust": 28,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 32,
@@ -176,7 +182,7 @@
               "revenue": 60
             }
           ],
-          "top3RevenueShare": 45,
+          "top3RevenueShare": 44,
           "hourly": {
             "2": 1,
             "7": 1,
@@ -185,7 +191,7 @@
             "10": 2,
             "11": 1,
             "12": 2,
-            "13": 1,
+            "13": 2,
             "15": 4,
             "16": 2,
             "17": 1,
@@ -201,7 +207,7 @@
             "2": 2,
             "3": 5,
             "4": 4,
-            "5": 4,
+            "5": 5,
             "6": 3
           },
           "totalProducts": 178,
@@ -209,7 +215,6 @@
             "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
-            "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
             "Cape de Bain Coton",
@@ -225,12 +230,13 @@
             "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
-            "Peignoir À Capuche Femme Doux"
+            "Peignoir À Capuche Femme Doux",
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 35,
-          "abandonRate": 23,
+          "totalCheckouts": 36,
+          "abandonRate": 22,
           "abandonedValue": 404,
           "topAbandoned": [
             {
@@ -254,26 +260,26 @@
               "count": 1
             }
           ],
-          "sessions": 438,
+          "sessions": 450,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:27.826Z"
+          "syncedAt": "2026-03-20T14:32:01.824Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5996,
-          "orders": 97,
+          "revenue": 6031,
+          "orders": 98,
           "aov": 62,
           "currency": "EUR",
           "refunds": 16,
           "refundRate": 14,
           "revenueHalf1": 2271,
-          "revenueHalf2": 3725,
+          "revenueHalf2": 3760,
           "discountOrders": 51,
-          "discountRate": 53,
+          "discountRate": 52,
           "discountShare": 10,
           "totalDiscounts": 582,
-          "newCust": 95,
+          "newCust": 96,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 30,
@@ -341,7 +347,7 @@
             "10": 4,
             "11": 6,
             "12": 5,
-            "13": 2,
+            "13": 3,
             "14": 9,
             "15": 9,
             "16": 8,
@@ -359,14 +365,13 @@
             "2": 18,
             "3": 13,
             "4": 11,
-            "5": 12,
+            "5": 13,
             "6": 13
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
-            "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
@@ -383,11 +388,12 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 24,
-          "totalCheckouts": 122,
+          "totalCheckouts": 123,
           "abandonRate": 20,
           "abandonedValue": 1210,
           "topAbandoned": [
@@ -412,25 +418,25 @@
               "count": 1
             }
           ],
-          "sessions": 1525,
+          "sessions": 1538,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:28.998Z"
+          "syncedAt": "2026-03-20T14:32:02.588Z"
         },
         "365": {
           "period": 365,
-          "revenue": 12061,
+          "revenue": 12042,
           "orders": 200,
           "aov": 60,
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
           "revenueHalf1": 0,
-          "revenueHalf2": 12061,
-          "discountOrders": 135,
-          "discountRate": 68,
+          "revenueHalf2": 12042,
+          "discountOrders": 134,
+          "discountRate": 67,
           "discountShare": 10,
-          "totalDiscounts": 1150,
+          "totalDiscounts": 1144,
           "newCust": 198,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
@@ -501,13 +507,13 @@
             "10": 7,
             "11": 14,
             "12": 7,
-            "13": 8,
+            "13": 9,
             "14": 21,
             "15": 15,
             "16": 13,
             "17": 12,
             "18": 25,
-            "19": 17,
+            "19": 16,
             "20": 13,
             "21": 13,
             "22": 4,
@@ -519,14 +525,13 @@
             "2": 37,
             "3": 32,
             "4": 22,
-            "5": 25,
-            "6": 19
+            "5": 26,
+            "6": 18
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
-            "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
@@ -543,7 +548,8 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 24,
@@ -575,7 +581,7 @@
           "sessions": 2838,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:29.774Z"
+          "syncedAt": "2026-03-20T14:32:03.507Z"
         }
       }
     },
@@ -584,7 +590,7 @@
         "revenue": 794,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-03-20T11:57:31.108Z",
+        "syncedAt": "2026-03-20T14:32:04.998Z",
         "allTime": {
           "revenue": 794,
           "orders": 12
@@ -686,7 +692,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:32.348Z"
+          "syncedAt": "2026-03-20T14:32:06.817Z"
         },
         "30": {
           "period": 30,
@@ -820,7 +826,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:32.935Z"
+          "syncedAt": "2026-03-20T14:32:07.464Z"
         },
         "90": {
           "period": 90,
@@ -922,7 +928,7 @@
             "Cardigan Homme Façon Kimono",
             "Cardigan Kimono Coton Homme",
             "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
+            "Cardigan Kimono Homme Drap��",
             "Cardigan Kimono Noir Court Femme",
             "Chemise Col Kimono Homme",
             "Chemise Facon Kimono",
@@ -954,7 +960,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:33.630Z"
+          "syncedAt": "2026-03-20T14:32:08.035Z"
         },
         "365": {
           "period": 365,
@@ -1088,7 +1094,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T11:57:34.237Z"
+          "syncedAt": "2026-03-20T14:32:08.607Z"
         }
       }
     }
