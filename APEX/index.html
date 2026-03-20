@@ -1359,7 +1359,7 @@ html[data-theme="light"]{
   <div style="display:flex;gap:6px;margin-bottom:14px">
     <button class="cro-view-tab active" id="fv-finances" onclick="setFinView('finances',this)">💰 Finances</button>
     <button class="cro-view-tab" id="fv-pubs" onclick="setFinView('pubs',this)">📣 Pubs</button>
-    <button class="cro-view-tab" id="fv-couts" onclick="setFinView('couts',this)">🏭 Co\u00fbts</button>
+    <button class="cro-view-tab" id="fv-couts" onclick="setFinView('couts',this)">🏭 Coûts</button>
   </div>
 
   <div id="fin-main-content">
@@ -3538,7 +3538,7 @@ function setBizFilter(biz, barId, renderFn){
 // ═══════════════════════════════════════════════════════════════════════
 // AGENT IA — CLAUDE API  |  Multi-conversations + Dossiers
 // ═══════════════════════════════════════════════════════════════════════
-const AI_MODEL='claude-haiku-4-5-20251001';
+const AI_MODEL='claude-sonnet-4-6';
 let _aiTyping=false, _editNoteTimer=null;
 
 function getChatFolders(){
@@ -3696,7 +3696,7 @@ async function generateBriefing(){
   try{
     var r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:300,system:buildAIContext(),
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:300,system:buildAIContext(),
         messages:[{role:'user',content:'Briefing ultra-concis en 2-3 points max. Observe mes données et dis-moi ce qui est le plus important MAINTENANT. Direct, factuel, actionnable. Format: points courts avec emoji. Pas de blabla.'}]})});
     if(!r.ok) throw new Error('API '+r.status);
     var d=await r.json(); var text=d.content[0].text;
@@ -5989,7 +5989,7 @@ async function runCROAnalysisSingle(projectId){
       method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
       body:JSON.stringify({
-        model:'claude-sonnet-4-5',
+        model:'claude-sonnet-4-6',
         max_tokens:2500,
         system:'Tu es un expert CRO e-commerce et consultant Shopify d\'élite avec 15 ans d\'expérience, spécialisé dans la maximisation du CA des boutiques Shopify de 0 à 1M€/an. Tu fournis des analyses ultra-concrètes, chiffrées et actionnables — JAMAIS de conseils génériques. Chaque recommandation est spécifique aux données de la boutique, avec des étapes Shopify précises et un impact estimé en euros. Format: markdown avec sections et émojis. Langue: français.',
         messages:[{role:'user',content:
@@ -7373,7 +7373,7 @@ Règles :
     const r=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-haiku-4-5-20251001',max_tokens:512,messages:[{role:'user',content:prompt}]})
+      body:JSON.stringify({model:AI_MODEL,max_tokens:512,messages:[{role:'user',content:prompt}]})
     });
     if(!r.ok) throw new Error('API '+r.status);
     const data=await r.json();
