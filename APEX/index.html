@@ -7504,8 +7504,16 @@ function saveQuickCapture(){
 // AUTH — Firebase Authentication (email + password)
 // ═══════════════════════════════════════════════════════════════
 
-// Pour le SaaS : hardcoder la config ici (sinon utilise D.settings.firebaseConfig)
-const APEX_SAAS_CONFIG = null;
+// Config Firebase hardcodée pour le SaaS
+const APEX_SAAS_CONFIG = {
+  apiKey: "AIzaSyAxhXZF-q5MFlE7EVYs0d8IJPKPB5nMbdA",
+  authDomain: "apex-58f0b.firebaseapp.com",
+  projectId: "apex-58f0b",
+  storageBucket: "apex-58f0b.firebasestorage.app",
+  messagingSenderId: "897626385255",
+  appId: "1:897626385255:web:a885e96ea61da4e4ea9dc2",
+  measurementId: "G-TF5HM8VHGF"
+};
 
 let _authUser = null;
 let _firestoreSaveTimer = null;
