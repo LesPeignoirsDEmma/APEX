@@ -908,8 +908,15 @@ html[data-theme="light"]{
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 </head>
 <body>
+
+<!-- ═══ AUTH SCREEN ═══════════════════════════════════════════ -->
+<div id="auth-screen" style="display:none;position:fixed;inset:0;z-index:9999;background:#0a0a0f;align-items:center;justify-content:center;font-family:var(--font)">
+  <div id="auth-inner" style="width:100%;max-width:400px;padding:24px 20px"></div>
+</div>
+
 <svg id="apex-icons" xmlns="http://www.w3.org/2000/svg" style="display:none">
 <defs><linearGradient id="focus-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7B68EE"/><stop offset="100%" stop-color="#00C9C8"/></linearGradient></defs>
 <symbol id="ico-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
@@ -1940,6 +1947,14 @@ html[data-theme="light"]{
     </div>
 
     <div class="setting-group" style="margin-top:14px">
+      <!-- Compte connecté -->
+      <div id="auth-account-section" style="margin-bottom:14px;padding:12px 14px;background:var(--card2);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:10px">
+        <div>
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--t2);margin-bottom:2px">Compte</div>
+          <div id="auth-account-email" style="font-size:13px;color:var(--text);font-weight:600">—</div>
+        </div>
+        <button class="btn btn-sm" onclick="authSignOut()" style="background:#ef444422;color:#ef4444;border:1px solid #ef444440;flex-shrink:0">Déconnexion</button>
+      </div>
       <div class="slbl mb-8"><svg class="apex-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-hard-drive"/></svg> Mémoire & Sauvegarde</div>
       <div class="setting-desc" style="margin-bottom:12px">Exportez toutes vos données en un fichier JSON pour les sauvegarder, les transférer sur un autre appareil (Mac ↔ iPhone) ou les restaurer après une mise à jour.</div>
       <div style="display:flex;flex-direction:column;gap:8px">
@@ -2163,6 +2178,7 @@ function save(){
   D._localTs=Date.now();
   _dirty=true;
   localStorage.setItem(SK, JSON.stringify(D));
+  if(typeof _authUser!=='undefined'&&_authUser) saveUserData();
   if(D.settings.firebaseConfig&&D.settings.syncDocId){
     clearTimeout(_syncTimer);
     _syncTimer=setTimeout(pushSync,2000);
@@ -3001,6 +3017,17 @@ function moreNav(name){
 // SETTINGS
 // ═══════════════════════════════════════════════════════════════
 function openSettings(){
+  // Afficher l'email du compte connecté
+  const emailEl=document.getElementById('auth-account-email');
+  const accountSection=document.getElementById('auth-account-section');
+  if(emailEl&&accountSection){
+    if(typeof _authUser!=='undefined'&&_authUser){
+      emailEl.textContent=_authUser.email||'Connecté';
+      accountSection.style.display='flex';
+    } else {
+      accountSection.style.display='none';
+    }
+  }
   const s=D.settings;
   const thEl=document.getElementById('s-theme'); if(thEl) thEl.value=s.theme||'dark';
   document.getElementById('s-name').value=s.name||'Léo';
@@ -7473,7 +7500,227 @@ function saveQuickCapture(){
 }
 
 
-init();
+// ═══════════════════════════════════════════════════════════════
+// AUTH — Firebase Authentication (email + password)
+// ═══════════════════════════════════════════════════════════════
+
+// Pour le SaaS : hardcoder la config ici (sinon utilise D.settings.firebaseConfig)
+const APEX_SAAS_CONFIG = null;
+
+let _authUser = null;
+let _firestoreSaveTimer = null;
+let _authMode = 'login';
+
+function _getAuthFirebaseConfig(){
+  if(APEX_SAAS_CONFIG) return APEX_SAAS_CONFIG;
+  try{
+    const raw=D.settings.firebaseConfig;
+    return typeof raw==='string'?JSON.parse(raw):raw;
+  }catch(e){return null;}
+}
+
+function _ensureFirebaseInit(){
+  const cfg=_getAuthFirebaseConfig();
+  if(!cfg||!cfg.projectId) return false;
+  try{
+    if(!firebase.apps.length) firebase.initializeApp(cfg);
+    if(!_db) _db=firebase.firestore();
+    return true;
+  }catch(e){console.error('Firebase init error',e);return false;}
+}
+
+// ── Chargement des données depuis Firestore ──
+async function loadUserData(uid){
+  try{
+    if(!_ensureFirebaseInit()) return;
+    const doc=await _db.collection('users').doc(uid).collection('data').doc('appData').get();
+    if(doc.exists){
+      const remote=doc.data().payload?JSON.parse(doc.data().payload):{};
+      const savedCfg=D.settings.firebaseConfig;
+      D={...DEFAULTS,...remote,settings:{...DEFAULTS.settings,...(remote.settings||{})}};
+      if(savedCfg) D.settings.firebaseConfig=savedCfg;
+      localStorage.setItem(SK,JSON.stringify(D));
+    }
+  }catch(e){console.error('loadUserData error',e);}
+}
+
+// ── Sauvegarde vers Firestore (debounced 2s) ──
+function saveUserData(){
+  if(!_authUser||!_db) return;
+  clearTimeout(_firestoreSaveTimer);
+  _firestoreSaveTimer=setTimeout(async()=>{
+    try{
+      await _db.collection('users').doc(_authUser.uid).collection('data').doc('appData').set({
+        payload:JSON.stringify(D),
+        updatedAt:Date.now(),
+        email:_authUser.email||''
+      });
+    }catch(e){console.error('saveUserData error',e);}
+  },2000);
+}
+
+// ── Rendu de l'écran auth ──
+function renderAuthScreen(){
+  const el=document.getElementById('auth-inner'); if(!el) return;
+  const isLogin=_authMode==='login';
+  el.innerHTML=`
+    <div style="text-align:center;margin-bottom:28px">
+      <div style="font-size:32px;font-weight:900;font-family:var(--font2);letter-spacing:-.03em;color:#fff">APEX<span style="color:#8B5CF6">.</span></div>
+      <div style="font-size:13px;color:#888;margin-top:6px">Ton second cerveau e-commerce</div>
+    </div>
+    <div style="background:#13131a;border:1px solid #2a2a35;border-radius:16px;padding:24px">
+      <div style="font-size:17px;font-weight:700;margin-bottom:20px;color:#fff">${isLogin?'Connexion':'Créer un compte'}</div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div>
+          <label style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#888;display:block;margin-bottom:5px">Email</label>
+          <input id="auth-email" type="email" placeholder="ton@email.com"
+            style="width:100%;box-sizing:border-box;background:#1c1c26;border:1px solid #2a2a35;border-radius:8px;padding:11px 13px;color:#fff;font-size:14px;outline:none;font-family:inherit"
+            onkeydown="if(event.key==='Enter')document.getElementById('auth-password').focus()">
+        </div>
+        <div>
+          <label style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#888;display:block;margin-bottom:5px">Mot de passe</label>
+          <input id="auth-password" type="password" placeholder="${isLogin?'••••••••':'Minimum 6 caractères'}"
+            style="width:100%;box-sizing:border-box;background:#1c1c26;border:1px solid #2a2a35;border-radius:8px;padding:11px 13px;color:#fff;font-size:14px;outline:none;font-family:inherit"
+            onkeydown="if(event.key==='Enter')${isLogin?'authSignIn()':'authSignUp()'}">
+        </div>
+        <div id="auth-error" style="font-size:12px;color:#ef4444;min-height:16px;text-align:center"></div>
+        <button id="auth-submit-btn" onclick="${isLogin?'authSignIn()':'authSignUp()'}"
+          style="width:100%;padding:13px;background:linear-gradient(135deg,#8B5CF6,#6D28D9);border:none;border-radius:10px;color:#fff;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit">
+          ${isLogin?'Se connecter →':'Créer mon compte →'}
+        </button>
+        ${isLogin?`<button onclick="authForgotPassword()" style="background:none;border:none;color:#888;cursor:pointer;font-size:12px;padding:2px;font-family:inherit">Mot de passe oublié ?</button>`:''}
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:16px;font-size:13px;color:#666">
+      ${isLogin?'Pas encore de compte ?':'Déjà un compte ?'}
+      <button onclick="toggleAuthMode()" style="background:none;border:none;color:#8B5CF6;cursor:pointer;font-size:13px;font-weight:600;padding:0 4px;font-family:inherit">
+        ${isLogin?'Créer un compte →':'← Se connecter'}
+      </button>
+    </div>
+  `;
+  setTimeout(()=>document.getElementById('auth-email')?.focus(),100);
+}
+
+function toggleAuthMode(){
+  _authMode=_authMode==='login'?'signup':'login';
+  const errEl=document.getElementById('auth-error');
+  if(errEl) errEl.textContent='';
+  renderAuthScreen();
+}
+
+function showAuthScreen(){
+  const el=document.getElementById('auth-screen');
+  if(el){el.style.display='flex'; renderAuthScreen();}
+}
+
+function hideAuthScreen(){
+  const el=document.getElementById('auth-screen');
+  if(el) el.style.display='none';
+}
+
+function authErrMsg(code){
+  const m={
+    'auth/user-not-found':'Aucun compte avec cet email',
+    'auth/wrong-password':'Mot de passe incorrect',
+    'auth/invalid-email':'Email invalide',
+    'auth/email-already-in-use':'Cet email est déjà utilisé',
+    'auth/weak-password':'Mot de passe trop court (min. 6 caractères)',
+    'auth/too-many-requests':'Trop de tentatives — réessaie dans quelques minutes',
+    'auth/invalid-credential':'Email ou mot de passe incorrect',
+    'auth/network-request-failed':'Erreur réseau — vérifie ta connexion'
+  };
+  return m[code]||'Erreur : '+code;
+}
+
+async function authSignIn(){
+  const email=(document.getElementById('auth-email')?.value||'').trim();
+  const pwd=document.getElementById('auth-password')?.value||'';
+  const errEl=document.getElementById('auth-error');
+  const btn=document.getElementById('auth-submit-btn');
+  if(!email||!pwd){if(errEl)errEl.textContent='Email et mot de passe requis';return;}
+  if(btn){btn.disabled=true;btn.textContent='Connexion...';}
+  try{
+    if(!_ensureFirebaseInit()) throw new Error('Firebase non configuré — ajoute ta config dans Réglages');
+    await firebase.auth().signInWithEmailAndPassword(email,pwd);
+  }catch(e){
+    if(errEl) errEl.textContent=e.code?authErrMsg(e.code):e.message;
+    if(btn){btn.disabled=false;btn.textContent='Se connecter →';}
+  }
+}
+
+async function authSignUp(){
+  const email=(document.getElementById('auth-email')?.value||'').trim();
+  const pwd=document.getElementById('auth-password')?.value||'';
+  const errEl=document.getElementById('auth-error');
+  const btn=document.getElementById('auth-submit-btn');
+  if(!email||!pwd){if(errEl)errEl.textContent='Email et mot de passe requis';return;}
+  if(pwd.length<6){if(errEl)errEl.textContent='Mot de passe trop court (min. 6 caractères)';return;}
+  if(btn){btn.disabled=true;btn.textContent='Création...';}
+  try{
+    if(!_ensureFirebaseInit()) throw new Error('Firebase non configuré — ajoute ta config dans Réglages');
+    await firebase.auth().createUserWithEmailAndPassword(email,pwd);
+  }catch(e){
+    if(errEl) errEl.textContent=e.code?authErrMsg(e.code):e.message;
+    if(btn){btn.disabled=false;btn.textContent='Créer mon compte →';}
+  }
+}
+
+async function authSignOut(){
+  try{
+    await firebase.auth().signOut();
+    _authUser=null;
+    localStorage.removeItem(SK);
+    D={...DEFAULTS};
+    showAuthScreen();
+    showToast('Déconnecté ✅');
+  }catch(e){console.error('signOut error',e);}
+}
+
+async function authForgotPassword(){
+  const email=(document.getElementById('auth-email')?.value||'').trim();
+  const errEl=document.getElementById('auth-error');
+  if(!email){if(errEl){errEl.style.color='#ef4444';errEl.textContent='Entre ton email d\'abord';}return;}
+  try{
+    await firebase.auth().sendPasswordResetEmail(email);
+    if(errEl){errEl.style.color='#22c55e';errEl.textContent='Email envoyé ! Vérifie ta boîte mail 📬';}
+  }catch(e){
+    if(errEl){errEl.style.color='#ef4444';errEl.textContent=authErrMsg(e.code);}
+  }
+}
+
+// ── Initialisation Auth ──
+function initAuth(){
+  const cfg=_getAuthFirebaseConfig();
+  if(!cfg||!cfg.projectId){
+    // Pas de config Firebase → mode dev local, pas d'auth
+    hideAuthScreen();
+    init();
+    return;
+  }
+  try{
+    if(!firebase.apps.length) firebase.initializeApp(cfg);
+    _db=firebase.firestore();
+    // Afficher l'écran auth pendant le chargement
+    showAuthScreen();
+    firebase.auth().onAuthStateChanged(async user=>{
+      _authUser=user;
+      if(user){
+        // Chargement des données depuis Firestore
+        await loadUserData(user.uid);
+        hideAuthScreen();
+        init();
+      }else{
+        showAuthScreen();
+      }
+    });
+  }catch(e){
+    console.error('initAuth error',e);
+    hideAuthScreen();
+    init();
+  }
+}
+
+initAuth();
 </script>
 
 <!-- DW TIMER FLOTTANT -->
