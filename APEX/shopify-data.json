@@ -1,47 +1,42 @@
 {
-  "lastUpdated": "2026-03-19T23:00:43.037Z",
+  "lastUpdated": "2026-03-20T05:08:19.523Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1694,
-        "orders": 26,
+        "revenue": 1739,
+        "orders": 27,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T23:00:45.386Z",
+        "syncedAt": "2026-03-20T05:08:21.664Z",
         "allTime": {
-          "revenue": 12016,
-          "orders": 199
+          "revenue": 12061,
+          "orders": 200
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 247,
+          "revenue": 222,
           "orders": 4,
-          "aov": 62,
+          "aov": 55,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 247,
-          "revenueHalf2": 0,
-          "discountOrders": 2,
-          "discountRate": 50,
-          "discountShare": 5,
-          "totalDiscounts": 13,
+          "revenueHalf1": 177,
+          "revenueHalf2": 45,
+          "discountOrders": 3,
+          "discountRate": 75,
+          "discountShare": 8,
+          "totalDiscounts": 18,
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 1,
               "revenue": 75
-            },
-            {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 1,
-              "revenue": 70
             },
             {
               "name": "Peignoir Court Capuche - Femme",
@@ -52,14 +47,19 @@
               "name": "Robe Peignoir Coton Léger",
               "qty": 1,
               "revenue": 55
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Manche Courte",
+              "qty": 1,
+              "revenue": 50
             }
           ],
-          "top3RevenueShare": 83,
+          "top3RevenueShare": 86,
           "hourly": {
             "7": 1,
             "9": 1,
             "20": 1,
-            "22": 1
+            "23": 1
           },
           "daily": {
             "4": 1,
@@ -103,26 +103,26 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:47.649Z"
+          "syncedAt": "2026-03-20T05:08:23.818Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1694,
-          "orders": 26,
-          "aov": 65,
+          "revenue": 1739,
+          "orders": 27,
+          "aov": 64,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1279,
-          "revenueHalf2": 414,
-          "discountOrders": 11,
-          "discountRate": 42,
+          "revenueHalf2": 459,
+          "discountOrders": 12,
+          "discountRate": 44,
           "discountShare": 4,
-          "totalDiscounts": 67,
-          "newCust": 26,
+          "totalDiscounts": 72,
+          "newCust": 27,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -176,7 +176,7 @@
               "revenue": 60
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 45,
           "hourly": {
             "2": 1,
             "7": 1,
@@ -192,14 +192,15 @@
             "18": 2,
             "19": 1,
             "20": 1,
-            "22": 1
+            "22": 1,
+            "23": 1
           },
           "daily": {
             "0": 4,
             "1": 5,
             "2": 2,
             "3": 5,
-            "4": 3,
+            "4": 4,
             "5": 4,
             "6": 3
           },
@@ -227,10 +228,10 @@
             "Peignoir À Capuche Femme Doux"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 9,
+          "abandonedCheckouts": 8,
           "totalCheckouts": 35,
-          "abandonRate": 26,
-          "abandonedValue": 463,
+          "abandonRate": 23,
+          "abandonedValue": 404,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -241,38 +242,38 @@
               "count": 1
             },
             {
-              "name": "Peignoir Coton",
-              "count": 1
-            },
-            {
               "name": "Peignoir Nid d’Abeille Manche Courte",
               "count": 1
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
               "count": 1
+            },
+            {
+              "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+              "count": 1
             }
           ],
           "sessions": 438,
-          "conversionRate": 5.9,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:48.426Z"
+          "syncedAt": "2026-03-20T05:08:24.653Z"
         },
         "90": {
           "period": 90,
-          "revenue": 6306,
-          "orders": 101,
+          "revenue": 5996,
+          "orders": 97,
           "aov": 62,
           "currency": "EUR",
-          "refunds": 17,
+          "refunds": 16,
           "refundRate": 14,
-          "revenueHalf1": 2556,
-          "revenueHalf2": 3750,
-          "discountOrders": 53,
-          "discountRate": 52,
-          "discountShare": 9,
-          "totalDiscounts": 596,
-          "newCust": 99,
+          "revenueHalf1": 2271,
+          "revenueHalf2": 3725,
+          "discountOrders": 51,
+          "discountRate": 53,
+          "discountShare": 10,
+          "totalDiscounts": 582,
+          "newCust": 95,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 30,
@@ -280,8 +281,8 @@
           "topProducts": [
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 10,
-              "revenue": 826
+              "qty": 9,
+              "revenue": 741
             },
             {
               "name": "Peignoir Femme Flanelle",
@@ -289,12 +290,12 @@
               "revenue": 623
             },
             {
-              "name": "Peignoir Éponge Rose Rayé",
-              "qty": 8,
-              "revenue": 479
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "qty": 6,
+              "revenue": 359
             },
             {
-              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "name": "Peignoir Éponge Rose Rayé",
               "qty": 6,
               "revenue": 359
             },
@@ -329,11 +330,9 @@
               "revenue": 180
             }
           ],
-          "top3RevenueShare": 31,
+          "top3RevenueShare": 29,
           "hourly": {
-            "0": 1,
             "2": 2,
-            "3": 1,
             "5": 1,
             "6": 1,
             "7": 1,
@@ -349,18 +348,18 @@
             "17": 5,
             "18": 8,
             "19": 8,
-            "20": 6,
-            "21": 9,
+            "20": 5,
+            "21": 7,
             "22": 1,
-            "23": 1
+            "23": 2
           },
           "daily": {
             "0": 18,
             "1": 12,
             "2": 18,
             "3": 13,
-            "4": 10,
-            "5": 17,
+            "4": 11,
+            "5": 12,
             "6": 13
           },
           "totalProducts": 178,
@@ -387,15 +386,11 @@
             "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 59,
-          "abandonedCheckouts": 29,
-          "totalCheckouts": 131,
-          "abandonRate": 22,
-          "abandonedValue": 1491,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 122,
+          "abandonRate": 20,
+          "abandonedValue": 1210,
           "topAbandoned": [
-            {
-              "name": "Peignoir Éponge Rose Rayé",
-              "count": 4
-            },
             {
               "name": "Peignoir Rose Rayé – Femme",
               "count": 3
@@ -409,30 +404,34 @@
               "count": 2
             },
             {
-              "name": "Peignoir Satiné Élégant Long",
+              "name": "Peignoir Éponge Rose Rayé",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Rayé Coloré - Unisexe",
               "count": 1
             }
           ],
-          "sessions": 1638,
-          "conversionRate": 6.2,
+          "sessions": 1525,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:49.386Z"
+          "syncedAt": "2026-03-20T05:08:25.475Z"
         },
         "365": {
           "period": 365,
-          "revenue": 12016,
-          "orders": 199,
+          "revenue": 12061,
+          "orders": 200,
           "aov": 60,
           "currency": "EUR",
-          "refunds": 51,
+          "refunds": 50,
           "refundRate": 20,
           "revenueHalf1": 0,
-          "revenueHalf2": 12016,
-          "discountOrders": 134,
-          "discountRate": 67,
+          "revenueHalf2": 12061,
+          "discountOrders": 135,
+          "discountRate": 68,
           "discountShare": 10,
-          "totalDiscounts": 1145,
-          "newCust": 197,
+          "totalDiscounts": 1150,
+          "newCust": 198,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 30,
@@ -489,7 +488,7 @@
               "revenue": 270
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 45,
           "hourly": {
             "0": 1,
             "2": 2,
@@ -512,14 +511,14 @@
             "20": 13,
             "21": 13,
             "22": 4,
-            "23": 3
+            "23": 4
           },
           "daily": {
             "0": 36,
             "1": 29,
             "2": 37,
             "3": 32,
-            "4": 21,
+            "4": 22,
             "5": 25,
             "6": 19
           },
@@ -548,7 +547,7 @@
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 29,
-          "totalCheckouts": 231,
+          "totalCheckouts": 232,
           "abandonRate": 13,
           "abandonedValue": 1491,
           "topAbandoned": [
@@ -573,10 +572,10 @@
               "count": 1
             }
           ],
-          "sessions": 2888,
+          "sessions": 2900,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:50.465Z"
+          "syncedAt": "2026-03-20T05:08:26.598Z"
         }
       }
     },
@@ -585,7 +584,7 @@
         "revenue": 794,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-03-19T23:00:51.831Z",
+        "syncedAt": "2026-03-20T05:08:28.163Z",
         "allTime": {
           "revenue": 794,
           "orders": 12
@@ -600,8 +599,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 300,
+          "revenueHalf1": 55,
+          "revenueHalf2": 245,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
@@ -687,7 +686,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:53.146Z"
+          "syncedAt": "2026-03-20T05:08:29.421Z"
         },
         "30": {
           "period": 30,
@@ -821,7 +820,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:53.774Z"
+          "syncedAt": "2026-03-20T05:08:30.047Z"
         },
         "90": {
           "period": 90,
@@ -955,7 +954,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:54.462Z"
+          "syncedAt": "2026-03-20T05:08:30.686Z"
         },
         "365": {
           "period": 365,
@@ -1089,7 +1088,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-19T23:00:55.773Z"
+          "syncedAt": "2026-03-20T05:08:31.338Z"
         }
       }
     }
