@@ -4893,7 +4893,7 @@ function wBreakeven(data){
   const apexRoas=data.spend>0?data.convValue/data.spend:0;
   const gRoas=data.reportedRoas||apexRoas;
   const surplus=gRoas>0?gRoas-beRoas:0;
-  const profitEst=surplus>0&&data.spend>0?data.spend*(surplus):0;
+  const profitEst=surplus>0&&data.spend>0?data.spend*(gRoas*margin/100-1):0;
   return '<div class="ad-widget">'
     +'<div class="ad-widget-title">⚖️ Breakeven ROAS</div>'
     +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px">'
@@ -4938,29 +4938,22 @@ function wBudget(data){
     +'</div>';
 }
 
-function wCacLtv(data, shopify){
+function wCacLtv(data){
   if(!adWidgetOn('cac_ltv')) return '';
-  const newCusts=shopify?shopify.orders:data.conversions||0;
-  const cac=newCusts>0&&data.spend>0?data.spend/newCusts:0;
+  const conv=data.conversions||0;
+  const cac=conv>0&&data.spend>0?data.spend/conv:0;
+  if(!cac) return '';
   const targetCac=D.settings.adTargetCac||0;
-  // LTV from Shopify CRO cache
-  let avgLtv=0;
-  (D.projects||[]).forEach(p=>{
-    const cache=_croCache[p.id]; if(!cache) return;
-    const d=cache[30]||cache[7];
-    if(d&&d.avgLTV) avgLtv=Math.max(avgLtv,d.avgLTV);
-  });
-  const ratio=cac>0&&avgLtv>0?avgLtv/cac:0;
+  const cpc=data.clicks>0&&data.spend>0?data.spend/data.clicks:0;
+  const cvr=data.clicks>0&&conv>0?conv/data.clicks*100:0;
   return '<div class="ad-widget">'
-    +'<div class="ad-widget-title">👤 CAC & LTV</div>'
+    +'<div class="ad-widget-title">👤 Acquisition</div>'
     +'<div class="ad-kpi-grid" style="grid-template-columns:repeat(3,1fr)">'
       +'<div class="ad-kpi"><div class="av '+(targetCac>0?(cac<=targetCac?'roas-hi':'roas-lo'):'')+'">'+fmtK(cac)+'</div>'
         +'<div class="al">CAC</div>'+(targetCac?'<div class="al">cible '+fmtK(targetCac)+'</div>':'')+'</div>'
-      +'<div class="ad-kpi"><div class="av">'+fmtK(avgLtv)+'</div><div class="al">LTV moy. (Shopify)</div></div>'
-      +'<div class="ad-kpi"><div class="av '+(ratio>=3?'roas-hi':ratio>=1.5?'roas-mid':'roas-lo')+'">'+(ratio>0?ratio.toFixed(1)+'x':'—')+'</div><div class="al">LTV:CAC</div></div>'
+      +'<div class="ad-kpi"><div class="av">'+fmtK(cpc)+'</div><div class="al">CPC moy.</div></div>'
+      +'<div class="ad-kpi"><div class="av">'+(cvr>0?cvr.toFixed(2)+'%':'—')+'</div><div class="al">Taux conv.</div></div>'
     +'</div>'
-    +(ratio>0&&ratio<1?'<div style="font-size:11px;color:#ef4444;margin-top:8px;padding:5px 8px;background:#ef444418;border-radius:6px">⚠️ LTV:CAC < 1 — tu perds de l\'argent sur chaque client</div>':'')
-    +(ratio>=3?'<div style="font-size:11px;color:#22c55e;margin-top:8px;padding:5px 8px;background:#22c55e18;border-radius:6px">✅ LTV:CAC excellent (≥ 3x)</div>':'')
     +'</div>';
 }
 
@@ -4997,7 +4990,7 @@ function wTrends(){
     +'</div>';
 }
 
-function wAlerts(data, shopify){
+function wAlerts(data){
   if(!adWidgetOn('alerts')) return '';
   const alerts=[];
   const apexRoas=data.spend>0?data.convValue/data.spend:0;
@@ -5005,12 +4998,7 @@ function wAlerts(data, shopify){
   const budget=D.settings.adBudgetMonthly||0;
   const targetRoas=D.settings.adTargetRoas||3;
   if(apexRoas>0&&apexRoas<minRoas)
-    alerts.push({type:'err',msg:'ROAS APEX ('+roasFmt(apexRoas)+') sous le seuil d\'alerte ('+roasFmt(minRoas)+')'});
-  const realMAlert=calcRealMarginPct();
-  const marginAlert=realMAlert!==null?realMAlert:(D.settings.adMarginPct||30);
-  const beRoas=marginAlert>0?100/marginAlert:0;
-  if(apexRoas>0&&apexRoas<beRoas)
-    alerts.push({type:'err',msg:'ROAS sous le breakeven ('+roasFmt(beRoas)+') — campagnes non rentables'});
+    alerts.push({type:'err',msg:'ROAS ('+roasFmt(apexRoas)+') sous le seuil d\'alerte ('+roasFmt(minRoas)+')'});
   if(budget>0){
     const days=_adsPeriod===365?365:_adsPeriod;
     const daily=data.spend/days;
@@ -5242,20 +5230,16 @@ function renderAdsSection(){
     el.innerHTML=html; return;
   }
 
-  // Render all enabled widgets
-  html+=wAlerts(data, shopify);
+  // Render campaign stats widgets only (financial analysis is in Finances tab)
+  html+=wAlerts(data);
   html+=wRoasCompare(data);
-  html+=wMer(data, shopify);
-  html+=wBreakeven(data);
   html+=wBudget(data);
-  html+=wCacLtv(data, shopify);
+  html+=wCacLtv(data);
   html+=wTrends();
   html+=wPeriodVs(data);
-  html+=wShopify(data, shopify);
   html+=wCampaigns(data);
   html+=wKeywords(data);
   html+=wDevices(data);
-  html+=wHealth(data, shopify);
 
   // Manual snapshots list
   if(data.source==='manual'){
@@ -7118,22 +7102,35 @@ function renderEcomKPIs(){
   const projs=D.projects&&D.projects.length?D.projects:DEFAULT_PROJECTS;
   if(!projs.length){el.style.display='none';return;}
   el.style.display='block';
-  const proj=projs[0];
+  // Use currently selected boutique (or first project)
+  const proj=(_finShop&&_finShop!=='all'?projs.find(p=>p.id===_finShop):null)||projs[0];
   const kpis=(D.kpis||{})[proj.id]||{};
-  const fv=(v,suffix,cls)=>{
-    if(v===null||v===undefined||v==='') return `<span style="color:var(--t3)">—</span>`;
-    return `<span class="kpi-eco-val ${cls||''}">${v}${suffix}</span>`;
+  // Auto-populate from Google Ads data if not set manually
+  const _adPeriodMap={month:30,'7d':7,'30d':30,'3m':90,'year':365,'total':365};
+  const adPeriod=_adPeriodMap[_finPeriod]||30;
+  const adData=getAdPeriodData(adPeriod);
+  const autoRoas=adData&&adData.spend>0?(adData.reportedRoas||(adData.convValue/adData.spend)):null;
+  const autoCac=adData&&adData.spend>0&&adData.conversions>0?(adData.spend/adData.conversions):null;
+  const autoConv=adData&&adData.clicks>0&&adData.conversions>0?(adData.conversions/adData.clicks*100):null;
+  const autoAov=adData&&adData.conversions>0&&adData.convValue>0?(adData.convValue/adData.conversions):null;
+  const fv=(manual,auto,suffix,cls,decimals)=>{
+    const val=manual!==undefined&&manual!==''?parseFloat(manual):(auto!==null&&auto!==undefined?auto:null);
+    const isAuto=!(manual!==undefined&&manual!=='')&&auto!==null&&auto!==undefined;
+    if(val===null||isNaN(val)) return `<span style="color:var(--t3)">—</span>`;
+    const fmt=suffix==='€'?fmtEur(val):val.toFixed(decimals||2)+suffix;
+    return `<span class="kpi-eco-val ${cls||''}">${fmt}</span>`+(isAuto?'<div class="kpi-eco-hint" style="color:var(--teal);font-size:9px">● auto Google Ads</div>':'');
   };
-  const roas=kpis.roas;const cac=kpis.cac;const conv=kpis.conv;const aov=kpis.aov;
-  const roasCls=roas?(parseFloat(roas)>=3?'good':parseFloat(roas)<1.5?'bad':''):'';
-  const convCls=conv?(parseFloat(conv)>=3?'good':parseFloat(conv)<1?'bad':''):'';
+  const roasVal=kpis.roas!==undefined&&kpis.roas!==''?parseFloat(kpis.roas):autoRoas;
+  const roasCls=roasVal?(roasVal>=3?'good':roasVal<1.5?'bad':''):'';
+  const convVal=kpis.conv!==undefined&&kpis.conv!==''?parseFloat(kpis.conv):autoConv;
+  const convCls=convVal?(convVal>=3?'good':convVal<1?'bad':''):'';
   const listEl=document.getElementById('fin-ekpi-list');
   if(!listEl) return;
   listEl.innerHTML=`<div class="kpi-eco-grid">
-    <div class="kpi-eco-card"><div class="kpi-eco-label">ROAS</div>${fv(roas,'x',roasCls)}<div class="kpi-eco-hint">Retour sur dépense pub</div></div>
-    <div class="kpi-eco-card"><div class="kpi-eco-label">CAC</div>${fv(cac,'€','')}<div class="kpi-eco-hint">Coût acquisition client</div></div>
-    <div class="kpi-eco-card"><div class="kpi-eco-label">Taux de conv.</div>${fv(conv,'%',convCls)}<div class="kpi-eco-hint">Visiteurs → acheteurs</div></div>
-    <div class="kpi-eco-card"><div class="kpi-eco-label">Panier moyen</div>${fv(aov,'€','')}<div class="kpi-eco-hint">Average order value</div></div>
+    <div class="kpi-eco-card"><div class="kpi-eco-label">ROAS</div>${fv(kpis.roas,autoRoas,'x',roasCls,2)}<div class="kpi-eco-hint">Retour sur dépense pub</div></div>
+    <div class="kpi-eco-card"><div class="kpi-eco-label">CAC</div>${fv(kpis.cac,autoCac,'€','',0)}<div class="kpi-eco-hint">Coût acquisition client</div></div>
+    <div class="kpi-eco-card"><div class="kpi-eco-label">Taux de conv.</div>${fv(kpis.conv,autoConv,'%',convCls,2)}<div class="kpi-eco-hint">Clics → conversions</div></div>
+    <div class="kpi-eco-card"><div class="kpi-eco-label">Panier moyen</div>${fv(kpis.aov,autoAov,'€','',0)}<div class="kpi-eco-hint">Valeur moy. par conversion</div></div>
   </div>`;
 }
 
