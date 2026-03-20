@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-20T10:03:54.442Z",
+  "lastUpdated": "2026-03-20T11:57:20.744Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1739,
         "orders": 27,
         "currency": "EUR",
-        "syncedAt": "2026-03-20T10:03:57.442Z",
+        "syncedAt": "2026-03-20T11:57:24.267Z",
         "allTime": {
           "revenue": 12061,
           "orders": 200
@@ -103,7 +103,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:00.013Z"
+          "syncedAt": "2026-03-20T11:57:26.814Z"
         },
         "30": {
           "period": 30,
@@ -257,7 +257,7 @@
           "sessions": 438,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:00.865Z"
+          "syncedAt": "2026-03-20T11:57:27.826Z"
         },
         "90": {
           "period": 90,
@@ -415,7 +415,7 @@
           "sessions": 1525,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:02.048Z"
+          "syncedAt": "2026-03-20T11:57:28.998Z"
         },
         "365": {
           "period": 365,
@@ -546,15 +546,11 @@
             "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 29,
-          "totalCheckouts": 232,
-          "abandonRate": 13,
-          "abandonedValue": 1491,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 227,
+          "abandonRate": 11,
+          "abandonedValue": 1210,
           "topAbandoned": [
-            {
-              "name": "Peignoir Éponge Rose Rayé",
-              "count": 4
-            },
             {
               "name": "Peignoir Rose Rayé – Femme",
               "count": 3
@@ -568,14 +564,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Satiné Élégant Long",
+              "name": "Peignoir Éponge Rose Rayé",
+              "count": 1
+            },
+            {
+              "name": "Peignoir Rayé Coloré - Unisexe",
               "count": 1
             }
           ],
-          "sessions": 2900,
-          "conversionRate": 6.9,
+          "sessions": 2838,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:03.039Z"
+          "syncedAt": "2026-03-20T11:57:29.774Z"
         }
       }
     },
@@ -584,7 +584,7 @@
         "revenue": 794,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-03-20T10:04:04.605Z",
+        "syncedAt": "2026-03-20T11:57:31.108Z",
         "allTime": {
           "revenue": 794,
           "orders": 12
@@ -686,7 +686,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:05.956Z"
+          "syncedAt": "2026-03-20T11:57:32.348Z"
         },
         "30": {
           "period": 30,
@@ -820,7 +820,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:06.866Z"
+          "syncedAt": "2026-03-20T11:57:32.935Z"
         },
         "90": {
           "period": 90,
@@ -954,7 +954,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:07.475Z"
+          "syncedAt": "2026-03-20T11:57:33.630Z"
         },
         "365": {
           "period": 365,
@@ -1088,7 +1088,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-20T10:04:08.285Z"
+          "syncedAt": "2026-03-20T11:57:34.237Z"
         }
       }
     }
