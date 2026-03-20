@@ -4156,6 +4156,8 @@ function setFinShop(id,btn){
   document.querySelectorAll('.fin-shop-btn').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
   renderFinance();
+  if(_adsView==='pubs') renderAdsSection();
+  if(_adsView==='couts') renderCogsSection();
 }
 
 function renderFinShopBar(){
@@ -4258,8 +4260,16 @@ function renderFinKPIs(){
   const exps=(D.expenses||[]).filter(e=>e.date>=from&&e.date<=to);
   const totalManualExp=exps.reduce((s,e)=>s+(parseFloat(e.amount)||0),0);
   // Dépenses pub Google Ads — mapping période Finance → période Ads
-  const _adPeriodMap={month:30,'7d':7,'30d':30,'3m':90,'year':365,'total':365};
-  const adPeriod=_adPeriodMap[_finPeriod]||30;
+  const _adPeriodMap={month:30,'7d':7,'30d':30,'3m':90,'total':365};
+  let adPeriod;
+  if(_finPeriod==='year'){
+    // Calcule le vrai nombre de jours depuis le 1er janvier
+    const now2=new Date(); const jan1=new Date(now2.getFullYear(),0,1);
+    const daysSinceJan1=Math.ceil((now2-jan1)/86400000);
+    adPeriod=daysSinceJan1<=7?7:daysSinceJan1<=30?30:daysSinceJan1<=90?90:365;
+  } else {
+    adPeriod=_adPeriodMap[_finPeriod]||30;
+  }
   const adData=getAdPeriodData(adPeriod);
   const adSpend=adData&&adData.spend>0?adData.spend:0;
   const totalExp=totalManualExp+adSpend;
@@ -7106,8 +7116,15 @@ function renderEcomKPIs(){
   const proj=(_finShop&&_finShop!=='all'?projs.find(p=>p.id===_finShop):null)||projs[0];
   const kpis=(D.kpis||{})[proj.id]||{};
   // Auto-populate from Google Ads data if not set manually
-  const _adPeriodMap={month:30,'7d':7,'30d':30,'3m':90,'year':365,'total':365};
-  const adPeriod=_adPeriodMap[_finPeriod]||30;
+  const _adPeriodMap={month:30,'7d':7,'30d':30,'3m':90,'total':365};
+  let adPeriod;
+  if(_finPeriod==='year'){
+    const now2=new Date(); const jan1=new Date(now2.getFullYear(),0,1);
+    const daysSinceJan1=Math.ceil((now2-jan1)/86400000);
+    adPeriod=daysSinceJan1<=7?7:daysSinceJan1<=30?30:daysSinceJan1<=90?90:365;
+  } else {
+    adPeriod=_adPeriodMap[_finPeriod]||30;
+  }
   const adData=getAdPeriodData(adPeriod);
   const autoRoas=adData&&adData.spend>0?(adData.reportedRoas||(adData.convValue/adData.spend)):null;
   const autoCac=adData&&adData.spend>0&&adData.conversions>0?(adData.spend/adData.conversions):null;
