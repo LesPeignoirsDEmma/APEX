@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-21T23:49:29.519Z",
+  "lastUpdated": "2026-03-22T05:12:20.948Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1687,
-        "orders": 27,
+        "revenue": 1598,
+        "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-03-21T23:49:31.906Z",
+        "syncedAt": "2026-03-22T05:12:23.290Z",
         "allTime": {
           "revenue": 12042,
           "orders": 200
@@ -15,36 +15,26 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 261,
-          "orders": 5,
-          "aov": 52,
+          "revenue": 134,
+          "orders": 3,
+          "aov": 45,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 127,
+          "revenueHalf1": 0,
           "revenueHalf2": 134,
-          "discountOrders": 3,
-          "discountRate": 60,
-          "discountShare": 7,
-          "totalDiscounts": 18,
-          "newCust": 5,
+          "discountOrders": 2,
+          "discountRate": 67,
+          "discountShare": 8,
+          "totalDiscounts": 11,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
-              "name": "Peignoir Satin 4 Pièces – Femme",
-              "qty": 1,
-              "revenue": 75
-            },
-            {
               "name": "Peignoir Rose Rayé – Femme",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
-              "name": "Peignoir Court Capuche - Femme",
               "qty": 1,
               "revenue": 60
             },
@@ -59,17 +49,14 @@
               "revenue": 35
             }
           ],
-          "top3RevenueShare": 75,
+          "top3RevenueShare": 108,
           "hourly": {
-            "7": 1,
-            "9": 1,
             "13": 1,
             "23": 2
           },
           "daily": {
             "4": 1,
-            "5": 2,
-            "6": 2
+            "5": 2
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -95,36 +82,31 @@
             "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 6,
-          "abandonRate": 17,
-          "abandonedValue": 49,
-          "topAbandoned": [
-            {
-              "name": "Robe Peignoir Coton Léger",
-              "count": 1
-            }
-          ],
-          "sessions": 75,
-          "conversionRate": 6.7,
+          "abandonedCheckouts": 0,
+          "totalCheckouts": 3,
+          "abandonRate": 0,
+          "abandonedValue": 0,
+          "topAbandoned": [],
+          "sessions": 38,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:34.106Z"
+          "syncedAt": "2026-03-22T05:12:24.959Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1687,
-          "orders": 27,
-          "aov": 62,
+          "revenue": 1598,
+          "orders": 26,
+          "aov": 61,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1139,
+          "revenueHalf1": 1050,
           "revenueHalf2": 548,
           "discountOrders": 13,
-          "discountRate": 48,
+          "discountRate": 50,
           "discountShare": 5,
           "totalDiscounts": 78,
-          "newCust": 27,
+          "newCust": 26,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 31,
@@ -161,11 +143,6 @@
               "revenue": 111
             },
             {
-              "name": "Peignoir Long d’Hiver - Femme",
-              "qty": 1,
-              "revenue": 90
-            },
-            {
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 1,
               "revenue": 75
@@ -179,9 +156,14 @@
               "name": "Peignoir Satin à Motif Homme",
               "qty": 1,
               "revenue": 60
+            },
+            {
+              "name": "Peignoir Kimono Fleuri – Femme",
+              "qty": 1,
+              "revenue": 60
             }
           ],
-          "top3RevenueShare": 42,
+          "top3RevenueShare": 44,
           "hourly": {
             "2": 1,
             "7": 1,
@@ -192,7 +174,7 @@
             "12": 2,
             "13": 2,
             "15": 3,
-            "16": 2,
+            "16": 1,
             "17": 1,
             "18": 1,
             "19": 1,
@@ -205,7 +187,7 @@
             "1": 5,
             "2": 2,
             "3": 3,
-            "4": 4,
+            "4": 3,
             "5": 6,
             "6": 3
           },
@@ -234,8 +216,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 35,
-          "abandonRate": 23,
+          "totalCheckouts": 34,
+          "abandonRate": 24,
           "abandonedValue": 404,
           "topAbandoned": [
             {
@@ -259,10 +241,10 @@
               "count": 1
             }
           ],
-          "sessions": 438,
-          "conversionRate": 6.2,
+          "sessions": 425,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:34.995Z"
+          "syncedAt": "2026-03-22T05:12:25.803Z"
         },
         "90": {
           "period": 90,
@@ -420,7 +402,7 @@
           "sessions": 1513,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:35.882Z"
+          "syncedAt": "2026-03-22T05:12:27.272Z"
         },
         "365": {
           "period": 365,
@@ -580,7 +562,7 @@
           "sessions": 2838,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:36.737Z"
+          "syncedAt": "2026-03-22T05:12:28.141Z"
         }
       }
     },
@@ -589,7 +571,7 @@
         "revenue": 843,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-03-21T23:49:38.121Z",
+        "syncedAt": "2026-03-22T05:12:29.717Z",
         "allTime": {
           "revenue": 843,
           "orders": 13
@@ -698,7 +680,7 @@
           "sessions": 75,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:39.533Z"
+          "syncedAt": "2026-03-22T05:12:30.952Z"
         },
         "30": {
           "period": 30,
@@ -834,7 +816,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:40.239Z"
+          "syncedAt": "2026-03-22T05:12:31.965Z"
         },
         "90": {
           "period": 90,
@@ -970,7 +952,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:41.001Z"
+          "syncedAt": "2026-03-22T05:12:32.662Z"
         },
         "365": {
           "period": 365,
@@ -1106,7 +1088,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-21T23:49:41.679Z"
+          "syncedAt": "2026-03-22T05:12:33.301Z"
         }
       }
     }
