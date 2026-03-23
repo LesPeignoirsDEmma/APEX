@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-23T08:38:32.751Z",
+  "lastUpdated": "2026-03-23T11:33:21.639Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1498,
         "orders": 25,
         "currency": "EUR",
-        "syncedAt": "2026-03-23T08:38:35.362Z",
+        "syncedAt": "2026-03-23T11:33:24.665Z",
         "allTime": {
           "revenue": 12055,
           "orders": 200
@@ -21,8 +21,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 214,
+          "revenueHalf1": 45,
+          "revenueHalf2": 169,
           "discountOrders": 2,
           "discountRate": 50,
           "discountShare": 5,
@@ -97,7 +97,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:37.937Z"
+          "syncedAt": "2026-03-23T11:33:27.062Z"
         },
         "30": {
           "period": 30,
@@ -251,7 +251,7 @@
           "sessions": 413,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:38.726Z"
+          "syncedAt": "2026-03-23T11:33:27.790Z"
         },
         "90": {
           "period": 90,
@@ -380,10 +380,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 59,
-          "abandonedCheckouts": 24,
-          "totalCheckouts": 120,
-          "abandonRate": 20,
-          "abandonedValue": 1210,
+          "abandonedCheckouts": 23,
+          "totalCheckouts": 119,
+          "abandonRate": 19,
+          "abandonedValue": 1156,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -398,18 +398,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Éponge Rose Rayé",
+              "name": "Peignoir Rayé Coloré - Unisexe",
               "count": 1
             },
             {
-              "name": "Peignoir Rayé Coloré - Unisexe",
+              "name": "Peignoir Long d’Hiver - Homme",
               "count": 1
             }
           ],
-          "sessions": 1500,
-          "conversionRate": 6.3,
+          "sessions": 1488,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:39.669Z"
+          "syncedAt": "2026-03-23T11:33:28.710Z"
         },
         "365": {
           "period": 365,
@@ -540,10 +540,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 24,
-          "totalCheckouts": 227,
-          "abandonRate": 11,
-          "abandonedValue": 1210,
+          "abandonedCheckouts": 23,
+          "totalCheckouts": 226,
+          "abandonRate": 10,
+          "abandonedValue": 1156,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -558,18 +558,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Éponge Rose Rayé",
+              "name": "Peignoir Rayé Coloré - Unisexe",
               "count": 1
             },
             {
-              "name": "Peignoir Rayé Coloré - Unisexe",
+              "name": "Peignoir Long d’Hiver - Homme",
               "count": 1
             }
           ],
-          "sessions": 2838,
-          "conversionRate": 7,
+          "sessions": 2825,
+          "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:40.460Z"
+          "syncedAt": "2026-03-23T11:33:29.486Z"
         }
       }
     },
@@ -578,7 +578,7 @@
         "revenue": 843,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-03-23T08:38:42.019Z",
+        "syncedAt": "2026-03-23T11:33:31.322Z",
         "allTime": {
           "revenue": 843,
           "orders": 13
@@ -682,7 +682,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:43.598Z"
+          "syncedAt": "2026-03-23T11:33:32.595Z"
         },
         "30": {
           "period": 30,
@@ -818,7 +818,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:44.187Z"
+          "syncedAt": "2026-03-23T11:33:33.176Z"
         },
         "90": {
           "period": 90,
@@ -954,7 +954,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:44.763Z"
+          "syncedAt": "2026-03-23T11:33:33.773Z"
         },
         "365": {
           "period": 365,
@@ -1090,7 +1090,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-23T08:38:45.321Z"
+          "syncedAt": "2026-03-23T11:33:34.363Z"
         }
       }
     }
