@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-24T19:36:40.921Z",
+  "lastUpdated": "2026-03-24T21:54:57.855Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1444,
         "orders": 24,
         "currency": "EUR",
-        "syncedAt": "2026-03-24T19:36:44.326Z",
+        "syncedAt": "2026-03-24T21:55:01.769Z",
         "allTime": {
           "revenue": 12055,
           "orders": 200
@@ -30,7 +30,7 @@
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -88,16 +88,21 @@
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme"
           ],
-          "newProductsAdded": 1,
-          "abandonedCheckouts": 0,
-          "totalCheckouts": 4,
-          "abandonRate": 0,
-          "abandonedValue": 0,
-          "topAbandoned": [],
-          "sessions": 50,
-          "conversionRate": 8,
+          "newProductsAdded": 0,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 5,
+          "abandonRate": 20,
+          "abandonedValue": 45,
+          "topAbandoned": [
+            {
+              "name": "Peignoir Brodé Ours – Enfant",
+              "count": 1
+            }
+          ],
+          "sessions": 63,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:48.345Z"
+          "syncedAt": "2026-03-24T21:55:04.975Z"
         },
         "30": {
           "period": 30,
@@ -116,7 +121,7 @@
           "newCust": 24,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -222,10 +227,10 @@
             "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 7,
-          "totalCheckouts": 31,
-          "abandonRate": 23,
-          "abandonedValue": 354,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 32,
+          "abandonRate": 25,
+          "abandonedValue": 399,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -248,10 +253,10 @@
               "count": 1
             }
           ],
-          "sessions": 388,
-          "conversionRate": 6.2,
+          "sessions": 400,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:49.579Z"
+          "syncedAt": "2026-03-24T21:55:05.823Z"
         },
         "90": {
           "period": 90,
@@ -270,7 +275,7 @@
           "newCust": 93,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 30,
+          "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -380,10 +385,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 59,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 119,
-          "abandonRate": 19,
-          "abandonedValue": 1156,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 120,
+          "abandonRate": 20,
+          "abandonedValue": 1201,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -406,10 +411,10 @@
               "count": 1
             }
           ],
-          "sessions": 1488,
-          "conversionRate": 6.4,
+          "sessions": 1500,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:50.600Z"
+          "syncedAt": "2026-03-24T21:55:06.694Z"
         },
         "365": {
           "period": 365,
@@ -540,10 +545,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 226,
-          "abandonRate": 10,
-          "abandonedValue": 1156,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 227,
+          "abandonRate": 11,
+          "abandonedValue": 1201,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -566,10 +571,10 @@
               "count": 1
             }
           ],
-          "sessions": 2825,
-          "conversionRate": 7.1,
+          "sessions": 2838,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:51.619Z"
+          "syncedAt": "2026-03-24T21:55:07.904Z"
         }
       }
     },
@@ -578,7 +583,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-24T19:36:54.061Z",
+        "syncedAt": "2026-03-24T21:55:09.849Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -682,7 +687,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:55.779Z"
+          "syncedAt": "2026-03-24T21:55:11.271Z"
         },
         "30": {
           "period": 30,
@@ -818,7 +823,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:56.614Z"
+          "syncedAt": "2026-03-24T21:55:12.051Z"
         },
         "90": {
           "period": 90,
@@ -954,7 +959,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:57.386Z"
+          "syncedAt": "2026-03-24T21:55:12.774Z"
         },
         "365": {
           "period": 365,
@@ -1090,7 +1095,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T19:36:58.176Z"
+          "syncedAt": "2026-03-24T21:55:13.494Z"
         }
       }
     }
