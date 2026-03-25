@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-24T23:03:15.459Z",
+  "lastUpdated": "2026-03-25T05:16:36.563Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1444,
-        "orders": 24,
+        "revenue": 1293,
+        "orders": 22,
         "currency": "EUR",
-        "syncedAt": "2026-03-24T23:03:17.743Z",
+        "syncedAt": "2026-03-25T05:16:38.708Z",
         "allTime": {
           "revenue": 12055,
           "orders": 200
@@ -102,26 +102,26 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:20.404Z"
+          "syncedAt": "2026-03-25T05:16:40.655Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1444,
-          "orders": 24,
-          "aov": 60,
+          "revenue": 1293,
+          "orders": 22,
+          "aov": 59,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 879,
+          "revenueHalf1": 728,
           "revenueHalf2": 565,
           "discountOrders": 12,
-          "discountRate": 50,
-          "discountShare": 5,
+          "discountRate": 55,
+          "discountShare": 6,
           "totalDiscounts": 72,
-          "newCust": 24,
+          "newCust": 22,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 28,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -140,22 +140,22 @@
               "revenue": 120
             },
             {
-              "name": "Peignoir Polaire Enfant",
-              "qty": 2,
-              "revenue": 115
-            },
-            {
-              "name": "Peignoir Flanelle Enfant",
-              "qty": 2,
-              "revenue": 111
-            },
-            {
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 1,
               "revenue": 75
             },
             {
               "name": "Peignoir Court Capuche - Femme",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Peignoir Flanelle Enfant",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
+              "name": "Peignoir Polaire Enfant",
               "qty": 1,
               "revenue": 60
             },
@@ -175,18 +175,17 @@
               "revenue": 55
             }
           ],
-          "top3RevenueShare": 50,
+          "top3RevenueShare": 56,
           "hourly": {
             "2": 1,
             "7": 2,
             "8": 2,
-            "9": 3,
+            "9": 2,
             "10": 1,
             "11": 1,
             "12": 1,
             "13": 2,
             "15": 3,
-            "16": 1,
             "17": 1,
             "18": 1,
             "19": 1,
@@ -195,7 +194,7 @@
             "23": 2
           },
           "daily": {
-            "0": 5,
+            "0": 3,
             "1": 5,
             "2": 2,
             "3": 3,
@@ -228,8 +227,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 32,
-          "abandonRate": 25,
+          "totalCheckouts": 30,
+          "abandonRate": 27,
           "abandonedValue": 399,
           "topAbandoned": [
             {
@@ -253,26 +252,26 @@
               "count": 1
             }
           ],
-          "sessions": 400,
-          "conversionRate": 6,
+          "sessions": 375,
+          "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:21.398Z"
+          "syncedAt": "2026-03-25T05:16:41.318Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5821,
-          "orders": 95,
+          "revenue": 5766,
+          "orders": 94,
           "aov": 61,
           "currency": "EUR",
-          "refunds": 15,
-          "refundRate": 14,
-          "revenueHalf1": 2530,
+          "refunds": 14,
+          "refundRate": 13,
+          "revenueHalf1": 2475,
           "revenueHalf2": 3291,
           "discountOrders": 48,
           "discountRate": 51,
           "discountShare": 9,
           "totalDiscounts": 542,
-          "newCust": 93,
+          "newCust": 92,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 29,
@@ -346,7 +345,7 @@
             "16": 8,
             "17": 5,
             "18": 8,
-            "19": 8,
+            "19": 7,
             "20": 5,
             "21": 7,
             "22": 1,
@@ -356,7 +355,7 @@
             "0": 19,
             "1": 10,
             "2": 18,
-            "3": 13,
+            "3": 12,
             "4": 11,
             "5": 14,
             "6": 10
@@ -386,7 +385,7 @@
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 24,
-          "totalCheckouts": 120,
+          "totalCheckouts": 119,
           "abandonRate": 20,
           "abandonedValue": 1201,
           "topAbandoned": [
@@ -411,10 +410,10 @@
               "count": 1
             }
           ],
-          "sessions": 1500,
+          "sessions": 1488,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:22.512Z"
+          "syncedAt": "2026-03-25T05:16:42.144Z"
         },
         "365": {
           "period": 365,
@@ -574,7 +573,7 @@
           "sessions": 2838,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:23.421Z"
+          "syncedAt": "2026-03-25T05:16:42.830Z"
         }
       }
     },
@@ -583,7 +582,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-24T23:03:26.602Z",
+        "syncedAt": "2026-03-25T05:16:44.019Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -687,7 +686,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:28.025Z"
+          "syncedAt": "2026-03-25T05:16:45.033Z"
         },
         "30": {
           "period": 30,
@@ -823,7 +822,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:28.729Z"
+          "syncedAt": "2026-03-25T05:16:45.630Z"
         },
         "90": {
           "period": 90,
@@ -959,7 +958,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:29.427Z"
+          "syncedAt": "2026-03-25T05:16:46.238Z"
         },
         "365": {
           "period": 365,
@@ -1095,7 +1094,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-24T23:03:30.152Z"
+          "syncedAt": "2026-03-25T05:16:46.896Z"
         }
       }
     }
