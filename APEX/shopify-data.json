@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-25T08:05:25.802Z",
+  "lastUpdated": "2026-03-25T11:28:46.023Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1293,
         "orders": 22,
         "currency": "EUR",
-        "syncedAt": "2026-03-25T08:05:28.636Z",
+        "syncedAt": "2026-03-25T11:28:49.793Z",
         "allTime": {
           "revenue": 12055,
           "orders": 200
@@ -30,7 +30,7 @@
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 21,
+          "avgLTV": 18,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -89,20 +89,24 @@
             "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 5,
-          "abandonRate": 20,
-          "abandonedValue": 45,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 6,
+          "abandonRate": 33,
+          "abandonedValue": 153,
           "topAbandoned": [
+            {
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "count": 2
+            },
             {
               "name": "Peignoir Brodé Ours – Enfant",
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 6.3,
+          "sessions": 75,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:31.258Z"
+          "syncedAt": "2026-03-25T11:28:54.127Z"
         },
         "30": {
           "period": 30,
@@ -121,7 +125,7 @@
           "newCust": 22,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 25,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -226,13 +230,17 @@
             "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 30,
-          "abandonRate": 27,
-          "abandonedValue": 399,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 31,
+          "abandonRate": 29,
+          "abandonedValue": 506,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
+              "count": 2
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
             },
             {
@@ -246,16 +254,12 @@
             {
               "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
               "count": 1
-            },
-            {
-              "name": "Chaussons d’intérieur — Gris",
-              "count": 1
             }
           ],
-          "sessions": 375,
-          "conversionRate": 5.9,
+          "sessions": 388,
+          "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:32.195Z"
+          "syncedAt": "2026-03-25T11:28:55.041Z"
         },
         "90": {
           "period": 90,
@@ -387,7 +391,7 @@
           "abandonedCheckouts": 24,
           "totalCheckouts": 119,
           "abandonRate": 20,
-          "abandonedValue": 1201,
+          "abandonedValue": 1227,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -402,8 +406,8 @@
               "count": 2
             },
             {
-              "name": "Peignoir Rayé Coloré - Unisexe",
-              "count": 1
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "count": 2
             },
             {
               "name": "Peignoir Long d’Hiver - Homme",
@@ -413,7 +417,7 @@
           "sessions": 1488,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:33.098Z"
+          "syncedAt": "2026-03-25T11:28:55.844Z"
         },
         "365": {
           "period": 365,
@@ -547,7 +551,7 @@
           "abandonedCheckouts": 24,
           "totalCheckouts": 227,
           "abandonRate": 11,
-          "abandonedValue": 1201,
+          "abandonedValue": 1227,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -562,8 +566,8 @@
               "count": 2
             },
             {
-              "name": "Peignoir Rayé Coloré - Unisexe",
-              "count": 1
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "count": 2
             },
             {
               "name": "Peignoir Long d’Hiver - Homme",
@@ -573,7 +577,7 @@
           "sessions": 2838,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:34.078Z"
+          "syncedAt": "2026-03-25T11:28:57.119Z"
         }
       }
     },
@@ -582,7 +586,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-25T08:05:35.618Z",
+        "syncedAt": "2026-03-25T11:28:59.426Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -606,7 +610,7 @@
           "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 63,
+          "avgLTV": 53,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -678,15 +682,20 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 0,
-          "totalCheckouts": 5,
-          "abandonRate": 0,
-          "abandonedValue": 0,
-          "topAbandoned": [],
-          "sessions": 63,
-          "conversionRate": 7.9,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 6,
+          "abandonRate": 17,
+          "abandonedValue": 49,
+          "topAbandoned": [
+            {
+              "name": "Kimono Chinois Rouge",
+              "count": 1
+            }
+          ],
+          "sessions": 75,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:37.047Z"
+          "syncedAt": "2026-03-25T11:29:00.645Z"
         },
         "30": {
           "period": 30,
@@ -705,7 +714,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 54,
+          "avgLTV": 51,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -805,10 +814,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 16,
-          "abandonRate": 13,
-          "abandonedValue": 245,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 17,
+          "abandonRate": 18,
+          "abandonedValue": 294,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -817,12 +826,16 @@
             {
               "name": "Kimono Abaya Femme",
               "count": 1
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 7,
+          "sessions": 213,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:37.742Z"
+          "syncedAt": "2026-03-25T11:29:01.252Z"
         },
         "90": {
           "period": 90,
@@ -841,7 +854,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 51,
+          "avgLTV": 48,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -941,10 +954,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 16,
-          "abandonRate": 13,
-          "abandonedValue": 245,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 17,
+          "abandonRate": 18,
+          "abandonedValue": 294,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -953,12 +966,16 @@
             {
               "name": "Kimono Abaya Femme",
               "count": 1
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 7,
+          "sessions": 213,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:38.432Z"
+          "syncedAt": "2026-03-25T11:29:01.848Z"
         },
         "365": {
           "period": 365,
@@ -977,7 +994,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 51,
+          "avgLTV": 48,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1077,10 +1094,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 16,
-          "abandonRate": 13,
-          "abandonedValue": 245,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 17,
+          "abandonRate": 18,
+          "abandonedValue": 294,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -1089,12 +1106,16 @@
             {
               "name": "Kimono Abaya Femme",
               "count": 1
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 7,
+          "sessions": 213,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T08:05:39.122Z"
+          "syncedAt": "2026-03-25T11:29:02.460Z"
         }
       }
     }
