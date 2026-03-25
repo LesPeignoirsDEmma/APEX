@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-25T05:16:36.563Z",
+  "lastUpdated": "2026-03-25T08:05:25.802Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1293,
         "orders": 22,
         "currency": "EUR",
-        "syncedAt": "2026-03-25T05:16:38.708Z",
+        "syncedAt": "2026-03-25T08:05:28.636Z",
         "allTime": {
           "revenue": 12055,
           "orders": 200
@@ -102,7 +102,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:40.655Z"
+          "syncedAt": "2026-03-25T08:05:31.258Z"
         },
         "30": {
           "period": 30,
@@ -255,7 +255,7 @@
           "sessions": 375,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:41.318Z"
+          "syncedAt": "2026-03-25T08:05:32.195Z"
         },
         "90": {
           "period": 90,
@@ -413,7 +413,7 @@
           "sessions": 1488,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:42.144Z"
+          "syncedAt": "2026-03-25T08:05:33.098Z"
         },
         "365": {
           "period": 365,
@@ -573,7 +573,7 @@
           "sessions": 2838,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:42.830Z"
+          "syncedAt": "2026-03-25T08:05:34.078Z"
         }
       }
     },
@@ -582,7 +582,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-25T05:16:44.019Z",
+        "syncedAt": "2026-03-25T08:05:35.618Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -656,7 +656,6 @@
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
-            "Abaya Kimono Grande Taille",
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
             "Cardigan Chemise Kimono",
@@ -675,7 +674,8 @@
             "Chemise Kimono Bleue",
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
-            "Chemise Kimono Homme Japonais"
+            "Chemise Kimono Homme Japonais",
+            "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
@@ -686,7 +686,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:45.033Z"
+          "syncedAt": "2026-03-25T08:05:37.047Z"
         },
         "30": {
           "period": 30,
@@ -783,7 +783,6 @@
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
-            "Abaya Kimono Grande Taille",
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
             "Cardigan Chemise Kimono",
@@ -802,7 +801,8 @@
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir"
+            "Chemise Kimono Homme Noir",
+            "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
@@ -822,7 +822,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:45.630Z"
+          "syncedAt": "2026-03-25T08:05:37.742Z"
         },
         "90": {
           "period": 90,
@@ -919,7 +919,6 @@
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
-            "Abaya Kimono Grande Taille",
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
             "Cardigan Chemise Kimono",
@@ -938,7 +937,8 @@
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir"
+            "Chemise Kimono Homme Noir",
+            "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 2,
@@ -958,7 +958,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:46.238Z"
+          "syncedAt": "2026-03-25T08:05:38.432Z"
         },
         "365": {
           "period": 365,
@@ -1055,7 +1055,6 @@
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
-            "Abaya Kimono Grande Taille",
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
             "Cardigan Chemise Kimono",
@@ -1074,7 +1073,8 @@
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir"
+            "Chemise Kimono Homme Noir",
+            "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 2,
@@ -1094,7 +1094,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-25T05:16:46.896Z"
+          "syncedAt": "2026-03-25T08:05:39.122Z"
         }
       }
     }
