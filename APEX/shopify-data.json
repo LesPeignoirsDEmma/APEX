@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-26T22:59:23.633Z",
+  "lastUpdated": "2026-03-27T00:01:44.398Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1107,
-        "orders": 19,
+        "revenue": 1047,
+        "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-03-26T22:59:25.972Z",
+        "syncedAt": "2026-03-27T00:01:47.310Z",
         "allTime": {
           "revenue": 12055,
           "orders": 200
@@ -15,22 +15,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 214,
-          "orders": 4,
-          "aov": 53,
+          "revenue": 169,
+          "orders": 3,
+          "aov": 56,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 214,
+          "revenueHalf1": 169,
           "revenueHalf2": 0,
-          "discountOrders": 2,
-          "discountRate": 50,
-          "discountShare": 5,
-          "totalDiscounts": 11,
-          "newCust": 4,
+          "discountOrders": 1,
+          "discountRate": 33,
+          "discountShare": 4,
+          "totalDiscounts": 6,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 13,
+          "avgLTV": 11,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -44,25 +44,19 @@
               "revenue": 60
             },
             {
-              "name": "Peignoir Nid d’Abeille Manche Courte",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
               "name": "Cape de Bain Bébé Koala",
               "qty": 1,
               "revenue": 35
             }
           ],
-          "top3RevenueShare": 89,
+          "top3RevenueShare": 104,
           "hourly": {
             "7": 1,
             "13": 1,
-            "23": 2
+            "23": 1
           },
           "daily": {
             "0": 1,
-            "4": 1,
             "5": 2
           },
           "totalProducts": 178,
@@ -90,8 +84,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 6,
-          "abandonRate": 33,
+          "totalCheckouts": 5,
+          "abandonRate": 40,
           "abandonedValue": 153,
           "topAbandoned": [
             {
@@ -103,29 +97,29 @@
               "count": 1
             }
           ],
-          "sessions": 75,
-          "conversionRate": 5.3,
+          "sessions": 63,
+          "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:27.869Z"
+          "syncedAt": "2026-03-27T00:01:49.058Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1107,
-          "orders": 19,
+          "revenue": 1047,
+          "orders": 18,
           "aov": 58,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 647,
+          "revenueHalf1": 587,
           "revenueHalf2": 460,
           "discountOrders": 11,
-          "discountRate": 58,
+          "discountRate": 61,
           "discountShare": 6,
           "totalDiscounts": 67,
-          "newCust": 19,
+          "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 23,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -169,17 +163,17 @@
               "revenue": 60
             },
             {
-              "name": "Peignoir Kimono Fleuri – Femme",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
               "name": "Robe Peignoir Coton Léger",
               "qty": 1,
               "revenue": 55
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Manche Courte",
+              "qty": 1,
+              "revenue": 50
             }
           ],
-          "top3RevenueShare": 52,
+          "top3RevenueShare": 55,
           "hourly": {
             "7": 2,
             "8": 2,
@@ -188,7 +182,6 @@
             "13": 2,
             "15": 3,
             "17": 1,
-            "18": 1,
             "19": 1,
             "20": 1,
             "22": 1,
@@ -197,7 +190,7 @@
           "daily": {
             "0": 3,
             "1": 2,
-            "2": 2,
+            "2": 1,
             "3": 3,
             "4": 3,
             "5": 4,
@@ -227,10 +220,10 @@
             "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 9,
-          "totalCheckouts": 28,
-          "abandonRate": 32,
-          "abandonedValue": 506,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 26,
+          "abandonRate": 31,
+          "abandonedValue": 456,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -241,22 +234,22 @@
               "count": 2
             },
             {
-              "name": "Peignoir Nid d’Abeille Manche Courte",
-              "count": 1
-            },
-            {
               "name": "Peignoir Polaire Luxe - Homme",
               "count": 1
             },
             {
               "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
               "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
             }
           ],
-          "sessions": 350,
-          "conversionRate": 5.4,
+          "sessions": 325,
+          "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:28.728Z"
+          "syncedAt": "2026-03-27T00:01:49.925Z"
         },
         "90": {
           "period": 90,
@@ -264,8 +257,8 @@
           "orders": 94,
           "aov": 61,
           "currency": "EUR",
-          "refunds": 14,
-          "refundRate": 13,
+          "refunds": 13,
+          "refundRate": 12,
           "revenueHalf1": 2681,
           "revenueHalf2": 3086,
           "discountOrders": 48,
@@ -414,7 +407,7 @@
           "sessions": 1488,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:29.668Z"
+          "syncedAt": "2026-03-27T00:01:50.746Z"
         },
         "365": {
           "period": 365,
@@ -574,7 +567,7 @@
           "sessions": 2838,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:30.584Z"
+          "syncedAt": "2026-03-27T00:01:51.459Z"
         }
       }
     },
@@ -583,7 +576,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-26T22:59:31.926Z",
+        "syncedAt": "2026-03-27T00:01:52.875Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -592,29 +585,24 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 142,
-          "orders": 3,
-          "aov": 47,
+          "revenue": 72,
+          "orders": 2,
+          "aov": 36,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 120,
+          "revenueHalf1": 50,
           "revenueHalf2": 22,
           "discountOrders": 1,
-          "discountRate": 33,
-          "discountShare": 2,
+          "discountRate": 50,
+          "discountShare": 3,
           "totalDiscounts": 2,
-          "newCust": 3,
+          "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 28,
+          "avgLTV": 18,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Chemise Kimono Grande Taille",
-              "qty": 1,
-              "revenue": 70
-            },
             {
               "name": "Kimono Coton Leger Pour Homme",
               "qty": 1,
@@ -626,15 +614,13 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 102,
+          "top3RevenueShare": 104,
           "hourly": {
-            "1": 1,
             "13": 1,
             "17": 1
           },
           "daily": {
             "1": 1,
-            "4": 1,
             "5": 1
           },
           "totalProducts": 205,
@@ -657,13 +643,13 @@
             "Chemise Kimono Bleue",
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
-            "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir"
+            "Chemise Kimono Grande Taille",
+            "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 4,
-          "abandonRate": 25,
+          "totalCheckouts": 3,
+          "abandonRate": 33,
           "abandonedValue": 49,
           "topAbandoned": [
             {
@@ -671,10 +657,10 @@
               "count": 1
             }
           ],
-          "sessions": 50,
-          "conversionRate": 6,
+          "sessions": 38,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:33.379Z"
+          "syncedAt": "2026-03-27T00:01:54.303Z"
         },
         "30": {
           "period": 30,
@@ -814,7 +800,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:34.041Z"
+          "syncedAt": "2026-03-27T00:01:54.923Z"
         },
         "90": {
           "period": 90,
@@ -954,7 +940,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:34.777Z"
+          "syncedAt": "2026-03-27T00:01:55.766Z"
         },
         "365": {
           "period": 365,
@@ -1094,7 +1080,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-26T22:59:35.536Z"
+          "syncedAt": "2026-03-27T00:01:56.323Z"
         }
       }
     }
