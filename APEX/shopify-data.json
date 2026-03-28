@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-28T11:03:00.631Z",
+  "lastUpdated": "2026-03-28T14:02:56.686Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 983,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-03-28T11:03:02.945Z",
+        "syncedAt": "2026-03-28T14:02:58.936Z",
         "allTime": {
           "revenue": 12004,
           "orders": 199
@@ -94,7 +94,7 @@
           "sessions": 50,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:04.713Z"
+          "syncedAt": "2026-03-28T14:03:01.042Z"
         },
         "30": {
           "period": 30,
@@ -242,7 +242,7 @@
           "sessions": 300,
           "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:05.344Z"
+          "syncedAt": "2026-03-28T14:03:01.943Z"
         },
         "90": {
           "period": 90,
@@ -400,7 +400,7 @@
           "sessions": 1438,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:06.200Z"
+          "syncedAt": "2026-03-28T14:03:03.177Z"
         },
         "365": {
           "period": 365,
@@ -531,10 +531,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 225,
+          "abandonedCheckouts": 22,
+          "totalCheckouts": 224,
           "abandonRate": 10,
-          "abandonedValue": 1133,
+          "abandonedValue": 1083,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -553,14 +553,14 @@
               "count": 2
             },
             {
-              "name": "Cape de Bain Bébé Éponge",
+              "name": "Peignoir Satin Court Blanc – Femme",
               "count": 1
             }
           ],
-          "sessions": 2813,
+          "sessions": 2800,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:07.193Z"
+          "syncedAt": "2026-03-28T14:03:04.117Z"
         }
       }
     },
@@ -569,7 +569,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-28T11:03:08.381Z",
+        "syncedAt": "2026-03-28T14:03:05.346Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -646,7 +646,7 @@
           "sessions": 25,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:09.462Z"
+          "syncedAt": "2026-03-28T14:03:06.981Z"
         },
         "30": {
           "period": 30,
@@ -786,7 +786,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:10.017Z"
+          "syncedAt": "2026-03-28T14:03:07.683Z"
         },
         "90": {
           "period": 90,
@@ -926,7 +926,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:10.529Z"
+          "syncedAt": "2026-03-28T14:03:08.826Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T11:03:11.072Z"
+          "syncedAt": "2026-03-28T14:03:09.510Z"
         }
       }
     }
