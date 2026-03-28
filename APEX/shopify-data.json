@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-03-28T15:58:21.562Z",
+  "lastUpdated": "2026-03-28T17:04:44.694Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 983,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-03-28T15:58:24.002Z",
+        "syncedAt": "2026-03-28T17:04:47.560Z",
         "allTime": {
-          "revenue": 12004,
-          "orders": 199
+          "revenue": 11964,
+          "orders": 198
         }
       },
       "cro": {
@@ -94,7 +94,7 @@
           "sessions": 50,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:25.957Z"
+          "syncedAt": "2026-03-28T17:04:49.316Z"
         },
         "30": {
           "period": 30,
@@ -242,23 +242,23 @@
           "sessions": 300,
           "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:26.734Z"
+          "syncedAt": "2026-03-28T17:04:50.034Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5730,
-          "orders": 93,
+          "revenue": 5690,
+          "orders": 92,
           "aov": 62,
           "currency": "EUR",
-          "refunds": 14,
-          "refundRate": 13,
-          "revenueHalf1": 3022,
+          "refunds": 15,
+          "refundRate": 14,
+          "revenueHalf1": 2982,
           "revenueHalf2": 2709,
           "discountOrders": 48,
           "discountRate": 52,
-          "discountShare": 9,
+          "discountShare": 10,
           "totalDiscounts": 543,
-          "newCust": 91,
+          "newCust": 90,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 29,
@@ -315,7 +315,7 @@
               "revenue": 180
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 33,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -332,7 +332,7 @@
             "16": 8,
             "17": 5,
             "18": 8,
-            "19": 6,
+            "19": 5,
             "20": 5,
             "21": 6,
             "22": 1,
@@ -345,7 +345,7 @@
             "3": 12,
             "4": 11,
             "5": 15,
-            "6": 9
+            "6": 8
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -364,15 +364,15 @@
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
+            "Peignoir Bébé Blanc",
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Brodé Ours – Enfant",
-            "Peignoir Capuche - Femme"
+            "Peignoir Brodé Ours – Enfant"
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 22,
-          "totalCheckouts": 115,
+          "totalCheckouts": 114,
           "abandonRate": 19,
           "abandonedValue": 1083,
           "topAbandoned": [
@@ -397,26 +397,26 @@
               "count": 1
             }
           ],
-          "sessions": 1438,
+          "sessions": 1425,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:27.495Z"
+          "syncedAt": "2026-03-28T17:04:51.462Z"
         },
         "365": {
           "period": 365,
-          "revenue": 12004,
-          "orders": 199,
+          "revenue": 11964,
+          "orders": 198,
           "aov": 60,
           "currency": "EUR",
-          "refunds": 51,
-          "refundRate": 20,
+          "refunds": 52,
+          "refundRate": 21,
           "revenueHalf1": 0,
-          "revenueHalf2": 12004,
+          "revenueHalf2": 11964,
           "discountOrders": 133,
           "discountRate": 67,
-          "discountShare": 9,
+          "discountShare": 10,
           "totalDiscounts": 1138,
-          "newCust": 197,
+          "newCust": 196,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 29,
@@ -492,7 +492,7 @@
             "16": 13,
             "17": 12,
             "18": 25,
-            "19": 15,
+            "19": 14,
             "20": 13,
             "21": 13,
             "22": 4,
@@ -505,7 +505,7 @@
             "3": 32,
             "4": 22,
             "5": 28,
-            "6": 18
+            "6": 17
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -524,15 +524,15 @@
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
+            "Peignoir Bébé Blanc",
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme",
-            "Peignoir Chaud Hiver Femme"
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 22,
-          "totalCheckouts": 224,
+          "totalCheckouts": 223,
           "abandonRate": 10,
           "abandonedValue": 1083,
           "topAbandoned": [
@@ -557,10 +557,10 @@
               "count": 1
             }
           ],
-          "sessions": 2800,
+          "sessions": 2788,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:28.274Z"
+          "syncedAt": "2026-03-28T17:04:52.284Z"
         }
       }
     },
@@ -569,7 +569,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-28T15:58:29.531Z",
+        "syncedAt": "2026-03-28T17:04:53.591Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -646,7 +646,7 @@
           "sessions": 25,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:31.289Z"
+          "syncedAt": "2026-03-28T17:04:54.777Z"
         },
         "30": {
           "period": 30,
@@ -786,7 +786,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:31.922Z"
+          "syncedAt": "2026-03-28T17:04:55.340Z"
         },
         "90": {
           "period": 90,
@@ -926,7 +926,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:32.566Z"
+          "syncedAt": "2026-03-28T17:04:55.929Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T15:58:33.181Z"
+          "syncedAt": "2026-03-28T17:04:56.502Z"
         }
       }
     }
