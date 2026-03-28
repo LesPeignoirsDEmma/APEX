@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-27T23:05:52.745Z",
+  "lastUpdated": "2026-03-28T05:14:22.697Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1056,
-        "orders": 18,
+        "revenue": 983,
+        "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-03-27T23:05:58.891Z",
+        "syncedAt": "2026-03-28T05:14:24.684Z",
         "allTime": {
           "revenue": 12004,
           "orders": 199
@@ -15,22 +15,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 205,
-          "orders": 4,
-          "aov": 51,
+          "revenue": 116,
+          "orders": 2,
+          "aov": 58,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 169,
+          "revenueHalf1": 80,
           "revenueHalf2": 36,
-          "discountOrders": 2,
+          "discountOrders": 1,
           "discountRate": 50,
-          "discountShare": 5,
-          "totalDiscounts": 10,
-          "newCust": 4,
+          "discountShare": 3,
+          "totalDiscounts": 4,
+          "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 13,
+          "avgLTV": 9,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -39,37 +39,26 @@
               "revenue": 80
             },
             {
-              "name": "Peignoir Rose Rayé – Femme",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
               "name": "Cape de Bain Coton",
               "qty": 1,
               "revenue": 40
-            },
-            {
-              "name": "Cape de Bain Bébé Koala",
-              "qty": 1,
-              "revenue": 35
             }
           ],
-          "top3RevenueShare": 88,
+          "top3RevenueShare": 104,
           "hourly": {
             "6": 1,
-            "7": 1,
-            "13": 1,
-            "23": 1
+            "7": 1
           },
           "daily": {
             "0": 1,
-            "5": 3
+            "5": 1
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
+            "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
@@ -85,13 +74,12 @@
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme",
-            "Peignoir Baroque - Femme"
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 6,
-          "abandonRate": 33,
+          "totalCheckouts": 4,
+          "abandonRate": 50,
           "abandonedValue": 153,
           "topAbandoned": [
             {
@@ -103,35 +91,35 @@
               "count": 1
             }
           ],
-          "sessions": 75,
-          "conversionRate": 5.3,
+          "sessions": 50,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:06.489Z"
+          "syncedAt": "2026-03-28T05:14:26.416Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1056,
-          "orders": 18,
-          "aov": 59,
+          "revenue": 983,
+          "orders": 17,
+          "aov": 58,
           "currency": "EUR",
           "refunds": 1,
-          "refundRate": 5,
-          "revenueHalf1": 630,
+          "refundRate": 6,
+          "revenueHalf1": 557,
           "revenueHalf2": 426,
-          "discountOrders": 11,
-          "discountRate": 61,
+          "discountOrders": 10,
+          "discountRate": 59,
           "discountShare": 6,
-          "totalDiscounts": 68,
-          "newCust": 18,
+          "totalDiscounts": 60,
+          "newCust": 17,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 23,
+          "avgLTV": 22,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 4,
-              "revenue": 320
+              "qty": 3,
+              "revenue": 240
             },
             {
               "name": "Peignoir Femme Flanelle",
@@ -179,13 +167,12 @@
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 55,
+          "top3RevenueShare": 51,
           "hourly": {
             "6": 1,
             "7": 2,
             "8": 2,
             "9": 2,
-            "11": 1,
             "13": 2,
             "15": 3,
             "17": 1,
@@ -197,7 +184,7 @@
             "0": 2,
             "1": 2,
             "2": 1,
-            "3": 3,
+            "3": 2,
             "4": 3,
             "5": 5,
             "6": 2
@@ -226,10 +213,10 @@
             "Peignoir Baroque - Femme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 26,
-          "abandonRate": 31,
-          "abandonedValue": 456,
+          "abandonedCheckouts": 7,
+          "totalCheckouts": 24,
+          "abandonRate": 29,
+          "abandonedValue": 376,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -240,38 +227,38 @@
               "count": 2
             },
             {
-              "name": "Peignoir Polaire Luxe - Homme",
-              "count": 1
-            },
-            {
               "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
               "count": 1
             },
             {
               "name": "Chaussons d’intérieur — Gris",
               "count": 1
+            },
+            {
+              "name": "Robe Peignoir Coton Léger",
+              "count": 1
             }
           ],
-          "sessions": 325,
-          "conversionRate": 5.5,
+          "sessions": 300,
+          "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:07.302Z"
+          "syncedAt": "2026-03-28T05:14:27.152Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5775,
-          "orders": 94,
-          "aov": 61,
+          "revenue": 5730,
+          "orders": 93,
+          "aov": 62,
           "currency": "EUR",
           "refunds": 14,
           "refundRate": 13,
-          "revenueHalf1": 3066,
+          "revenueHalf1": 3022,
           "revenueHalf2": 2709,
           "discountOrders": 48,
-          "discountRate": 51,
+          "discountRate": 52,
           "discountShare": 9,
           "totalDiscounts": 543,
-          "newCust": 92,
+          "newCust": 91,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 29,
@@ -347,7 +334,7 @@
             "18": 8,
             "19": 6,
             "20": 5,
-            "21": 7,
+            "21": 6,
             "22": 1,
             "23": 2
           },
@@ -358,7 +345,7 @@
             "3": 12,
             "4": 11,
             "5": 15,
-            "6": 10
+            "6": 9
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -380,14 +367,14 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme",
-            "Peignoir Chaud Hiver Femme"
+            "Peignoir Brodé Ours – Enfant",
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 59,
-          "abandonedCheckouts": 24,
-          "totalCheckouts": 119,
-          "abandonRate": 20,
-          "abandonedValue": 1227,
+          "abandonedCheckouts": 22,
+          "totalCheckouts": 115,
+          "abandonRate": 19,
+          "abandonedValue": 1083,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -406,14 +393,14 @@
               "count": 2
             },
             {
-              "name": "Peignoir Long d’Hiver - Homme",
+              "name": "Peignoir Satin Court Blanc – Femme",
               "count": 1
             }
           ],
-          "sessions": 1488,
-          "conversionRate": 6.3,
+          "sessions": 1438,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:08.059Z"
+          "syncedAt": "2026-03-28T05:14:28.141Z"
         },
         "365": {
           "period": 365,
@@ -573,7 +560,7 @@
           "sessions": 2825,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:08.843Z"
+          "syncedAt": "2026-03-28T05:14:28.910Z"
         }
       }
     },
@@ -582,7 +569,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-27T23:06:13.608Z",
+        "syncedAt": "2026-03-28T05:14:29.841Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -591,43 +578,36 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 72,
-          "orders": 2,
-          "aov": 36,
+          "revenue": 22,
+          "orders": 1,
+          "aov": 22,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 72,
+          "revenueHalf1": 22,
           "revenueHalf2": 0,
           "discountOrders": 1,
-          "discountRate": 50,
-          "discountShare": 3,
+          "discountRate": 100,
+          "discountShare": 11,
           "totalDiscounts": 2,
-          "newCust": 2,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 18,
+          "avgLTV": 7,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Kimono Coton Leger Pour Homme",
-              "qty": 1,
-              "revenue": 50
-            },
             {
               "name": "Kimono Homme Noir Samourai",
               "qty": 1,
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 104,
+          "top3RevenueShare": 112,
           "hourly": {
-            "13": 1,
-            "17": 1
+            "13": 1
           },
           "daily": {
-            "1": 1,
-            "5": 1
+            "1": 1
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -654,8 +634,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 3,
-          "abandonRate": 33,
+          "totalCheckouts": 2,
+          "abandonRate": 50,
           "abandonedValue": 49,
           "topAbandoned": [
             {
@@ -663,10 +643,10 @@
               "count": 1
             }
           ],
-          "sessions": 38,
-          "conversionRate": 5.3,
+          "sessions": 25,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:14.942Z"
+          "syncedAt": "2026-03-28T05:14:30.979Z"
         },
         "30": {
           "period": 30,
@@ -806,7 +786,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:15.596Z"
+          "syncedAt": "2026-03-28T05:14:31.575Z"
         },
         "90": {
           "period": 90,
@@ -946,7 +926,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:16.256Z"
+          "syncedAt": "2026-03-28T05:14:32.129Z"
         },
         "365": {
           "period": 365,
@@ -1086,7 +1066,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-27T23:06:16.938Z"
+          "syncedAt": "2026-03-28T05:14:32.669Z"
         }
       }
     }
