@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-28T23:01:23.375Z",
+  "lastUpdated": "2026-03-29T05:53:58.827Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 983,
-        "orders": 17,
+        "revenue": 903,
+        "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-03-28T23:01:27.088Z",
+        "syncedAt": "2026-03-29T05:54:05.056Z",
         "allTime": {
           "revenue": 11964,
           "orders": 198
@@ -94,32 +94,32 @@
           "sessions": 50,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:30.942Z"
+          "syncedAt": "2026-03-29T05:54:12.587Z"
         },
         "30": {
           "period": 30,
-          "revenue": 983,
-          "orders": 17,
-          "aov": 58,
+          "revenue": 903,
+          "orders": 16,
+          "aov": 56,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 6,
-          "revenueHalf1": 607,
+          "revenueHalf1": 527,
           "revenueHalf2": 377,
           "discountOrders": 10,
-          "discountRate": 59,
-          "discountShare": 6,
+          "discountRate": 63,
+          "discountShare": 7,
           "totalDiscounts": 60,
-          "newCust": 17,
+          "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 20,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 3,
-              "revenue": 240
+              "qty": 2,
+              "revenue": 160
             },
             {
               "name": "Peignoir Femme Flanelle",
@@ -167,14 +167,14 @@
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 51,
+          "top3RevenueShare": 46,
           "hourly": {
             "6": 1,
             "7": 2,
             "8": 2,
             "9": 2,
             "13": 2,
-            "15": 3,
+            "15": 2,
             "17": 1,
             "20": 1,
             "22": 1,
@@ -185,7 +185,7 @@
             "1": 2,
             "2": 1,
             "3": 2,
-            "4": 3,
+            "4": 2,
             "5": 5,
             "6": 2
           },
@@ -214,8 +214,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 7,
-          "totalCheckouts": 24,
-          "abandonRate": 29,
+          "totalCheckouts": 23,
+          "abandonRate": 30,
           "abandonedValue": 376,
           "topAbandoned": [
             {
@@ -239,10 +239,10 @@
               "count": 1
             }
           ],
-          "sessions": 300,
-          "conversionRate": 5.7,
+          "sessions": 288,
+          "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:31.694Z"
+          "syncedAt": "2026-03-29T05:54:13.262Z"
         },
         "90": {
           "period": 90,
@@ -371,18 +371,14 @@
             "Peignoir Brodé Ours – Enfant"
           ],
           "newProductsAdded": 59,
-          "abandonedCheckouts": 22,
-          "totalCheckouts": 114,
-          "abandonRate": 19,
-          "abandonedValue": 1083,
+          "abandonedCheckouts": 20,
+          "totalCheckouts": 112,
+          "abandonRate": 18,
+          "abandonedValue": 993,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
               "count": 3
-            },
-            {
-              "name": "Peignoir De Bain Fille",
-              "count": 2
             },
             {
               "name": "Ensemble de Nuit 4 Pièces – Femme",
@@ -395,12 +391,16 @@
             {
               "name": "Peignoir Satin Court Blanc – Femme",
               "count": 1
+            },
+            {
+              "name": "Peignoir Satiné Long",
+              "count": 1
             }
           ],
-          "sessions": 1425,
-          "conversionRate": 6.5,
+          "sessions": 1400,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:32.433Z"
+          "syncedAt": "2026-03-29T05:54:13.910Z"
         },
         "365": {
           "period": 365,
@@ -560,7 +560,7 @@
           "sessions": 2788,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:33.188Z"
+          "syncedAt": "2026-03-29T05:54:14.645Z"
         }
       }
     },
@@ -569,7 +569,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-28T23:01:36.343Z",
+        "syncedAt": "2026-03-29T05:54:20.613Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -646,7 +646,7 @@
           "sessions": 25,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:37.634Z"
+          "syncedAt": "2026-03-29T05:54:21.779Z"
         },
         "30": {
           "period": 30,
@@ -786,7 +786,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:38.210Z"
+          "syncedAt": "2026-03-29T05:54:22.302Z"
         },
         "90": {
           "period": 90,
@@ -926,7 +926,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:38.777Z"
+          "syncedAt": "2026-03-29T05:54:22.846Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-28T23:01:39.356Z"
+          "syncedAt": "2026-03-29T05:54:23.385Z"
         }
       }
     }
