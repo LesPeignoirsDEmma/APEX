@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-29T14:04:00.437Z",
+  "lastUpdated": "2026-03-29T15:58:49.654Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 903,
         "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-03-29T14:04:02.755Z",
+        "syncedAt": "2026-03-29T15:58:51.988Z",
         "allTime": {
           "revenue": 11964,
           "orders": 198
@@ -94,7 +94,7 @@
           "sessions": 50,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:04.901Z"
+          "syncedAt": "2026-03-29T15:58:54.152Z"
         },
         "30": {
           "period": 30,
@@ -242,7 +242,7 @@
           "sessions": 288,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:05.656Z"
+          "syncedAt": "2026-03-29T15:58:54.836Z"
         },
         "90": {
           "period": 90,
@@ -252,8 +252,8 @@
           "currency": "EUR",
           "refunds": 15,
           "refundRate": 14,
-          "revenueHalf1": 3104,
-          "revenueHalf2": 2586,
+          "revenueHalf1": 3181,
+          "revenueHalf2": 2510,
           "discountOrders": 48,
           "discountRate": 52,
           "discountShare": 10,
@@ -400,7 +400,7 @@
           "sessions": 1400,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:06.769Z"
+          "syncedAt": "2026-03-29T15:58:55.871Z"
         },
         "365": {
           "period": 365,
@@ -560,7 +560,7 @@
           "sessions": 2763,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:07.495Z"
+          "syncedAt": "2026-03-29T15:58:56.574Z"
         }
       }
     },
@@ -569,7 +569,7 @@
         "revenue": 866,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-03-29T14:04:08.557Z",
+        "syncedAt": "2026-03-29T15:58:57.633Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -593,7 +593,7 @@
           "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 7,
+          "avgLTV": 6,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -646,7 +646,7 @@
           "sessions": 25,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:09.778Z"
+          "syncedAt": "2026-03-29T15:58:58.779Z"
         },
         "30": {
           "period": 30,
@@ -665,7 +665,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 48,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -786,7 +786,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:10.383Z"
+          "syncedAt": "2026-03-29T15:58:59.385Z"
         },
         "90": {
           "period": 90,
@@ -805,7 +805,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 46,
+          "avgLTV": 43,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -926,7 +926,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:10.988Z"
+          "syncedAt": "2026-03-29T15:58:59.994Z"
         },
         "365": {
           "period": 365,
@@ -945,7 +945,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 46,
+          "avgLTV": 43,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1066,7 +1066,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-29T14:04:11.541Z"
+          "syncedAt": "2026-03-29T15:59:00.540Z"
         }
       }
     }
