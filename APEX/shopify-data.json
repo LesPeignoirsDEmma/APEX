@@ -1,49 +1,56 @@
 {
-  "lastUpdated": "2026-03-31T12:06:25.256Z",
+  "lastUpdated": "2026-03-31T16:35:26.880Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 844,
-        "orders": 15,
+        "revenue": 923,
+        "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-03-31T12:06:28.103Z",
+        "syncedAt": "2026-03-31T16:35:29.987Z",
         "allTime": {
-          "revenue": 11964,
+          "revenue": 11935,
           "orders": 198
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 36,
-          "orders": 1,
-          "aov": 36,
+          "revenue": 116,
+          "orders": 2,
+          "aov": 58,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 36,
-          "revenueHalf2": 0,
+          "revenueHalf2": 80,
           "discountOrders": 1,
-          "discountRate": 100,
-          "discountShare": 11,
+          "discountRate": 50,
+          "discountShare": 3,
           "totalDiscounts": 4,
-          "newCust": 1,
+          "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 3,
+          "avgLTV": 8,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "qty": 1,
+              "revenue": 80
+            },
             {
               "name": "Cape de Bain Coton",
               "qty": 1,
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 111,
+          "top3RevenueShare": 104,
           "hourly": {
-            "6": 1
+            "6": 1,
+            "15": 1
           },
           "daily": {
+            "2": 1,
             "5": 1
           },
           "totalProducts": 178,
@@ -71,8 +78,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 3,
-          "abandonRate": 67,
+          "totalCheckouts": 4,
+          "abandonRate": 50,
           "abandonedValue": 153,
           "topAbandoned": [
             {
@@ -84,35 +91,35 @@
               "count": 1
             }
           ],
-          "sessions": 38,
-          "conversionRate": 2.6,
+          "sessions": 50,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:30.380Z"
+          "syncedAt": "2026-03-31T16:35:32.314Z"
         },
         "30": {
           "period": 30,
-          "revenue": 844,
-          "orders": 15,
-          "aov": 56,
+          "revenue": 923,
+          "orders": 16,
+          "aov": 58,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 6,
           "revenueHalf1": 594,
-          "revenueHalf2": 250,
+          "revenueHalf2": 329,
           "discountOrders": 10,
-          "discountRate": 67,
-          "discountShare": 7,
+          "discountRate": 63,
+          "discountShare": 6,
           "totalDiscounts": 60,
-          "newCust": 15,
+          "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 19,
+          "avgLTV": 20,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 2,
-              "revenue": 160
+              "qty": 3,
+              "revenue": 240
             },
             {
               "name": "Peignoir Femme Flanelle",
@@ -160,14 +167,14 @@
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 50,
+          "top3RevenueShare": 54,
           "hourly": {
             "6": 1,
             "7": 2,
             "8": 1,
             "9": 2,
             "13": 2,
-            "15": 2,
+            "15": 3,
             "17": 1,
             "20": 1,
             "22": 1,
@@ -176,7 +183,7 @@
           "daily": {
             "0": 2,
             "1": 2,
-            "2": 1,
+            "2": 2,
             "3": 2,
             "4": 2,
             "5": 4,
@@ -207,8 +214,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 21,
-          "abandonRate": 29,
+          "totalCheckouts": 22,
+          "abandonRate": 27,
           "abandonedValue": 336,
           "topAbandoned": [
             {
@@ -232,26 +239,26 @@
               "count": 1
             }
           ],
-          "sessions": 263,
-          "conversionRate": 5.7,
+          "sessions": 275,
+          "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:31.228Z"
+          "syncedAt": "2026-03-31T16:35:33.131Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5406,
-          "orders": 88,
+          "revenue": 5463,
+          "orders": 89,
           "aov": 61,
           "currency": "EUR",
           "refunds": 14,
           "refundRate": 14,
-          "revenueHalf1": 3122,
-          "revenueHalf2": 2283,
+          "revenueHalf1": 3149,
+          "revenueHalf2": 2313,
           "discountOrders": 48,
-          "discountRate": 55,
+          "discountRate": 54,
           "discountShare": 10,
-          "totalDiscounts": 543,
-          "newCust": 86,
+          "totalDiscounts": 566,
+          "newCust": 87,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 28,
@@ -259,8 +266,8 @@
           "topProducts": [
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 10,
-              "revenue": 821
+              "qty": 11,
+              "revenue": 901
             },
             {
               "name": "Peignoir Femme Flanelle",
@@ -308,7 +315,7 @@
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 34,
+          "top3RevenueShare": 36,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -321,7 +328,7 @@
             "12": 3,
             "13": 3,
             "14": 7,
-            "15": 9,
+            "15": 10,
             "16": 7,
             "17": 5,
             "18": 8,
@@ -334,7 +341,7 @@
           "daily": {
             "0": 18,
             "1": 8,
-            "2": 16,
+            "2": 17,
             "3": 12,
             "4": 11,
             "5": 15,
@@ -365,8 +372,8 @@
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 20,
-          "totalCheckouts": 108,
-          "abandonRate": 19,
+          "totalCheckouts": 109,
+          "abandonRate": 18,
           "abandonedValue": 993,
           "topAbandoned": [
             {
@@ -390,25 +397,25 @@
               "count": 1
             }
           ],
-          "sessions": 1350,
+          "sessions": 1363,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:32.428Z"
+          "syncedAt": "2026-03-31T16:35:34.075Z"
         },
         "365": {
           "period": 365,
-          "revenue": 11964,
+          "revenue": 11935,
           "orders": 198,
           "aov": 60,
           "currency": "EUR",
           "refunds": 52,
           "refundRate": 21,
           "revenueHalf1": 0,
-          "revenueHalf2": 11964,
-          "discountOrders": 133,
+          "revenueHalf2": 11935,
+          "discountOrders": 132,
           "discountRate": 67,
           "discountShare": 10,
-          "totalDiscounts": 1138,
+          "totalDiscounts": 1151,
           "newCust": 196,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
@@ -422,8 +429,8 @@
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 16,
-              "revenue": 1331
+              "qty": 17,
+              "revenue": 1411
             },
             {
               "name": "Peignoir Femme Flanelle",
@@ -466,7 +473,7 @@
               "revenue": 270
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 47,
           "hourly": {
             "0": 1,
             "2": 2,
@@ -480,8 +487,8 @@
             "11": 12,
             "12": 7,
             "13": 9,
-            "14": 20,
-            "15": 15,
+            "14": 19,
+            "15": 16,
             "16": 13,
             "17": 12,
             "18": 25,
@@ -492,9 +499,9 @@
             "23": 5
           },
           "daily": {
-            "0": 33,
+            "0": 32,
             "1": 29,
-            "2": 37,
+            "2": 38,
             "3": 32,
             "4": 22,
             "5": 28,
@@ -553,7 +560,7 @@
           "sessions": 2763,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:33.272Z"
+          "syncedAt": "2026-03-31T16:35:34.736Z"
         }
       }
     },
@@ -562,7 +569,7 @@
         "revenue": 821,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-03-31T12:06:35.504Z",
+        "syncedAt": "2026-03-31T16:35:36.858Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -629,7 +636,7 @@
           "sessions": 13,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:36.937Z"
+          "syncedAt": "2026-03-31T16:35:38.359Z"
         },
         "30": {
           "period": 30,
@@ -639,8 +646,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 449,
-          "revenueHalf2": 372,
+          "revenueHalf1": 504,
+          "revenueHalf2": 317,
           "discountOrders": 1,
           "discountRate": 8,
           "discountShare": 0,
@@ -648,7 +655,7 @@
           "newCust": 13,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 48,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -764,7 +771,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:37.537Z"
+          "syncedAt": "2026-03-31T16:35:38.946Z"
         },
         "90": {
           "period": 90,
@@ -783,7 +790,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 43,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -904,7 +911,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:38.467Z"
+          "syncedAt": "2026-03-31T16:35:39.533Z"
         },
         "365": {
           "period": 365,
@@ -923,7 +930,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 43,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1044,7 +1051,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T12:06:39.085Z"
+          "syncedAt": "2026-03-31T16:35:40.095Z"
         }
       }
     }
