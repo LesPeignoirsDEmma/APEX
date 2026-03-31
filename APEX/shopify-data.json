@@ -1,36 +1,36 @@
 {
-  "lastUpdated": "2026-03-31T19:57:32.108Z",
+  "lastUpdated": "2026-03-31T21:58:47.238Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 923,
-        "orders": 16,
+        "revenue": 983,
+        "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-03-31T19:57:35.711Z",
+        "syncedAt": "2026-03-31T21:58:50.236Z",
         "allTime": {
-          "revenue": 11935,
+          "revenue": 11964,
           "orders": 198
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 116,
-          "orders": 2,
-          "aov": 58,
+          "revenue": 176,
+          "orders": 3,
+          "aov": 59,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 36,
-          "revenueHalf2": 80,
+          "revenueHalf2": 140,
           "discountOrders": 1,
-          "discountRate": 50,
-          "discountShare": 3,
+          "discountRate": 33,
+          "discountShare": 2,
           "totalDiscounts": 4,
-          "newCust": 2,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 8,
+          "avgLTV": 12,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -39,18 +39,24 @@
               "revenue": 80
             },
             {
+              "name": "Peignoir Femme Nid d'Abeille Léger",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
               "name": "Cape de Bain Coton",
               "qty": 1,
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 104,
+          "top3RevenueShare": 102,
           "hourly": {
             "6": 1,
-            "15": 1
+            "15": 1,
+            "20": 1
           },
           "daily": {
-            "2": 1,
+            "2": 2,
             "5": 1
           },
           "totalProducts": 178,
@@ -78,8 +84,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 4,
-          "abandonRate": 50,
+          "totalCheckouts": 5,
+          "abandonRate": 40,
           "abandonedValue": 153,
           "topAbandoned": [
             {
@@ -91,29 +97,29 @@
               "count": 1
             }
           ],
-          "sessions": 50,
-          "conversionRate": 4,
+          "sessions": 63,
+          "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:39.202Z"
+          "syncedAt": "2026-03-31T21:58:54.020Z"
         },
         "30": {
           "period": 30,
-          "revenue": 923,
-          "orders": 16,
+          "revenue": 983,
+          "orders": 17,
           "aov": 58,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 6,
           "revenueHalf1": 594,
-          "revenueHalf2": 329,
+          "revenueHalf2": 389,
           "discountOrders": 10,
-          "discountRate": 63,
+          "discountRate": 59,
           "discountShare": 6,
           "totalDiscounts": 60,
-          "newCust": 16,
+          "newCust": 17,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 20,
+          "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -135,6 +141,11 @@
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 1,
               "revenue": 75
+            },
+            {
+              "name": "Peignoir Femme Nid d'Abeille Léger",
+              "qty": 1,
+              "revenue": 60
             },
             {
               "name": "Peignoir Court Capuche - Femme",
@@ -160,14 +171,9 @@
               "name": "Peignoir Nid d’Abeille Manche Courte",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Peignoir Satin Homme",
-              "qty": 1,
-              "revenue": 50
             }
           ],
-          "top3RevenueShare": 54,
+          "top3RevenueShare": 51,
           "hourly": {
             "6": 1,
             "7": 2,
@@ -176,14 +182,14 @@
             "13": 2,
             "15": 3,
             "17": 1,
-            "20": 1,
+            "20": 2,
             "22": 1,
             "23": 2
           },
           "daily": {
             "0": 2,
             "1": 2,
-            "2": 2,
+            "2": 3,
             "3": 2,
             "4": 2,
             "5": 4,
@@ -214,8 +220,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 22,
-          "abandonRate": 27,
+          "totalCheckouts": 23,
+          "abandonRate": 26,
           "abandonedValue": 336,
           "topAbandoned": [
             {
@@ -239,26 +245,26 @@
               "count": 1
             }
           ],
-          "sessions": 275,
-          "conversionRate": 5.8,
+          "sessions": 288,
+          "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:39.999Z"
+          "syncedAt": "2026-03-31T21:58:54.691Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5463,
-          "orders": 89,
+          "revenue": 5523,
+          "orders": 90,
           "aov": 61,
           "currency": "EUR",
           "refunds": 14,
-          "refundRate": 14,
+          "refundRate": 13,
           "revenueHalf1": 3288,
-          "revenueHalf2": 2175,
+          "revenueHalf2": 2234,
           "discountOrders": 48,
-          "discountRate": 54,
+          "discountRate": 53,
           "discountShare": 10,
           "totalDiscounts": 566,
-          "newCust": 87,
+          "newCust": 88,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 28,
@@ -315,7 +321,7 @@
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 35,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -333,7 +339,7 @@
             "17": 5,
             "18": 8,
             "19": 5,
-            "20": 5,
+            "20": 6,
             "21": 6,
             "22": 1,
             "23": 2
@@ -341,7 +347,7 @@
           "daily": {
             "0": 18,
             "1": 8,
-            "2": 17,
+            "2": 18,
             "3": 12,
             "4": 11,
             "5": 15,
@@ -372,7 +378,7 @@
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 20,
-          "totalCheckouts": 109,
+          "totalCheckouts": 110,
           "abandonRate": 18,
           "abandonedValue": 993,
           "topAbandoned": [
@@ -397,25 +403,25 @@
               "count": 1
             }
           ],
-          "sessions": 1363,
+          "sessions": 1375,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:41.098Z"
+          "syncedAt": "2026-03-31T21:58:55.600Z"
         },
         "365": {
           "period": 365,
-          "revenue": 11935,
+          "revenue": 11964,
           "orders": 198,
           "aov": 60,
           "currency": "EUR",
           "refunds": 52,
           "refundRate": 21,
           "revenueHalf1": 0,
-          "revenueHalf2": 11935,
-          "discountOrders": 132,
-          "discountRate": 67,
+          "revenueHalf2": 11964,
+          "discountOrders": 131,
+          "discountRate": 66,
           "discountShare": 10,
-          "totalDiscounts": 1151,
+          "totalDiscounts": 1148,
           "newCust": 196,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
@@ -487,21 +493,21 @@
             "11": 12,
             "12": 7,
             "13": 9,
-            "14": 19,
+            "14": 18,
             "15": 16,
             "16": 13,
             "17": 12,
             "18": 25,
             "19": 14,
-            "20": 13,
+            "20": 14,
             "21": 13,
             "22": 4,
             "23": 5
           },
           "daily": {
-            "0": 32,
+            "0": 31,
             "1": 29,
-            "2": 38,
+            "2": 39,
             "3": 32,
             "4": 22,
             "5": 28,
@@ -560,7 +566,7 @@
           "sessions": 2763,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:41.838Z"
+          "syncedAt": "2026-03-31T21:58:56.352Z"
         }
       }
     },
@@ -569,7 +575,7 @@
         "revenue": 821,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-03-31T19:57:44.228Z",
+        "syncedAt": "2026-03-31T21:58:57.984Z",
         "allTime": {
           "revenue": 866,
           "orders": 14
@@ -636,7 +642,7 @@
           "sessions": 13,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:45.908Z"
+          "syncedAt": "2026-03-31T21:58:59.149Z"
         },
         "30": {
           "period": 30,
@@ -771,7 +777,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:46.498Z"
+          "syncedAt": "2026-03-31T21:58:59.763Z"
         },
         "90": {
           "period": 90,
@@ -911,7 +917,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:47.088Z"
+          "syncedAt": "2026-03-31T21:59:00.298Z"
         },
         "365": {
           "period": 365,
@@ -1051,7 +1057,7 @@
           "sessions": 213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-03-31T19:57:48.009Z"
+          "syncedAt": "2026-03-31T21:59:00.872Z"
         }
       }
     }
