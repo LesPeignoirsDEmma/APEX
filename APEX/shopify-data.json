@@ -1,42 +1,52 @@
 {
-  "lastUpdated": "2026-04-01T10:36:09.485Z",
+  "lastUpdated": "2026-04-01T14:55:17.146Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 911,
-        "orders": 16,
+        "revenue": 1116,
+        "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-04-01T10:36:15.906Z",
+        "syncedAt": "2026-04-01T14:55:20.479Z",
         "allTime": {
-          "revenue": 11891,
+          "revenue": 12042,
           "orders": 197
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 176,
-          "orders": 3,
-          "aov": 59,
+          "revenue": 380,
+          "orders": 4,
+          "aov": 95,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 36,
-          "revenueHalf2": 140,
+          "revenueHalf2": 345,
           "discountOrders": 1,
-          "discountRate": 33,
-          "discountShare": 2,
+          "discountRate": 25,
+          "discountShare": 1,
           "totalDiscounts": 4,
-          "newCust": 3,
+          "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 15,
+          "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Ensemble Robe De Nuit Et Peignoir",
+              "qty": 1,
+              "revenue": 90
+            },
             {
               "name": "Peignoir Polaire Luxe - Homme",
               "qty": 1,
               "revenue": 80
+            },
+            {
+              "name": "Peignoir Mariée Dentelle",
+              "qty": 1,
+              "revenue": 60
             },
             {
               "name": "Peignoir Femme Nid d'Abeille Léger",
@@ -44,19 +54,26 @@
               "revenue": 60
             },
             {
+              "name": "Peignoir Satin Manche en Maille – Femme",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
               "name": "Cape de Bain Coton",
               "qty": 1,
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 102,
+          "top3RevenueShare": 60,
           "hourly": {
             "6": 1,
+            "11": 1,
             "15": 1,
             "20": 1
           },
           "daily": {
             "2": 2,
+            "3": 1,
             "5": 1
           },
           "totalProducts": 178,
@@ -76,16 +93,16 @@
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
             "Ensemble Peignoir Satin & Dentelle – Femme",
-            "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme"
+            "Peignoir Absorbant Homme",
+            "Peignoir Baroque - Femme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 4,
-          "abandonRate": 25,
+          "totalCheckouts": 5,
+          "abandonRate": 20,
           "abandonedValue": 108,
           "topAbandoned": [
             {
@@ -93,29 +110,29 @@
               "count": 2
             }
           ],
-          "sessions": 50,
-          "conversionRate": 6,
+          "sessions": 63,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:21.181Z"
+          "syncedAt": "2026-04-01T14:55:23.506Z"
         },
         "30": {
           "period": 30,
-          "revenue": 911,
-          "orders": 16,
-          "aov": 57,
+          "revenue": 1116,
+          "orders": 17,
+          "aov": 66,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 522,
-          "revenueHalf2": 389,
+          "revenueHalf2": 594,
           "discountOrders": 9,
-          "discountRate": 56,
-          "discountShare": 6,
+          "discountRate": 53,
+          "discountShare": 5,
           "totalDiscounts": 52,
-          "newCust": 16,
+          "newCust": 17,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -134,9 +151,19 @@
               "revenue": 120
             },
             {
+              "name": "Ensemble Robe De Nuit Et Peignoir",
+              "qty": 1,
+              "revenue": 90
+            },
+            {
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 1,
               "revenue": 75
+            },
+            {
+              "name": "Peignoir Mariée Dentelle",
+              "qty": 1,
+              "revenue": 60
             },
             {
               "name": "Peignoir Femme Nid d'Abeille Léger",
@@ -157,24 +184,15 @@
               "name": "Peignoir Polaire Enfant",
               "qty": 1,
               "revenue": 60
-            },
-            {
-              "name": "Robe Peignoir Coton Léger",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
-              "name": "Peignoir Nid d’Abeille Manche Courte",
-              "qty": 1,
-              "revenue": 50
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 38,
           "hourly": {
             "6": 1,
             "7": 2,
             "8": 1,
             "9": 2,
+            "11": 1,
             "13": 2,
             "15": 2,
             "17": 1,
@@ -186,7 +204,7 @@
             "0": 1,
             "1": 2,
             "2": 3,
-            "3": 2,
+            "3": 3,
             "4": 2,
             "5": 4,
             "6": 2
@@ -207,17 +225,17 @@
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
             "Ensemble Peignoir Satin & Dentelle – Femme",
-            "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
-            "Peignoir Baroque - Femme"
+            "Peignoir Baroque - Femme",
+            "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 22,
-          "abandonRate": 27,
+          "totalCheckouts": 23,
+          "abandonRate": 26,
           "abandonedValue": 336,
           "topAbandoned": [
             {
@@ -241,29 +259,29 @@
               "count": 1
             }
           ],
-          "sessions": 275,
-          "conversionRate": 5.8,
+          "sessions": 288,
+          "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:21.938Z"
+          "syncedAt": "2026-04-01T14:55:24.317Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5450,
-          "orders": 89,
-          "aov": 61,
+          "revenue": 5655,
+          "orders": 90,
+          "aov": 63,
           "currency": "EUR",
           "refunds": 15,
           "refundRate": 14,
           "revenueHalf1": 3397,
-          "revenueHalf2": 2054,
+          "revenueHalf2": 2258,
           "discountOrders": 47,
-          "discountRate": 53,
+          "discountRate": 52,
           "discountShare": 10,
           "totalDiscounts": 558,
-          "newCust": 87,
+          "newCust": 88,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 28,
+          "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -317,7 +335,7 @@
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 34,
+          "top3RevenueShare": 33,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -326,7 +344,7 @@
             "8": 3,
             "9": 7,
             "10": 4,
-            "11": 5,
+            "11": 6,
             "12": 3,
             "13": 3,
             "14": 7,
@@ -344,7 +362,7 @@
             "0": 18,
             "1": 8,
             "2": 18,
-            "3": 11,
+            "3": 12,
             "4": 11,
             "5": 15,
             "6": 8
@@ -361,7 +379,6 @@
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
-            "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
@@ -370,11 +387,12 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Brodé Ours – Enfant"
+            "Peignoir Brodé Ours – Enfant",
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 20,
-          "totalCheckouts": 109,
+          "totalCheckouts": 110,
           "abandonRate": 18,
           "abandonedValue": 993,
           "topAbandoned": [
@@ -399,35 +417,35 @@
               "count": 1
             }
           ],
-          "sessions": 1363,
+          "sessions": 1375,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:22.898Z"
+          "syncedAt": "2026-04-01T14:55:25.760Z"
         },
         "365": {
           "period": 365,
-          "revenue": 11891,
+          "revenue": 12042,
           "orders": 197,
-          "aov": 60,
+          "aov": 61,
           "currency": "EUR",
           "refunds": 53,
           "refundRate": 21,
           "revenueHalf1": 0,
-          "revenueHalf2": 11891,
-          "discountOrders": 130,
-          "discountRate": 66,
-          "discountShare": 10,
-          "totalDiscounts": 1140,
+          "revenueHalf2": 12042,
+          "discountOrders": 129,
+          "discountRate": 65,
+          "discountShare": 9,
+          "totalDiscounts": 1134,
           "newCust": 195,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 28,
+          "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "qty": 59,
-              "revenue": 3534
+              "qty": 58,
+              "revenue": 3474
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
@@ -475,7 +493,7 @@
               "revenue": 270
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 45,
           "hourly": {
             "0": 1,
             "2": 2,
@@ -486,10 +504,10 @@
             "8": 4,
             "9": 14,
             "10": 7,
-            "11": 11,
+            "11": 12,
             "12": 7,
             "13": 9,
-            "14": 18,
+            "14": 17,
             "15": 16,
             "16": 13,
             "17": 12,
@@ -501,10 +519,10 @@
             "23": 5
           },
           "daily": {
-            "0": 31,
+            "0": 30,
             "1": 29,
             "2": 39,
-            "3": 31,
+            "3": 32,
             "4": 22,
             "5": 28,
             "6": 17
@@ -521,7 +539,6 @@
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
-            "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
@@ -530,7 +547,8 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 20,
@@ -562,45 +580,55 @@
           "sessions": 2750,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:23.703Z"
+          "syncedAt": "2026-04-01T14:55:26.845Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 821,
-        "orders": 13,
+        "revenue": 846,
+        "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-04-01T10:36:27.730Z",
+        "syncedAt": "2026-04-01T14:55:29.331Z",
         "allTime": {
-          "revenue": 866,
-          "orders": 14
+          "revenue": 891,
+          "orders": 15
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 0,
-          "orders": 0,
-          "aov": 0,
+          "revenue": 25,
+          "orders": 1,
+          "aov": 25,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 0,
+          "revenueHalf2": 25,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 0,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 0,
+          "avgLTV": 5,
           "vipCustomers": 0,
-          "topProducts": [],
-          "top3RevenueShare": 0,
-          "hourly": {},
-          "daily": {},
+          "topProducts": [
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 1,
+              "revenue": 25
+            }
+          ],
+          "top3RevenueShare": 100,
+          "hourly": {
+            "13": 1
+          },
+          "daily": {
+            "3": 1
+          },
           "totalProducts": 205,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
@@ -626,8 +654,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 1,
-          "abandonRate": 100,
+          "totalCheckouts": 2,
+          "abandonRate": 50,
           "abandonedValue": 49,
           "topAbandoned": [
             {
@@ -635,29 +663,29 @@
               "count": 1
             }
           ],
-          "sessions": 13,
-          "conversionRate": null,
+          "sessions": 25,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:28.968Z"
+          "syncedAt": "2026-04-01T14:55:30.614Z"
         },
         "30": {
           "period": 30,
-          "revenue": 821,
-          "orders": 13,
-          "aov": 63,
+          "revenue": 846,
+          "orders": 14,
+          "aov": 60,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 504,
-          "revenueHalf2": 317,
+          "revenueHalf2": 342,
           "discountOrders": 1,
-          "discountRate": 8,
+          "discountRate": 7,
           "discountShare": 0,
           "totalDiscounts": 2,
-          "newCust": 13,
+          "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 46,
+          "avgLTV": 45,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -711,12 +739,12 @@
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 37,
           "hourly": {
             "1": 1,
             "8": 1,
             "12": 1,
-            "13": 4,
+            "13": 5,
             "17": 1,
             "18": 1,
             "19": 1,
@@ -727,7 +755,7 @@
             "0": 2,
             "1": 3,
             "2": 1,
-            "3": 3,
+            "3": 4,
             "4": 1,
             "5": 1,
             "6": 2
@@ -757,7 +785,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 15,
+          "totalCheckouts": 16,
           "abandonRate": 13,
           "abandonedValue": 169,
           "topAbandoned": [
@@ -770,29 +798,29 @@
               "count": 1
             }
           ],
-          "sessions": 188,
-          "conversionRate": 6.9,
+          "sessions": 200,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:29.602Z"
+          "syncedAt": "2026-04-01T14:55:31.385Z"
         },
         "90": {
           "period": 90,
-          "revenue": 866,
-          "orders": 14,
-          "aov": 62,
+          "revenue": 891,
+          "orders": 15,
+          "aov": 59,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 866,
+          "revenueHalf2": 891,
           "discountOrders": 1,
           "discountRate": 7,
           "discountShare": 0,
           "totalDiscounts": 2,
-          "newCust": 14,
+          "newCust": 15,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 41,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -846,13 +874,13 @@
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 35,
           "hourly": {
             "1": 1,
             "8": 1,
             "10": 1,
             "12": 1,
-            "13": 4,
+            "13": 5,
             "17": 1,
             "18": 1,
             "19": 1,
@@ -863,7 +891,7 @@
             "0": 2,
             "1": 3,
             "2": 1,
-            "3": 3,
+            "3": 4,
             "4": 1,
             "5": 1,
             "6": 3
@@ -893,8 +921,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 17,
-          "abandonRate": 18,
+          "totalCheckouts": 18,
+          "abandonRate": 17,
           "abandonedValue": 294,
           "topAbandoned": [
             {
@@ -910,29 +938,29 @@
               "count": 1
             }
           ],
-          "sessions": 213,
-          "conversionRate": 6.6,
+          "sessions": 225,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:30.272Z"
+          "syncedAt": "2026-04-01T14:55:31.945Z"
         },
         "365": {
           "period": 365,
-          "revenue": 866,
-          "orders": 14,
-          "aov": 62,
+          "revenue": 891,
+          "orders": 15,
+          "aov": 59,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 866,
+          "revenueHalf2": 891,
           "discountOrders": 1,
           "discountRate": 7,
           "discountShare": 0,
           "totalDiscounts": 2,
-          "newCust": 14,
+          "newCust": 15,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 41,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -986,13 +1014,13 @@
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 35,
           "hourly": {
             "1": 1,
             "8": 1,
             "10": 1,
             "12": 1,
-            "13": 4,
+            "13": 5,
             "17": 1,
             "18": 1,
             "19": 1,
@@ -1003,7 +1031,7 @@
             "0": 2,
             "1": 3,
             "2": 1,
-            "3": 3,
+            "3": 4,
             "4": 1,
             "5": 1,
             "6": 3
@@ -1033,8 +1061,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 17,
-          "abandonRate": 18,
+          "totalCheckouts": 18,
+          "abandonRate": 17,
           "abandonedValue": 294,
           "topAbandoned": [
             {
@@ -1050,10 +1078,10 @@
               "count": 1
             }
           ],
-          "sessions": 213,
-          "conversionRate": 6.6,
+          "sessions": 225,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-01T10:36:30.930Z"
+          "syncedAt": "2026-04-01T14:55:32.492Z"
         }
       }
     }
