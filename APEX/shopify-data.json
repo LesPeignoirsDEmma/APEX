@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-02T12:04:48.652Z",
+  "lastUpdated": "2026-04-02T16:13:26.223Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1062,
         "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-04-02T12:04:53.087Z",
+        "syncedAt": "2026-04-02T16:13:29.853Z",
         "allTime": {
           "revenue": 12042,
           "orders": 197
@@ -108,7 +108,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:04:55.156Z"
+          "syncedAt": "2026-04-02T16:13:38.454Z"
         },
         "30": {
           "period": 30,
@@ -257,7 +257,7 @@
           "sessions": 275,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:04:55.983Z"
+          "syncedAt": "2026-04-02T16:13:39.457Z"
         },
         "90": {
           "period": 90,
@@ -415,7 +415,7 @@
           "sessions": 1363,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:04:57.102Z"
+          "syncedAt": "2026-04-02T16:13:40.251Z"
         },
         "365": {
           "period": 365,
@@ -575,7 +575,7 @@
           "sessions": 2750,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:04:58.426Z"
+          "syncedAt": "2026-04-02T16:13:41.532Z"
         }
       }
     },
@@ -584,7 +584,7 @@
         "revenue": 835,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-04-02T12:05:03.578Z",
+        "syncedAt": "2026-04-02T16:13:43.776Z",
         "allTime": {
           "revenue": 940,
           "orders": 16
@@ -608,7 +608,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 12,
+          "avgLTV": 9,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -655,15 +655,24 @@
             "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 0,
-          "totalCheckouts": 2,
-          "abandonRate": 0,
-          "abandonedValue": 0,
-          "topAbandoned": [],
-          "sessions": 25,
-          "conversionRate": 8,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 4,
+          "abandonRate": 50,
+          "abandonedValue": 112,
+          "topAbandoned": [
+            {
+              "name": "Tunique De Plage Robe Kimono Blanc",
+              "count": 1
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "count": 1
+            }
+          ],
+          "sessions": 50,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:05:04.906Z"
+          "syncedAt": "2026-04-02T16:13:45.044Z"
         },
         "30": {
           "period": 30,
@@ -682,7 +691,7 @@
           "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 42,
+          "avgLTV": 38,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -782,10 +791,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 16,
-          "abandonRate": 13,
-          "abandonedValue": 169,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 18,
+          "abandonRate": 22,
+          "abandonedValue": 282,
           "topAbandoned": [
             {
               "name": "Kimono Abaya Femme",
@@ -794,12 +803,20 @@
             {
               "name": "Kimono Chinois Rouge",
               "count": 1
+            },
+            {
+              "name": "Tunique De Plage Robe Kimono Blanc",
+              "count": 1
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 7,
+          "sessions": 225,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:05:05.658Z"
+          "syncedAt": "2026-04-02T16:13:45.689Z"
         },
         "90": {
           "period": 90,
@@ -818,7 +835,7 @@
           "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 39,
+          "avgLTV": 36,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -918,10 +935,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 19,
-          "abandonRate": 16,
-          "abandonedValue": 294,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 21,
+          "abandonRate": 24,
+          "abandonedValue": 407,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -934,12 +951,20 @@
             {
               "name": "Kimono Chinois Rouge",
               "count": 1
+            },
+            {
+              "name": "Tunique De Plage Robe Kimono Blanc",
+              "count": 1
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 6.7,
+          "sessions": 263,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:05:06.349Z"
+          "syncedAt": "2026-04-02T16:13:46.384Z"
         },
         "365": {
           "period": 365,
@@ -958,7 +983,7 @@
           "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 39,
+          "avgLTV": 36,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1058,10 +1083,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 19,
-          "abandonRate": 16,
-          "abandonedValue": 294,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 21,
+          "abandonRate": 24,
+          "abandonedValue": 407,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -1074,12 +1099,20 @@
             {
               "name": "Kimono Chinois Rouge",
               "count": 1
+            },
+            {
+              "name": "Tunique De Plage Robe Kimono Blanc",
+              "count": 1
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 6.7,
+          "sessions": 263,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-02T12:05:06.990Z"
+          "syncedAt": "2026-04-02T16:13:46.969Z"
         }
       }
     }
