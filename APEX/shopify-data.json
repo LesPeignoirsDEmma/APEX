@@ -1,42 +1,47 @@
 {
-  "lastUpdated": "2026-04-03T11:25:26.887Z",
+  "lastUpdated": "2026-04-03T14:27:52.114Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1128,
-        "orders": 17,
+        "revenue": 1200,
+        "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-03T11:25:29.382Z",
+        "syncedAt": "2026-04-03T14:27:55.689Z",
         "allTime": {
-          "revenue": 11868,
+          "revenue": 11908,
           "orders": 195
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 500,
-          "orders": 6,
-          "aov": 83,
+          "revenue": 572,
+          "orders": 7,
+          "aov": 82,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 36,
-          "revenueHalf2": 464,
-          "discountOrders": 1,
-          "discountRate": 17,
-          "discountShare": 1,
-          "totalDiscounts": 4,
-          "newCust": 6,
+          "revenueHalf2": 536,
+          "discountOrders": 2,
+          "discountRate": 29,
+          "discountShare": 2,
+          "totalDiscounts": 12,
+          "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 56,
+          "avgLTV": 57,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Ensemble Robe De Nuit Et Peignoir",
               "qty": 1,
               "revenue": 90
+            },
+            {
+              "name": "Peignoir En Satin Pour Homme",
+              "qty": 1,
+              "revenue": 80
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
@@ -74,18 +79,19 @@
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 48,
+          "top3RevenueShare": 44,
           "hourly": {
             "6": 1,
             "8": 1,
             "11": 2,
+            "12": 1,
             "15": 1,
             "20": 1
           },
           "daily": {
             "2": 2,
             "3": 1,
-            "5": 3
+            "5": 4
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -112,33 +118,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 6,
+          "totalCheckouts": 7,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 75,
+          "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:31.700Z"
+          "syncedAt": "2026-04-03T14:27:59.862Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1128,
-          "orders": 17,
-          "aov": 66,
+          "revenue": 1200,
+          "orders": 18,
+          "aov": 67,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 414,
-          "revenueHalf2": 714,
-          "discountOrders": 7,
-          "discountRate": 41,
+          "revenueHalf2": 786,
+          "discountOrders": 8,
+          "discountRate": 44,
           "discountShare": 4,
-          "totalDiscounts": 40,
-          "newCust": 17,
+          "totalDiscounts": 48,
+          "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -160,6 +166,11 @@
               "name": "Ensemble Robe De Nuit Et Peignoir",
               "qty": 1,
               "revenue": 90
+            },
+            {
+              "name": "Peignoir En Satin Pour Homme",
+              "qty": 1,
+              "revenue": 80
             },
             {
               "name": "Peignoir Satin 4 Pièces – Femme",
@@ -185,20 +196,16 @@
               "name": "Peignoir Satin Manche en Maille – Femme",
               "qty": 1,
               "revenue": 55
-            },
-            {
-              "name": "Robe Peignoir Coton Léger",
-              "qty": 1,
-              "revenue": 55
             }
           ],
-          "top3RevenueShare": 43,
+          "top3RevenueShare": 41,
           "hourly": {
             "6": 1,
             "7": 2,
             "8": 2,
             "9": 2,
             "11": 2,
+            "12": 1,
             "13": 1,
             "15": 2,
             "20": 2,
@@ -211,7 +218,7 @@
             "2": 2,
             "3": 3,
             "4": 2,
-            "5": 6,
+            "5": 7,
             "6": 2
           },
           "totalProducts": 178,
@@ -239,8 +246,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 22,
-          "abandonRate": 23,
+          "totalCheckouts": 23,
+          "abandonRate": 22,
           "abandonedValue": 276,
           "topAbandoned": [
             {
@@ -264,26 +271,26 @@
               "count": 1
             }
           ],
-          "sessions": 275,
-          "conversionRate": 6.2,
+          "sessions": 288,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:32.800Z"
+          "syncedAt": "2026-04-03T14:28:00.623Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5394,
-          "orders": 87,
+          "revenue": 5466,
+          "orders": 88,
           "aov": 62,
           "currency": "EUR",
           "refunds": 18,
           "refundRate": 17,
           "revenueHalf1": 3257,
-          "revenueHalf2": 2138,
-          "discountOrders": 47,
-          "discountRate": 54,
+          "revenueHalf2": 2209,
+          "discountOrders": 48,
+          "discountRate": 55,
           "discountShare": 10,
-          "totalDiscounts": 558,
-          "newCust": 85,
+          "totalDiscounts": 566,
+          "newCust": 86,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 28,
@@ -350,7 +357,7 @@
             "9": 7,
             "10": 3,
             "11": 7,
-            "12": 3,
+            "12": 4,
             "13": 3,
             "14": 7,
             "15": 10,
@@ -369,7 +376,7 @@
             "2": 18,
             "3": 12,
             "4": 9,
-            "5": 16,
+            "5": 17,
             "6": 8
           },
           "totalProducts": 178,
@@ -397,7 +404,7 @@
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 106,
+          "totalCheckouts": 107,
           "abandonRate": 18,
           "abandonedValue": 958,
           "topAbandoned": [
@@ -422,25 +429,25 @@
               "count": 1
             }
           ],
-          "sessions": 1325,
+          "sessions": 1338,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:34.303Z"
+          "syncedAt": "2026-04-03T14:28:01.875Z"
         },
         "365": {
           "period": 365,
-          "revenue": 11868,
+          "revenue": 11908,
           "orders": 195,
           "aov": 61,
           "currency": "EUR",
           "refunds": 55,
           "refundRate": 22,
           "revenueHalf1": 0,
-          "revenueHalf2": 11868,
+          "revenueHalf2": 11908,
           "discountOrders": 128,
           "discountRate": 66,
           "discountShare": 10,
-          "totalDiscounts": 1128,
+          "totalDiscounts": 1132,
           "newCust": 193,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
@@ -449,8 +456,8 @@
           "topProducts": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "qty": 56,
-              "revenue": 3354
+              "qty": 57,
+              "revenue": 3414
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
@@ -508,9 +515,9 @@
             "7": 4,
             "8": 5,
             "9": 14,
-            "10": 6,
+            "10": 5,
             "11": 13,
-            "12": 7,
+            "12": 8,
             "13": 9,
             "14": 17,
             "15": 16,
@@ -525,11 +532,11 @@
           },
           "daily": {
             "0": 28,
-            "1": 28,
+            "1": 27,
             "2": 39,
             "3": 32,
             "4": 21,
-            "5": 30,
+            "5": 31,
             "6": 17
           },
           "totalProducts": 178,
@@ -585,7 +592,7 @@
           "sessions": 2713,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:35.102Z"
+          "syncedAt": "2026-04-03T14:28:02.772Z"
         }
       }
     },
@@ -594,7 +601,7 @@
         "revenue": 791,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-03T11:25:37.556Z",
+        "syncedAt": "2026-04-03T14:28:07.300Z",
         "allTime": {
           "revenue": 940,
           "orders": 16
@@ -682,7 +689,7 @@
           "sessions": 50,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:38.844Z"
+          "syncedAt": "2026-04-03T14:28:08.815Z"
         },
         "30": {
           "period": 30,
@@ -825,7 +832,7 @@
           "sessions": 213,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:39.510Z"
+          "syncedAt": "2026-04-03T14:28:09.499Z"
         },
         "90": {
           "period": 90,
@@ -973,7 +980,7 @@
           "sessions": 263,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:40.167Z"
+          "syncedAt": "2026-04-03T14:28:10.138Z"
         },
         "365": {
           "period": 365,
@@ -1121,7 +1128,7 @@
           "sessions": 263,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T11:25:40.796Z"
+          "syncedAt": "2026-04-03T14:28:10.741Z"
         }
       }
     }
