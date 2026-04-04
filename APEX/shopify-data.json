@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-03T23:05:04.763Z",
+  "lastUpdated": "2026-04-04T05:14:26.663Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1200,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-03T23:05:09.435Z",
+        "syncedAt": "2026-04-04T05:14:29.122Z",
         "allTime": {
           "revenue": 11908,
           "orders": 195
@@ -15,22 +15,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 572,
-          "orders": 7,
-          "aov": 82,
+          "revenue": 536,
+          "orders": 6,
+          "aov": 89,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 36,
-          "revenueHalf2": 536,
-          "discountOrders": 2,
-          "discountRate": 29,
-          "discountShare": 2,
-          "totalDiscounts": 12,
-          "newCust": 7,
+          "revenueHalf1": 80,
+          "revenueHalf2": 456,
+          "discountOrders": 1,
+          "discountRate": 17,
+          "discountShare": 1,
+          "totalDiscounts": 8,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 57,
+          "avgLTV": 60,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -72,16 +72,10 @@
               "name": "Peignoir Léopard Homme",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Cape de Bain Coton",
-              "qty": 1,
-              "revenue": 40
             }
           ],
-          "top3RevenueShare": 44,
+          "top3RevenueShare": 47,
           "hourly": {
-            "6": 1,
             "8": 1,
             "11": 2,
             "12": 1,
@@ -91,7 +85,7 @@
           "daily": {
             "2": 2,
             "3": 1,
-            "5": 4
+            "5": 3
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -101,6 +95,7 @@
             "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
+            "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
             "Chaussons d’intérieur — Gris",
@@ -113,19 +108,18 @@
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme",
-            "Peignoir Baroque - Femme"
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 7,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 88,
+          "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:11.204Z"
+          "syncedAt": "2026-04-04T05:14:31.128Z"
         },
         "30": {
           "period": 30,
@@ -135,8 +129,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 414,
-          "revenueHalf2": 786,
+          "revenueHalf1": 459,
+          "revenueHalf2": 741,
           "discountOrders": 8,
           "discountRate": 44,
           "discountShare": 4,
@@ -274,7 +268,7 @@
           "sessions": 288,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:11.964Z"
+          "syncedAt": "2026-04-04T05:14:31.905Z"
         },
         "90": {
           "period": 90,
@@ -293,7 +287,7 @@
           "newCust": 86,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 28,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -432,7 +426,7 @@
           "sessions": 1338,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:12.671Z"
+          "syncedAt": "2026-04-04T05:14:32.644Z"
         },
         "365": {
           "period": 365,
@@ -592,7 +586,7 @@
           "sessions": 2713,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:14.427Z"
+          "syncedAt": "2026-04-04T05:14:33.689Z"
         }
       }
     },
@@ -601,7 +595,7 @@
         "revenue": 791,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-03T23:05:16.118Z",
+        "syncedAt": "2026-04-04T05:14:35.353Z",
         "allTime": {
           "revenue": 940,
           "orders": 16
@@ -689,7 +683,7 @@
           "sessions": 50,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:17.332Z"
+          "syncedAt": "2026-04-04T05:14:36.747Z"
         },
         "30": {
           "period": 30,
@@ -832,7 +826,7 @@
           "sessions": 213,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:18.003Z"
+          "syncedAt": "2026-04-04T05:14:37.370Z"
         },
         "90": {
           "period": 90,
@@ -980,7 +974,7 @@
           "sessions": 263,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:18.529Z"
+          "syncedAt": "2026-04-04T05:14:38.013Z"
         },
         "365": {
           "period": 365,
@@ -1128,7 +1122,7 @@
           "sessions": 263,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-03T23:05:19.143Z"
+          "syncedAt": "2026-04-04T05:14:38.603Z"
         }
       }
     }
