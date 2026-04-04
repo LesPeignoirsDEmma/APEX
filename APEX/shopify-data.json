@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-04T15:59:33.746Z",
+  "lastUpdated": "2026-04-04T17:49:07.651Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1200,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-04T15:59:36.925Z",
+        "syncedAt": "2026-04-04T17:49:10.193Z",
         "allTime": {
           "revenue": 11908,
           "orders": 195
@@ -119,7 +119,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:40.656Z"
+          "syncedAt": "2026-04-04T17:49:14.799Z"
         },
         "30": {
           "period": 30,
@@ -268,7 +268,7 @@
           "sessions": 288,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:41.450Z"
+          "syncedAt": "2026-04-04T17:49:15.579Z"
         },
         "90": {
           "period": 90,
@@ -426,7 +426,7 @@
           "sessions": 1338,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:42.489Z"
+          "syncedAt": "2026-04-04T17:49:16.298Z"
         },
         "365": {
           "period": 365,
@@ -586,7 +586,7 @@
           "sessions": 2713,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:43.268Z"
+          "syncedAt": "2026-04-04T17:49:17.442Z"
         }
       }
     },
@@ -595,7 +595,7 @@
         "revenue": 791,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-04T15:59:46.359Z",
+        "syncedAt": "2026-04-04T17:49:19.598Z",
         "allTime": {
           "revenue": 940,
           "orders": 16
@@ -619,7 +619,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 9,
+          "avgLTV": 8,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -666,10 +666,10 @@
             "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 4,
-          "abandonRate": 50,
-          "abandonedValue": 112,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 5,
+          "abandonRate": 60,
+          "abandonedValue": 162,
           "topAbandoned": [
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
@@ -678,12 +678,16 @@
             {
               "name": "Cardigan Kimono Coton Homme",
               "count": 1
+            },
+            {
+              "name": "Robe Chinoise Kimono Enfant",
+              "count": 1
             }
           ],
-          "sessions": 50,
-          "conversionRate": 4,
+          "sessions": 63,
+          "conversionRate": 3.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:47.652Z"
+          "syncedAt": "2026-04-04T17:49:20.917Z"
         },
         "30": {
           "period": 30,
@@ -693,8 +697,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 644,
-          "revenueHalf2": 147,
+          "revenueHalf1": 694,
+          "revenueHalf2": 97,
           "discountOrders": 2,
           "discountRate": 15,
           "discountShare": 1,
@@ -702,7 +706,7 @@
           "newCust": 13,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 36,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -801,10 +805,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 17,
-          "abandonRate": 24,
-          "abandonedValue": 282,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 18,
+          "abandonRate": 28,
+          "abandonedValue": 331,
           "topAbandoned": [
             {
               "name": "Kimono Abaya Femme",
@@ -821,12 +825,16 @@
             {
               "name": "Cardigan Kimono Coton Homme",
               "count": 1
+            },
+            {
+              "name": "Robe Chinoise Kimono Enfant",
+              "count": 1
             }
           ],
-          "sessions": 213,
-          "conversionRate": 6.1,
+          "sessions": 225,
+          "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:48.267Z"
+          "syncedAt": "2026-04-04T17:49:21.510Z"
         },
         "90": {
           "period": 90,
@@ -845,7 +853,7 @@
           "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 35,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -945,10 +953,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 5,
-          "totalCheckouts": 21,
-          "abandonRate": 24,
-          "abandonedValue": 407,
+          "abandonedCheckouts": 6,
+          "totalCheckouts": 22,
+          "abandonRate": 27,
+          "abandonedValue": 456,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -971,10 +979,10 @@
               "count": 1
             }
           ],
-          "sessions": 263,
-          "conversionRate": 6.1,
+          "sessions": 275,
+          "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:49.015Z"
+          "syncedAt": "2026-04-04T17:49:22.390Z"
         },
         "365": {
           "period": 365,
@@ -993,7 +1001,7 @@
           "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 35,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1093,10 +1101,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 5,
-          "totalCheckouts": 21,
-          "abandonRate": 24,
-          "abandonedValue": 407,
+          "abandonedCheckouts": 6,
+          "totalCheckouts": 22,
+          "abandonRate": 27,
+          "abandonedValue": 456,
           "topAbandoned": [
             {
               "name": "Manteau Kimono Épais Homme",
@@ -1119,10 +1127,10 @@
               "count": 1
             }
           ],
-          "sessions": 263,
-          "conversionRate": 6.1,
+          "sessions": 275,
+          "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T15:59:49.674Z"
+          "syncedAt": "2026-04-04T17:49:23.040Z"
         }
       }
     }
