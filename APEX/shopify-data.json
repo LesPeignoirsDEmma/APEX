@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-04T23:01:53.023Z",
+  "lastUpdated": "2026-04-05T05:55:09.137Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1200,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-04T23:01:55.769Z",
+        "syncedAt": "2026-04-05T05:55:13.427Z",
         "allTime": {
           "revenue": 11908,
           "orders": 195
@@ -21,8 +21,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 140,
-          "revenueHalf2": 396,
+          "revenueHalf1": 345,
+          "revenueHalf2": 192,
           "discountOrders": 1,
           "discountRate": 17,
           "discountShare": 1,
@@ -119,7 +119,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:01:58.688Z"
+          "syncedAt": "2026-04-05T05:55:16.452Z"
         },
         "30": {
           "period": 30,
@@ -129,8 +129,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 494,
-          "revenueHalf2": 706,
+          "revenueHalf1": 548,
+          "revenueHalf2": 652,
           "discountOrders": 8,
           "discountRate": 44,
           "discountShare": 4,
@@ -268,23 +268,23 @@
           "sessions": 288,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:01:59.436Z"
+          "syncedAt": "2026-04-05T05:55:17.380Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5466,
-          "orders": 88,
+          "revenue": 5314,
+          "orders": 86,
           "aov": 62,
           "currency": "EUR",
           "refunds": 18,
           "refundRate": 17,
-          "revenueHalf1": 3397,
+          "revenueHalf1": 3244,
           "revenueHalf2": 2069,
-          "discountOrders": 48,
-          "discountRate": 55,
+          "discountOrders": 46,
+          "discountRate": 53,
           "discountShare": 10,
-          "totalDiscounts": 566,
-          "newCust": 86,
+          "totalDiscounts": 549,
+          "newCust": 84,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 27,
@@ -306,14 +306,14 @@
               "revenue": 418
             },
             {
-              "name": "Peignoir Nid d’Abeille Haut de Gamme",
-              "qty": 5,
-              "revenue": 300
-            },
-            {
               "name": "Peignoir Flanelle Enfant",
               "qty": 5,
               "revenue": 261
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "qty": 4,
+              "revenue": 240
             },
             {
               "name": "Peignoir Éponge Rose Rayé",
@@ -341,7 +341,7 @@
               "revenue": 130
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 34,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -359,13 +359,13 @@
             "17": 5,
             "18": 7,
             "19": 5,
-            "20": 5,
-            "21": 5,
+            "20": 4,
+            "21": 4,
             "22": 1,
             "23": 2
           },
           "daily": {
-            "0": 17,
+            "0": 15,
             "1": 7,
             "2": 18,
             "3": 12,
@@ -398,7 +398,7 @@
           ],
           "newProductsAdded": 59,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 107,
+          "totalCheckouts": 105,
           "abandonRate": 18,
           "abandonedValue": 958,
           "topAbandoned": [
@@ -423,10 +423,10 @@
               "count": 1
             }
           ],
-          "sessions": 1338,
-          "conversionRate": 6.6,
+          "sessions": 1313,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:02:00.211Z"
+          "syncedAt": "2026-04-05T05:55:18.386Z"
         },
         "365": {
           "period": 365,
@@ -586,7 +586,7 @@
           "sessions": 2713,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:02:01.125Z"
+          "syncedAt": "2026-04-05T05:55:19.386Z"
         }
       }
     },
@@ -595,7 +595,7 @@
         "revenue": 791,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-04T23:02:03.054Z",
+        "syncedAt": "2026-04-05T05:55:22.015Z",
         "allTime": {
           "revenue": 940,
           "orders": 16
@@ -610,8 +610,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 74,
+          "revenueHalf1": 25,
+          "revenueHalf2": 49,
           "discountOrders": 1,
           "discountRate": 50,
           "discountShare": 7,
@@ -687,7 +687,7 @@
           "sessions": 63,
           "conversionRate": 3.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:02:04.246Z"
+          "syncedAt": "2026-04-05T05:55:23.407Z"
         },
         "30": {
           "period": 30,
@@ -834,7 +834,7 @@
           "sessions": 225,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:02:04.856Z"
+          "syncedAt": "2026-04-05T05:55:24.125Z"
         },
         "90": {
           "period": 90,
@@ -982,7 +982,7 @@
           "sessions": 275,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:02:05.536Z"
+          "syncedAt": "2026-04-05T05:55:24.815Z"
         },
         "365": {
           "period": 365,
@@ -1130,7 +1130,7 @@
           "sessions": 275,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-04T23:02:06.130Z"
+          "syncedAt": "2026-04-05T05:55:25.491Z"
         }
       }
     }
