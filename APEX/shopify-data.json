@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-08T10:41:46.088Z",
+  "lastUpdated": "2026-04-08T14:58:58.463Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1200,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-08T10:41:50.957Z",
+        "syncedAt": "2026-04-08T14:59:03.260Z",
         "allTime": {
           "revenue": 11908,
           "orders": 195
@@ -30,7 +30,7 @@
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 44,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -106,7 +106,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:41:54.119Z"
+          "syncedAt": "2026-04-08T14:59:05.875Z"
         },
         "30": {
           "period": 30,
@@ -255,7 +255,7 @@
           "sessions": 288,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:41:55.294Z"
+          "syncedAt": "2026-04-08T14:59:06.657Z"
         },
         "90": {
           "period": 90,
@@ -413,7 +413,7 @@
           "sessions": 1263,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:41:56.224Z"
+          "syncedAt": "2026-04-08T14:59:07.492Z"
         },
         "365": {
           "period": 365,
@@ -544,10 +544,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 19,
-          "totalCheckouts": 217,
-          "abandonRate": 9,
-          "abandonedValue": 958,
+          "abandonedCheckouts": 18,
+          "totalCheckouts": 216,
+          "abandonRate": 8,
+          "abandonedValue": 915,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -562,18 +562,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Satiné Long",
+              "name": "Peignoir Satin Homme",
               "count": 1
             },
             {
-              "name": "Peignoir Satin Homme",
+              "name": "Cape de Bain Bébé Cerf",
               "count": 1
             }
           ],
-          "sessions": 2713,
+          "sessions": 2700,
           "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:41:57.539Z"
+          "syncedAt": "2026-04-08T14:59:08.302Z"
         }
       }
     },
@@ -582,7 +582,7 @@
         "revenue": 586,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-08T10:42:00.571Z",
+        "syncedAt": "2026-04-08T14:59:11.000Z",
         "allTime": {
           "revenue": 1010,
           "orders": 18
@@ -695,7 +695,7 @@
           "sessions": 113,
           "conversionRate": 3.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:42:01.951Z"
+          "syncedAt": "2026-04-08T14:59:12.307Z"
         },
         "30": {
           "period": 30,
@@ -840,7 +840,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:42:02.684Z"
+          "syncedAt": "2026-04-08T14:59:12.963Z"
         },
         "90": {
           "period": 90,
@@ -990,7 +990,7 @@
           "sessions": 325,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:42:03.375Z"
+          "syncedAt": "2026-04-08T14:59:13.594Z"
         },
         "365": {
           "period": 365,
@@ -1140,7 +1140,7 @@
           "sessions": 325,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-08T10:42:04.161Z"
+          "syncedAt": "2026-04-08T14:59:14.248Z"
         }
       }
     }
