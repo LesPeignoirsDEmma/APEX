@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-09T10:20:05.095Z",
+  "lastUpdated": "2026-04-09T16:06:28.589Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1191,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-09T10:20:08.278Z",
+        "syncedAt": "2026-04-09T16:06:31.514Z",
         "allTime": {
           "revenue": 11962,
           "orders": 196
@@ -30,7 +30,7 @@
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 23,
+          "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -97,7 +97,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:10.499Z"
+          "syncedAt": "2026-04-09T16:06:33.448Z"
         },
         "30": {
           "period": 30,
@@ -116,7 +116,7 @@
           "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 25,
+          "avgLTV": 24,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -241,7 +241,7 @@
           "sessions": 275,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:11.221Z"
+          "syncedAt": "2026-04-09T16:06:34.132Z"
         },
         "90": {
           "period": 90,
@@ -251,8 +251,8 @@
           "currency": "EUR",
           "refunds": 16,
           "refundRate": 16,
-          "revenueHalf1": 3437,
-          "revenueHalf2": 1697,
+          "revenueHalf1": 3501,
+          "revenueHalf2": 1633,
           "discountOrders": 43,
           "discountRate": 52,
           "discountShare": 10,
@@ -399,7 +399,7 @@
           "sessions": 1250,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:12.301Z"
+          "syncedAt": "2026-04-09T16:06:34.850Z"
         },
         "365": {
           "period": 365,
@@ -418,7 +418,7 @@
           "newCust": 194,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 28,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -530,10 +530,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 217,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 216,
           "abandonRate": 8,
-          "abandonedValue": 915,
+          "abandonedValue": 866,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -548,18 +548,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Satin Homme",
+              "name": "Cape de Bain Bébé Cerf",
               "count": 1
             },
             {
-              "name": "Cape de Bain Bébé Cerf",
+              "name": "Peignoir Kimono Femme",
               "count": 1
             }
           ],
-          "sessions": 2713,
-          "conversionRate": 7.2,
+          "sessions": 2700,
+          "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:13.429Z"
+          "syncedAt": "2026-04-09T16:06:35.958Z"
         }
       }
     },
@@ -568,7 +568,7 @@
         "revenue": 586,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-09T10:20:16.266Z",
+        "syncedAt": "2026-04-09T16:06:38.520Z",
         "allTime": {
           "revenue": 1010,
           "orders": 18
@@ -592,7 +592,7 @@
           "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 10,
+          "avgLTV": 9,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -674,7 +674,7 @@
           "sessions": 100,
           "conversionRate": 3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:17.437Z"
+          "syncedAt": "2026-04-09T16:06:39.872Z"
         },
         "30": {
           "period": 30,
@@ -693,7 +693,7 @@
           "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 23,
+          "avgLTV": 22,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -819,7 +819,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:18.085Z"
+          "syncedAt": "2026-04-09T16:06:41.296Z"
         },
         "90": {
           "period": 90,
@@ -838,7 +838,7 @@
           "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -969,7 +969,7 @@
           "sessions": 325,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:18.655Z"
+          "syncedAt": "2026-04-09T16:06:41.899Z"
         },
         "365": {
           "period": 365,
@@ -988,7 +988,7 @@
           "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1119,7 +1119,7 @@
           "sessions": 325,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-09T10:20:19.265Z"
+          "syncedAt": "2026-04-09T16:06:42.479Z"
         }
       }
     }
