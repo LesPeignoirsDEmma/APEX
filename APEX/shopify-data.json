@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-10T10:35:16.201Z",
+  "lastUpdated": "2026-04-10T14:35:25.882Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1191,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-10T10:35:19.472Z",
+        "syncedAt": "2026-04-10T14:35:28.721Z",
         "allTime": {
           "revenue": 11962,
           "orders": 196
@@ -97,7 +97,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:22.278Z"
+          "syncedAt": "2026-04-10T14:35:31.149Z"
         },
         "30": {
           "period": 30,
@@ -241,7 +241,7 @@
           "sessions": 275,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:23.068Z"
+          "syncedAt": "2026-04-10T14:35:31.993Z"
         },
         "90": {
           "period": 90,
@@ -369,7 +369,7 @@
             "Peignoir Brodé Ours – Enfant",
             "Peignoir Capuche - Femme"
           ],
-          "newProductsAdded": 52,
+          "newProductsAdded": 51,
           "abandonedCheckouts": 17,
           "totalCheckouts": 99,
           "abandonRate": 17,
@@ -399,7 +399,7 @@
           "sessions": 1238,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:24.218Z"
+          "syncedAt": "2026-04-10T14:35:32.787Z"
         },
         "365": {
           "period": 365,
@@ -559,7 +559,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:25.353Z"
+          "syncedAt": "2026-04-10T14:35:34.294Z"
         }
       }
     },
@@ -568,7 +568,7 @@
         "revenue": 586,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-10T10:35:27.551Z",
+        "syncedAt": "2026-04-10T14:35:36.203Z",
         "allTime": {
           "revenue": 1010,
           "orders": 18
@@ -663,7 +663,7 @@
           "sessions": 63,
           "conversionRate": 3.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:28.809Z"
+          "syncedAt": "2026-04-10T14:35:37.544Z"
         },
         "30": {
           "period": 30,
@@ -808,7 +808,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:29.438Z"
+          "syncedAt": "2026-04-10T14:35:38.986Z"
         },
         "90": {
           "period": 90,
@@ -958,7 +958,7 @@
           "sessions": 325,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:30.059Z"
+          "syncedAt": "2026-04-10T14:35:39.669Z"
         },
         "365": {
           "period": 365,
@@ -1108,7 +1108,7 @@
           "sessions": 325,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-10T10:35:30.733Z"
+          "syncedAt": "2026-04-10T14:35:40.316Z"
         }
       }
     }
