@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-11T23:04:58.017Z",
+  "lastUpdated": "2026-04-12T06:10:16.411Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1149,
-        "orders": 17,
+        "revenue": 1079,
+        "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-04-11T23:05:00.455Z",
+        "syncedAt": "2026-04-12T06:10:23.261Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -85,37 +85,37 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:02.669Z"
+          "syncedAt": "2026-04-12T06:10:27.805Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1149,
-          "orders": 17,
-          "aov": 68,
+          "revenue": 1079,
+          "orders": 16,
+          "aov": 67,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 496,
+          "revenueHalf1": 426,
           "revenueHalf2": 653,
           "discountOrders": 8,
-          "discountRate": 47,
-          "discountShare": 4,
+          "discountRate": 50,
+          "discountShare": 5,
           "totalDiscounts": 49,
-          "newCust": 17,
+          "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 25,
+          "avgLTV": 24,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 3,
-              "revenue": 210
-            },
             {
               "name": "Peignoir Polaire Luxe - Homme",
               "qty": 2,
               "revenue": 160
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 2,
+              "revenue": 140
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -158,7 +158,7 @@
               "revenue": 55
             }
           ],
-          "top3RevenueShare": 43,
+          "top3RevenueShare": 39,
           "hourly": {
             "6": 2,
             "7": 2,
@@ -169,14 +169,13 @@
             "13": 1,
             "15": 1,
             "20": 2,
-            "22": 1,
             "23": 2
           },
           "daily": {
             "0": 1,
             "2": 2,
             "3": 1,
-            "4": 3,
+            "4": 2,
             "5": 7,
             "6": 3
           },
@@ -205,8 +204,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 20,
-          "abandonRate": 15,
+          "totalCheckouts": 19,
+          "abandonRate": 16,
           "abandonedValue": 202,
           "topAbandoned": [
             {
@@ -222,26 +221,26 @@
               "count": 1
             }
           ],
-          "sessions": 250,
-          "conversionRate": 6.8,
+          "sessions": 238,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:03.468Z"
+          "syncedAt": "2026-04-12T06:10:28.674Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5163,
-          "orders": 83,
-          "aov": 62,
+          "revenue": 5001,
+          "orders": 80,
+          "aov": 63,
           "currency": "EUR",
           "refunds": 14,
-          "refundRate": 14,
-          "revenueHalf1": 3527,
+          "refundRate": 15,
+          "revenueHalf1": 3365,
           "revenueHalf2": 1636,
-          "discountOrders": 43,
-          "discountRate": 52,
+          "discountOrders": 41,
+          "discountRate": 51,
           "discountShare": 9,
-          "totalDiscounts": 474,
-          "newCust": 81,
+          "totalDiscounts": 457,
+          "newCust": 78,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 26,
@@ -278,11 +277,6 @@
               "revenue": 205
             },
             {
-              "name": "Peignoir Éponge Rose Rayé",
-              "qty": 3,
-              "revenue": 180
-            },
-            {
               "name": "Peignoir Elégant Flanelle",
               "qty": 2,
               "revenue": 140
@@ -296,9 +290,14 @@
               "name": "Peignoir De Bain Absorbant Femme",
               "qty": 1,
               "revenue": 130
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "qty": 3,
+              "revenue": 120
             }
           ],
-          "top3RevenueShare": 37,
+          "top3RevenueShare": 38,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -307,22 +306,22 @@
             "8": 4,
             "9": 6,
             "10": 3,
-            "11": 8,
+            "11": 7,
             "12": 4,
             "13": 3,
             "14": 7,
             "15": 10,
             "16": 5,
-            "17": 4,
+            "17": 3,
             "18": 7,
-            "19": 4,
+            "19": 3,
             "20": 4,
             "21": 3,
             "22": 1,
             "23": 2
           },
           "daily": {
-            "0": 15,
+            "0": 12,
             "1": 7,
             "2": 16,
             "3": 11,
@@ -355,8 +354,8 @@
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 17,
-          "totalCheckouts": 100,
-          "abandonRate": 17,
+          "totalCheckouts": 97,
+          "abandonRate": 18,
           "abandonedValue": 866,
           "topAbandoned": [
             {
@@ -380,10 +379,10 @@
               "count": 1
             }
           ],
-          "sessions": 1250,
+          "sessions": 1213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:04.458Z"
+          "syncedAt": "2026-04-12T06:10:29.581Z"
         },
         "365": {
           "period": 365,
@@ -543,7 +542,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:05.707Z"
+          "syncedAt": "2026-04-12T06:10:30.474Z"
         }
       }
     },
@@ -552,7 +551,7 @@
         "revenue": 516,
         "orders": 10,
         "currency": "EUR",
-        "syncedAt": "2026-04-11T23:05:11.077Z",
+        "syncedAt": "2026-04-12T06:10:32.053Z",
         "allTime": {
           "revenue": 1010,
           "orders": 18
@@ -576,7 +575,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 6,
+          "avgLTV": 8,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -622,15 +621,11 @@
             "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 6,
-          "abandonRate": 67,
-          "abandonedValue": 289,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 5,
+          "abandonRate": 60,
+          "abandonedValue": 240,
           "topAbandoned": [
-            {
-              "name": "Robe Chinoise Kimono Enfant",
-              "count": 1
-            },
             {
               "name": "Ensemble Pantalon Et Kimono Femme",
               "count": 1
@@ -648,10 +643,10 @@
               "count": 1
             }
           ],
-          "sessions": 75,
-          "conversionRate": 2.7,
+          "sessions": 63,
+          "conversionRate": 3.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:12.413Z"
+          "syncedAt": "2026-04-12T06:10:33.394Z"
         },
         "30": {
           "period": 30,
@@ -796,7 +791,7 @@
           "sessions": 225,
           "conversionRate": 4.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:13.158Z"
+          "syncedAt": "2026-04-12T06:10:34.084Z"
         },
         "90": {
           "period": 90,
@@ -946,7 +941,7 @@
           "sessions": 338,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:13.728Z"
+          "syncedAt": "2026-04-12T06:10:34.728Z"
         },
         "365": {
           "period": 365,
@@ -1096,7 +1091,7 @@
           "sessions": 338,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-11T23:05:14.406Z"
+          "syncedAt": "2026-04-12T06:10:35.367Z"
         }
       }
     }
