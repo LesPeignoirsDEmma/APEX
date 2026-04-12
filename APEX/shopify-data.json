@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-12T06:10:16.411Z",
+  "lastUpdated": "2026-04-12T09:32:29.207Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 1079,
         "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-04-12T06:10:23.261Z",
+        "syncedAt": "2026-04-12T09:32:32.093Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -85,7 +85,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:27.805Z"
+          "syncedAt": "2026-04-12T09:32:36.108Z"
         },
         "30": {
           "period": 30,
@@ -224,7 +224,7 @@
           "sessions": 238,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:28.674Z"
+          "syncedAt": "2026-04-12T09:32:36.998Z"
         },
         "90": {
           "period": 90,
@@ -382,7 +382,7 @@
           "sessions": 1213,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:29.581Z"
+          "syncedAt": "2026-04-12T09:32:37.885Z"
         },
         "365": {
           "period": 365,
@@ -542,42 +542,47 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:30.474Z"
+          "syncedAt": "2026-04-12T09:32:38.668Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 516,
-        "orders": 10,
+        "revenue": 565,
+        "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-12T06:10:32.053Z",
+        "syncedAt": "2026-04-12T09:32:40.856Z",
         "allTime": {
-          "revenue": 1010,
-          "orders": 18
+          "revenue": 1059,
+          "orders": 19
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 70,
-          "orders": 2,
-          "aov": 35,
+          "revenue": 119,
+          "orders": 3,
+          "aov": 40,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 70,
-          "revenueHalf2": 0,
-          "discountOrders": 0,
-          "discountRate": 0,
-          "discountShare": 0,
-          "totalDiscounts": 0,
-          "newCust": 2,
+          "revenueHalf2": 49,
+          "discountOrders": 1,
+          "discountRate": 33,
+          "discountShare": 5,
+          "totalDiscounts": 5,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 8,
+          "avgLTV": 12,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Kimono Chinois Rouge",
+              "qty": 1,
+              "revenue": 55
+            },
             {
               "name": "Chemise Kimono Lin",
               "qty": 1,
@@ -589,13 +594,13 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 100,
+          "top3RevenueShare": 105,
           "hourly": {
-            "7": 1,
+            "7": 2,
             "15": 1
           },
           "daily": {
-            "0": 2
+            "0": 3
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -622,8 +627,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 5,
-          "abandonRate": 60,
+          "totalCheckouts": 6,
+          "abandonRate": 50,
           "abandonedValue": 240,
           "topAbandoned": [
             {
@@ -643,29 +648,29 @@
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 3.2,
+          "sessions": 75,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:33.394Z"
+          "syncedAt": "2026-04-12T09:32:42.162Z"
         },
         "30": {
           "period": 30,
-          "revenue": 516,
-          "orders": 10,
-          "aov": 52,
+          "revenue": 565,
+          "orders": 11,
+          "aov": 51,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 372,
-          "revenueHalf2": 144,
-          "discountOrders": 2,
-          "discountRate": 20,
+          "revenueHalf2": 194,
+          "discountOrders": 3,
+          "discountRate": 27,
           "discountShare": 2,
-          "totalDiscounts": 8,
-          "newCust": 10,
+          "totalDiscounts": 13,
+          "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 18,
+          "avgLTV": 19,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -687,6 +692,11 @@
               "name": "Robe Kimono Manches Longues",
               "qty": 1,
               "revenue": 60
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "qty": 1,
+              "revenue": 55
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
@@ -712,17 +722,12 @@
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 1,
               "revenue": 25
-            },
-            {
-              "name": "Kimono Homme Noir Samourai",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 47,
+          "top3RevenueShare": 42,
           "hourly": {
             "1": 1,
-            "7": 1,
+            "7": 2,
             "10": 1,
             "12": 1,
             "13": 2,
@@ -732,7 +737,7 @@
             "21": 1
           },
           "daily": {
-            "0": 2,
+            "0": 3,
             "1": 2,
             "3": 3,
             "4": 2,
@@ -763,8 +768,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 18,
-          "abandonRate": 44,
+          "totalCheckouts": 19,
+          "abandonRate": 42,
           "abandonedValue": 571,
           "topAbandoned": [
             {
@@ -788,26 +793,26 @@
               "count": 1
             }
           ],
-          "sessions": 225,
-          "conversionRate": 4.4,
+          "sessions": 238,
+          "conversionRate": 4.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:34.084Z"
+          "syncedAt": "2026-04-12T09:32:42.877Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1010,
-          "orders": 18,
+          "revenue": 1059,
+          "orders": 19,
           "aov": 56,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1010,
-          "discountOrders": 2,
-          "discountRate": 11,
+          "revenueHalf2": 1059,
+          "discountOrders": 3,
+          "discountRate": 16,
           "discountShare": 1,
-          "totalDiscounts": 8,
-          "newCust": 18,
+          "totalDiscounts": 13,
+          "newCust": 19,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -822,6 +827,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "qty": 2,
+              "revenue": 110
             },
             {
               "name": "Kimono Plage Fleuri Femme",
@@ -854,20 +864,15 @@
               "revenue": 55
             },
             {
-              "name": "Kimono Chinois Rouge",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
               "name": "Kimono Coton Leger Pour Homme",
               "qty": 1,
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 39,
           "hourly": {
             "1": 1,
-            "7": 1,
+            "7": 2,
             "8": 1,
             "10": 2,
             "12": 1,
@@ -880,7 +885,7 @@
             "21": 1
           },
           "daily": {
-            "0": 4,
+            "0": 5,
             "1": 3,
             "2": 1,
             "3": 4,
@@ -913,8 +918,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 27,
-          "abandonRate": 33,
+          "totalCheckouts": 28,
+          "abandonRate": 32,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -938,26 +943,26 @@
               "count": 1
             }
           ],
-          "sessions": 338,
-          "conversionRate": 5.3,
+          "sessions": 350,
+          "conversionRate": 5.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:34.728Z"
+          "syncedAt": "2026-04-12T09:32:43.573Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1010,
-          "orders": 18,
+          "revenue": 1059,
+          "orders": 19,
           "aov": 56,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1010,
-          "discountOrders": 2,
-          "discountRate": 11,
+          "revenueHalf2": 1059,
+          "discountOrders": 3,
+          "discountRate": 16,
           "discountShare": 1,
-          "totalDiscounts": 8,
-          "newCust": 18,
+          "totalDiscounts": 13,
+          "newCust": 19,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -972,6 +977,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "qty": 2,
+              "revenue": 110
             },
             {
               "name": "Kimono Plage Fleuri Femme",
@@ -1004,20 +1014,15 @@
               "revenue": 55
             },
             {
-              "name": "Kimono Chinois Rouge",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
               "name": "Kimono Coton Leger Pour Homme",
               "qty": 1,
               "revenue": 50
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 39,
           "hourly": {
             "1": 1,
-            "7": 1,
+            "7": 2,
             "8": 1,
             "10": 2,
             "12": 1,
@@ -1030,7 +1035,7 @@
             "21": 1
           },
           "daily": {
-            "0": 4,
+            "0": 5,
             "1": 3,
             "2": 1,
             "3": 4,
@@ -1063,8 +1068,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 27,
-          "abandonRate": 33,
+          "totalCheckouts": 28,
+          "abandonRate": 32,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -1088,10 +1093,10 @@
               "count": 1
             }
           ],
-          "sessions": 338,
-          "conversionRate": 5.3,
+          "sessions": 350,
+          "conversionRate": 5.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-12T06:10:35.367Z"
+          "syncedAt": "2026-04-12T09:32:44.962Z"
         }
       }
     }
