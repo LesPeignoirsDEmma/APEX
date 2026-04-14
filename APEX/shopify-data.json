@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-13T23:36:14.917Z",
+  "lastUpdated": "2026-04-14T01:52:09.468Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 1030,
-        "orders": 15,
+        "revenue": 903,
+        "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-13T23:36:17.199Z",
+        "syncedAt": "2026-04-14T01:52:11.365Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -30,7 +30,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 13,
+          "avgLTV": 15,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -85,23 +85,23 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:19.090Z"
+          "syncedAt": "2026-04-14T01:52:13.487Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1030,
-          "orders": 15,
+          "revenue": 903,
+          "orders": 13,
           "aov": 69,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 377,
+          "revenueHalf1": 250,
           "revenueHalf2": 653,
-          "discountOrders": 7,
-          "discountRate": 47,
+          "discountOrders": 6,
+          "discountRate": 46,
           "discountShare": 4,
-          "totalDiscounts": 43,
-          "newCust": 15,
+          "totalDiscounts": 36,
+          "newCust": 13,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 23,
@@ -133,11 +133,6 @@
               "revenue": 80
             },
             {
-              "name": "Peignoir Satin 4 Pièces – Femme",
-              "qty": 1,
-              "revenue": 75
-            },
-            {
               "name": "Peignoir Mariée Dentelle",
               "qty": 1,
               "revenue": 60
@@ -148,22 +143,26 @@
               "revenue": 60
             },
             {
-              "name": "Peignoir Court Capuche - Femme",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
               "name": "Peignoir Satin Manche en Maille – Femme",
               "qty": 1,
               "revenue": 55
+            },
+            {
+              "name": "Peignoir Léopard Homme",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Manche Courte",
+              "qty": 1,
+              "revenue": 50
             }
           ],
-          "top3RevenueShare": 41,
+          "top3RevenueShare": 47,
           "hourly": {
             "6": 2,
-            "7": 2,
+            "7": 1,
             "8": 1,
-            "9": 1,
             "11": 3,
             "12": 1,
             "13": 1,
@@ -177,7 +176,7 @@
             "3": 1,
             "4": 2,
             "5": 6,
-            "6": 3
+            "6": 1
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -203,46 +202,42 @@
             "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 18,
-          "abandonRate": 17,
-          "abandonedValue": 202,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 15,
+          "abandonRate": 13,
+          "abandonedValue": 153,
           "topAbandoned": [
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
             },
             {
-              "name": "Robe Peignoir Coton Léger",
-              "count": 1
-            },
-            {
               "name": "Peignoir Brodé Ours – Enfant",
               "count": 1
             }
           ],
-          "sessions": 225,
-          "conversionRate": 6.7,
+          "sessions": 188,
+          "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:19.841Z"
+          "syncedAt": "2026-04-14T01:52:14.326Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5001,
-          "orders": 80,
+          "revenue": 4891,
+          "orders": 78,
           "aov": 63,
           "currency": "EUR",
-          "refunds": 14,
-          "refundRate": 15,
-          "revenueHalf1": 3505,
+          "refunds": 13,
+          "refundRate": 14,
+          "revenueHalf1": 3395,
           "revenueHalf2": 1497,
           "discountOrders": 41,
-          "discountRate": 51,
+          "discountRate": 53,
           "discountShare": 9,
           "totalDiscounts": 457,
           "newCust": 78,
-          "returning": 1,
-          "avgOrdersPerRepeat": "2.0",
+          "returning": 0,
+          "avgOrdersPerRepeat": 0,
           "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
@@ -262,11 +257,6 @@
               "revenue": 478
             },
             {
-              "name": "Peignoir Nid d’Abeille Haut de Gamme",
-              "qty": 4,
-              "revenue": 240
-            },
-            {
               "name": "Peignoir Flanelle Enfant",
               "qty": 4,
               "revenue": 211
@@ -275,6 +265,11 @@
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 3,
               "revenue": 205
+            },
+            {
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
+              "qty": 3,
+              "revenue": 180
             },
             {
               "name": "Peignoir Elégant Flanelle",
@@ -297,7 +292,7 @@
               "revenue": 120
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 39,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -309,7 +304,7 @@
             "11": 7,
             "12": 4,
             "13": 3,
-            "14": 7,
+            "14": 5,
             "15": 10,
             "16": 5,
             "17": 3,
@@ -323,7 +318,7 @@
           "daily": {
             "0": 12,
             "1": 7,
-            "2": 16,
+            "2": 14,
             "3": 11,
             "4": 9,
             "5": 16,
@@ -354,7 +349,7 @@
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 17,
-          "totalCheckouts": 97,
+          "totalCheckouts": 95,
           "abandonRate": 18,
           "abandonedValue": 866,
           "topAbandoned": [
@@ -379,10 +374,10 @@
               "count": 1
             }
           ],
-          "sessions": 1213,
+          "sessions": 1188,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:20.912Z"
+          "syncedAt": "2026-04-14T01:52:15.068Z"
         },
         "365": {
           "period": 365,
@@ -542,7 +537,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:21.836Z"
+          "syncedAt": "2026-04-14T01:52:15.992Z"
         }
       }
     },
@@ -551,7 +546,7 @@
         "revenue": 630,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-04-13T23:36:24.555Z",
+        "syncedAt": "2026-04-14T01:52:17.379Z",
         "allTime": {
           "revenue": 1124,
           "orders": 20
@@ -575,7 +570,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 16,
+          "avgLTV": 19,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -622,10 +617,10 @@
             "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 5,
-          "abandonRate": 60,
-          "abandonedValue": 240,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 4,
+          "abandonRate": 50,
+          "abandonedValue": 195,
           "topAbandoned": [
             {
               "name": "Ensemble Pantalon Et Kimono Femme",
@@ -636,18 +631,14 @@
               "count": 1
             },
             {
-              "name": "Kimono Manches Chauves Souris",
-              "count": 1
-            },
-            {
               "name": "Kimono Chinois Rouge",
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 3.2,
+          "sessions": 50,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:25.899Z"
+          "syncedAt": "2026-04-14T01:52:18.510Z"
         },
         "30": {
           "period": 30,
@@ -793,7 +784,7 @@
           "sessions": 250,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:26.654Z"
+          "syncedAt": "2026-04-14T01:52:19.090Z"
         },
         "90": {
           "period": 90,
@@ -944,7 +935,7 @@
           "sessions": 363,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:27.274Z"
+          "syncedAt": "2026-04-14T01:52:19.803Z"
         },
         "365": {
           "period": 365,
@@ -1095,7 +1086,7 @@
           "sessions": 363,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-13T23:36:27.944Z"
+          "syncedAt": "2026-04-14T01:52:20.450Z"
         }
       }
     }
