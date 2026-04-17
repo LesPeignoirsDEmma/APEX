@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-16T23:33:56.674Z",
+  "lastUpdated": "2026-04-17T01:52:17.570Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 903,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-16T23:33:58.986Z",
+        "syncedAt": "2026-04-17T01:52:20.344Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -15,42 +15,35 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 117,
-          "orders": 2,
-          "aov": 58,
+          "revenue": 63,
+          "orders": 1,
+          "aov": 63,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 117,
+          "revenueHalf1": 63,
           "revenueHalf2": 0,
-          "discountOrders": 2,
+          "discountOrders": 1,
           "discountRate": 100,
           "discountShare": 11,
-          "totalDiscounts": 13,
-          "newCust": 2,
+          "totalDiscounts": 7,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 19,
+          "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Femme Flanelle",
               "qty": 1,
               "revenue": 70
-            },
-            {
-              "name": "Peignoir Rose Rayé – Femme",
-              "qty": 1,
-              "revenue": 60
             }
           ],
           "top3RevenueShare": 111,
           "hourly": {
-            "6": 1,
             "11": 1
           },
           "daily": {
-            "4": 1,
             "6": 1
           },
           "totalProducts": 178,
@@ -78,14 +71,14 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 2,
+          "totalCheckouts": 1,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 25,
-          "conversionRate": 8,
+          "sessions": 13,
+          "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:00.876Z"
+          "syncedAt": "2026-04-17T01:52:22.239Z"
         },
         "30": {
           "period": 30,
@@ -219,7 +212,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:01.677Z"
+          "syncedAt": "2026-04-17T01:52:23.110Z"
         },
         "90": {
           "period": 90,
@@ -238,7 +231,7 @@
           "newCust": 77,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 26,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -377,7 +370,7 @@
           "sessions": 1175,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:02.448Z"
+          "syncedAt": "2026-04-17T01:52:24.078Z"
         },
         "365": {
           "period": 365,
@@ -537,7 +530,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:03.649Z"
+          "syncedAt": "2026-04-17T01:52:25.014Z"
         }
       }
     },
@@ -546,7 +539,7 @@
         "revenue": 640,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-04-16T23:34:05.138Z",
+        "syncedAt": "2026-04-17T01:52:29.257Z",
         "allTime": {
           "revenue": 1189,
           "orders": 21
@@ -570,7 +563,7 @@
           "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -637,7 +630,7 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:06.916Z"
+          "syncedAt": "2026-04-17T01:52:30.704Z"
         },
         "30": {
           "period": 30,
@@ -782,7 +775,7 @@
           "sessions": 238,
           "conversionRate": 5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:07.605Z"
+          "syncedAt": "2026-04-17T01:52:31.414Z"
         },
         "90": {
           "period": 90,
@@ -933,7 +926,7 @@
           "sessions": 375,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:08.257Z"
+          "syncedAt": "2026-04-17T01:52:32.121Z"
         },
         "365": {
           "period": 365,
@@ -1084,7 +1077,7 @@
           "sessions": 375,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-16T23:34:08.889Z"
+          "syncedAt": "2026-04-17T01:52:32.772Z"
         }
       }
     }
