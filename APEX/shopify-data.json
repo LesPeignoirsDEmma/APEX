@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-17T23:32:24.720Z",
+  "lastUpdated": "2026-04-18T01:44:38.123Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 903,
         "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-17T23:32:27.307Z",
+        "syncedAt": "2026-04-18T01:44:40.223Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -30,7 +30,7 @@
           "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 16,
+          "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:30.404Z"
+          "syncedAt": "2026-04-18T01:44:42.317Z"
         },
         "30": {
           "period": 30,
@@ -212,7 +212,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:31.336Z"
+          "syncedAt": "2026-04-18T01:44:43.035Z"
         },
         "90": {
           "period": 90,
@@ -231,7 +231,7 @@
           "newCust": 77,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 26,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -370,7 +370,7 @@
           "sessions": 1175,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:32.240Z"
+          "syncedAt": "2026-04-18T01:44:43.901Z"
         },
         "365": {
           "period": 365,
@@ -530,16 +530,16 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:33.502Z"
+          "syncedAt": "2026-04-18T01:44:44.968Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 640,
-        "orders": 12,
+        "revenue": 466,
+        "orders": 10,
         "currency": "EUR",
-        "syncedAt": "2026-04-17T23:32:35.453Z",
+        "syncedAt": "2026-04-18T01:44:46.495Z",
         "allTime": {
           "revenue": 1189,
           "orders": 21
@@ -563,7 +563,7 @@
           "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 26,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -617,46 +617,36 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 4,
-          "abandonRate": 25,
-          "abandonedValue": 55,
-          "topAbandoned": [
-            {
-              "name": "Kimono Chinois Rouge",
-              "count": 1
-            }
-          ],
-          "sessions": 50,
-          "conversionRate": 6,
+          "abandonedCheckouts": 0,
+          "totalCheckouts": 3,
+          "abandonRate": 0,
+          "abandonedValue": 0,
+          "topAbandoned": [],
+          "sessions": 38,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:36.903Z"
+          "syncedAt": "2026-04-18T01:44:47.705Z"
         },
         "30": {
           "period": 30,
-          "revenue": 640,
-          "orders": 12,
-          "aov": 53,
+          "revenue": 466,
+          "orders": 10,
+          "aov": 47,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 391,
+          "revenueHalf1": 217,
           "revenueHalf2": 249,
           "discountOrders": 3,
-          "discountRate": 25,
-          "discountShare": 2,
+          "discountRate": 30,
+          "discountShare": 3,
           "totalDiscounts": 13,
-          "newCust": 12,
+          "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 21,
+          "avgLTV": 16,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Kimono Chinois Fille",
-              "qty": 2,
-              "revenue": 110
-            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
@@ -673,17 +663,12 @@
               "revenue": 65
             },
             {
-              "name": "Kimono Plage Fleuri Femme",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
-              "name": "Robe Kimono Manches Longues",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
               "name": "Kimono Chinois Rouge",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
+              "name": "Kimono Chinois Fille",
               "qty": 1,
               "revenue": 55
             },
@@ -701,9 +686,19 @@
               "name": "Robe De Plage Kimono Noir",
               "qty": 1,
               "revenue": 25
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 1,
+              "revenue": 25
+            },
+            {
+              "name": "Kimono Homme Noir Samourai",
+              "qty": 1,
+              "revenue": 25
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 43,
           "hourly": {
             "1": 1,
             "7": 2,
@@ -711,14 +706,12 @@
             "10": 1,
             "13": 2,
             "15": 1,
-            "17": 2,
-            "20": 1,
-            "21": 1
+            "17": 2
           },
           "daily": {
             "0": 3,
             "1": 2,
-            "3": 3,
+            "3": 1,
             "4": 3,
             "5": 1
           },
@@ -747,8 +740,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 7,
-          "totalCheckouts": 19,
-          "abandonRate": 37,
+          "totalCheckouts": 17,
+          "abandonRate": 41,
           "abandonedValue": 451,
           "topAbandoned": [
             {
@@ -772,10 +765,10 @@
               "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 5,
+          "sessions": 213,
+          "conversionRate": 4.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:37.689Z"
+          "syncedAt": "2026-04-18T01:44:48.280Z"
         },
         "90": {
           "period": 90,
@@ -926,7 +919,7 @@
           "sessions": 375,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:38.521Z"
+          "syncedAt": "2026-04-18T01:44:48.975Z"
         },
         "365": {
           "period": 365,
@@ -1077,7 +1070,7 @@
           "sessions": 375,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-17T23:32:39.721Z"
+          "syncedAt": "2026-04-18T01:44:49.570Z"
         }
       }
     }
