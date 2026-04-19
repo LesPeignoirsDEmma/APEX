@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-18T23:27:18.541Z",
+  "lastUpdated": "2026-04-19T01:56:45.245Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 903,
-        "orders": 13,
+        "revenue": 858,
+        "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-04-18T23:27:21.301Z",
+        "syncedAt": "2026-04-19T01:56:47.997Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -15,37 +15,27 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 63,
-          "orders": 1,
-          "aov": 63,
+          "revenue": 0,
+          "orders": 0,
+          "aov": 0,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 63,
+          "revenueHalf1": 0,
           "revenueHalf2": 0,
-          "discountOrders": 1,
-          "discountRate": 100,
-          "discountShare": 11,
-          "totalDiscounts": 7,
-          "newCust": 1,
+          "discountOrders": 0,
+          "discountRate": 0,
+          "discountShare": 0,
+          "totalDiscounts": 0,
+          "newCust": 0,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 21,
+          "avgLTV": 0,
           "vipCustomers": 0,
-          "topProducts": [
-            {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 1,
-              "revenue": 70
-            }
-          ],
-          "top3RevenueShare": 111,
-          "hourly": {
-            "11": 1
-          },
-          "daily": {
-            "6": 1
-          },
+          "topProducts": [],
+          "top3RevenueShare": 0,
+          "hourly": {},
+          "daily": {},
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Cerf",
@@ -71,33 +61,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 1,
-          "abandonRate": 0,
+          "totalCheckouts": 0,
+          "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 13,
-          "conversionRate": 7.7,
+          "sessions": null,
+          "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:23.661Z"
+          "syncedAt": "2026-04-19T01:56:50.969Z"
         },
         "30": {
           "period": 30,
-          "revenue": 903,
-          "orders": 13,
-          "aov": 69,
+          "revenue": 858,
+          "orders": 12,
+          "aov": 71,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 786,
+          "revenueHalf1": 741,
           "revenueHalf2": 117,
-          "discountOrders": 6,
-          "discountRate": 46,
+          "discountOrders": 5,
+          "discountRate": 42,
           "discountShare": 4,
-          "totalDiscounts": 36,
-          "newCust": 13,
+          "totalDiscounts": 31,
+          "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 23,
+          "avgLTV": 22,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -146,12 +136,12 @@
               "revenue": 50
             },
             {
-              "name": "Peignoir Nid d’Abeille Manche Courte",
+              "name": "Cape de Bain Coton",
               "qty": 1,
-              "revenue": 50
+              "revenue": 40
             }
           ],
-          "top3RevenueShare": 47,
+          "top3RevenueShare": 49,
           "hourly": {
             "6": 2,
             "7": 1,
@@ -161,13 +151,13 @@
             "13": 1,
             "15": 1,
             "20": 1,
-            "23": 2
+            "23": 1
           },
           "daily": {
             "0": 1,
             "2": 2,
             "3": 1,
-            "4": 2,
+            "4": 1,
             "5": 6,
             "6": 1
           },
@@ -196,8 +186,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 15,
-          "abandonRate": 13,
+          "totalCheckouts": 14,
+          "abandonRate": 14,
           "abandonedValue": 153,
           "topAbandoned": [
             {
@@ -209,26 +199,26 @@
               "count": 1
             }
           ],
-          "sessions": 188,
+          "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:24.448Z"
+          "syncedAt": "2026-04-19T01:56:51.767Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4841,
-          "orders": 77,
+          "revenue": 4806,
+          "orders": 76,
           "aov": 63,
           "currency": "EUR",
           "refunds": 12,
-          "refundRate": 13,
-          "revenueHalf1": 3524,
+          "refundRate": 14,
+          "revenueHalf1": 3489,
           "revenueHalf2": 1317,
           "discountOrders": 40,
-          "discountRate": 52,
+          "discountRate": 53,
           "discountShare": 9,
           "totalDiscounts": 448,
-          "newCust": 77,
+          "newCust": 76,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -285,7 +275,7 @@
               "revenue": 120
             }
           ],
-          "top3RevenueShare": 39,
+          "top3RevenueShare": 40,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -298,7 +288,7 @@
             "12": 4,
             "13": 3,
             "14": 5,
-            "15": 10,
+            "15": 9,
             "16": 4,
             "17": 3,
             "18": 7,
@@ -309,7 +299,7 @@
             "23": 2
           },
           "daily": {
-            "0": 12,
+            "0": 11,
             "1": 7,
             "2": 14,
             "3": 11,
@@ -319,6 +309,7 @@
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
+            "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Lapin",
@@ -337,12 +328,11 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Brodé Ours – Enfant",
-            "Peignoir Capuche - Femme"
+            "Peignoir Brodé Ours – Enfant"
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 17,
-          "totalCheckouts": 94,
+          "totalCheckouts": 93,
           "abandonRate": 18,
           "abandonedValue": 866,
           "topAbandoned": [
@@ -367,10 +357,10 @@
               "count": 1
             }
           ],
-          "sessions": 1175,
-          "conversionRate": 6.6,
+          "sessions": 1163,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:25.316Z"
+          "syncedAt": "2026-04-19T01:56:52.712Z"
         },
         "365": {
           "period": 365,
@@ -530,16 +520,16 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:26.137Z"
+          "syncedAt": "2026-04-19T01:56:53.859Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 466,
-        "orders": 10,
+        "revenue": 396,
+        "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-18T23:27:28.166Z",
+        "syncedAt": "2026-04-19T01:56:55.825Z",
         "allTime": {
           "revenue": 1189,
           "orders": 21
@@ -563,7 +553,7 @@
           "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -630,33 +620,28 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:29.620Z"
+          "syncedAt": "2026-04-19T01:56:57.026Z"
         },
         "30": {
           "period": 30,
-          "revenue": 466,
-          "orders": 10,
-          "aov": 47,
+          "revenue": 396,
+          "orders": 9,
+          "aov": 44,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 217,
+          "revenueHalf1": 147,
           "revenueHalf2": 249,
           "discountOrders": 3,
-          "discountRate": 30,
+          "discountRate": 33,
           "discountShare": 3,
           "totalDiscounts": 13,
-          "newCust": 10,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 15,
+          "avgLTV": 13,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Chemise Kimono Grande Taille",
-              "qty": 1,
-              "revenue": 70
-            },
             {
               "name": "Chemise Kimono Blanche Homme",
               "qty": 1,
@@ -703,9 +688,8 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 43,
+          "top3RevenueShare": 47,
           "hourly": {
-            "1": 1,
             "7": 2,
             "9": 1,
             "10": 1,
@@ -717,7 +701,7 @@
             "0": 3,
             "1": 2,
             "3": 1,
-            "4": 3,
+            "4": 2,
             "5": 1
           },
           "totalProducts": 205,
@@ -739,14 +723,14 @@
             "Chemise Kimono Bleue",
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
+            "Chemise Kimono Grande Taille",
             "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir",
-            "Chemise Kimono Pour Homme"
+            "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 18,
-          "abandonRate": 44,
+          "totalCheckouts": 17,
+          "abandonRate": 47,
           "abandonedValue": 516,
           "topAbandoned": [
             {
@@ -770,10 +754,10 @@
               "count": 1
             }
           ],
-          "sessions": 225,
-          "conversionRate": 4.4,
+          "sessions": 213,
+          "conversionRate": 4.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:30.314Z"
+          "syncedAt": "2026-04-19T01:56:57.616Z"
         },
         "90": {
           "period": 90,
@@ -924,7 +908,7 @@
           "sessions": 388,
           "conversionRate": 5.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:31.021Z"
+          "syncedAt": "2026-04-19T01:56:58.279Z"
         },
         "365": {
           "period": 365,
@@ -1075,7 +1059,7 @@
           "sessions": 388,
           "conversionRate": 5.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-18T23:27:31.718Z"
+          "syncedAt": "2026-04-19T01:56:59.008Z"
         }
       }
     }
