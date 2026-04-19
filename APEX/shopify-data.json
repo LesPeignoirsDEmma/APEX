@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-19T15:31:10.136Z",
+  "lastUpdated": "2026-04-19T16:30:32.505Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 858,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-04-19T15:31:13.072Z",
+        "syncedAt": "2026-04-19T16:30:35.339Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:15.360Z"
+          "syncedAt": "2026-04-19T16:30:39.167Z"
         },
         "30": {
           "period": 30,
@@ -202,7 +202,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:16.803Z"
+          "syncedAt": "2026-04-19T16:30:39.948Z"
         },
         "90": {
           "period": 90,
@@ -360,7 +360,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:17.836Z"
+          "syncedAt": "2026-04-19T16:30:40.804Z"
         },
         "365": {
           "period": 365,
@@ -520,40 +520,40 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:18.648Z"
+          "syncedAt": "2026-04-19T16:30:41.756Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 451,
-        "orders": 10,
+        "revenue": 505,
+        "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-19T15:31:20.933Z",
+        "syncedAt": "2026-04-19T16:30:44.768Z",
         "allTime": {
-          "revenue": 1244,
-          "orders": 22
+          "revenue": 1299,
+          "orders": 23
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 234,
-          "orders": 4,
-          "aov": 59,
+          "revenue": 289,
+          "orders": 5,
+          "aov": 58,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 114,
-          "revenueHalf2": 120,
+          "revenueHalf2": 175,
           "discountOrders": 1,
-          "discountRate": 25,
+          "discountRate": 20,
           "discountShare": 2,
           "totalDiscounts": 5,
-          "newCust": 4,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -570,17 +570,23 @@
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
+            },
+            {
+              "name": "Kimono Floral Style Bohème",
+              "qty": 1,
+              "revenue": 55
             }
           ],
-          "top3RevenueShare": 103,
+          "top3RevenueShare": 83,
           "hourly": {
             "7": 1,
             "9": 1,
             "11": 1,
+            "16": 1,
             "17": 1
           },
           "daily": {
-            "0": 2,
+            "0": 3,
             "1": 1,
             "4": 1
           },
@@ -609,8 +615,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 5,
-          "abandonRate": 20,
+          "totalCheckouts": 6,
+          "abandonRate": 17,
           "abandonedValue": 65,
           "topAbandoned": [
             {
@@ -618,29 +624,29 @@
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 6.3,
+          "sessions": 75,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:22.479Z"
+          "syncedAt": "2026-04-19T16:30:46.165Z"
         },
         "30": {
           "period": 30,
-          "revenue": 451,
-          "orders": 10,
-          "aov": 45,
+          "revenue": 505,
+          "orders": 11,
+          "aov": 46,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 147,
-          "revenueHalf2": 304,
+          "revenueHalf2": 359,
           "discountOrders": 3,
-          "discountRate": 30,
+          "discountRate": 27,
           "discountShare": 3,
           "totalDiscounts": 13,
-          "newCust": 10,
+          "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 15,
+          "avgLTV": 16,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -657,6 +663,11 @@
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
+            },
+            {
+              "name": "Kimono Floral Style Bohème",
+              "qty": 1,
+              "revenue": 55
             },
             {
               "name": "Kimono Chinois Fille",
@@ -689,7 +700,7 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 53,
+          "top3RevenueShare": 47,
           "hourly": {
             "7": 2,
             "9": 1,
@@ -697,10 +708,11 @@
             "11": 1,
             "13": 2,
             "15": 1,
+            "16": 1,
             "17": 2
           },
           "daily": {
-            "0": 4,
+            "0": 5,
             "1": 2,
             "3": 1,
             "4": 2,
@@ -731,8 +743,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 18,
-          "abandonRate": 44,
+          "totalCheckouts": 19,
+          "abandonRate": 42,
           "abandonedValue": 516,
           "topAbandoned": [
             {
@@ -756,29 +768,29 @@
               "count": 1
             }
           ],
-          "sessions": 225,
-          "conversionRate": 4.4,
+          "sessions": 238,
+          "conversionRate": 4.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:23.206Z"
+          "syncedAt": "2026-04-19T16:30:46.898Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1244,
-          "orders": 22,
-          "aov": 57,
+          "revenue": 1299,
+          "orders": 23,
+          "aov": 56,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 150,
-          "revenueHalf2": 1094,
+          "revenueHalf2": 1149,
           "discountOrders": 3,
-          "discountRate": 14,
+          "discountRate": 13,
           "discountShare": 1,
           "totalDiscounts": 13,
-          "newCust": 22,
+          "newCust": 23,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -827,12 +839,12 @@
               "revenue": 60
             },
             {
-              "name": "Robe Chinoise Kimono Enfant",
+              "name": "Kimono Floral Style Bohème",
               "qty": 1,
               "revenue": 55
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 36,
           "hourly": {
             "1": 1,
             "7": 2,
@@ -843,6 +855,7 @@
             "12": 1,
             "13": 5,
             "15": 1,
+            "16": 1,
             "17": 2,
             "18": 1,
             "19": 1,
@@ -850,7 +863,7 @@
             "21": 1
           },
           "daily": {
-            "0": 6,
+            "0": 7,
             "1": 4,
             "2": 1,
             "3": 4,
@@ -883,8 +896,8 @@
           ],
           "newProductsAdded": 201,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 32,
-          "abandonRate": 31,
+          "totalCheckouts": 33,
+          "abandonRate": 30,
           "abandonedValue": 760,
           "topAbandoned": [
             {
@@ -908,29 +921,29 @@
               "count": 1
             }
           ],
-          "sessions": 400,
-          "conversionRate": 5.5,
+          "sessions": 413,
+          "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:23.897Z"
+          "syncedAt": "2026-04-19T16:30:47.601Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1244,
-          "orders": 22,
-          "aov": 57,
+          "revenue": 1299,
+          "orders": 23,
+          "aov": 56,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1244,
+          "revenueHalf2": 1299,
           "discountOrders": 3,
-          "discountRate": 14,
+          "discountRate": 13,
           "discountShare": 1,
           "totalDiscounts": 13,
-          "newCust": 22,
+          "newCust": 23,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -979,12 +992,12 @@
               "revenue": 60
             },
             {
-              "name": "Robe Chinoise Kimono Enfant",
+              "name": "Kimono Floral Style Bohème",
               "qty": 1,
               "revenue": 55
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 36,
           "hourly": {
             "1": 1,
             "7": 2,
@@ -995,6 +1008,7 @@
             "12": 1,
             "13": 5,
             "15": 1,
+            "16": 1,
             "17": 2,
             "18": 1,
             "19": 1,
@@ -1002,7 +1016,7 @@
             "21": 1
           },
           "daily": {
-            "0": 6,
+            "0": 7,
             "1": 4,
             "2": 1,
             "3": 4,
@@ -1035,8 +1049,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 32,
-          "abandonRate": 31,
+          "totalCheckouts": 33,
+          "abandonRate": 30,
           "abandonedValue": 760,
           "topAbandoned": [
             {
@@ -1060,10 +1074,10 @@
               "count": 1
             }
           ],
-          "sessions": 400,
-          "conversionRate": 5.5,
+          "sessions": 413,
+          "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-19T15:31:24.595Z"
+          "syncedAt": "2026-04-19T16:30:48.242Z"
         }
       }
     }
