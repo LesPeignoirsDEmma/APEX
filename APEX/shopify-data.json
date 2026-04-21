@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-21T21:38:38.019Z",
+  "lastUpdated": "2026-04-21T22:34:40.064Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 769,
         "orders": 10,
         "currency": "EUR",
-        "syncedAt": "2026-04-21T21:38:40.885Z",
+        "syncedAt": "2026-04-21T22:34:42.410Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:43.098Z"
+          "syncedAt": "2026-04-21T22:34:45.090Z"
         },
         "30": {
           "period": 30,
@@ -169,7 +169,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -200,7 +200,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:44.088Z"
+          "syncedAt": "2026-04-21T22:34:46.075Z"
         },
         "90": {
           "period": 90,
@@ -358,7 +358,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:45.246Z"
+          "syncedAt": "2026-04-21T22:34:46.935Z"
         },
         "365": {
           "period": 365,
@@ -518,7 +518,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:46.235Z"
+          "syncedAt": "2026-04-21T22:34:47.988Z"
         }
       }
     },
@@ -527,7 +527,7 @@
         "revenue": 520,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-21T21:38:47.990Z",
+        "syncedAt": "2026-04-21T22:34:49.491Z",
         "allTime": {
           "revenue": 1364,
           "orders": 24
@@ -619,7 +619,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:49.593Z"
+          "syncedAt": "2026-04-21T22:34:51.013Z"
         },
         "30": {
           "period": 30,
@@ -762,7 +762,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:50.299Z"
+          "syncedAt": "2026-04-21T22:34:51.915Z"
         },
         "90": {
           "period": 90,
@@ -915,7 +915,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:51.086Z"
+          "syncedAt": "2026-04-21T22:34:52.614Z"
         },
         "365": {
           "period": 365,
@@ -1068,7 +1068,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T21:38:51.837Z"
+          "syncedAt": "2026-04-21T22:34:53.361Z"
         }
       }
     }
