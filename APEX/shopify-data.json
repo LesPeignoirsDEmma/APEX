@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-22T10:13:43.126Z",
+  "lastUpdated": "2026-04-22T11:54:31.143Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 689,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-22T10:13:45.864Z",
+        "syncedAt": "2026-04-22T11:54:33.452Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:48.487Z"
+          "syncedAt": "2026-04-22T11:54:35.588Z"
         },
         "30": {
           "period": 30,
@@ -198,7 +198,7 @@
           "sessions": 138,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:49.610Z"
+          "syncedAt": "2026-04-22T11:54:36.655Z"
         },
         "90": {
           "period": 90,
@@ -356,7 +356,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:50.626Z"
+          "syncedAt": "2026-04-22T11:54:37.366Z"
         },
         "365": {
           "period": 365,
@@ -516,7 +516,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:52.550Z"
+          "syncedAt": "2026-04-22T11:54:38.086Z"
         }
       }
     },
@@ -525,7 +525,7 @@
         "revenue": 520,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-22T10:13:54.881Z",
+        "syncedAt": "2026-04-22T11:54:39.383Z",
         "allTime": {
           "revenue": 1364,
           "orders": 24
@@ -617,7 +617,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:56.563Z"
+          "syncedAt": "2026-04-22T11:54:40.585Z"
         },
         "30": {
           "period": 30,
@@ -760,7 +760,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:57.508Z"
+          "syncedAt": "2026-04-22T11:54:41.204Z"
         },
         "90": {
           "period": 90,
@@ -883,7 +883,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 181,
+          "newProductsAdded": 180,
           "abandonedCheckouts": 9,
           "totalCheckouts": 33,
           "abandonRate": 27,
@@ -913,7 +913,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:58.138Z"
+          "syncedAt": "2026-04-22T11:54:41.801Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T10:13:58.804Z"
+          "syncedAt": "2026-04-22T11:54:42.443Z"
         }
       }
     }
