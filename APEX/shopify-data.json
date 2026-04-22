@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-21T23:29:29.208Z",
+  "lastUpdated": "2026-04-22T01:51:54.194Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 769,
-        "orders": 10,
+        "revenue": 689,
+        "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-21T23:29:31.631Z",
+        "syncedAt": "2026-04-22T01:51:56.892Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,33 +68,28 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:33.775Z"
+          "syncedAt": "2026-04-22T01:51:58.931Z"
         },
         "30": {
           "period": 30,
-          "revenue": 769,
-          "orders": 10,
+          "revenue": 689,
+          "orders": 9,
           "aov": 77,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 652,
+          "revenueHalf1": 572,
           "revenueHalf2": 117,
           "discountOrders": 4,
-          "discountRate": 40,
-          "discountShare": 3,
+          "discountRate": 44,
+          "discountShare": 4,
           "totalDiscounts": 25,
-          "newCust": 10,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 2,
-              "revenue": 160
-            },
             {
               "name": "Peignoir Femme Flanelle",
               "qty": 2,
@@ -107,6 +102,11 @@
             },
             {
               "name": "Peignoir En Satin Pour Homme",
+              "qty": 1,
+              "revenue": 80
+            },
+            {
+              "name": "Peignoir Polaire Luxe - Homme",
               "qty": 1,
               "revenue": 80
             },
@@ -141,10 +141,9 @@
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 51,
+          "top3RevenueShare": 45,
           "hourly": {
             "6": 2,
-            "7": 1,
             "8": 1,
             "11": 3,
             "12": 1,
@@ -152,7 +151,6 @@
             "20": 1
           },
           "daily": {
-            "0": 1,
             "2": 2,
             "3": 1,
             "4": 1,
@@ -184,8 +182,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 12,
-          "abandonRate": 17,
+          "totalCheckouts": 11,
+          "abandonRate": 18,
           "abandonedValue": 153,
           "topAbandoned": [
             {
@@ -197,10 +195,10 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 6.7,
+          "sessions": 138,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:34.559Z"
+          "syncedAt": "2026-04-22T01:51:59.653Z"
         },
         "90": {
           "period": 90,
@@ -358,7 +356,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:35.565Z"
+          "syncedAt": "2026-04-22T01:52:00.860Z"
         },
         "365": {
           "period": 365,
@@ -518,7 +516,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:36.418Z"
+          "syncedAt": "2026-04-22T01:52:01.621Z"
         }
       }
     },
@@ -527,7 +525,7 @@
         "revenue": 520,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-21T23:29:37.853Z",
+        "syncedAt": "2026-04-22T01:52:03.345Z",
         "allTime": {
           "revenue": 1364,
           "orders": 24
@@ -551,7 +549,7 @@
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 24,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -619,7 +617,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:39.335Z"
+          "syncedAt": "2026-04-22T01:52:04.629Z"
         },
         "30": {
           "period": 30,
@@ -762,7 +760,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:39.975Z"
+          "syncedAt": "2026-04-22T01:52:05.317Z"
         },
         "90": {
           "period": 90,
@@ -915,7 +913,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:40.656Z"
+          "syncedAt": "2026-04-22T01:52:06.175Z"
         },
         "365": {
           "period": 365,
@@ -1068,7 +1066,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-21T23:29:41.255Z"
+          "syncedAt": "2026-04-22T01:52:06.803Z"
         }
       }
     }
