@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-22T13:08:13.477Z",
+  "lastUpdated": "2026-04-22T15:06:08.426Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 689,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-22T13:08:16.582Z",
+        "syncedAt": "2026-04-22T15:06:13.270Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -47,7 +47,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:20.689Z"
+          "syncedAt": "2026-04-22T15:06:18.888Z"
         },
         "30": {
           "period": 30,
@@ -198,7 +198,7 @@
           "sessions": 138,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:21.533Z"
+          "syncedAt": "2026-04-22T15:06:19.629Z"
         },
         "90": {
           "period": 90,
@@ -356,7 +356,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:22.334Z"
+          "syncedAt": "2026-04-22T15:06:20.312Z"
         },
         "365": {
           "period": 365,
@@ -516,7 +516,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:23.900Z"
+          "syncedAt": "2026-04-22T15:06:21.963Z"
         }
       }
     },
@@ -525,7 +525,7 @@
         "revenue": 520,
         "orders": 11,
         "currency": "EUR",
-        "syncedAt": "2026-04-22T13:08:25.520Z",
+        "syncedAt": "2026-04-22T15:06:24.362Z",
         "allTime": {
           "revenue": 1364,
           "orders": 24
@@ -617,7 +617,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:26.848Z"
+          "syncedAt": "2026-04-22T15:06:25.634Z"
         },
         "30": {
           "period": 30,
@@ -760,7 +760,7 @@
           "sessions": 225,
           "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:27.511Z"
+          "syncedAt": "2026-04-22T15:06:26.309Z"
         },
         "90": {
           "period": 90,
@@ -770,8 +770,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 309,
-          "revenueHalf2": 1055,
+          "revenueHalf1": 364,
+          "revenueHalf2": 1000,
           "discountOrders": 3,
           "discountRate": 13,
           "discountShare": 1,
@@ -883,7 +883,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 168,
+          "newProductsAdded": 166,
           "abandonedCheckouts": 9,
           "totalCheckouts": 33,
           "abandonRate": 27,
@@ -913,7 +913,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:28.100Z"
+          "syncedAt": "2026-04-22T15:06:26.981Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 413,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-22T13:08:28.935Z"
+          "syncedAt": "2026-04-22T15:06:27.602Z"
         }
       }
     }
