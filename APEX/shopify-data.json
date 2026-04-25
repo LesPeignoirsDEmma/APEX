@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-24T23:33:42.654Z",
+  "lastUpdated": "2026-04-25T01:47:00.906Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 689,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-24T23:33:44.920Z",
+        "syncedAt": "2026-04-25T01:47:03.502Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:46.751Z"
+          "syncedAt": "2026-04-25T01:47:05.460Z"
         },
         "30": {
           "period": 30,
@@ -87,7 +87,7 @@
           "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 23,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -181,20 +181,15 @@
             "Peignoir Baroque - Femme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 10,
-          "abandonRate": 10,
-          "abandonedValue": 108,
-          "topAbandoned": [
-            {
-              "name": "Peignoir Nid d’Abeille Haut de Gamme",
-              "count": 2
-            }
-          ],
-          "sessions": 125,
-          "conversionRate": 7.2,
+          "abandonedCheckouts": 0,
+          "totalCheckouts": 9,
+          "abandonRate": 0,
+          "abandonedValue": 0,
+          "topAbandoned": [],
+          "sessions": 113,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:47.641Z"
+          "syncedAt": "2026-04-25T01:47:06.205Z"
         },
         "90": {
           "period": 90,
@@ -352,7 +347,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:48.664Z"
+          "syncedAt": "2026-04-25T01:47:07.221Z"
         },
         "365": {
           "period": 365,
@@ -512,7 +507,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:49.581Z"
+          "syncedAt": "2026-04-25T01:47:08.186Z"
         }
       }
     },
@@ -521,7 +516,7 @@
         "revenue": 570,
         "orders": 12,
         "currency": "EUR",
-        "syncedAt": "2026-04-24T23:33:51.278Z",
+        "syncedAt": "2026-04-25T01:47:09.983Z",
         "allTime": {
           "revenue": 1436,
           "orders": 26
@@ -620,7 +615,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:52.630Z"
+          "syncedAt": "2026-04-25T01:47:11.210Z"
         },
         "30": {
           "period": 30,
@@ -736,15 +731,11 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 7,
-          "totalCheckouts": 19,
-          "abandonRate": 37,
-          "abandonedValue": 451,
+          "abandonedCheckouts": 6,
+          "totalCheckouts": 18,
+          "abandonRate": 33,
+          "abandonedValue": 401,
           "topAbandoned": [
-            {
-              "name": "Kimono Chinois Rouge",
-              "count": 2
-            },
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
               "count": 1
@@ -760,12 +751,16 @@
             {
               "name": "Ensemble Pantalon Et Kimono Femme",
               "count": 1
+            },
+            {
+              "name": "Ensemble Kimono Grande Taille Femme",
+              "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 5,
+          "sessions": 225,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:53.305Z"
+          "syncedAt": "2026-04-25T01:47:11.890Z"
         },
         "90": {
           "period": 90,
@@ -918,7 +913,7 @@
           "sessions": 438,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:54.121Z"
+          "syncedAt": "2026-04-25T01:47:12.474Z"
         },
         "365": {
           "period": 365,
@@ -1071,7 +1066,7 @@
           "sessions": 438,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-24T23:33:54.824Z"
+          "syncedAt": "2026-04-25T01:47:13.163Z"
         }
       }
     }
