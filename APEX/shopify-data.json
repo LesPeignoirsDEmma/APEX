@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-25T21:29:23.010Z",
+  "lastUpdated": "2026-04-25T22:28:06.170Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 689,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-25T21:29:25.862Z",
+        "syncedAt": "2026-04-25T22:28:08.567Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:28.399Z"
+          "syncedAt": "2026-04-25T22:28:11.160Z"
         },
         "30": {
           "period": 30,
@@ -189,7 +189,7 @@
           "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:29.238Z"
+          "syncedAt": "2026-04-25T22:28:12.118Z"
         },
         "90": {
           "period": 90,
@@ -347,7 +347,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:30.138Z"
+          "syncedAt": "2026-04-25T22:28:13.105Z"
         },
         "365": {
           "period": 365,
@@ -507,37 +507,37 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:31.055Z"
+          "syncedAt": "2026-04-25T22:28:14.601Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 570,
-        "orders": 12,
+        "revenue": 595,
+        "orders": 13,
         "currency": "EUR",
-        "syncedAt": "2026-04-25T21:29:32.611Z",
+        "syncedAt": "2026-04-25T22:28:16.265Z",
         "allTime": {
-          "revenue": 1436,
-          "orders": 26
+          "revenue": 1461,
+          "orders": 27
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 247,
-          "orders": 5,
-          "aov": 49,
+          "revenue": 272,
+          "orders": 6,
+          "aov": 45,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 175,
-          "revenueHalf2": 72,
+          "revenueHalf2": 97,
           "discountOrders": 1,
-          "discountRate": 20,
+          "discountRate": 17,
           "discountShare": 1,
           "totalDiscounts": 2,
-          "newCust": 5,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 25,
@@ -564,24 +564,30 @@
               "revenue": 50
             },
             {
+              "name": "Kimono Homme Noir Samourai",
+              "qty": 1,
+              "revenue": 25
+            },
+            {
               "name": "Kimono Tunique Plage Crochet",
               "qty": 1,
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 71,
+          "top3RevenueShare": 64,
           "hourly": {
             "7": 1,
             "11": 1,
             "16": 1,
             "18": 1,
-            "21": 1
+            "21": 2
           },
           "daily": {
             "0": 2,
             "1": 1,
             "3": 1,
-            "4": 1
+            "4": 1,
+            "6": 1
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -608,33 +614,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 5,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 63,
-          "conversionRate": 7.9,
+          "sessions": 75,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:34.115Z"
+          "syncedAt": "2026-04-25T22:28:17.813Z"
         },
         "30": {
           "period": 30,
-          "revenue": 570,
-          "orders": 12,
-          "aov": 48,
+          "revenue": 595,
+          "orders": 13,
+          "aov": 46,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 144,
-          "revenueHalf2": 426,
+          "revenueHalf2": 451,
           "discountOrders": 3,
-          "discountRate": 25,
+          "discountRate": 23,
           "discountShare": 2,
           "totalDiscounts": 13,
-          "newCust": 12,
+          "newCust": 13,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 16,
+          "avgLTV": 17,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -678,17 +684,17 @@
               "revenue": 45
             },
             {
-              "name": "Kimono Tunique Plage Crochet",
+              "name": "Kimono Homme Noir Samourai",
               "qty": 1,
               "revenue": 25
             },
             {
-              "name": "Robe De Plage Kimono Noir",
+              "name": "Kimono Tunique Plage Crochet",
               "qty": 1,
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 42,
+          "top3RevenueShare": 40,
           "hourly": {
             "7": 3,
             "9": 1,
@@ -699,13 +705,14 @@
             "16": 1,
             "17": 1,
             "18": 1,
-            "21": 1
+            "21": 2
           },
           "daily": {
             "0": 5,
             "1": 2,
             "3": 2,
-            "4": 3
+            "4": 3,
+            "6": 1
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -732,8 +739,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 18,
-          "abandonRate": 33,
+          "totalCheckouts": 19,
+          "abandonRate": 32,
           "abandonedValue": 401,
           "topAbandoned": [
             {
@@ -757,26 +764,26 @@
               "count": 1
             }
           ],
-          "sessions": 225,
-          "conversionRate": 5.3,
+          "sessions": 238,
+          "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:34.755Z"
+          "syncedAt": "2026-04-25T22:28:18.574Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1436,
-          "orders": 26,
-          "aov": 55,
+          "revenue": 1461,
+          "orders": 27,
+          "aov": 54,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 494,
-          "revenueHalf2": 942,
+          "revenueHalf2": 967,
           "discountOrders": 4,
           "discountRate": 15,
           "discountShare": 1,
           "totalDiscounts": 16,
-          "newCust": 26,
+          "newCust": 27,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -833,7 +840,7 @@
               "revenue": 60
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 32,
           "hourly": {
             "1": 1,
             "7": 3,
@@ -849,7 +856,7 @@
             "18": 2,
             "19": 1,
             "20": 2,
-            "21": 2
+            "21": 3
           },
           "daily": {
             "0": 7,
@@ -858,7 +865,7 @@
             "3": 5,
             "4": 4,
             "5": 1,
-            "6": 3
+            "6": 4
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -883,10 +890,10 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 55,
+          "newProductsAdded": 48,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 35,
-          "abandonRate": 26,
+          "totalCheckouts": 36,
+          "abandonRate": 25,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -910,26 +917,26 @@
               "count": 1
             }
           ],
-          "sessions": 438,
-          "conversionRate": 5.9,
+          "sessions": 450,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:35.371Z"
+          "syncedAt": "2026-04-25T22:28:19.401Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1436,
-          "orders": 26,
-          "aov": 55,
+          "revenue": 1461,
+          "orders": 27,
+          "aov": 54,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1436,
+          "revenueHalf2": 1461,
           "discountOrders": 4,
           "discountRate": 15,
           "discountShare": 1,
           "totalDiscounts": 16,
-          "newCust": 26,
+          "newCust": 27,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -986,7 +993,7 @@
               "revenue": 60
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 32,
           "hourly": {
             "1": 1,
             "7": 3,
@@ -1002,7 +1009,7 @@
             "18": 2,
             "19": 1,
             "20": 2,
-            "21": 2
+            "21": 3
           },
           "daily": {
             "0": 7,
@@ -1011,7 +1018,7 @@
             "3": 5,
             "4": 4,
             "5": 1,
-            "6": 3
+            "6": 4
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -1038,8 +1045,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 35,
-          "abandonRate": 26,
+          "totalCheckouts": 36,
+          "abandonRate": 25,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -1063,10 +1070,10 @@
               "count": 1
             }
           ],
-          "sessions": 438,
-          "conversionRate": 5.9,
+          "sessions": 450,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-25T21:29:36.026Z"
+          "syncedAt": "2026-04-25T22:28:20.177Z"
         }
       }
     }
