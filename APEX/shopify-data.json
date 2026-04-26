@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-26T22:29:55.536Z",
+  "lastUpdated": "2026-04-26T23:31:54.318Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 689,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-26T22:29:57.787Z",
+        "syncedAt": "2026-04-26T23:31:56.891Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:29:59.810Z"
+          "syncedAt": "2026-04-26T23:31:59.316Z"
         },
         "30": {
           "period": 30,
@@ -189,7 +189,7 @@
           "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:00.575Z"
+          "syncedAt": "2026-04-26T23:32:00.323Z"
         },
         "90": {
           "period": 90,
@@ -347,7 +347,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:01.416Z"
+          "syncedAt": "2026-04-26T23:32:01.282Z"
         },
         "365": {
           "period": 365,
@@ -371,8 +371,8 @@
           "topProducts": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "qty": 56,
-              "revenue": 3354
+              "qty": 55,
+              "revenue": 3295
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
@@ -507,7 +507,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:02.613Z"
+          "syncedAt": "2026-04-26T23:32:02.340Z"
         }
       }
     },
@@ -516,7 +516,7 @@
         "revenue": 645,
         "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-04-26T22:30:04.246Z",
+        "syncedAt": "2026-04-26T23:32:04.065Z",
         "allTime": {
           "revenue": 1511,
           "orders": 28
@@ -626,7 +626,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:05.554Z"
+          "syncedAt": "2026-04-26T23:32:05.806Z"
         },
         "30": {
           "period": 30,
@@ -772,7 +772,7 @@
           "sessions": 250,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:06.120Z"
+          "syncedAt": "2026-04-26T23:32:06.588Z"
         },
         "90": {
           "period": 90,
@@ -925,7 +925,7 @@
           "sessions": 463,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:06.741Z"
+          "syncedAt": "2026-04-26T23:32:07.311Z"
         },
         "365": {
           "period": 365,
@@ -1078,7 +1078,7 @@
           "sessions": 463,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T22:30:07.365Z"
+          "syncedAt": "2026-04-26T23:32:08.111Z"
         }
       }
     }
