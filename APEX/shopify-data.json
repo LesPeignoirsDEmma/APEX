@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-26T10:38:22.377Z",
+  "lastUpdated": "2026-04-26T11:33:50.084Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 689,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-26T10:38:24.959Z",
+        "syncedAt": "2026-04-26T11:33:52.748Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:27.275Z"
+          "syncedAt": "2026-04-26T11:33:54.992Z"
         },
         "30": {
           "period": 30,
@@ -167,7 +167,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -189,7 +189,7 @@
           "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:28.108Z"
+          "syncedAt": "2026-04-26T11:33:55.840Z"
         },
         "90": {
           "period": 90,
@@ -347,7 +347,7 @@
           "sessions": 1163,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:28.882Z"
+          "syncedAt": "2026-04-26T11:33:56.754Z"
         },
         "365": {
           "period": 365,
@@ -507,40 +507,40 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:30.080Z"
+          "syncedAt": "2026-04-26T11:33:57.980Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 595,
-        "orders": 13,
+        "revenue": 645,
+        "orders": 14,
         "currency": "EUR",
-        "syncedAt": "2026-04-26T10:38:31.331Z",
+        "syncedAt": "2026-04-26T11:33:59.558Z",
         "allTime": {
-          "revenue": 1461,
-          "orders": 27
+          "revenue": 1511,
+          "orders": 28
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 272,
-          "orders": 6,
-          "aov": 45,
+          "revenue": 322,
+          "orders": 7,
+          "aov": 46,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 225,
-          "revenueHalf2": 47,
+          "revenueHalf2": 97,
           "discountOrders": 1,
-          "discountRate": 17,
+          "discountRate": 14,
           "discountShare": 1,
           "totalDiscounts": 2,
-          "newCust": 6,
+          "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 23,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -559,6 +559,11 @@
               "revenue": 55
             },
             {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
               "name": "Kimono Long Femme Plage",
               "qty": 1,
               "revenue": 50
@@ -574,16 +579,16 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 64,
+          "top3RevenueShare": 54,
           "hourly": {
             "7": 1,
-            "11": 1,
+            "11": 2,
             "16": 1,
             "18": 1,
             "21": 2
           },
           "daily": {
-            "0": 2,
+            "0": 3,
             "1": 1,
             "3": 1,
             "4": 1,
@@ -614,39 +619,44 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 6,
+          "totalCheckouts": 7,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 75,
+          "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:32.566Z"
+          "syncedAt": "2026-04-26T11:34:01.112Z"
         },
         "30": {
           "period": 30,
-          "revenue": 595,
-          "orders": 13,
+          "revenue": 645,
+          "orders": 14,
           "aov": 46,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 144,
-          "revenueHalf2": 451,
+          "revenueHalf2": 501,
           "discountOrders": 3,
-          "discountRate": 23,
+          "discountRate": 21,
           "discountShare": 2,
           "totalDiscounts": 13,
-          "newCust": 13,
+          "newCust": 14,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 17,
+          "avgLTV": 18,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Kimono Chinois Rouge",
               "qty": 2,
               "revenue": 110
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 2,
+              "revenue": 75
             },
             {
               "name": "Ensemble Pyjama Style Kimono",
@@ -687,19 +697,14 @@
               "name": "Kimono Homme Noir Samourai",
               "qty": 1,
               "revenue": 25
-            },
-            {
-              "name": "Kimono Tunique Plage Crochet",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 40,
+          "top3RevenueShare": 39,
           "hourly": {
             "7": 3,
             "9": 1,
             "10": 1,
-            "11": 1,
+            "11": 2,
             "13": 1,
             "15": 1,
             "16": 1,
@@ -708,7 +713,7 @@
             "21": 2
           },
           "daily": {
-            "0": 5,
+            "0": 6,
             "1": 2,
             "3": 2,
             "4": 3,
@@ -739,8 +744,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 19,
-          "abandonRate": 32,
+          "totalCheckouts": 20,
+          "abandonRate": 30,
           "abandonedValue": 401,
           "topAbandoned": [
             {
@@ -764,26 +769,26 @@
               "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 5.5,
+          "sessions": 250,
+          "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:33.159Z"
+          "syncedAt": "2026-04-26T11:34:01.842Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1461,
-          "orders": 27,
+          "revenue": 1511,
+          "orders": 28,
           "aov": 54,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 494,
-          "revenueHalf2": 967,
+          "revenueHalf2": 1017,
           "discountOrders": 4,
-          "discountRate": 15,
+          "discountRate": 14,
           "discountShare": 1,
           "totalDiscounts": 16,
-          "newCust": 27,
+          "newCust": 28,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -803,6 +808,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 2,
+              "revenue": 75
             },
             {
               "name": "Ensemble Pyjama Style Kimono",
@@ -833,21 +843,16 @@
               "name": "Kimono Femme Long Noir Et Blanc",
               "qty": 1,
               "revenue": 60
-            },
-            {
-              "name": "Kimono Long Manche Ample",
-              "qty": 1,
-              "revenue": 60
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 31,
           "hourly": {
             "1": 1,
             "7": 3,
             "8": 1,
             "9": 1,
             "10": 2,
-            "11": 1,
+            "11": 2,
             "12": 1,
             "13": 5,
             "15": 1,
@@ -859,7 +864,7 @@
             "21": 3
           },
           "daily": {
-            "0": 7,
+            "0": 8,
             "1": 5,
             "2": 1,
             "3": 5,
@@ -892,8 +897,8 @@
           ],
           "newProductsAdded": 48,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 36,
-          "abandonRate": 25,
+          "totalCheckouts": 37,
+          "abandonRate": 24,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -917,26 +922,26 @@
               "count": 1
             }
           ],
-          "sessions": 450,
+          "sessions": 463,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:33.749Z"
+          "syncedAt": "2026-04-26T11:34:02.511Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1461,
-          "orders": 27,
+          "revenue": 1511,
+          "orders": 28,
           "aov": 54,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1461,
+          "revenueHalf2": 1511,
           "discountOrders": 4,
-          "discountRate": 15,
+          "discountRate": 14,
           "discountShare": 1,
           "totalDiscounts": 16,
-          "newCust": 27,
+          "newCust": 28,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 27,
@@ -956,6 +961,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 2,
+              "revenue": 75
             },
             {
               "name": "Ensemble Pyjama Style Kimono",
@@ -986,21 +996,16 @@
               "name": "Kimono Femme Long Noir Et Blanc",
               "qty": 1,
               "revenue": 60
-            },
-            {
-              "name": "Kimono Long Manche Ample",
-              "qty": 1,
-              "revenue": 60
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 31,
           "hourly": {
             "1": 1,
             "7": 3,
             "8": 1,
             "9": 1,
             "10": 2,
-            "11": 1,
+            "11": 2,
             "12": 1,
             "13": 5,
             "15": 1,
@@ -1012,7 +1017,7 @@
             "21": 3
           },
           "daily": {
-            "0": 7,
+            "0": 8,
             "1": 5,
             "2": 1,
             "3": 5,
@@ -1045,8 +1050,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 36,
-          "abandonRate": 25,
+          "totalCheckouts": 37,
+          "abandonRate": 24,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -1070,10 +1075,10 @@
               "count": 1
             }
           ],
-          "sessions": 450,
+          "sessions": 463,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-26T10:38:34.338Z"
+          "syncedAt": "2026-04-26T11:34:03.178Z"
         }
       }
     }
