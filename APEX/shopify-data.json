@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-27T10:54:49.138Z",
+  "lastUpdated": "2026-04-27T12:17:26.981Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 653,
         "orders": 8,
         "currency": "EUR",
-        "syncedAt": "2026-04-27T10:54:53.004Z",
+        "syncedAt": "2026-04-27T12:17:29.760Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:54:56.597Z"
+          "syncedAt": "2026-04-27T12:17:32.100Z"
         },
         "30": {
           "period": 30,
@@ -163,7 +163,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -184,7 +184,7 @@
           "sessions": 100,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:54:57.327Z"
+          "syncedAt": "2026-04-27T12:17:33.248Z"
         },
         "90": {
           "period": 90,
@@ -313,10 +313,10 @@
             "Peignoir Brodé Ours – Enfant"
           ],
           "newProductsAdded": 51,
-          "abandonedCheckouts": 16,
-          "totalCheckouts": 92,
-          "abandonRate": 17,
-          "abandonedValue": 831,
+          "abandonedCheckouts": 15,
+          "totalCheckouts": 91,
+          "abandonRate": 16,
+          "abandonedValue": 781,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -331,18 +331,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Kimono Femme",
+              "name": "Peignoir Flanelle Cœur",
               "count": 1
             },
             {
-              "name": "Peignoir Flanelle Cœur",
+              "name": "Peignoir Chic Satin Homme",
               "count": 1
             }
           ],
-          "sessions": 1150,
-          "conversionRate": 6.6,
+          "sessions": 1138,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:54:58.024Z"
+          "syncedAt": "2026-04-27T12:17:34.303Z"
         },
         "365": {
           "period": 365,
@@ -473,10 +473,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 17,
-          "totalCheckouts": 216,
-          "abandonRate": 8,
-          "abandonedValue": 866,
+          "abandonedCheckouts": 15,
+          "totalCheckouts": 214,
+          "abandonRate": 7,
+          "abandonedValue": 781,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -491,18 +491,18 @@
               "count": 2
             },
             {
-              "name": "Cape de Bain Bébé Cerf",
+              "name": "Peignoir Flanelle Cœur",
               "count": 1
             },
             {
-              "name": "Peignoir Kimono Femme",
+              "name": "Peignoir Chic Satin Homme",
               "count": 1
             }
           ],
-          "sessions": 2700,
+          "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:54:59.244Z"
+          "syncedAt": "2026-04-27T12:17:35.145Z"
         }
       }
     },
@@ -511,7 +511,7 @@
         "revenue": 690,
         "orders": 15,
         "currency": "EUR",
-        "syncedAt": "2026-04-27T10:55:03.790Z",
+        "syncedAt": "2026-04-27T12:17:36.546Z",
         "allTime": {
           "revenue": 1556,
           "orders": 29
@@ -611,7 +611,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:55:05.131Z"
+          "syncedAt": "2026-04-27T12:17:37.809Z"
         },
         "30": {
           "period": 30,
@@ -758,7 +758,7 @@
           "sessions": 263,
           "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:55:05.684Z"
+          "syncedAt": "2026-04-27T12:17:38.459Z"
         },
         "90": {
           "period": 90,
@@ -912,7 +912,7 @@
           "sessions": 475,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:55:06.284Z"
+          "syncedAt": "2026-04-27T12:17:39.070Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 475,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T10:55:06.938Z"
+          "syncedAt": "2026-04-27T12:17:39.721Z"
         }
       }
     }
