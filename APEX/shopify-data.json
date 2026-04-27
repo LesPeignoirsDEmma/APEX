@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-27T05:46:16.899Z",
+  "lastUpdated": "2026-04-27T08:08:51.201Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 653,
         "orders": 8,
         "currency": "EUR",
-        "syncedAt": "2026-04-27T05:46:20.474Z",
+        "syncedAt": "2026-04-27T08:08:55.947Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:22.496Z"
+          "syncedAt": "2026-04-27T08:08:58.811Z"
         },
         "30": {
           "period": 30,
@@ -184,7 +184,7 @@
           "sessions": 100,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:23.226Z"
+          "syncedAt": "2026-04-27T08:08:59.662Z"
         },
         "90": {
           "period": 90,
@@ -342,7 +342,7 @@
           "sessions": 1150,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:24.235Z"
+          "syncedAt": "2026-04-27T08:09:00.466Z"
         },
         "365": {
           "period": 365,
@@ -457,6 +457,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -469,8 +470,7 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme",
-            "Peignoir Chaud Hiver Femme"
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 17,
@@ -502,7 +502,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:25.094Z"
+          "syncedAt": "2026-04-27T08:09:01.329Z"
         }
       }
     },
@@ -511,7 +511,7 @@
         "revenue": 690,
         "orders": 15,
         "currency": "EUR",
-        "syncedAt": "2026-04-27T05:46:29.423Z",
+        "syncedAt": "2026-04-27T08:09:05.902Z",
         "allTime": {
           "revenue": 1556,
           "orders": 29
@@ -611,7 +611,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:30.686Z"
+          "syncedAt": "2026-04-27T08:09:07.204Z"
         },
         "30": {
           "period": 30,
@@ -621,8 +621,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 144,
-          "revenueHalf2": 546,
+          "revenueHalf1": 194,
+          "revenueHalf2": 497,
           "discountOrders": 4,
           "discountRate": 27,
           "discountShare": 3,
@@ -758,7 +758,7 @@
           "sessions": 263,
           "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:31.341Z"
+          "syncedAt": "2026-04-27T08:09:07.779Z"
         },
         "90": {
           "period": 90,
@@ -882,7 +882,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 40,
+          "newProductsAdded": 14,
           "abandonedCheckouts": 9,
           "totalCheckouts": 38,
           "abandonRate": 24,
@@ -912,7 +912,7 @@
           "sessions": 475,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:31.947Z"
+          "syncedAt": "2026-04-27T08:09:08.438Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 475,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T05:46:32.592Z"
+          "syncedAt": "2026-04-27T08:09:09.045Z"
         }
       }
     }
