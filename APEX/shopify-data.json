@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-27T08:08:51.201Z",
+  "lastUpdated": "2026-04-27T10:54:49.138Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 653,
         "orders": 8,
         "currency": "EUR",
-        "syncedAt": "2026-04-27T08:08:55.947Z",
+        "syncedAt": "2026-04-27T10:54:53.004Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:08:58.811Z"
+          "syncedAt": "2026-04-27T10:54:56.597Z"
         },
         "30": {
           "period": 30,
@@ -163,7 +163,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -184,7 +184,7 @@
           "sessions": 100,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:08:59.662Z"
+          "syncedAt": "2026-04-27T10:54:57.327Z"
         },
         "90": {
           "period": 90,
@@ -342,7 +342,7 @@
           "sessions": 1150,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:09:00.466Z"
+          "syncedAt": "2026-04-27T10:54:58.024Z"
         },
         "365": {
           "period": 365,
@@ -457,7 +457,6 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -470,7 +469,8 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 17,
@@ -502,7 +502,7 @@
           "sessions": 2700,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:09:01.329Z"
+          "syncedAt": "2026-04-27T10:54:59.244Z"
         }
       }
     },
@@ -511,7 +511,7 @@
         "revenue": 690,
         "orders": 15,
         "currency": "EUR",
-        "syncedAt": "2026-04-27T08:09:05.902Z",
+        "syncedAt": "2026-04-27T10:55:03.790Z",
         "allTime": {
           "revenue": 1556,
           "orders": 29
@@ -526,8 +526,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 115,
-          "revenueHalf2": 142,
+          "revenueHalf1": 137,
+          "revenueHalf2": 120,
           "discountOrders": 2,
           "discountRate": 33,
           "discountShare": 3,
@@ -611,7 +611,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:09:07.204Z"
+          "syncedAt": "2026-04-27T10:55:05.131Z"
         },
         "30": {
           "period": 30,
@@ -758,7 +758,7 @@
           "sessions": 263,
           "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:09:07.779Z"
+          "syncedAt": "2026-04-27T10:55:05.684Z"
         },
         "90": {
           "period": 90,
@@ -882,7 +882,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 14,
+          "newProductsAdded": 0,
           "abandonedCheckouts": 9,
           "totalCheckouts": 38,
           "abandonRate": 24,
@@ -912,7 +912,7 @@
           "sessions": 475,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:09:08.438Z"
+          "syncedAt": "2026-04-27T10:55:06.284Z"
         },
         "365": {
           "period": 365,
@@ -1066,7 +1066,7 @@
           "sessions": 475,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-27T08:09:09.045Z"
+          "syncedAt": "2026-04-27T10:55:06.938Z"
         }
       }
     }
