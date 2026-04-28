@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-28T10:56:44.864Z",
+  "lastUpdated": "2026-04-28T12:22:37.291Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 653,
         "orders": 8,
         "currency": "EUR",
-        "syncedAt": "2026-04-28T10:56:49.570Z",
+        "syncedAt": "2026-04-28T12:22:40.228Z",
         "allTime": {
           "revenue": 11971,
           "orders": 196
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:56:52.972Z"
+          "syncedAt": "2026-04-28T12:22:42.935Z"
         },
         "30": {
           "period": 30,
@@ -184,7 +184,7 @@
           "sessions": 100,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:56:53.983Z"
+          "syncedAt": "2026-04-28T12:22:43.768Z"
         },
         "90": {
           "period": 90,
@@ -342,7 +342,7 @@
           "sessions": 1138,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:56:54.678Z"
+          "syncedAt": "2026-04-28T12:22:44.864Z"
         },
         "365": {
           "period": 365,
@@ -502,46 +502,46 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:56:55.994Z"
+          "syncedAt": "2026-04-28T12:22:45.862Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 744,
-        "orders": 16,
+        "revenue": 789,
+        "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-04-28T10:57:02.064Z",
+        "syncedAt": "2026-04-28T12:22:47.169Z",
         "allTime": {
-          "revenue": 1610,
-          "orders": 30
+          "revenue": 1655,
+          "orders": 31
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 246,
-          "orders": 6,
-          "aov": 41,
+          "revenue": 291,
+          "orders": 7,
+          "aov": 42,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 72,
-          "revenueHalf2": 174,
-          "discountOrders": 3,
-          "discountRate": 50,
-          "discountShare": 5,
-          "totalDiscounts": 13,
-          "newCust": 6,
+          "revenueHalf2": 219,
+          "discountOrders": 4,
+          "discountRate": 57,
+          "discountShare": 6,
+          "totalDiscounts": 18,
+          "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 24,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
+              "qty": 3,
+              "revenue": 150
             },
             {
               "name": "Kimono Japonais Traditionnel Fille",
@@ -564,10 +564,11 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 85,
+          "top3RevenueShare": 89,
           "hourly": {
             "5": 1,
             "11": 1,
+            "12": 1,
             "14": 1,
             "18": 1,
             "21": 2
@@ -575,6 +576,7 @@
           "daily": {
             "0": 1,
             "1": 2,
+            "2": 1,
             "3": 1,
             "4": 1,
             "6": 1
@@ -604,44 +606,44 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 6,
+          "totalCheckouts": 7,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 75,
+          "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:57:03.328Z"
+          "syncedAt": "2026-04-28T12:22:48.480Z"
         },
         "30": {
           "period": 30,
-          "revenue": 744,
-          "orders": 16,
+          "revenue": 789,
+          "orders": 17,
           "aov": 46,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 258,
-          "revenueHalf2": 486,
-          "discountOrders": 5,
-          "discountRate": 31,
-          "discountShare": 3,
-          "totalDiscounts": 24,
-          "newCust": 16,
+          "revenueHalf2": 530,
+          "discountOrders": 6,
+          "discountRate": 35,
+          "discountShare": 4,
+          "totalDiscounts": 29,
+          "newCust": 17,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 19,
           "vipCustomers": 0,
           "topProducts": [
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 3,
+              "revenue": 150
+            },
+            {
               "name": "Kimono Chinois Rouge",
               "qty": 2,
               "revenue": 110
-            },
-            {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
             },
             {
               "name": "Robe Kimono Longue Grande Taille",
@@ -684,13 +686,14 @@
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 42,
           "hourly": {
             "5": 1,
             "7": 3,
             "9": 1,
             "10": 1,
             "11": 2,
+            "12": 1,
             "13": 1,
             "14": 1,
             "15": 1,
@@ -702,6 +705,7 @@
           "daily": {
             "0": 6,
             "1": 4,
+            "2": 1,
             "3": 2,
             "4": 3,
             "6": 1
@@ -731,8 +735,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 22,
-          "abandonRate": 27,
+          "totalCheckouts": 23,
+          "abandonRate": 26,
           "abandonedValue": 401,
           "topAbandoned": [
             {
@@ -756,29 +760,29 @@
               "count": 1
             }
           ],
-          "sessions": 275,
-          "conversionRate": 5.8,
+          "sessions": 288,
+          "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:57:04.032Z"
+          "syncedAt": "2026-04-28T12:22:49.130Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1610,
-          "orders": 30,
-          "aov": 54,
+          "revenue": 1655,
+          "orders": 31,
+          "aov": 53,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 494,
-          "revenueHalf2": 1116,
-          "discountOrders": 6,
-          "discountRate": 20,
+          "revenueHalf2": 1161,
+          "discountOrders": 7,
+          "discountRate": 23,
           "discountShare": 2,
-          "totalDiscounts": 27,
-          "newCust": 30,
+          "totalDiscounts": 32,
+          "newCust": 31,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -792,14 +796,14 @@
               "revenue": 165
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 3,
+              "revenue": 150
+            },
+            {
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
-            },
-            {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
             },
             {
               "name": "Robe Kimono Longue Grande Taille",
@@ -841,7 +845,7 @@
             "9": 1,
             "10": 2,
             "11": 2,
-            "12": 1,
+            "12": 2,
             "13": 5,
             "14": 1,
             "15": 1,
@@ -855,7 +859,7 @@
           "daily": {
             "0": 8,
             "1": 7,
-            "2": 1,
+            "2": 2,
             "3": 5,
             "4": 4,
             "5": 1,
@@ -886,7 +890,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 39,
+          "totalCheckouts": 40,
           "abandonRate": 23,
           "abandonedValue": 696,
           "topAbandoned": [
@@ -911,29 +915,29 @@
               "count": 1
             }
           ],
-          "sessions": 488,
-          "conversionRate": 6.1,
+          "sessions": 500,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:57:04.650Z"
+          "syncedAt": "2026-04-28T12:22:49.829Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1610,
-          "orders": 30,
-          "aov": 54,
+          "revenue": 1655,
+          "orders": 31,
+          "aov": 53,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1610,
-          "discountOrders": 6,
-          "discountRate": 20,
+          "revenueHalf2": 1655,
+          "discountOrders": 7,
+          "discountRate": 23,
           "discountShare": 2,
-          "totalDiscounts": 27,
-          "newCust": 30,
+          "totalDiscounts": 32,
+          "newCust": 31,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -947,14 +951,14 @@
               "revenue": 165
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 3,
+              "revenue": 150
+            },
+            {
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
-            },
-            {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
             },
             {
               "name": "Robe Kimono Longue Grande Taille",
@@ -996,7 +1000,7 @@
             "9": 1,
             "10": 2,
             "11": 2,
-            "12": 1,
+            "12": 2,
             "13": 5,
             "14": 1,
             "15": 1,
@@ -1010,7 +1014,7 @@
           "daily": {
             "0": 8,
             "1": 7,
-            "2": 1,
+            "2": 2,
             "3": 5,
             "4": 4,
             "5": 1,
@@ -1041,7 +1045,7 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 39,
+          "totalCheckouts": 40,
           "abandonRate": 23,
           "abandonedValue": 696,
           "topAbandoned": [
@@ -1066,10 +1070,10 @@
               "count": 1
             }
           ],
-          "sessions": 488,
-          "conversionRate": 6.1,
+          "sessions": 500,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T10:57:05.439Z"
+          "syncedAt": "2026-04-28T12:22:50.498Z"
         }
       }
     }
