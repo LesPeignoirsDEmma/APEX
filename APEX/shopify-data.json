@@ -1,41 +1,56 @@
 {
-  "lastUpdated": "2026-04-28T19:22:44.391Z",
+  "lastUpdated": "2026-04-28T21:00:40.919Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 653,
-        "orders": 8,
+        "revenue": 833,
+        "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-28T19:22:47.193Z",
+        "syncedAt": "2026-04-28T21:00:43.763Z",
         "allTime": {
-          "revenue": 11971,
+          "revenue": 12070,
           "orders": 196
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 0,
-          "orders": 0,
-          "aov": 0,
+          "revenue": 180,
+          "orders": 1,
+          "aov": 180,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 0,
-          "discountOrders": 0,
-          "discountRate": 0,
-          "discountShare": 0,
-          "totalDiscounts": 0,
-          "newCust": 0,
+          "revenueHalf2": 180,
+          "discountOrders": 1,
+          "discountRate": 100,
+          "discountShare": 11,
+          "totalDiscounts": 20,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 0,
+          "avgLTV": 180,
           "vipCustomers": 0,
-          "topProducts": [],
-          "top3RevenueShare": 0,
-          "hourly": {},
-          "daily": {},
+          "topProducts": [
+            {
+              "name": "Peignoir Kimono Effet Soie",
+              "qty": 4,
+              "revenue": 160
+            },
+            {
+              "name": "Peignoir Satin Court Blanc – Femme",
+              "qty": 1,
+              "revenue": 40
+            }
+          ],
+          "top3RevenueShare": 111,
+          "hourly": {
+            "19": 1
+          },
+          "daily": {
+            "2": 1
+          },
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Cerf",
@@ -61,35 +76,40 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 0,
-          "abandonRate": null,
+          "totalCheckouts": 1,
+          "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": null,
-          "conversionRate": null,
+          "sessions": 13,
+          "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:50.251Z"
+          "syncedAt": "2026-04-28T21:00:46.560Z"
         },
         "30": {
           "period": 30,
-          "revenue": 653,
-          "orders": 8,
-          "aov": 82,
+          "revenue": 833,
+          "orders": 9,
+          "aov": 93,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 653,
-          "revenueHalf2": 0,
-          "discountOrders": 3,
-          "discountRate": 38,
-          "discountShare": 3,
-          "totalDiscounts": 21,
-          "newCust": 8,
+          "revenueHalf2": 180,
+          "discountOrders": 4,
+          "discountRate": 44,
+          "discountShare": 5,
+          "totalDiscounts": 41,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 36,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Peignoir Kimono Effet Soie",
+              "qty": 4,
+              "revenue": 160
+            },
             {
               "name": "Peignoir Femme Flanelle",
               "qty": 2,
@@ -143,10 +163,11 @@
             "11": 3,
             "12": 1,
             "15": 1,
+            "19": 1,
             "20": 1
           },
           "daily": {
-            "2": 2,
+            "2": 3,
             "3": 1,
             "4": 1,
             "5": 3,
@@ -163,7 +184,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -177,33 +198,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 8,
+          "totalCheckouts": 9,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 100,
+          "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:51.290Z"
+          "syncedAt": "2026-04-28T21:00:47.384Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4806,
-          "orders": 76,
-          "aov": 63,
+          "revenue": 4985,
+          "orders": 77,
+          "aov": 65,
           "currency": "EUR",
           "refunds": 8,
-          "refundRate": 10,
+          "refundRate": 9,
           "revenueHalf1": 3903,
-          "revenueHalf2": 903,
-          "discountOrders": 40,
+          "revenueHalf2": 1082,
+          "discountOrders": 41,
           "discountRate": 53,
           "discountShare": 9,
-          "totalDiscounts": 448,
-          "newCust": 76,
+          "totalDiscounts": 467,
+          "newCust": 77,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -232,6 +253,11 @@
               "revenue": 205
             },
             {
+              "name": "Peignoir Kimono Effet Soie",
+              "qty": 5,
+              "revenue": 195
+            },
+            {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "qty": 3,
               "revenue": 180
@@ -250,14 +276,9 @@
               "name": "Peignoir De Bain Absorbant Femme",
               "qty": 1,
               "revenue": 130
-            },
-            {
-              "name": "Chaussons d’intérieur — Gris",
-              "qty": 3,
-              "revenue": 120
             }
           ],
-          "top3RevenueShare": 40,
+          "top3RevenueShare": 38,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -274,7 +295,7 @@
             "16": 4,
             "17": 3,
             "18": 7,
-            "19": 3,
+            "19": 4,
             "20": 4,
             "21": 3,
             "22": 1,
@@ -283,7 +304,7 @@
           "daily": {
             "0": 11,
             "1": 7,
-            "2": 14,
+            "2": 15,
             "3": 11,
             "4": 8,
             "5": 16,
@@ -306,7 +327,7 @@
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
-            "Peignoir Bébé Blanc",
+            "Peignoir B��b�� Blanc",
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
@@ -314,7 +335,7 @@
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 91,
+          "totalCheckouts": 92,
           "abandonRate": 16,
           "abandonedValue": 781,
           "topAbandoned": [
@@ -339,29 +360,29 @@
               "count": 1
             }
           ],
-          "sessions": 1138,
+          "sessions": 1150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:52.431Z"
+          "syncedAt": "2026-04-28T21:00:48.527Z"
         },
         "365": {
           "period": 365,
-          "revenue": 11971,
+          "revenue": 12070,
           "orders": 196,
-          "aov": 61,
+          "aov": 62,
           "currency": "EUR",
           "refunds": 54,
           "refundRate": 22,
           "revenueHalf1": 0,
-          "revenueHalf2": 11971,
+          "revenueHalf2": 12070,
           "discountOrders": 129,
           "discountRate": 66,
           "discountShare": 10,
-          "totalDiscounts": 1139,
+          "totalDiscounts": 1150,
           "newCust": 194,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 27,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -391,8 +412,8 @@
             },
             {
               "name": "Peignoir Rayé Coloré - Unisexe",
-              "qty": 5,
-              "revenue": 450
+              "qty": 4,
+              "revenue": 360
             },
             {
               "name": "Peignoir Flanelle Enfant",
@@ -430,11 +451,11 @@
             "12": 8,
             "13": 9,
             "14": 16,
-            "15": 16,
+            "15": 15,
             "16": 12,
             "17": 12,
             "18": 25,
-            "19": 14,
+            "19": 15,
             "20": 13,
             "21": 13,
             "22": 3,
@@ -442,8 +463,8 @@
           },
           "daily": {
             "0": 28,
-            "1": 26,
-            "2": 39,
+            "1": 25,
+            "2": 40,
             "3": 32,
             "4": 22,
             "5": 31,
@@ -502,7 +523,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:53.362Z"
+          "syncedAt": "2026-04-28T21:00:49.394Z"
         }
       }
     },
@@ -511,7 +532,7 @@
         "revenue": 789,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-04-28T19:22:55.038Z",
+        "syncedAt": "2026-04-28T21:00:50.840Z",
         "allTime": {
           "revenue": 1655,
           "orders": 31
@@ -535,7 +556,7 @@
           "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 24,
+          "avgLTV": 22,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -613,7 +634,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:57.129Z"
+          "syncedAt": "2026-04-28T21:00:52.250Z"
         },
         "30": {
           "period": 30,
@@ -763,7 +784,7 @@
           "sessions": 288,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:57.980Z"
+          "syncedAt": "2026-04-28T21:00:52.962Z"
         },
         "90": {
           "period": 90,
@@ -782,7 +803,7 @@
           "newCust": 31,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 28,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -918,7 +939,7 @@
           "sessions": 500,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:58.771Z"
+          "syncedAt": "2026-04-28T21:00:53.613Z"
         },
         "365": {
           "period": 365,
@@ -937,7 +958,7 @@
           "newCust": 31,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 28,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1073,7 +1094,7 @@
           "sessions": 500,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T19:22:59.546Z"
+          "syncedAt": "2026-04-28T21:00:54.341Z"
         }
       }
     }
