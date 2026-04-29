@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-28T23:46:40.629Z",
+  "lastUpdated": "2026-04-29T02:10:09.552Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 833,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-28T23:46:42.952Z",
+        "syncedAt": "2026-04-29T02:10:12.106Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:45.026Z"
+          "syncedAt": "2026-04-29T02:10:14.684Z"
         },
         "30": {
           "period": 30,
@@ -102,7 +102,7 @@
           "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 36,
+          "avgLTV": 37,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -205,23 +205,23 @@
           "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:46.248Z"
+          "syncedAt": "2026-04-29T02:10:15.690Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4985,
-          "orders": 77,
+          "revenue": 4940,
+          "orders": 76,
           "aov": 65,
           "currency": "EUR",
           "refunds": 8,
-          "refundRate": 9,
-          "revenueHalf1": 3903,
+          "refundRate": 10,
+          "revenueHalf1": 3858,
           "revenueHalf2": 1082,
-          "discountOrders": 41,
+          "discountOrders": 40,
           "discountRate": 53,
           "discountShare": 9,
-          "totalDiscounts": 467,
-          "newCust": 77,
+          "totalDiscounts": 463,
+          "newCust": 76,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 30,
@@ -243,11 +243,6 @@
               "revenue": 478
             },
             {
-              "name": "Peignoir Flanelle Enfant",
-              "qty": 4,
-              "revenue": 211
-            },
-            {
               "name": "Peignoir Satin 4 Pièces – Femme",
               "qty": 3,
               "revenue": 205
@@ -261,6 +256,11 @@
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "qty": 3,
               "revenue": 180
+            },
+            {
+              "name": "Peignoir Flanelle Enfant",
+              "qty": 3,
+              "revenue": 161
             },
             {
               "name": "Peignoir Elégant Flanelle",
@@ -278,14 +278,14 @@
               "revenue": 130
             }
           ],
-          "top3RevenueShare": 38,
+          "top3RevenueShare": 39,
           "hourly": {
             "2": 2,
             "5": 1,
             "6": 3,
             "7": 2,
             "8": 4,
-            "9": 6,
+            "9": 5,
             "10": 3,
             "11": 7,
             "12": 4,
@@ -305,7 +305,7 @@
             "0": 11,
             "1": 7,
             "2": 15,
-            "3": 11,
+            "3": 10,
             "4": 8,
             "5": 16,
             "6": 9
@@ -319,6 +319,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -330,12 +331,11 @@
             "Peignoir Bébé Blanc",
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
-            "Peignoir Bébé Violet",
-            "Peignoir Brodé Ours – Enfant"
+            "Peignoir Bébé Violet"
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 92,
+          "totalCheckouts": 91,
           "abandonRate": 16,
           "abandonedValue": 781,
           "topAbandoned": [
@@ -360,10 +360,10 @@
               "count": 1
             }
           ],
-          "sessions": 1150,
+          "sessions": 1138,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:47.256Z"
+          "syncedAt": "2026-04-29T02:10:16.737Z"
         },
         "365": {
           "period": 365,
@@ -523,7 +523,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:48.270Z"
+          "syncedAt": "2026-04-29T02:10:17.776Z"
         }
       }
     },
@@ -532,7 +532,7 @@
         "revenue": 789,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-04-28T23:46:49.433Z",
+        "syncedAt": "2026-04-29T02:10:19.340Z",
         "allTime": {
           "revenue": 1655,
           "orders": 31
@@ -556,7 +556,7 @@
           "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -634,7 +634,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:50.873Z"
+          "syncedAt": "2026-04-29T02:10:20.895Z"
         },
         "30": {
           "period": 30,
@@ -784,7 +784,7 @@
           "sessions": 288,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:51.694Z"
+          "syncedAt": "2026-04-29T02:10:21.654Z"
         },
         "90": {
           "period": 90,
@@ -939,7 +939,7 @@
           "sessions": 500,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:52.362Z"
+          "syncedAt": "2026-04-29T02:10:22.496Z"
         },
         "365": {
           "period": 365,
@@ -1094,7 +1094,7 @@
           "sessions": 500,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-28T23:46:53.178Z"
+          "syncedAt": "2026-04-29T02:10:23.293Z"
         }
       }
     }
