@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-29T23:46:16.567Z",
+  "lastUpdated": "2026-04-30T02:10:11.939Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 833,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-29T23:46:18.810Z",
+        "syncedAt": "2026-04-30T02:10:14.497Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:20.776Z"
+          "syncedAt": "2026-04-30T02:10:16.583Z"
         },
         "30": {
           "period": 30,
@@ -102,7 +102,7 @@
           "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 37,
+          "avgLTV": 39,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -184,7 +184,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -205,7 +205,7 @@
           "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:21.522Z"
+          "syncedAt": "2026-04-30T02:10:17.329Z"
         },
         "90": {
           "period": 90,
@@ -213,8 +213,8 @@
           "orders": 76,
           "aov": 65,
           "currency": "EUR",
-          "refunds": 8,
-          "refundRate": 10,
+          "refunds": 7,
+          "refundRate": 8,
           "revenueHalf1": 3858,
           "revenueHalf2": 1082,
           "discountOrders": 40,
@@ -363,7 +363,7 @@
           "sessions": 1138,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:22.301Z"
+          "syncedAt": "2026-04-30T02:10:18.299Z"
         },
         "365": {
           "period": 365,
@@ -523,7 +523,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:23.029Z"
+          "syncedAt": "2026-04-30T02:10:19.116Z"
         }
       }
     },
@@ -532,7 +532,7 @@
         "revenue": 838,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-29T23:46:24.246Z",
+        "syncedAt": "2026-04-30T02:10:20.800Z",
         "allTime": {
           "revenue": 1704,
           "orders": 32
@@ -541,28 +541,28 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 340,
-          "orders": 8,
-          "aov": 43,
+          "revenue": 290,
+          "orders": 7,
+          "aov": 41,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 147,
+          "revenueHalf1": 97,
           "revenueHalf2": 193,
           "discountOrders": 5,
-          "discountRate": 63,
-          "discountShare": 7,
+          "discountRate": 71,
+          "discountShare": 8,
           "totalDiscounts": 24,
-          "newCust": 8,
+          "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 28,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Kimono Long Femme Plage",
-              "qty": 3,
-              "revenue": 150
+              "qty": 2,
+              "revenue": 100
             },
             {
               "name": "Kimono Japonais Traditionnel Fille",
@@ -590,20 +590,19 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 78,
+          "top3RevenueShare": 74,
           "hourly": {
             "5": 1,
             "11": 2,
             "12": 1,
             "14": 1,
-            "18": 1,
             "21": 2
           },
           "daily": {
             "0": 1,
             "1": 2,
             "2": 1,
-            "3": 2,
+            "3": 1,
             "4": 1,
             "6": 1
           },
@@ -632,14 +631,14 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 8,
+          "totalCheckouts": 7,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 100,
+          "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:25.510Z"
+          "syncedAt": "2026-04-30T02:10:22.129Z"
         },
         "30": {
           "period": 30,
@@ -789,7 +788,7 @@
           "sessions": 300,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:26.522Z"
+          "syncedAt": "2026-04-30T02:10:23.231Z"
         },
         "90": {
           "period": 90,
@@ -944,7 +943,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:27.118Z"
+          "syncedAt": "2026-04-30T02:10:23.861Z"
         },
         "365": {
           "period": 365,
@@ -1099,7 +1098,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-29T23:46:27.691Z"
+          "syncedAt": "2026-04-30T02:10:24.512Z"
         }
       }
     }
