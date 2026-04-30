@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-30T17:11:05.043Z",
+  "lastUpdated": "2026-04-30T19:07:50.155Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 833,
         "orders": 9,
         "currency": "EUR",
-        "syncedAt": "2026-04-30T17:11:07.765Z",
+        "syncedAt": "2026-04-30T19:07:53.251Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:11.711Z"
+          "syncedAt": "2026-04-30T19:07:57.506Z"
         },
         "30": {
           "period": 30,
@@ -184,7 +184,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -205,7 +205,7 @@
           "sessions": 113,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:12.519Z"
+          "syncedAt": "2026-04-30T19:07:58.244Z"
         },
         "90": {
           "period": 90,
@@ -363,7 +363,7 @@
           "sessions": 1138,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:13.323Z"
+          "syncedAt": "2026-04-30T19:07:59.099Z"
         },
         "365": {
           "period": 365,
@@ -478,7 +478,6 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -491,7 +490,8 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 15,
@@ -523,7 +523,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:14.135Z"
+          "syncedAt": "2026-04-30T19:07:59.866Z"
         }
       }
     },
@@ -532,7 +532,7 @@
         "revenue": 838,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-30T17:11:15.530Z",
+        "syncedAt": "2026-04-30T19:08:01.774Z",
         "allTime": {
           "revenue": 1704,
           "orders": 32
@@ -547,8 +547,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 97,
-          "revenueHalf2": 193,
+          "revenueHalf1": 142,
+          "revenueHalf2": 148,
           "discountOrders": 5,
           "discountRate": 71,
           "discountShare": 8,
@@ -638,7 +638,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:16.850Z"
+          "syncedAt": "2026-04-30T19:08:03.024Z"
         },
         "30": {
           "period": 30,
@@ -788,7 +788,7 @@
           "sessions": 300,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:17.495Z"
+          "syncedAt": "2026-04-30T19:08:03.623Z"
         },
         "90": {
           "period": 90,
@@ -943,7 +943,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:18.741Z"
+          "syncedAt": "2026-04-30T19:08:04.315Z"
         },
         "365": {
           "period": 365,
@@ -1098,7 +1098,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T17:11:19.342Z"
+          "syncedAt": "2026-04-30T19:08:04.950Z"
         }
       }
     }
