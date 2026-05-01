@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-30T23:43:51.628Z",
+  "lastUpdated": "2026-05-01T02:14:08.850Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 833,
-        "orders": 9,
+        "revenue": 693,
+        "orders": 7,
         "currency": "EUR",
-        "syncedAt": "2026-04-30T23:43:54.273Z",
+        "syncedAt": "2026-05-01T02:14:11.179Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,26 +83,26 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:43:56.932Z"
+          "syncedAt": "2026-05-01T02:14:13.319Z"
         },
         "30": {
           "period": 30,
-          "revenue": 833,
-          "orders": 9,
-          "aov": 93,
+          "revenue": 693,
+          "orders": 7,
+          "aov": 99,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 653,
+          "revenueHalf1": 513,
           "revenueHalf2": 180,
           "discountOrders": 4,
-          "discountRate": 44,
-          "discountShare": 5,
+          "discountRate": 57,
+          "discountShare": 6,
           "totalDiscounts": 41,
-          "newCust": 9,
+          "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 39,
+          "avgLTV": 38,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -126,22 +126,12 @@
               "revenue": 80
             },
             {
-              "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 1,
-              "revenue": 80
-            },
-            {
               "name": "Peignoir Rose Rayé – Femme",
               "qty": 1,
               "revenue": 60
             },
             {
               "name": "Peignoir Mariée Dentelle",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
-              "name": "Peignoir Femme Nid d'Abeille Léger",
               "qty": 1,
               "revenue": 60
             },
@@ -154,20 +144,23 @@
               "name": "Peignoir Léopard Homme",
               "qty": 1,
               "revenue": 50
+            },
+            {
+              "name": "Peignoir Satin Court Blanc – Femme",
+              "qty": 1,
+              "revenue": 40
             }
           ],
-          "top3RevenueShare": 47,
+          "top3RevenueShare": 56,
           "hourly": {
             "6": 1,
             "8": 1,
             "11": 3,
             "12": 1,
-            "15": 1,
-            "19": 1,
-            "20": 1
+            "19": 1
           },
           "daily": {
-            "2": 3,
+            "2": 1,
             "3": 1,
             "4": 1,
             "5": 3,
@@ -198,30 +191,30 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 9,
+          "totalCheckouts": 7,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 113,
+          "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:43:57.810Z"
+          "syncedAt": "2026-05-01T02:14:14.082Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4940,
-          "orders": 76,
+          "revenue": 4894,
+          "orders": 75,
           "aov": 65,
           "currency": "EUR",
           "refunds": 7,
-          "refundRate": 8,
-          "revenueHalf1": 3858,
+          "refundRate": 9,
+          "revenueHalf1": 3811,
           "revenueHalf2": 1082,
-          "discountOrders": 40,
-          "discountRate": 53,
+          "discountOrders": 39,
+          "discountRate": 52,
           "discountShare": 9,
-          "totalDiscounts": 463,
-          "newCust": 76,
+          "totalDiscounts": 454,
+          "newCust": 75,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 30,
@@ -297,7 +290,7 @@
             "18": 7,
             "19": 4,
             "20": 4,
-            "21": 3,
+            "21": 2,
             "22": 1,
             "23": 2
           },
@@ -307,7 +300,7 @@
             "2": 15,
             "3": 10,
             "4": 8,
-            "5": 16,
+            "5": 15,
             "6": 9
           },
           "totalProducts": 178,
@@ -335,8 +328,8 @@
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 91,
-          "abandonRate": 16,
+          "totalCheckouts": 90,
+          "abandonRate": 17,
           "abandonedValue": 781,
           "topAbandoned": [
             {
@@ -360,10 +353,10 @@
               "count": 1
             }
           ],
-          "sessions": 1138,
+          "sessions": 1125,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:43:58.757Z"
+          "syncedAt": "2026-05-01T02:14:14.766Z"
         },
         "365": {
           "period": 365,
@@ -523,7 +516,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:43:59.639Z"
+          "syncedAt": "2026-05-01T02:14:15.563Z"
         }
       }
     },
@@ -532,7 +525,7 @@
         "revenue": 838,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-04-30T23:44:01.134Z",
+        "syncedAt": "2026-05-01T02:14:16.829Z",
         "allTime": {
           "revenue": 1704,
           "orders": 32
@@ -541,22 +534,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 290,
-          "orders": 7,
-          "aov": 41,
+          "revenue": 268,
+          "orders": 6,
+          "aov": 45,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 142,
-          "revenueHalf2": 148,
-          "discountOrders": 5,
-          "discountRate": 71,
+          "revenueHalf1": 174,
+          "revenueHalf2": 94,
+          "discountOrders": 4,
+          "discountRate": 67,
           "discountShare": 8,
-          "totalDiscounts": 24,
-          "newCust": 7,
+          "totalDiscounts": 21,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 26,
+          "avgLTV": 27,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -583,27 +576,21 @@
               "name": "Kimono Homme Noir Samourai",
               "qty": 1,
               "revenue": 25
-            },
-            {
-              "name": "Kimono Tunique Plage Crochet",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 74,
+          "top3RevenueShare": 80,
           "hourly": {
             "5": 1,
             "11": 2,
             "12": 1,
             "14": 1,
-            "21": 2
+            "21": 1
           },
           "daily": {
             "0": 1,
             "1": 2,
             "2": 1,
             "3": 1,
-            "4": 1,
             "6": 1
           },
           "totalProducts": 205,
@@ -631,14 +618,14 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 7,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 88,
+          "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:44:02.617Z"
+          "syncedAt": "2026-05-01T02:14:18.121Z"
         },
         "30": {
           "period": 30,
@@ -788,7 +775,7 @@
           "sessions": 300,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:44:03.319Z"
+          "syncedAt": "2026-05-01T02:14:18.762Z"
         },
         "90": {
           "period": 90,
@@ -943,7 +930,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:44:04.189Z"
+          "syncedAt": "2026-05-01T02:14:19.422Z"
         },
         "365": {
           "period": 365,
@@ -1098,7 +1085,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-04-30T23:44:04.905Z"
+          "syncedAt": "2026-05-01T02:14:20.015Z"
         }
       }
     }
