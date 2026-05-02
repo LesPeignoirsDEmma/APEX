@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-01T23:43:41.034Z",
+  "lastUpdated": "2026-05-02T02:01:26.301Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 693,
-        "orders": 7,
+        "revenue": 488,
+        "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-05-01T23:43:43.423Z",
+        "syncedAt": "2026-05-02T02:01:29.086Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,26 +83,26 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:46.094Z"
+          "syncedAt": "2026-05-02T02:01:31.625Z"
         },
         "30": {
           "period": 30,
-          "revenue": 693,
-          "orders": 7,
-          "aov": 99,
+          "revenue": 488,
+          "orders": 6,
+          "aov": 81,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 513,
+          "revenueHalf1": 309,
           "revenueHalf2": 180,
           "discountOrders": 4,
-          "discountRate": 57,
-          "discountShare": 6,
+          "discountRate": 67,
+          "discountShare": 8,
           "totalDiscounts": 41,
-          "newCust": 7,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 38,
+          "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -116,11 +116,6 @@
               "revenue": 140
             },
             {
-              "name": "Ensemble Robe De Nuit Et Peignoir",
-              "qty": 1,
-              "revenue": 90
-            },
-            {
               "name": "Peignoir En Satin Pour Homme",
               "qty": 1,
               "revenue": 80
@@ -129,16 +124,6 @@
               "name": "Peignoir Rose Rayé – Femme",
               "qty": 1,
               "revenue": 60
-            },
-            {
-              "name": "Peignoir Mariée Dentelle",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
-              "name": "Peignoir Satin Manche en Maille – Femme",
-              "qty": 1,
-              "revenue": 55
             },
             {
               "name": "Peignoir Léopard Homme",
@@ -151,17 +136,16 @@
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 56,
+          "top3RevenueShare": 78,
           "hourly": {
             "6": 1,
             "8": 1,
-            "11": 3,
+            "11": 2,
             "12": 1,
             "19": 1
           },
           "daily": {
             "2": 1,
-            "3": 1,
             "4": 1,
             "5": 3,
             "6": 1
@@ -184,37 +168,37 @@
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
             "Ensemble Peignoir Satin & Dentelle – Femme",
+            "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
-            "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme"
+            "Peignoir À Capuche Femme Doux"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 7,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 88,
+          "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:47.026Z"
+          "syncedAt": "2026-05-02T02:01:32.570Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4894,
-          "orders": 75,
+          "revenue": 4840,
+          "orders": 74,
           "aov": 65,
           "currency": "EUR",
           "refunds": 7,
           "refundRate": 9,
-          "revenueHalf1": 3811,
+          "revenueHalf1": 3758,
           "revenueHalf2": 1082,
-          "discountOrders": 39,
-          "discountRate": 52,
+          "discountOrders": 38,
+          "discountRate": 51,
           "discountShare": 9,
-          "totalDiscounts": 454,
-          "newCust": 75,
+          "totalDiscounts": 448,
+          "newCust": 74,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 30,
@@ -232,8 +216,8 @@
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "qty": 8,
-              "revenue": 478
+              "qty": 7,
+              "revenue": 418
             },
             {
               "name": "Peignoir Satin 4 Pièces – Femme",
@@ -271,7 +255,7 @@
               "revenue": 130
             }
           ],
-          "top3RevenueShare": 39,
+          "top3RevenueShare": 38,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -290,7 +274,7 @@
             "18": 7,
             "19": 4,
             "20": 4,
-            "21": 2,
+            "21": 1,
             "22": 1,
             "23": 2
           },
@@ -301,7 +285,7 @@
             "3": 10,
             "4": 8,
             "5": 15,
-            "6": 9
+            "6": 8
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -328,7 +312,7 @@
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 90,
+          "totalCheckouts": 89,
           "abandonRate": 17,
           "abandonedValue": 781,
           "topAbandoned": [
@@ -353,10 +337,10 @@
               "count": 1
             }
           ],
-          "sessions": 1125,
-          "conversionRate": 6.7,
+          "sessions": 1113,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:47.973Z"
+          "syncedAt": "2026-05-02T02:01:33.430Z"
         },
         "365": {
           "period": 365,
@@ -516,16 +500,16 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:48.842Z"
+          "syncedAt": "2026-05-02T02:01:34.403Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 838,
-        "orders": 18,
+        "revenue": 813,
+        "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-05-01T23:43:50.356Z",
+        "syncedAt": "2026-05-02T02:01:35.951Z",
         "allTime": {
           "revenue": 1704,
           "orders": 32
@@ -540,8 +524,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 174,
-          "revenueHalf2": 94,
+          "revenueHalf1": 219,
+          "revenueHalf2": 49,
           "discountOrders": 4,
           "discountRate": 67,
           "discountShare": 8,
@@ -549,7 +533,7 @@
           "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -625,26 +609,26 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:51.941Z"
+          "syncedAt": "2026-05-02T02:01:37.291Z"
         },
         "30": {
           "period": 30,
-          "revenue": 838,
-          "orders": 18,
-          "aov": 47,
+          "revenue": 813,
+          "orders": 17,
+          "aov": 48,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 323,
+          "revenueHalf1": 298,
           "revenueHalf2": 515,
           "discountOrders": 7,
-          "discountRate": 39,
+          "discountRate": 41,
           "discountShare": 4,
           "totalDiscounts": 35,
-          "newCust": 18,
+          "newCust": 17,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 20,
+          "avgLTV": 21,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -656,11 +640,6 @@
               "name": "Kimono Chinois Rouge",
               "qty": 2,
               "revenue": 110
-            },
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "qty": 2,
-              "revenue": 75
             },
             {
               "name": "Ensemble Pyjama Style Kimono",
@@ -696,6 +675,11 @@
               "name": "Kimono Chinois Fille",
               "qty": 1,
               "revenue": 55
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "qty": 1,
+              "revenue": 50
             }
           ],
           "top3RevenueShare": 40,
@@ -706,7 +690,6 @@
             "10": 1,
             "11": 3,
             "12": 1,
-            "13": 1,
             "14": 1,
             "15": 1,
             "16": 1,
@@ -718,7 +701,7 @@
             "0": 6,
             "1": 4,
             "2": 1,
-            "3": 3,
+            "3": 2,
             "4": 3,
             "6": 1
           },
@@ -747,8 +730,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 24,
-          "abandonRate": 25,
+          "totalCheckouts": 23,
+          "abandonRate": 26,
           "abandonedValue": 401,
           "topAbandoned": [
             {
@@ -772,10 +755,10 @@
               "count": 1
             }
           ],
-          "sessions": 300,
-          "conversionRate": 6,
+          "sessions": 288,
+          "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:52.761Z"
+          "syncedAt": "2026-05-02T02:01:38.018Z"
         },
         "90": {
           "period": 90,
@@ -930,7 +913,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:53.559Z"
+          "syncedAt": "2026-05-02T02:01:38.719Z"
         },
         "365": {
           "period": 365,
@@ -1085,7 +1068,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-01T23:43:54.256Z"
+          "syncedAt": "2026-05-02T02:01:39.476Z"
         }
       }
     }
