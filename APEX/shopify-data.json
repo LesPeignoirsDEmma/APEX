@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-02T07:21:24.725Z",
+  "lastUpdated": "2026-05-02T08:58:15.604Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 488,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-05-02T07:21:27.543Z",
+        "syncedAt": "2026-05-02T08:58:19.147Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -21,8 +21,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 180,
+          "revenueHalf1": 180,
+          "revenueHalf2": 0,
           "discountOrders": 1,
           "discountRate": 100,
           "discountShare": 11,
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:30.151Z"
+          "syncedAt": "2026-05-02T08:58:21.892Z"
         },
         "30": {
           "period": 30,
@@ -161,7 +161,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -182,7 +182,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:30.911Z"
+          "syncedAt": "2026-05-02T08:58:22.690Z"
         },
         "90": {
           "period": 90,
@@ -340,7 +340,7 @@
           "sessions": 1113,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:31.835Z"
+          "syncedAt": "2026-05-02T08:58:23.495Z"
         },
         "365": {
           "period": 365,
@@ -500,7 +500,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:32.578Z"
+          "syncedAt": "2026-05-02T08:58:24.283Z"
         }
       }
     },
@@ -509,7 +509,7 @@
         "revenue": 813,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-05-02T07:21:33.989Z",
+        "syncedAt": "2026-05-02T08:58:26.142Z",
         "allTime": {
           "revenue": 1704,
           "orders": 32
@@ -609,7 +609,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:35.716Z"
+          "syncedAt": "2026-05-02T08:58:27.304Z"
         },
         "30": {
           "period": 30,
@@ -758,7 +758,7 @@
           "sessions": 288,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:36.290Z"
+          "syncedAt": "2026-05-02T08:58:27.849Z"
         },
         "90": {
           "period": 90,
@@ -913,7 +913,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:36.902Z"
+          "syncedAt": "2026-05-02T08:58:28.459Z"
         },
         "365": {
           "period": 365,
@@ -1068,7 +1068,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T07:21:37.459Z"
+          "syncedAt": "2026-05-02T08:58:29.519Z"
         }
       }
     }
