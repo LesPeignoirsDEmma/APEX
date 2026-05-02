@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-02T21:32:56.854Z",
+  "lastUpdated": "2026-05-02T22:32:08.288Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 488,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-05-02T21:32:59.175Z",
+        "syncedAt": "2026-05-02T22:32:12.147Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:01.596Z"
+          "syncedAt": "2026-05-02T22:32:15.560Z"
         },
         "30": {
           "period": 30,
@@ -182,7 +182,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:02.359Z"
+          "syncedAt": "2026-05-02T22:32:16.355Z"
         },
         "90": {
           "period": 90,
@@ -340,7 +340,7 @@
           "sessions": 1113,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:03.158Z"
+          "syncedAt": "2026-05-02T22:32:17.127Z"
         },
         "365": {
           "period": 365,
@@ -455,7 +455,6 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -468,7 +467,8 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 15,
@@ -500,7 +500,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:04.252Z"
+          "syncedAt": "2026-05-02T22:32:18.277Z"
         }
       }
     },
@@ -509,7 +509,7 @@
         "revenue": 813,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-05-02T21:33:05.549Z",
+        "syncedAt": "2026-05-02T22:32:22.307Z",
         "allTime": {
           "revenue": 1704,
           "orders": 32
@@ -609,7 +609,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:06.805Z"
+          "syncedAt": "2026-05-02T22:32:23.458Z"
         },
         "30": {
           "period": 30,
@@ -758,7 +758,7 @@
           "sessions": 288,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:07.440Z"
+          "syncedAt": "2026-05-02T22:32:24.107Z"
         },
         "90": {
           "period": 90,
@@ -768,8 +768,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 604,
-          "revenueHalf2": 1100,
+          "revenueHalf1": 724,
+          "revenueHalf2": 980,
           "discountOrders": 8,
           "discountRate": 25,
           "discountShare": 2,
@@ -913,7 +913,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:08.031Z"
+          "syncedAt": "2026-05-02T22:32:24.930Z"
         },
         "365": {
           "period": 365,
@@ -1068,7 +1068,7 @@
           "sessions": 513,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-02T21:33:08.726Z"
+          "syncedAt": "2026-05-02T22:32:25.523Z"
         }
       }
     }
