@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-03T07:50:39.982Z",
+  "lastUpdated": "2026-05-03T09:15:26.481Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 488,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-05-03T07:50:42.834Z",
+        "syncedAt": "2026-05-03T09:15:30.266Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:45.265Z"
+          "syncedAt": "2026-05-03T09:15:33.401Z"
         },
         "30": {
           "period": 30,
@@ -182,7 +182,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:46.138Z"
+          "syncedAt": "2026-05-03T09:15:34.639Z"
         },
         "90": {
           "period": 90,
@@ -340,7 +340,7 @@
           "sessions": 1100,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:46.960Z"
+          "syncedAt": "2026-05-03T09:15:35.451Z"
         },
         "365": {
           "period": 365,
@@ -463,7 +463,7 @@
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
-            "Peignoir Bébé Blanc",
+            "Peignoir Béb�� Blanc",
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
@@ -500,7 +500,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:47.899Z"
+          "syncedAt": "2026-05-03T09:15:36.209Z"
         }
       }
     },
@@ -509,7 +509,7 @@
         "revenue": 804,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-05-03T07:50:49.497Z",
+        "syncedAt": "2026-05-03T09:15:38.825Z",
         "allTime": {
           "revenue": 1745,
           "orders": 33
@@ -607,7 +607,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:50.778Z"
+          "syncedAt": "2026-05-03T09:15:40.056Z"
         },
         "30": {
           "period": 30,
@@ -755,7 +755,7 @@
           "sessions": 263,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:51.386Z"
+          "syncedAt": "2026-05-03T09:15:41.147Z"
         },
         "90": {
           "period": 90,
@@ -910,7 +910,7 @@
           "sessions": 525,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:52.033Z"
+          "syncedAt": "2026-05-03T09:15:41.816Z"
         },
         "365": {
           "period": 365,
@@ -1065,7 +1065,7 @@
           "sessions": 525,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T07:50:52.674Z"
+          "syncedAt": "2026-05-03T09:15:42.446Z"
         }
       }
     }
