@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-03T23:36:34.557Z",
+  "lastUpdated": "2026-05-04T02:05:30.285Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 488,
-        "orders": 6,
+        "revenue": 296,
+        "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-05-03T23:36:38.834Z",
+        "syncedAt": "2026-05-04T02:05:33.643Z",
         "allTime": {
           "revenue": 12070,
           "orders": 196
@@ -83,26 +83,26 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:43.758Z"
+          "syncedAt": "2026-05-04T02:05:37.283Z"
         },
         "30": {
           "period": 30,
-          "revenue": 488,
-          "orders": 6,
-          "aov": 81,
+          "revenue": 296,
+          "orders": 3,
+          "aov": 99,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 309,
+          "revenueHalf1": 117,
           "revenueHalf2": 180,
-          "discountOrders": 4,
-          "discountRate": 67,
-          "discountShare": 8,
-          "totalDiscounts": 41,
-          "newCust": 6,
+          "discountOrders": 3,
+          "discountRate": 100,
+          "discountShare": 11,
+          "totalDiscounts": 33,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 23,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -112,13 +112,8 @@
             },
             {
               "name": "Peignoir Femme Flanelle",
-              "qty": 2,
-              "revenue": 140
-            },
-            {
-              "name": "Peignoir En Satin Pour Homme",
               "qty": 1,
-              "revenue": 80
+              "revenue": 70
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -126,28 +121,20 @@
               "revenue": 60
             },
             {
-              "name": "Peignoir Léopard Homme",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
               "name": "Peignoir Satin Court Blanc – Femme",
               "qty": 1,
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 78,
+          "top3RevenueShare": 98,
           "hourly": {
             "6": 1,
-            "8": 1,
-            "11": 2,
-            "12": 1,
+            "11": 1,
             "19": 1
           },
           "daily": {
             "2": 1,
             "4": 1,
-            "5": 3,
             "6": 1
           },
           "totalProducts": 178,
@@ -161,7 +148,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -175,33 +162,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 6,
+          "totalCheckouts": 3,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 75,
-          "conversionRate": 8,
+          "sessions": 38,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:44.629Z"
+          "syncedAt": "2026-05-04T02:05:38.143Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4770,
-          "orders": 73,
-          "aov": 65,
+          "revenue": 4469,
+          "orders": 70,
+          "aov": 64,
           "currency": "EUR",
           "refunds": 7,
           "refundRate": 9,
-          "revenueHalf1": 3733,
+          "revenueHalf1": 3432,
           "revenueHalf2": 1037,
-          "discountOrders": 38,
-          "discountRate": 52,
+          "discountOrders": 36,
+          "discountRate": 51,
           "discountShare": 9,
-          "totalDiscounts": 448,
-          "newCust": 73,
+          "totalDiscounts": 389,
+          "newCust": 70,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 30,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -240,22 +227,22 @@
               "revenue": 161
             },
             {
-              "name": "Peignoir Polaire Couple",
-              "qty": 2,
-              "revenue": 140
-            },
-            {
               "name": "Peignoir De Bain Absorbant Femme",
               "qty": 1,
               "revenue": 130
             },
             {
-              "name": "Chaussons d’intérieur — Gris",
-              "qty": 3,
-              "revenue": 120
+              "name": "Peignoir Polaire Enfant",
+              "qty": 2,
+              "revenue": 115
+            },
+            {
+              "name": "Peignoir Léopard Homme",
+              "qty": 2,
+              "revenue": 100
             }
           ],
-          "top3RevenueShare": 39,
+          "top3RevenueShare": 41,
           "hourly": {
             "2": 2,
             "5": 1,
@@ -267,20 +254,19 @@
             "11": 7,
             "12": 4,
             "13": 3,
-            "14": 5,
-            "15": 8,
+            "14": 4,
+            "15": 7,
             "16": 4,
             "17": 3,
             "18": 7,
             "19": 4,
             "20": 4,
-            "21": 1,
             "22": 1,
             "23": 2
           },
           "daily": {
             "0": 10,
-            "1": 7,
+            "1": 4,
             "2": 15,
             "3": 10,
             "4": 8,
@@ -304,16 +290,16 @@
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
+            "Peignoir Baroque - Femme",
+            "Peignoir Baroque - Homme",
             "Peignoir Bébé Blanc",
             "Peignoir Bébé Gris",
-            "Peignoir Bébé Rose",
-            "Peignoir Bébé Violet",
-            "Peignoir Brodé Ours – Enfant"
+            "Peignoir Bébé Rose"
           ],
           "newProductsAdded": 51,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 88,
-          "abandonRate": 17,
+          "totalCheckouts": 85,
+          "abandonRate": 18,
           "abandonedValue": 781,
           "topAbandoned": [
             {
@@ -337,10 +323,10 @@
               "count": 1
             }
           ],
-          "sessions": 1100,
+          "sessions": 1063,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:45.354Z"
+          "syncedAt": "2026-05-04T02:05:39.025Z"
         },
         "365": {
           "period": 365,
@@ -455,6 +441,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -467,8 +454,7 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme",
-            "Peignoir Chaud Hiver Femme"
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 15,
@@ -500,7 +486,7 @@
           "sessions": 2675,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:46.134Z"
+          "syncedAt": "2026-05-04T02:05:40.142Z"
         }
       }
     },
@@ -509,7 +495,7 @@
         "revenue": 804,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-05-03T23:36:47.700Z",
+        "syncedAt": "2026-05-04T02:05:42.112Z",
         "allTime": {
           "revenue": 1745,
           "orders": 33
@@ -518,22 +504,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 283,
-          "orders": 6,
+          "revenue": 234,
+          "orders": 5,
           "aov": 47,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 243,
+          "revenueHalf1": 193,
           "revenueHalf2": 40,
           "discountOrders": 5,
-          "discountRate": 83,
-          "discountShare": 9,
+          "discountRate": 100,
+          "discountShare": 11,
           "totalDiscounts": 26,
-          "newCust": 6,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -552,25 +538,20 @@
               "revenue": 55
             },
             {
-              "name": "Robe Kimono Longue Grande Taille",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
               "name": "Kimono Manches Chauves Souris",
               "qty": 1,
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 76,
+          "top3RevenueShare": 92,
           "hourly": {
             "5": 2,
-            "11": 2,
+            "11": 1,
             "12": 1,
             "14": 1
           },
           "daily": {
-            "0": 2,
+            "0": 1,
             "1": 2,
             "2": 1,
             "3": 1
@@ -600,14 +581,14 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 6,
+          "totalCheckouts": 5,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 75,
-          "conversionRate": 8,
+          "sessions": 63,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:48.968Z"
+          "syncedAt": "2026-05-04T02:05:43.775Z"
         },
         "30": {
           "period": 30,
@@ -717,7 +698,7 @@
             "Chemise Facon Kimono",
             "Chemise Facon Kimono Homme",
             "Chemise Femme Style Kimono",
-            "Chemise Imprim�� Kimono",
+            "Chemise Imprimé Kimono",
             "Chemise Kimono Bleue",
             "Chemise Kimono Femme",
             "Chemise Kimono Femme Grande Taille",
@@ -755,7 +736,7 @@
           "sessions": 263,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:49.573Z"
+          "syncedAt": "2026-05-04T02:05:44.630Z"
         },
         "90": {
           "period": 90,
@@ -910,7 +891,7 @@
           "sessions": 525,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:50.269Z"
+          "syncedAt": "2026-05-04T02:05:45.336Z"
         },
         "365": {
           "period": 365,
@@ -1065,7 +1046,7 @@
           "sessions": 525,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-03T23:36:50.891Z"
+          "syncedAt": "2026-05-04T02:05:46.085Z"
         }
       }
     }
