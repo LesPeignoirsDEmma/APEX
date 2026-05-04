@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-04T10:58:34.466Z",
+  "lastUpdated": "2026-05-04T12:20:59.772Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 346,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-04T10:58:38.407Z",
+        "syncedAt": "2026-05-04T12:21:02.119Z",
         "allTime": {
           "revenue": 12065,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:40.801Z"
+          "syncedAt": "2026-05-04T12:21:04.234Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -183,7 +183,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:41.786Z"
+          "syncedAt": "2026-05-04T12:21:05.170Z"
         },
         "90": {
           "period": 90,
@@ -311,10 +311,10 @@
             "Peignoir Bébé Rose"
           ],
           "newProductsAdded": 51,
-          "abandonedCheckouts": 15,
-          "totalCheckouts": 86,
-          "abandonRate": 17,
-          "abandonedValue": 781,
+          "abandonedCheckouts": 14,
+          "totalCheckouts": 85,
+          "abandonRate": 16,
+          "abandonedValue": 736,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -329,18 +329,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Flanelle Cœur",
+              "name": "Peignoir Chic Satin Homme",
               "count": 1
             },
             {
-              "name": "Peignoir Chic Satin Homme",
+              "name": "Peignoir Coton",
               "count": 1
             }
           ],
-          "sessions": 1075,
-          "conversionRate": 6.6,
+          "sessions": 1063,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:42.906Z"
+          "syncedAt": "2026-05-04T12:21:06.376Z"
         },
         "365": {
           "period": 365,
@@ -471,10 +471,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 15,
-          "totalCheckouts": 214,
+          "abandonedCheckouts": 14,
+          "totalCheckouts": 213,
           "abandonRate": 7,
-          "abandonedValue": 781,
+          "abandonedValue": 736,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -489,18 +489,18 @@
               "count": 2
             },
             {
-              "name": "Peignoir Flanelle Cœur",
+              "name": "Peignoir Chic Satin Homme",
               "count": 1
             },
             {
-              "name": "Peignoir Chic Satin Homme",
+              "name": "Peignoir Coton",
               "count": 1
             }
           ],
-          "sessions": 2675,
-          "conversionRate": 7.3,
+          "sessions": 2663,
+          "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:43.749Z"
+          "syncedAt": "2026-05-04T12:21:07.437Z"
         }
       }
     },
@@ -509,7 +509,7 @@
         "revenue": 804,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-05-04T10:58:47.359Z",
+        "syncedAt": "2026-05-04T12:21:08.907Z",
         "allTime": {
           "revenue": 1745,
           "orders": 33
@@ -602,7 +602,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:49.286Z"
+          "syncedAt": "2026-05-04T12:21:10.455Z"
         },
         "30": {
           "period": 30,
@@ -612,8 +612,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 249,
-          "revenueHalf2": 555,
+          "revenueHalf1": 304,
+          "revenueHalf2": 500,
           "discountOrders": 7,
           "discountRate": 41,
           "discountShare": 4,
@@ -750,7 +750,7 @@
           "sessions": 263,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:49.957Z"
+          "syncedAt": "2026-05-04T12:21:11.184Z"
         },
         "90": {
           "period": 90,
@@ -905,7 +905,7 @@
           "sessions": 525,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:50.627Z"
+          "syncedAt": "2026-05-04T12:21:11.928Z"
         },
         "365": {
           "period": 365,
@@ -1060,7 +1060,7 @@
           "sessions": 525,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-04T10:58:51.466Z"
+          "syncedAt": "2026-05-04T12:21:12.757Z"
         }
       }
     }
