@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-05T10:00:53.009Z",
+  "lastUpdated": "2026-05-05T11:54:57.821Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 346,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-05T10:00:55.997Z",
+        "syncedAt": "2026-05-05T11:55:00.309Z",
         "allTime": {
           "revenue": 12065,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:00.193Z"
+          "syncedAt": "2026-05-05T11:55:02.714Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur — Gris",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -183,7 +183,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:01.354Z"
+          "syncedAt": "2026-05-05T11:55:03.542Z"
         },
         "90": {
           "period": 90,
@@ -339,7 +339,7 @@
           "sessions": 1038,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:02.232Z"
+          "syncedAt": "2026-05-05T11:55:04.734Z"
         },
         "365": {
           "period": 365,
@@ -454,6 +454,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -466,8 +467,7 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme",
-            "Peignoir Chaud Hiver Femme"
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 14,
@@ -499,42 +499,47 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:03.746Z"
+          "syncedAt": "2026-05-05T11:55:05.758Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 827,
-        "orders": 18,
+        "revenue": 894,
+        "orders": 19,
         "currency": "EUR",
-        "syncedAt": "2026-05-05T10:01:05.356Z",
+        "syncedAt": "2026-05-05T11:55:07.153Z",
         "allTime": {
-          "revenue": 1767,
-          "orders": 34
+          "revenue": 1834,
+          "orders": 35
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 157,
-          "orders": 4,
-          "aov": 39,
+          "revenue": 224,
+          "orders": 5,
+          "aov": 45,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 94,
-          "revenueHalf2": 63,
+          "revenueHalf2": 130,
           "discountOrders": 4,
-          "discountRate": 100,
-          "discountShare": 11,
+          "discountRate": 80,
+          "discountShare": 8,
           "totalDiscounts": 17,
-          "newCust": 4,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 22,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Long Manteau Type Kimono Homme",
+              "qty": 1,
+              "revenue": 67
+            },
             {
               "name": "Robe Chinoise Kimono Enfant",
               "qty": 1,
@@ -556,17 +561,17 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 95,
+          "top3RevenueShare": 77,
           "hourly": {
             "5": 1,
-            "11": 1,
+            "11": 2,
             "12": 1,
             "16": 1
           },
           "daily": {
             "0": 1,
             "1": 1,
-            "2": 1,
+            "2": 2,
             "3": 1
           },
           "totalProducts": 205,
@@ -594,33 +599,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 4,
+          "totalCheckouts": 5,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 50,
-          "conversionRate": 8,
+          "sessions": 63,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:06.916Z"
+          "syncedAt": "2026-05-05T11:55:08.359Z"
         },
         "30": {
           "period": 30,
-          "revenue": 827,
-          "orders": 18,
-          "aov": 46,
+          "revenue": 894,
+          "orders": 19,
+          "aov": 47,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 424,
-          "revenueHalf2": 403,
+          "revenueHalf2": 470,
           "discountOrders": 8,
-          "discountRate": 44,
+          "discountRate": 42,
           "discountShare": 4,
           "totalDiscounts": 36,
-          "newCust": 18,
+          "newCust": 19,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 24,
+          "avgLTV": 25,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -632,6 +637,11 @@
               "name": "Kimono Chinois Rouge",
               "qty": 2,
               "revenue": 110
+            },
+            {
+              "name": "Long Manteau Type Kimono Homme",
+              "qty": 1,
+              "revenue": 67
             },
             {
               "name": "Ensemble Pyjama Style Kimono",
@@ -667,19 +677,14 @@
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Kimono Manches Chauves Souris",
-              "qty": 1,
-              "revenue": 45
             }
           ],
-          "top3RevenueShare": 39,
+          "top3RevenueShare": 37,
           "hourly": {
             "5": 2,
             "7": 3,
             "9": 1,
-            "11": 3,
+            "11": 4,
             "12": 1,
             "14": 1,
             "15": 1,
@@ -691,7 +696,7 @@
           "daily": {
             "0": 7,
             "1": 5,
-            "2": 1,
+            "2": 2,
             "3": 2,
             "4": 2,
             "6": 1
@@ -721,7 +726,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 21,
+          "totalCheckouts": 22,
           "abandonRate": 14,
           "abandonedValue": 240,
           "topAbandoned": [
@@ -742,26 +747,26 @@
               "count": 1
             }
           ],
-          "sessions": 263,
-          "conversionRate": 6.8,
+          "sessions": 275,
+          "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:07.656Z"
+          "syncedAt": "2026-05-05T11:55:09.055Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1767,
-          "orders": 34,
+          "revenue": 1834,
+          "orders": 35,
           "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 843,
-          "revenueHalf2": 923,
+          "revenueHalf2": 991,
           "discountOrders": 10,
           "discountRate": 29,
-          "discountShare": 3,
+          "discountShare": 2,
           "totalDiscounts": 44,
-          "newCust": 34,
+          "newCust": 35,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 28,
@@ -798,6 +803,11 @@
               "revenue": 75
             },
             {
+              "name": "Long Manteau Type Kimono Homme",
+              "qty": 1,
+              "revenue": 67
+            },
+            {
               "name": "Ensemble Pyjama Style Kimono",
               "qty": 1,
               "revenue": 65
@@ -811,14 +821,9 @@
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
-            },
-            {
-              "name": "Kimono Japonais Traditionnel Fille",
-              "qty": 1,
-              "revenue": 60
             }
           ],
-          "top3RevenueShare": 27,
+          "top3RevenueShare": 26,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -826,7 +831,7 @@
             "8": 1,
             "9": 1,
             "10": 2,
-            "11": 3,
+            "11": 4,
             "12": 2,
             "13": 5,
             "14": 1,
@@ -841,7 +846,7 @@
           "daily": {
             "0": 9,
             "1": 8,
-            "2": 2,
+            "2": 3,
             "3": 6,
             "4": 4,
             "5": 1,
@@ -872,8 +877,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 43,
-          "abandonRate": 21,
+          "totalCheckouts": 44,
+          "abandonRate": 20,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -897,26 +902,26 @@
               "count": 1
             }
           ],
-          "sessions": 538,
-          "conversionRate": 6.3,
+          "sessions": 550,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:08.540Z"
+          "syncedAt": "2026-05-05T11:55:09.662Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1767,
-          "orders": 34,
+          "revenue": 1834,
+          "orders": 35,
           "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1767,
+          "revenueHalf2": 1834,
           "discountOrders": 10,
           "discountRate": 29,
-          "discountShare": 3,
+          "discountShare": 2,
           "totalDiscounts": 44,
-          "newCust": 34,
+          "newCust": 35,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 28,
@@ -953,6 +958,11 @@
               "revenue": 75
             },
             {
+              "name": "Long Manteau Type Kimono Homme",
+              "qty": 1,
+              "revenue": 67
+            },
+            {
               "name": "Ensemble Pyjama Style Kimono",
               "qty": 1,
               "revenue": 65
@@ -966,14 +976,9 @@
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
-            },
-            {
-              "name": "Kimono Japonais Traditionnel Fille",
-              "qty": 1,
-              "revenue": 60
             }
           ],
-          "top3RevenueShare": 27,
+          "top3RevenueShare": 26,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -981,7 +986,7 @@
             "8": 1,
             "9": 1,
             "10": 2,
-            "11": 3,
+            "11": 4,
             "12": 2,
             "13": 5,
             "14": 1,
@@ -996,7 +1001,7 @@
           "daily": {
             "0": 9,
             "1": 8,
-            "2": 2,
+            "2": 3,
             "3": 6,
             "4": 4,
             "5": 1,
@@ -1027,8 +1032,8 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 9,
-          "totalCheckouts": 43,
-          "abandonRate": 21,
+          "totalCheckouts": 44,
+          "abandonRate": 20,
           "abandonedValue": 696,
           "topAbandoned": [
             {
@@ -1052,10 +1057,10 @@
               "count": 1
             }
           ],
-          "sessions": 538,
-          "conversionRate": 6.3,
+          "sessions": 550,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T10:01:09.943Z"
+          "syncedAt": "2026-05-05T11:55:10.291Z"
         }
       }
     }
