@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-05T11:54:57.821Z",
+  "lastUpdated": "2026-05-05T13:20:16.651Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 346,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-05T11:55:00.309Z",
+        "syncedAt": "2026-05-05T13:20:19.548Z",
         "allTime": {
           "revenue": 12065,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:02.714Z"
+          "syncedAt": "2026-05-05T13:20:22.485Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -183,7 +183,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:03.542Z"
+          "syncedAt": "2026-05-05T13:20:23.429Z"
         },
         "90": {
           "period": 90,
@@ -309,7 +309,7 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose"
           ],
-          "newProductsAdded": 51,
+          "newProductsAdded": 24,
           "abandonedCheckouts": 14,
           "totalCheckouts": 83,
           "abandonRate": 17,
@@ -339,7 +339,7 @@
           "sessions": 1038,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:04.734Z"
+          "syncedAt": "2026-05-05T13:20:24.486Z"
         },
         "365": {
           "period": 365,
@@ -454,7 +454,6 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -467,7 +466,8 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 14,
@@ -499,7 +499,7 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:05.758Z"
+          "syncedAt": "2026-05-05T13:20:25.366Z"
         }
       }
     },
@@ -508,7 +508,7 @@
         "revenue": 894,
         "orders": 19,
         "currency": "EUR",
-        "syncedAt": "2026-05-05T11:55:07.153Z",
+        "syncedAt": "2026-05-05T13:20:27.465Z",
         "allTime": {
           "revenue": 1834,
           "orders": 35
@@ -606,7 +606,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:08.359Z"
+          "syncedAt": "2026-05-05T13:20:29.034Z"
         },
         "30": {
           "period": 30,
@@ -750,7 +750,7 @@
           "sessions": 275,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:09.055Z"
+          "syncedAt": "2026-05-05T13:20:29.805Z"
         },
         "90": {
           "period": 90,
@@ -905,7 +905,7 @@
           "sessions": 550,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:09.662Z"
+          "syncedAt": "2026-05-05T13:20:30.495Z"
         },
         "365": {
           "period": 365,
@@ -1060,7 +1060,7 @@
           "sessions": 550,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T11:55:10.291Z"
+          "syncedAt": "2026-05-05T13:20:31.749Z"
         }
       }
     }
