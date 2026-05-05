@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-05T13:20:16.651Z",
+  "lastUpdated": "2026-05-05T15:47:37.025Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 346,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-05T13:20:19.548Z",
+        "syncedAt": "2026-05-05T15:47:41.492Z",
         "allTime": {
           "revenue": 12065,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:22.485Z"
+          "syncedAt": "2026-05-05T15:47:45.548Z"
         },
         "30": {
           "period": 30,
@@ -183,7 +183,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:23.429Z"
+          "syncedAt": "2026-05-05T15:47:46.674Z"
         },
         "90": {
           "period": 90,
@@ -309,7 +309,7 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose"
           ],
-          "newProductsAdded": 24,
+          "newProductsAdded": 1,
           "abandonedCheckouts": 14,
           "totalCheckouts": 83,
           "abandonRate": 17,
@@ -339,7 +339,7 @@
           "sessions": 1038,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:24.486Z"
+          "syncedAt": "2026-05-05T15:47:47.887Z"
         },
         "365": {
           "period": 365,
@@ -499,7 +499,7 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:25.366Z"
+          "syncedAt": "2026-05-05T15:47:49.002Z"
         }
       }
     },
@@ -508,7 +508,7 @@
         "revenue": 894,
         "orders": 19,
         "currency": "EUR",
-        "syncedAt": "2026-05-05T13:20:27.465Z",
+        "syncedAt": "2026-05-05T15:47:53.200Z",
         "allTime": {
           "revenue": 1834,
           "orders": 35
@@ -606,7 +606,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:29.034Z"
+          "syncedAt": "2026-05-05T15:47:57.632Z"
         },
         "30": {
           "period": 30,
@@ -750,7 +750,7 @@
           "sessions": 275,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:29.805Z"
+          "syncedAt": "2026-05-05T15:47:58.348Z"
         },
         "90": {
           "period": 90,
@@ -905,7 +905,7 @@
           "sessions": 550,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:30.495Z"
+          "syncedAt": "2026-05-05T15:47:59.483Z"
         },
         "365": {
           "period": 365,
@@ -1060,7 +1060,7 @@
           "sessions": 550,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-05T13:20:31.749Z"
+          "syncedAt": "2026-05-05T15:48:00.569Z"
         }
       }
     }
