@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-06T22:41:38.583Z",
+  "lastUpdated": "2026-05-06T23:42:12.351Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 526,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-05-06T22:41:40.997Z",
+        "syncedAt": "2026-05-06T23:42:14.866Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:43.096Z"
+          "syncedAt": "2026-05-06T23:42:17.303Z"
         },
         "30": {
           "period": 30,
@@ -195,7 +195,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:44.001Z"
+          "syncedAt": "2026-05-06T23:42:18.197Z"
         },
         "90": {
           "period": 90,
@@ -229,8 +229,8 @@
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "qty": 7,
-              "revenue": 418
+              "qty": 6,
+              "revenue": 359
             },
             {
               "name": "Peignoir Satin 4 Pièces – Femme",
@@ -268,7 +268,7 @@
               "revenue": 95
             }
           ],
-          "top3RevenueShare": 42,
+          "top3RevenueShare": 40,
           "hourly": {
             "2": 2,
             "6": 3,
@@ -307,6 +307,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -318,8 +319,7 @@
             "Peignoir Baroque - Femme",
             "Peignoir Baroque - Homme",
             "Peignoir Bébé Blanc",
-            "Peignoir Bébé Gris",
-            "Peignoir Bébé Rose"
+            "Peignoir Bébé Gris"
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 14,
@@ -351,7 +351,7 @@
           "sessions": 1013,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:44.847Z"
+          "syncedAt": "2026-05-06T23:42:19.292Z"
         },
         "365": {
           "period": 365,
@@ -511,7 +511,7 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:46.167Z"
+          "syncedAt": "2026-05-06T23:42:20.086Z"
         }
       }
     },
@@ -520,7 +520,7 @@
         "revenue": 923,
         "orders": 19,
         "currency": "EUR",
-        "syncedAt": "2026-05-06T22:41:47.593Z",
+        "syncedAt": "2026-05-06T23:42:22.148Z",
         "allTime": {
           "revenue": 1933,
           "orders": 37
@@ -629,7 +629,7 @@
           "sessions": 88,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:48.940Z"
+          "syncedAt": "2026-05-06T23:42:23.469Z"
         },
         "30": {
           "period": 30,
@@ -776,7 +776,7 @@
           "sessions": 288,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:49.582Z"
+          "syncedAt": "2026-05-06T23:42:24.105Z"
         },
         "90": {
           "period": 90,
@@ -931,7 +931,7 @@
           "sessions": 588,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:50.193Z"
+          "syncedAt": "2026-05-06T23:42:24.759Z"
         },
         "365": {
           "period": 365,
@@ -1086,7 +1086,7 @@
           "sessions": 588,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T22:41:50.866Z"
+          "syncedAt": "2026-05-06T23:42:25.394Z"
         }
       }
     }
