@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-06T10:59:00.908Z",
+  "lastUpdated": "2026-05-06T12:27:54.329Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 526,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-05-06T10:59:05.054Z",
+        "syncedAt": "2026-05-06T12:27:57.191Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:07.397Z"
+          "syncedAt": "2026-05-06T12:27:59.521Z"
         },
         "30": {
           "period": 30,
@@ -195,7 +195,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:08.236Z"
+          "syncedAt": "2026-05-06T12:28:00.338Z"
         },
         "90": {
           "period": 90,
@@ -351,7 +351,7 @@
           "sessions": 1013,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:09.134Z"
+          "syncedAt": "2026-05-06T12:28:01.191Z"
         },
         "365": {
           "period": 365,
@@ -466,6 +466,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -478,8 +479,7 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme",
-            "Peignoir Chaud Hiver Femme"
+            "Peignoir Capuche - Femme"
           ],
           "newProductsAdded": 179,
           "abandonedCheckouts": 14,
@@ -511,46 +511,51 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:09.930Z"
+          "syncedAt": "2026-05-06T12:28:02.069Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 824,
-        "orders": 17,
+        "revenue": 878,
+        "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-05-06T10:59:15.856Z",
+        "syncedAt": "2026-05-06T12:28:03.447Z",
         "allTime": {
-          "revenue": 1834,
-          "orders": 35
+          "revenue": 1888,
+          "orders": 36
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 180,
-          "orders": 4,
-          "aov": 45,
+          "revenue": 233,
+          "orders": 5,
+          "aov": 47,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 49,
-          "revenueHalf2": 130,
-          "discountOrders": 3,
-          "discountRate": 75,
-          "discountShare": 7,
-          "totalDiscounts": 12,
-          "newCust": 4,
+          "revenueHalf2": 184,
+          "discountOrders": 4,
+          "discountRate": 80,
+          "discountShare": 8,
+          "totalDiscounts": 18,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 36,
+          "avgLTV": 39,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Long Manteau Type Kimono Homme",
               "qty": 1,
               "revenue": 67
+            },
+            {
+              "name": "Kimonos Japonais Enfant",
+              "qty": 1,
+              "revenue": 60
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
@@ -568,17 +573,18 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 93,
+          "top3RevenueShare": 78,
           "hourly": {
             "5": 1,
             "11": 2,
+            "12": 1,
             "16": 1
           },
           "daily": {
             "0": 1,
             "1": 1,
             "2": 1,
-            "3": 1
+            "3": 2
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -605,8 +611,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 5,
-          "abandonRate": 20,
+          "totalCheckouts": 6,
+          "abandonRate": 17,
           "abandonedValue": 45,
           "topAbandoned": [
             {
@@ -614,29 +620,29 @@
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 6.3,
+          "sessions": 75,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:17.363Z"
+          "syncedAt": "2026-05-06T12:28:04.859Z"
         },
         "30": {
           "period": 30,
-          "revenue": 824,
-          "orders": 17,
-          "aov": 48,
+          "revenue": 878,
+          "orders": 18,
+          "aov": 49,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 354,
-          "revenueHalf2": 470,
-          "discountOrders": 8,
-          "discountRate": 47,
-          "discountShare": 4,
-          "totalDiscounts": 36,
-          "newCust": 17,
+          "revenueHalf2": 524,
+          "discountOrders": 9,
+          "discountRate": 50,
+          "discountShare": 5,
+          "totalDiscounts": 42,
+          "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 25,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -670,6 +676,11 @@
               "revenue": 65
             },
             {
+              "name": "Kimonos Japonais Enfant",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
               "name": "Kimono Japonais Traditionnel Fille",
               "qty": 1,
               "revenue": 60
@@ -683,20 +694,15 @@
               "name": "Kimono Floral Style Bohème",
               "qty": 1,
               "revenue": 55
-            },
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "qty": 1,
-              "revenue": 50
             }
           ],
-          "top3RevenueShare": 40,
+          "top3RevenueShare": 37,
           "hourly": {
             "5": 2,
             "7": 2,
             "9": 1,
             "11": 4,
-            "12": 1,
+            "12": 2,
             "14": 1,
             "16": 2,
             "17": 1,
@@ -707,7 +713,7 @@
             "0": 5,
             "1": 5,
             "2": 2,
-            "3": 2,
+            "3": 3,
             "4": 2,
             "6": 1
           },
@@ -736,8 +742,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 4,
-          "totalCheckouts": 21,
-          "abandonRate": 19,
+          "totalCheckouts": 22,
+          "abandonRate": 18,
           "abandonedValue": 285,
           "topAbandoned": [
             {
@@ -761,26 +767,26 @@
               "count": 1
             }
           ],
-          "sessions": 263,
+          "sessions": 275,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:18.275Z"
+          "syncedAt": "2026-05-06T12:28:05.658Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1834,
-          "orders": 35,
+          "revenue": 1888,
+          "orders": 36,
           "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 843,
-          "revenueHalf2": 991,
-          "discountOrders": 10,
-          "discountRate": 29,
-          "discountShare": 2,
-          "totalDiscounts": 44,
-          "newCust": 35,
+          "revenueHalf2": 1045,
+          "discountOrders": 11,
+          "discountRate": 31,
+          "discountShare": 3,
+          "totalDiscounts": 50,
+          "newCust": 36,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 28,
@@ -837,7 +843,7 @@
               "revenue": 65
             }
           ],
-          "top3RevenueShare": 26,
+          "top3RevenueShare": 25,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -846,7 +852,7 @@
             "9": 1,
             "10": 2,
             "11": 4,
-            "12": 2,
+            "12": 3,
             "13": 5,
             "14": 1,
             "15": 1,
@@ -861,7 +867,7 @@
             "0": 9,
             "1": 8,
             "2": 3,
-            "3": 6,
+            "3": 7,
             "4": 4,
             "5": 1,
             "6": 4
@@ -891,7 +897,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 45,
+          "totalCheckouts": 46,
           "abandonRate": 22,
           "abandonedValue": 740,
           "topAbandoned": [
@@ -916,26 +922,26 @@
               "count": 1
             }
           ],
-          "sessions": 563,
-          "conversionRate": 6.2,
+          "sessions": 575,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:18.958Z"
+          "syncedAt": "2026-05-06T12:28:06.303Z"
         },
         "365": {
           "period": 365,
-          "revenue": 1834,
-          "orders": 35,
+          "revenue": 1888,
+          "orders": 36,
           "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 1834,
-          "discountOrders": 10,
-          "discountRate": 29,
-          "discountShare": 2,
-          "totalDiscounts": 44,
-          "newCust": 35,
+          "revenueHalf2": 1888,
+          "discountOrders": 11,
+          "discountRate": 31,
+          "discountShare": 3,
+          "totalDiscounts": 50,
+          "newCust": 36,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 28,
@@ -992,7 +998,7 @@
               "revenue": 65
             }
           ],
-          "top3RevenueShare": 26,
+          "top3RevenueShare": 25,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -1001,7 +1007,7 @@
             "9": 1,
             "10": 2,
             "11": 4,
-            "12": 2,
+            "12": 3,
             "13": 5,
             "14": 1,
             "15": 1,
@@ -1016,7 +1022,7 @@
             "0": 9,
             "1": 8,
             "2": 3,
-            "3": 6,
+            "3": 7,
             "4": 4,
             "5": 1,
             "6": 4
@@ -1046,7 +1052,7 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 45,
+          "totalCheckouts": 46,
           "abandonRate": 22,
           "abandonedValue": 740,
           "topAbandoned": [
@@ -1071,10 +1077,10 @@
               "count": 1
             }
           ],
-          "sessions": 563,
-          "conversionRate": 6.2,
+          "sessions": 575,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-06T10:59:19.583Z"
+          "syncedAt": "2026-05-06T12:28:06.940Z"
         }
       }
     }
