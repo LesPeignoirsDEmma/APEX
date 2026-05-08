@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-07T23:45:12.714Z",
+  "lastUpdated": "2026-05-08T02:14:24.152Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 526,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-05-07T23:45:15.391Z",
+        "syncedAt": "2026-05-08T02:14:26.851Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:18.999Z"
+          "syncedAt": "2026-05-08T02:14:29.437Z"
         },
         "30": {
           "period": 30,
@@ -109,7 +109,7 @@
           "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 44,
+          "avgLTV": 48,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -174,7 +174,7 @@
             "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -195,37 +195,37 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:20.290Z"
+          "syncedAt": "2026-05-08T02:14:30.571Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4255,
-          "orders": 64,
-          "aov": 66,
+          "revenue": 4130,
+          "orders": 62,
+          "aov": 67,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 9,
-          "revenueHalf1": 3157,
+          "revenueHalf1": 3032,
           "revenueHalf2": 1098,
           "discountOrders": 31,
-          "discountRate": 48,
-          "discountShare": 7,
+          "discountRate": 50,
+          "discountShare": 8,
           "totalDiscounts": 315,
-          "newCust": 64,
+          "newCust": 62,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 29,
           "vipCustomers": 0,
           "topProducts": [
             {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 10,
-              "revenue": 693
-            },
-            {
               "name": "Peignoir Polaire Luxe - Homme",
               "qty": 8,
               "revenue": 655
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 9,
+              "revenue": 623
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -268,12 +268,12 @@
               "revenue": 95
             }
           ],
-          "top3RevenueShare": 42,
+          "top3RevenueShare": 41,
           "hourly": {
             "2": 2,
             "6": 3,
             "7": 2,
-            "8": 5,
+            "8": 4,
             "9": 5,
             "10": 3,
             "11": 6,
@@ -284,7 +284,7 @@
             "16": 2,
             "17": 2,
             "18": 7,
-            "19": 4,
+            "19": 3,
             "20": 4,
             "22": 1,
             "23": 2
@@ -295,7 +295,7 @@
             "2": 13,
             "3": 8,
             "4": 5,
-            "5": 15,
+            "5": 13,
             "6": 8
           },
           "totalProducts": 178,
@@ -323,7 +323,7 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 14,
-          "totalCheckouts": 78,
+          "totalCheckouts": 76,
           "abandonRate": 18,
           "abandonedValue": 736,
           "topAbandoned": [
@@ -348,10 +348,10 @@
               "count": 1
             }
           ],
-          "sessions": 975,
-          "conversionRate": 6.6,
+          "sessions": 950,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:21.076Z"
+          "syncedAt": "2026-05-08T02:14:31.493Z"
         },
         "365": {
           "period": 365,
@@ -511,7 +511,7 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:21.998Z"
+          "syncedAt": "2026-05-08T02:14:32.424Z"
         }
       }
     },
@@ -520,7 +520,7 @@
         "revenue": 901,
         "orders": 19,
         "currency": "EUR",
-        "syncedAt": "2026-05-07T23:45:23.694Z",
+        "syncedAt": "2026-05-08T02:14:33.788Z",
         "allTime": {
           "revenue": 1911,
           "orders": 37
@@ -619,7 +619,7 @@
           "sessions": 75,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:25.017Z"
+          "syncedAt": "2026-05-08T02:14:35.428Z"
         },
         "30": {
           "period": 30,
@@ -737,19 +737,11 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 22,
-          "abandonRate": 14,
-          "abandonedValue": 240,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 21,
+          "abandonRate": 10,
+          "abandonedValue": 100,
           "topAbandoned": [
-            {
-              "name": "Ensemble Pantalon Et Kimono Femme",
-              "count": 1
-            },
-            {
-              "name": "Ensemble Kimono Grande Taille Femme",
-              "count": 1
-            },
             {
               "name": "Kimono Chinois Rouge",
               "count": 1
@@ -759,10 +751,10 @@
               "count": 1
             }
           ],
-          "sessions": 275,
-          "conversionRate": 6.9,
+          "sessions": 263,
+          "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:25.649Z"
+          "syncedAt": "2026-05-08T02:14:36.287Z"
         },
         "90": {
           "period": 90,
@@ -917,7 +909,7 @@
           "sessions": 588,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:26.269Z"
+          "syncedAt": "2026-05-08T02:14:37.127Z"
         },
         "365": {
           "period": 365,
@@ -1072,7 +1064,7 @@
           "sessions": 588,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-07T23:45:27.078Z"
+          "syncedAt": "2026-05-08T02:14:38.038Z"
         }
       }
     }
