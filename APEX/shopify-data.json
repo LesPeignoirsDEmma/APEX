@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-09T19:52:05.126Z",
+  "lastUpdated": "2026-05-09T20:36:32.561Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 526,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-05-09T19:52:07.963Z",
+        "syncedAt": "2026-05-09T20:36:35.100Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:11.471Z"
+          "syncedAt": "2026-05-09T20:36:37.496Z"
         },
         "30": {
           "period": 30,
@@ -195,7 +195,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:12.238Z"
+          "syncedAt": "2026-05-09T20:36:38.258Z"
         },
         "90": {
           "period": 90,
@@ -351,7 +351,7 @@
           "sessions": 938,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:12.992Z"
+          "syncedAt": "2026-05-09T20:36:38.997Z"
         },
         "365": {
           "period": 365,
@@ -511,40 +511,40 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:13.698Z"
+          "syncedAt": "2026-05-09T20:36:39.760Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1113,
-        "orders": 22,
+        "revenue": 1172,
+        "orders": 23,
         "currency": "EUR",
-        "syncedAt": "2026-05-09T19:52:15.023Z",
+        "syncedAt": "2026-05-09T20:36:41.167Z",
         "allTime": {
-          "revenue": 2123,
-          "orders": 40
+          "revenue": 2182,
+          "orders": 41
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 419,
-          "orders": 8,
-          "aov": 52,
+          "revenue": 478,
+          "orders": 9,
+          "aov": 53,
           "currency": "EUR",
           "refunds": 1,
-          "refundRate": 11,
+          "refundRate": 10,
           "revenueHalf1": 63,
-          "revenueHalf2": 356,
-          "discountOrders": 6,
-          "discountRate": 75,
-          "discountShare": 7,
-          "totalDiscounts": 30,
-          "newCust": 8,
+          "revenueHalf2": 415,
+          "discountOrders": 7,
+          "discountRate": 78,
+          "discountShare": 8,
+          "totalDiscounts": 36,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 42,
+          "avgLTV": 43,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -561,6 +561,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
               "revenue": 70
+            },
+            {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "qty": 1,
+              "revenue": 65
             },
             {
               "name": "Kimonos Japonais Enfant",
@@ -583,7 +588,7 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 64,
+          "top3RevenueShare": 57,
           "hourly": {
             "5": 1,
             "8": 1,
@@ -592,6 +597,7 @@
             "14": 1,
             "16": 1,
             "17": 1,
+            "20": 1,
             "21": 1
           },
           "daily": {
@@ -599,7 +605,8 @@
             "1": 1,
             "3": 2,
             "4": 1,
-            "5": 3
+            "5": 3,
+            "6": 1
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -626,8 +633,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 9,
-          "abandonRate": 11,
+          "totalCheckouts": 10,
+          "abandonRate": 10,
           "abandonedValue": 45,
           "topAbandoned": [
             {
@@ -635,35 +642,40 @@
               "count": 1
             }
           ],
-          "sessions": 113,
-          "conversionRate": 7.1,
+          "sessions": 125,
+          "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:16.667Z"
+          "syncedAt": "2026-05-09T20:36:42.356Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1113,
-          "orders": 22,
+          "revenue": 1172,
+          "orders": 23,
           "aov": 51,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 4,
           "revenueHalf1": 426,
-          "revenueHalf2": 687,
-          "discountOrders": 12,
-          "discountRate": 55,
-          "discountShare": 5,
-          "totalDiscounts": 59,
-          "newCust": 22,
+          "revenueHalf2": 746,
+          "discountOrders": 13,
+          "discountRate": 57,
+          "discountShare": 6,
+          "totalDiscounts": 66,
+          "newCust": 23,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 30,
+          "avgLTV": 31,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Kimono Long Femme Plage",
               "qty": 5,
               "revenue": 250
+            },
+            {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "qty": 2,
+              "revenue": 130
             },
             {
               "name": "Kimono Chinois Rouge",
@@ -691,11 +703,6 @@
               "revenue": 65
             },
             {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "qty": 1,
-              "revenue": 65
-            },
-            {
               "name": "Kimonos Japonais Enfant",
               "qty": 1,
               "revenue": 60
@@ -711,7 +718,7 @@
               "revenue": 55
             }
           ],
-          "top3RevenueShare": 41,
+          "top3RevenueShare": 42,
           "hourly": {
             "5": 2,
             "7": 2,
@@ -724,6 +731,7 @@
             "16": 2,
             "17": 2,
             "18": 1,
+            "20": 1,
             "21": 3
           },
           "daily": {
@@ -733,7 +741,7 @@
             "3": 4,
             "4": 3,
             "5": 3,
-            "6": 1
+            "6": 2
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -760,7 +768,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 24,
+          "totalCheckouts": 25,
           "abandonRate": 8,
           "abandonedValue": 100,
           "topAbandoned": [
@@ -773,29 +781,29 @@
               "count": 1
             }
           ],
-          "sessions": 300,
+          "sessions": 313,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:17.306Z"
+          "syncedAt": "2026-05-09T20:36:43.029Z"
         },
         "90": {
           "period": 90,
-          "revenue": 2123,
-          "orders": 40,
+          "revenue": 2182,
+          "orders": 41,
           "aov": 53,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 2,
           "revenueHalf1": 866,
-          "revenueHalf2": 1257,
-          "discountOrders": 14,
-          "discountRate": 35,
+          "revenueHalf2": 1316,
+          "discountOrders": 15,
+          "discountRate": 37,
           "discountShare": 3,
-          "totalDiscounts": 67,
-          "newCust": 40,
+          "totalDiscounts": 74,
+          "newCust": 41,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -824,6 +832,11 @@
               "revenue": 150
             },
             {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "qty": 2,
+              "revenue": 130
+            },
+            {
               "name": "Robe Chinoise Kimono Enfant",
               "qty": 2,
               "revenue": 110
@@ -840,11 +853,6 @@
             },
             {
               "name": "Chemise Kimono Blanche Homme",
-              "qty": 1,
-              "revenue": 65
-            },
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
             }
@@ -866,7 +874,7 @@
             "17": 3,
             "18": 2,
             "19": 1,
-            "20": 2,
+            "20": 3,
             "21": 4
           },
           "daily": {
@@ -876,7 +884,7 @@
             "3": 8,
             "4": 5,
             "5": 4,
-            "6": 4
+            "6": 5
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -903,7 +911,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 50,
+          "totalCheckouts": 51,
           "abandonRate": 20,
           "abandonedValue": 740,
           "topAbandoned": [
@@ -928,29 +936,29 @@
               "count": 1
             }
           ],
-          "sessions": 625,
+          "sessions": 638,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:17.872Z"
+          "syncedAt": "2026-05-09T20:36:43.663Z"
         },
         "365": {
           "period": 365,
-          "revenue": 2123,
-          "orders": 40,
+          "revenue": 2182,
+          "orders": 41,
           "aov": 53,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 2,
           "revenueHalf1": 0,
-          "revenueHalf2": 2123,
-          "discountOrders": 14,
-          "discountRate": 35,
+          "revenueHalf2": 2182,
+          "discountOrders": 15,
+          "discountRate": 37,
           "discountShare": 3,
-          "totalDiscounts": 67,
-          "newCust": 40,
+          "totalDiscounts": 74,
+          "newCust": 41,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -979,6 +987,11 @@
               "revenue": 150
             },
             {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "qty": 2,
+              "revenue": 130
+            },
+            {
               "name": "Robe Chinoise Kimono Enfant",
               "qty": 2,
               "revenue": 110
@@ -995,11 +1008,6 @@
             },
             {
               "name": "Chemise Kimono Blanche Homme",
-              "qty": 1,
-              "revenue": 65
-            },
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
             }
@@ -1021,7 +1029,7 @@
             "17": 3,
             "18": 2,
             "19": 1,
-            "20": 2,
+            "20": 3,
             "21": 4
           },
           "daily": {
@@ -1031,7 +1039,7 @@
             "3": 8,
             "4": 5,
             "5": 4,
-            "6": 4
+            "6": 5
           },
           "totalProducts": 205,
           "zeroSaleProducts": [
@@ -1058,7 +1066,7 @@
           ],
           "newProductsAdded": 205,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 50,
+          "totalCheckouts": 51,
           "abandonRate": 20,
           "abandonedValue": 740,
           "topAbandoned": [
@@ -1083,10 +1091,10 @@
               "count": 1
             }
           ],
-          "sessions": 625,
+          "sessions": 638,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-09T19:52:18.493Z"
+          "syncedAt": "2026-05-09T20:36:44.260Z"
         }
       }
     }
