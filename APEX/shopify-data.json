@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-11T13:39:30.873Z",
+  "lastUpdated": "2026-05-11T16:25:51.401Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 472,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-11T13:39:35.179Z",
+        "syncedAt": "2026-05-11T16:25:56.100Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -90,7 +90,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:38.542Z"
+          "syncedAt": "2026-05-11T16:25:59.453Z"
         },
         "30": {
           "period": 30,
@@ -188,7 +188,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:39.459Z"
+          "syncedAt": "2026-05-11T16:26:00.386Z"
         },
         "90": {
           "period": 90,
@@ -344,7 +344,7 @@
           "sessions": 888,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:40.407Z"
+          "syncedAt": "2026-05-11T16:26:01.416Z"
         },
         "365": {
           "period": 365,
@@ -504,7 +504,7 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:41.328Z"
+          "syncedAt": "2026-05-11T16:26:02.315Z"
         }
       }
     },
@@ -513,7 +513,7 @@
         "revenue": 1172,
         "orders": 23,
         "currency": "EUR",
-        "syncedAt": "2026-05-11T13:39:46.110Z",
+        "syncedAt": "2026-05-11T16:26:08.000Z",
         "allTime": {
           "revenue": 2182,
           "orders": 41
@@ -537,7 +537,7 @@
           "newCust": 8,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 36,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -618,10 +618,10 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 11,
-          "abandonRate": 27,
-          "abandonedValue": 145,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 12,
+          "abandonRate": 33,
+          "abandonedValue": 307,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Plage",
@@ -634,12 +634,20 @@
             {
               "name": "Kimono Paon Vert",
               "count": 1
+            },
+            {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "count": 1
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "count": 1
             }
           ],
-          "sessions": 138,
-          "conversionRate": 5.8,
+          "sessions": 150,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:47.493Z"
+          "syncedAt": "2026-05-11T16:26:17.689Z"
         },
         "30": {
           "period": 30,
@@ -658,7 +666,7 @@
           "newCust": 23,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -761,10 +769,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 26,
-          "abandonRate": 12,
-          "abandonedValue": 145,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 27,
+          "abandonRate": 15,
+          "abandonedValue": 307,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Plage",
@@ -777,12 +785,20 @@
             {
               "name": "Kimono Paon Vert",
               "count": 1
+            },
+            {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "count": 1
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "count": 1
             }
           ],
-          "sessions": 325,
-          "conversionRate": 7.1,
+          "sessions": 338,
+          "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:48.206Z"
+          "syncedAt": "2026-05-11T16:26:18.893Z"
         },
         "90": {
           "period": 90,
@@ -908,10 +924,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 12,
-          "totalCheckouts": 53,
-          "abandonRate": 23,
-          "abandonedValue": 841,
+          "abandonedCheckouts": 13,
+          "totalCheckouts": 54,
+          "abandonRate": 24,
+          "abandonedValue": 1002,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -934,10 +950,10 @@
               "count": 1
             }
           ],
-          "sessions": 663,
-          "conversionRate": 6.2,
+          "sessions": 675,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:49.129Z"
+          "syncedAt": "2026-05-11T16:26:19.790Z"
         },
         "365": {
           "period": 365,
@@ -1063,10 +1079,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 12,
-          "totalCheckouts": 53,
-          "abandonRate": 23,
-          "abandonedValue": 841,
+          "abandonedCheckouts": 13,
+          "totalCheckouts": 54,
+          "abandonRate": 24,
+          "abandonedValue": 1002,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -1089,10 +1105,10 @@
               "count": 1
             }
           ],
-          "sessions": 663,
-          "conversionRate": 6.2,
+          "sessions": 675,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T13:39:49.828Z"
+          "syncedAt": "2026-05-11T16:26:20.496Z"
         }
       }
     }
