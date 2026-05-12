@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-11T23:55:34.029Z",
+  "lastUpdated": "2026-05-12T02:27:03.416Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 472,
-        "orders": 4,
+        "revenue": 409,
+        "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-05-11T23:55:37.131Z",
+        "syncedAt": "2026-05-12T02:27:05.669Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -15,22 +15,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 229,
-          "orders": 2,
-          "aov": 115,
+          "revenue": 180,
+          "orders": 1,
+          "aov": 180,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 229,
+          "revenueHalf1": 180,
           "revenueHalf2": 0,
-          "discountOrders": 1,
-          "discountRate": 50,
-          "discountShare": 2,
-          "totalDiscounts": 5,
-          "newCust": 2,
+          "discountOrders": 0,
+          "discountRate": 0,
+          "discountShare": 0,
+          "totalDiscounts": 0,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 115,
+          "avgLTV": 180,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -42,20 +42,13 @@
               "name": "Peignoir Femme Flanelle Capuche",
               "qty": 1,
               "revenue": 85
-            },
-            {
-              "name": "Peignoir Satiné Sexy Léopard",
-              "qty": 1,
-              "revenue": 55
             }
           ],
-          "top3RevenueShare": 103,
+          "top3RevenueShare": 100,
           "hourly": {
-            "8": 1,
             "10": 1
           },
           "daily": {
-            "1": 1,
             "3": 1
           },
           "totalProducts": 178,
@@ -83,33 +76,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 2,
+          "totalCheckouts": 1,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 25,
-          "conversionRate": 8,
+          "sessions": 13,
+          "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:39.294Z"
+          "syncedAt": "2026-05-12T02:27:07.777Z"
         },
         "30": {
           "period": 30,
-          "revenue": 472,
-          "orders": 4,
-          "aov": 118,
+          "revenue": 409,
+          "orders": 3,
+          "aov": 136,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 63,
+          "revenueHalf1": 0,
           "revenueHalf2": 409,
-          "discountOrders": 3,
-          "discountRate": 75,
-          "discountShare": 7,
-          "totalDiscounts": 32,
-          "newCust": 4,
+          "discountOrders": 2,
+          "discountRate": 67,
+          "discountShare": 6,
+          "totalDiscounts": 25,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 79,
+          "avgLTV": 102,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -128,11 +121,6 @@
               "revenue": 85
             },
             {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 1,
-              "revenue": 70
-            },
-            {
               "name": "Peignoir Satiné Sexy Léopard",
               "qty": 1,
               "revenue": 55
@@ -143,18 +131,16 @@
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 72,
+          "top3RevenueShare": 83,
           "hourly": {
             "8": 1,
             "10": 1,
-            "11": 1,
             "19": 1
           },
           "daily": {
             "1": 1,
             "2": 1,
-            "3": 1,
-            "6": 1
+            "3": 1
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -181,33 +167,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 4,
+          "totalCheckouts": 3,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 50,
-          "conversionRate": 8,
+          "sessions": 38,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:40.402Z"
+          "syncedAt": "2026-05-12T02:27:08.514Z"
         },
         "90": {
           "period": 90,
-          "revenue": 3843,
-          "orders": 57,
-          "aov": 67,
+          "revenue": 3457,
+          "orders": 49,
+          "aov": 71,
           "currency": "EUR",
           "refunds": 6,
-          "refundRate": 10,
-          "revenueHalf1": 2782,
+          "refundRate": 11,
+          "revenueHalf1": 2396,
           "revenueHalf2": 1062,
-          "discountOrders": 27,
-          "discountRate": 47,
-          "discountShare": 7,
-          "totalDiscounts": 287,
-          "newCust": 57,
+          "discountOrders": 22,
+          "discountRate": 45,
+          "discountShare": 6,
+          "totalDiscounts": 193,
+          "newCust": 49,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -217,8 +203,8 @@
             },
             {
               "name": "Peignoir Femme Flanelle",
-              "qty": 9,
-              "revenue": 623
+              "qty": 8,
+              "revenue": 553
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -226,19 +212,14 @@
               "revenue": 418
             },
             {
-              "name": "Peignoir Satin 4 Pièces – Femme",
-              "qty": 3,
-              "revenue": 205
-            },
-            {
-              "name": "Peignoir Kimono Effet Soie",
-              "qty": 5,
-              "revenue": 195
-            },
-            {
               "name": "Peignoir Flanelle Enfant",
               "qty": 3,
               "revenue": 161
+            },
+            {
+              "name": "Peignoir Kimono Effet Soie",
+              "qty": 4,
+              "revenue": 160
             },
             {
               "name": "Peignoir De Bain Absorbant Femme",
@@ -259,9 +240,14 @@
               "name": "Ensemble Robe De Nuit Et Peignoir",
               "qty": 1,
               "revenue": 90
+            },
+            {
+              "name": "Peignoir Femme Flanelle Capuche",
+              "qty": 1,
+              "revenue": 85
             }
           ],
-          "top3RevenueShare": 44,
+          "top3RevenueShare": 47,
           "hourly": {
             "2": 2,
             "6": 3,
@@ -270,22 +256,22 @@
             "9": 5,
             "10": 3,
             "11": 3,
-            "12": 4,
+            "12": 3,
             "13": 3,
             "14": 2,
-            "15": 6,
-            "16": 2,
-            "17": 2,
-            "18": 6,
-            "19": 3,
-            "20": 4,
+            "15": 5,
+            "16": 1,
+            "17": 1,
+            "18": 5,
+            "19": 2,
+            "20": 2,
             "22": 1,
             "23": 2
           },
           "daily": {
             "0": 6,
             "1": 5,
-            "2": 13,
+            "2": 5,
             "3": 8,
             "4": 5,
             "5": 13,
@@ -316,8 +302,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 14,
-          "totalCheckouts": 71,
-          "abandonRate": 20,
+          "totalCheckouts": 63,
+          "abandonRate": 22,
           "abandonedValue": 736,
           "topAbandoned": [
             {
@@ -341,10 +327,10 @@
               "count": 1
             }
           ],
-          "sessions": 888,
-          "conversionRate": 6.4,
+          "sessions": 788,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:41.621Z"
+          "syncedAt": "2026-05-12T02:27:09.315Z"
         },
         "365": {
           "period": 365,
@@ -504,7 +490,7 @@
           "sessions": 2663,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:42.499Z"
+          "syncedAt": "2026-05-12T02:27:10.205Z"
         }
       }
     },
@@ -513,7 +499,7 @@
         "revenue": 1271,
         "orders": 25,
         "currency": "EUR",
-        "syncedAt": "2026-05-11T23:55:43.819Z",
+        "syncedAt": "2026-05-12T02:27:11.452Z",
         "allTime": {
           "revenue": 2281,
           "orders": 43
@@ -522,22 +508,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 536,
-          "orders": 10,
-          "aov": 54,
+          "revenue": 514,
+          "orders": 9,
+          "aov": 57,
           "currency": "EUR",
           "refunds": 1,
-          "refundRate": 9,
-          "revenueHalf1": 266,
-          "revenueHalf2": 271,
-          "discountOrders": 7,
-          "discountRate": 70,
+          "refundRate": 10,
+          "revenueHalf1": 306,
+          "revenueHalf2": 208,
+          "discountOrders": 6,
+          "discountRate": 67,
           "discountShare": 7,
-          "totalDiscounts": 37,
-          "newCust": 10,
+          "totalDiscounts": 35,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 36,
+          "avgLTV": 37,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -574,27 +560,21 @@
               "name": "Kimono Court Pour Homme",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Tunique De Plage Robe Kimono Blanc",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 60,
+          "top3RevenueShare": 62,
           "hourly": {
             "8": 1,
             "12": 1,
             "13": 1,
             "14": 1,
-            "16": 1,
             "17": 2,
             "20": 1,
             "21": 1,
             "22": 1
           },
           "daily": {
-            "1": 3,
+            "1": 2,
             "3": 2,
             "4": 1,
             "5": 3,
@@ -625,8 +605,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 4,
-          "totalCheckouts": 14,
-          "abandonRate": 29,
+          "totalCheckouts": 13,
+          "abandonRate": 31,
           "abandonedValue": 307,
           "topAbandoned": [
             {
@@ -650,10 +630,10 @@
               "count": 1
             }
           ],
-          "sessions": 175,
-          "conversionRate": 5.7,
+          "sessions": 163,
+          "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:45.203Z"
+          "syncedAt": "2026-05-12T02:27:12.627Z"
         },
         "30": {
           "period": 30,
@@ -672,7 +652,7 @@
           "newCust": 25,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -805,7 +785,7 @@
           "sessions": 363,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:45.932Z"
+          "syncedAt": "2026-05-12T02:27:13.509Z"
         },
         "90": {
           "period": 90,
@@ -961,7 +941,7 @@
           "sessions": 700,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:46.613Z"
+          "syncedAt": "2026-05-12T02:27:14.123Z"
         },
         "365": {
           "period": 365,
@@ -1117,7 +1097,7 @@
           "sessions": 700,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-11T23:55:47.396Z"
+          "syncedAt": "2026-05-12T02:27:14.787Z"
         }
       }
     }
