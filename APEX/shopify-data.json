@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-12T11:14:01.684Z",
+  "lastUpdated": "2026-05-12T14:00:59.567Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 409,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-05-12T11:14:06.001Z",
+        "syncedAt": "2026-05-12T14:01:03.680Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:10.924Z"
+          "syncedAt": "2026-05-12T14:01:07.506Z"
         },
         "30": {
           "period": 30,
@@ -174,7 +174,7 @@
           "sessions": 38,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:12.094Z"
+          "syncedAt": "2026-05-12T14:01:08.620Z"
         },
         "90": {
           "period": 90,
@@ -301,22 +301,22 @@
             "Peignoir Bébé Blanc"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 14,
-          "totalCheckouts": 63,
-          "abandonRate": 22,
-          "abandonedValue": 736,
+          "abandonedCheckouts": 13,
+          "totalCheckouts": 62,
+          "abandonRate": 21,
+          "abandonedValue": 701,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
               "count": 3
             },
             {
-              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
             },
             {
-              "name": "Peignoir Nid d’Abeille Haut de Gamme",
-              "count": 2
+              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "count": 1
             },
             {
               "name": "Peignoir Chic Satin Homme",
@@ -327,10 +327,10 @@
               "count": 1
             }
           ],
-          "sessions": 788,
-          "conversionRate": 6.2,
+          "sessions": 775,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:13.028Z"
+          "syncedAt": "2026-05-12T14:01:09.698Z"
         },
         "365": {
           "period": 365,
@@ -461,22 +461,22 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 14,
-          "totalCheckouts": 213,
-          "abandonRate": 7,
-          "abandonedValue": 736,
+          "abandonedCheckouts": 13,
+          "totalCheckouts": 212,
+          "abandonRate": 6,
+          "abandonedValue": 701,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
               "count": 3
             },
             {
-              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
             },
             {
-              "name": "Peignoir Nid d’Abeille Haut de Gamme",
-              "count": 2
+              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "count": 1
             },
             {
               "name": "Peignoir Chic Satin Homme",
@@ -487,10 +487,10 @@
               "count": 1
             }
           ],
-          "sessions": 2663,
+          "sessions": 2650,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:13.907Z"
+          "syncedAt": "2026-05-12T14:01:10.573Z"
         }
       }
     },
@@ -499,7 +499,7 @@
         "revenue": 1271,
         "orders": 25,
         "currency": "EUR",
-        "syncedAt": "2026-05-12T11:14:16.655Z",
+        "syncedAt": "2026-05-12T14:01:12.525Z",
         "allTime": {
           "revenue": 2281,
           "orders": 43
@@ -523,7 +523,7 @@
           "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 37,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -604,10 +604,10 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 13,
-          "abandonRate": 31,
-          "abandonedValue": 307,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 14,
+          "abandonRate": 36,
+          "abandonedValue": 370,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Plage",
@@ -630,10 +630,10 @@
               "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 5.5,
+          "sessions": 175,
+          "conversionRate": 5.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:18.412Z"
+          "syncedAt": "2026-05-12T14:01:14.016Z"
         },
         "30": {
           "period": 30,
@@ -652,7 +652,7 @@
           "newCust": 25,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 32,
+          "avgLTV": 31,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -756,10 +756,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 29,
-          "abandonRate": 14,
-          "abandonedValue": 307,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 30,
+          "abandonRate": 17,
+          "abandonedValue": 370,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Plage",
@@ -782,10 +782,10 @@
               "count": 1
             }
           ],
-          "sessions": 363,
-          "conversionRate": 6.9,
+          "sessions": 375,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:19.113Z"
+          "syncedAt": "2026-05-12T14:01:14.791Z"
         },
         "90": {
           "period": 90,
@@ -912,10 +912,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 13,
-          "totalCheckouts": 56,
-          "abandonRate": 23,
-          "abandonedValue": 1002,
+          "abandonedCheckouts": 14,
+          "totalCheckouts": 57,
+          "abandonRate": 25,
+          "abandonedValue": 1065,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -938,10 +938,10 @@
               "count": 1
             }
           ],
-          "sessions": 700,
-          "conversionRate": 6.1,
+          "sessions": 713,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:19.939Z"
+          "syncedAt": "2026-05-12T14:01:15.566Z"
         },
         "365": {
           "period": 365,
@@ -1068,10 +1068,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 205,
-          "abandonedCheckouts": 13,
-          "totalCheckouts": 56,
-          "abandonRate": 23,
-          "abandonedValue": 1002,
+          "abandonedCheckouts": 14,
+          "totalCheckouts": 57,
+          "abandonRate": 25,
+          "abandonedValue": 1065,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -1094,10 +1094,10 @@
               "count": 1
             }
           ],
-          "sessions": 700,
-          "conversionRate": 6.1,
+          "sessions": 713,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T11:14:20.745Z"
+          "syncedAt": "2026-05-12T14:01:16.254Z"
         }
       }
     }
