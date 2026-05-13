@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-12T23:52:46.949Z",
+  "lastUpdated": "2026-05-13T02:28:04.122Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 409,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-05-12T23:52:49.479Z",
+        "syncedAt": "2026-05-13T02:28:07.040Z",
         "allTime": {
           "revenue": 12191,
           "orders": 196
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:51.688Z"
+          "syncedAt": "2026-05-13T02:28:09.810Z"
         },
         "30": {
           "period": 30,
@@ -174,23 +174,23 @@
           "sessions": 38,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:52.419Z"
+          "syncedAt": "2026-05-13T02:28:10.732Z"
         },
         "90": {
           "period": 90,
-          "revenue": 3457,
-          "orders": 49,
+          "revenue": 3335,
+          "orders": 47,
           "aov": 71,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 11,
-          "revenueHalf1": 2396,
+          "revenueHalf1": 2273,
           "revenueHalf2": 1062,
-          "discountOrders": 22,
+          "discountOrders": 21,
           "discountRate": 45,
           "discountShare": 6,
-          "totalDiscounts": 193,
-          "newCust": 49,
+          "totalDiscounts": 186,
+          "newCust": 47,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 28,
@@ -203,13 +203,13 @@
             },
             {
               "name": "Peignoir Femme Flanelle",
-              "qty": 8,
-              "revenue": 553
+              "qty": 7,
+              "revenue": 483
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "qty": 7,
-              "revenue": 418
+              "qty": 6,
+              "revenue": 358
             },
             {
               "name": "Peignoir Flanelle Enfant",
@@ -247,7 +247,7 @@
               "revenue": 85
             }
           ],
-          "top3RevenueShare": 47,
+          "top3RevenueShare": 45,
           "hourly": {
             "2": 2,
             "6": 3,
@@ -262,7 +262,7 @@
             "15": 5,
             "16": 1,
             "17": 1,
-            "18": 5,
+            "18": 3,
             "19": 2,
             "20": 2,
             "22": 1,
@@ -272,7 +272,7 @@
             "0": 6,
             "1": 5,
             "2": 5,
-            "3": 8,
+            "3": 6,
             "4": 5,
             "5": 13,
             "6": 7
@@ -302,8 +302,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 13,
-          "totalCheckouts": 62,
-          "abandonRate": 21,
+          "totalCheckouts": 60,
+          "abandonRate": 22,
           "abandonedValue": 701,
           "topAbandoned": [
             {
@@ -327,10 +327,10 @@
               "count": 1
             }
           ],
-          "sessions": 775,
+          "sessions": 750,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:53.149Z"
+          "syncedAt": "2026-05-13T02:28:11.641Z"
         },
         "365": {
           "period": 365,
@@ -490,16 +490,16 @@
           "sessions": 2650,
           "conversionRate": 7.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:53.914Z"
+          "syncedAt": "2026-05-13T02:28:13.587Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1316,
-        "orders": 26,
+        "revenue": 1266,
+        "orders": 25,
         "currency": "EUR",
-        "syncedAt": "2026-05-12T23:52:55.007Z",
+        "syncedAt": "2026-05-13T02:28:15.035Z",
         "allTime": {
           "revenue": 2326,
           "orders": 44
@@ -512,8 +512,8 @@
           "orders": 10,
           "aov": 56,
           "currency": "EUR",
-          "refunds": 1,
-          "refundRate": 9,
+          "refunds": 0,
+          "refundRate": 0,
           "revenueHalf1": 356,
           "revenueHalf2": 203,
           "discountOrders": 7,
@@ -523,7 +523,7 @@
           "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 33,
+          "avgLTV": 37,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -615,15 +615,11 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 6,
-          "totalCheckouts": 16,
-          "abandonRate": 38,
-          "abandonedValue": 440,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 15,
+          "abandonRate": 33,
+          "abandonedValue": 395,
           "topAbandoned": [
-            {
-              "name": "Kimono Long Femme Plage",
-              "count": 1
-            },
             {
               "name": "Robe Kimono Manches Longues",
               "count": 1
@@ -639,31 +635,35 @@
             {
               "name": "Robe Kimono Longue Grande Taille",
               "count": 1
+            },
+            {
+              "name": "Ensemble Pyjama Style Kimono",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 5,
+          "sessions": 188,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:56.490Z"
+          "syncedAt": "2026-05-13T02:28:16.493Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1316,
-          "orders": 26,
+          "revenue": 1266,
+          "orders": 25,
           "aov": 51,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 4,
-          "revenueHalf1": 600,
+          "revenueHalf1": 550,
           "revenueHalf2": 716,
-          "discountOrders": 15,
-          "discountRate": 58,
+          "discountOrders": 14,
+          "discountRate": 56,
           "discountShare": 6,
-          "totalDiscounts": 76,
-          "newCust": 26,
+          "totalDiscounts": 71,
+          "newCust": 25,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -683,11 +683,6 @@
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
-              "qty": 2,
-              "revenue": 110
-            },
-            {
-              "name": "Kimono Chinois Rouge",
               "qty": 2,
               "revenue": 110
             },
@@ -715,12 +710,17 @@
               "name": "Kimono Japonais Traditionnel Fille",
               "qty": 1,
               "revenue": 60
+            },
+            {
+              "name": "Kimono Floral Style Bohème",
+              "qty": 1,
+              "revenue": 55
             }
           ],
-          "top3RevenueShare": 40,
+          "top3RevenueShare": 42,
           "hourly": {
             "5": 2,
-            "7": 2,
+            "7": 1,
             "8": 1,
             "9": 1,
             "11": 3,
@@ -735,7 +735,7 @@
             "22": 1
           },
           "daily": {
-            "0": 5,
+            "0": 4,
             "1": 7,
             "2": 2,
             "3": 4,
@@ -768,7 +768,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 32,
+          "totalCheckouts": 31,
           "abandonRate": 19,
           "abandonedValue": 440,
           "topAbandoned": [
@@ -793,10 +793,10 @@
               "count": 1
             }
           ],
-          "sessions": 400,
-          "conversionRate": 6.5,
+          "sessions": 388,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:57.096Z"
+          "syncedAt": "2026-05-13T02:28:17.346Z"
         },
         "90": {
           "period": 90,
@@ -952,7 +952,7 @@
           "sessions": 738,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:57.624Z"
+          "syncedAt": "2026-05-13T02:28:18.062Z"
         },
         "365": {
           "period": 365,
@@ -1108,7 +1108,7 @@
           "sessions": 738,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-12T23:52:58.187Z"
+          "syncedAt": "2026-05-13T02:28:18.875Z"
         }
       }
     }
