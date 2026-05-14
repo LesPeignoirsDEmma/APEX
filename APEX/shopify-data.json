@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-14T10:07:35.791Z",
+  "lastUpdated": "2026-05-14T12:21:59.435Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-14T10:07:39.641Z",
+        "syncedAt": "2026-05-14T12:22:02.589Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:43.115Z"
+          "syncedAt": "2026-05-14T12:22:06.399Z"
         },
         "30": {
           "period": 30,
@@ -175,7 +175,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:43.934Z"
+          "syncedAt": "2026-05-14T12:22:07.497Z"
         },
         "90": {
           "period": 90,
@@ -302,14 +302,14 @@
             "Peignoir Bébé Blanc"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 12,
-          "totalCheckouts": 59,
-          "abandonRate": 20,
-          "abandonedValue": 670,
+          "abandonedCheckouts": 11,
+          "totalCheckouts": 58,
+          "abandonRate": 19,
+          "abandonedValue": 616,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "count": 3
+              "count": 2
             },
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
@@ -328,10 +328,10 @@
               "count": 1
             }
           ],
-          "sessions": 738,
-          "conversionRate": 6.4,
+          "sessions": 725,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:44.637Z"
+          "syncedAt": "2026-05-14T12:22:08.473Z"
         },
         "365": {
           "period": 365,
@@ -446,7 +446,6 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
-            "Chaussons d’intérieur �� Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
@@ -459,17 +458,18 @@
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
             "Peignoir Bébé Violet",
-            "Peignoir Capuche - Femme"
+            "Peignoir Capuche - Femme",
+            "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 12,
-          "totalCheckouts": 212,
-          "abandonRate": 6,
-          "abandonedValue": 670,
+          "abandonedCheckouts": 11,
+          "totalCheckouts": 211,
+          "abandonRate": 5,
+          "abandonedValue": 616,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "count": 3
+              "count": 2
             },
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
@@ -488,10 +488,10 @@
               "count": 1
             }
           ],
-          "sessions": 2650,
-          "conversionRate": 7.4,
+          "sessions": 2638,
+          "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:45.444Z"
+          "syncedAt": "2026-05-14T12:22:09.568Z"
         }
       }
     },
@@ -500,7 +500,7 @@
         "revenue": 1396,
         "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-05-14T10:07:47.398Z",
+        "syncedAt": "2026-05-14T12:22:11.736Z",
         "allTime": {
           "revenue": 2521,
           "orders": 46
@@ -645,7 +645,7 @@
           "sessions": 188,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:48.650Z"
+          "syncedAt": "2026-05-14T12:22:13.252Z"
         },
         "30": {
           "period": 30,
@@ -655,8 +655,8 @@
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 4,
-          "revenueHalf1": 530,
-          "revenueHalf2": 866,
+          "revenueHalf1": 580,
+          "revenueHalf2": 816,
           "discountOrders": 14,
           "discountRate": 54,
           "discountShare": 5,
@@ -796,7 +796,7 @@
           "sessions": 400,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:49.277Z"
+          "syncedAt": "2026-05-14T12:22:13.979Z"
         },
         "90": {
           "period": 90,
@@ -952,7 +952,7 @@
           "sessions": 763,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:49.918Z"
+          "syncedAt": "2026-05-14T12:22:14.800Z"
         },
         "365": {
           "period": 365,
@@ -971,7 +971,7 @@
           "newCust": 46,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 0,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1108,7 +1108,7 @@
           "sessions": 763,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T10:07:50.473Z"
+          "syncedAt": "2026-05-14T12:22:15.567Z"
         }
       }
     }
