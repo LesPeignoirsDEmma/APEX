@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-15T13:47:01.696Z",
+  "lastUpdated": "2026-05-15T15:58:15.746Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T13:47:04.579Z",
+        "syncedAt": "2026-05-15T15:58:19.118Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:08.137Z"
+          "syncedAt": "2026-05-15T15:58:23.706Z"
         },
         "30": {
           "period": 30,
@@ -175,7 +175,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:08.905Z"
+          "syncedAt": "2026-05-15T15:58:24.676Z"
         },
         "90": {
           "period": 90,
@@ -185,8 +185,8 @@
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 12,
-          "revenueHalf1": 1970,
-          "revenueHalf2": 1122,
+          "revenueHalf1": 2050,
+          "revenueHalf2": 1042,
           "discountOrders": 19,
           "discountRate": 43,
           "discountShare": 5,
@@ -330,7 +330,7 @@
           "sessions": 688,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:09.663Z"
+          "syncedAt": "2026-05-15T15:58:25.741Z"
         },
         "365": {
           "period": 365,
@@ -490,7 +490,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:10.474Z"
+          "syncedAt": "2026-05-15T15:58:26.438Z"
         }
       }
     },
@@ -499,7 +499,7 @@
         "revenue": 1511,
         "orders": 28,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T13:47:12.049Z",
+        "syncedAt": "2026-05-15T15:58:27.972Z",
         "allTime": {
           "revenue": 2635,
           "orders": 48
@@ -598,7 +598,7 @@
             "5": 4,
             "6": 1
           },
-          "totalProducts": 229,
+          "totalProducts": 226,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -621,7 +621,7 @@
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir"
           ],
-          "newProductsAdded": 24,
+          "newProductsAdded": 21,
           "abandonedCheckouts": 5,
           "totalCheckouts": 16,
           "abandonRate": 31,
@@ -651,7 +651,7 @@
           "sessions": 200,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:13.394Z"
+          "syncedAt": "2026-05-15T15:58:29.507Z"
         },
         "30": {
           "period": 30,
@@ -750,7 +750,7 @@
             "5": 4,
             "6": 2
           },
-          "totalProducts": 229,
+          "totalProducts": 226,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -773,7 +773,7 @@
             "Chemise Kimono Homme Noir",
             "Chemise Kimono Lin"
           ],
-          "newProductsAdded": 24,
+          "newProductsAdded": 21,
           "abandonedCheckouts": 6,
           "totalCheckouts": 34,
           "abandonRate": 18,
@@ -803,7 +803,7 @@
           "sessions": 425,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:14.399Z"
+          "syncedAt": "2026-05-15T15:58:30.167Z"
         },
         "90": {
           "period": 90,
@@ -907,7 +907,7 @@
             "5": 5,
             "6": 5
           },
-          "totalProducts": 229,
+          "totalProducts": 226,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -930,7 +930,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 24,
+          "newProductsAdded": 21,
           "abandonedCheckouts": 15,
           "totalCheckouts": 63,
           "abandonRate": 24,
@@ -960,7 +960,7 @@
           "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:15.112Z"
+          "syncedAt": "2026-05-15T15:58:30.971Z"
         },
         "365": {
           "period": 365,
@@ -1064,7 +1064,7 @@
             "5": 5,
             "6": 5
           },
-          "totalProducts": 229,
+          "totalProducts": 226,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -1087,7 +1087,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 229,
+          "newProductsAdded": 226,
           "abandonedCheckouts": 15,
           "totalCheckouts": 63,
           "abandonRate": 24,
@@ -1117,7 +1117,7 @@
           "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T13:47:15.721Z"
+          "syncedAt": "2026-05-15T15:58:31.584Z"
         }
       }
     }
