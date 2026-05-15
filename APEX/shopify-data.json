@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-15T06:26:14.666Z",
+  "lastUpdated": "2026-05-15T09:40:09.161Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T06:26:17.566Z",
+        "syncedAt": "2026-05-15T09:40:12.068Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:20.457Z"
+          "syncedAt": "2026-05-15T09:40:15.607Z"
         },
         "30": {
           "period": 30,
@@ -175,7 +175,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:21.202Z"
+          "syncedAt": "2026-05-15T09:40:16.440Z"
         },
         "90": {
           "period": 90,
@@ -330,7 +330,7 @@
           "sessions": 688,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:22.151Z"
+          "syncedAt": "2026-05-15T09:40:17.681Z"
         },
         "365": {
           "period": 365,
@@ -490,40 +490,40 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:23.083Z"
+          "syncedAt": "2026-05-15T09:40:18.569Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1441,
-        "orders": 27,
+        "revenue": 1511,
+        "orders": 28,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T06:26:24.460Z",
+        "syncedAt": "2026-05-15T09:40:21.201Z",
         "allTime": {
-          "revenue": 2566,
-          "orders": 47
+          "revenue": 2635,
+          "orders": 48
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 655,
-          "orders": 10,
-          "aov": 65,
+          "revenue": 725,
+          "orders": 11,
+          "aov": 66,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 320,
-          "revenueHalf2": 334,
+          "revenueHalf2": 404,
           "discountOrders": 5,
-          "discountRate": 50,
+          "discountRate": 45,
           "discountShare": 4,
           "totalDiscounts": 29,
-          "newCust": 10,
+          "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 44,
+          "avgLTV": 45,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -540,6 +540,11 @@
               "name": "Manteau Kimono Épais Homme",
               "qty": 1,
               "revenue": 125
+            },
+            {
+              "name": "Kimono Pyjama Homme",
+              "qty": 1,
+              "revenue": 70
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -572,8 +577,9 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 63,
+          "top3RevenueShare": 57,
           "hourly": {
+            "6": 1,
             "8": 1,
             "11": 1,
             "13": 1,
@@ -589,10 +595,10 @@
             "2": 1,
             "3": 2,
             "4": 1,
-            "5": 3,
+            "5": 4,
             "6": 1
           },
-          "totalProducts": 205,
+          "totalProducts": 229,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -615,10 +621,10 @@
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir"
           ],
-          "newProductsAdded": 0,
+          "newProductsAdded": 24,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 15,
-          "abandonRate": 33,
+          "totalCheckouts": 16,
+          "abandonRate": 31,
           "abandonedValue": 395,
           "topAbandoned": [
             {
@@ -642,29 +648,29 @@
               "count": 1
             }
           ],
-          "sessions": 188,
-          "conversionRate": 5.3,
+          "sessions": 200,
+          "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:25.674Z"
+          "syncedAt": "2026-05-15T09:40:22.617Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1441,
-          "orders": 27,
-          "aov": 53,
+          "revenue": 1511,
+          "orders": 28,
+          "aov": 54,
           "currency": "EUR",
           "refunds": 1,
-          "refundRate": 4,
+          "refundRate": 3,
           "revenueHalf1": 580,
-          "revenueHalf2": 861,
+          "revenueHalf2": 931,
           "discountOrders": 15,
-          "discountRate": 56,
+          "discountRate": 54,
           "discountShare": 5,
           "totalDiscounts": 76,
-          "newCust": 25,
+          "newCust": 26,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 34,
+          "avgLTV": 35,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -693,6 +699,11 @@
               "revenue": 110
             },
             {
+              "name": "Kimono Pyjama Homme",
+              "qty": 1,
+              "revenue": 70
+            },
+            {
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
@@ -711,16 +722,12 @@
               "name": "Kimonos Japonais Enfant",
               "qty": 1,
               "revenue": 60
-            },
-            {
-              "name": "Kimono Japonais Traditionnel Fille",
-              "qty": 1,
-              "revenue": 60
             }
           ],
-          "top3RevenueShare": 41,
+          "top3RevenueShare": 39,
           "hourly": {
             "5": 2,
+            "6": 1,
             "7": 1,
             "8": 1,
             "11": 4,
@@ -740,10 +747,10 @@
             "2": 2,
             "3": 6,
             "4": 4,
-            "5": 3,
+            "5": 4,
             "6": 2
           },
-          "totalProducts": 205,
+          "totalProducts": 229,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -766,9 +773,9 @@
             "Chemise Kimono Homme Noir",
             "Chemise Kimono Lin"
           ],
-          "newProductsAdded": 0,
+          "newProductsAdded": 24,
           "abandonedCheckouts": 6,
-          "totalCheckouts": 33,
+          "totalCheckouts": 34,
           "abandonRate": 18,
           "abandonedValue": 440,
           "topAbandoned": [
@@ -793,29 +800,29 @@
               "count": 1
             }
           ],
-          "sessions": 413,
-          "conversionRate": 6.5,
+          "sessions": 425,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:26.245Z"
+          "syncedAt": "2026-05-15T09:40:23.455Z"
         },
         "90": {
           "period": 90,
-          "revenue": 2566,
-          "orders": 47,
+          "revenue": 2635,
+          "orders": 48,
           "aov": 55,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 2,
           "revenueHalf1": 866,
-          "revenueHalf2": 1700,
+          "revenueHalf2": 1770,
           "discountOrders": 18,
           "discountRate": 38,
           "discountShare": 3,
           "totalDiscounts": 89,
-          "newCust": 45,
+          "newCust": 46,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 31,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -864,15 +871,16 @@
               "revenue": 75
             },
             {
-              "name": "Ensemble Pyjama Style Kimono",
+              "name": "Kimono Pyjama Homme",
               "qty": 1,
-              "revenue": 65
+              "revenue": 70
             }
           ],
           "top3RevenueShare": 30,
           "hourly": {
             "1": 1,
             "5": 2,
+            "6": 1,
             "7": 3,
             "8": 2,
             "9": 1,
@@ -896,10 +904,10 @@
             "2": 3,
             "3": 10,
             "4": 6,
-            "5": 4,
+            "5": 5,
             "6": 5
           },
-          "totalProducts": 205,
+          "totalProducts": 229,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -922,9 +930,9 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 0,
+          "newProductsAdded": 24,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 62,
+          "totalCheckouts": 63,
           "abandonRate": 24,
           "abandonedValue": 1135,
           "topAbandoned": [
@@ -949,26 +957,26 @@
               "count": 1
             }
           ],
-          "sessions": 775,
+          "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:26.829Z"
+          "syncedAt": "2026-05-15T09:40:24.431Z"
         },
         "365": {
           "period": 365,
-          "revenue": 2566,
-          "orders": 47,
+          "revenue": 2635,
+          "orders": 48,
           "aov": 55,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 2,
           "revenueHalf1": 0,
-          "revenueHalf2": 2566,
+          "revenueHalf2": 2635,
           "discountOrders": 18,
           "discountRate": 38,
           "discountShare": 3,
           "totalDiscounts": 89,
-          "newCust": 45,
+          "newCust": 46,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 31,
@@ -1020,15 +1028,16 @@
               "revenue": 75
             },
             {
-              "name": "Ensemble Pyjama Style Kimono",
+              "name": "Kimono Pyjama Homme",
               "qty": 1,
-              "revenue": 65
+              "revenue": 70
             }
           ],
           "top3RevenueShare": 30,
           "hourly": {
             "1": 1,
             "5": 2,
+            "6": 1,
             "7": 3,
             "8": 2,
             "9": 1,
@@ -1052,10 +1061,10 @@
             "2": 3,
             "3": 10,
             "4": 6,
-            "5": 4,
+            "5": 5,
             "6": 5
           },
-          "totalProducts": 205,
+          "totalProducts": 229,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -1078,9 +1087,9 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 205,
+          "newProductsAdded": 229,
           "abandonedCheckouts": 15,
-          "totalCheckouts": 62,
+          "totalCheckouts": 63,
           "abandonRate": 24,
           "abandonedValue": 1135,
           "topAbandoned": [
@@ -1105,10 +1114,10 @@
               "count": 1
             }
           ],
-          "sessions": 775,
+          "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T06:26:27.409Z"
+          "syncedAt": "2026-05-15T09:40:25.257Z"
         }
       }
     }
