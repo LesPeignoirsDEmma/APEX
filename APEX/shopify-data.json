@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-15T15:58:15.746Z",
+  "lastUpdated": "2026-05-15T17:28:06.778Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T15:58:19.118Z",
+        "syncedAt": "2026-05-15T17:28:09.600Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:23.706Z"
+          "syncedAt": "2026-05-15T17:28:14.061Z"
         },
         "30": {
           "period": 30,
@@ -175,7 +175,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:24.676Z"
+          "syncedAt": "2026-05-15T17:28:15.384Z"
         },
         "90": {
           "period": 90,
@@ -330,7 +330,7 @@
           "sessions": 688,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:25.741Z"
+          "syncedAt": "2026-05-15T17:28:16.567Z"
         },
         "365": {
           "period": 365,
@@ -490,7 +490,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:26.438Z"
+          "syncedAt": "2026-05-15T17:28:17.917Z"
         }
       }
     },
@@ -499,7 +499,7 @@
         "revenue": 1511,
         "orders": 28,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T15:58:27.972Z",
+        "syncedAt": "2026-05-15T17:28:19.790Z",
         "allTime": {
           "revenue": 2635,
           "orders": 48
@@ -598,7 +598,7 @@
             "5": 4,
             "6": 1
           },
-          "totalProducts": 226,
+          "totalProducts": 223,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -621,7 +621,7 @@
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir"
           ],
-          "newProductsAdded": 21,
+          "newProductsAdded": 18,
           "abandonedCheckouts": 5,
           "totalCheckouts": 16,
           "abandonRate": 31,
@@ -651,7 +651,7 @@
           "sessions": 200,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:29.507Z"
+          "syncedAt": "2026-05-15T17:28:21.224Z"
         },
         "30": {
           "period": 30,
@@ -750,7 +750,7 @@
             "5": 4,
             "6": 2
           },
-          "totalProducts": 226,
+          "totalProducts": 223,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -773,7 +773,7 @@
             "Chemise Kimono Homme Noir",
             "Chemise Kimono Lin"
           ],
-          "newProductsAdded": 21,
+          "newProductsAdded": 18,
           "abandonedCheckouts": 6,
           "totalCheckouts": 34,
           "abandonRate": 18,
@@ -803,7 +803,7 @@
           "sessions": 425,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:30.167Z"
+          "syncedAt": "2026-05-15T17:28:21.975Z"
         },
         "90": {
           "period": 90,
@@ -907,7 +907,7 @@
             "5": 5,
             "6": 5
           },
-          "totalProducts": 226,
+          "totalProducts": 223,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -930,7 +930,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 21,
+          "newProductsAdded": 18,
           "abandonedCheckouts": 15,
           "totalCheckouts": 63,
           "abandonRate": 24,
@@ -960,7 +960,7 @@
           "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:30.971Z"
+          "syncedAt": "2026-05-15T17:28:22.686Z"
         },
         "365": {
           "period": 365,
@@ -1064,7 +1064,7 @@
             "5": 5,
             "6": 5
           },
-          "totalProducts": 226,
+          "totalProducts": 223,
           "zeroSaleProducts": [
             "Brassière Kimono Bébé",
             "Brassière Kimono Nouveau Né",
@@ -1087,7 +1087,7 @@
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme"
           ],
-          "newProductsAdded": 226,
+          "newProductsAdded": 223,
           "abandonedCheckouts": 15,
           "totalCheckouts": 63,
           "abandonRate": 24,
@@ -1117,7 +1117,7 @@
           "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T15:58:31.584Z"
+          "syncedAt": "2026-05-15T17:28:23.415Z"
         }
       }
     }
