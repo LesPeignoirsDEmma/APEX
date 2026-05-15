@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-14T23:48:46.491Z",
+  "lastUpdated": "2026-05-15T02:28:26.436Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-14T23:48:48.907Z",
+        "syncedAt": "2026-05-15T02:28:28.966Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:51.348Z"
+          "syncedAt": "2026-05-15T02:28:31.666Z"
         },
         "30": {
           "period": 30,
@@ -175,42 +175,42 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:52.077Z"
+          "syncedAt": "2026-05-15T02:28:32.392Z"
         },
         "90": {
           "period": 90,
-          "revenue": 3318,
-          "orders": 47,
-          "aov": 71,
+          "revenue": 3092,
+          "orders": 44,
+          "aov": 70,
           "currency": "EUR",
           "refunds": 6,
-          "refundRate": 11,
-          "revenueHalf1": 2196,
+          "refundRate": 12,
+          "revenueHalf1": 1970,
           "revenueHalf2": 1122,
-          "discountOrders": 20,
+          "discountOrders": 19,
           "discountRate": 43,
           "discountShare": 5,
-          "totalDiscounts": 178,
-          "newCust": 47,
+          "totalDiscounts": 149,
+          "newCust": 44,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 29,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 7,
-              "revenue": 570
+              "qty": 6,
+              "revenue": 485
             },
             {
               "name": "Peignoir Femme Flanelle",
-              "qty": 7,
-              "revenue": 483
+              "qty": 6,
+              "revenue": 413
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "qty": 6,
-              "revenue": 358
+              "qty": 5,
+              "revenue": 299
             },
             {
               "name": "Peignoir Flanelle Enfant",
@@ -248,18 +248,17 @@
               "revenue": 85
             }
           ],
-          "top3RevenueShare": 43,
+          "top3RevenueShare": 39,
           "hourly": {
             "2": 2,
             "6": 3,
             "7": 2,
             "8": 4,
-            "9": 5,
-            "10": 3,
+            "9": 4,
+            "10": 2,
             "11": 3,
             "12": 3,
             "13": 3,
-            "14": 1,
             "15": 5,
             "16": 2,
             "17": 1,
@@ -275,7 +274,7 @@
             "2": 5,
             "3": 7,
             "4": 4,
-            "5": 13,
+            "5": 10,
             "6": 7
           },
           "totalProducts": 178,
@@ -287,6 +286,7 @@
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
+            "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
             "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
@@ -298,13 +298,12 @@
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
             "Peignoir Baroque - Femme",
-            "Peignoir Baroque - Homme",
-            "Peignoir Bébé Blanc"
+            "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 11,
-          "totalCheckouts": 58,
-          "abandonRate": 19,
+          "totalCheckouts": 55,
+          "abandonRate": 20,
           "abandonedValue": 616,
           "topAbandoned": [
             {
@@ -328,10 +327,10 @@
               "count": 1
             }
           ],
-          "sessions": 725,
-          "conversionRate": 6.5,
+          "sessions": 688,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:52.945Z"
+          "syncedAt": "2026-05-15T02:28:33.122Z"
         },
         "365": {
           "period": 365,
@@ -491,7 +490,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:53.721Z"
+          "syncedAt": "2026-05-15T02:28:34.390Z"
         }
       }
     },
@@ -500,7 +499,7 @@
         "revenue": 1441,
         "orders": 27,
         "currency": "EUR",
-        "syncedAt": "2026-05-14T23:48:55.007Z",
+        "syncedAt": "2026-05-15T02:28:35.995Z",
         "allTime": {
           "revenue": 2566,
           "orders": 47
@@ -509,19 +508,19 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 700,
-          "orders": 11,
-          "aov": 64,
+          "revenue": 655,
+          "orders": 10,
+          "aov": 65,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 316,
+          "revenueHalf1": 271,
           "revenueHalf2": 384,
-          "discountOrders": 6,
-          "discountRate": 55,
-          "discountShare": 5,
-          "totalDiscounts": 34,
-          "newCust": 11,
+          "discountOrders": 5,
+          "discountRate": 50,
+          "discountShare": 4,
+          "totalDiscounts": 29,
+          "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 44,
@@ -543,11 +542,6 @@
               "revenue": 125
             },
             {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
-            },
-            {
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 1,
               "revenue": 65
@@ -556,6 +550,11 @@
               "name": "Robe Chinoise Kimono Enfant",
               "qty": 1,
               "revenue": 55
+            },
+            {
+              "name": "Kimono Long Femme Plage",
+              "qty": 1,
+              "revenue": 50
             },
             {
               "name": "Kimono Court Pour Homme",
@@ -573,7 +572,7 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 59,
+          "top3RevenueShare": 63,
           "hourly": {
             "8": 1,
             "11": 1,
@@ -582,14 +581,14 @@
             "16": 1,
             "17": 1,
             "20": 2,
-            "21": 2,
+            "21": 1,
             "22": 1
           },
           "daily": {
             "1": 2,
             "2": 1,
             "3": 2,
-            "4": 2,
+            "4": 1,
             "5": 3,
             "6": 1
           },
@@ -618,8 +617,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 16,
-          "abandonRate": 31,
+          "totalCheckouts": 15,
+          "abandonRate": 33,
           "abandonedValue": 395,
           "topAbandoned": [
             {
@@ -643,10 +642,10 @@
               "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 5.5,
+          "sessions": 188,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:56.503Z"
+          "syncedAt": "2026-05-15T02:28:37.218Z"
         },
         "30": {
           "period": 30,
@@ -797,7 +796,7 @@
           "sessions": 413,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:57.135Z"
+          "syncedAt": "2026-05-15T02:28:37.757Z"
         },
         "90": {
           "period": 90,
@@ -953,7 +952,7 @@
           "sessions": 775,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:57.706Z"
+          "syncedAt": "2026-05-15T02:28:38.334Z"
         },
         "365": {
           "period": 365,
@@ -1109,7 +1108,7 @@
           "sessions": 775,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-14T23:48:58.315Z"
+          "syncedAt": "2026-05-15T02:28:38.873Z"
         }
       }
     }
