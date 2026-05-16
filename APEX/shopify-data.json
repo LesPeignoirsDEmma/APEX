@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-15T23:47:30.940Z",
+  "lastUpdated": "2026-05-16T02:10:33.692Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T23:47:33.389Z",
+        "syncedAt": "2026-05-16T02:10:35.828Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:35.621Z"
+          "syncedAt": "2026-05-16T02:10:37.642Z"
         },
         "30": {
           "period": 30,
@@ -175,47 +175,42 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:36.403Z"
+          "syncedAt": "2026-05-16T02:10:38.360Z"
         },
         "90": {
           "period": 90,
-          "revenue": 3092,
-          "orders": 44,
-          "aov": 70,
+          "revenue": 2903,
+          "orders": 41,
+          "aov": 71,
           "currency": "EUR",
-          "refunds": 6,
-          "refundRate": 12,
-          "revenueHalf1": 2110,
+          "refunds": 5,
+          "refundRate": 11,
+          "revenueHalf1": 1921,
           "revenueHalf2": 982,
-          "discountOrders": 19,
-          "discountRate": 43,
+          "discountOrders": 18,
+          "discountRate": 44,
           "discountShare": 5,
-          "totalDiscounts": 149,
-          "newCust": 44,
+          "totalDiscounts": 143,
+          "newCust": 41,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
             {
-              "name": "Peignoir Polaire Luxe - Homme",
-              "qty": 6,
-              "revenue": 485
-            },
-            {
               "name": "Peignoir Femme Flanelle",
               "qty": 6,
               "revenue": 413
             },
             {
+              "name": "Peignoir Polaire Luxe - Homme",
+              "qty": 5,
+              "revenue": 400
+            },
+            {
               "name": "Peignoir Rose Rayé – Femme",
               "qty": 5,
               "revenue": 299
-            },
-            {
-              "name": "Peignoir Flanelle Enfant",
-              "qty": 3,
-              "revenue": 161
             },
             {
               "name": "Peignoir Kimono Effet Soie",
@@ -233,6 +228,11 @@
               "revenue": 115
             },
             {
+              "name": "Peignoir Flanelle Enfant",
+              "qty": 2,
+              "revenue": 111
+            },
+            {
               "name": "Peignoir Long d’Hiver - Homme",
               "qty": 1,
               "revenue": 95
@@ -248,7 +248,7 @@
               "revenue": 85
             }
           ],
-          "top3RevenueShare": 39,
+          "top3RevenueShare": 38,
           "hourly": {
             "2": 2,
             "6": 3,
@@ -258,12 +258,12 @@
             "10": 2,
             "11": 3,
             "12": 3,
-            "13": 3,
+            "13": 2,
             "15": 5,
             "16": 2,
             "17": 1,
-            "18": 3,
-            "19": 2,
+            "18": 2,
+            "19": 1,
             "20": 2,
             "22": 1,
             "23": 2
@@ -275,7 +275,7 @@
             "3": 7,
             "4": 4,
             "5": 10,
-            "6": 7
+            "6": 4
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -302,8 +302,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 11,
-          "totalCheckouts": 55,
-          "abandonRate": 20,
+          "totalCheckouts": 52,
+          "abandonRate": 21,
           "abandonedValue": 616,
           "topAbandoned": [
             {
@@ -327,10 +327,10 @@
               "count": 1
             }
           ],
-          "sessions": 688,
-          "conversionRate": 6.4,
+          "sessions": 650,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:37.086Z"
+          "syncedAt": "2026-05-16T02:10:39.114Z"
         },
         "365": {
           "period": 365,
@@ -490,7 +490,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:37.761Z"
+          "syncedAt": "2026-05-16T02:10:39.913Z"
         }
       }
     },
@@ -499,7 +499,7 @@
         "revenue": 1511,
         "orders": 28,
         "currency": "EUR",
-        "syncedAt": "2026-05-15T23:47:38.980Z",
+        "syncedAt": "2026-05-16T02:10:41.419Z",
         "allTime": {
           "revenue": 2635,
           "orders": 48
@@ -508,34 +508,24 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 725,
-          "orders": 11,
-          "aov": 66,
+          "revenue": 512,
+          "orders": 8,
+          "aov": 64,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 370,
+          "revenueHalf1": 158,
           "revenueHalf2": 354,
-          "discountOrders": 5,
-          "discountRate": 45,
+          "discountOrders": 4,
+          "discountRate": 50,
           "discountShare": 4,
-          "totalDiscounts": 29,
-          "newCust": 11,
+          "totalDiscounts": 22,
+          "newCust": 8,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 45,
+          "avgLTV": 39,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 3,
-              "revenue": 150
-            },
-            {
-              "name": "Chemise Kimono Grande Taille",
-              "qty": 2,
-              "revenue": 140
-            },
             {
               "name": "Manteau Kimono Épais Homme",
               "qty": 1,
@@ -543,6 +533,11 @@
             },
             {
               "name": "Kimono Pyjama Homme",
+              "qty": 1,
+              "revenue": 70
+            },
+            {
+              "name": "Chemise Kimono Grande Taille",
               "qty": 1,
               "revenue": 70
             },
@@ -562,7 +557,7 @@
               "revenue": 50
             },
             {
-              "name": "Kimono Court Pour Homme",
+              "name": "Veste Kimono Noir Homme",
               "qty": 1,
               "revenue": 50
             },
@@ -577,13 +572,10 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 57,
+          "top3RevenueShare": 52,
           "hourly": {
             "6": 1,
-            "8": 1,
             "11": 1,
-            "13": 1,
-            "14": 1,
             "16": 1,
             "17": 1,
             "20": 2,
@@ -595,7 +587,7 @@
             "2": 1,
             "3": 2,
             "4": 1,
-            "5": 4,
+            "5": 1,
             "6": 1
           },
           "totalProducts": 223,
@@ -623,8 +615,8 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 16,
-          "abandonRate": 31,
+          "totalCheckouts": 13,
+          "abandonRate": 38,
           "abandonedValue": 395,
           "topAbandoned": [
             {
@@ -648,10 +640,10 @@
               "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 5.5,
+          "sessions": 163,
+          "conversionRate": 4.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:40.136Z"
+          "syncedAt": "2026-05-16T02:10:42.516Z"
         },
         "30": {
           "period": 30,
@@ -670,7 +662,7 @@
           "newCust": 26,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 35,
+          "avgLTV": 36,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -803,7 +795,7 @@
           "sessions": 425,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:41.105Z"
+          "syncedAt": "2026-05-16T02:10:43.152Z"
         },
         "90": {
           "period": 90,
@@ -960,7 +952,7 @@
           "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:41.657Z"
+          "syncedAt": "2026-05-16T02:10:43.707Z"
         },
         "365": {
           "period": 365,
@@ -1117,7 +1109,7 @@
           "sessions": 788,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-15T23:47:42.249Z"
+          "syncedAt": "2026-05-16T02:10:44.246Z"
         }
       }
     }
