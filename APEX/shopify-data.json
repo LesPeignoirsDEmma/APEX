@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-17T14:49:56.814Z",
+  "lastUpdated": "2026-05-17T15:53:08.470Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-17T14:49:59.444Z",
+        "syncedAt": "2026-05-17T15:53:10.687Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:02.303Z"
+          "syncedAt": "2026-05-17T15:53:12.589Z"
         },
         "30": {
           "period": 30,
@@ -175,7 +175,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:03.020Z"
+          "syncedAt": "2026-05-17T15:53:13.388Z"
         },
         "90": {
           "period": 90,
@@ -330,7 +330,7 @@
           "sessions": 625,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:03.782Z"
+          "syncedAt": "2026-05-17T15:53:14.245Z"
         },
         "365": {
           "period": 365,
@@ -490,7 +490,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:04.545Z"
+          "syncedAt": "2026-05-17T15:53:15.097Z"
         }
       }
     },
@@ -499,7 +499,7 @@
         "revenue": 1566,
         "orders": 30,
         "currency": "EUR",
-        "syncedAt": "2026-05-17T14:50:06.011Z",
+        "syncedAt": "2026-05-17T15:53:16.201Z",
         "allTime": {
           "revenue": 2755,
           "orders": 51
@@ -652,7 +652,7 @@
           "sessions": 188,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:07.196Z"
+          "syncedAt": "2026-05-17T15:53:17.365Z"
         },
         "30": {
           "period": 30,
@@ -759,7 +759,7 @@
             "Cardigan Homme Façon Kimono",
             "Cardigan Kimono Coton Homme",
             "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
+            "Cardigan Kimono Homme Drap��",
             "Cardigan Kimono Noir Court Femme",
             "Cardigan Style Kimono Homme",
             "Chemise Col Kimono Homme",
@@ -804,7 +804,7 @@
           "sessions": 450,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:07.784Z"
+          "syncedAt": "2026-05-17T15:53:18.120Z"
         },
         "90": {
           "period": 90,
@@ -961,7 +961,7 @@
           "sessions": 825,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:08.405Z"
+          "syncedAt": "2026-05-17T15:53:18.678Z"
         },
         "365": {
           "period": 365,
@@ -1118,7 +1118,7 @@
           "sessions": 825,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T14:50:08.979Z"
+          "syncedAt": "2026-05-17T15:53:19.210Z"
         }
       }
     }
