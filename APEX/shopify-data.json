@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-17T23:51:48.240Z",
+  "lastUpdated": "2026-05-18T02:36:01.596Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 469,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-05-17T23:51:50.518Z",
+        "syncedAt": "2026-05-18T02:36:03.848Z",
         "allTime": {
           "revenue": 12251,
           "orders": 197
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:52.511Z"
+          "syncedAt": "2026-05-18T02:36:07.030Z"
         },
         "30": {
           "period": 30,
@@ -97,7 +97,7 @@
           "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 78,
+          "avgLTV": 94,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -175,7 +175,7 @@
           "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:53.247Z"
+          "syncedAt": "2026-05-18T02:36:07.787Z"
         },
         "90": {
           "period": 90,
@@ -330,7 +330,7 @@
           "sessions": 625,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:54.117Z"
+          "syncedAt": "2026-05-18T02:36:08.513Z"
         },
         "365": {
           "period": 365,
@@ -490,7 +490,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:54.960Z"
+          "syncedAt": "2026-05-18T02:36:09.207Z"
         }
       }
     },
@@ -499,7 +499,7 @@
         "revenue": 1616,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-05-17T23:51:56.417Z",
+        "syncedAt": "2026-05-18T02:36:10.827Z",
         "allTime": {
           "revenue": 2805,
           "orders": 52
@@ -523,7 +523,7 @@
           "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 36,
+          "avgLTV": 39,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -623,15 +623,11 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 5,
-          "totalCheckouts": 16,
-          "abandonRate": 31,
-          "abandonedValue": 395,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 15,
+          "abandonRate": 27,
+          "abandonedValue": 335,
           "topAbandoned": [
-            {
-              "name": "Robe Kimono Manches Longues",
-              "count": 1
-            },
             {
               "name": "Kimono Paon Vert",
               "count": 1
@@ -647,12 +643,16 @@
             {
               "name": "Ensemble Pyjama Style Kimono",
               "count": 1
+            },
+            {
+              "name": "Kimono Japonais Enfant Fille",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 5.5,
+          "sessions": 188,
+          "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:57.677Z"
+          "syncedAt": "2026-05-18T02:36:12.156Z"
         },
         "30": {
           "period": 30,
@@ -804,7 +804,7 @@
           "sessions": 463,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:58.251Z"
+          "syncedAt": "2026-05-18T02:36:12.731Z"
         },
         "90": {
           "period": 90,
@@ -961,7 +961,7 @@
           "sessions": 838,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:58.921Z"
+          "syncedAt": "2026-05-18T02:36:13.299Z"
         },
         "365": {
           "period": 365,
@@ -1118,7 +1118,7 @@
           "sessions": 838,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-17T23:51:59.555Z"
+          "syncedAt": "2026-05-18T02:36:13.927Z"
         }
       }
     }
