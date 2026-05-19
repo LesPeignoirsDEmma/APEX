@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-18T23:58:01.052Z",
+  "lastUpdated": "2026-05-19T03:35:09.347Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 529,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-05-18T23:58:03.396Z",
+        "syncedAt": "2026-05-19T03:35:11.935Z",
         "allTime": {
           "revenue": 12311,
           "orders": 198
@@ -80,7 +80,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:05.654Z"
+          "syncedAt": "2026-05-19T03:35:14.218Z"
         },
         "30": {
           "period": 30,
@@ -177,7 +177,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:06.990Z"
+          "syncedAt": "2026-05-19T03:35:15.021Z"
         },
         "90": {
           "period": 90,
@@ -332,7 +332,7 @@
           "sessions": 625,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:07.925Z"
+          "syncedAt": "2026-05-19T03:35:16.073Z"
         },
         "365": {
           "period": 365,
@@ -492,7 +492,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:08.823Z"
+          "syncedAt": "2026-05-19T03:35:17.180Z"
         }
       }
     },
@@ -501,7 +501,7 @@
         "revenue": 1795,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-05-18T23:58:10.311Z",
+        "syncedAt": "2026-05-19T03:35:18.688Z",
         "allTime": {
           "revenue": 2984,
           "orders": 54
@@ -510,33 +510,28 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 802,
-          "orders": 13,
-          "aov": 62,
+          "revenue": 703,
+          "orders": 11,
+          "aov": 64,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 454,
+          "revenueHalf1": 354,
           "revenueHalf2": 348,
-          "discountOrders": 4,
-          "discountRate": 31,
+          "discountOrders": 3,
+          "discountRate": 27,
           "discountShare": 3,
-          "totalDiscounts": 26,
-          "newCust": 13,
+          "totalDiscounts": 21,
+          "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 45,
+          "avgLTV": 51,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Manteau Kimono Épais Homme",
               "qty": 1,
               "revenue": 125
-            },
-            {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 2,
-              "revenue": 100
             },
             {
               "name": "Kimono Pyjama Homme",
@@ -564,12 +559,12 @@
               "revenue": 60
             },
             {
-              "name": "Robe Chinoise Kimono Enfant",
+              "name": "Robe Kimono Longue Grande Taille",
               "qty": 1,
-              "revenue": 55
+              "revenue": 50
             },
             {
-              "name": "Robe Kimono Longue Grande Taille",
+              "name": "Veste Kimono Noir Homme",
               "qty": 1,
               "revenue": 50
             },
@@ -577,9 +572,14 @@
               "name": "Kimono Long Femme Plage",
               "qty": 1,
               "revenue": 50
+            },
+            {
+              "name": "Robe De Chambre Kimono Satin",
+              "qty": 1,
+              "revenue": 40
             }
           ],
-          "top3RevenueShare": 37,
+          "top3RevenueShare": 38,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -587,15 +587,14 @@
             "10": 1,
             "11": 1,
             "16": 1,
-            "17": 2,
+            "17": 1,
             "18": 2,
             "20": 1,
-            "21": 1,
-            "22": 1
+            "21": 1
           },
           "daily": {
             "0": 2,
-            "1": 4,
+            "1": 2,
             "2": 1,
             "3": 2,
             "4": 1,
@@ -626,36 +625,24 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 17,
-          "abandonRate": 24,
-          "abandonedValue": 335,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 13,
+          "abandonRate": 15,
+          "abandonedValue": 133,
           "topAbandoned": [
-            {
-              "name": "Kimono Paon Vert",
-              "count": 1
-            },
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "count": 1
-            },
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "count": 1
-            },
-            {
-              "name": "Ensemble Pyjama Style Kimono",
-              "count": 1
-            },
             {
               "name": "Kimono Japonais Enfant Fille",
               "count": 1
+            },
+            {
+              "name": "Ensemble Kimono Enfant",
+              "count": 1
             }
           ],
-          "sessions": 213,
-          "conversionRate": 6.1,
+          "sessions": 163,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:11.817Z"
+          "syncedAt": "2026-05-19T03:35:19.957Z"
         },
         "30": {
           "period": 30,
@@ -674,7 +661,7 @@
           "newCust": 31,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 37,
+          "avgLTV": 38,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -808,7 +795,7 @@
           "sessions": 488,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:12.537Z"
+          "syncedAt": "2026-05-19T03:35:20.532Z"
         },
         "90": {
           "period": 90,
@@ -965,7 +952,7 @@
           "sessions": 863,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:13.419Z"
+          "syncedAt": "2026-05-19T03:35:21.119Z"
         },
         "365": {
           "period": 365,
@@ -1122,7 +1109,7 @@
           "sessions": 863,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-18T23:58:14.271Z"
+          "syncedAt": "2026-05-19T03:35:21.754Z"
         }
       }
     }
