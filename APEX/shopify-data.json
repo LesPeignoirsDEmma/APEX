@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-20T02:46:13.740Z",
+  "lastUpdated": "2026-05-20T06:42:12.455Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 529,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-05-20T02:46:15.534Z",
+        "syncedAt": "2026-05-20T06:42:15.144Z",
         "allTime": {
           "revenue": 12311,
           "orders": 198
@@ -80,7 +80,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:17.591Z"
+          "syncedAt": "2026-05-20T06:42:18.134Z"
         },
         "30": {
           "period": 30,
@@ -177,7 +177,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:18.166Z"
+          "syncedAt": "2026-05-20T06:42:18.977Z"
         },
         "90": {
           "period": 90,
@@ -332,7 +332,7 @@
           "sessions": 600,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:18.733Z"
+          "syncedAt": "2026-05-20T06:42:19.637Z"
         },
         "365": {
           "period": 365,
@@ -492,7 +492,7 @@
           "sessions": 2638,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:19.309Z"
+          "syncedAt": "2026-05-20T06:42:20.640Z"
         }
       }
     },
@@ -501,7 +501,7 @@
         "revenue": 1790,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-05-20T02:46:20.267Z",
+        "syncedAt": "2026-05-20T06:42:22.295Z",
         "allTime": {
           "revenue": 3089,
           "orders": 56
@@ -516,8 +516,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 350,
-          "revenueHalf2": 413,
+          "revenueHalf1": 384,
+          "revenueHalf2": 378,
           "discountOrders": 2,
           "discountRate": 17,
           "discountShare": 2,
@@ -525,7 +525,7 @@
           "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 55,
+          "avgLTV": 51,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -625,20 +625,24 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 13,
-          "abandonRate": 8,
-          "abandonedValue": 45,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 14,
+          "abandonRate": 14,
+          "abandonedValue": 103,
           "topAbandoned": [
             {
               "name": "Floral Kimono Top",
               "count": 1
+            },
+            {
+              "name": "Kimono Japonais Sakura",
+              "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 7.4,
+          "sessions": 175,
+          "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:21.229Z"
+          "syncedAt": "2026-05-20T06:42:23.356Z"
         },
         "30": {
           "period": 30,
@@ -657,7 +661,7 @@
           "newCust": 31,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 37,
+          "avgLTV": 36,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -762,10 +766,10 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 7,
-          "totalCheckouts": 40,
-          "abandonRate": 18,
-          "abandonedValue": 485,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 41,
+          "abandonRate": 20,
+          "abandonedValue": 543,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Plage",
@@ -788,10 +792,10 @@
               "count": 1
             }
           ],
-          "sessions": 500,
-          "conversionRate": 6.6,
+          "sessions": 513,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:21.681Z"
+          "syncedAt": "2026-05-20T06:42:24.223Z"
         },
         "90": {
           "period": 90,
@@ -810,7 +814,7 @@
           "newCust": 54,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 33,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -919,10 +923,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 16,
-          "totalCheckouts": 72,
-          "abandonRate": 22,
-          "abandonedValue": 1180,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 73,
+          "abandonRate": 23,
+          "abandonedValue": 1239,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -945,10 +949,10 @@
               "count": 1
             }
           ],
-          "sessions": 900,
-          "conversionRate": 6.2,
+          "sessions": 913,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:22.164Z"
+          "syncedAt": "2026-05-20T06:42:24.768Z"
         },
         "365": {
           "period": 365,
@@ -967,7 +971,7 @@
           "newCust": 54,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 33,
+          "avgLTV": 32,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1076,10 +1080,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 16,
-          "totalCheckouts": 72,
-          "abandonRate": 22,
-          "abandonedValue": 1180,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 73,
+          "abandonRate": 23,
+          "abandonedValue": 1239,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -1102,10 +1106,10 @@
               "count": 1
             }
           ],
-          "sessions": 900,
-          "conversionRate": 6.2,
+          "sessions": 913,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-20T02:46:22.773Z"
+          "syncedAt": "2026-05-20T06:42:25.277Z"
         }
       }
     }
