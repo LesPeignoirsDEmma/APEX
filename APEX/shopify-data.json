@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-21T10:33:44.240Z",
+  "lastUpdated": "2026-05-21T13:58:12.348Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 568,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-05-21T10:33:48.408Z",
+        "syncedAt": "2026-05-21T13:58:15.325Z",
         "allTime": {
           "revenue": 12297,
           "orders": 198
@@ -85,7 +85,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:33:53.592Z"
+          "syncedAt": "2026-05-21T13:58:20.598Z"
         },
         "30": {
           "period": 30,
@@ -95,8 +95,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 229,
-          "revenueHalf2": 340,
+          "revenueHalf1": 409,
+          "revenueHalf2": 160,
           "discountOrders": 2,
           "discountRate": 33,
           "discountShare": 4,
@@ -183,7 +183,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:33:55.084Z"
+          "syncedAt": "2026-05-21T13:58:21.244Z"
         },
         "90": {
           "period": 90,
@@ -309,10 +309,10 @@
             "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 10,
-          "totalCheckouts": 49,
-          "abandonRate": 20,
-          "abandonedValue": 556,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 48,
+          "abandonRate": 19,
+          "abandonedValue": 506,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -323,22 +323,22 @@
               "count": 2
             },
             {
-              "name": "Peignoir Chic Satin Homme",
-              "count": 1
-            },
-            {
               "name": "Peignoir Nid d’Abeille Manche Courte",
               "count": 1
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
               "count": 1
+            },
+            {
+              "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+              "count": 1
             }
           ],
-          "sessions": 613,
-          "conversionRate": 6.4,
+          "sessions": 600,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:33:55.881Z"
+          "syncedAt": "2026-05-21T13:58:21.930Z"
         },
         "365": {
           "period": 365,
@@ -469,10 +469,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 10,
-          "totalCheckouts": 211,
-          "abandonRate": 5,
-          "abandonedValue": 556,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 210,
+          "abandonRate": 4,
+          "abandonedValue": 506,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -483,22 +483,22 @@
               "count": 2
             },
             {
-              "name": "Peignoir Chic Satin Homme",
-              "count": 1
-            },
-            {
               "name": "Peignoir Nid d’Abeille Manche Courte",
               "count": 1
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
               "count": 1
+            },
+            {
+              "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
+              "count": 1
             }
           ],
-          "sessions": 2638,
+          "sessions": 2625,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:33:56.641Z"
+          "syncedAt": "2026-05-21T13:58:22.600Z"
         }
       }
     },
@@ -507,7 +507,7 @@
         "revenue": 1725,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-05-21T10:34:01.365Z",
+        "syncedAt": "2026-05-21T13:58:26.285Z",
         "allTime": {
           "revenue": 3089,
           "orders": 56
@@ -645,7 +645,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:34:02.892Z"
+          "syncedAt": "2026-05-21T13:58:27.471Z"
         },
         "30": {
           "period": 30,
@@ -655,8 +655,8 @@
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 3,
-          "revenueHalf1": 403,
-          "revenueHalf2": 1322,
+          "revenueHalf1": 457,
+          "revenueHalf2": 1268,
           "discountOrders": 16,
           "discountRate": 50,
           "discountShare": 5,
@@ -798,7 +798,7 @@
           "sessions": 500,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:34:03.498Z"
+          "syncedAt": "2026-05-21T13:58:28.006Z"
         },
         "90": {
           "period": 90,
@@ -955,7 +955,7 @@
           "sessions": 913,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:34:04.114Z"
+          "syncedAt": "2026-05-21T13:58:28.573Z"
         },
         "365": {
           "period": 365,
@@ -1112,7 +1112,7 @@
           "sessions": 913,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-21T10:34:04.809Z"
+          "syncedAt": "2026-05-21T13:58:29.122Z"
         }
       }
     }
