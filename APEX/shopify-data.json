@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-22T06:42:10.261Z",
+  "lastUpdated": "2026-05-22T10:18:30.716Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 568,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-05-22T06:42:12.728Z",
+        "syncedAt": "2026-05-22T10:18:33.793Z",
         "allTime": {
           "revenue": 12297,
           "orders": 198
@@ -85,7 +85,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:15.346Z"
+          "syncedAt": "2026-05-22T10:18:38.150Z"
         },
         "30": {
           "period": 30,
@@ -183,7 +183,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:16.155Z"
+          "syncedAt": "2026-05-22T10:18:39.096Z"
         },
         "90": {
           "period": 90,
@@ -338,7 +338,7 @@
           "sessions": 575,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:16.984Z"
+          "syncedAt": "2026-05-22T10:18:40.262Z"
         },
         "365": {
           "period": 365,
@@ -498,7 +498,7 @@
           "sessions": 2625,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:17.760Z"
+          "syncedAt": "2026-05-22T10:18:41.370Z"
         }
       }
     },
@@ -507,7 +507,7 @@
         "revenue": 1795,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-05-22T06:42:19.459Z",
+        "syncedAt": "2026-05-22T10:18:43.527Z",
         "allTime": {
           "revenue": 3159,
           "orders": 57
@@ -522,8 +522,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 304,
-          "revenueHalf2": 289,
+          "revenueHalf1": 418,
+          "revenueHalf2": 175,
           "discountOrders": 1,
           "discountRate": 10,
           "discountShare": 2,
@@ -627,7 +627,7 @@
             "Chemise Kimono Grande Taille",
             "Chemise Kimono Homme Japonais"
           ],
-          "newProductsAdded": 18,
+          "newProductsAdded": 0,
           "abandonedCheckouts": 2,
           "totalCheckouts": 12,
           "abandonRate": 17,
@@ -645,7 +645,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:20.867Z"
+          "syncedAt": "2026-05-22T10:18:45.277Z"
         },
         "30": {
           "period": 30,
@@ -798,7 +798,7 @@
           "sessions": 513,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:21.495Z"
+          "syncedAt": "2026-05-22T10:18:46.167Z"
         },
         "90": {
           "period": 90,
@@ -955,7 +955,7 @@
           "sessions": 925,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:22.125Z"
+          "syncedAt": "2026-05-22T10:18:46.804Z"
         },
         "365": {
           "period": 365,
@@ -1112,7 +1112,7 @@
           "sessions": 925,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-22T06:42:22.800Z"
+          "syncedAt": "2026-05-22T10:18:47.431Z"
         }
       }
     }
