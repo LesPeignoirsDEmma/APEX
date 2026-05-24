@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-24T11:09:13.828Z",
+  "lastUpdated": "2026-05-24T13:05:20.587Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 618,
         "orders": 7,
         "currency": "EUR",
-        "syncedAt": "2026-05-24T11:09:16.744Z",
+        "syncedAt": "2026-05-24T13:05:22.337Z",
         "allTime": {
           "revenue": 12347,
           "orders": 199
@@ -92,7 +92,7 @@
           "sessions": 38,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:19.952Z"
+          "syncedAt": "2026-05-24T13:05:23.860Z"
         },
         "30": {
           "period": 30,
@@ -197,7 +197,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:20.750Z"
+          "syncedAt": "2026-05-24T13:05:24.427Z"
         },
         "90": {
           "period": 90,
@@ -323,10 +323,10 @@
             "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 9,
-          "totalCheckouts": 44,
-          "abandonRate": 20,
-          "abandonedValue": 506,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 43,
+          "abandonRate": 19,
+          "abandonedValue": 456,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -337,22 +337,22 @@
               "count": 2
             },
             {
-              "name": "Peignoir Nid d’Abeille Manche Courte",
-              "count": 1
-            },
-            {
               "name": "Peignoir Polaire Luxe - Homme",
               "count": 1
             },
             {
               "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
               "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
             }
           ],
-          "sessions": 550,
-          "conversionRate": 6.4,
+          "sessions": 538,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:21.605Z"
+          "syncedAt": "2026-05-24T13:05:25.059Z"
         },
         "365": {
           "period": 365,
@@ -483,10 +483,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 9,
-          "totalCheckouts": 211,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 210,
           "abandonRate": 4,
-          "abandonedValue": 506,
+          "abandonedValue": 456,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -497,22 +497,22 @@
               "count": 2
             },
             {
-              "name": "Peignoir Nid d’Abeille Manche Courte",
-              "count": 1
-            },
-            {
               "name": "Peignoir Polaire Luxe - Homme",
               "count": 1
             },
             {
               "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
               "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
             }
           ],
-          "sessions": 2638,
-          "conversionRate": 7.5,
+          "sessions": 2625,
+          "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:22.541Z"
+          "syncedAt": "2026-05-24T13:05:25.670Z"
         }
       }
     },
@@ -521,7 +521,7 @@
         "revenue": 1722,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-05-24T11:09:24.088Z",
+        "syncedAt": "2026-05-24T13:05:26.629Z",
         "allTime": {
           "revenue": 3159,
           "orders": 57
@@ -645,7 +645,7 @@
           "sessions": 113,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:25.537Z"
+          "syncedAt": "2026-05-24T13:05:27.623Z"
         },
         "30": {
           "period": 30,
@@ -798,7 +798,7 @@
           "sessions": 488,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:26.219Z"
+          "syncedAt": "2026-05-24T13:05:28.094Z"
         },
         "90": {
           "period": 90,
@@ -955,7 +955,7 @@
           "sessions": 925,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:26.843Z"
+          "syncedAt": "2026-05-24T13:05:28.607Z"
         },
         "365": {
           "period": 365,
@@ -1112,7 +1112,7 @@
           "sessions": 925,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-24T11:09:27.537Z"
+          "syncedAt": "2026-05-24T13:05:29.104Z"
         }
       }
     }
