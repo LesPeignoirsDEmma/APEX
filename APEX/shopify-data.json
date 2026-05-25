@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-25T11:45:22.939Z",
+  "lastUpdated": "2026-05-25T14:38:27.103Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 618,
         "orders": 7,
         "currency": "EUR",
-        "syncedAt": "2026-05-25T11:45:26.761Z",
+        "syncedAt": "2026-05-25T14:38:29.421Z",
         "allTime": {
           "revenue": 12347,
           "orders": 199
@@ -92,7 +92,7 @@
           "sessions": 38,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:31.987Z"
+          "syncedAt": "2026-05-25T14:38:32.326Z"
         },
         "30": {
           "period": 30,
@@ -197,7 +197,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:32.828Z"
+          "syncedAt": "2026-05-25T14:38:33.023Z"
         },
         "90": {
           "period": 90,
@@ -300,7 +300,7 @@
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
-            "Cape de Bain Béb�� Cerf",
+            "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Lapin",
@@ -351,7 +351,7 @@
           "sessions": 500,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:33.392Z"
+          "syncedAt": "2026-05-25T14:38:33.672Z"
         },
         "365": {
           "period": 365,
@@ -511,7 +511,7 @@
           "sessions": 2613,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:34.227Z"
+          "syncedAt": "2026-05-25T14:38:34.333Z"
         }
       }
     },
@@ -520,7 +520,7 @@
         "revenue": 1799,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-05-25T11:45:36.402Z",
+        "syncedAt": "2026-05-25T14:38:35.444Z",
         "allTime": {
           "revenue": 3235,
           "orders": 58
@@ -642,7 +642,7 @@
           "sessions": 100,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:38.105Z"
+          "syncedAt": "2026-05-25T14:38:36.694Z"
         },
         "30": {
           "period": 30,
@@ -795,7 +795,7 @@
           "sessions": 500,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:38.780Z"
+          "syncedAt": "2026-05-25T14:38:37.265Z"
         },
         "90": {
           "period": 90,
@@ -952,7 +952,7 @@
           "sessions": 938,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:39.434Z"
+          "syncedAt": "2026-05-25T14:38:37.779Z"
         },
         "365": {
           "period": 365,
@@ -1109,7 +1109,7 @@
           "sessions": 938,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-25T11:45:40.072Z"
+          "syncedAt": "2026-05-25T14:38:38.393Z"
         }
       }
     }
