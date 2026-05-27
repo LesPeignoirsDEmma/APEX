@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-27T17:53:20.248Z",
+  "lastUpdated": "2026-05-27T20:03:13.369Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 683,
         "orders": 8,
         "currency": "EUR",
-        "syncedAt": "2026-05-27T17:53:24.602Z",
+        "syncedAt": "2026-05-27T20:03:15.459Z",
         "allTime": {
           "revenue": 12412,
           "orders": 200
@@ -91,7 +91,7 @@
           "sessions": 38,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:28.723Z"
+          "syncedAt": "2026-05-27T20:03:18.118Z"
         },
         "30": {
           "period": 30,
@@ -202,7 +202,7 @@
           "sessions": 100,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:29.322Z"
+          "syncedAt": "2026-05-27T20:03:18.769Z"
         },
         "90": {
           "period": 90,
@@ -356,7 +356,7 @@
           "sessions": 500,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:29.944Z"
+          "syncedAt": "2026-05-27T20:03:19.441Z"
         },
         "365": {
           "period": 365,
@@ -516,46 +516,46 @@
           "sessions": 2625,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:30.948Z"
+          "syncedAt": "2026-05-27T20:03:20.096Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1854,
-        "orders": 32,
+        "revenue": 1926,
+        "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-05-27T17:53:36.348Z",
+        "syncedAt": "2026-05-27T20:03:21.552Z",
         "allTime": {
-          "revenue": 3365,
-          "orders": 60
+          "revenue": 3437,
+          "orders": 61
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 276,
-          "orders": 4,
-          "aov": 69,
+          "revenue": 348,
+          "orders": 5,
+          "aov": 70,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 70,
-          "revenueHalf2": 206,
-          "discountOrders": 1,
-          "discountRate": 25,
-          "discountShare": 5,
-          "totalDiscounts": 13,
-          "newCust": 4,
+          "revenueHalf2": 278,
+          "discountOrders": 2,
+          "discountRate": 40,
+          "discountShare": 6,
+          "totalDiscounts": 21,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 46,
+          "avgLTV": 50,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
-              "qty": 1,
-              "revenue": 80
+              "qty": 2,
+              "revenue": 160
             },
             {
               "name": "Kimono Pyjama Homme",
@@ -578,15 +578,15 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 78,
+          "top3RevenueShare": 85,
           "hourly": {
             "16": 3,
-            "18": 1
+            "18": 2
           },
           "daily": {
             "0": 1,
             "1": 1,
-            "3": 1,
+            "3": 2,
             "4": 1
           },
           "totalProducts": 223,
@@ -614,8 +614,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 5,
-          "abandonRate": 20,
+          "totalCheckouts": 6,
+          "abandonRate": 17,
           "abandonedValue": 58,
           "topAbandoned": [
             {
@@ -623,29 +623,29 @@
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 6.3,
+          "sessions": 75,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:37.552Z"
+          "syncedAt": "2026-05-27T20:03:22.638Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1854,
-          "orders": 32,
+          "revenue": 1926,
+          "orders": 33,
           "aov": 58,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 3,
           "revenueHalf1": 770,
-          "revenueHalf2": 1084,
-          "discountOrders": 16,
-          "discountRate": 50,
+          "revenueHalf2": 1155,
+          "discountOrders": 17,
+          "discountRate": 52,
           "discountShare": 5,
-          "totalDiscounts": 98,
-          "newCust": 30,
+          "totalDiscounts": 106,
+          "newCust": 31,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 41,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -654,14 +654,14 @@
               "revenue": 250
             },
             {
+              "name": "Ensemble Kimono Et Pantalon Femme",
+              "qty": 3,
+              "revenue": 240
+            },
+            {
               "name": "Veste Kimono Noir Homme",
               "qty": 4,
               "revenue": 200
-            },
-            {
-              "name": "Ensemble Kimono Et Pantalon Femme",
-              "qty": 2,
-              "revenue": 160
             },
             {
               "name": "Kimono Pyjama Homme",
@@ -699,7 +699,7 @@
               "revenue": 75
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 36,
           "hourly": {
             "5": 2,
             "6": 1,
@@ -712,7 +712,7 @@
             "14": 2,
             "16": 5,
             "17": 3,
-            "18": 4,
+            "18": 5,
             "20": 2,
             "21": 2,
             "22": 1
@@ -721,7 +721,7 @@
             "0": 4,
             "1": 8,
             "2": 4,
-            "3": 6,
+            "3": 7,
             "4": 3,
             "5": 4,
             "6": 3
@@ -751,7 +751,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 40,
+          "totalCheckouts": 41,
           "abandonRate": 20,
           "abandonedValue": 543,
           "topAbandoned": [
@@ -776,29 +776,29 @@
               "count": 1
             }
           ],
-          "sessions": 500,
+          "sessions": 513,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:38.046Z"
+          "syncedAt": "2026-05-27T20:03:23.181Z"
         },
         "90": {
           "period": 90,
-          "revenue": 3365,
-          "orders": 60,
+          "revenue": 3437,
+          "orders": 61,
           "aov": 56,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 2,
           "revenueHalf1": 1059,
-          "revenueHalf2": 2305,
-          "discountOrders": 20,
-          "discountRate": 33,
-          "discountShare": 3,
-          "totalDiscounts": 114,
-          "newCust": 58,
+          "revenueHalf2": 2377,
+          "discountOrders": 21,
+          "discountRate": 34,
+          "discountShare": 4,
+          "totalDiscounts": 122,
+          "newCust": 59,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 33,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -815,6 +815,11 @@
               "name": "Veste Kimono Noir Homme",
               "qty": 5,
               "revenue": 250
+            },
+            {
+              "name": "Ensemble Kimono Et Pantalon Femme",
+              "qty": 3,
+              "revenue": 240
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -842,17 +847,12 @@
               "revenue": 165
             },
             {
-              "name": "Ensemble Kimono Et Pantalon Femme",
-              "qty": 2,
-              "revenue": 160
-            },
-            {
               "name": "Kimono Pyjama Homme",
               "qty": 2,
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 25,
+          "top3RevenueShare": 24,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -868,7 +868,7 @@
             "15": 1,
             "16": 6,
             "17": 5,
-            "18": 6,
+            "18": 7,
             "19": 1,
             "20": 4,
             "21": 5,
@@ -878,7 +878,7 @@
             "0": 12,
             "1": 13,
             "2": 5,
-            "3": 11,
+            "3": 12,
             "4": 7,
             "5": 5,
             "6": 7
@@ -908,7 +908,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 17,
-          "totalCheckouts": 77,
+          "totalCheckouts": 78,
           "abandonRate": 22,
           "abandonedValue": 1239,
           "topAbandoned": [
@@ -933,26 +933,26 @@
               "count": 1
             }
           ],
-          "sessions": 963,
-          "conversionRate": 6.2,
+          "sessions": 975,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:38.542Z"
+          "syncedAt": "2026-05-27T20:03:23.703Z"
         },
         "365": {
           "period": 365,
-          "revenue": 3365,
-          "orders": 60,
+          "revenue": 3437,
+          "orders": 61,
           "aov": 56,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 2,
           "revenueHalf1": 0,
-          "revenueHalf2": 3365,
-          "discountOrders": 20,
-          "discountRate": 33,
-          "discountShare": 3,
-          "totalDiscounts": 114,
-          "newCust": 58,
+          "revenueHalf2": 3437,
+          "discountOrders": 21,
+          "discountRate": 34,
+          "discountShare": 4,
+          "totalDiscounts": 122,
+          "newCust": 59,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 33,
@@ -972,6 +972,11 @@
               "name": "Veste Kimono Noir Homme",
               "qty": 5,
               "revenue": 250
+            },
+            {
+              "name": "Ensemble Kimono Et Pantalon Femme",
+              "qty": 3,
+              "revenue": 240
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -999,17 +1004,12 @@
               "revenue": 165
             },
             {
-              "name": "Ensemble Kimono Et Pantalon Femme",
-              "qty": 2,
-              "revenue": 160
-            },
-            {
               "name": "Kimono Pyjama Homme",
               "qty": 2,
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 25,
+          "top3RevenueShare": 24,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -1025,7 +1025,7 @@
             "15": 1,
             "16": 6,
             "17": 5,
-            "18": 6,
+            "18": 7,
             "19": 1,
             "20": 4,
             "21": 5,
@@ -1035,7 +1035,7 @@
             "0": 12,
             "1": 13,
             "2": 5,
-            "3": 11,
+            "3": 12,
             "4": 7,
             "5": 5,
             "6": 7
@@ -1065,7 +1065,7 @@
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 17,
-          "totalCheckouts": 77,
+          "totalCheckouts": 78,
           "abandonRate": 22,
           "abandonedValue": 1239,
           "topAbandoned": [
@@ -1090,10 +1090,10 @@
               "count": 1
             }
           ],
-          "sessions": 963,
-          "conversionRate": 6.2,
+          "sessions": 975,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-27T17:53:39.045Z"
+          "syncedAt": "2026-05-27T20:03:24.248Z"
         }
       }
     }
