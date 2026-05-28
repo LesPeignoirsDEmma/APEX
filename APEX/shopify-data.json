@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-28T10:46:50.585Z",
+  "lastUpdated": "2026-05-28T14:30:42.097Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 683,
         "orders": 8,
         "currency": "EUR",
-        "syncedAt": "2026-05-28T10:46:53.364Z",
+        "syncedAt": "2026-05-28T14:30:45.281Z",
         "allTime": {
           "revenue": 12412,
           "orders": 200
@@ -85,7 +85,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:46:57.151Z"
+          "syncedAt": "2026-05-28T14:30:50.770Z"
         },
         "30": {
           "period": 30,
@@ -196,7 +196,7 @@
           "sessions": 100,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:46:58.173Z"
+          "syncedAt": "2026-05-28T14:30:51.556Z"
         },
         "90": {
           "period": 90,
@@ -350,7 +350,7 @@
           "sessions": 488,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:46:59.128Z"
+          "syncedAt": "2026-05-28T14:30:52.521Z"
         },
         "365": {
           "period": 365,
@@ -510,7 +510,7 @@
           "sessions": 2625,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:47:00.046Z"
+          "syncedAt": "2026-05-28T14:30:53.349Z"
         }
       }
     },
@@ -519,7 +519,7 @@
         "revenue": 1827,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-05-28T10:47:01.658Z",
+        "syncedAt": "2026-05-28T14:30:55.199Z",
         "allTime": {
           "revenue": 3437,
           "orders": 61
@@ -620,7 +620,7 @@
           "sessions": 75,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:47:03.022Z"
+          "syncedAt": "2026-05-28T14:30:56.989Z"
         },
         "30": {
           "period": 30,
@@ -630,8 +630,8 @@
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 3,
-          "revenueHalf1": 716,
-          "revenueHalf2": 1111,
+          "revenueHalf1": 786,
+          "revenueHalf2": 1041,
           "discountOrders": 15,
           "discountRate": 48,
           "discountShare": 5,
@@ -773,7 +773,7 @@
           "sessions": 500,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:47:03.657Z"
+          "syncedAt": "2026-05-28T14:30:57.653Z"
         },
         "90": {
           "period": 90,
@@ -901,18 +901,14 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 79,
-          "abandonRate": 23,
-          "abandonedValue": 1279,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 78,
+          "abandonRate": 22,
+          "abandonedValue": 1154,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
               "count": 2
-            },
-            {
-              "name": "Manteau Kimono Épais Homme",
-              "count": 1
             },
             {
               "name": "Kimono Abaya Femme",
@@ -925,12 +921,16 @@
             {
               "name": "Cardigan Kimono Coton Homme",
               "count": 1
+            },
+            {
+              "name": "Robe Chinoise Kimono Enfant",
+              "count": 1
             }
           ],
-          "sessions": 988,
-          "conversionRate": 6.2,
+          "sessions": 975,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:47:04.270Z"
+          "syncedAt": "2026-05-28T14:30:58.318Z"
         },
         "365": {
           "period": 365,
@@ -1058,18 +1058,14 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 79,
-          "abandonRate": 23,
-          "abandonedValue": 1279,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 78,
+          "abandonRate": 22,
+          "abandonedValue": 1154,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
               "count": 2
-            },
-            {
-              "name": "Manteau Kimono Épais Homme",
-              "count": 1
             },
             {
               "name": "Kimono Abaya Femme",
@@ -1082,12 +1078,16 @@
             {
               "name": "Cardigan Kimono Coton Homme",
               "count": 1
+            },
+            {
+              "name": "Robe Chinoise Kimono Enfant",
+              "count": 1
             }
           ],
-          "sessions": 988,
-          "conversionRate": 6.2,
+          "sessions": 975,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-05-28T10:47:04.898Z"
+          "syncedAt": "2026-05-28T14:30:59.011Z"
         }
       }
     }
