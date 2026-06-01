@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-01T10:12:56.365Z",
+  "lastUpdated": "2026-06-01T16:32:11.977Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 504,
         "orders": 7,
         "currency": "EUR",
-        "syncedAt": "2026-06-01T10:12:58.152Z",
+        "syncedAt": "2026-06-01T16:32:13.582Z",
         "allTime": {
           "revenue": 12412,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:00.046Z"
+          "syncedAt": "2026-06-01T16:32:15.735Z"
         },
         "30": {
           "period": 30,
@@ -182,7 +182,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:00.897Z"
+          "syncedAt": "2026-06-01T16:32:16.412Z"
         },
         "90": {
           "period": 90,
@@ -336,7 +336,7 @@
           "sessions": 438,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:01.682Z"
+          "syncedAt": "2026-06-01T16:32:17.110Z"
         },
         "365": {
           "period": 365,
@@ -467,10 +467,10 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 7,
-          "totalCheckouts": 210,
+          "abandonedCheckouts": 6,
+          "totalCheckouts": 209,
           "abandonRate": 3,
-          "abandonedValue": 376,
+          "abandonedValue": 336,
           "topAbandoned": [
             {
               "name": "Peignoir Rose Rayé – Femme",
@@ -481,22 +481,22 @@
               "count": 2
             },
             {
-              "name": "Ensemble de Nuit Satin Dentelle Rouge – Femme",
-              "count": 1
-            },
-            {
               "name": "Chaussons d’intérieur — Gris",
               "count": 1
             },
             {
               "name": "Robe Peignoir Coton Léger",
               "count": 1
+            },
+            {
+              "name": "Peignoir Brodé Ours – Enfant",
+              "count": 1
             }
           ],
-          "sessions": 2625,
-          "conversionRate": 7.6,
+          "sessions": 2613,
+          "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:02.627Z"
+          "syncedAt": "2026-06-01T16:32:17.997Z"
         }
       }
     },
@@ -505,7 +505,7 @@
         "revenue": 2158,
         "orders": 36,
         "currency": "EUR",
-        "syncedAt": "2026-06-01T10:13:04.018Z",
+        "syncedAt": "2026-06-01T16:32:19.231Z",
         "allTime": {
           "revenue": 3862,
           "orders": 68
@@ -636,7 +636,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:05.457Z"
+          "syncedAt": "2026-06-01T16:32:20.356Z"
         },
         "30": {
           "period": 30,
@@ -790,7 +790,7 @@
           "sessions": 575,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:06.106Z"
+          "syncedAt": "2026-06-01T16:32:20.893Z"
         },
         "90": {
           "period": 90,
@@ -947,7 +947,7 @@
           "sessions": 1050,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:06.809Z"
+          "syncedAt": "2026-06-01T16:32:21.434Z"
         },
         "365": {
           "period": 365,
@@ -1104,7 +1104,7 @@
           "sessions": 1075,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T10:13:07.430Z"
+          "syncedAt": "2026-06-01T16:32:22.167Z"
         }
       }
     }
