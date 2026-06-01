@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-01T16:32:11.977Z",
+  "lastUpdated": "2026-06-01T20:51:28.824Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 504,
         "orders": 7,
         "currency": "EUR",
-        "syncedAt": "2026-06-01T16:32:13.582Z",
+        "syncedAt": "2026-06-01T20:51:35.332Z",
         "allTime": {
           "revenue": 12412,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:15.735Z"
+          "syncedAt": "2026-06-01T20:51:44.420Z"
         },
         "30": {
           "period": 30,
@@ -182,7 +182,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:16.412Z"
+          "syncedAt": "2026-06-01T20:51:45.037Z"
         },
         "90": {
           "period": 90,
@@ -336,7 +336,7 @@
           "sessions": 438,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:17.110Z"
+          "syncedAt": "2026-06-01T20:51:45.673Z"
         },
         "365": {
           "period": 365,
@@ -496,7 +496,7 @@
           "sessions": 2613,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:17.997Z"
+          "syncedAt": "2026-06-01T20:51:46.678Z"
         }
       }
     },
@@ -505,7 +505,7 @@
         "revenue": 2158,
         "orders": 36,
         "currency": "EUR",
-        "syncedAt": "2026-06-01T16:32:19.231Z",
+        "syncedAt": "2026-06-01T20:51:53.337Z",
         "allTime": {
           "revenue": 3862,
           "orders": 68
@@ -529,7 +529,7 @@
           "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 52,
+          "avgLTV": 48,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -619,11 +619,15 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 12,
-          "abandonRate": 17,
-          "abandonedValue": 98,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 13,
+          "abandonRate": 23,
+          "abandonedValue": 143,
           "topAbandoned": [
+            {
+              "name": "Kimono De Plage Femme Long",
+              "count": 1
+            },
             {
               "name": "Robe De Chambre Kimono Satin",
               "count": 1
@@ -633,10 +637,10 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 6.7,
+          "sessions": 163,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:20.356Z"
+          "syncedAt": "2026-06-01T20:51:55.178Z"
         },
         "30": {
           "period": 30,
@@ -646,8 +650,8 @@
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 3,
-          "revenueHalf1": 1051,
-          "revenueHalf2": 1107,
+          "revenueHalf1": 1101,
+          "revenueHalf2": 1057,
           "discountOrders": 16,
           "discountRate": 44,
           "discountShare": 5,
@@ -655,7 +659,7 @@
           "newCust": 36,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 43,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -761,10 +765,10 @@
             "Chemise Kimono Lin"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 10,
-          "totalCheckouts": 46,
-          "abandonRate": 22,
-          "abandonedValue": 641,
+          "abandonedCheckouts": 11,
+          "totalCheckouts": 47,
+          "abandonRate": 23,
+          "abandonedValue": 686,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Plage",
@@ -787,10 +791,10 @@
               "count": 1
             }
           ],
-          "sessions": 575,
-          "conversionRate": 6.3,
+          "sessions": 588,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:20.893Z"
+          "syncedAt": "2026-06-01T20:51:55.802Z"
         },
         "90": {
           "period": 90,
@@ -809,7 +813,7 @@
           "newCust": 64,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 35,
+          "avgLTV": 34,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -918,10 +922,10 @@
             "Chemise Noire Kimono Femme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 84,
-          "abandonRate": 21,
-          "abandonedValue": 1212,
+          "abandonedCheckouts": 19,
+          "totalCheckouts": 85,
+          "abandonRate": 22,
+          "abandonedValue": 1257,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -944,10 +948,10 @@
               "count": 1
             }
           ],
-          "sessions": 1050,
-          "conversionRate": 6.3,
+          "sessions": 1063,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:21.434Z"
+          "syncedAt": "2026-06-01T20:51:56.452Z"
         },
         "365": {
           "period": 365,
@@ -1075,10 +1079,10 @@
             "Chemise Noire Kimono Femme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 86,
-          "abandonRate": 21,
-          "abandonedValue": 1212,
+          "abandonedCheckouts": 19,
+          "totalCheckouts": 87,
+          "abandonRate": 22,
+          "abandonedValue": 1257,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -1101,10 +1105,10 @@
               "count": 1
             }
           ],
-          "sessions": 1075,
+          "sessions": 1088,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-01T16:32:22.167Z"
+          "syncedAt": "2026-06-01T20:51:56.982Z"
         }
       }
     }
