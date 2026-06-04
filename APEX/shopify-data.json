@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-04T10:56:29.712Z",
+  "lastUpdated": "2026-06-04T13:56:04.782Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 454,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-04T10:56:31.445Z",
+        "syncedAt": "2026-06-04T13:56:06.350Z",
         "allTime": {
           "revenue": 12412,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:33.497Z"
+          "syncedAt": "2026-06-04T13:56:07.966Z"
         },
         "30": {
           "period": 30,
@@ -166,7 +166,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:34.108Z"
+          "syncedAt": "2026-06-04T13:56:08.564Z"
         },
         "90": {
           "period": 90,
@@ -319,7 +319,7 @@
           "sessions": 413,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:34.706Z"
+          "syncedAt": "2026-06-04T13:56:09.187Z"
         },
         "365": {
           "period": 365,
@@ -450,18 +450,18 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 6,
-          "totalCheckouts": 209,
-          "abandonRate": 3,
-          "abandonedValue": 336,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 208,
+          "abandonRate": 2,
+          "abandonedValue": 276,
           "topAbandoned": [
-            {
-              "name": "Peignoir Rose Rayé – Femme",
-              "count": 2
-            },
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "count": 1
             },
             {
               "name": "Chaussons d’intérieur — Gris",
@@ -476,45 +476,50 @@
               "count": 1
             }
           ],
-          "sessions": 2613,
+          "sessions": 2600,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:35.607Z"
+          "syncedAt": "2026-06-04T13:56:10.127Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2269,
-        "orders": 37,
+        "revenue": 2919,
+        "orders": 38,
         "currency": "EUR",
-        "syncedAt": "2026-06-04T10:56:36.543Z",
+        "syncedAt": "2026-06-04T13:56:11.249Z",
         "allTime": {
-          "revenue": 4036,
-          "orders": 71
+          "revenue": 4686,
+          "orders": 72
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 600,
-          "orders": 10,
-          "aov": 60,
+          "revenue": 1249,
+          "orders": 11,
+          "aov": 114,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 426,
-          "revenueHalf2": 174,
+          "revenueHalf2": 823,
           "discountOrders": 4,
-          "discountRate": 40,
-          "discountShare": 5,
-          "totalDiscounts": 29,
-          "newCust": 10,
+          "discountRate": 36,
+          "discountShare": 12,
+          "totalDiscounts": 144,
+          "newCust": 11,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 46,
+          "avgLTV": 89,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Cardigan Kimono Homme Drapé",
+              "qty": 9,
+              "revenue": 764
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 2,
@@ -561,11 +566,12 @@
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 51,
+          "top3RevenueShare": 80,
           "hourly": {
             "8": 1,
             "9": 1,
             "10": 1,
+            "12": 1,
             "14": 2,
             "16": 1,
             "17": 1,
@@ -576,7 +582,7 @@
             "0": 3,
             "2": 1,
             "3": 2,
-            "4": 1,
+            "4": 2,
             "6": 3
           },
           "totalProducts": 223,
@@ -587,7 +593,6 @@
             "Cardigan Homme Façon Kimono",
             "Cardigan Kimono Coton Homme",
             "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
             "Cardigan Kimono Noir Court Femme",
             "Cardigan Style Kimono Homme",
             "Chemise Col Kimono Homme",
@@ -600,12 +605,13 @@
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir",
-            "Chemise Kimono Lin"
+            "Chemise Kimono Lin",
+            "Chemise Kimono Pour Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 13,
-          "abandonRate": 23,
+          "totalCheckouts": 14,
+          "abandonRate": 21,
           "abandonedValue": 143,
           "topAbandoned": [
             {
@@ -621,31 +627,36 @@
               "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 6.1,
+          "sessions": 175,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:37.598Z"
+          "syncedAt": "2026-06-04T13:56:12.358Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2269,
-          "orders": 37,
-          "aov": 61,
+          "revenue": 2919,
+          "orders": 38,
+          "aov": 77,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 3,
           "revenueHalf1": 1322,
-          "revenueHalf2": 947,
+          "revenueHalf2": 1597,
           "discountOrders": 15,
-          "discountRate": 41,
-          "discountShare": 5,
-          "totalDiscounts": 107,
-          "newCust": 37,
+          "discountRate": 39,
+          "discountShare": 8,
+          "totalDiscounts": 221,
+          "newCust": 38,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 44,
+          "avgLTV": 56,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Cardigan Kimono Homme Drapé",
+              "qty": 9,
+              "revenue": 764
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 4,
@@ -690,14 +701,9 @@
               "name": "Chemise Facon Kimono Homme",
               "qty": 1,
               "revenue": 95
-            },
-            {
-              "name": "Robe De Chambre Kimono Satin",
-              "qty": 2,
-              "revenue": 80
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 44,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -705,7 +711,7 @@
             "9": 1,
             "10": 2,
             "11": 1,
-            "12": 1,
+            "12": 2,
             "13": 2,
             "14": 3,
             "16": 5,
@@ -720,7 +726,7 @@
             "1": 5,
             "2": 4,
             "3": 8,
-            "4": 4,
+            "4": 5,
             "5": 4,
             "6": 6
           },
@@ -732,7 +738,6 @@
             "Cardigan Homme Façon Kimono",
             "Cardigan Kimono Coton Homme",
             "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
             "Cardigan Kimono Noir Court Femme",
             "Cardigan Style Kimono Homme",
             "Chemise Col Kimono Homme",
@@ -745,12 +750,13 @@
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir",
-            "Chemise Kimono Lin"
+            "Chemise Kimono Lin",
+            "Chemise Kimono Pour Homme"
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 11,
-          "totalCheckouts": 48,
-          "abandonRate": 23,
+          "totalCheckouts": 49,
+          "abandonRate": 22,
           "abandonedValue": 686,
           "topAbandoned": [
             {
@@ -774,31 +780,36 @@
               "count": 1
             }
           ],
-          "sessions": 600,
+          "sessions": 613,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:38.099Z"
+          "syncedAt": "2026-06-04T13:56:12.850Z"
         },
         "90": {
           "period": 90,
-          "revenue": 3886,
-          "orders": 68,
-          "aov": 57,
+          "revenue": 4536,
+          "orders": 69,
+          "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 1214,
-          "revenueHalf2": 2672,
+          "revenueHalf2": 3322,
           "discountOrders": 25,
-          "discountRate": 37,
-          "discountShare": 4,
-          "totalDiscounts": 151,
-          "newCust": 66,
+          "discountRate": 36,
+          "discountShare": 6,
+          "totalDiscounts": 266,
+          "newCust": 67,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 35,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Cardigan Kimono Homme Drapé",
+              "qty": 9,
+              "revenue": 764
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 6,
@@ -843,14 +854,9 @@
               "name": "Kimono Chinois Fille",
               "qty": 3,
               "revenue": 165
-            },
-            {
-              "name": "Kimono Pyjama Homme",
-              "qty": 2,
-              "revenue": 140
             }
           ],
-          "top3RevenueShare": 26,
+          "top3RevenueShare": 34,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -860,7 +866,7 @@
             "9": 2,
             "10": 3,
             "11": 4,
-            "12": 3,
+            "12": 4,
             "13": 6,
             "14": 4,
             "15": 1,
@@ -877,7 +883,7 @@
             "1": 12,
             "2": 5,
             "3": 14,
-            "4": 8,
+            "4": 9,
             "5": 5,
             "6": 9
           },
@@ -889,7 +895,6 @@
             "Cardigan Homme Façon Kimono",
             "Cardigan Kimono Coton Homme",
             "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
             "Cardigan Kimono Noir Court Femme",
             "Chemise Col Kimono Homme",
             "Chemise Facon Kimono",
@@ -902,11 +907,12 @@
             "Chemise Kimono Homme Noir",
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme",
-            "Chemise Noire Kimono Femme"
+            "Chemise Noire Kimono Femme",
+            "Chemise Style Kimono Femme"
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 87,
+          "totalCheckouts": 88,
           "abandonRate": 22,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -931,31 +937,36 @@
               "count": 1
             }
           ],
-          "sessions": 1088,
+          "sessions": 1100,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:38.612Z"
+          "syncedAt": "2026-06-04T13:56:13.405Z"
         },
         "365": {
           "period": 365,
-          "revenue": 4036,
-          "orders": 71,
-          "aov": 57,
+          "revenue": 4686,
+          "orders": 72,
+          "aov": 65,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 0,
-          "revenueHalf2": 4036,
+          "revenueHalf2": 4686,
           "discountOrders": 25,
           "discountRate": 35,
-          "discountShare": 4,
-          "totalDiscounts": 151,
-          "newCust": 69,
+          "discountShare": 6,
+          "totalDiscounts": 266,
+          "newCust": 70,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 35,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Cardigan Kimono Homme Drapé",
+              "qty": 9,
+              "revenue": 764
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 6,
@@ -1000,14 +1011,9 @@
               "name": "Kimono Chinois Fille",
               "qty": 3,
               "revenue": 165
-            },
-            {
-              "name": "Kimono Pyjama Homme",
-              "qty": 2,
-              "revenue": 140
             }
           ],
-          "top3RevenueShare": 25,
+          "top3RevenueShare": 33,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -1017,7 +1023,7 @@
             "9": 2,
             "10": 4,
             "11": 4,
-            "12": 3,
+            "12": 4,
             "13": 7,
             "14": 4,
             "15": 1,
@@ -1034,7 +1040,7 @@
             "1": 13,
             "2": 6,
             "3": 14,
-            "4": 8,
+            "4": 9,
             "5": 5,
             "6": 10
           },
@@ -1046,7 +1052,6 @@
             "Cardigan Homme Façon Kimono",
             "Cardigan Kimono Coton Homme",
             "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
             "Cardigan Kimono Noir Court Femme",
             "Chemise Col Kimono Homme",
             "Chemise Facon Kimono",
@@ -1059,11 +1064,12 @@
             "Chemise Kimono Homme Noir",
             "Chemise Kimono Pour Homme",
             "Chemise Motif Kimono Homme",
-            "Chemise Noire Kimono Femme"
+            "Chemise Noire Kimono Femme",
+            "Chemise Style Kimono Femme"
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 90,
+          "totalCheckouts": 91,
           "abandonRate": 21,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -1088,10 +1094,10 @@
               "count": 1
             }
           ],
-          "sessions": 1125,
+          "sessions": 1138,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T10:56:39.090Z"
+          "syncedAt": "2026-06-04T13:56:13.956Z"
         }
       }
     }
