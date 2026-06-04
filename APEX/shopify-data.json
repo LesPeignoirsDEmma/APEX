@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-04T13:56:04.782Z",
+  "lastUpdated": "2026-06-04T16:49:48.824Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 454,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-04T13:56:06.350Z",
+        "syncedAt": "2026-06-04T16:49:50.443Z",
         "allTime": {
           "revenue": 12412,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:07.966Z"
+          "syncedAt": "2026-06-04T16:49:52.052Z"
         },
         "30": {
           "period": 30,
@@ -166,7 +166,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:08.564Z"
+          "syncedAt": "2026-06-04T16:49:52.723Z"
         },
         "90": {
           "period": 90,
@@ -319,7 +319,7 @@
           "sessions": 413,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:09.187Z"
+          "syncedAt": "2026-06-04T16:49:53.359Z"
         },
         "365": {
           "period": 365,
@@ -479,40 +479,40 @@
           "sessions": 2600,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:10.127Z"
+          "syncedAt": "2026-06-04T16:49:54.065Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2919,
-        "orders": 38,
+        "revenue": 3080,
+        "orders": 39,
         "currency": "EUR",
-        "syncedAt": "2026-06-04T13:56:11.249Z",
+        "syncedAt": "2026-06-04T16:49:55.302Z",
         "allTime": {
-          "revenue": 4686,
-          "orders": 72
+          "revenue": 4847,
+          "orders": 73
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 1249,
-          "orders": 11,
-          "aov": 114,
+          "revenue": 1410,
+          "orders": 12,
+          "aov": 117,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 426,
-          "revenueHalf2": 823,
-          "discountOrders": 4,
-          "discountRate": 36,
-          "discountShare": 12,
-          "totalDiscounts": 144,
-          "newCust": 11,
+          "revenueHalf2": 984,
+          "discountOrders": 5,
+          "discountRate": 42,
+          "discountShare": 14,
+          "totalDiscounts": 198,
+          "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 89,
+          "avgLTV": 94,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -522,8 +522,8 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 2,
-              "revenue": 140
+              "qty": 3,
+              "revenue": 210
             },
             {
               "name": "Chemise Facon Kimono Homme",
@@ -551,28 +551,29 @@
               "revenue": 60
             },
             {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
+              "name": "Kimono Coton Leger Pour Homme",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
               "name": "Kimono Long Femme Plage",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Veste Kimono Vintage",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
-              "name": "Robe De Chambre Kimono Satin",
-              "qty": 1,
-              "revenue": 40
             }
           ],
-          "top3RevenueShare": 80,
+          "top3RevenueShare": 76,
           "hourly": {
             "8": 1,
             "9": 1,
             "10": 1,
             "12": 1,
             "14": 2,
+            "15": 1,
             "16": 1,
             "17": 1,
             "18": 2,
@@ -582,7 +583,7 @@
             "0": 3,
             "2": 1,
             "3": 2,
-            "4": 2,
+            "4": 3,
             "6": 3
           },
           "totalProducts": 223,
@@ -605,13 +606,13 @@
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir",
-            "Chemise Kimono Lin",
-            "Chemise Kimono Pour Homme"
+            "Chemise Kimono Pour Homme",
+            "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 14,
-          "abandonRate": 21,
+          "totalCheckouts": 15,
+          "abandonRate": 20,
           "abandonedValue": 143,
           "topAbandoned": [
             {
@@ -627,29 +628,29 @@
               "count": 1
             }
           ],
-          "sessions": 175,
-          "conversionRate": 6.3,
+          "sessions": 188,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:12.358Z"
+          "syncedAt": "2026-06-04T16:49:56.463Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2919,
-          "orders": 38,
-          "aov": 77,
+          "revenue": 3080,
+          "orders": 39,
+          "aov": 79,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 3,
           "revenueHalf1": 1322,
-          "revenueHalf2": 1597,
-          "discountOrders": 15,
-          "discountRate": 39,
-          "discountShare": 8,
-          "totalDiscounts": 221,
-          "newCust": 38,
+          "revenueHalf2": 1758,
+          "discountOrders": 16,
+          "discountRate": 41,
+          "discountShare": 9,
+          "totalDiscounts": 275,
+          "newCust": 39,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 56,
+          "avgLTV": 58,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -659,8 +660,13 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 4,
-              "revenue": 280
+              "qty": 5,
+              "revenue": 350
+            },
+            {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 5,
+              "revenue": 250
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
@@ -669,11 +675,6 @@
             },
             {
               "name": "Kimono Long Femme Plage",
-              "qty": 4,
-              "revenue": 200
-            },
-            {
-              "name": "Veste Kimono Noir Homme",
               "qty": 4,
               "revenue": 200
             },
@@ -714,6 +715,7 @@
             "12": 2,
             "13": 2,
             "14": 3,
+            "15": 1,
             "16": 5,
             "17": 4,
             "18": 7,
@@ -726,7 +728,7 @@
             "1": 5,
             "2": 4,
             "3": 8,
-            "4": 5,
+            "4": 6,
             "5": 4,
             "6": 6
           },
@@ -750,12 +752,12 @@
             "Chemise Kimono Femme Grande Taille",
             "Chemise Kimono Homme Japonais",
             "Chemise Kimono Homme Noir",
-            "Chemise Kimono Lin",
-            "Chemise Kimono Pour Homme"
+            "Chemise Kimono Pour Homme",
+            "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 11,
-          "totalCheckouts": 49,
+          "totalCheckouts": 50,
           "abandonRate": 22,
           "abandonedValue": 686,
           "topAbandoned": [
@@ -780,29 +782,29 @@
               "count": 1
             }
           ],
-          "sessions": 613,
+          "sessions": 625,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:12.850Z"
+          "syncedAt": "2026-06-04T16:49:57.033Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4536,
-          "orders": 69,
-          "aov": 66,
+          "revenue": 4697,
+          "orders": 70,
+          "aov": 67,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 1214,
-          "revenueHalf2": 3322,
-          "discountOrders": 25,
-          "discountRate": 36,
-          "discountShare": 6,
-          "totalDiscounts": 266,
-          "newCust": 67,
+          "revenueHalf2": 3483,
+          "discountOrders": 26,
+          "discountRate": 37,
+          "discountShare": 7,
+          "totalDiscounts": 319,
+          "newCust": 68,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 40,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -812,8 +814,8 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 6,
-              "revenue": 419
+              "qty": 7,
+              "revenue": 489
             },
             {
               "name": "Kimono Long Femme Plage",
@@ -821,14 +823,14 @@
               "revenue": 349
             },
             {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 6,
+              "revenue": 299
+            },
+            {
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 4,
               "revenue": 260
-            },
-            {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 5,
-              "revenue": 250
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
@@ -869,7 +871,7 @@
             "12": 4,
             "13": 6,
             "14": 4,
-            "15": 1,
+            "15": 2,
             "16": 7,
             "17": 6,
             "18": 9,
@@ -883,7 +885,7 @@
             "1": 12,
             "2": 5,
             "3": 14,
-            "4": 9,
+            "4": 10,
             "5": 5,
             "6": 9
           },
@@ -912,8 +914,8 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 88,
-          "abandonRate": 22,
+          "totalCheckouts": 89,
+          "abandonRate": 21,
           "abandonedValue": 1257,
           "topAbandoned": [
             {
@@ -937,29 +939,29 @@
               "count": 1
             }
           ],
-          "sessions": 1100,
+          "sessions": 1113,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:13.405Z"
+          "syncedAt": "2026-06-04T16:49:57.628Z"
         },
         "365": {
           "period": 365,
-          "revenue": 4686,
-          "orders": 72,
-          "aov": 65,
+          "revenue": 4847,
+          "orders": 73,
+          "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 0,
-          "revenueHalf2": 4686,
-          "discountOrders": 25,
-          "discountRate": 35,
-          "discountShare": 6,
-          "totalDiscounts": 266,
-          "newCust": 70,
+          "revenueHalf2": 4847,
+          "discountOrders": 26,
+          "discountRate": 36,
+          "discountShare": 7,
+          "totalDiscounts": 319,
+          "newCust": 71,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 40,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -969,8 +971,8 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 6,
-              "revenue": 419
+              "qty": 7,
+              "revenue": 489
             },
             {
               "name": "Kimono Long Femme Plage",
@@ -978,14 +980,14 @@
               "revenue": 349
             },
             {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 6,
+              "revenue": 299
+            },
+            {
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 4,
               "revenue": 260
-            },
-            {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 5,
-              "revenue": 250
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
@@ -1026,7 +1028,7 @@
             "12": 4,
             "13": 7,
             "14": 4,
-            "15": 1,
+            "15": 2,
             "16": 7,
             "17": 6,
             "18": 9,
@@ -1040,7 +1042,7 @@
             "1": 13,
             "2": 6,
             "3": 14,
-            "4": 9,
+            "4": 10,
             "5": 5,
             "6": 10
           },
@@ -1069,7 +1071,7 @@
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 91,
+          "totalCheckouts": 92,
           "abandonRate": 21,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -1094,10 +1096,10 @@
               "count": 1
             }
           ],
-          "sessions": 1138,
+          "sessions": 1150,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-04T13:56:13.956Z"
+          "syncedAt": "2026-06-04T16:49:58.319Z"
         }
       }
     }
