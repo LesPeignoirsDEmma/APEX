@@ -1,44 +1,53 @@
 {
-  "lastUpdated": "2026-06-06T11:19:30.542Z",
+  "lastUpdated": "2026-06-06T13:12:52.229Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 275,
-        "orders": 5,
+        "revenue": 314,
+        "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-06T11:19:32.362Z",
+        "syncedAt": "2026-06-06T13:12:53.889Z",
         "allTime": {
-          "revenue": 12412,
+          "revenue": 12398,
           "orders": 200
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 0,
-          "orders": 0,
-          "aov": 0,
+          "revenue": 40,
+          "orders": 1,
+          "aov": 40,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 0,
+          "revenueHalf2": 40,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 0,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 0,
+          "avgLTV": 40,
           "vipCustomers": 0,
-          "topProducts": [],
-          "top3RevenueShare": 0,
-          "hourly": {},
-          "daily": {},
+          "topProducts": [
+            {
+              "name": "Cape de Bain Bébé Cerf",
+              "qty": 1,
+              "revenue": 40
+            }
+          ],
+          "top3RevenueShare": 100,
+          "hourly": {
+            "13": 1
+          },
+          "daily": {
+            "6": 1
+          },
           "totalProducts": 178,
           "zeroSaleProducts": [
-            "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Koala",
@@ -57,37 +66,38 @@
             "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
-            "Peignoir À Capuche Femme Doux"
+            "Peignoir À Capuche Femme Doux",
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 0,
-          "abandonRate": null,
+          "totalCheckouts": 1,
+          "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": null,
-          "conversionRate": null,
+          "sessions": 13,
+          "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:34.157Z"
+          "syncedAt": "2026-06-06T13:12:55.557Z"
         },
         "30": {
           "period": 30,
-          "revenue": 275,
-          "orders": 5,
-          "aov": 55,
+          "revenue": 314,
+          "orders": 6,
+          "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 160,
-          "revenueHalf2": 115,
+          "revenueHalf2": 155,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 5,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 47,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -106,15 +116,21 @@
               "revenue": 50
             },
             {
+              "name": "Cape de Bain Bébé Cerf",
+              "qty": 1,
+              "revenue": 40
+            },
+            {
               "name": "Peignoir Kimono Effet Soie",
               "qty": 1,
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 86,
+          "top3RevenueShare": 75,
           "hourly": {
             "9": 1,
             "10": 1,
+            "13": 1,
             "14": 1,
             "16": 1,
             "20": 1
@@ -122,11 +138,10 @@
           "daily": {
             "1": 1,
             "3": 3,
-            "6": 1
+            "6": 2
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
-            "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Koala",
@@ -145,34 +160,35 @@
             "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
-            "Peignoir À Capuche Femme Doux"
+            "Peignoir À Capuche Femme Doux",
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 5,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 63,
-          "conversionRate": 7.9,
+          "sessions": 75,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:34.953Z"
+          "syncedAt": "2026-06-06T13:12:56.127Z"
         },
         "90": {
           "period": 90,
-          "revenue": 2000,
-          "orders": 28,
-          "aov": 71,
+          "revenue": 2040,
+          "orders": 29,
+          "aov": 70,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1317,
-          "revenueHalf2": 683,
+          "revenueHalf2": 723,
           "discountOrders": 12,
-          "discountRate": 43,
+          "discountRate": 41,
           "discountShare": 4,
           "totalDiscounts": 86,
-          "newCust": 26,
+          "newCust": 27,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 31,
@@ -229,7 +245,7 @@
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 32,
           "hourly": {
             "6": 2,
             "7": 2,
@@ -238,7 +254,7 @@
             "10": 2,
             "11": 3,
             "12": 1,
-            "13": 1,
+            "13": 2,
             "14": 1,
             "15": 2,
             "16": 1,
@@ -254,11 +270,10 @@
             "3": 7,
             "4": 3,
             "5": 7,
-            "6": 4
+            "6": 5
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
-            "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Lapin",
@@ -277,11 +292,12 @@
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
             "Peignoir Baroque - Femme",
-            "Peignoir Baroque - Homme"
+            "Peignoir Baroque - Homme",
+            "Peignoir Bébé Blanc"
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 33,
+          "totalCheckouts": 34,
           "abandonRate": 15,
           "abandonedValue": 276,
           "topAbandoned": [
@@ -306,25 +322,25 @@
               "count": 1
             }
           ],
-          "sessions": 413,
+          "sessions": 425,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:35.841Z"
+          "syncedAt": "2026-06-06T13:12:56.696Z"
         },
         "365": {
           "period": 365,
-          "revenue": 12412,
+          "revenue": 12398,
           "orders": 200,
           "aov": 62,
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
           "revenueHalf1": 0,
-          "revenueHalf2": 12412,
-          "discountOrders": 127,
-          "discountRate": 64,
+          "revenueHalf2": 12398,
+          "discountOrders": 126,
+          "discountRate": 63,
           "discountShare": 9,
-          "totalDiscounts": 1138,
+          "totalDiscounts": 1132,
           "newCust": 196,
           "returning": 2,
           "avgOrdersPerRepeat": "2.0",
@@ -333,8 +349,8 @@
           "topProducts": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "qty": 53,
-              "revenue": 3175
+              "qty": 52,
+              "revenue": 3115
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
@@ -392,10 +408,10 @@
             "7": 4,
             "8": 6,
             "9": 14,
-            "10": 7,
+            "10": 6,
             "11": 14,
             "12": 8,
-            "13": 9,
+            "13": 10,
             "14": 17,
             "15": 15,
             "16": 13,
@@ -410,11 +426,11 @@
           "daily": {
             "0": 28,
             "1": 25,
-            "2": 39,
+            "2": 38,
             "3": 36,
             "4": 22,
             "5": 31,
-            "6": 19
+            "6": 20
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -469,40 +485,40 @@
           "sessions": 2600,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:36.661Z"
+          "syncedAt": "2026-06-06T13:12:57.473Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2981,
-        "orders": 37,
+        "revenue": 3030,
+        "orders": 38,
         "currency": "EUR",
-        "syncedAt": "2026-06-06T11:19:38.321Z",
+        "syncedAt": "2026-06-06T13:12:58.557Z",
         "allTime": {
-          "revenue": 4847,
-          "orders": 73
+          "revenue": 4896,
+          "orders": 74
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 1325,
-          "orders": 11,
-          "aov": 120,
+          "revenue": 1374,
+          "orders": 12,
+          "aov": 114,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 410,
-          "revenueHalf2": 914,
-          "discountOrders": 4,
-          "discountRate": 36,
+          "revenueHalf2": 964,
+          "discountOrders": 5,
+          "discountRate": 42,
           "discountShare": 14,
-          "totalDiscounts": 188,
-          "newCust": 11,
+          "totalDiscounts": 194,
+          "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 102,
+          "avgLTV": 98,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -536,6 +552,11 @@
               "revenue": 60
             },
             {
+              "name": "Kimono Chinois Fille",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
               "name": "Veste Kimono Noir Homme",
               "qty": 1,
               "revenue": 50
@@ -549,19 +570,14 @@
               "name": "Kimono Long Femme Plage",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Veste Kimono Vintage",
-              "qty": 1,
-              "revenue": 50
             }
           ],
-          "top3RevenueShare": 79,
+          "top3RevenueShare": 76,
           "hourly": {
             "8": 1,
             "9": 1,
             "10": 1,
-            "12": 1,
+            "12": 2,
             "14": 2,
             "15": 1,
             "17": 1,
@@ -573,7 +589,7 @@
             "2": 1,
             "3": 2,
             "4": 2,
-            "6": 3
+            "6": 4
           },
           "totalProducts": 223,
           "zeroSaleProducts": [
@@ -600,8 +616,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 13,
-          "abandonRate": 15,
+          "totalCheckouts": 14,
+          "abandonRate": 14,
           "abandonedValue": 103,
           "topAbandoned": [
             {
@@ -613,29 +629,29 @@
               "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 6.7,
+          "sessions": 175,
+          "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:39.818Z"
+          "syncedAt": "2026-06-06T13:12:59.603Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2981,
-          "orders": 37,
-          "aov": 81,
+          "revenue": 3030,
+          "orders": 38,
+          "aov": 80,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1293,
-          "revenueHalf2": 1688,
-          "discountOrders": 14,
-          "discountRate": 38,
+          "revenueHalf2": 1737,
+          "discountOrders": 15,
+          "discountRate": 39,
           "discountShare": 9,
-          "totalDiscounts": 264,
-          "newCust": 37,
+          "totalDiscounts": 270,
+          "newCust": 38,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 61,
+          "avgLTV": 60,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -689,7 +705,7 @@
               "revenue": 95
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 45,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -697,7 +713,7 @@
             "9": 1,
             "10": 2,
             "11": 1,
-            "12": 1,
+            "12": 2,
             "13": 2,
             "14": 3,
             "15": 1,
@@ -715,7 +731,7 @@
             "3": 6,
             "4": 6,
             "5": 4,
-            "6": 6
+            "6": 7
           },
           "totalProducts": 223,
           "zeroSaleProducts": [
@@ -742,7 +758,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 47,
+          "totalCheckouts": 48,
           "abandonRate": 21,
           "abandonedValue": 641,
           "topAbandoned": [
@@ -767,26 +783,26 @@
               "count": 1
             }
           ],
-          "sessions": 588,
+          "sessions": 600,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:40.458Z"
+          "syncedAt": "2026-06-06T13:13:00.089Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4537,
-          "orders": 68,
-          "aov": 67,
+          "revenue": 4587,
+          "orders": 69,
+          "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 1055,
-          "revenueHalf2": 3483,
-          "discountOrders": 26,
-          "discountRate": 38,
+          "revenueHalf2": 3532,
+          "discountOrders": 27,
+          "discountRate": 39,
           "discountShare": 7,
-          "totalDiscounts": 319,
-          "newCust": 66,
+          "totalDiscounts": 325,
+          "newCust": 67,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 41,
@@ -823,17 +839,17 @@
               "revenue": 240
             },
             {
+              "name": "Kimono Chinois Fille",
+              "qty": 4,
+              "revenue": 220
+            },
+            {
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 4,
               "revenue": 175
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
-              "qty": 3,
-              "revenue": 165
-            },
-            {
-              "name": "Kimono Chinois Fille",
               "qty": 3,
               "revenue": 165
             },
@@ -853,7 +869,7 @@
             "9": 2,
             "10": 3,
             "11": 4,
-            "12": 4,
+            "12": 5,
             "13": 6,
             "14": 4,
             "15": 2,
@@ -871,7 +887,7 @@
             "3": 14,
             "4": 10,
             "5": 5,
-            "6": 7
+            "6": 8
           },
           "totalProducts": 223,
           "zeroSaleProducts": [
@@ -898,7 +914,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 87,
+          "totalCheckouts": 88,
           "abandonRate": 22,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -923,26 +939,26 @@
               "count": 1
             }
           ],
-          "sessions": 1088,
+          "sessions": 1100,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:41.218Z"
+          "syncedAt": "2026-06-06T13:13:00.601Z"
         },
         "365": {
           "period": 365,
-          "revenue": 4847,
-          "orders": 73,
+          "revenue": 4896,
+          "orders": 74,
           "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 0,
-          "revenueHalf2": 4847,
-          "discountOrders": 26,
+          "revenueHalf2": 4896,
+          "discountOrders": 27,
           "discountRate": 36,
           "discountShare": 7,
-          "totalDiscounts": 319,
-          "newCust": 71,
+          "totalDiscounts": 325,
+          "newCust": 72,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 41,
@@ -979,6 +995,11 @@
               "revenue": 240
             },
             {
+              "name": "Kimono Chinois Fille",
+              "qty": 4,
+              "revenue": 220
+            },
+            {
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 4,
               "revenue": 175
@@ -990,11 +1011,6 @@
             },
             {
               "name": "Kimono Chinois Rouge",
-              "qty": 3,
-              "revenue": 165
-            },
-            {
-              "name": "Kimono Chinois Fille",
               "qty": 3,
               "revenue": 165
             }
@@ -1009,7 +1025,7 @@
             "9": 2,
             "10": 4,
             "11": 4,
-            "12": 4,
+            "12": 5,
             "13": 7,
             "14": 4,
             "15": 2,
@@ -1028,7 +1044,7 @@
             "3": 14,
             "4": 10,
             "5": 5,
-            "6": 10
+            "6": 11
           },
           "totalProducts": 223,
           "zeroSaleProducts": [
@@ -1055,8 +1071,8 @@
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 92,
-          "abandonRate": 21,
+          "totalCheckouts": 93,
+          "abandonRate": 20,
           "abandonedValue": 1257,
           "topAbandoned": [
             {
@@ -1080,10 +1096,10 @@
               "count": 1
             }
           ],
-          "sessions": 1150,
-          "conversionRate": 6.3,
+          "sessions": 1163,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-06T11:19:41.899Z"
+          "syncedAt": "2026-06-06T13:13:01.132Z"
         }
       }
     }
