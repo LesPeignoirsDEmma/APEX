@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-07T22:56:03.125Z",
+  "lastUpdated": "2026-06-08T00:01:49.385Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 314,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-07T22:56:04.754Z",
+        "syncedAt": "2026-06-08T00:01:51.196Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:06.561Z"
+          "syncedAt": "2026-06-08T00:01:52.915Z"
         },
         "30": {
           "period": 30,
@@ -172,23 +172,23 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:07.363Z"
+          "syncedAt": "2026-06-08T00:01:53.659Z"
         },
         "90": {
           "period": 90,
-          "revenue": 2040,
-          "orders": 29,
-          "aov": 70,
+          "revenue": 1977,
+          "orders": 28,
+          "aov": 71,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1317,
+          "revenueHalf1": 1254,
           "revenueHalf2": 723,
-          "discountOrders": 12,
-          "discountRate": 41,
+          "discountOrders": 11,
+          "discountRate": 39,
           "discountShare": 4,
-          "totalDiscounts": 86,
-          "newCust": 27,
+          "totalDiscounts": 79,
+          "newCust": 26,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 32,
@@ -196,8 +196,8 @@
           "topProducts": [
             {
               "name": "Peignoir Femme Flanelle",
-              "qty": 4,
-              "revenue": 280
+              "qty": 3,
+              "revenue": 210
             },
             {
               "name": "Peignoir Kimono Effet Soie",
@@ -245,11 +245,11 @@
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 30,
           "hourly": {
             "6": 2,
             "7": 2,
-            "8": 3,
+            "8": 2,
             "9": 3,
             "10": 2,
             "11": 3,
@@ -265,7 +265,7 @@
           },
           "daily": {
             "0": 1,
-            "1": 3,
+            "1": 2,
             "2": 3,
             "3": 7,
             "4": 3,
@@ -296,18 +296,14 @@
             "Peignoir Bébé Blanc"
           ],
           "newProductsAdded": 1,
-          "abandonedCheckouts": 5,
-          "totalCheckouts": 34,
-          "abandonRate": 15,
-          "abandonedValue": 276,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 32,
+          "abandonRate": 13,
+          "abandonedValue": 222,
           "topAbandoned": [
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
-            },
-            {
-              "name": "Peignoir Rose Rayé – Femme",
-              "count": 1
             },
             {
               "name": "Chaussons d’intérieur — Gris",
@@ -322,10 +318,10 @@
               "count": 1
             }
           ],
-          "sessions": 425,
-          "conversionRate": 6.8,
+          "sessions": 400,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:08.157Z"
+          "syncedAt": "2026-06-08T00:01:54.471Z"
         },
         "365": {
           "period": 365,
@@ -485,16 +481,16 @@
           "sessions": 2600,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:09.247Z"
+          "syncedAt": "2026-06-08T00:01:55.356Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2985,
-        "orders": 37,
+        "revenue": 2773,
+        "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-06-07T22:56:10.303Z",
+        "syncedAt": "2026-06-08T00:01:56.508Z",
         "allTime": {
           "revenue": 4896,
           "orders": 74
@@ -503,22 +499,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 1221,
-          "orders": 9,
-          "aov": 136,
+          "revenue": 1034,
+          "orders": 6,
+          "aov": 172,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 361,
+          "revenueHalf1": 174,
           "revenueHalf2": 860,
-          "discountOrders": 4,
-          "discountRate": 44,
-          "discountShare": 15,
-          "totalDiscounts": 187,
-          "newCust": 9,
+          "discountOrders": 3,
+          "discountRate": 50,
+          "discountShare": 17,
+          "totalDiscounts": 180,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 122,
+          "avgLTV": 148,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -528,21 +524,11 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 3,
-              "revenue": 210
-            },
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "qty": 1,
-              "revenue": 65
+              "qty": 2,
+              "revenue": 140
             },
             {
               "name": "Kimono Multi Color Femme",
-              "qty": 1,
-              "revenue": 60
-            },
-            {
-              "name": "Kimono Rouge Enfant",
               "qty": 1,
               "revenue": 60
             },
@@ -572,18 +558,14 @@
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 85,
+          "top3RevenueShare": 93,
           "hourly": {
-            "8": 1,
-            "10": 1,
             "12": 2,
             "15": 1,
             "17": 1,
-            "18": 2,
-            "21": 1
+            "18": 2
           },
           "daily": {
-            "0": 3,
             "2": 1,
             "3": 2,
             "4": 2,
@@ -614,8 +596,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 10,
-          "abandonRate": 10,
+          "totalCheckouts": 7,
+          "abandonRate": 14,
           "abandonedValue": 45,
           "topAbandoned": [
             {
@@ -623,26 +605,26 @@
               "count": 1
             }
           ],
-          "sessions": 125,
-          "conversionRate": 7.2,
+          "sessions": 88,
+          "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:11.641Z"
+          "syncedAt": "2026-06-08T00:01:57.920Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2985,
-          "orders": 37,
-          "aov": 81,
+          "revenue": 2773,
+          "orders": 34,
+          "aov": 82,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1248,
+          "revenueHalf1": 1035,
           "revenueHalf2": 1737,
-          "discountOrders": 14,
+          "discountOrders": 13,
           "discountRate": 38,
           "discountShare": 9,
-          "totalDiscounts": 265,
-          "newCust": 37,
+          "totalDiscounts": 258,
+          "newCust": 34,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 61,
@@ -655,13 +637,8 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 5,
-              "revenue": 350
-            },
-            {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 5,
-              "revenue": 250
+              "qty": 4,
+              "revenue": 280
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
@@ -672,6 +649,11 @@
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 3,
               "revenue": 195
+            },
+            {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 3,
+              "revenue": 150
             },
             {
               "name": "Kimono Pyjama Homme",
@@ -703,13 +685,13 @@
           "hourly": {
             "6": 1,
             "7": 1,
-            "8": 3,
+            "8": 2,
             "9": 1,
             "10": 2,
             "11": 1,
             "12": 2,
-            "13": 2,
-            "14": 3,
+            "13": 1,
+            "14": 2,
             "15": 1,
             "16": 5,
             "17": 3,
@@ -724,7 +706,7 @@
             "2": 4,
             "3": 6,
             "4": 5,
-            "5": 4,
+            "5": 1,
             "6": 7
           },
           "totalProducts": 223,
@@ -752,8 +734,8 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 47,
-          "abandonRate": 21,
+          "totalCheckouts": 44,
+          "abandonRate": 23,
           "abandonedValue": 641,
           "topAbandoned": [
             {
@@ -777,10 +759,10 @@
               "count": 1
             }
           ],
-          "sessions": 588,
-          "conversionRate": 6.3,
+          "sessions": 550,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:12.301Z"
+          "syncedAt": "2026-06-08T00:01:58.640Z"
         },
         "90": {
           "period": 90,
@@ -936,7 +918,7 @@
           "sessions": 1075,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:12.989Z"
+          "syncedAt": "2026-06-08T00:01:59.301Z"
         },
         "365": {
           "period": 365,
@@ -1093,7 +1075,7 @@
           "sessions": 1163,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-07T22:56:13.680Z"
+          "syncedAt": "2026-06-08T00:02:00.088Z"
         }
       }
     }
