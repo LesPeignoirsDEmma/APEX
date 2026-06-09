@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-08T23:58:23.151Z",
+  "lastUpdated": "2026-06-09T03:37:01.318Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 314,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-08T23:58:24.507Z",
+        "syncedAt": "2026-06-09T03:37:02.724Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:26.296Z"
+          "syncedAt": "2026-06-09T03:37:04.685Z"
         },
         "30": {
           "period": 30,
@@ -172,7 +172,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:26.883Z"
+          "syncedAt": "2026-06-09T03:37:05.310Z"
         },
         "90": {
           "period": 90,
@@ -191,7 +191,7 @@
           "newCust": 26,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 32,
+          "avgLTV": 33,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -321,7 +321,7 @@
           "sessions": 400,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:27.630Z"
+          "syncedAt": "2026-06-09T03:37:05.911Z"
         },
         "365": {
           "period": 365,
@@ -481,16 +481,16 @@
           "sessions": 2600,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:28.212Z"
+          "syncedAt": "2026-06-09T03:37:06.682Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2773,
-        "orders": 34,
+        "revenue": 2714,
+        "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-06-08T23:58:29.287Z",
+        "syncedAt": "2026-06-09T03:37:07.569Z",
         "allTime": {
           "revenue": 4896,
           "orders": 74
@@ -514,7 +514,7 @@
           "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 148,
+          "avgLTV": 172,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -595,36 +595,31 @@
             "Chemise Kimono Pour Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 7,
-          "abandonRate": 14,
-          "abandonedValue": 45,
-          "topAbandoned": [
-            {
-              "name": "Kimono De Plage Femme Long",
-              "count": 1
-            }
-          ],
-          "sessions": 88,
-          "conversionRate": 6.8,
+          "abandonedCheckouts": 0,
+          "totalCheckouts": 6,
+          "abandonRate": 0,
+          "abandonedValue": 0,
+          "topAbandoned": [],
+          "sessions": 75,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:30.313Z"
+          "syncedAt": "2026-06-09T03:37:08.908Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2773,
-          "orders": 34,
+          "revenue": 2714,
+          "orders": 33,
           "aov": 82,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1112,
+          "revenueHalf1": 1053,
           "revenueHalf2": 1661,
-          "discountOrders": 13,
-          "discountRate": 38,
+          "discountOrders": 12,
+          "discountRate": 36,
           "discountShare": 9,
-          "totalDiscounts": 258,
-          "newCust": 34,
+          "totalDiscounts": 251,
+          "newCust": 33,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 61,
@@ -646,11 +641,6 @@
               "revenue": 240
             },
             {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "qty": 3,
-              "revenue": 195
-            },
-            {
               "name": "Veste Kimono Noir Homme",
               "qty": 3,
               "revenue": 150
@@ -659,6 +649,11 @@
               "name": "Kimono Pyjama Homme",
               "qty": 2,
               "revenue": 140
+            },
+            {
+              "name": "Peignoir Kimono Femme En Satin Long",
+              "qty": 2,
+              "revenue": 130
             },
             {
               "name": "Manteau Kimono Épais Homme",
@@ -681,7 +676,7 @@
               "revenue": 95
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 47,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -696,7 +691,7 @@
             "16": 5,
             "17": 3,
             "18": 7,
-            "20": 2,
+            "20": 1,
             "21": 2,
             "22": 1
           },
@@ -707,7 +702,7 @@
             "3": 6,
             "4": 5,
             "5": 1,
-            "6": 7
+            "6": 6
           },
           "totalProducts": 223,
           "zeroSaleProducts": [
@@ -734,7 +729,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 10,
-          "totalCheckouts": 44,
+          "totalCheckouts": 43,
           "abandonRate": 23,
           "abandonedValue": 641,
           "topAbandoned": [
@@ -759,10 +754,10 @@
               "count": 1
             }
           ],
-          "sessions": 550,
-          "conversionRate": 6.2,
+          "sessions": 538,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:30.803Z"
+          "syncedAt": "2026-06-09T03:37:09.361Z"
         },
         "90": {
           "period": 90,
@@ -918,7 +913,7 @@
           "sessions": 1075,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:31.319Z"
+          "syncedAt": "2026-06-09T03:37:09.854Z"
         },
         "365": {
           "period": 365,
@@ -1075,7 +1070,7 @@
           "sessions": 1163,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-08T23:58:31.813Z"
+          "syncedAt": "2026-06-09T03:37:10.386Z"
         }
       }
     }
