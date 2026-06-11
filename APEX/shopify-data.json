@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-10T22:48:17.951Z",
+  "lastUpdated": "2026-06-11T00:10:13.467Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 314,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-10T22:48:26.800Z",
+        "syncedAt": "2026-06-11T00:10:15.016Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:28.603Z"
+          "syncedAt": "2026-06-11T00:10:16.813Z"
         },
         "30": {
           "period": 30,
@@ -172,33 +172,28 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:29.355Z"
+          "syncedAt": "2026-06-11T00:10:17.469Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1872,
-          "orders": 26,
+          "revenue": 1802,
+          "orders": 25,
           "aov": 72,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1149,
+          "revenueHalf1": 1079,
           "revenueHalf2": 723,
           "discountOrders": 10,
-          "discountRate": 38,
+          "discountRate": 40,
           "discountShare": 4,
           "totalDiscounts": 74,
-          "newCust": 24,
+          "newCust": 23,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 33,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 3,
-              "revenue": 210
-            },
             {
               "name": "Peignoir Kimono Effet Soie",
               "qty": 5,
@@ -208,6 +203,11 @@
               "name": "Peignoir Polaire Luxe - Homme",
               "qty": 2,
               "revenue": 160
+            },
+            {
+              "name": "Peignoir Femme Flanelle",
+              "qty": 2,
+              "revenue": 140
             },
             {
               "name": "Peignoir Satin Très Long – Femme",
@@ -245,7 +245,7 @@
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 30,
+          "top3RevenueShare": 28,
           "hourly": {
             "6": 2,
             "7": 2,
@@ -260,7 +260,6 @@
             "16": 1,
             "19": 1,
             "20": 3,
-            "22": 1,
             "23": 2
           },
           "daily": {
@@ -268,7 +267,7 @@
             "1": 2,
             "2": 3,
             "3": 5,
-            "4": 3,
+            "4": 2,
             "5": 7,
             "6": 5
           },
@@ -297,8 +296,8 @@
           ],
           "newProductsAdded": 1,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 29,
-          "abandonRate": 10,
+          "totalCheckouts": 28,
+          "abandonRate": 11,
           "abandonedValue": 202,
           "topAbandoned": [
             {
@@ -314,10 +313,10 @@
               "count": 1
             }
           ],
-          "sessions": 363,
-          "conversionRate": 7.2,
+          "sessions": 350,
+          "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:30.136Z"
+          "syncedAt": "2026-06-11T00:10:18.168Z"
         },
         "365": {
           "period": 365,
@@ -327,8 +326,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 650,
-          "revenueHalf2": 11747,
+          "revenueHalf1": 878,
+          "revenueHalf2": 11520,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -473,16 +472,16 @@
           "sessions": 2588,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:31.189Z"
+          "syncedAt": "2026-06-11T00:10:19.113Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2739,
-        "orders": 34,
+        "revenue": 2640,
+        "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-10T22:48:32.488Z",
+        "syncedAt": "2026-06-11T00:10:20.639Z",
         "allTime": {
           "revenue": 4921,
           "orders": 75
@@ -491,22 +490,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 989,
-          "orders": 6,
-          "aov": 165,
+          "revenue": 885,
+          "orders": 4,
+          "aov": 221,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 964,
+          "revenueHalf1": 860,
           "revenueHalf2": 25,
-          "discountOrders": 3,
+          "discountOrders": 2,
           "discountRate": 50,
-          "discountShare": 18,
-          "totalDiscounts": 180,
-          "newCust": 6,
+          "discountShare": 20,
+          "totalDiscounts": 174,
+          "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 165,
+          "avgLTV": 221,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -518,11 +517,6 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
               "revenue": 70
-            },
-            {
-              "name": "Kimono Multi Color Femme",
-              "qty": 1,
-              "revenue": 60
             },
             {
               "name": "Kimono Chinois Fille",
@@ -540,11 +534,6 @@
               "revenue": 50
             },
             {
-              "name": "Kimono Long Femme Plage",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
               "name": "Chemise Kimono Lin",
               "qty": 1,
               "revenue": 45
@@ -555,17 +544,14 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 90,
+          "top3RevenueShare": 100,
           "hourly": {
             "12": 2,
             "15": 1,
-            "17": 1,
-            "18": 1,
             "19": 1
           },
           "daily": {
             "2": 1,
-            "3": 2,
             "4": 2,
             "6": 1
           },
@@ -594,33 +580,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 6,
+          "totalCheckouts": 4,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 75,
+          "sessions": 50,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:34.249Z"
+          "syncedAt": "2026-06-11T00:10:22.263Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2739,
-          "orders": 34,
-          "aov": 81,
+          "revenue": 2640,
+          "orders": 32,
+          "aov": 82,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1133,
+          "revenueHalf1": 1034,
           "revenueHalf2": 1606,
-          "discountOrders": 12,
-          "discountRate": 35,
+          "discountOrders": 11,
+          "discountRate": 34,
           "discountShare": 9,
-          "totalDiscounts": 251,
-          "newCust": 34,
+          "totalDiscounts": 246,
+          "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 61,
+          "avgLTV": 65,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -639,11 +625,6 @@
               "revenue": 240
             },
             {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 3,
-              "revenue": 150
-            },
-            {
               "name": "Kimono Pyjama Homme",
               "qty": 2,
               "revenue": 140
@@ -657,6 +638,11 @@
               "name": "Manteau Kimono Épais Homme",
               "qty": 1,
               "revenue": 125
+            },
+            {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 2,
+              "revenue": 100
             },
             {
               "name": "Kimono Long Femme Plage",
@@ -674,7 +660,7 @@
               "revenue": 95
             }
           ],
-          "top3RevenueShare": 47,
+          "top3RevenueShare": 49,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -687,16 +673,15 @@
             "14": 2,
             "15": 1,
             "16": 5,
-            "17": 3,
+            "17": 2,
             "18": 7,
             "19": 1,
             "20": 1,
-            "21": 2,
-            "22": 1
+            "21": 2
           },
           "daily": {
             "0": 6,
-            "1": 5,
+            "1": 3,
             "2": 5,
             "3": 6,
             "4": 5,
@@ -727,36 +712,36 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 9,
-          "totalCheckouts": 43,
-          "abandonRate": 21,
-          "abandonedValue": 581,
+          "abandonedCheckouts": 7,
+          "totalCheckouts": 39,
+          "abandonRate": 18,
+          "abandonedValue": 379,
           "topAbandoned": [
-            {
-              "name": "Kimono Paon Vert",
-              "count": 1
-            },
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "count": 1
-            },
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "count": 1
-            },
-            {
-              "name": "Ensemble Pyjama Style Kimono",
-              "count": 1
-            },
             {
               "name": "Kimono Japonais Enfant Fille",
               "count": 1
+            },
+            {
+              "name": "Ensemble Kimono Enfant",
+              "count": 1
+            },
+            {
+              "name": "Kimono De Plage Femme Long",
+              "count": 1
+            },
+            {
+              "name": "Floral Kimono Top",
+              "count": 1
+            },
+            {
+              "name": "Kimono Japonais Sakura",
+              "count": 1
             }
           ],
-          "sessions": 538,
-          "conversionRate": 6.3,
+          "sessions": 488,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:34.879Z"
+          "syncedAt": "2026-06-11T00:10:22.821Z"
         },
         "90": {
           "period": 90,
@@ -913,7 +898,7 @@
           "sessions": 1075,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:35.555Z"
+          "syncedAt": "2026-06-11T00:10:23.786Z"
         },
         "365": {
           "period": 365,
@@ -1070,7 +1055,7 @@
           "sessions": 1175,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-10T22:48:36.221Z"
+          "syncedAt": "2026-06-11T00:10:24.651Z"
         }
       }
     }
