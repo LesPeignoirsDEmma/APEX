@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-12T11:37:29.020Z",
+  "lastUpdated": "2026-06-12T14:39:06.702Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 314,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-12T11:37:30.708Z",
+        "syncedAt": "2026-06-12T14:39:08.222Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:32.465Z"
+          "syncedAt": "2026-06-12T14:39:18.861Z"
         },
         "30": {
           "period": 30,
@@ -172,7 +172,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:33.097Z"
+          "syncedAt": "2026-06-12T14:39:19.424Z"
         },
         "90": {
           "period": 90,
@@ -316,7 +316,7 @@
           "sessions": 338,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:33.683Z"
+          "syncedAt": "2026-06-12T14:39:19.998Z"
         },
         "365": {
           "period": 365,
@@ -468,42 +468,47 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:34.269Z"
+          "syncedAt": "2026-06-12T14:39:20.661Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2645,
-        "orders": 32,
+        "revenue": 2755,
+        "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-06-12T11:37:35.290Z",
+        "syncedAt": "2026-06-12T14:39:26.210Z",
         "allTime": {
-          "revenue": 4971,
-          "orders": 76
+          "revenue": 5081,
+          "orders": 77
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 124,
-          "orders": 3,
-          "aov": 41,
+          "revenue": 234,
+          "orders": 4,
+          "aov": 59,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 49,
-          "revenueHalf2": 75,
+          "revenueHalf2": 185,
           "discountOrders": 1,
-          "discountRate": 33,
-          "discountShare": 4,
+          "discountRate": 25,
+          "discountShare": 2,
           "totalDiscounts": 5,
-          "newCust": 3,
+          "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 41,
+          "avgLTV": 59,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Kimono Femme Paillette",
+              "qty": 1,
+              "revenue": 110
+            },
             {
               "name": "Kimono Chinois Fille",
               "qty": 1,
@@ -520,15 +525,16 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 105,
+          "top3RevenueShare": 92,
           "hourly": {
             "12": 1,
-            "14": 1,
+            "14": 2,
             "19": 1
           },
           "daily": {
             "2": 1,
             "4": 1,
+            "5": 1,
             "6": 1
           },
           "totalProducts": 223,
@@ -556,33 +562,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 3,
+          "totalCheckouts": 4,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 38,
-          "conversionRate": 7.9,
+          "sessions": 50,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:36.645Z"
+          "syncedAt": "2026-06-12T14:39:28.496Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2645,
-          "orders": 32,
+          "revenue": 2755,
+          "orders": 33,
           "aov": 83,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1111,
-          "revenueHalf2": 1534,
+          "revenueHalf2": 1644,
           "discountOrders": 10,
-          "discountRate": 31,
+          "discountRate": 30,
           "discountShare": 9,
           "totalDiscounts": 241,
-          "newCust": 32,
+          "newCust": 33,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 68,
+          "avgLTV": 69,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -616,6 +622,11 @@
               "revenue": 125
             },
             {
+              "name": "Kimono Femme Paillette",
+              "qty": 1,
+              "revenue": 110
+            },
+            {
               "name": "Veste Kimono Noir Homme",
               "qty": 2,
               "revenue": 100
@@ -629,14 +640,9 @@
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 2,
               "revenue": 100
-            },
-            {
-              "name": "Chemise Facon Kimono Homme",
-              "qty": 1,
-              "revenue": 95
             }
           ],
-          "top3RevenueShare": 49,
+          "top3RevenueShare": 47,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -646,7 +652,7 @@
             "11": 1,
             "12": 2,
             "13": 1,
-            "14": 3,
+            "14": 4,
             "15": 1,
             "16": 5,
             "17": 2,
@@ -661,7 +667,7 @@
             "2": 4,
             "3": 6,
             "4": 6,
-            "5": 1,
+            "5": 2,
             "6": 6
           },
           "totalProducts": 223,
@@ -689,8 +695,8 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 37,
-          "abandonRate": 14,
+          "totalCheckouts": 38,
+          "abandonRate": 13,
           "abandonedValue": 247,
           "topAbandoned": [
             {
@@ -714,29 +720,29 @@
               "count": 1
             }
           ],
-          "sessions": 463,
+          "sessions": 475,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:37.207Z"
+          "syncedAt": "2026-06-12T14:39:29.005Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4477,
-          "orders": 68,
+          "revenue": 4587,
+          "orders": 69,
           "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
-          "revenueHalf1": 1116,
-          "revenueHalf2": 3361,
+          "revenueHalf1": 1161,
+          "revenueHalf2": 3426,
           "discountOrders": 27,
-          "discountRate": 40,
+          "discountRate": 39,
           "discountShare": 7,
           "totalDiscounts": 325,
-          "newCust": 66,
+          "newCust": 67,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 40,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -790,7 +796,7 @@
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 34,
+          "top3RevenueShare": 33,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -802,7 +808,7 @@
             "11": 4,
             "12": 5,
             "13": 4,
-            "14": 5,
+            "14": 6,
             "15": 2,
             "16": 7,
             "17": 6,
@@ -818,7 +824,7 @@
             "2": 6,
             "3": 13,
             "4": 11,
-            "5": 5,
+            "5": 6,
             "6": 8
           },
           "totalProducts": 223,
@@ -846,7 +852,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 87,
+          "totalCheckouts": 88,
           "abandonRate": 22,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -871,29 +877,29 @@
               "count": 1
             }
           ],
-          "sessions": 1088,
+          "sessions": 1100,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:37.701Z"
+          "syncedAt": "2026-06-12T14:39:29.514Z"
         },
         "365": {
           "period": 365,
-          "revenue": 4971,
-          "orders": 76,
-          "aov": 65,
+          "revenue": 5081,
+          "orders": 77,
+          "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 0,
-          "revenueHalf2": 4971,
+          "revenueHalf2": 5081,
           "discountOrders": 27,
-          "discountRate": 36,
-          "discountShare": 7,
+          "discountRate": 35,
+          "discountShare": 6,
           "totalDiscounts": 325,
-          "newCust": 74,
+          "newCust": 75,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 41,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -959,7 +965,7 @@
             "11": 4,
             "12": 5,
             "13": 7,
-            "14": 5,
+            "14": 6,
             "15": 2,
             "16": 7,
             "17": 6,
@@ -975,7 +981,7 @@
             "2": 7,
             "3": 14,
             "4": 11,
-            "5": 5,
+            "5": 6,
             "6": 11
           },
           "totalProducts": 223,
@@ -1003,7 +1009,7 @@
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 95,
+          "totalCheckouts": 96,
           "abandonRate": 20,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -1028,10 +1034,10 @@
               "count": 1
             }
           ],
-          "sessions": 1188,
+          "sessions": 1200,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T11:37:38.265Z"
+          "syncedAt": "2026-06-12T14:39:30.346Z"
         }
       }
     }
