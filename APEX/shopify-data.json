@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-12T07:15:35.039Z",
+  "lastUpdated": "2026-06-12T11:37:29.020Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 314,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-12T07:15:36.557Z",
+        "syncedAt": "2026-06-12T11:37:30.708Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:38.380Z"
+          "syncedAt": "2026-06-12T11:37:32.465Z"
         },
         "30": {
           "period": 30,
@@ -172,7 +172,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:39.006Z"
+          "syncedAt": "2026-06-12T11:37:33.097Z"
         },
         "90": {
           "period": 90,
@@ -316,7 +316,7 @@
           "sessions": 338,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:39.689Z"
+          "syncedAt": "2026-06-12T11:37:33.683Z"
         },
         "365": {
           "period": 365,
@@ -326,8 +326,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 1631,
-          "revenueHalf2": 10767,
+          "revenueHalf1": 1694,
+          "revenueHalf2": 10704,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -447,18 +447,14 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 207,
-          "abandonRate": 2,
-          "abandonedValue": 222,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 206,
+          "abandonRate": 1,
+          "abandonedValue": 202,
           "topAbandoned": [
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
-            },
-            {
-              "name": "Chaussons d’intérieur — Gris",
-              "count": 1
             },
             {
               "name": "Robe Peignoir Coton Léger",
@@ -469,10 +465,10 @@
               "count": 1
             }
           ],
-          "sessions": 2588,
-          "conversionRate": 7.7,
+          "sessions": 2575,
+          "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:40.332Z"
+          "syncedAt": "2026-06-12T11:37:34.269Z"
         }
       }
     },
@@ -481,7 +477,7 @@
         "revenue": 2645,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-12T07:15:41.480Z",
+        "syncedAt": "2026-06-12T11:37:35.290Z",
         "allTime": {
           "revenue": 4971,
           "orders": 76
@@ -567,7 +563,7 @@
           "sessions": 38,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:42.680Z"
+          "syncedAt": "2026-06-12T11:37:36.645Z"
         },
         "30": {
           "period": 30,
@@ -721,7 +717,7 @@
           "sessions": 463,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:43.259Z"
+          "syncedAt": "2026-06-12T11:37:37.207Z"
         },
         "90": {
           "period": 90,
@@ -878,7 +874,7 @@
           "sessions": 1088,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:43.814Z"
+          "syncedAt": "2026-06-12T11:37:37.701Z"
         },
         "365": {
           "period": 365,
@@ -1035,7 +1031,7 @@
           "sessions": 1188,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T07:15:44.381Z"
+          "syncedAt": "2026-06-12T11:37:38.265Z"
         }
       }
     }
