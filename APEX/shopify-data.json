@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-12T19:56:54.487Z",
+  "lastUpdated": "2026-06-12T21:41:18.020Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 314,
         "orders": 6,
         "currency": "EUR",
-        "syncedAt": "2026-06-12T19:56:56.460Z",
+        "syncedAt": "2026-06-12T21:41:19.540Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:56:58.861Z"
+          "syncedAt": "2026-06-12T21:41:21.152Z"
         },
         "30": {
           "period": 30,
@@ -172,7 +172,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:56:59.552Z"
+          "syncedAt": "2026-06-12T21:41:21.760Z"
         },
         "90": {
           "period": 90,
@@ -182,8 +182,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1030,
-          "revenueHalf2": 723,
+          "revenueHalf1": 1209,
+          "revenueHalf2": 544,
           "discountOrders": 9,
           "discountRate": 38,
           "discountShare": 4,
@@ -316,7 +316,7 @@
           "sessions": 338,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:57:00.274Z"
+          "syncedAt": "2026-06-12T21:41:22.364Z"
         },
         "365": {
           "period": 365,
@@ -326,8 +326,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 1694,
-          "revenueHalf2": 10704,
+          "revenueHalf1": 1748,
+          "revenueHalf2": 10650,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -468,40 +468,40 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:57:00.943Z"
+          "syncedAt": "2026-06-12T21:41:23.195Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2755,
-        "orders": 33,
+        "revenue": 2800,
+        "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-06-12T19:57:02.138Z",
+        "syncedAt": "2026-06-12T21:41:24.321Z",
         "allTime": {
-          "revenue": 5081,
-          "orders": 77
+          "revenue": 5126,
+          "orders": 78
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 234,
-          "orders": 4,
-          "aov": 59,
+          "revenue": 279,
+          "orders": 5,
+          "aov": 56,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 49,
-          "revenueHalf2": 185,
-          "discountOrders": 1,
-          "discountRate": 25,
-          "discountShare": 2,
-          "totalDiscounts": 5,
-          "newCust": 4,
+          "revenueHalf2": 230,
+          "discountOrders": 2,
+          "discountRate": 40,
+          "discountShare": 4,
+          "totalDiscounts": 10,
+          "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 59,
+          "avgLTV": 56,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -515,6 +515,11 @@
               "revenue": 55
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
               "name": "Kimono Blanc Boheme Plage",
               "qty": 1,
               "revenue": 50
@@ -525,16 +530,17 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 92,
+          "top3RevenueShare": 77,
           "hourly": {
             "12": 1,
             "14": 2,
-            "19": 1
+            "19": 1,
+            "21": 1
           },
           "daily": {
             "2": 1,
             "4": 1,
-            "5": 1,
+            "5": 2,
             "6": 1
           },
           "totalProducts": 223,
@@ -562,30 +568,30 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 4,
+          "totalCheckouts": 5,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 50,
-          "conversionRate": 8,
+          "sessions": 63,
+          "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:57:03.311Z"
+          "syncedAt": "2026-06-12T21:41:25.920Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2755,
-          "orders": 33,
-          "aov": 83,
+          "revenue": 2800,
+          "orders": 34,
+          "aov": 82,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1196,
-          "revenueHalf2": 1559,
-          "discountOrders": 10,
-          "discountRate": 30,
+          "revenueHalf2": 1604,
+          "discountOrders": 11,
+          "discountRate": 32,
           "discountShare": 9,
-          "totalDiscounts": 241,
-          "newCust": 33,
+          "totalDiscounts": 246,
+          "newCust": 34,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 69,
@@ -605,6 +611,11 @@
               "name": "Ensemble Kimono Et Pantalon Femme",
               "qty": 3,
               "revenue": 240
+            },
+            {
+              "name": "Kimono Long Femme Plage",
+              "qty": 3,
+              "revenue": 150
             },
             {
               "name": "Kimono Pyjama Homme",
@@ -632,17 +643,12 @@
               "revenue": 100
             },
             {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
-            },
-            {
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 2,
               "revenue": 100
             }
           ],
-          "top3RevenueShare": 47,
+          "top3RevenueShare": 46,
           "hourly": {
             "6": 1,
             "7": 1,
@@ -659,7 +665,7 @@
             "18": 7,
             "19": 1,
             "20": 1,
-            "21": 1
+            "21": 2
           },
           "daily": {
             "0": 6,
@@ -667,7 +673,7 @@
             "2": 4,
             "3": 6,
             "4": 6,
-            "5": 2,
+            "5": 3,
             "6": 6
           },
           "totalProducts": 223,
@@ -695,7 +701,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 38,
+          "totalCheckouts": 39,
           "abandonRate": 13,
           "abandonedValue": 247,
           "topAbandoned": [
@@ -720,26 +726,26 @@
               "count": 1
             }
           ],
-          "sessions": 475,
-          "conversionRate": 6.9,
+          "sessions": 488,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:57:03.888Z"
+          "syncedAt": "2026-06-12T21:41:26.403Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4587,
-          "orders": 69,
+          "revenue": 4631,
+          "orders": 70,
           "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 1161,
-          "revenueHalf2": 3426,
-          "discountOrders": 27,
-          "discountRate": 39,
+          "revenueHalf2": 3471,
+          "discountOrders": 28,
+          "discountRate": 40,
           "discountShare": 7,
-          "totalDiscounts": 325,
-          "newCust": 67,
+          "totalDiscounts": 330,
+          "newCust": 68,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 41,
@@ -757,8 +763,8 @@
             },
             {
               "name": "Kimono Long Femme Plage",
-              "qty": 7,
-              "revenue": 349
+              "qty": 8,
+              "revenue": 399
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -796,7 +802,7 @@
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 34,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -815,7 +821,7 @@
             "18": 8,
             "19": 1,
             "20": 3,
-            "21": 6,
+            "21": 7,
             "22": 1
           },
           "daily": {
@@ -824,7 +830,7 @@
             "2": 6,
             "3": 13,
             "4": 11,
-            "5": 6,
+            "5": 7,
             "6": 8
           },
           "totalProducts": 223,
@@ -852,8 +858,8 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 88,
-          "abandonRate": 22,
+          "totalCheckouts": 89,
+          "abandonRate": 21,
           "abandonedValue": 1257,
           "topAbandoned": [
             {
@@ -877,26 +883,26 @@
               "count": 1
             }
           ],
-          "sessions": 1100,
+          "sessions": 1113,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:57:04.467Z"
+          "syncedAt": "2026-06-12T21:41:26.917Z"
         },
         "365": {
           "period": 365,
-          "revenue": 5081,
-          "orders": 77,
+          "revenue": 5126,
+          "orders": 78,
           "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 0,
-          "revenueHalf2": 5081,
-          "discountOrders": 27,
-          "discountRate": 35,
+          "revenueHalf2": 5126,
+          "discountOrders": 28,
+          "discountRate": 36,
           "discountShare": 6,
-          "totalDiscounts": 325,
-          "newCust": 75,
+          "totalDiscounts": 330,
+          "newCust": 76,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 42,
@@ -914,8 +920,8 @@
             },
             {
               "name": "Kimono Long Femme Plage",
-              "qty": 7,
-              "revenue": 349
+              "qty": 8,
+              "revenue": 399
             },
             {
               "name": "Veste Kimono Noir Homme",
@@ -972,7 +978,7 @@
             "18": 9,
             "19": 2,
             "20": 4,
-            "21": 6,
+            "21": 7,
             "22": 1
           },
           "daily": {
@@ -981,7 +987,7 @@
             "2": 7,
             "3": 14,
             "4": 11,
-            "5": 6,
+            "5": 7,
             "6": 11
           },
           "totalProducts": 223,
@@ -1009,7 +1015,7 @@
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 19,
-          "totalCheckouts": 96,
+          "totalCheckouts": 97,
           "abandonRate": 20,
           "abandonedValue": 1257,
           "topAbandoned": [
@@ -1034,10 +1040,10 @@
               "count": 1
             }
           ],
-          "sessions": 1200,
+          "sessions": 1213,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-12T19:57:05.209Z"
+          "syncedAt": "2026-06-12T21:41:27.636Z"
         }
       }
     }
