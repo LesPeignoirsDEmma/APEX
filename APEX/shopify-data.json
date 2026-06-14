@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-13T22:55:59.051Z",
+  "lastUpdated": "2026-06-14T00:01:25.831Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 255,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-06-13T22:56:00.523Z",
+        "syncedAt": "2026-06-14T00:01:27.441Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -15,39 +15,30 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 40,
-          "orders": 1,
-          "aov": 40,
+          "revenue": 0,
+          "orders": 0,
+          "aov": 0,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 40,
+          "revenueHalf1": 0,
           "revenueHalf2": 0,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 1,
+          "newCust": 0,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 40,
+          "avgLTV": 0,
           "vipCustomers": 0,
-          "topProducts": [
-            {
-              "name": "Cape de Bain Bébé Cerf",
-              "qty": 1,
-              "revenue": 40
-            }
-          ],
-          "top3RevenueShare": 100,
-          "hourly": {
-            "13": 1
-          },
-          "daily": {
-            "6": 1
-          },
+          "topProducts": [],
+          "top3RevenueShare": 0,
+          "hourly": {},
+          "daily": {},
           "totalProducts": 178,
           "zeroSaleProducts": [
+            "Cape de Bain Bébé Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Koala",
@@ -66,19 +57,18 @@
             "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
-            "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme"
+            "Peignoir À Capuche Femme Doux"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 1,
-          "abandonRate": 0,
+          "totalCheckouts": 0,
+          "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 13,
-          "conversionRate": 7.7,
+          "sessions": null,
+          "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:02.194Z"
+          "syncedAt": "2026-06-14T00:01:29.275Z"
         },
         "30": {
           "period": 30,
@@ -97,7 +87,7 @@
           "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 43,
+          "avgLTV": 54,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -171,7 +161,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:02.853Z"
+          "syncedAt": "2026-06-14T00:01:29.969Z"
         },
         "90": {
           "period": 90,
@@ -311,7 +301,7 @@
           "sessions": 300,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:03.440Z"
+          "syncedAt": "2026-06-14T00:01:30.649Z"
         },
         "365": {
           "period": 365,
@@ -463,16 +453,16 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:04.287Z"
+          "syncedAt": "2026-06-14T00:01:31.384Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2605,
-        "orders": 32,
+        "revenue": 2560,
+        "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-06-13T22:56:05.269Z",
+        "syncedAt": "2026-06-14T00:01:32.794Z",
         "allTime": {
           "revenue": 5126,
           "orders": 78
@@ -481,33 +471,28 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 279,
-          "orders": 5,
-          "aov": 56,
+          "revenue": 230,
+          "orders": 4,
+          "aov": 57,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 74,
+          "revenueHalf1": 25,
           "revenueHalf2": 205,
-          "discountOrders": 2,
-          "discountRate": 40,
-          "discountShare": 4,
-          "totalDiscounts": 10,
-          "newCust": 5,
+          "discountOrders": 1,
+          "discountRate": 25,
+          "discountShare": 2,
+          "totalDiscounts": 5,
+          "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 56,
+          "avgLTV": 57,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Kimono Femme Paillette",
               "qty": 1,
               "revenue": 110
-            },
-            {
-              "name": "Kimono Chinois Fille",
-              "qty": 1,
-              "revenue": 55
             },
             {
               "name": "Kimono Long Femme Plage",
@@ -525,9 +510,8 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 77,
+          "top3RevenueShare": 91,
           "hourly": {
-            "12": 1,
             "14": 2,
             "19": 1,
             "21": 1
@@ -535,8 +519,7 @@
           "daily": {
             "2": 1,
             "4": 1,
-            "5": 2,
-            "6": 1
+            "5": 2
           },
           "totalProducts": 223,
           "zeroSaleProducts": [
@@ -563,30 +546,30 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 5,
+          "totalCheckouts": 4,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 63,
-          "conversionRate": 7.9,
+          "sessions": 50,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:06.509Z"
+          "syncedAt": "2026-06-14T00:01:34.161Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2605,
-          "orders": 32,
-          "aov": 81,
+          "revenue": 2560,
+          "orders": 31,
+          "aov": 83,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1001,
+          "revenueHalf1": 956,
           "revenueHalf2": 1604,
-          "discountOrders": 11,
-          "discountRate": 34,
+          "discountOrders": 10,
+          "discountRate": 32,
           "discountShare": 9,
-          "totalDiscounts": 246,
-          "newCust": 32,
+          "totalDiscounts": 241,
+          "newCust": 31,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 67,
@@ -608,11 +591,6 @@
               "revenue": 210
             },
             {
-              "name": "Kimono Long Femme Plage",
-              "qty": 3,
-              "revenue": 150
-            },
-            {
               "name": "Kimono Pyjama Homme",
               "qty": 2,
               "revenue": 140
@@ -626,6 +604,11 @@
               "name": "Kimono Femme Paillette",
               "qty": 1,
               "revenue": 110
+            },
+            {
+              "name": "Kimono Long Femme Plage",
+              "qty": 2,
+              "revenue": 100
             },
             {
               "name": "Veste Kimono Noir Homme",
@@ -654,7 +637,7 @@
             "13": 1,
             "14": 4,
             "15": 1,
-            "16": 5,
+            "16": 4,
             "17": 2,
             "18": 7,
             "19": 1,
@@ -665,7 +648,7 @@
             "1": 3,
             "2": 4,
             "3": 4,
-            "4": 6,
+            "4": 5,
             "5": 3,
             "6": 6
           },
@@ -694,7 +677,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 37,
+          "totalCheckouts": 36,
           "abandonRate": 14,
           "abandonedValue": 247,
           "topAbandoned": [
@@ -719,10 +702,10 @@
               "count": 1
             }
           ],
-          "sessions": 463,
+          "sessions": 450,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:07.023Z"
+          "syncedAt": "2026-06-14T00:01:34.734Z"
         },
         "90": {
           "period": 90,
@@ -850,18 +833,14 @@
             "Chemise Noire Kimono Femme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 19,
-          "totalCheckouts": 89,
-          "abandonRate": 21,
-          "abandonedValue": 1257,
+          "abandonedCheckouts": 18,
+          "totalCheckouts": 88,
+          "abandonRate": 20,
+          "abandonedValue": 1137,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
               "count": 2
-            },
-            {
-              "name": "Kimono Abaya Femme",
-              "count": 1
             },
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
@@ -874,12 +853,16 @@
             {
               "name": "Robe Chinoise Kimono Enfant",
               "count": 1
+            },
+            {
+              "name": "Ensemble Pantalon Et Kimono Femme",
+              "count": 1
             }
           ],
-          "sessions": 1113,
-          "conversionRate": 6.3,
+          "sessions": 1100,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:07.524Z"
+          "syncedAt": "2026-06-14T00:01:35.859Z"
         },
         "365": {
           "period": 365,
@@ -1036,7 +1019,7 @@
           "sessions": 1213,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-13T22:56:08.245Z"
+          "syncedAt": "2026-06-14T00:01:36.831Z"
         }
       }
     }
