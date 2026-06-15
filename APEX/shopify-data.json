@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-15T19:03:26.282Z",
+  "lastUpdated": "2026-06-15T22:10:57.780Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 255,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-06-15T19:03:27.758Z",
+        "syncedAt": "2026-06-15T22:10:59.461Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:37.742Z"
+          "syncedAt": "2026-06-15T22:11:01.220Z"
         },
         "30": {
           "period": 30,
@@ -161,7 +161,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:38.369Z"
+          "syncedAt": "2026-06-15T22:11:01.792Z"
         },
         "90": {
           "period": 90,
@@ -283,7 +283,7 @@
             "Peignoir Baroque - Homme",
             "Peignoir Bébé Blanc"
           ],
-          "newProductsAdded": 1,
+          "newProductsAdded": 0,
           "abandonedCheckouts": 2,
           "totalCheckouts": 24,
           "abandonRate": 8,
@@ -301,7 +301,7 @@
           "sessions": 300,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:39.027Z"
+          "syncedAt": "2026-06-15T22:11:02.407Z"
         },
         "365": {
           "period": 365,
@@ -311,8 +311,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 2986,
-          "revenueHalf2": 9412,
+          "revenueHalf1": 3040,
+          "revenueHalf2": 9358,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -449,7 +449,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:39.940Z"
+          "syncedAt": "2026-06-15T22:11:03.565Z"
         }
       }
     },
@@ -458,7 +458,7 @@
         "revenue": 2649,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-06-15T19:03:47.050Z",
+        "syncedAt": "2026-06-15T22:11:04.716Z",
         "allTime": {
           "revenue": 5285,
           "orders": 81
@@ -572,7 +572,7 @@
           "sessions": 100,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:49.625Z"
+          "syncedAt": "2026-06-15T22:11:05.850Z"
         },
         "30": {
           "period": 30,
@@ -582,8 +582,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1164,
-          "revenueHalf2": 1485,
+          "revenueHalf1": 1227,
+          "revenueHalf2": 1422,
           "discountOrders": 11,
           "discountRate": 33,
           "discountShare": 9,
@@ -724,7 +724,7 @@
           "sessions": 488,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:50.194Z"
+          "syncedAt": "2026-06-15T22:11:06.327Z"
         },
         "90": {
           "period": 90,
@@ -881,7 +881,7 @@
           "sessions": 1138,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:50.821Z"
+          "syncedAt": "2026-06-15T22:11:06.840Z"
         },
         "365": {
           "period": 365,
@@ -1038,7 +1038,7 @@
           "sessions": 1263,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T19:03:51.384Z"
+          "syncedAt": "2026-06-15T22:11:07.326Z"
         }
       }
     }
