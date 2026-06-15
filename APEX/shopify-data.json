@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-15T08:52:41.628Z",
+  "lastUpdated": "2026-06-15T14:58:10.390Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 255,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-06-15T08:52:51.204Z",
+        "syncedAt": "2026-06-15T14:58:11.953Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:53.311Z"
+          "syncedAt": "2026-06-15T14:58:13.746Z"
         },
         "30": {
           "period": 30,
@@ -161,7 +161,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:53.957Z"
+          "syncedAt": "2026-06-15T14:58:14.441Z"
         },
         "90": {
           "period": 90,
@@ -301,7 +301,7 @@
           "sessions": 300,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:54.710Z"
+          "syncedAt": "2026-06-15T14:58:15.126Z"
         },
         "365": {
           "period": 365,
@@ -311,8 +311,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 2932,
-          "revenueHalf2": 9465,
+          "revenueHalf1": 2986,
+          "revenueHalf2": 9412,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -449,7 +449,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:55.684Z"
+          "syncedAt": "2026-06-15T14:58:16.324Z"
         }
       }
     },
@@ -458,7 +458,7 @@
         "revenue": 2649,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-06-15T08:52:57.014Z",
+        "syncedAt": "2026-06-15T14:58:17.532Z",
         "allTime": {
           "revenue": 5285,
           "orders": 81
@@ -482,7 +482,7 @@
           "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 39,
+          "avgLTV": 35,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -559,15 +559,20 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 0,
-          "totalCheckouts": 7,
-          "abandonRate": 0,
-          "abandonedValue": 0,
-          "topAbandoned": [],
-          "sessions": 88,
-          "conversionRate": 8,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 8,
+          "abandonRate": 13,
+          "abandonedValue": 60,
+          "topAbandoned": [
+            {
+              "name": "Kimono Long de Plage Femme",
+              "count": 1
+            }
+          ],
+          "sessions": 100,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:58.262Z"
+          "syncedAt": "2026-06-15T14:58:18.897Z"
         },
         "30": {
           "period": 30,
@@ -577,8 +582,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1099,
-          "revenueHalf2": 1550,
+          "revenueHalf1": 1164,
+          "revenueHalf2": 1485,
           "discountOrders": 11,
           "discountRate": 33,
           "discountShare": 9,
@@ -586,7 +591,7 @@
           "newCust": 33,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 62,
+          "avgLTV": 60,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -690,10 +695,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 5,
-          "totalCheckouts": 38,
-          "abandonRate": 13,
-          "abandonedValue": 247,
+          "abandonedCheckouts": 6,
+          "totalCheckouts": 39,
+          "abandonRate": 15,
+          "abandonedValue": 306,
           "topAbandoned": [
             {
               "name": "Kimono De Plage Femme Long",
@@ -716,10 +721,10 @@
               "count": 1
             }
           ],
-          "sessions": 475,
-          "conversionRate": 6.9,
+          "sessions": 488,
+          "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:58.833Z"
+          "syncedAt": "2026-06-15T14:58:19.448Z"
         },
         "90": {
           "period": 90,
@@ -847,10 +852,10 @@
             "Chemise Noire Kimono Femme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 90,
-          "abandonRate": 20,
-          "abandonedValue": 1137,
+          "abandonedCheckouts": 19,
+          "totalCheckouts": 91,
+          "abandonRate": 21,
+          "abandonedValue": 1197,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -873,10 +878,10 @@
               "count": 1
             }
           ],
-          "sessions": 1125,
-          "conversionRate": 6.4,
+          "sessions": 1138,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:52:59.466Z"
+          "syncedAt": "2026-06-15T14:58:20.128Z"
         },
         "365": {
           "period": 365,
@@ -1004,10 +1009,10 @@
             "Chemise Style Kimono Femme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 19,
-          "totalCheckouts": 100,
-          "abandonRate": 19,
-          "abandonedValue": 1257,
+          "abandonedCheckouts": 20,
+          "totalCheckouts": 101,
+          "abandonRate": 20,
+          "abandonedValue": 1317,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
@@ -1030,10 +1035,10 @@
               "count": 1
             }
           ],
-          "sessions": 1250,
-          "conversionRate": 6.5,
+          "sessions": 1263,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-15T08:53:00.114Z"
+          "syncedAt": "2026-06-15T14:58:20.672Z"
         }
       }
     }
