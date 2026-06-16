@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-16T06:26:30.290Z",
+  "lastUpdated": "2026-06-16T12:05:05.058Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 255,
         "orders": 5,
         "currency": "EUR",
-        "syncedAt": "2026-06-16T06:26:31.919Z",
+        "syncedAt": "2026-06-16T12:05:13.688Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:33.777Z"
+          "syncedAt": "2026-06-16T12:05:16.334Z"
         },
         "30": {
           "period": 30,
@@ -161,7 +161,7 @@
           "sessions": 63,
           "conversionRate": 7.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:34.548Z"
+          "syncedAt": "2026-06-16T12:05:17.150Z"
         },
         "90": {
           "period": 90,
@@ -301,7 +301,7 @@
           "sessions": 300,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:35.323Z"
+          "syncedAt": "2026-06-16T12:05:17.924Z"
         },
         "365": {
           "period": 365,
@@ -311,8 +311,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 3219,
-          "revenueHalf2": 9179,
+          "revenueHalf1": 3655,
+          "revenueHalf2": 8742,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -449,7 +449,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:36.278Z"
+          "syncedAt": "2026-06-16T12:05:18.989Z"
         }
       }
     },
@@ -458,7 +458,7 @@
         "revenue": 2574,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-06-16T06:26:37.531Z",
+        "syncedAt": "2026-06-16T12:05:20.382Z",
         "allTime": {
           "revenue": 5285,
           "orders": 81
@@ -473,8 +473,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 185,
-          "revenueHalf2": 204,
+          "revenueHalf1": 230,
+          "revenueHalf2": 159,
           "discountOrders": 2,
           "discountRate": 29,
           "discountShare": 3,
@@ -572,7 +572,7 @@
           "sessions": 100,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:39.066Z"
+          "syncedAt": "2026-06-16T12:05:21.988Z"
         },
         "30": {
           "period": 30,
@@ -591,7 +591,7 @@
           "newCust": 31,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 63,
+          "avgLTV": 62,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -723,7 +723,7 @@
           "sessions": 463,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:39.564Z"
+          "syncedAt": "2026-06-16T12:05:22.673Z"
         },
         "90": {
           "period": 90,
@@ -880,7 +880,7 @@
           "sessions": 1138,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:40.220Z"
+          "syncedAt": "2026-06-16T12:05:23.686Z"
         },
         "365": {
           "period": 365,
@@ -899,7 +899,7 @@
           "newCust": 79,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 41,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1008,18 +1008,14 @@
             "Chemise Style Kimono Femme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 20,
-          "totalCheckouts": 101,
-          "abandonRate": 20,
-          "abandonedValue": 1317,
+          "abandonedCheckouts": 19,
+          "totalCheckouts": 100,
+          "abandonRate": 19,
+          "abandonedValue": 1197,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
               "count": 2
-            },
-            {
-              "name": "Kimono Abaya Femme",
-              "count": 1
             },
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
@@ -1032,12 +1028,16 @@
             {
               "name": "Robe Chinoise Kimono Enfant",
               "count": 1
+            },
+            {
+              "name": "Ensemble Pantalon Et Kimono Femme",
+              "count": 1
             }
           ],
-          "sessions": 1263,
-          "conversionRate": 6.4,
+          "sessions": 1250,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-16T06:26:40.907Z"
+          "syncedAt": "2026-06-16T12:05:24.455Z"
         }
       }
     }
