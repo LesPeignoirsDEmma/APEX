@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-18T23:47:29.730Z",
+  "lastUpdated": "2026-06-19T03:33:53.950Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 195,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-06-18T23:47:31.326Z",
+        "syncedAt": "2026-06-19T03:33:55.374Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -73,7 +73,7 @@
           "sessions": 13,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:41.717Z"
+          "syncedAt": "2026-06-19T03:33:56.984Z"
         },
         "30": {
           "period": 30,
@@ -164,23 +164,23 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:42.907Z"
+          "syncedAt": "2026-06-19T03:33:57.582Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1581,
-          "orders": 21,
-          "aov": 75,
+          "revenue": 1492,
+          "orders": 19,
+          "aov": 79,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1087,
+          "revenueHalf1": 998,
           "revenueHalf2": 494,
-          "discountOrders": 7,
-          "discountRate": 33,
-          "discountShare": 4,
-          "totalDiscounts": 56,
-          "newCust": 19,
+          "discountOrders": 6,
+          "discountRate": 32,
+          "discountShare": 3,
+          "totalDiscounts": 50,
+          "newCust": 17,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 33,
@@ -203,11 +203,6 @@
             },
             {
               "name": "Peignoir Satin Très Long – Femme",
-              "qty": 2,
-              "revenue": 120
-            },
-            {
-              "name": "Peignoir Rose Rayé – Femme",
               "qty": 2,
               "revenue": 120
             },
@@ -235,9 +230,14 @@
               "name": "Peignoir En Satin Pour Homme",
               "qty": 1,
               "revenue": 80
+            },
+            {
+              "name": "Peignoir Été Femme A Fermeture Éclair",
+              "qty": 1,
+              "revenue": 65
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 34,
           "hourly": {
             "6": 2,
             "7": 1,
@@ -246,13 +246,12 @@
             "10": 2,
             "11": 3,
             "12": 1,
-            "13": 2,
+            "13": 1,
             "14": 1,
             "15": 1,
             "16": 1,
             "19": 1,
-            "20": 2,
-            "23": 1
+            "20": 2
           },
           "daily": {
             "0": 1,
@@ -260,13 +259,14 @@
             "2": 3,
             "3": 5,
             "4": 1,
-            "5": 6,
+            "5": 4,
             "6": 3
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
+            "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
             "Cape de Bain Gaufré",
@@ -283,13 +283,12 @@
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
             "Peignoir Baroque - Femme",
-            "Peignoir Baroque - Homme",
-            "Peignoir Bébé Blanc"
+            "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 24,
-          "abandonRate": 13,
+          "totalCheckouts": 22,
+          "abandonRate": 14,
           "abandonedValue": 218,
           "topAbandoned": [
             {
@@ -305,10 +304,10 @@
               "count": 1
             }
           ],
-          "sessions": 300,
-          "conversionRate": 7,
+          "sessions": 275,
+          "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:43.707Z"
+          "syncedAt": "2026-06-19T03:33:58.148Z"
         },
         "365": {
           "period": 365,
@@ -318,8 +317,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 4620,
-          "revenueHalf2": 7778,
+          "revenueHalf1": 4684,
+          "revenueHalf2": 7713,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -460,16 +459,16 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:44.725Z"
+          "syncedAt": "2026-06-19T03:33:59.054Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2600,
-        "orders": 31,
+        "revenue": 2496,
+        "orders": 29,
         "currency": "EUR",
-        "syncedAt": "2026-06-18T23:47:50.658Z",
+        "syncedAt": "2026-06-19T03:34:00.424Z",
         "allTime": {
           "revenue": 5584,
           "orders": 85
@@ -478,19 +477,19 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 663,
-          "orders": 10,
-          "aov": 66,
+          "revenue": 614,
+          "orders": 9,
+          "aov": 68,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 364,
+          "revenueHalf1": 314,
           "revenueHalf2": 300,
           "discountOrders": 5,
-          "discountRate": 50,
-          "discountShare": 5,
+          "discountRate": 56,
+          "discountShare": 6,
           "totalDiscounts": 35,
-          "newCust": 10,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 41,
@@ -537,22 +536,17 @@
               "revenue": 50
             },
             {
-              "name": "Kimono Blanc Boheme Plage",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
               "name": "Robe De Chambre Kimono Satin",
               "qty": 1,
               "revenue": 40
             }
           ],
-          "top3RevenueShare": 50,
+          "top3RevenueShare": 54,
           "hourly": {
             "10": 1,
             "11": 1,
             "13": 1,
-            "14": 2,
+            "14": 1,
             "15": 1,
             "18": 2,
             "19": 1,
@@ -562,7 +556,7 @@
             "0": 3,
             "2": 2,
             "3": 1,
-            "4": 2,
+            "4": 1,
             "5": 2
           },
           "totalProducts": 223,
@@ -590,8 +584,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 12,
-          "abandonRate": 17,
+          "totalCheckouts": 11,
+          "abandonRate": 18,
           "abandonedValue": 85,
           "topAbandoned": [
             {
@@ -603,29 +597,29 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 6.7,
+          "sessions": 138,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:53.335Z"
+          "syncedAt": "2026-06-19T03:34:01.596Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2600,
-          "orders": 31,
-          "aov": 84,
+          "revenue": 2496,
+          "orders": 29,
+          "aov": 86,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1052,
+          "revenueHalf1": 947,
           "revenueHalf2": 1548,
           "discountOrders": 13,
-          "discountRate": 42,
+          "discountRate": 45,
           "discountShare": 10,
           "totalDiscounts": 260,
-          "newCust": 31,
+          "newCust": 29,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 59,
+          "avgLTV": 61,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -640,8 +634,8 @@
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
-              "qty": 3,
-              "revenue": 240
+              "qty": 2,
+              "revenue": 160
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -679,26 +673,26 @@
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 52,
+          "top3RevenueShare": 51,
           "hourly": {
             "8": 1,
             "9": 1,
             "10": 2,
             "11": 1,
             "12": 2,
-            "13": 2,
+            "13": 1,
             "14": 4,
             "15": 2,
             "16": 4,
             "17": 1,
-            "18": 7,
+            "18": 6,
             "19": 2,
             "21": 2
           },
           "daily": {
             "0": 7,
             "1": 1,
-            "2": 6,
+            "2": 4,
             "3": 5,
             "4": 6,
             "5": 2,
@@ -728,17 +722,13 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 7,
-          "totalCheckouts": 38,
-          "abandonRate": 18,
-          "abandonedValue": 331,
+          "abandonedCheckouts": 6,
+          "totalCheckouts": 35,
+          "abandonRate": 17,
+          "abandonedValue": 286,
           "topAbandoned": [
             {
               "name": "Kimono De Plage Femme Long",
-              "count": 1
-            },
-            {
-              "name": "Floral Kimono Top",
               "count": 1
             },
             {
@@ -752,28 +742,32 @@
             {
               "name": "Kimono Japonais Traditionnel Rouge",
               "count": 1
+            },
+            {
+              "name": "Kimono Long de Plage Femme",
+              "count": 1
             }
           ],
-          "sessions": 475,
-          "conversionRate": 6.5,
+          "sessions": 438,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:53.931Z"
+          "syncedAt": "2026-06-19T03:34:02.096Z"
         },
         "90": {
           "period": 90,
-          "revenue": 4791,
-          "orders": 73,
+          "revenue": 4741,
+          "orders": 72,
           "aov": 66,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
-          "revenueHalf1": 973,
+          "revenueHalf1": 923,
           "revenueHalf2": 3817,
           "discountOrders": 32,
           "discountRate": 44,
           "discountShare": 8,
           "totalDiscounts": 360,
-          "newCust": 71,
+          "newCust": 70,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 39,
@@ -830,7 +824,7 @@
               "revenue": 140
             }
           ],
-          "top3RevenueShare": 34,
+          "top3RevenueShare": 35,
           "hourly": {
             "5": 2,
             "6": 1,
@@ -844,7 +838,7 @@
             "14": 6,
             "15": 3,
             "16": 7,
-            "17": 6,
+            "17": 5,
             "18": 10,
             "19": 2,
             "20": 2,
@@ -857,7 +851,7 @@
             "2": 8,
             "3": 12,
             "4": 11,
-            "5": 7,
+            "5": 6,
             "6": 8
           },
           "totalProducts": 223,
@@ -885,7 +879,7 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 20,
-          "totalCheckouts": 93,
+          "totalCheckouts": 92,
           "abandonRate": 22,
           "abandonedValue": 1222,
           "topAbandoned": [
@@ -910,10 +904,10 @@
               "count": 1
             }
           ],
-          "sessions": 1163,
+          "sessions": 1150,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:54.575Z"
+          "syncedAt": "2026-06-19T03:34:02.629Z"
         },
         "365": {
           "period": 365,
@@ -1070,7 +1064,7 @@
           "sessions": 1313,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-18T23:47:55.223Z"
+          "syncedAt": "2026-06-19T03:34:03.336Z"
         }
       }
     }
