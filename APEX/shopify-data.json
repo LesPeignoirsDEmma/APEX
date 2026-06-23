@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-22T23:13:30.608Z",
+  "lastUpdated": "2026-06-23T02:32:01.820Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 155,
-        "orders": 3,
+        "revenue": 105,
+        "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-22T23:13:32.034Z",
+        "syncedAt": "2026-06-23T02:32:03.454Z",
         "allTime": {
           "revenue": 12398,
           "orders": 200
@@ -73,37 +73,32 @@
           "sessions": 13,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:33.738Z"
+          "syncedAt": "2026-06-23T02:32:05.305Z"
         },
         "30": {
           "period": 30,
-          "revenue": 155,
-          "orders": 3,
+          "revenue": 105,
+          "orders": 2,
           "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 155,
+          "revenueHalf1": 105,
           "revenueHalf2": 0,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 3,
+          "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 39,
+          "avgLTV": 35,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Été Femme A Fermeture Éclair",
               "qty": 1,
               "revenue": 65
-            },
-            {
-              "name": "Peignoir Léopard Homme",
-              "qty": 1,
-              "revenue": 50
             },
             {
               "name": "Cape de Bain Bébé Cerf",
@@ -113,13 +108,12 @@
           ],
           "top3RevenueShare": 100,
           "hourly": {
-            "9": 1,
             "13": 1,
             "14": 1
           },
           "daily": {
             "3": 1,
-            "6": 2
+            "6": 1
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -146,8 +140,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 4,
-          "abandonRate": 25,
+          "totalCheckouts": 3,
+          "abandonRate": 33,
           "abandonedValue": 65,
           "topAbandoned": [
             {
@@ -155,10 +149,10 @@
               "count": 1
             }
           ],
-          "sessions": 50,
-          "conversionRate": 6,
+          "sessions": 38,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:34.382Z"
+          "syncedAt": "2026-06-23T02:32:05.937Z"
         },
         "90": {
           "period": 90,
@@ -177,7 +171,7 @@
           "newCust": 16,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 33,
+          "avgLTV": 36,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -278,28 +272,24 @@
             "Peignoir Baroque - Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 21,
-          "abandonRate": 14,
-          "abandonedValue": 218,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 20,
+          "abandonRate": 10,
+          "abandonedValue": 173,
           "topAbandoned": [
             {
               "name": "Peignoir Nid d’Abeille Haut de Gamme",
               "count": 2
             },
             {
-              "name": "Peignoir Brodé Ours – Enfant",
-              "count": 1
-            },
-            {
               "name": "Peignoir Homme Nid d'Abeille",
               "count": 1
             }
           ],
-          "sessions": 263,
-          "conversionRate": 6.8,
+          "sessions": 250,
+          "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:35.339Z"
+          "syncedAt": "2026-06-23T02:32:06.549Z"
         },
         "365": {
           "period": 365,
@@ -451,7 +441,7 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:36.329Z"
+          "syncedAt": "2026-06-23T02:32:07.174Z"
         }
       }
     },
@@ -460,7 +450,7 @@
         "revenue": 2612,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-22T23:13:37.430Z",
+        "syncedAt": "2026-06-23T02:32:08.134Z",
         "allTime": {
           "revenue": 5771,
           "orders": 89
@@ -484,7 +474,7 @@
           "newCust": 8,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 37,
+          "avgLTV": 44,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -574,15 +564,11 @@
             "Chemise Kimono Homme Noir"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 12,
-          "abandonRate": 33,
-          "abandonedValue": 195,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 11,
+          "abandonRate": 27,
+          "abandonedValue": 135,
           "topAbandoned": [
-            {
-              "name": "Kimono Long de Plage Femme",
-              "count": 1
-            },
             {
               "name": "Kimono Haori Homme",
               "count": 1
@@ -596,10 +582,10 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 5.3,
+          "sessions": 138,
+          "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:38.542Z"
+          "syncedAt": "2026-06-23T02:32:09.345Z"
         },
         "30": {
           "period": 30,
@@ -750,7 +736,7 @@
           "sessions": 488,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:39.083Z"
+          "syncedAt": "2026-06-23T02:32:09.894Z"
         },
         "90": {
           "period": 90,
@@ -906,7 +892,7 @@
           "sessions": 1213,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:39.699Z"
+          "syncedAt": "2026-06-23T02:32:10.428Z"
         },
         "365": {
           "period": 365,
@@ -1063,7 +1049,7 @@
           "sessions": 1388,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-22T23:13:40.299Z"
+          "syncedAt": "2026-06-23T02:32:11.008Z"
         }
       }
     }
