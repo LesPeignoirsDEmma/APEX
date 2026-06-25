@@ -1,41 +1,51 @@
 {
-  "lastUpdated": "2026-06-25T19:47:34.699Z",
+  "lastUpdated": "2026-06-25T21:23:55.797Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 105,
-        "orders": 2,
+        "revenue": 160,
+        "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-06-25T19:47:36.928Z",
+        "syncedAt": "2026-06-25T21:23:57.324Z",
         "allTime": {
-          "revenue": 12398,
+          "revenue": 12358,
           "orders": 200
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 0,
-          "orders": 0,
-          "aov": 0,
+          "revenue": 55,
+          "orders": 1,
+          "aov": 55,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 0,
-          "revenueHalf2": 0,
+          "revenueHalf2": 55,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 0,
+          "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 0,
+          "avgLTV": 55,
           "vipCustomers": 0,
-          "topProducts": [],
-          "top3RevenueShare": 0,
-          "hourly": {},
-          "daily": {},
+          "topProducts": [
+            {
+              "name": "Peignoir Satiné Sexy Léopard",
+              "qty": 1,
+              "revenue": 55
+            }
+          ],
+          "top3RevenueShare": 100,
+          "hourly": {
+            "19": 1
+          },
+          "daily": {
+            "4": 1
+          },
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Cerf",
@@ -61,39 +71,44 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 0,
-          "abandonRate": null,
+          "totalCheckouts": 1,
+          "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": null,
-          "conversionRate": null,
+          "sessions": 13,
+          "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:39.026Z"
+          "syncedAt": "2026-06-25T21:23:59.070Z"
         },
         "30": {
           "period": 30,
-          "revenue": 105,
-          "orders": 2,
-          "aov": 52,
+          "revenue": 160,
+          "orders": 3,
+          "aov": 53,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 105,
-          "revenueHalf2": 0,
+          "revenueHalf2": 55,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 2,
+          "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 35,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Peignoir Été Femme A Fermeture Éclair",
               "qty": 1,
               "revenue": 65
+            },
+            {
+              "name": "Peignoir Satiné Sexy Léopard",
+              "qty": 1,
+              "revenue": 55
             },
             {
               "name": "Cape de Bain Bébé Cerf",
@@ -104,10 +119,12 @@
           "top3RevenueShare": 100,
           "hourly": {
             "13": 1,
-            "14": 1
+            "14": 1,
+            "19": 1
           },
           "daily": {
             "3": 1,
+            "4": 1,
             "6": 1
           },
           "totalProducts": 178,
@@ -135,8 +152,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 3,
-          "abandonRate": 33,
+          "totalCheckouts": 4,
+          "abandonRate": 25,
           "abandonedValue": 65,
           "topAbandoned": [
             {
@@ -144,26 +161,26 @@
               "count": 1
             }
           ],
-          "sessions": 38,
-          "conversionRate": 5.3,
+          "sessions": 50,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:39.865Z"
+          "syncedAt": "2026-06-25T21:23:59.630Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1412,
-          "orders": 18,
-          "aov": 78,
+          "revenue": 1467,
+          "orders": 19,
+          "aov": 77,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1098,
-          "revenueHalf2": 314,
+          "revenueHalf2": 369,
           "discountOrders": 6,
-          "discountRate": 33,
-          "discountShare": 4,
+          "discountRate": 32,
+          "discountShare": 3,
           "totalDiscounts": 50,
-          "newCust": 16,
+          "newCust": 17,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 43,
@@ -183,6 +200,11 @@
               "name": "Peignoir Satin Très Long – Femme",
               "qty": 2,
               "revenue": 120
+            },
+            {
+              "name": "Peignoir Satiné Sexy Léopard",
+              "qty": 2,
+              "revenue": 110
             },
             {
               "name": "Peignoir Léopard Homme",
@@ -213,14 +235,9 @@
               "name": "Peignoir Polaire Luxe - Homme",
               "qty": 1,
               "revenue": 80
-            },
-            {
-              "name": "Peignoir Été Femme A Fermeture Éclair",
-              "qty": 1,
-              "revenue": 65
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 31,
           "hourly": {
             "6": 2,
             "8": 2,
@@ -232,14 +249,14 @@
             "14": 1,
             "15": 1,
             "16": 1,
-            "19": 1,
+            "19": 2,
             "20": 2
           },
           "daily": {
             "1": 2,
             "2": 3,
             "3": 5,
-            "4": 1,
+            "4": 2,
             "5": 4,
             "6": 3
           },
@@ -268,7 +285,7 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 19,
+          "totalCheckouts": 20,
           "abandonRate": 5,
           "abandonedValue": 65,
           "topAbandoned": [
@@ -277,21 +294,21 @@
               "count": 1
             }
           ],
-          "sessions": 238,
+          "sessions": 250,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:40.727Z"
+          "syncedAt": "2026-06-25T21:24:00.689Z"
         },
         "365": {
           "period": 365,
-          "revenue": 12398,
+          "revenue": 12358,
           "orders": 200,
           "aov": 62,
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 5622,
-          "revenueHalf2": 6776,
+          "revenueHalf1": 5527,
+          "revenueHalf2": 6830,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -304,8 +321,8 @@
           "topProducts": [
             {
               "name": "Peignoir Éponge Rose Rayé",
-              "qty": 52,
-              "revenue": 3115
+              "qty": 51,
+              "revenue": 3055
             },
             {
               "name": "Peignoir Polaire Luxe - Homme",
@@ -353,7 +370,7 @@
               "revenue": 280
             }
           ],
-          "top3RevenueShare": 41,
+          "top3RevenueShare": 40,
           "hourly": {
             "0": 1,
             "2": 2,
@@ -365,14 +382,14 @@
             "9": 14,
             "10": 6,
             "11": 14,
-            "12": 8,
+            "12": 7,
             "13": 10,
             "14": 17,
             "15": 15,
             "16": 13,
             "17": 12,
             "18": 24,
-            "19": 14,
+            "19": 15,
             "20": 14,
             "21": 13,
             "22": 3,
@@ -381,9 +398,9 @@
           "daily": {
             "0": 28,
             "1": 25,
-            "2": 38,
+            "2": 37,
             "3": 36,
-            "4": 22,
+            "4": 23,
             "5": 31,
             "6": 20
           },
@@ -424,40 +441,40 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:41.596Z"
+          "syncedAt": "2026-06-25T21:24:01.263Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2932,
-        "orders": 33,
+        "revenue": 2977,
+        "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-06-25T19:47:42.705Z",
+        "syncedAt": "2026-06-25T21:24:02.464Z",
         "allTime": {
-          "revenue": 6247,
-          "orders": 92
+          "revenue": 6291,
+          "orders": 93
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 712,
-          "orders": 8,
-          "aov": 89,
+          "revenue": 757,
+          "orders": 9,
+          "aov": 84,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 178,
-          "revenueHalf2": 534,
+          "revenueHalf2": 579,
           "discountOrders": 5,
-          "discountRate": 63,
-          "discountShare": 13,
+          "discountRate": 56,
+          "discountShare": 12,
           "totalDiscounts": 92,
-          "newCust": 6,
+          "newCust": 7,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 65,
+          "avgLTV": 58,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -496,24 +513,30 @@
               "revenue": 50
             },
             {
+              "name": "Chemise Kimono Lin",
+              "qty": 1,
+              "revenue": 45
+            },
+            {
               "name": "Veste Kimono Homme Haori",
               "qty": 1,
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 77,
+          "top3RevenueShare": 73,
           "hourly": {
             "7": 1,
             "12": 1,
             "13": 3,
             "14": 1,
-            "18": 2
+            "18": 2,
+            "20": 1
           },
           "daily": {
             "0": 1,
             "1": 1,
             "3": 1,
-            "4": 3,
+            "4": 4,
             "6": 2
           },
           "totalProducts": 223,
@@ -540,10 +563,10 @@
             "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 11,
-          "abandonRate": 27,
-          "abandonedValue": 165,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 13,
+          "abandonRate": 31,
+          "abandonedValue": 252,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -556,31 +579,35 @@
             {
               "name": "Kimono Long Femme Boheme",
               "count": 1
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "count": 1
             }
           ],
-          "sessions": 138,
-          "conversionRate": 5.8,
+          "sessions": 163,
+          "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:44.073Z"
+          "syncedAt": "2026-06-25T21:24:03.610Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2932,
-          "orders": 33,
-          "aov": 89,
+          "revenue": 2977,
+          "orders": 34,
+          "aov": 88,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 1606,
-          "revenueHalf2": 1326,
+          "revenueHalf2": 1371,
           "discountOrders": 16,
-          "discountRate": 48,
+          "discountRate": 47,
           "discountShare": 11,
           "totalDiscounts": 333,
-          "newCust": 31,
+          "newCust": 32,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 64,
+          "avgLTV": 62,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -624,17 +651,17 @@
               "revenue": 95
             },
             {
-              "name": "Ensemble Kimono Fleuri",
-              "qty": 1,
-              "revenue": 80
+              "name": "Chemise Kimono Lin",
+              "qty": 2,
+              "revenue": 90
             },
             {
-              "name": "Ensemble Kimono Et Pantalon Femme",
+              "name": "Ensemble Kimono Fleuri",
               "qty": 1,
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 51,
+          "top3RevenueShare": 50,
           "hourly": {
             "7": 1,
             "8": 1,
@@ -649,6 +676,7 @@
             "17": 1,
             "18": 7,
             "19": 2,
+            "20": 1,
             "21": 2
           },
           "daily": {
@@ -656,7 +684,7 @@
             "1": 1,
             "2": 4,
             "3": 6,
-            "4": 7,
+            "4": 8,
             "5": 2,
             "6": 6
           },
@@ -684,10 +712,10 @@
             "Chemise Motif Kimono Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 41,
-          "abandonRate": 20,
-          "abandonedValue": 393,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 43,
+          "abandonRate": 21,
+          "abandonedValue": 480,
           "topAbandoned": [
             {
               "name": "Kimono De Plage Femme Long",
@@ -710,29 +738,29 @@
               "count": 1
             }
           ],
-          "sessions": 513,
-          "conversionRate": 6.4,
+          "sessions": 538,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:44.703Z"
+          "syncedAt": "2026-06-25T21:24:04.968Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5381,
-          "orders": 78,
+          "revenue": 5426,
+          "orders": 79,
           "aov": 69,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 1365,
-          "revenueHalf2": 4015,
+          "revenueHalf2": 4060,
           "discountOrders": 35,
-          "discountRate": 45,
+          "discountRate": 44,
           "discountShare": 8,
           "totalDiscounts": 444,
-          "newCust": 74,
+          "newCust": 75,
           "returning": 2,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 42,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -803,7 +831,7 @@
             "17": 5,
             "18": 12,
             "19": 2,
-            "20": 2,
+            "20": 3,
             "21": 6,
             "22": 1
           },
@@ -812,7 +840,7 @@
             "1": 11,
             "2": 8,
             "3": 13,
-            "4": 13,
+            "4": 14,
             "5": 6,
             "6": 10
           },
@@ -840,21 +868,21 @@
             "Chemise Noire Kimono Femme"
           ],
           "newProductsAdded": 18,
-          "abandonedCheckouts": 22,
-          "totalCheckouts": 100,
-          "abandonRate": 22,
-          "abandonedValue": 1337,
+          "abandonedCheckouts": 23,
+          "totalCheckouts": 102,
+          "abandonRate": 23,
+          "abandonedValue": 1424,
           "topAbandoned": [
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "count": 2
+            },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
               "count": 2
             },
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
-              "count": 1
-            },
-            {
-              "name": "Cardigan Kimono Coton Homme",
               "count": 1
             },
             {
@@ -866,26 +894,26 @@
               "count": 1
             }
           ],
-          "sessions": 1250,
+          "sessions": 1275,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:45.632Z"
+          "syncedAt": "2026-06-25T21:24:05.686Z"
         },
         "365": {
           "period": 365,
-          "revenue": 6247,
-          "orders": 92,
+          "revenue": 6291,
+          "orders": 93,
           "aov": 68,
           "currency": "EUR",
           "refunds": 1,
           "refundRate": 1,
           "revenueHalf1": 0,
-          "revenueHalf2": 6247,
+          "revenueHalf2": 6291,
           "discountOrders": 36,
           "discountRate": 39,
           "discountShare": 7,
           "totalDiscounts": 447,
-          "newCust": 88,
+          "newCust": 89,
           "returning": 2,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 42,
@@ -942,7 +970,7 @@
               "revenue": 175
             }
           ],
-          "top3RevenueShare": 32,
+          "top3RevenueShare": 31,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -960,7 +988,7 @@
             "17": 6,
             "18": 13,
             "19": 3,
-            "20": 4,
+            "20": 5,
             "21": 7,
             "22": 1
           },
@@ -969,7 +997,7 @@
             "1": 14,
             "2": 9,
             "3": 16,
-            "4": 14,
+            "4": 15,
             "5": 7,
             "6": 13
           },
@@ -997,13 +1025,17 @@
             "Chemise Style Kimono Femme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 115,
-          "abandonRate": 20,
-          "abandonedValue": 1387,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 117,
+          "abandonRate": 21,
+          "abandonedValue": 1473,
           "topAbandoned": [
             {
               "name": "Kimono Chinois Rouge",
+              "count": 2
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
               "count": 2
             },
             {
@@ -1015,18 +1047,14 @@
               "count": 1
             },
             {
-              "name": "Cardigan Kimono Coton Homme",
-              "count": 1
-            },
-            {
               "name": "Robe Chinoise Kimono Enfant",
               "count": 1
             }
           ],
-          "sessions": 1438,
+          "sessions": 1463,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T19:47:46.306Z"
+          "syncedAt": "2026-06-25T21:24:06.314Z"
         }
       }
     }
