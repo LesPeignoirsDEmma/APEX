@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-25T23:09:41.183Z",
+  "lastUpdated": "2026-06-26T02:36:59.521Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 160,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-06-25T23:09:43.039Z",
+        "syncedAt": "2026-06-26T02:37:04.896Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:45.299Z"
+          "syncedAt": "2026-06-26T02:37:06.647Z"
         },
         "30": {
           "period": 30,
@@ -164,23 +164,23 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:46.108Z"
+          "syncedAt": "2026-06-26T02:37:07.199Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1467,
-          "orders": 19,
-          "aov": 77,
+          "revenue": 1431,
+          "orders": 18,
+          "aov": 80,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1098,
+          "revenueHalf1": 1062,
           "revenueHalf2": 369,
-          "discountOrders": 6,
-          "discountRate": 32,
+          "discountOrders": 5,
+          "discountRate": 28,
           "discountShare": 3,
-          "totalDiscounts": 50,
-          "newCust": 17,
+          "totalDiscounts": 46,
+          "newCust": 16,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 43,
@@ -237,9 +237,9 @@
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 31,
+          "top3RevenueShare": 32,
           "hourly": {
-            "6": 2,
+            "6": 1,
             "8": 2,
             "9": 1,
             "10": 2,
@@ -257,7 +257,7 @@
             "2": 3,
             "3": 5,
             "4": 2,
-            "5": 4,
+            "5": 3,
             "6": 3
           },
           "totalProducts": 178,
@@ -267,6 +267,7 @@
             "Cape de Bain Bébé Koala",
             "Cape de Bain Bébé Lapin",
             "Cape de Bain Bébé Lion",
+            "Cape de Bain Coton",
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Bleu",
             "Chaussons d’intérieur — Gris",
@@ -280,12 +281,11 @@
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
             "Peignoir Absorbant Homme",
-            "Peignoir Baroque - Femme",
-            "Peignoir Baroque - Homme"
+            "Peignoir Baroque - Femme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 20,
+          "totalCheckouts": 19,
           "abandonRate": 5,
           "abandonedValue": 65,
           "topAbandoned": [
@@ -294,10 +294,10 @@
               "count": 1
             }
           ],
-          "sessions": 250,
+          "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:46.859Z"
+          "syncedAt": "2026-06-26T02:37:07.780Z"
         },
         "365": {
           "period": 365,
@@ -441,7 +441,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:47.696Z"
+          "syncedAt": "2026-06-26T02:37:08.831Z"
         }
       }
     },
@@ -450,7 +450,7 @@
         "revenue": 2977,
         "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-06-25T23:09:48.751Z",
+        "syncedAt": "2026-06-26T02:37:10.185Z",
         "allTime": {
           "revenue": 6291,
           "orders": 93
@@ -459,22 +459,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 757,
-          "orders": 9,
-          "aov": 84,
+          "revenue": 707,
+          "orders": 8,
+          "aov": 88,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 178,
+          "revenueHalf1": 128,
           "revenueHalf2": 579,
-          "discountOrders": 5,
-          "discountRate": 56,
+          "discountOrders": 4,
+          "discountRate": 50,
           "discountShare": 12,
-          "totalDiscounts": 92,
-          "newCust": 7,
+          "totalDiscounts": 86,
+          "newCust": 6,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 58,
+          "avgLTV": 64,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -503,11 +503,6 @@
               "revenue": 60
             },
             {
-              "name": "Kimono Chinois Fille",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
               "name": "Kimono Court Pour Homme",
               "qty": 1,
               "revenue": 50
@@ -523,11 +518,11 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 73,
+          "top3RevenueShare": 78,
           "hourly": {
             "7": 1,
             "12": 1,
-            "13": 3,
+            "13": 2,
             "14": 1,
             "18": 2,
             "20": 1
@@ -536,7 +531,7 @@
             "0": 1,
             "1": 1,
             "3": 1,
-            "4": 4,
+            "4": 3,
             "6": 2
           },
           "totalProducts": 223,
@@ -564,8 +559,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 4,
-          "totalCheckouts": 13,
-          "abandonRate": 31,
+          "totalCheckouts": 12,
+          "abandonRate": 33,
           "abandonedValue": 252,
           "topAbandoned": [
             {
@@ -585,10 +580,10 @@
               "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 5.5,
+          "sessions": 150,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:50.088Z"
+          "syncedAt": "2026-06-26T02:37:11.356Z"
         },
         "30": {
           "period": 30,
@@ -741,7 +736,7 @@
           "sessions": 538,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:50.710Z"
+          "syncedAt": "2026-06-26T02:37:11.834Z"
         },
         "90": {
           "period": 90,
@@ -897,7 +892,7 @@
           "sessions": 1275,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:51.378Z"
+          "syncedAt": "2026-06-26T02:37:12.903Z"
         },
         "365": {
           "period": 365,
@@ -1054,7 +1049,7 @@
           "sessions": 1463,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-25T23:09:52.123Z"
+          "syncedAt": "2026-06-26T02:37:13.442Z"
         }
       }
     }
