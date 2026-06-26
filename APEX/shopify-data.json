@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-26T06:46:03.296Z",
+  "lastUpdated": "2026-06-26T10:16:06.896Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 160,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-06-26T06:46:05.035Z",
+        "syncedAt": "2026-06-26T10:16:08.570Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:07.039Z"
+          "syncedAt": "2026-06-26T10:16:10.431Z"
         },
         "30": {
           "period": 30,
@@ -164,7 +164,7 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:07.731Z"
+          "syncedAt": "2026-06-26T10:16:11.080Z"
         },
         "90": {
           "period": 90,
@@ -297,7 +297,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:08.393Z"
+          "syncedAt": "2026-06-26T10:16:11.775Z"
         },
         "365": {
           "period": 365,
@@ -441,37 +441,37 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:09.023Z"
+          "syncedAt": "2026-06-26T10:16:12.785Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2977,
+        "revenue": 2992,
         "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-06-26T06:46:10.293Z",
+        "syncedAt": "2026-06-26T10:16:13.949Z",
         "allTime": {
-          "revenue": 6291,
+          "revenue": 6306,
           "orders": 93
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 707,
-          "orders": 8,
-          "aov": 88,
+          "revenue": 762,
+          "orders": 9,
+          "aov": 85,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 187,
-          "revenueHalf2": 521,
+          "revenueHalf2": 575,
           "discountOrders": 4,
-          "discountRate": 50,
-          "discountShare": 12,
+          "discountRate": 44,
+          "discountShare": 11,
           "totalDiscounts": 86,
-          "newCust": 6,
+          "newCust": 7,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 64,
@@ -503,6 +503,11 @@
               "revenue": 60
             },
             {
+              "name": "Kimono Chinois Rouge",
+              "qty": 1,
+              "revenue": 55
+            },
+            {
               "name": "Kimono Court Pour Homme",
               "qty": 1,
               "revenue": 50
@@ -518,9 +523,10 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 78,
+          "top3RevenueShare": 72,
           "hourly": {
             "7": 1,
+            "10": 1,
             "12": 1,
             "13": 2,
             "14": 1,
@@ -532,6 +538,7 @@
             "1": 1,
             "3": 1,
             "4": 3,
+            "5": 1,
             "6": 2
           },
           "totalProducts": 223,
@@ -559,8 +566,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 4,
-          "totalCheckouts": 12,
-          "abandonRate": 33,
+          "totalCheckouts": 13,
+          "abandonRate": 31,
           "abandonedValue": 252,
           "topAbandoned": [
             {
@@ -580,21 +587,21 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 5.3,
+          "sessions": 163,
+          "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:11.676Z"
+          "syncedAt": "2026-06-26T10:16:15.315Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2977,
+          "revenue": 2992,
           "orders": 34,
           "aov": 88,
           "currency": "EUR",
-          "refunds": 0,
-          "refundRate": 0,
+          "refunds": 1,
+          "refundRate": 3,
           "revenueHalf1": 1606,
-          "revenueHalf2": 1371,
+          "revenueHalf2": 1386,
           "discountOrders": 16,
           "discountRate": 47,
           "discountShare": 11,
@@ -602,7 +609,7 @@
           "newCust": 32,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 62,
+          "avgLTV": 61,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -622,8 +629,8 @@
             },
             {
               "name": "Robe De Chambre Kimono Satin",
-              "qty": 6,
-              "revenue": 239
+              "qty": 5,
+              "revenue": 200
             },
             {
               "name": "Kimono Femme Paillette",
@@ -661,8 +668,7 @@
             "7": 1,
             "8": 1,
             "9": 1,
-            "10": 2,
-            "11": 1,
+            "10": 3,
             "12": 3,
             "13": 3,
             "14": 5,
@@ -675,12 +681,12 @@
             "21": 2
           },
           "daily": {
-            "0": 7,
+            "0": 6,
             "1": 1,
             "2": 4,
             "3": 6,
             "4": 8,
-            "5": 2,
+            "5": 3,
             "6": 6
           },
           "totalProducts": 223,
@@ -736,18 +742,18 @@
           "sessions": 538,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:12.196Z"
+          "syncedAt": "2026-06-26T10:16:15.823Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5426,
+          "revenue": 5441,
           "orders": 79,
           "aov": 69,
           "currency": "EUR",
-          "refunds": 1,
-          "refundRate": 1,
+          "refunds": 2,
+          "refundRate": 2,
           "revenueHalf1": 1415,
-          "revenueHalf2": 4010,
+          "revenueHalf2": 4025,
           "discountOrders": 35,
           "discountRate": 44,
           "discountShare": 8,
@@ -779,11 +785,6 @@
               "revenue": 399
             },
             {
-              "name": "Robe De Chambre Kimono Satin",
-              "qty": 7,
-              "revenue": 279
-            },
-            {
               "name": "Veste Kimono Noir Homme",
               "qty": 5,
               "revenue": 250
@@ -794,17 +795,22 @@
               "revenue": 240
             },
             {
+              "name": "Robe De Chambre Kimono Satin",
+              "qty": 6,
+              "revenue": 239
+            },
+            {
               "name": "Robe Kimono Longue Grande Taille",
               "qty": 4,
               "revenue": 175
             },
             {
-              "name": "Kimono Chinois Fille",
+              "name": "Kimono Chinois Rouge",
               "qty": 3,
               "revenue": 165
             },
             {
-              "name": "Robe Chinoise Kimono Enfant",
+              "name": "Kimono Chinois Fille",
               "qty": 3,
               "revenue": 165
             }
@@ -816,8 +822,8 @@
             "7": 5,
             "8": 3,
             "9": 2,
-            "10": 4,
-            "11": 5,
+            "10": 5,
+            "11": 4,
             "12": 5,
             "13": 6,
             "14": 7,
@@ -831,12 +837,12 @@
             "22": 1
           },
           "daily": {
-            "0": 17,
+            "0": 16,
             "1": 11,
             "2": 8,
             "3": 13,
             "4": 14,
-            "5": 6,
+            "5": 7,
             "6": 10
           },
           "totalProducts": 223,
@@ -892,18 +898,18 @@
           "sessions": 1275,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:12.758Z"
+          "syncedAt": "2026-06-26T10:16:16.334Z"
         },
         "365": {
           "period": 365,
-          "revenue": 6291,
+          "revenue": 6306,
           "orders": 93,
           "aov": 68,
           "currency": "EUR",
-          "refunds": 1,
-          "refundRate": 1,
+          "refunds": 2,
+          "refundRate": 2,
           "revenueHalf1": 0,
-          "revenueHalf2": 6291,
+          "revenueHalf2": 6306,
           "discountOrders": 36,
           "discountRate": 39,
           "discountShare": 7,
@@ -940,11 +946,6 @@
               "revenue": 299
             },
             {
-              "name": "Robe De Chambre Kimono Satin",
-              "qty": 7,
-              "revenue": 279
-            },
-            {
               "name": "Kimono Chinois Fille",
               "qty": 5,
               "revenue": 275
@@ -955,14 +956,19 @@
               "revenue": 240
             },
             {
-              "name": "Robe Chinoise Kimono Enfant",
+              "name": "Robe De Chambre Kimono Satin",
+              "qty": 6,
+              "revenue": 239
+            },
+            {
+              "name": "Kimono Chinois Rouge",
               "qty": 4,
               "revenue": 220
             },
             {
-              "name": "Robe Kimono Longue Grande Taille",
+              "name": "Robe Chinoise Kimono Enfant",
               "qty": 4,
-              "revenue": 175
+              "revenue": 220
             }
           ],
           "top3RevenueShare": 31,
@@ -973,8 +979,8 @@
             "7": 5,
             "8": 4,
             "9": 2,
-            "10": 5,
-            "11": 5,
+            "10": 6,
+            "11": 4,
             "12": 6,
             "13": 10,
             "14": 7,
@@ -988,12 +994,12 @@
             "22": 1
           },
           "daily": {
-            "0": 19,
+            "0": 18,
             "1": 14,
             "2": 9,
             "3": 16,
             "4": 15,
-            "5": 7,
+            "5": 8,
             "6": 13
           },
           "totalProducts": 223,
@@ -1049,7 +1055,7 @@
           "sessions": 1463,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T06:46:13.452Z"
+          "syncedAt": "2026-06-26T10:16:16.873Z"
         }
       }
     }
