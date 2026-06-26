@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-26T10:16:06.896Z",
+  "lastUpdated": "2026-06-26T13:04:40.235Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 160,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-06-26T10:16:08.570Z",
+        "syncedAt": "2026-06-26T13:04:42.185Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:10.431Z"
+          "syncedAt": "2026-06-26T13:04:53.529Z"
         },
         "30": {
           "period": 30,
@@ -164,7 +164,7 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:11.080Z"
+          "syncedAt": "2026-06-26T13:04:54.368Z"
         },
         "90": {
           "period": 90,
@@ -297,7 +297,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:11.775Z"
+          "syncedAt": "2026-06-26T13:04:55.165Z"
         },
         "365": {
           "period": 365,
@@ -441,7 +441,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:12.785Z"
+          "syncedAt": "2026-06-26T13:04:56.050Z"
         }
       }
     },
@@ -450,7 +450,7 @@
         "revenue": 2992,
         "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-06-26T10:16:13.949Z",
+        "syncedAt": "2026-06-26T13:04:59.790Z",
         "allTime": {
           "revenue": 6306,
           "orders": 93
@@ -590,7 +590,7 @@
           "sessions": 163,
           "conversionRate": 5.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:15.315Z"
+          "syncedAt": "2026-06-26T13:05:02.377Z"
         },
         "30": {
           "period": 30,
@@ -742,7 +742,7 @@
           "sessions": 538,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:15.823Z"
+          "syncedAt": "2026-06-26T13:05:03.023Z"
         },
         "90": {
           "period": 90,
@@ -898,7 +898,7 @@
           "sessions": 1275,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:16.334Z"
+          "syncedAt": "2026-06-26T13:05:03.761Z"
         },
         "365": {
           "period": 365,
@@ -1026,15 +1026,11 @@
             "Chemise Style Kimono Femme"
           ],
           "newProductsAdded": 223,
-          "abandonedCheckouts": 24,
-          "totalCheckouts": 117,
-          "abandonRate": 21,
-          "abandonedValue": 1473,
+          "abandonedCheckouts": 23,
+          "totalCheckouts": 116,
+          "abandonRate": 20,
+          "abandonedValue": 1424,
           "topAbandoned": [
-            {
-              "name": "Kimono Chinois Rouge",
-              "count": 2
-            },
             {
               "name": "Cardigan Kimono Coton Homme",
               "count": 2
@@ -1050,12 +1046,16 @@
             {
               "name": "Robe Chinoise Kimono Enfant",
               "count": 1
+            },
+            {
+              "name": "Ensemble Pantalon Et Kimono Femme",
+              "count": 1
             }
           ],
-          "sessions": 1463,
+          "sessions": 1450,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-26T10:16:16.873Z"
+          "syncedAt": "2026-06-26T13:05:04.585Z"
         }
       }
     }
