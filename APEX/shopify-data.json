@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-28T21:56:06.799Z",
+  "lastUpdated": "2026-06-28T22:58:05.422Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-28T21:56:08.535Z",
+        "syncedAt": "2026-06-28T22:58:07.044Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:10.328Z"
+          "syncedAt": "2026-06-28T22:58:08.648Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:11.005Z"
+          "syncedAt": "2026-06-28T22:58:09.282Z"
         },
         "90": {
           "period": 90,
@@ -290,7 +290,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:11.663Z"
+          "syncedAt": "2026-06-28T22:58:09.913Z"
         },
         "365": {
           "period": 365,
@@ -434,7 +434,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:12.292Z"
+          "syncedAt": "2026-06-28T22:58:11.021Z"
         }
       }
     },
@@ -443,7 +443,7 @@
         "revenue": 2786,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-06-28T21:56:13.430Z",
+        "syncedAt": "2026-06-28T22:58:12.001Z",
         "allTime": {
           "revenue": 6308,
           "orders": 93
@@ -553,7 +553,7 @@
           "abandonedCheckouts": 3,
           "totalCheckouts": 10,
           "abandonRate": 30,
-          "abandonedValue": 187,
+          "abandonedValue": 181,
           "topAbandoned": [
             {
               "name": "Veste Kimono Noir Homme",
@@ -571,7 +571,7 @@
           "sessions": 125,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:14.705Z"
+          "syncedAt": "2026-06-28T22:58:13.092Z"
         },
         "30": {
           "period": 30,
@@ -695,7 +695,7 @@
           "abandonedCheckouts": 8,
           "totalCheckouts": 39,
           "abandonRate": 21,
-          "abandonedValue": 440,
+          "abandonedValue": 434,
           "topAbandoned": [
             {
               "name": "Kimono De Plage Femme Long",
@@ -721,7 +721,7 @@
           "sessions": 488,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:15.219Z"
+          "syncedAt": "2026-06-28T22:58:13.575Z"
         },
         "90": {
           "period": 90,
@@ -851,7 +851,7 @@
           "abandonedCheckouts": 23,
           "totalCheckouts": 102,
           "abandonRate": 23,
-          "abandonedValue": 1424,
+          "abandonedValue": 1418,
           "topAbandoned": [
             {
               "name": "Cardigan Kimono Coton Homme",
@@ -877,7 +877,7 @@
           "sessions": 1275,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:15.782Z"
+          "syncedAt": "2026-06-28T22:58:14.132Z"
         },
         "365": {
           "period": 365,
@@ -1008,7 +1008,7 @@
           "abandonedCheckouts": 23,
           "totalCheckouts": 116,
           "abandonRate": 20,
-          "abandonedValue": 1424,
+          "abandonedValue": 1418,
           "topAbandoned": [
             {
               "name": "Cardigan Kimono Coton Homme",
@@ -1034,7 +1034,7 @@
           "sessions": 1450,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T21:56:16.327Z"
+          "syncedAt": "2026-06-28T22:58:14.927Z"
         }
       }
     }
