@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-28T22:58:05.422Z",
+  "lastUpdated": "2026-06-29T00:09:30.412Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-28T22:58:07.044Z",
+        "syncedAt": "2026-06-29T00:09:31.928Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:08.648Z"
+          "syncedAt": "2026-06-29T00:09:33.500Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:09.282Z"
+          "syncedAt": "2026-06-29T00:09:34.043Z"
         },
         "90": {
           "period": 90,
@@ -176,7 +176,7 @@
           "newCust": 16,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 45,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -290,7 +290,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:09.913Z"
+          "syncedAt": "2026-06-29T00:09:34.604Z"
         },
         "365": {
           "period": 365,
@@ -434,7 +434,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:11.021Z"
+          "syncedAt": "2026-06-29T00:09:35.167Z"
         }
       }
     },
@@ -443,7 +443,7 @@
         "revenue": 2786,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-06-28T22:58:12.001Z",
+        "syncedAt": "2026-06-29T00:09:36.164Z",
         "allTime": {
           "revenue": 6308,
           "orders": 93
@@ -452,22 +452,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 660,
-          "orders": 7,
-          "aov": 94,
+          "revenue": 635,
+          "orders": 6,
+          "aov": 106,
           "currency": "EUR",
           "refunds": 1,
-          "refundRate": 13,
-          "revenueHalf1": 442,
+          "refundRate": 14,
+          "revenueHalf1": 417,
           "revenueHalf2": 218,
           "discountOrders": 1,
-          "discountRate": 14,
-          "discountShare": 10,
+          "discountRate": 17,
+          "discountShare": 11,
           "totalDiscounts": 68,
-          "newCust": 7,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 51,
+          "avgLTV": 58,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -504,24 +504,18 @@
               "name": "Chemise Kimono Lin",
               "qty": 1,
               "revenue": 45
-            },
-            {
-              "name": "Veste Kimono Homme Haori",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 73,
+          "top3RevenueShare": 76,
           "hourly": {
             "7": 1,
             "10": 1,
-            "12": 1,
             "13": 2,
             "15": 1,
             "20": 1
           },
           "daily": {
-            "0": 2,
+            "0": 1,
             "3": 1,
             "4": 3,
             "5": 1
@@ -550,15 +544,11 @@
             "Chemise Kimono Homme Japonais"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 10,
-          "abandonRate": 30,
-          "abandonedValue": 181,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 8,
+          "abandonRate": 25,
+          "abandonedValue": 136,
           "topAbandoned": [
-            {
-              "name": "Veste Kimono Noir Homme",
-              "count": 1
-            },
             {
               "name": "Kimono Long Femme Boheme",
               "count": 1
@@ -568,10 +558,10 @@
               "count": 1
             }
           ],
-          "sessions": 125,
-          "conversionRate": 5.6,
+          "sessions": 100,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:13.092Z"
+          "syncedAt": "2026-06-29T00:09:37.446Z"
         },
         "30": {
           "period": 30,
@@ -721,7 +711,7 @@
           "sessions": 488,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:13.575Z"
+          "syncedAt": "2026-06-29T00:09:37.922Z"
         },
         "90": {
           "period": 90,
@@ -877,7 +867,7 @@
           "sessions": 1275,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:14.132Z"
+          "syncedAt": "2026-06-29T00:09:38.431Z"
         },
         "365": {
           "period": 365,
@@ -1034,7 +1024,7 @@
           "sessions": 1450,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-28T22:58:14.927Z"
+          "syncedAt": "2026-06-29T00:09:38.960Z"
         }
       }
     }
