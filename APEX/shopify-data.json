@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-29T10:26:03.061Z",
+  "lastUpdated": "2026-06-29T14:43:02.709Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-29T10:26:04.853Z",
+        "syncedAt": "2026-06-29T14:43:04.741Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:06.767Z"
+          "syncedAt": "2026-06-29T14:43:06.759Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:07.470Z"
+          "syncedAt": "2026-06-29T14:43:07.544Z"
         },
         "90": {
           "period": 90,
@@ -290,7 +290,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:08.192Z"
+          "syncedAt": "2026-06-29T14:43:08.340Z"
         },
         "365": {
           "period": 365,
@@ -434,7 +434,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:09.104Z"
+          "syncedAt": "2026-06-29T14:43:09.123Z"
         }
       }
     },
@@ -443,7 +443,7 @@
         "revenue": 2831,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-29T10:26:10.262Z",
+        "syncedAt": "2026-06-29T14:43:12.542Z",
         "allTime": {
           "revenue": 6353,
           "orders": 94
@@ -527,30 +527,30 @@
             "4": 3,
             "5": 1
           },
-          "totalProducts": 223,
+          "totalProducts": 250,
           "zeroSaleProducts": [
-            "Brassière Kimono Bébé",
-            "Brassière Kimono Nouveau Né",
-            "Cardigan Chemise Kimono",
-            "Cardigan Homme Façon Kimono",
-            "Cardigan Kimono Coton Homme",
-            "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Homme Drapé",
-            "Cardigan Kimono Noir Court Femme",
-            "Cardigan Style Kimono Homme",
-            "Chemise Col Kimono Homme",
-            "Chemise Facon Kimono",
-            "Chemise Facon Kimono Homme",
-            "Chemise Femme Style Kimono",
-            "Chemise Imprimé Kimono",
-            "Chemise Kimono Blanche Homme",
-            "Chemise Kimono Bleue",
-            "Chemise Kimono Femme",
-            "Chemise Kimono Femme Grande Taille",
-            "Chemise Kimono Grande Taille",
-            "Chemise Kimono Homme Japonais"
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2026 Beach Cover Up Long Sleeve One Piece Kimono Women Swimwear Female Bathing Suit Beachwear Swimming",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 0,
+          "newProductsAdded": 178,
           "abandonedCheckouts": 2,
           "totalCheckouts": 9,
           "abandonRate": 22,
@@ -568,7 +568,7 @@
           "sessions": 113,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:11.584Z"
+          "syncedAt": "2026-06-29T14:43:14.417Z"
         },
         "30": {
           "period": 30,
@@ -667,30 +667,30 @@
             "5": 3,
             "6": 6
           },
-          "totalProducts": 223,
+          "totalProducts": 250,
           "zeroSaleProducts": [
-            "Brassière Kimono Bébé",
-            "Brassière Kimono Nouveau Né",
-            "Cardigan Chemise Kimono",
-            "Cardigan Homme Façon Kimono",
-            "Cardigan Kimono Coton Homme",
-            "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Noir Court Femme",
-            "Cardigan Style Kimono Homme",
-            "Chemise Col Kimono Homme",
-            "Chemise Facon Kimono",
-            "Chemise Facon Kimono Homme",
-            "Chemise Femme Style Kimono",
-            "Chemise Imprimé Kimono",
-            "Chemise Kimono Blanche Homme",
-            "Chemise Kimono Bleue",
-            "Chemise Kimono Femme",
-            "Chemise Kimono Femme Grande Taille",
-            "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir",
-            "Chemise Kimono Pour Homme"
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2026 Beach Cover Up Long Sleeve One Piece Kimono Women Swimwear Female Bathing Suit Beachwear Swimming",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 0,
+          "newProductsAdded": 178,
           "abandonedCheckouts": 8,
           "totalCheckouts": 40,
           "abandonRate": 20,
@@ -720,7 +720,7 @@
           "sessions": 500,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:12.176Z"
+          "syncedAt": "2026-06-29T14:43:15.302Z"
         },
         "90": {
           "period": 90,
@@ -823,30 +823,30 @@
             "5": 7,
             "6": 10
           },
-          "totalProducts": 223,
+          "totalProducts": 250,
           "zeroSaleProducts": [
-            "Brassière Kimono Bébé",
-            "Brassière Kimono Nouveau Né",
-            "Cardigan Chemise Kimono",
-            "Cardigan Homme Façon Kimono",
-            "Cardigan Kimono Coton Homme",
-            "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Noir Court Femme",
-            "Cardigan Style Kimono Homme",
-            "Chemise Col Kimono Homme",
-            "Chemise Facon Kimono",
-            "Chemise Femme Style Kimono",
-            "Chemise Imprimé Kimono",
-            "Chemise Kimono Bleue",
-            "Chemise Kimono Femme",
-            "Chemise Kimono Femme Grande Taille",
-            "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir",
-            "Chemise Kimono Pour Homme",
-            "Chemise Motif Kimono Homme",
-            "Chemise Noire Kimono Femme"
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2026 Beach Cover Up Long Sleeve One Piece Kimono Women Swimwear Female Bathing Suit Beachwear Swimming",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 18,
+          "newProductsAdded": 181,
           "abandonedCheckouts": 23,
           "totalCheckouts": 103,
           "abandonRate": 22,
@@ -876,7 +876,7 @@
           "sessions": 1288,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:12.760Z"
+          "syncedAt": "2026-06-29T14:43:16.466Z"
         },
         "365": {
           "period": 365,
@@ -980,30 +980,30 @@
             "5": 8,
             "6": 13
           },
-          "totalProducts": 223,
+          "totalProducts": 250,
           "zeroSaleProducts": [
-            "Brassière Kimono Bébé",
-            "Brassière Kimono Nouveau Né",
-            "Cardigan Chemise Kimono",
-            "Cardigan Homme Façon Kimono",
-            "Cardigan Kimono Coton Homme",
-            "Cardigan Kimono Femme Grande Taille",
-            "Cardigan Kimono Noir Court Femme",
-            "Chemise Col Kimono Homme",
-            "Chemise Facon Kimono",
-            "Chemise Femme Style Kimono",
-            "Chemise Imprimé Kimono",
-            "Chemise Kimono Bleue",
-            "Chemise Kimono Femme",
-            "Chemise Kimono Femme Grande Taille",
-            "Chemise Kimono Homme Japonais",
-            "Chemise Kimono Homme Noir",
-            "Chemise Kimono Pour Homme",
-            "Chemise Motif Kimono Homme",
-            "Chemise Noire Kimono Femme",
-            "Chemise Style Kimono Femme"
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Asian Traditional Dress Men's and Women's Crane Printed Kimono Cardigan Harajuku Yukata Dark Haori Shirt Jacket",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2024 Summer Mini Dress Women Lace Hollow Crochet Bikini Cover-ups Bathing Suit Swimsuit White Tunic Sarong Wrap Beachwear",
+            "2026 Beach Cover Up Long Sleeve One Piece Kimono Women Swimwear Female Bathing Suit Beachwear Swimming",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 223,
+          "newProductsAdded": 250,
           "abandonedCheckouts": 23,
           "totalCheckouts": 117,
           "abandonRate": 20,
@@ -1033,7 +1033,7 @@
           "sessions": 1463,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T10:26:13.382Z"
+          "syncedAt": "2026-06-29T14:43:17.437Z"
         }
       }
     }
