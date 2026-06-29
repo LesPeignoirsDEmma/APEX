@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-29T05:24:10.788Z",
+  "lastUpdated": "2026-06-29T10:26:03.061Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-29T05:24:15.888Z",
+        "syncedAt": "2026-06-29T10:26:04.853Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -21,8 +21,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 55,
+          "revenueHalf1": 55,
+          "revenueHalf2": 0,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:17.721Z"
+          "syncedAt": "2026-06-29T10:26:06.767Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:18.478Z"
+          "syncedAt": "2026-06-29T10:26:07.470Z"
         },
         "90": {
           "period": 90,
@@ -290,7 +290,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:19.205Z"
+          "syncedAt": "2026-06-29T10:26:08.192Z"
         },
         "365": {
           "period": 365,
@@ -434,40 +434,40 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:20.011Z"
+          "syncedAt": "2026-06-29T10:26:09.104Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2786,
-        "orders": 31,
+        "revenue": 2831,
+        "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-29T05:24:21.094Z",
+        "syncedAt": "2026-06-29T10:26:10.262Z",
         "allTime": {
-          "revenue": 6308,
-          "orders": 93
+          "revenue": 6353,
+          "orders": 94
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 635,
-          "orders": 6,
-          "aov": 106,
+          "revenue": 680,
+          "orders": 7,
+          "aov": 97,
           "currency": "EUR",
           "refunds": 1,
-          "refundRate": 14,
-          "revenueHalf1": 476,
+          "refundRate": 13,
+          "revenueHalf1": 521,
           "revenueHalf2": 160,
-          "discountOrders": 1,
-          "discountRate": 17,
+          "discountOrders": 2,
+          "discountRate": 29,
           "discountShare": 11,
-          "totalDiscounts": 68,
-          "newCust": 6,
+          "totalDiscounts": 73,
+          "newCust": 7,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 58,
+          "avgLTV": 57,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -501,13 +501,19 @@
               "revenue": 55
             },
             {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
               "name": "Chemise Kimono Lin",
               "qty": 1,
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 76,
+          "top3RevenueShare": 71,
           "hourly": {
+            "6": 1,
             "7": 1,
             "10": 1,
             "13": 2,
@@ -516,6 +522,7 @@
           },
           "daily": {
             "0": 1,
+            "1": 1,
             "3": 1,
             "4": 3,
             "5": 1
@@ -545,8 +552,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 8,
-          "abandonRate": 25,
+          "totalCheckouts": 9,
+          "abandonRate": 22,
           "abandonedValue": 136,
           "topAbandoned": [
             {
@@ -558,26 +565,26 @@
               "count": 1
             }
           ],
-          "sessions": 100,
-          "conversionRate": 6,
+          "sessions": 113,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:22.512Z"
+          "syncedAt": "2026-06-29T10:26:11.584Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2786,
-          "orders": 31,
-          "aov": 90,
+          "revenue": 2831,
+          "orders": 32,
+          "aov": 88,
           "currency": "EUR",
           "refunds": 2,
           "refundRate": 6,
           "revenueHalf1": 1604,
-          "revenueHalf2": 1182,
-          "discountOrders": 13,
-          "discountRate": 42,
+          "revenueHalf2": 1227,
+          "discountOrders": 14,
+          "discountRate": 44,
           "discountShare": 11,
-          "totalDiscounts": 309,
-          "newCust": 31,
+          "totalDiscounts": 314,
+          "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 59,
@@ -619,6 +626,11 @@
               "revenue": 110
             },
             {
+              "name": "Veste Kimono Noir Homme",
+              "qty": 2,
+              "revenue": 100
+            },
+            {
               "name": "Kimono Long Femme Plage",
               "qty": 2,
               "revenue": 100
@@ -627,15 +639,11 @@
               "name": "Chemise Kimono Lin",
               "qty": 2,
               "revenue": 90
-            },
-            {
-              "name": "Ensemble Kimono Fleuri",
-              "qty": 1,
-              "revenue": 80
             }
           ],
-          "top3RevenueShare": 54,
+          "top3RevenueShare": 53,
           "hourly": {
+            "6": 1,
             "7": 1,
             "8": 1,
             "9": 1,
@@ -652,6 +660,7 @@
           },
           "daily": {
             "0": 7,
+            "1": 1,
             "2": 4,
             "3": 4,
             "4": 7,
@@ -683,8 +692,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 39,
-          "abandonRate": 21,
+          "totalCheckouts": 40,
+          "abandonRate": 20,
           "abandonedValue": 434,
           "topAbandoned": [
             {
@@ -708,26 +717,26 @@
               "count": 1
             }
           ],
-          "sessions": 488,
+          "sessions": 500,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:23.123Z"
+          "syncedAt": "2026-06-29T10:26:12.176Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5442,
-          "orders": 79,
+          "revenue": 5487,
+          "orders": 80,
           "aov": 69,
           "currency": "EUR",
           "refunds": 3,
           "refundRate": 4,
-          "revenueHalf1": 1700,
-          "revenueHalf2": 3742,
-          "discountOrders": 34,
-          "discountRate": 43,
+          "revenueHalf1": 1770,
+          "revenueHalf2": 3717,
+          "discountOrders": 35,
+          "discountRate": 44,
           "discountShare": 8,
-          "totalDiscounts": 438,
-          "newCust": 77,
+          "totalDiscounts": 443,
+          "newCust": 78,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 41,
@@ -755,8 +764,8 @@
             },
             {
               "name": "Veste Kimono Noir Homme",
-              "qty": 5,
-              "revenue": 250
+              "qty": 6,
+              "revenue": 299
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
@@ -784,10 +793,10 @@
               "revenue": 165
             }
           ],
-          "top3RevenueShare": 34,
+          "top3RevenueShare": 33,
           "hourly": {
             "5": 2,
-            "6": 1,
+            "6": 2,
             "7": 5,
             "8": 3,
             "9": 2,
@@ -807,7 +816,7 @@
           },
           "daily": {
             "0": 17,
-            "1": 10,
+            "1": 11,
             "2": 8,
             "3": 13,
             "4": 14,
@@ -839,8 +848,8 @@
           ],
           "newProductsAdded": 18,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 102,
-          "abandonRate": 23,
+          "totalCheckouts": 103,
+          "abandonRate": 22,
           "abandonedValue": 1418,
           "topAbandoned": [
             {
@@ -864,26 +873,26 @@
               "count": 1
             }
           ],
-          "sessions": 1275,
+          "sessions": 1288,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:23.764Z"
+          "syncedAt": "2026-06-29T10:26:12.760Z"
         },
         "365": {
           "period": 365,
-          "revenue": 6308,
-          "orders": 93,
+          "revenue": 6353,
+          "orders": 94,
           "aov": 68,
           "currency": "EUR",
           "refunds": 3,
           "refundRate": 3,
           "revenueHalf1": 0,
-          "revenueHalf2": 6308,
-          "discountOrders": 35,
+          "revenueHalf2": 6353,
+          "discountOrders": 36,
           "discountRate": 38,
           "discountShare": 7,
-          "totalDiscounts": 440,
-          "newCust": 91,
+          "totalDiscounts": 445,
+          "newCust": 92,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 41,
@@ -911,8 +920,8 @@
             },
             {
               "name": "Veste Kimono Noir Homme",
-              "qty": 6,
-              "revenue": 299
+              "qty": 7,
+              "revenue": 349
             },
             {
               "name": "Kimono Chinois Fille",
@@ -944,7 +953,7 @@
           "hourly": {
             "1": 1,
             "5": 2,
-            "6": 1,
+            "6": 2,
             "7": 5,
             "8": 4,
             "9": 2,
@@ -964,7 +973,7 @@
           },
           "daily": {
             "0": 19,
-            "1": 13,
+            "1": 14,
             "2": 9,
             "3": 16,
             "4": 15,
@@ -996,7 +1005,7 @@
           ],
           "newProductsAdded": 223,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 116,
+          "totalCheckouts": 117,
           "abandonRate": 20,
           "abandonedValue": 1418,
           "topAbandoned": [
@@ -1021,10 +1030,10 @@
               "count": 1
             }
           ],
-          "sessions": 1450,
+          "sessions": 1463,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-29T05:24:24.422Z"
+          "syncedAt": "2026-06-29T10:26:13.382Z"
         }
       }
     }
