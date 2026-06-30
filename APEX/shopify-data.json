@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-30T18:29:38.816Z",
+  "lastUpdated": "2026-06-30T20:52:25.072Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T18:29:40.668Z",
+        "syncedAt": "2026-06-30T20:52:26.984Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:29:50.202Z"
+          "syncedAt": "2026-06-30T20:52:28.731Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:29:51.025Z"
+          "syncedAt": "2026-06-30T20:52:29.383Z"
         },
         "90": {
           "period": 90,
@@ -289,7 +289,7 @@
           "sessions": 213,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:29:51.788Z"
+          "syncedAt": "2026-06-30T20:52:30.001Z"
         },
         "365": {
           "period": 365,
@@ -333,8 +333,8 @@
             },
             {
               "name": "Peignoir Rose Rayé – Femme",
-              "qty": 8,
-              "revenue": 478
+              "qty": 7,
+              "revenue": 418
             },
             {
               "name": "Peignoir Rayé Coloré - Unisexe",
@@ -433,7 +433,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:29:53.113Z"
+          "syncedAt": "2026-06-30T20:52:30.984Z"
         }
       }
     },
@@ -442,7 +442,7 @@
         "revenue": 3062,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T18:29:55.823Z",
+        "syncedAt": "2026-06-30T20:52:32.193Z",
         "allTime": {
           "revenue": 6687,
           "orders": 96
@@ -580,7 +580,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:29:58.685Z"
+          "syncedAt": "2026-06-30T20:52:33.642Z"
         },
         "30": {
           "period": 30,
@@ -732,7 +732,7 @@
           "sessions": 488,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:29:59.760Z"
+          "syncedAt": "2026-06-30T20:52:34.409Z"
         },
         "90": {
           "period": 90,
@@ -888,7 +888,7 @@
           "sessions": 1313,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:30:00.572Z"
+          "syncedAt": "2026-06-30T20:52:35.141Z"
         },
         "365": {
           "period": 365,
@@ -1045,7 +1045,7 @@
           "sessions": 1488,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T18:30:02.549Z"
+          "syncedAt": "2026-06-30T20:52:35.798Z"
         }
       }
     }
