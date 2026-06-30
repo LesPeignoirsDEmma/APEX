@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-30T13:05:12.793Z",
+  "lastUpdated": "2026-06-30T16:17:10.308Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T13:05:14.952Z",
+        "syncedAt": "2026-06-30T16:17:11.859Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:16.837Z"
+          "syncedAt": "2026-06-30T16:17:13.661Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:17.645Z"
+          "syncedAt": "2026-06-30T16:17:14.235Z"
         },
         "90": {
           "period": 90,
@@ -289,7 +289,7 @@
           "sessions": 213,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:18.484Z"
+          "syncedAt": "2026-06-30T16:17:14.892Z"
         },
         "365": {
           "period": 365,
@@ -433,7 +433,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:19.665Z"
+          "syncedAt": "2026-06-30T16:17:16.000Z"
         }
       }
     },
@@ -442,7 +442,7 @@
         "revenue": 3062,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T13:05:21.172Z",
+        "syncedAt": "2026-06-30T16:17:17.300Z",
         "allTime": {
           "revenue": 6687,
           "orders": 96
@@ -562,7 +562,7 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 178,
+          "newProductsAdded": 177,
           "abandonedCheckouts": 2,
           "totalCheckouts": 12,
           "abandonRate": 17,
@@ -580,7 +580,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:22.965Z"
+          "syncedAt": "2026-06-30T16:17:18.928Z"
         },
         "30": {
           "period": 30,
@@ -702,7 +702,7 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 178,
+          "newProductsAdded": 177,
           "abandonedCheckouts": 7,
           "totalCheckouts": 39,
           "abandonRate": 18,
@@ -732,7 +732,7 @@
           "sessions": 488,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:23.759Z"
+          "syncedAt": "2026-06-30T16:17:19.713Z"
         },
         "90": {
           "period": 90,
@@ -858,7 +858,7 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 181,
+          "newProductsAdded": 180,
           "abandonedCheckouts": 23,
           "totalCheckouts": 105,
           "abandonRate": 22,
@@ -888,7 +888,7 @@
           "sessions": 1313,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:24.616Z"
+          "syncedAt": "2026-06-30T16:17:20.413Z"
         },
         "365": {
           "period": 365,
@@ -1045,7 +1045,7 @@
           "sessions": 1488,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T13:05:25.460Z"
+          "syncedAt": "2026-06-30T16:17:21.094Z"
         }
       }
     }
