@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-30T10:27:47.745Z",
+  "lastUpdated": "2026-06-30T13:05:12.793Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T10:27:49.532Z",
+        "syncedAt": "2026-06-30T13:05:14.952Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:51.597Z"
+          "syncedAt": "2026-06-30T13:05:16.837Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:52.360Z"
+          "syncedAt": "2026-06-30T13:05:17.645Z"
         },
         "90": {
           "period": 90,
@@ -289,7 +289,7 @@
           "sessions": 213,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:53.146Z"
+          "syncedAt": "2026-06-30T13:05:18.484Z"
         },
         "365": {
           "period": 365,
@@ -433,42 +433,47 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:54.285Z"
+          "syncedAt": "2026-06-30T13:05:19.665Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2806,
-        "orders": 31,
+        "revenue": 3062,
+        "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T10:27:55.601Z",
+        "syncedAt": "2026-06-30T13:05:21.172Z",
         "allTime": {
-          "revenue": 6431,
-          "orders": 95
+          "revenue": 6687,
+          "orders": 96
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 808,
-          "orders": 9,
-          "aov": 90,
+          "revenue": 1064,
+          "orders": 10,
+          "aov": 106,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 575,
-          "revenueHalf2": 233,
+          "revenueHalf2": 489,
           "discountOrders": 3,
-          "discountRate": 33,
+          "discountRate": 30,
           "discountShare": 10,
-          "totalDiscounts": 80,
-          "newCust": 9,
+          "totalDiscounts": 109,
+          "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 58,
+          "avgLTV": 72,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Veste Kimono Denim Homme",
+              "qty": 3,
+              "revenue": 285
+            },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
               "qty": 4,
@@ -513,18 +518,14 @@
               "name": "Veste Kimono Noir Homme",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Chemise Kimono Lin",
-              "qty": 1,
-              "revenue": 45
             }
           ],
-          "top3RevenueShare": 61,
+          "top3RevenueShare": 66,
           "hourly": {
             "6": 1,
             "7": 2,
             "10": 1,
+            "11": 1,
             "13": 2,
             "15": 1,
             "19": 1,
@@ -533,7 +534,7 @@
           "daily": {
             "0": 1,
             "1": 2,
-            "2": 1,
+            "2": 2,
             "3": 1,
             "4": 3,
             "5": 1
@@ -563,8 +564,8 @@
           ],
           "newProductsAdded": 178,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 11,
-          "abandonRate": 18,
+          "totalCheckouts": 12,
+          "abandonRate": 17,
           "abandonedValue": 136,
           "topAbandoned": [
             {
@@ -576,29 +577,29 @@
               "count": 1
             }
           ],
-          "sessions": 138,
-          "conversionRate": 6.5,
+          "sessions": 150,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:57.302Z"
+          "syncedAt": "2026-06-30T13:05:22.965Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2806,
-          "orders": 31,
-          "aov": 91,
+          "revenue": 3062,
+          "orders": 32,
+          "aov": 96,
           "currency": "EUR",
           "refunds": 2,
           "refundRate": 6,
           "revenueHalf1": 1570,
-          "revenueHalf2": 1236,
+          "revenueHalf2": 1492,
           "discountOrders": 14,
-          "discountRate": 45,
+          "discountRate": 44,
           "discountShare": 11,
-          "totalDiscounts": 314,
-          "newCust": 31,
+          "totalDiscounts": 342,
+          "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 61,
+          "avgLTV": 65,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -615,6 +616,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 5,
               "revenue": 350
+            },
+            {
+              "name": "Veste Kimono Denim Homme",
+              "qty": 3,
+              "revenue": 285
             },
             {
               "name": "Robe De Chambre Kimono Satin",
@@ -645,19 +651,15 @@
               "name": "Kimono Long Femme Plage",
               "qty": 2,
               "revenue": 100
-            },
-            {
-              "name": "Chemise Kimono Lin",
-              "qty": 2,
-              "revenue": 90
             }
           ],
-          "top3RevenueShare": 54,
+          "top3RevenueShare": 49,
           "hourly": {
             "6": 1,
             "7": 2,
             "8": 1,
             "10": 3,
+            "11": 1,
             "12": 3,
             "13": 3,
             "14": 3,
@@ -671,7 +673,7 @@
           "daily": {
             "0": 7,
             "1": 2,
-            "2": 5,
+            "2": 6,
             "3": 4,
             "4": 7,
             "5": 3,
@@ -702,7 +704,7 @@
           ],
           "newProductsAdded": 178,
           "abandonedCheckouts": 7,
-          "totalCheckouts": 38,
+          "totalCheckouts": 39,
           "abandonRate": 18,
           "abandonedValue": 375,
           "topAbandoned": [
@@ -727,29 +729,29 @@
               "count": 1
             }
           ],
-          "sessions": 475,
-          "conversionRate": 6.5,
+          "sessions": 488,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:58.187Z"
+          "syncedAt": "2026-06-30T13:05:23.759Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5565,
-          "orders": 81,
-          "aov": 69,
+          "revenue": 5821,
+          "orders": 82,
+          "aov": 71,
           "currency": "EUR",
           "refunds": 4,
           "refundRate": 5,
           "revenueHalf1": 1809,
-          "revenueHalf2": 3755,
+          "revenueHalf2": 4012,
           "discountOrders": 36,
           "discountRate": 44,
           "discountShare": 8,
-          "totalDiscounts": 450,
-          "newCust": 79,
+          "totalDiscounts": 478,
+          "newCust": 80,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 40,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -778,6 +780,11 @@
               "revenue": 299
             },
             {
+              "name": "Veste Kimono Denim Homme",
+              "qty": 3,
+              "revenue": 285
+            },
+            {
               "name": "Ensemble Kimono Et Pantalon Femme",
               "qty": 3,
               "revenue": 240
@@ -796,14 +803,9 @@
               "name": "Kimono Chinois Fille",
               "qty": 3,
               "revenue": 165
-            },
-            {
-              "name": "Robe Chinoise Kimono Enfant",
-              "qty": 3,
-              "revenue": 165
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 32,
           "hourly": {
             "5": 2,
             "6": 2,
@@ -811,7 +813,7 @@
             "8": 3,
             "9": 2,
             "10": 5,
-            "11": 4,
+            "11": 5,
             "12": 5,
             "13": 6,
             "14": 7,
@@ -827,7 +829,7 @@
           "daily": {
             "0": 17,
             "1": 12,
-            "2": 9,
+            "2": 10,
             "3": 12,
             "4": 14,
             "5": 7,
@@ -858,7 +860,7 @@
           ],
           "newProductsAdded": 181,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 104,
+          "totalCheckouts": 105,
           "abandonRate": 22,
           "abandonedValue": 1418,
           "topAbandoned": [
@@ -883,29 +885,29 @@
               "count": 1
             }
           ],
-          "sessions": 1300,
+          "sessions": 1313,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:59.073Z"
+          "syncedAt": "2026-06-30T13:05:24.616Z"
         },
         "365": {
           "period": 365,
-          "revenue": 6431,
-          "orders": 95,
-          "aov": 68,
+          "revenue": 6687,
+          "orders": 96,
+          "aov": 70,
           "currency": "EUR",
           "refunds": 4,
           "refundRate": 4,
           "revenueHalf1": 0,
-          "revenueHalf2": 6431,
+          "revenueHalf2": 6687,
           "discountOrders": 37,
           "discountRate": 39,
           "discountShare": 7,
-          "totalDiscounts": 452,
-          "newCust": 93,
+          "totalDiscounts": 481,
+          "newCust": 94,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 41,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -934,6 +936,11 @@
               "revenue": 349
             },
             {
+              "name": "Veste Kimono Denim Homme",
+              "qty": 3,
+              "revenue": 285
+            },
+            {
               "name": "Kimono Chinois Fille",
               "qty": 5,
               "revenue": 275
@@ -952,14 +959,9 @@
               "name": "Kimono Chinois Rouge",
               "qty": 4,
               "revenue": 220
-            },
-            {
-              "name": "Robe Chinoise Kimono Enfant",
-              "qty": 4,
-              "revenue": 220
             }
           ],
-          "top3RevenueShare": 31,
+          "top3RevenueShare": 30,
           "hourly": {
             "1": 1,
             "5": 2,
@@ -968,7 +970,7 @@
             "8": 4,
             "9": 2,
             "10": 6,
-            "11": 4,
+            "11": 5,
             "12": 6,
             "13": 10,
             "14": 7,
@@ -984,7 +986,7 @@
           "daily": {
             "0": 19,
             "1": 15,
-            "2": 10,
+            "2": 11,
             "3": 15,
             "4": 15,
             "5": 8,
@@ -1015,7 +1017,7 @@
           ],
           "newProductsAdded": 250,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 118,
+          "totalCheckouts": 119,
           "abandonRate": 19,
           "abandonedValue": 1418,
           "topAbandoned": [
@@ -1040,10 +1042,10 @@
               "count": 1
             }
           ],
-          "sessions": 1475,
-          "conversionRate": 6.4,
+          "sessions": 1488,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T10:27:59.894Z"
+          "syncedAt": "2026-06-30T13:05:25.460Z"
         }
       }
     }
