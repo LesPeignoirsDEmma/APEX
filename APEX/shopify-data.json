@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-30T23:59:46.794Z",
+  "lastUpdated": "2026-07-01T04:19:22.856Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T23:59:48.458Z",
+        "syncedAt": "2026-07-01T04:19:24.536Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:50.399Z"
+          "syncedAt": "2026-07-01T04:19:26.254Z"
         },
         "30": {
           "period": 30,
@@ -157,26 +157,26 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:51.186Z"
+          "syncedAt": "2026-07-01T04:19:26.938Z"
         },
         "90": {
           "period": 90,
-          "revenue": 1291,
-          "orders": 16,
-          "aov": 81,
+          "revenue": 1087,
+          "orders": 15,
+          "aov": 72,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 982,
+          "revenueHalf1": 777,
           "revenueHalf2": 309,
           "discountOrders": 5,
-          "discountRate": 31,
+          "discountRate": 33,
           "discountShare": 4,
           "totalDiscounts": 46,
-          "newCust": 14,
+          "newCust": 13,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 46,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -210,11 +210,6 @@
               "revenue": 95
             },
             {
-              "name": "Ensemble Robe De Nuit Et Peignoir",
-              "qty": 1,
-              "revenue": 90
-            },
-            {
               "name": "Peignoir Femme Flanelle Capuche",
               "qty": 1,
               "revenue": 85
@@ -228,15 +223,20 @@
               "name": "Peignoir Été Femme A Fermeture Éclair",
               "qty": 1,
               "revenue": 65
+            },
+            {
+              "name": "Peignoir Rose Rayé – Femme",
+              "qty": 1,
+              "revenue": 60
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 42,
           "hourly": {
             "6": 1,
             "8": 2,
             "9": 1,
             "10": 2,
-            "11": 3,
+            "11": 2,
             "12": 1,
             "13": 1,
             "14": 1,
@@ -247,7 +247,7 @@
           "daily": {
             "1": 2,
             "2": 1,
-            "3": 5,
+            "3": 4,
             "4": 2,
             "5": 3,
             "6": 3
@@ -269,15 +269,15 @@
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
             "Ensemble Peignoir Satin & Dentelle – Femme",
+            "Ensemble Robe De Nuit Et Peignoir",
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme",
-            "Peignoir Baroque - Femme"
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 17,
+          "totalCheckouts": 16,
           "abandonRate": 6,
           "abandonedValue": 65,
           "topAbandoned": [
@@ -286,10 +286,10 @@
               "count": 1
             }
           ],
-          "sessions": 213,
+          "sessions": 200,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:51.968Z"
+          "syncedAt": "2026-07-01T04:19:27.570Z"
         },
         "365": {
           "period": 365,
@@ -299,8 +299,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 5787,
-          "revenueHalf2": 6571,
+          "revenueHalf1": 5857,
+          "revenueHalf2": 6501,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -433,16 +433,16 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:52.990Z"
+          "syncedAt": "2026-07-01T04:19:28.615Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 3062,
-        "orders": 32,
+        "revenue": 2875,
+        "orders": 29,
         "currency": "EUR",
-        "syncedAt": "2026-06-30T23:59:54.292Z",
+        "syncedAt": "2026-07-01T04:19:31.775Z",
         "allTime": {
           "revenue": 6687,
           "orders": 96
@@ -580,23 +580,23 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:55.902Z"
+          "syncedAt": "2026-07-01T04:19:33.251Z"
         },
         "30": {
           "period": 30,
-          "revenue": 3062,
-          "orders": 32,
-          "aov": 96,
+          "revenue": 2875,
+          "orders": 29,
+          "aov": 99,
           "currency": "EUR",
           "refunds": 2,
           "refundRate": 6,
-          "revenueHalf1": 1570,
+          "revenueHalf1": 1382,
           "revenueHalf2": 1492,
-          "discountOrders": 14,
-          "discountRate": 44,
-          "discountShare": 11,
-          "totalDiscounts": 342,
-          "newCust": 32,
+          "discountOrders": 13,
+          "discountRate": 45,
+          "discountShare": 12,
+          "totalDiscounts": 335,
+          "newCust": 29,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 65,
@@ -609,18 +609,18 @@
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
-              "qty": 6,
-              "revenue": 389
-            },
-            {
-              "name": "Chemise Kimono Grande Taille",
               "qty": 5,
-              "revenue": 350
+              "revenue": 325
             },
             {
               "name": "Veste Kimono Denim Homme",
               "qty": 3,
               "revenue": 285
+            },
+            {
+              "name": "Chemise Kimono Grande Taille",
+              "qty": 4,
+              "revenue": 280
             },
             {
               "name": "Robe De Chambre Kimono Satin",
@@ -653,12 +653,11 @@
               "revenue": 100
             }
           ],
-          "top3RevenueShare": 49,
+          "top3RevenueShare": 48,
           "hourly": {
             "6": 1,
             "7": 2,
-            "8": 1,
-            "10": 3,
+            "10": 2,
             "11": 1,
             "12": 3,
             "13": 3,
@@ -668,10 +667,10 @@
             "18": 5,
             "19": 3,
             "20": 1,
-            "21": 2
+            "21": 1
           },
           "daily": {
-            "0": 7,
+            "0": 4,
             "1": 2,
             "2": 6,
             "3": 4,
@@ -704,8 +703,8 @@
           ],
           "newProductsAdded": 177,
           "abandonedCheckouts": 7,
-          "totalCheckouts": 39,
-          "abandonRate": 18,
+          "totalCheckouts": 36,
+          "abandonRate": 19,
           "abandonedValue": 375,
           "topAbandoned": [
             {
@@ -729,29 +728,29 @@
               "count": 1
             }
           ],
-          "sessions": 488,
-          "conversionRate": 6.6,
+          "sessions": 450,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:56.685Z"
+          "syncedAt": "2026-07-01T04:19:34.163Z"
         },
         "90": {
           "period": 90,
-          "revenue": 5821,
-          "orders": 82,
-          "aov": 71,
+          "revenue": 5796,
+          "orders": 81,
+          "aov": 72,
           "currency": "EUR",
           "refunds": 4,
           "refundRate": 5,
-          "revenueHalf1": 1844,
+          "revenueHalf1": 1819,
           "revenueHalf2": 3977,
           "discountOrders": 36,
           "discountRate": 44,
           "discountShare": 8,
           "totalDiscounts": 478,
-          "newCust": 80,
+          "newCust": 79,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 42,
+          "avgLTV": 43,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -815,7 +814,7 @@
             "10": 5,
             "11": 5,
             "12": 5,
-            "13": 6,
+            "13": 5,
             "14": 7,
             "15": 4,
             "16": 6,
@@ -830,7 +829,7 @@
             "0": 17,
             "1": 12,
             "2": 10,
-            "3": 12,
+            "3": 11,
             "4": 14,
             "5": 7,
             "6": 10
@@ -860,7 +859,7 @@
           ],
           "newProductsAdded": 180,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 105,
+          "totalCheckouts": 104,
           "abandonRate": 22,
           "abandonedValue": 1418,
           "topAbandoned": [
@@ -885,10 +884,10 @@
               "count": 1
             }
           ],
-          "sessions": 1313,
+          "sessions": 1300,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:57.462Z"
+          "syncedAt": "2026-07-01T04:19:34.906Z"
         },
         "365": {
           "period": 365,
@@ -1045,7 +1044,7 @@
           "sessions": 1488,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-06-30T23:59:58.215Z"
+          "syncedAt": "2026-07-01T04:19:35.599Z"
         }
       }
     }
