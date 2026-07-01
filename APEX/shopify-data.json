@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-01T14:13:32.262Z",
+  "lastUpdated": "2026-07-01T17:07:55.208Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 95,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-07-01T14:13:33.689Z",
+        "syncedAt": "2026-07-01T17:07:57.218Z",
         "allTime": {
           "revenue": 12358,
           "orders": 200
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:35.612Z"
+          "syncedAt": "2026-07-01T17:07:58.930Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:36.224Z"
+          "syncedAt": "2026-07-01T17:07:59.539Z"
         },
         "90": {
           "period": 90,
@@ -289,7 +289,7 @@
           "sessions": 200,
           "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:36.795Z"
+          "syncedAt": "2026-07-01T17:08:00.165Z"
         },
         "365": {
           "period": 365,
@@ -433,7 +433,7 @@
           "sessions": 2550,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:37.360Z"
+          "syncedAt": "2026-07-01T17:08:00.887Z"
         }
       }
     },
@@ -442,7 +442,7 @@
         "revenue": 2875,
         "orders": 29,
         "currency": "EUR",
-        "syncedAt": "2026-07-01T14:13:38.692Z",
+        "syncedAt": "2026-07-01T17:08:02.206Z",
         "allTime": {
           "revenue": 6687,
           "orders": 96
@@ -466,7 +466,7 @@
           "newCust": 10,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 72,
+          "avgLTV": 67,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -563,10 +563,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 12,
-          "abandonRate": 17,
-          "abandonedValue": 136,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 13,
+          "abandonRate": 23,
+          "abandonedValue": 196,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Boheme",
@@ -575,12 +575,16 @@
             {
               "name": "Cardigan Kimono Coton Homme",
               "count": 1
+            },
+            {
+              "name": "Kimono Rouge Enfant",
+              "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 6.7,
+          "sessions": 163,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:40.454Z"
+          "syncedAt": "2026-07-01T17:08:03.752Z"
         },
         "30": {
           "period": 30,
@@ -590,8 +594,8 @@
           "currency": "EUR",
           "refunds": 2,
           "refundRate": 6,
-          "revenueHalf1": 1382,
-          "revenueHalf2": 1492,
+          "revenueHalf1": 1525,
+          "revenueHalf2": 1350,
           "discountOrders": 13,
           "discountRate": 45,
           "discountShare": 12,
@@ -599,7 +603,7 @@
           "newCust": 29,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 65,
+          "avgLTV": 64,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -702,10 +706,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 7,
-          "totalCheckouts": 36,
-          "abandonRate": 19,
-          "abandonedValue": 375,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 37,
+          "abandonRate": 22,
+          "abandonedValue": 435,
           "topAbandoned": [
             {
               "name": "Kimono De Plage Femme Long",
@@ -728,10 +732,10 @@
               "count": 1
             }
           ],
-          "sessions": 450,
-          "conversionRate": 6.4,
+          "sessions": 463,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:41.131Z"
+          "syncedAt": "2026-07-01T17:08:04.406Z"
         },
         "90": {
           "period": 90,
@@ -750,7 +754,7 @@
           "newCust": 79,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 43,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -858,10 +862,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 180,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 104,
-          "abandonRate": 22,
-          "abandonedValue": 1418,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 105,
+          "abandonRate": 23,
+          "abandonedValue": 1478,
           "topAbandoned": [
             {
               "name": "Cardigan Kimono Coton Homme",
@@ -884,10 +888,10 @@
               "count": 1
             }
           ],
-          "sessions": 1300,
+          "sessions": 1313,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:41.841Z"
+          "syncedAt": "2026-07-01T17:08:05.101Z"
         },
         "365": {
           "period": 365,
@@ -1015,10 +1019,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 119,
-          "abandonRate": 19,
-          "abandonedValue": 1418,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 120,
+          "abandonRate": 20,
+          "abandonedValue": 1478,
           "topAbandoned": [
             {
               "name": "Cardigan Kimono Coton Homme",
@@ -1041,10 +1045,10 @@
               "count": 1
             }
           ],
-          "sessions": 1488,
-          "conversionRate": 6.5,
+          "sessions": 1500,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-01T14:13:42.548Z"
+          "syncedAt": "2026-07-01T17:08:05.826Z"
         }
       }
     }
