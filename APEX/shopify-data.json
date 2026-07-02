@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-02T15:07:36.544Z",
+  "lastUpdated": "2026-07-02T17:31:47.056Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 130,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-02T15:07:38.248Z",
+        "syncedAt": "2026-07-02T17:31:48.669Z",
         "allTime": {
           "revenue": 12303,
           "orders": 200
@@ -30,7 +30,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 45,
+          "avgLTV": 30,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -77,15 +77,24 @@
             "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 0,
-          "totalCheckouts": 2,
-          "abandonRate": 0,
-          "abandonedValue": 0,
-          "topAbandoned": [],
-          "sessions": 25,
-          "conversionRate": 8,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 3,
+          "abandonRate": 33,
+          "abandonedValue": 90,
+          "topAbandoned": [
+            {
+              "name": "Peignoir Flanelle Blanc",
+              "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
+            }
+          ],
+          "sessions": 38,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:40.226Z"
+          "syncedAt": "2026-07-02T17:31:50.478Z"
         },
         "30": {
           "period": 30,
@@ -104,7 +113,7 @@
           "newCust": 3,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 32,
+          "avgLTV": 26,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -158,20 +167,28 @@
             "Peignoir Baroque - Femme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 4,
-          "abandonRate": 25,
-          "abandonedValue": 65,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 5,
+          "abandonRate": 40,
+          "abandonedValue": 155,
           "topAbandoned": [
             {
               "name": "Peignoir Homme Nid d'Abeille",
               "count": 1
+            },
+            {
+              "name": "Peignoir Flanelle Blanc",
+              "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
             }
           ],
-          "sessions": 50,
-          "conversionRate": 6,
+          "sessions": 63,
+          "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:41.003Z"
+          "syncedAt": "2026-07-02T17:31:51.108Z"
         },
         "90": {
           "period": 90,
@@ -190,7 +207,7 @@
           "newCust": 14,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 41,
+          "avgLTV": 39,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -290,20 +307,28 @@
             "Peignoir Baroque - Femme"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 17,
-          "abandonRate": 6,
-          "abandonedValue": 65,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 18,
+          "abandonRate": 11,
+          "abandonedValue": 155,
           "topAbandoned": [
             {
               "name": "Peignoir Homme Nid d'Abeille",
               "count": 1
+            },
+            {
+              "name": "Peignoir Flanelle Blanc",
+              "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
             }
           ],
-          "sessions": 213,
-          "conversionRate": 7.5,
+          "sessions": 225,
+          "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:41.787Z"
+          "syncedAt": "2026-07-02T17:31:51.709Z"
         },
         "365": {
           "period": 365,
@@ -434,20 +459,28 @@
             "Peignoir Chaud Hiver Femme"
           ],
           "newProductsAdded": 179,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 204,
-          "abandonRate": 0,
-          "abandonedValue": 65,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 205,
+          "abandonRate": 1,
+          "abandonedValue": 155,
           "topAbandoned": [
             {
               "name": "Peignoir Homme Nid d'Abeille",
               "count": 1
+            },
+            {
+              "name": "Peignoir Flanelle Blanc",
+              "count": 1
+            },
+            {
+              "name": "Chaussons d’intérieur — Gris",
+              "count": 1
             }
           ],
-          "sessions": 2550,
+          "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:43.051Z"
+          "syncedAt": "2026-07-02T17:31:52.312Z"
         }
       }
     },
@@ -456,7 +489,7 @@
         "revenue": 3038,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-07-02T15:07:44.557Z",
+        "syncedAt": "2026-07-02T17:31:53.627Z",
         "allTime": {
           "revenue": 6850,
           "orders": 99
@@ -480,7 +513,7 @@
           "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 63,
+          "avgLTV": 60,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -577,10 +610,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 4,
-          "totalCheckouts": 16,
-          "abandonRate": 25,
-          "abandonedValue": 258,
+          "abandonedCheckouts": 5,
+          "totalCheckouts": 17,
+          "abandonRate": 29,
+          "abandonedValue": 335,
           "topAbandoned": [
             {
               "name": "Kimono Long Femme Boheme",
@@ -597,12 +630,16 @@
             {
               "name": "Kimono Rose Japonais Pour Enfant",
               "count": 1
+            },
+            {
+              "name": "Chemise Kimono Grande Taille",
+              "count": 1
             }
           ],
-          "sessions": 200,
-          "conversionRate": 6,
+          "sessions": 213,
+          "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:46.178Z"
+          "syncedAt": "2026-07-02T17:31:55.085Z"
         },
         "30": {
           "period": 30,
@@ -621,7 +658,7 @@
           "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 63,
+          "avgLTV": 62,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -724,10 +761,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 40,
-          "abandonRate": 20,
-          "abandonedValue": 452,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 41,
+          "abandonRate": 22,
+          "abandonedValue": 530,
           "topAbandoned": [
             {
               "name": "Kimono Long de Plage Femme",
@@ -750,10 +787,10 @@
               "count": 1
             }
           ],
-          "sessions": 500,
-          "conversionRate": 6.4,
+          "sessions": 513,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:47.012Z"
+          "syncedAt": "2026-07-02T17:31:55.714Z"
         },
         "90": {
           "period": 90,
@@ -772,7 +809,7 @@
           "newCust": 81,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 43,
+          "avgLTV": 42,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -880,10 +917,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 180,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 106,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 107,
           "abandonRate": 22,
-          "abandonedValue": 1427,
+          "abandonedValue": 1505,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -906,10 +943,10 @@
               "count": 1
             }
           ],
-          "sessions": 1325,
-          "conversionRate": 6.3,
+          "sessions": 1338,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:48.022Z"
+          "syncedAt": "2026-07-02T17:31:56.456Z"
         },
         "365": {
           "period": 365,
@@ -928,7 +965,7 @@
           "newCust": 97,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 42,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1037,10 +1074,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 25,
-          "totalCheckouts": 124,
-          "abandonRate": 20,
-          "abandonedValue": 1540,
+          "abandonedCheckouts": 26,
+          "totalCheckouts": 125,
+          "abandonRate": 21,
+          "abandonedValue": 1618,
           "topAbandoned": [
             {
               "name": "Cardigan Kimono Coton Homme",
@@ -1063,10 +1100,10 @@
               "count": 1
             }
           ],
-          "sessions": 1550,
-          "conversionRate": 6.4,
+          "sessions": 1563,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-02T15:07:48.892Z"
+          "syncedAt": "2026-07-02T17:31:57.241Z"
         }
       }
     }
