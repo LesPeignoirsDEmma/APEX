@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-03T23:05:44.133Z",
+  "lastUpdated": "2026-07-04T02:06:44.736Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 180,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-07-03T23:05:46.030Z",
+        "syncedAt": "2026-07-04T02:06:46.327Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -94,7 +94,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:48.070Z"
+          "syncedAt": "2026-07-04T02:06:47.975Z"
         },
         "30": {
           "period": 30,
@@ -195,7 +195,7 @@
           "sessions": 75,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:48.876Z"
+          "syncedAt": "2026-07-04T02:06:48.620Z"
         },
         "90": {
           "period": 90,
@@ -334,7 +334,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:49.668Z"
+          "syncedAt": "2026-07-04T02:06:49.248Z"
         },
         "365": {
           "period": 365,
@@ -486,16 +486,16 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:50.632Z"
+          "syncedAt": "2026-07-04T02:06:50.350Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2980,
-        "orders": 31,
+        "revenue": 2876,
+        "orders": 29,
         "currency": "EUR",
-        "syncedAt": "2026-07-03T23:05:52.110Z",
+        "syncedAt": "2026-07-04T02:06:51.671Z",
         "allTime": {
           "revenue": 6863,
           "orders": 99
@@ -504,22 +504,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 769,
-          "orders": 10,
-          "aov": 77,
+          "revenue": 714,
+          "orders": 9,
+          "aov": 79,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 288,
-          "revenueHalf2": 481,
+          "revenueHalf1": 489,
+          "revenueHalf2": 225,
           "discountOrders": 5,
-          "discountRate": 50,
+          "discountRate": 56,
           "discountShare": 8,
           "totalDiscounts": 58,
-          "newCust": 10,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 55,
+          "avgLTV": 59,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -558,11 +558,6 @@
               "revenue": 60
             },
             {
-              "name": "Kimono Chinois Rouge",
-              "qty": 1,
-              "revenue": 55
-            },
-            {
               "name": "Veste Kimono Noir Homme",
               "qty": 1,
               "revenue": 50
@@ -573,11 +568,10 @@
               "revenue": 45
             }
           ],
-          "top3RevenueShare": 55,
+          "top3RevenueShare": 60,
           "hourly": {
             "6": 1,
             "7": 2,
-            "10": 1,
             "11": 1,
             "12": 1,
             "13": 1,
@@ -590,7 +584,7 @@
             "2": 2,
             "3": 1,
             "4": 2,
-            "5": 2
+            "5": 1
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
@@ -617,8 +611,8 @@
           ],
           "newProductsAdded": 177,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 12,
-          "abandonRate": 17,
+          "totalCheckouts": 11,
+          "abandonRate": 18,
           "abandonedValue": 138,
           "topAbandoned": [
             {
@@ -630,29 +624,29 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 6.7,
+          "sessions": 138,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:53.865Z"
+          "syncedAt": "2026-07-04T02:06:53.058Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2980,
-          "orders": 31,
-          "aov": 96,
+          "revenue": 2876,
+          "orders": 29,
+          "aov": 99,
           "currency": "EUR",
           "refunds": 3,
           "refundRate": 9,
-          "revenueHalf1": 1563,
+          "revenueHalf1": 1459,
           "revenueHalf2": 1418,
-          "discountOrders": 15,
+          "discountOrders": 14,
           "discountRate": 48,
           "discountShare": 12,
-          "totalDiscounts": 347,
-          "newCust": 31,
+          "totalDiscounts": 341,
+          "newCust": 29,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 61,
+          "avgLTV": 62,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -701,12 +695,12 @@
               "revenue": 100
             },
             {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
+              "name": "Ensemble Kimono Fleuri",
+              "qty": 1,
+              "revenue": 80
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 48,
           "hourly": {
             "6": 1,
             "7": 3,
@@ -716,8 +710,7 @@
             "13": 4,
             "14": 3,
             "15": 3,
-            "17": 1,
-            "18": 4,
+            "18": 3,
             "19": 4,
             "20": 1,
             "21": 1
@@ -726,7 +719,7 @@
             "0": 4,
             "1": 2,
             "2": 5,
-            "3": 5,
+            "3": 3,
             "4": 9,
             "5": 4,
             "6": 2
@@ -756,8 +749,8 @@
           ],
           "newProductsAdded": 177,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 39,
-          "abandonRate": 21,
+          "totalCheckouts": 37,
+          "abandonRate": 22,
           "abandonedValue": 468,
           "topAbandoned": [
             {
@@ -781,10 +774,10 @@
               "count": 1
             }
           ],
-          "sessions": 488,
-          "conversionRate": 6.4,
+          "sessions": 463,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:54.701Z"
+          "syncedAt": "2026-07-04T02:06:53.738Z"
         },
         "90": {
           "period": 90,
@@ -803,7 +796,7 @@
           "newCust": 81,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 42,
+          "avgLTV": 43,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -911,18 +904,14 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 180,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 106,
-          "abandonRate": 22,
-          "abandonedValue": 1443,
+          "abandonedCheckouts": 22,
+          "totalCheckouts": 105,
+          "abandonRate": 21,
+          "abandonedValue": 1394,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
               "count": 2
-            },
-            {
-              "name": "Robe Chinoise Kimono Enfant",
-              "count": 1
             },
             {
               "name": "Ensemble Pantalon Et Kimono Femme",
@@ -935,12 +924,16 @@
             {
               "name": "Kimono Manches Chauves Souris",
               "count": 1
+            },
+            {
+              "name": "Kimono Chinois Rouge",
+              "count": 1
             }
           ],
-          "sessions": 1325,
+          "sessions": 1313,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:55.542Z"
+          "syncedAt": "2026-07-04T02:06:54.396Z"
         },
         "365": {
           "period": 365,
@@ -1097,7 +1090,7 @@
           "sessions": 1525,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-03T23:05:56.393Z"
+          "syncedAt": "2026-07-04T02:06:55.064Z"
         }
       }
     }
