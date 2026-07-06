@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-06T03:47:59.669Z",
+  "lastUpdated": "2026-07-06T08:12:39.693Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 180,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-07-06T03:48:01.187Z",
+        "syncedAt": "2026-07-06T08:12:41.850Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -94,7 +94,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:02.698Z"
+          "syncedAt": "2026-07-06T08:12:43.998Z"
         },
         "30": {
           "period": 30,
@@ -195,7 +195,7 @@
           "sessions": 75,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:03.239Z"
+          "syncedAt": "2026-07-06T08:12:45.150Z"
         },
         "90": {
           "period": 90,
@@ -334,7 +334,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:04.210Z"
+          "syncedAt": "2026-07-06T08:12:45.929Z"
         },
         "365": {
           "period": 365,
@@ -486,7 +486,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:04.764Z"
+          "syncedAt": "2026-07-06T08:12:47.190Z"
         }
       }
     },
@@ -495,7 +495,7 @@
         "revenue": 2330,
         "orders": 30,
         "currency": "EUR",
-        "syncedAt": "2026-07-06T03:48:05.985Z",
+        "syncedAt": "2026-07-06T08:12:48.668Z",
         "allTime": {
           "revenue": 7127,
           "orders": 102
@@ -519,7 +519,7 @@
           "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 65,
+          "avgLTV": 61,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -617,10 +617,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 14,
-          "abandonRate": 14,
-          "abandonedValue": 138,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 15,
+          "abandonRate": 20,
+          "abandonedValue": 163,
           "topAbandoned": [
             {
               "name": "Kimono Rouge Enfant",
@@ -629,12 +629,16 @@
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 1
+            },
+            {
+              "name": "Tunique De Plage Robe Kimono Blanc",
+              "count": 1
             }
           ],
-          "sessions": 175,
-          "conversionRate": 6.9,
+          "sessions": 188,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:07.315Z"
+          "syncedAt": "2026-07-06T08:12:50.472Z"
         },
         "30": {
           "period": 30,
@@ -653,7 +657,7 @@
           "newCust": 30,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 48,
+          "avgLTV": 47,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -757,10 +761,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 38,
-          "abandonRate": 21,
-          "abandonedValue": 468,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 39,
+          "abandonRate": 23,
+          "abandonedValue": 493,
           "topAbandoned": [
             {
               "name": "Kimono Long de Plage Femme",
@@ -783,10 +787,10 @@
               "count": 1
             }
           ],
-          "sessions": 475,
-          "conversionRate": 6.3,
+          "sessions": 488,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:08.009Z"
+          "syncedAt": "2026-07-06T08:12:51.309Z"
         },
         "90": {
           "period": 90,
@@ -805,7 +809,7 @@
           "newCust": 82,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 45,
+          "avgLTV": 44,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -913,10 +917,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 180,
-          "abandonedCheckouts": 21,
-          "totalCheckouts": 105,
-          "abandonRate": 20,
-          "abandonedValue": 1349,
+          "abandonedCheckouts": 22,
+          "totalCheckouts": 106,
+          "abandonRate": 21,
+          "abandonedValue": 1374,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -939,10 +943,10 @@
               "count": 1
             }
           ],
-          "sessions": 1313,
-          "conversionRate": 6.4,
+          "sessions": 1325,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:08.918Z"
+          "syncedAt": "2026-07-06T08:12:52.181Z"
         },
         "365": {
           "period": 365,
@@ -961,7 +965,7 @@
           "newCust": 100,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 42,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1070,10 +1074,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 22,
-          "totalCheckouts": 124,
+          "abandonedCheckouts": 23,
+          "totalCheckouts": 125,
           "abandonRate": 18,
-          "abandonedValue": 1394,
+          "abandonedValue": 1419,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -1096,10 +1100,10 @@
               "count": 1
             }
           ],
-          "sessions": 1550,
-          "conversionRate": 6.6,
+          "sessions": 1563,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T03:48:09.539Z"
+          "syncedAt": "2026-07-06T08:12:53.111Z"
         }
       }
     }
