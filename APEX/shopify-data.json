@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-06T12:38:25.585Z",
+  "lastUpdated": "2026-07-06T16:13:08.074Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 180,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-07-06T12:38:27.410Z",
+        "syncedAt": "2026-07-06T16:13:13.518Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -94,7 +94,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:29.195Z"
+          "syncedAt": "2026-07-06T16:13:15.539Z"
         },
         "30": {
           "period": 30,
@@ -195,7 +195,7 @@
           "sessions": 75,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:29.838Z"
+          "syncedAt": "2026-07-06T16:13:16.410Z"
         },
         "90": {
           "period": 90,
@@ -334,7 +334,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:30.441Z"
+          "syncedAt": "2026-07-06T16:13:17.215Z"
         },
         "365": {
           "period": 365,
@@ -486,7 +486,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:31.051Z"
+          "syncedAt": "2026-07-06T16:13:18.074Z"
         }
       }
     },
@@ -495,7 +495,7 @@
         "revenue": 2330,
         "orders": 30,
         "currency": "EUR",
-        "syncedAt": "2026-07-06T12:38:35.176Z",
+        "syncedAt": "2026-07-06T16:13:19.764Z",
         "allTime": {
           "revenue": 7127,
           "orders": 102
@@ -616,7 +616,7 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
-          "newProductsAdded": 177,
+          "newProductsAdded": 0,
           "abandonedCheckouts": 3,
           "totalCheckouts": 15,
           "abandonRate": 20,
@@ -638,7 +638,7 @@
           "sessions": 188,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:36.995Z"
+          "syncedAt": "2026-07-06T16:13:22.247Z"
         },
         "30": {
           "period": 30,
@@ -648,8 +648,8 @@
           "currency": "EUR",
           "refunds": 4,
           "refundRate": 12,
-          "revenueHalf1": 693,
-          "revenueHalf2": 1637,
+          "revenueHalf1": 718,
+          "revenueHalf2": 1612,
           "discountOrders": 13,
           "discountRate": 43,
           "discountShare": 9,
@@ -790,7 +790,7 @@
           "sessions": 488,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:37.800Z"
+          "syncedAt": "2026-07-06T16:13:23.197Z"
         },
         "90": {
           "period": 90,
@@ -946,7 +946,7 @@
           "sessions": 1325,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:38.579Z"
+          "syncedAt": "2026-07-06T16:13:24.120Z"
         },
         "365": {
           "period": 365,
@@ -1103,7 +1103,7 @@
           "sessions": 1563,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-06T12:38:39.373Z"
+          "syncedAt": "2026-07-06T16:13:25.081Z"
         }
       }
     }
