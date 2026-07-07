@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-07T08:15:42.080Z",
+  "lastUpdated": "2026-07-07T11:39:03.755Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-07T08:15:43.673Z",
+        "syncedAt": "2026-07-07T11:39:05.313Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -94,7 +94,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:45.338Z"
+          "syncedAt": "2026-07-07T11:39:07.165Z"
         },
         "30": {
           "period": 30,
@@ -188,7 +188,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:45.939Z"
+          "syncedAt": "2026-07-07T11:39:07.754Z"
         },
         "90": {
           "period": 90,
@@ -198,8 +198,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 685,
-          "revenueHalf2": 294,
+          "revenueHalf1": 735,
+          "revenueHalf2": 245,
           "discountOrders": 4,
           "discountRate": 29,
           "discountShare": 4,
@@ -327,7 +327,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:46.578Z"
+          "syncedAt": "2026-07-07T11:39:08.313Z"
         },
         "365": {
           "period": 365,
@@ -479,7 +479,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:47.239Z"
+          "syncedAt": "2026-07-07T11:39:09.380Z"
         }
       }
     },
@@ -488,7 +488,7 @@
         "revenue": 2330,
         "orders": 30,
         "currency": "EUR",
-        "syncedAt": "2026-07-07T08:15:48.676Z",
+        "syncedAt": "2026-07-07T11:39:10.794Z",
         "allTime": {
           "revenue": 7127,
           "orders": 102
@@ -629,7 +629,7 @@
           "sessions": 163,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:50.758Z"
+          "syncedAt": "2026-07-07T11:39:12.278Z"
         },
         "30": {
           "period": 30,
@@ -781,7 +781,7 @@
           "sessions": 488,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:51.504Z"
+          "syncedAt": "2026-07-07T11:39:12.966Z"
         },
         "90": {
           "period": 90,
@@ -937,7 +937,7 @@
           "sessions": 1313,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:52.337Z"
+          "syncedAt": "2026-07-07T11:39:13.709Z"
         },
         "365": {
           "period": 365,
@@ -1065,36 +1065,36 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 125,
-          "abandonRate": 18,
-          "abandonedValue": 1419,
+          "abandonedCheckouts": 21,
+          "totalCheckouts": 123,
+          "abandonRate": 17,
+          "abandonedValue": 1234,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
               "count": 2
             },
             {
-              "name": "Ensemble Pantalon Et Kimono Femme",
-              "count": 1
-            },
-            {
-              "name": "Ensemble Kimono Grande Taille Femme",
-              "count": 1
-            },
-            {
-              "name": "Kimono Manches Chauves Souris",
-              "count": 1
-            },
-            {
               "name": "Kimono Chinois Rouge",
+              "count": 1
+            },
+            {
+              "name": "Kimono Long Femme Plage",
+              "count": 1
+            },
+            {
+              "name": "Robe Kimono Manches Longues",
+              "count": 1
+            },
+            {
+              "name": "Kimono Paon Vert",
               "count": 1
             }
           ],
-          "sessions": 1563,
-          "conversionRate": 6.5,
+          "sessions": 1538,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T08:15:53.104Z"
+          "syncedAt": "2026-07-07T11:39:14.601Z"
         }
       }
     }
