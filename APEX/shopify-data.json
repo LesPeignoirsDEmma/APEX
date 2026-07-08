@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-07T23:50:35.608Z",
+  "lastUpdated": "2026-07-08T01:55:38.881Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-07T23:50:37.116Z",
+        "syncedAt": "2026-07-08T01:55:40.409Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -94,7 +94,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:38.684Z"
+          "syncedAt": "2026-07-08T01:55:48.454Z"
         },
         "30": {
           "period": 30,
@@ -188,7 +188,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:39.263Z"
+          "syncedAt": "2026-07-08T01:55:49.030Z"
         },
         "90": {
           "period": 90,
@@ -207,7 +207,7 @@
           "newCust": 12,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 45,
+          "avgLTV": 47,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -327,7 +327,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:39.866Z"
+          "syncedAt": "2026-07-08T01:55:49.602Z"
         },
         "365": {
           "period": 365,
@@ -385,11 +385,6 @@
               "revenue": 304
             },
             {
-              "name": "Peignoir Long d’Hiver - Homme",
-              "qty": 3,
-              "revenue": 285
-            },
-            {
               "name": "Peignoir Elégant Flanelle",
               "qty": 4,
               "revenue": 280
@@ -398,6 +393,11 @@
               "name": "Peignoir Polaire Couple",
               "qty": 4,
               "revenue": 280
+            },
+            {
+              "name": "Peignoir Rayé Coloré - Unisexe",
+              "qty": 3,
+              "revenue": 270
             }
           ],
           "top3RevenueShare": 40,
@@ -479,7 +479,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:40.439Z"
+          "syncedAt": "2026-07-08T01:55:50.223Z"
         }
       }
     },
@@ -488,7 +488,7 @@
         "revenue": 2398,
         "orders": 31,
         "currency": "EUR",
-        "syncedAt": "2026-07-07T23:50:41.748Z",
+        "syncedAt": "2026-07-08T01:55:52.906Z",
         "allTime": {
           "revenue": 7195,
           "orders": 103
@@ -497,29 +497,24 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 935,
-          "orders": 11,
-          "aov": 85,
+          "revenue": 616,
+          "orders": 9,
+          "aov": 68,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 614,
-          "revenueHalf2": 321,
-          "discountOrders": 5,
-          "discountRate": 45,
-          "discountShare": 10,
-          "totalDiscounts": 89,
-          "newCust": 11,
+          "revenueHalf1": 320,
+          "revenueHalf2": 296,
+          "discountOrders": 4,
+          "discountRate": 44,
+          "discountShare": 9,
+          "totalDiscounts": 54,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 62,
+          "avgLTV": 47,
           "vipCustomers": 0,
           "topProducts": [
-            {
-              "name": "Veste Kimono Denim Homme",
-              "qty": 3,
-              "revenue": 285
-            },
             {
               "name": "Robe De Chambre Kimono Satin",
               "qty": 5,
@@ -537,11 +532,6 @@
             },
             {
               "name": "Chemise Kimono Grande Taille",
-              "qty": 1,
-              "revenue": 70
-            },
-            {
-              "name": "Pyjama Kimono Homme Coton",
               "qty": 1,
               "revenue": 70
             },
@@ -566,11 +556,11 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 65,
+          "top3RevenueShare": 63,
           "hourly": {
-            "7": 2,
+            "7": 1,
             "8": 1,
-            "11": 2,
+            "11": 1,
             "12": 3,
             "13": 1,
             "16": 1,
@@ -578,7 +568,7 @@
           },
           "daily": {
             "0": 2,
-            "2": 3,
+            "2": 1,
             "3": 1,
             "4": 2,
             "5": 1,
@@ -609,8 +599,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 14,
-          "abandonRate": 21,
+          "totalCheckouts": 12,
+          "abandonRate": 25,
           "abandonedValue": 163,
           "topAbandoned": [
             {
@@ -626,10 +616,10 @@
               "count": 1
             }
           ],
-          "sessions": 175,
-          "conversionRate": 6.3,
+          "sessions": 150,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:43.107Z"
+          "syncedAt": "2026-07-08T01:55:55.220Z"
         },
         "30": {
           "period": 30,
@@ -781,7 +771,7 @@
           "sessions": 500,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:43.769Z"
+          "syncedAt": "2026-07-08T01:55:55.935Z"
         },
         "90": {
           "period": 90,
@@ -937,7 +927,7 @@
           "sessions": 1325,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:44.460Z"
+          "syncedAt": "2026-07-08T01:55:56.586Z"
         },
         "365": {
           "period": 365,
@@ -1094,7 +1084,7 @@
           "sessions": 1550,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-07T23:50:45.173Z"
+          "syncedAt": "2026-07-08T01:55:57.323Z"
         }
       }
     }
