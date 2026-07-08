@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-08T19:10:46.790Z",
+  "lastUpdated": "2026-07-08T20:58:03.178Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-08T19:10:48.459Z",
+        "syncedAt": "2026-07-08T20:58:04.767Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -94,7 +94,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:50.292Z"
+          "syncedAt": "2026-07-08T20:58:06.333Z"
         },
         "30": {
           "period": 30,
@@ -188,7 +188,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:50.891Z"
+          "syncedAt": "2026-07-08T20:58:06.970Z"
         },
         "90": {
           "period": 90,
@@ -327,7 +327,7 @@
           "sessions": 200,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:51.571Z"
+          "syncedAt": "2026-07-08T20:58:07.958Z"
         },
         "365": {
           "period": 365,
@@ -479,37 +479,37 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:52.201Z"
+          "syncedAt": "2026-07-08T20:58:08.796Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2510,
-        "orders": 33,
+        "revenue": 2591,
+        "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-07-08T19:10:53.552Z",
+        "syncedAt": "2026-07-08T20:58:10.302Z",
         "allTime": {
-          "revenue": 7307,
-          "orders": 105
+          "revenue": 7388,
+          "orders": 106
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 728,
-          "orders": 11,
-          "aov": 66,
+          "revenue": 809,
+          "orders": 12,
+          "aov": 67,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 320,
-          "revenueHalf2": 408,
-          "discountOrders": 6,
-          "discountRate": 55,
+          "revenueHalf2": 489,
+          "discountOrders": 7,
+          "discountRate": 58,
           "discountShare": 9,
-          "totalDiscounts": 66,
-          "newCust": 11,
+          "totalDiscounts": 75,
+          "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 49,
@@ -524,6 +524,11 @@
               "name": "Kimono Rose Japonais Pour Enfant",
               "qty": 2,
               "revenue": 120
+            },
+            {
+              "name": "Cardigan Kimono Coton Homme",
+              "qty": 1,
+              "revenue": 90
             },
             {
               "name": "Peignoir Kimono Homme Dragon",
@@ -559,14 +564,9 @@
               "name": "Chemise Kimono Lin",
               "qty": 1,
               "revenue": 45
-            },
-            {
-              "name": "Robe De Plage Kimono Noir",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 54,
+          "top3RevenueShare": 51,
           "hourly": {
             "7": 1,
             "8": 1,
@@ -574,12 +574,12 @@
             "12": 3,
             "13": 3,
             "16": 1,
-            "19": 1
+            "19": 2
           },
           "daily": {
             "0": 2,
             "2": 1,
-            "3": 3,
+            "3": 4,
             "4": 2,
             "5": 1,
             "6": 2
@@ -609,8 +609,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 14,
-          "abandonRate": 21,
+          "totalCheckouts": 15,
+          "abandonRate": 20,
           "abandonedValue": 163,
           "topAbandoned": [
             {
@@ -626,29 +626,29 @@
               "count": 1
             }
           ],
-          "sessions": 175,
-          "conversionRate": 6.3,
+          "sessions": 188,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:55.241Z"
+          "syncedAt": "2026-07-08T20:58:12.068Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2510,
-          "orders": 33,
+          "revenue": 2591,
+          "orders": 34,
           "aov": 76,
           "currency": "EUR",
           "refunds": 3,
           "refundRate": 8,
           "revenueHalf1": 718,
-          "revenueHalf2": 1792,
-          "discountOrders": 15,
-          "discountRate": 45,
+          "revenueHalf2": 1873,
+          "discountOrders": 16,
+          "discountRate": 47,
           "discountShare": 9,
-          "totalDiscounts": 216,
-          "newCust": 33,
+          "totalDiscounts": 225,
+          "newCust": 34,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 49,
+          "avgLTV": 50,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -687,6 +687,11 @@
               "revenue": 110
             },
             {
+              "name": "Cardigan Kimono Coton Homme",
+              "qty": 1,
+              "revenue": 90
+            },
+            {
               "name": "Chemise Kimono Lin",
               "qty": 2,
               "revenue": 90
@@ -695,14 +700,9 @@
               "name": "Ensemble Kimono Fleuri",
               "qty": 1,
               "revenue": 80
-            },
-            {
-              "name": "Peignoir Kimono Homme Dragon",
-              "qty": 1,
-              "revenue": 70
             }
           ],
-          "top3RevenueShare": 39,
+          "top3RevenueShare": 37,
           "hourly": {
             "6": 1,
             "7": 3,
@@ -715,7 +715,7 @@
             "15": 2,
             "16": 1,
             "18": 3,
-            "19": 4,
+            "19": 5,
             "20": 1,
             "21": 1
           },
@@ -723,7 +723,7 @@
             "0": 6,
             "1": 2,
             "2": 6,
-            "3": 5,
+            "3": 6,
             "4": 7,
             "5": 4,
             "6": 3
@@ -752,10 +752,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 9,
-          "totalCheckouts": 42,
-          "abandonRate": 21,
-          "abandonedValue": 493,
+          "abandonedCheckouts": 8,
+          "totalCheckouts": 43,
+          "abandonRate": 19,
+          "abandonedValue": 412,
           "topAbandoned": [
             {
               "name": "Kimono Long de Plage Femme",
@@ -778,29 +778,29 @@
               "count": 1
             }
           ],
-          "sessions": 525,
+          "sessions": 538,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:55.994Z"
+          "syncedAt": "2026-07-08T20:58:12.720Z"
         },
         "90": {
           "period": 90,
-          "revenue": 6297,
-          "orders": 87,
+          "revenue": 6378,
+          "orders": 88,
           "aov": 72,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 6,
           "revenueHalf1": 2225,
-          "revenueHalf2": 4072,
-          "discountOrders": 39,
+          "revenueHalf2": 4153,
+          "discountOrders": 40,
           "discountRate": 45,
           "discountShare": 8,
-          "totalDiscounts": 527,
-          "newCust": 85,
+          "totalDiscounts": 536,
+          "newCust": 86,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 45,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -870,7 +870,7 @@
             "16": 7,
             "17": 5,
             "18": 11,
-            "19": 4,
+            "19": 5,
             "20": 3,
             "21": 6,
             "22": 1
@@ -879,7 +879,7 @@
             "0": 17,
             "1": 12,
             "2": 11,
-            "3": 14,
+            "3": 15,
             "4": 15,
             "5": 8,
             "6": 10
@@ -908,10 +908,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 180,
-          "abandonedCheckouts": 21,
-          "totalCheckouts": 108,
-          "abandonRate": 19,
-          "abandonedValue": 1234,
+          "abandonedCheckouts": 20,
+          "totalCheckouts": 109,
+          "abandonRate": 18,
+          "abandonedValue": 1153,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -934,26 +934,26 @@
               "count": 1
             }
           ],
-          "sessions": 1350,
-          "conversionRate": 6.4,
+          "sessions": 1363,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:56.730Z"
+          "syncedAt": "2026-07-08T20:58:13.758Z"
         },
         "365": {
           "period": 365,
-          "revenue": 7307,
-          "orders": 105,
+          "revenue": 7388,
+          "orders": 106,
           "aov": 70,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 5,
           "revenueHalf1": 0,
-          "revenueHalf2": 7307,
-          "discountOrders": 41,
-          "discountRate": 39,
+          "revenueHalf2": 7388,
+          "discountOrders": 42,
+          "discountRate": 40,
           "discountShare": 7,
-          "totalDiscounts": 535,
-          "newCust": 103,
+          "totalDiscounts": 544,
+          "newCust": 104,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 42,
@@ -1027,7 +1027,7 @@
             "16": 7,
             "17": 6,
             "18": 12,
-            "19": 5,
+            "19": 6,
             "20": 5,
             "21": 7,
             "22": 1
@@ -1036,7 +1036,7 @@
             "0": 21,
             "1": 15,
             "2": 12,
-            "3": 18,
+            "3": 19,
             "4": 17,
             "5": 9,
             "6": 13
@@ -1065,10 +1065,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 21,
-          "totalCheckouts": 126,
-          "abandonRate": 17,
-          "abandonedValue": 1234,
+          "abandonedCheckouts": 20,
+          "totalCheckouts": 127,
+          "abandonRate": 16,
+          "abandonedValue": 1153,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -1091,10 +1091,10 @@
               "count": 1
             }
           ],
-          "sessions": 1575,
+          "sessions": 1588,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-08T19:10:57.446Z"
+          "syncedAt": "2026-07-08T20:58:14.888Z"
         }
       }
     }
