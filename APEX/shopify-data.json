@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-09T04:42:58.639Z",
+  "lastUpdated": "2026-07-09T08:20:11.816Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-09T04:43:00.540Z",
+        "syncedAt": "2026-07-09T08:20:13.451Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -87,7 +87,7 @@
           "sessions": 25,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:08.701Z"
+          "syncedAt": "2026-07-09T08:20:15.322Z"
         },
         "30": {
           "period": 30,
@@ -181,7 +181,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:09.265Z"
+          "syncedAt": "2026-07-09T08:20:15.964Z"
         },
         "90": {
           "period": 90,
@@ -319,7 +319,7 @@
           "sessions": 188,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:09.831Z"
+          "syncedAt": "2026-07-09T08:20:16.567Z"
         },
         "365": {
           "period": 365,
@@ -329,8 +329,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 6071,
-          "revenueHalf2": 6162,
+          "revenueHalf1": 6114,
+          "revenueHalf2": 6119,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -471,46 +471,46 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:10.634Z"
+          "syncedAt": "2026-07-09T08:20:17.197Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2591,
-        "orders": 34,
+        "revenue": 2627,
+        "orders": 35,
         "currency": "EUR",
-        "syncedAt": "2026-07-09T04:43:12.725Z",
+        "syncedAt": "2026-07-09T08:20:18.676Z",
         "allTime": {
-          "revenue": 7388,
-          "orders": 106
+          "revenue": 7424,
+          "orders": 107
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 746,
-          "orders": 11,
-          "aov": 68,
+          "revenue": 782,
+          "orders": 12,
+          "aov": 65,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 485,
-          "revenueHalf2": 261,
-          "discountOrders": 6,
-          "discountRate": 55,
+          "revenueHalf2": 297,
+          "discountOrders": 7,
+          "discountRate": 58,
           "discountShare": 9,
-          "totalDiscounts": 68,
-          "newCust": 11,
+          "totalDiscounts": 72,
+          "newCust": 12,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Robe De Chambre Kimono Satin",
-              "qty": 5,
-              "revenue": 200
+              "qty": 6,
+              "revenue": 239
             },
             {
               "name": "Kimono Rose Japonais Pour Enfant",
@@ -558,8 +558,9 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 55,
+          "top3RevenueShare": 57,
           "hourly": {
+            "5": 1,
             "7": 1,
             "8": 1,
             "11": 1,
@@ -572,7 +573,7 @@
             "0": 2,
             "2": 1,
             "3": 3,
-            "4": 2,
+            "4": 3,
             "5": 1,
             "6": 2
           },
@@ -600,10 +601,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 13,
-          "abandonRate": 15,
-          "abandonedValue": 103,
+          "abandonedCheckouts": 3,
+          "totalCheckouts": 15,
+          "abandonRate": 20,
+          "abandonedValue": 148,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
@@ -612,37 +613,41 @@
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
               "count": 1
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
+              "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 6.7,
+          "sessions": 188,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:15.038Z"
+          "syncedAt": "2026-07-09T08:20:20.546Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2591,
-          "orders": 34,
-          "aov": 76,
+          "revenue": 2627,
+          "orders": 35,
+          "aov": 75,
           "currency": "EUR",
           "refunds": 3,
           "refundRate": 8,
           "revenueHalf1": 718,
-          "revenueHalf2": 1873,
-          "discountOrders": 16,
-          "discountRate": 47,
+          "revenueHalf2": 1909,
+          "discountOrders": 17,
+          "discountRate": 49,
           "discountShare": 9,
-          "totalDiscounts": 225,
-          "newCust": 34,
+          "totalDiscounts": 229,
+          "newCust": 35,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 49,
           "vipCustomers": 0,
           "topProducts": [
             {
               "name": "Robe De Chambre Kimono Satin",
-              "qty": 9,
-              "revenue": 359
+              "qty": 10,
+              "revenue": 399
             },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -690,8 +695,9 @@
               "revenue": 80
             }
           ],
-          "top3RevenueShare": 37,
+          "top3RevenueShare": 38,
           "hourly": {
+            "5": 1,
             "6": 1,
             "7": 3,
             "8": 1,
@@ -712,7 +718,7 @@
             "1": 2,
             "2": 6,
             "3": 6,
-            "4": 7,
+            "4": 8,
             "5": 4,
             "6": 3
           },
@@ -740,10 +746,10 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 177,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 43,
-          "abandonRate": 19,
-          "abandonedValue": 412,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 45,
+          "abandonRate": 20,
+          "abandonedValue": 457,
           "topAbandoned": [
             {
               "name": "Kimono Long de Plage Femme",
@@ -766,29 +772,29 @@
               "count": 1
             }
           ],
-          "sessions": 538,
-          "conversionRate": 6.3,
+          "sessions": 563,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:15.674Z"
+          "syncedAt": "2026-07-09T08:20:21.339Z"
         },
         "90": {
           "period": 90,
-          "revenue": 6378,
-          "orders": 88,
+          "revenue": 6414,
+          "orders": 89,
           "aov": 72,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 6,
           "revenueHalf1": 2225,
-          "revenueHalf2": 4153,
-          "discountOrders": 40,
-          "discountRate": 45,
+          "revenueHalf2": 4189,
+          "discountOrders": 41,
+          "discountRate": 46,
           "discountShare": 8,
-          "totalDiscounts": 536,
-          "newCust": 86,
+          "totalDiscounts": 540,
+          "newCust": 87,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 46,
+          "avgLTV": 45,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -808,8 +814,8 @@
             },
             {
               "name": "Robe De Chambre Kimono Satin",
-              "qty": 11,
-              "revenue": 439
+              "qty": 12,
+              "revenue": 479
             },
             {
               "name": "Kimono Long Femme Plage",
@@ -844,7 +850,7 @@
           ],
           "top3RevenueShare": 30,
           "hourly": {
-            "5": 2,
+            "5": 3,
             "6": 2,
             "7": 6,
             "8": 4,
@@ -868,7 +874,7 @@
             "1": 12,
             "2": 11,
             "3": 15,
-            "4": 15,
+            "4": 16,
             "5": 8,
             "6": 10
           },
@@ -896,13 +902,17 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 180,
-          "abandonedCheckouts": 20,
-          "totalCheckouts": 109,
-          "abandonRate": 18,
-          "abandonedValue": 1153,
+          "abandonedCheckouts": 21,
+          "totalCheckouts": 111,
+          "abandonRate": 19,
+          "abandonedValue": 1198,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
+              "count": 2
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
               "count": 2
             },
             {
@@ -916,32 +926,28 @@
             {
               "name": "Robe Kimono Manches Longues",
               "count": 1
-            },
-            {
-              "name": "Kimono Paon Vert",
-              "count": 1
             }
           ],
-          "sessions": 1363,
-          "conversionRate": 6.5,
+          "sessions": 1388,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:16.337Z"
+          "syncedAt": "2026-07-09T08:20:22.206Z"
         },
         "365": {
           "period": 365,
-          "revenue": 7388,
-          "orders": 106,
-          "aov": 70,
+          "revenue": 7424,
+          "orders": 107,
+          "aov": 69,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 5,
           "revenueHalf1": 0,
-          "revenueHalf2": 7388,
-          "discountOrders": 42,
+          "revenueHalf2": 7424,
+          "discountOrders": 43,
           "discountRate": 40,
           "discountShare": 7,
-          "totalDiscounts": 544,
-          "newCust": 104,
+          "totalDiscounts": 548,
+          "newCust": 105,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 42,
@@ -964,8 +970,8 @@
             },
             {
               "name": "Robe De Chambre Kimono Satin",
-              "qty": 11,
-              "revenue": 439
+              "qty": 12,
+              "revenue": 479
             },
             {
               "name": "Kimono Long Femme Plage",
@@ -1001,7 +1007,7 @@
           "top3RevenueShare": 28,
           "hourly": {
             "1": 1,
-            "5": 2,
+            "5": 3,
             "6": 2,
             "7": 7,
             "8": 5,
@@ -1025,7 +1031,7 @@
             "1": 15,
             "2": 12,
             "3": 19,
-            "4": 17,
+            "4": 18,
             "5": 9,
             "6": 13
           },
@@ -1053,13 +1059,17 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 20,
-          "totalCheckouts": 127,
+          "abandonedCheckouts": 21,
+          "totalCheckouts": 129,
           "abandonRate": 16,
-          "abandonedValue": 1153,
+          "abandonedValue": 1198,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
+              "count": 2
+            },
+            {
+              "name": "Robe Kimono Longue Grande Taille",
               "count": 2
             },
             {
@@ -1073,16 +1083,12 @@
             {
               "name": "Robe Kimono Manches Longues",
               "count": 1
-            },
-            {
-              "name": "Kimono Paon Vert",
-              "count": 1
             }
           ],
-          "sessions": 1588,
-          "conversionRate": 6.7,
+          "sessions": 1613,
+          "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-09T04:43:17.013Z"
+          "syncedAt": "2026-07-09T08:20:22.992Z"
         }
       }
     }
