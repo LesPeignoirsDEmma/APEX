@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-10T23:51:43.728Z",
+  "lastUpdated": "2026-07-11T01:54:06.991Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-10T23:51:45.480Z",
+        "syncedAt": "2026-07-11T01:54:08.470Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -15,37 +15,27 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 50,
-          "orders": 1,
-          "aov": 50,
+          "revenue": 0,
+          "orders": 0,
+          "aov": 0,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 50,
+          "revenueHalf1": 0,
           "revenueHalf2": 0,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 1,
+          "newCust": 0,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 0,
           "vipCustomers": 0,
-          "topProducts": [
-            {
-              "name": "Peignoir Femme Coton Chic",
-              "qty": 1,
-              "revenue": 50
-            }
-          ],
-          "top3RevenueShare": 100,
-          "hourly": {
-            "10": 1
-          },
-          "daily": {
-            "5": 1
-          },
+          "topProducts": [],
+          "top3RevenueShare": 0,
+          "hourly": {},
+          "daily": {},
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Cerf",
@@ -71,14 +61,14 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 1,
-          "abandonRate": 0,
+          "totalCheckouts": 0,
+          "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 13,
-          "conversionRate": 7.7,
+          "sessions": null,
+          "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:47.446Z"
+          "syncedAt": "2026-07-11T01:54:10.088Z"
         },
         "30": {
           "period": 30,
@@ -172,26 +162,26 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:48.213Z"
+          "syncedAt": "2026-07-11T01:54:10.730Z"
         },
         "90": {
           "period": 90,
-          "revenue": 926,
-          "orders": 13,
-          "aov": 71,
+          "revenue": 863,
+          "orders": 12,
+          "aov": 72,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 681,
+          "revenueHalf1": 618,
           "revenueHalf2": 245,
-          "discountOrders": 3,
-          "discountRate": 23,
-          "discountShare": 4,
-          "totalDiscounts": 32,
-          "newCust": 11,
+          "discountOrders": 2,
+          "discountRate": 17,
+          "discountShare": 3,
+          "totalDiscounts": 25,
+          "newCust": 10,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 54,
+          "avgLTV": 58,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -220,11 +210,6 @@
               "revenue": 85
             },
             {
-              "name": "Peignoir Femme Flanelle",
-              "qty": 1,
-              "revenue": 70
-            },
-            {
               "name": "Peignoir Été Femme A Fermeture Éclair",
               "qty": 1,
               "revenue": 65
@@ -243,14 +228,18 @@
               "name": "Cape de Bain Bébé Cerf",
               "qty": 1,
               "revenue": 40
+            },
+            {
+              "name": "Peignoir Satin Court Blanc – Femme",
+              "qty": 1,
+              "revenue": 40
             }
           ],
-          "top3RevenueShare": 46,
+          "top3RevenueShare": 50,
           "hourly": {
             "8": 1,
             "9": 1,
             "10": 3,
-            "11": 1,
             "13": 1,
             "14": 1,
             "16": 1,
@@ -263,7 +252,7 @@
             "3": 5,
             "4": 1,
             "5": 1,
-            "6": 3
+            "6": 2
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -290,8 +279,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 15,
-          "abandonRate": 13,
+          "totalCheckouts": 14,
+          "abandonRate": 14,
           "abandonedValue": 155,
           "topAbandoned": [
             {
@@ -307,10 +296,10 @@
               "count": 1
             }
           ],
-          "sessions": 188,
+          "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:49.032Z"
+          "syncedAt": "2026-07-11T01:54:11.353Z"
         },
         "365": {
           "period": 365,
@@ -462,7 +451,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:49.815Z"
+          "syncedAt": "2026-07-11T01:54:12.193Z"
         }
       }
     },
@@ -471,7 +460,7 @@
         "revenue": 2602,
         "orders": 34,
         "currency": "EUR",
-        "syncedAt": "2026-07-10T23:51:51.237Z",
+        "syncedAt": "2026-07-11T01:54:13.466Z",
         "allTime": {
           "revenue": 7424,
           "orders": 107
@@ -480,19 +469,19 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 682,
-          "orders": 10,
-          "aov": 68,
+          "revenue": 620,
+          "orders": 9,
+          "aov": 69,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 452,
+          "revenueHalf1": 391,
           "revenueHalf2": 229,
-          "discountOrders": 6,
-          "discountRate": 60,
+          "discountOrders": 5,
+          "discountRate": 56,
           "discountShare": 10,
-          "totalDiscounts": 68,
-          "newCust": 10,
+          "totalDiscounts": 62,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 49,
@@ -502,11 +491,6 @@
               "name": "Robe De Chambre Kimono Satin",
               "qty": 6,
               "revenue": 239
-            },
-            {
-              "name": "Kimono Rose Japonais Pour Enfant",
-              "qty": 2,
-              "revenue": 120
             },
             {
               "name": "Cardigan Kimono Coton Homme",
@@ -529,6 +513,11 @@
               "revenue": 65
             },
             {
+              "name": "Kimono Rose Japonais Pour Enfant",
+              "qty": 1,
+              "revenue": 60
+            },
+            {
               "name": "Kimono Robe Vintage",
               "qty": 1,
               "revenue": 55
@@ -539,12 +528,12 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 66,
+          "top3RevenueShare": 64,
           "hourly": {
             "5": 1,
             "8": 1,
             "11": 1,
-            "12": 3,
+            "12": 2,
             "13": 2,
             "16": 1,
             "19": 1
@@ -554,7 +543,6 @@
             "2": 1,
             "3": 3,
             "4": 1,
-            "5": 1,
             "6": 2
           },
           "totalProducts": 250,
@@ -582,8 +570,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 2,
-          "totalCheckouts": 12,
-          "abandonRate": 17,
+          "totalCheckouts": 11,
+          "abandonRate": 18,
           "abandonedValue": 70,
           "topAbandoned": [
             {
@@ -595,10 +583,10 @@
               "count": 1
             }
           ],
-          "sessions": 150,
-          "conversionRate": 6.7,
+          "sessions": 138,
+          "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:52.928Z"
+          "syncedAt": "2026-07-11T01:54:15.203Z"
         },
         "30": {
           "period": 30,
@@ -751,7 +739,7 @@
           "sessions": 550,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:54.115Z"
+          "syncedAt": "2026-07-11T01:54:15.933Z"
         },
         "90": {
           "period": 90,
@@ -907,7 +895,7 @@
           "sessions": 1375,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:55.046Z"
+          "syncedAt": "2026-07-11T01:54:16.717Z"
         },
         "365": {
           "period": 365,
@@ -1064,7 +1052,7 @@
           "sessions": 1613,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-10T23:51:55.949Z"
+          "syncedAt": "2026-07-11T01:54:17.449Z"
         }
       }
     }
