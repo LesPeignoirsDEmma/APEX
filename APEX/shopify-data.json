@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-12T16:49:39.336Z",
+  "lastUpdated": "2026-07-12T17:53:10.056Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-12T16:49:41.059Z",
+        "syncedAt": "2026-07-12T17:53:11.857Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:43.006Z"
+          "syncedAt": "2026-07-12T17:53:13.824Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:43.801Z"
+          "syncedAt": "2026-07-12T17:53:14.679Z"
         },
         "90": {
           "period": 90,
@@ -299,7 +299,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:44.632Z"
+          "syncedAt": "2026-07-12T17:53:15.492Z"
         },
         "365": {
           "period": 365,
@@ -451,7 +451,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:45.406Z"
+          "syncedAt": "2026-07-12T17:53:16.652Z"
         }
       }
     },
@@ -460,7 +460,7 @@
         "revenue": 2553,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-07-12T16:49:46.622Z",
+        "syncedAt": "2026-07-12T17:53:18.632Z",
         "allTime": {
           "revenue": 7424,
           "orders": 107
@@ -475,8 +475,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 489,
-          "revenueHalf2": 36,
+          "revenueHalf1": 525,
+          "revenueHalf2": 0,
           "discountOrders": 5,
           "discountRate": 71,
           "discountShare": 12,
@@ -535,9 +535,6 @@
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
@@ -552,9 +549,12 @@
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Abaya Kimono Imprimé Zèbre Long",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
-            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
@@ -578,7 +578,7 @@
           "sessions": 125,
           "conversionRate": 5.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:48.538Z"
+          "syncedAt": "2026-07-12T17:53:20.316Z"
         },
         "30": {
           "period": 30,
@@ -680,9 +680,6 @@
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
@@ -697,11 +694,14 @@
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Abaya Kimono Imprimé Zèbre Long",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
-            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
-          "newProductsAdded": 177,
+          "newProductsAdded": 154,
           "abandonedCheckouts": 10,
           "totalCheckouts": 44,
           "abandonRate": 23,
@@ -731,7 +731,7 @@
           "sessions": 550,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:49.458Z"
+          "syncedAt": "2026-07-12T17:53:21.068Z"
         },
         "90": {
           "period": 90,
@@ -836,9 +836,6 @@
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
@@ -853,11 +850,14 @@
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Abaya Kimono Imprimé Zèbre Long",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
-            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
-          "newProductsAdded": 180,
+          "newProductsAdded": 161,
           "abandonedCheckouts": 21,
           "totalCheckouts": 110,
           "abandonRate": 19,
@@ -887,7 +887,7 @@
           "sessions": 1375,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:50.324Z"
+          "syncedAt": "2026-07-12T17:53:21.880Z"
         },
         "365": {
           "period": 365,
@@ -993,9 +993,6 @@
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
-            "2022 WINYI Summer Beach Wear Swim Suit Cover up boho fashion printing elegant sexy Holiday party long Sleeve Cardigan dress",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
             "2024 Boho Sexy Striped Chiffon Bathing Suit Cover-ups Beach Wear Kimono Dress For Women Summer Swimsuit Cover Up",
@@ -1010,9 +1007,12 @@
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
             "2026 New Loose Women Cover Ups Swimwear White Beach Dress Cotton Beach Kimono Coverups for Women Swimsuit Cover Up Beach Woman",
+            "Abaya Kimono Imprimé Zèbre Long",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
-            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men"
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
+            "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
           "abandonedCheckouts": 21,
@@ -1044,7 +1044,7 @@
           "sessions": 1613,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-12T16:49:51.360Z"
+          "syncedAt": "2026-07-12T17:53:22.689Z"
         }
       }
     }
