@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-13T05:40:56.737Z",
+  "lastUpdated": "2026-07-13T08:52:54.602Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-13T05:40:58.964Z",
+        "syncedAt": "2026-07-13T08:52:57.125Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:00.875Z"
+          "syncedAt": "2026-07-13T08:53:06.769Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:01.719Z"
+          "syncedAt": "2026-07-13T08:53:07.363Z"
         },
         "90": {
           "period": 90,
@@ -299,7 +299,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:03.385Z"
+          "syncedAt": "2026-07-13T08:53:08.008Z"
         },
         "365": {
           "period": 365,
@@ -309,8 +309,8 @@
           "currency": "EUR",
           "refunds": 50,
           "refundRate": 20,
-          "revenueHalf1": 6258,
-          "revenueHalf2": 5975,
+          "revenueHalf1": 6369,
+          "revenueHalf2": 5864,
           "discountOrders": 126,
           "discountRate": 63,
           "discountShare": 9,
@@ -451,7 +451,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:04.249Z"
+          "syncedAt": "2026-07-13T08:53:09.140Z"
         }
       }
     },
@@ -460,7 +460,7 @@
         "revenue": 2461,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-07-13T05:41:05.769Z",
+        "syncedAt": "2026-07-13T08:53:12.877Z",
         "allTime": {
           "revenue": 7487,
           "orders": 108
@@ -484,7 +484,7 @@
           "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 35,
+          "avgLTV": 31,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -577,7 +577,7 @@
           "sessions": 113,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:07.587Z"
+          "syncedAt": "2026-07-13T08:53:15.651Z"
         },
         "30": {
           "period": 30,
@@ -596,7 +596,7 @@
           "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 48,
+          "avgLTV": 47,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -729,7 +729,7 @@
           "sessions": 538,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:08.380Z"
+          "syncedAt": "2026-07-13T08:53:16.329Z"
         },
         "90": {
           "period": 90,
@@ -748,7 +748,7 @@
           "newCust": 86,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 46,
+          "avgLTV": 45,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -885,7 +885,7 @@
           "sessions": 1375,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:09.180Z"
+          "syncedAt": "2026-07-13T08:53:17.105Z"
         },
         "365": {
           "period": 365,
@@ -904,7 +904,7 @@
           "newCust": 106,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 42,
+          "avgLTV": 41,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -1042,7 +1042,7 @@
           "sessions": 1625,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T05:41:09.981Z"
+          "syncedAt": "2026-07-13T08:53:17.776Z"
         }
       }
     }
