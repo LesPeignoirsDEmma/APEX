@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-13T23:44:16.759Z",
+  "lastUpdated": "2026-07-14T01:46:03.918Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-13T23:44:18.453Z",
+        "syncedAt": "2026-07-14T01:46:05.531Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:19.921Z"
+          "syncedAt": "2026-07-14T01:46:07.396Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:20.491Z"
+          "syncedAt": "2026-07-14T01:46:08.159Z"
         },
         "90": {
           "period": 90,
@@ -299,7 +299,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:21.052Z"
+          "syncedAt": "2026-07-14T01:46:09.226Z"
         },
         "365": {
           "period": 365,
@@ -451,7 +451,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:21.632Z"
+          "syncedAt": "2026-07-14T01:46:10.042Z"
         }
       }
     },
@@ -460,7 +460,7 @@
         "revenue": 2461,
         "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-07-13T23:44:22.862Z",
+        "syncedAt": "2026-07-14T01:46:11.276Z",
         "allTime": {
           "revenue": 7487,
           "orders": 108
@@ -484,7 +484,7 @@
           "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 31,
+          "avgLTV": 35,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -556,15 +556,11 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
-          "totalCheckouts": 9,
-          "abandonRate": 33,
-          "abandonedValue": 140,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 8,
+          "abandonRate": 25,
+          "abandonedValue": 115,
           "topAbandoned": [
-            {
-              "name": "Tunique De Plage Robe Kimono Blanc",
-              "count": 1
-            },
             {
               "name": "Robe Kimono Longue Grande Taille",
               "count": 1
@@ -574,10 +570,10 @@
               "count": 1
             }
           ],
-          "sessions": 113,
-          "conversionRate": 5.3,
+          "sessions": 100,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:24.103Z"
+          "syncedAt": "2026-07-14T01:46:12.996Z"
         },
         "30": {
           "period": 30,
@@ -729,7 +725,7 @@
           "sessions": 538,
           "conversionRate": 5.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:24.993Z"
+          "syncedAt": "2026-07-14T01:46:13.735Z"
         },
         "90": {
           "period": 90,
@@ -748,7 +744,7 @@
           "newCust": 86,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 45,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -885,7 +881,7 @@
           "sessions": 1375,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:25.566Z"
+          "syncedAt": "2026-07-14T01:46:14.479Z"
         },
         "365": {
           "period": 365,
@@ -1042,7 +1038,7 @@
           "sessions": 1625,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-13T23:44:26.170Z"
+          "syncedAt": "2026-07-14T01:46:15.283Z"
         }
       }
     }
