@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-16T04:53:16.562Z",
+  "lastUpdated": "2026-07-16T07:17:35.807Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-16T04:53:18.638Z",
+        "syncedAt": "2026-07-16T07:17:38.426Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:20.638Z"
+          "syncedAt": "2026-07-16T07:17:40.136Z"
         },
         "30": {
           "period": 30,
@@ -162,7 +162,7 @@
           "sessions": 63,
           "conversionRate": 4.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:21.412Z"
+          "syncedAt": "2026-07-16T07:17:40.787Z"
         },
         "90": {
           "period": 90,
@@ -299,7 +299,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:22.212Z"
+          "syncedAt": "2026-07-16T07:17:41.475Z"
         },
         "365": {
           "period": 365,
@@ -451,42 +451,47 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:23.057Z"
+          "syncedAt": "2026-07-16T07:17:42.419Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2374,
-        "orders": 31,
+        "revenue": 2437,
+        "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-07-16T04:53:24.804Z",
+        "syncedAt": "2026-07-16T07:17:45.728Z",
         "allTime": {
-          "revenue": 7520,
-          "orders": 109
+          "revenue": 7583,
+          "orders": 110
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 132,
-          "orders": 3,
-          "aov": 44,
+          "revenue": 195,
+          "orders": 4,
+          "aov": 49,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 36,
-          "revenueHalf2": 96,
-          "discountOrders": 2,
-          "discountRate": 67,
-          "discountShare": 8,
-          "totalDiscounts": 11,
-          "newCust": 3,
+          "revenueHalf2": 159,
+          "discountOrders": 3,
+          "discountRate": 75,
+          "discountShare": 9,
+          "totalDiscounts": 18,
+          "newCust": 4,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 19,
+          "avgLTV": 28,
           "vipCustomers": 0,
           "topProducts": [
+            {
+              "name": "Peignoir Kimono Homme Dragon",
+              "qty": 1,
+              "revenue": 70
+            },
             {
               "name": "Chemise Kimono Grande Taille",
               "qty": 1,
@@ -503,16 +508,17 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 103,
+          "top3RevenueShare": 93,
           "hourly": {
             "5": 1,
+            "6": 1,
             "18": 1,
             "22": 1
           },
           "daily": {
             "0": 1,
             "2": 1,
-            "4": 1
+            "4": 2
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
@@ -538,43 +544,43 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 3,
+          "abandonedCheckouts": 2,
           "totalCheckouts": 6,
-          "abandonRate": 50,
-          "abandonedValue": 178,
+          "abandonRate": 33,
+          "abandonedValue": 115,
           "topAbandoned": [
             {
-              "name": "Peignoir Kimono Homme Dragon",
-              "count": 2
+              "name": "Robe Kimono Longue Grande Taille",
+              "count": 1
             },
             {
-              "name": "Robe Kimono Longue Grande Taille",
+              "name": "Peignoir Kimono Homme Dragon",
               "count": 1
             }
           ],
           "sessions": 75,
-          "conversionRate": 4,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:26.503Z"
+          "syncedAt": "2026-07-16T07:17:47.191Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2374,
-          "orders": 31,
-          "aov": 77,
+          "revenue": 2437,
+          "orders": 32,
+          "aov": 76,
           "currency": "EUR",
           "refunds": 2,
           "refundRate": 6,
           "revenueHalf1": 1434,
-          "revenueHalf2": 940,
-          "discountOrders": 16,
-          "discountRate": 52,
-          "discountShare": 9,
-          "totalDiscounts": 225,
-          "newCust": 31,
+          "revenueHalf2": 1003,
+          "discountOrders": 17,
+          "discountRate": 53,
+          "discountShare": 10,
+          "totalDiscounts": 232,
+          "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 51,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -596,6 +602,11 @@
               "name": "Chemise Kimono Grande Taille",
               "qty": 3,
               "revenue": 210
+            },
+            {
+              "name": "Peignoir Kimono Homme Dragon",
+              "qty": 2,
+              "revenue": 140
             },
             {
               "name": "Kimono Rose Japonais Pour Enfant",
@@ -621,17 +632,12 @@
               "name": "Ensemble Kimono Fleuri",
               "qty": 1,
               "revenue": 80
-            },
-            {
-              "name": "Peignoir Kimono Homme Dragon",
-              "qty": 1,
-              "revenue": 70
             }
           ],
-          "top3RevenueShare": 43,
+          "top3RevenueShare": 41,
           "hourly": {
             "5": 1,
-            "6": 1,
+            "6": 2,
             "7": 3,
             "8": 1,
             "10": 2,
@@ -650,7 +656,7 @@
             "1": 2,
             "2": 6,
             "3": 6,
-            "4": 7,
+            "4": 8,
             "5": 2,
             "6": 3
           },
@@ -678,15 +684,11 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 154,
-          "abandonedCheckouts": 10,
+          "abandonedCheckouts": 9,
           "totalCheckouts": 42,
-          "abandonRate": 24,
-          "abandonedValue": 530,
+          "abandonRate": 21,
+          "abandonedValue": 467,
           "topAbandoned": [
-            {
-              "name": "Peignoir Kimono Homme Dragon",
-              "count": 2
-            },
             {
               "name": "Kimono Haori Homme",
               "count": 1
@@ -702,28 +704,32 @@
             {
               "name": "Kimono Long Femme Boheme",
               "count": 1
+            },
+            {
+              "name": "Kimono Rouge Enfant",
+              "count": 1
             }
           ],
           "sessions": 525,
-          "conversionRate": 5.9,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:27.283Z"
+          "syncedAt": "2026-07-16T07:17:47.846Z"
         },
         "90": {
           "period": 90,
-          "revenue": 6330,
-          "orders": 88,
+          "revenue": 6393,
+          "orders": 89,
           "aov": 72,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 6,
           "revenueHalf1": 2623,
-          "revenueHalf2": 3707,
-          "discountOrders": 41,
+          "revenueHalf2": 3770,
+          "discountOrders": 42,
           "discountRate": 47,
           "discountShare": 9,
-          "totalDiscounts": 542,
-          "newCust": 86,
+          "totalDiscounts": 549,
+          "newCust": 87,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 46,
@@ -770,20 +776,20 @@
               "revenue": 240
             },
             {
+              "name": "Peignoir Kimono Homme Dragon",
+              "qty": 3,
+              "revenue": 210
+            },
+            {
               "name": "Robe Chinoise Kimono Enfant",
               "qty": 3,
               "revenue": 165
-            },
-            {
-              "name": "Peignoir Kimono Homme Dragon",
-              "qty": 2,
-              "revenue": 140
             }
           ],
           "top3RevenueShare": 30,
           "hourly": {
             "5": 3,
-            "6": 2,
+            "6": 3,
             "7": 5,
             "8": 4,
             "9": 1,
@@ -806,7 +812,7 @@
             "1": 11,
             "2": 12,
             "3": 15,
-            "4": 15,
+            "4": 16,
             "5": 8,
             "6": 10
           },
@@ -834,10 +840,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 161,
-          "abandonedCheckouts": 22,
+          "abandonedCheckouts": 21,
           "totalCheckouts": 111,
-          "abandonRate": 20,
-          "abandonedValue": 1276,
+          "abandonRate": 19,
+          "abandonedValue": 1213,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -848,38 +854,38 @@
               "count": 2
             },
             {
-              "name": "Peignoir Kimono Homme Dragon",
-              "count": 2
-            },
-            {
               "name": "Kimono Long Femme Plage",
               "count": 1
             },
             {
               "name": "Robe Kimono Manches Longues",
               "count": 1
+            },
+            {
+              "name": "Kimono Paon Vert",
+              "count": 1
             }
           ],
           "sessions": 1388,
-          "conversionRate": 6.3,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:28.061Z"
+          "syncedAt": "2026-07-16T07:17:49.220Z"
         },
         "365": {
           "period": 365,
-          "revenue": 7520,
-          "orders": 109,
+          "revenue": 7583,
+          "orders": 110,
           "aov": 69,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 5,
           "revenueHalf1": 0,
-          "revenueHalf2": 7520,
-          "discountOrders": 44,
-          "discountRate": 40,
+          "revenueHalf2": 7583,
+          "discountOrders": 45,
+          "discountRate": 41,
           "discountShare": 7,
-          "totalDiscounts": 555,
-          "newCust": 107,
+          "totalDiscounts": 562,
+          "newCust": 108,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 41,
@@ -940,7 +946,7 @@
           "hourly": {
             "1": 1,
             "5": 3,
-            "6": 2,
+            "6": 3,
             "7": 7,
             "8": 5,
             "9": 2,
@@ -963,7 +969,7 @@
             "1": 15,
             "2": 13,
             "3": 19,
-            "4": 18,
+            "4": 19,
             "5": 9,
             "6": 13
           },
@@ -991,10 +997,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 22,
+          "abandonedCheckouts": 21,
           "totalCheckouts": 132,
-          "abandonRate": 17,
-          "abandonedValue": 1276,
+          "abandonRate": 16,
+          "abandonedValue": 1213,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -1005,22 +1011,22 @@
               "count": 2
             },
             {
-              "name": "Peignoir Kimono Homme Dragon",
-              "count": 2
-            },
-            {
               "name": "Kimono Long Femme Plage",
               "count": 1
             },
             {
               "name": "Robe Kimono Manches Longues",
               "count": 1
+            },
+            {
+              "name": "Kimono Paon Vert",
+              "count": 1
             }
           ],
           "sessions": 1650,
-          "conversionRate": 6.6,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-16T04:53:28.950Z"
+          "syncedAt": "2026-07-16T07:17:50.138Z"
         }
       }
     }
