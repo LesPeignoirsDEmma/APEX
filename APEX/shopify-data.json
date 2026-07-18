@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-17T23:43:57.749Z",
+  "lastUpdated": "2026-07-18T01:46:04.306Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-17T23:43:59.701Z",
+        "syncedAt": "2026-07-18T01:46:06.718Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:01.458Z"
+          "syncedAt": "2026-07-18T01:46:08.663Z"
         },
         "30": {
           "period": 30,
@@ -158,7 +158,7 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:02.277Z"
+          "syncedAt": "2026-07-18T01:46:09.501Z"
         },
         "90": {
           "period": 90,
@@ -295,7 +295,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:03.071Z"
+          "syncedAt": "2026-07-18T01:46:10.281Z"
         },
         "365": {
           "period": 365,
@@ -447,16 +447,16 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:03.900Z"
+          "syncedAt": "2026-07-18T01:46:11.415Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 2402,
-        "orders": 33,
+        "revenue": 2349,
+        "orders": 32,
         "currency": "EUR",
-        "syncedAt": "2026-07-17T23:44:05.282Z",
+        "syncedAt": "2026-07-18T01:46:13.009Z",
         "allTime": {
           "revenue": 7744,
           "orders": 113
@@ -570,26 +570,26 @@
           "sessions": 100,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:06.871Z"
+          "syncedAt": "2026-07-18T01:46:14.665Z"
         },
         "30": {
           "period": 30,
-          "revenue": 2402,
-          "orders": 33,
+          "revenue": 2349,
+          "orders": 32,
           "aov": 73,
           "currency": "EUR",
           "refunds": 2,
           "refundRate": 6,
-          "revenueHalf1": 1401,
+          "revenueHalf1": 1347,
           "revenueHalf2": 1002,
-          "discountOrders": 18,
-          "discountRate": 55,
+          "discountOrders": 17,
+          "discountRate": 53,
           "discountShare": 10,
-          "totalDiscounts": 230,
-          "newCust": 33,
+          "totalDiscounts": 224,
+          "newCust": 32,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 48,
+          "avgLTV": 49,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -623,11 +623,6 @@
               "revenue": 120
             },
             {
-              "name": "Kimono Imprimé Long Printemps",
-              "qty": 2,
-              "revenue": 120
-            },
-            {
               "name": "Cardigan Kimono Coton Homme",
               "qty": 1,
               "revenue": 90
@@ -641,16 +636,21 @@
               "name": "Ensemble Kimono Enfant",
               "qty": 1,
               "revenue": 70
+            },
+            {
+              "name": "Pyjama Kimono Homme Coton",
+              "qty": 1,
+              "revenue": 70
             }
           ],
-          "top3RevenueShare": 42,
+          "top3RevenueShare": 43,
           "hourly": {
             "5": 2,
             "6": 2,
             "7": 3,
             "8": 1,
             "9": 1,
-            "10": 2,
+            "10": 1,
             "11": 2,
             "12": 4,
             "13": 7,
@@ -665,7 +665,7 @@
             "0": 5,
             "1": 2,
             "2": 4,
-            "3": 6,
+            "3": 5,
             "4": 10,
             "5": 3,
             "6": 3
@@ -694,15 +694,11 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 154,
-          "abandonedCheckouts": 10,
-          "totalCheckouts": 44,
-          "abandonRate": 23,
-          "abandonedValue": 512,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 42,
+          "abandonRate": 21,
+          "abandonedValue": 487,
           "topAbandoned": [
-            {
-              "name": "Kimono Haori Homme",
-              "count": 1
-            },
             {
               "name": "Peignoir Kimono Femme En Satin Long",
               "count": 1
@@ -718,12 +714,16 @@
             {
               "name": "Kimono Rouge Enfant",
               "count": 1
+            },
+            {
+              "name": "Chemise Kimono Grande Taille",
+              "count": 1
             }
           ],
-          "sessions": 550,
-          "conversionRate": 6,
+          "sessions": 525,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:07.662Z"
+          "syncedAt": "2026-07-18T01:46:15.452Z"
         },
         "90": {
           "period": 90,
@@ -879,7 +879,7 @@
           "sessions": 1438,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:08.423Z"
+          "syncedAt": "2026-07-18T01:46:16.252Z"
         },
         "365": {
           "period": 365,
@@ -1036,7 +1036,7 @@
           "sessions": 1700,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-17T23:44:09.232Z"
+          "syncedAt": "2026-07-18T01:46:17.023Z"
         }
       }
     }
