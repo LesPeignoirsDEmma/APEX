@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-25T20:41:07.598Z",
+  "lastUpdated": "2026-07-25T21:45:06.392Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 140,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-25T20:41:10.108Z",
+        "syncedAt": "2026-07-25T21:45:08.317Z",
         "allTime": {
           "revenue": 12233,
           "orders": 200
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:12.055Z"
+          "syncedAt": "2026-07-25T21:45:09.995Z"
         },
         "30": {
           "period": 30,
@@ -158,7 +158,7 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:12.956Z"
+          "syncedAt": "2026-07-25T21:45:10.612Z"
         },
         "90": {
           "period": 90,
@@ -295,7 +295,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:13.801Z"
+          "syncedAt": "2026-07-25T21:45:11.196Z"
         },
         "365": {
           "period": 365,
@@ -447,7 +447,7 @@
           "sessions": 2563,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:14.569Z"
+          "syncedAt": "2026-07-25T21:45:11.792Z"
         }
       }
     },
@@ -456,7 +456,7 @@
         "revenue": 2446,
         "orders": 33,
         "currency": "EUR",
-        "syncedAt": "2026-07-25T20:41:15.868Z",
+        "syncedAt": "2026-07-25T21:45:13.018Z",
         "allTime": {
           "revenue": 8056,
           "orders": 118
@@ -480,7 +480,7 @@
           "newCust": 5,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 45,
+          "avgLTV": 39,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -547,20 +547,24 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 6,
-          "abandonRate": 17,
-          "abandonedValue": 63,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 7,
+          "abandonRate": 29,
+          "abandonedValue": 118,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 1
+            },
+            {
+              "name": "Kimono À Fleur Long",
+              "count": 1
             }
           ],
-          "sessions": 75,
-          "conversionRate": 6.7,
+          "sessions": 88,
+          "conversionRate": 5.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:17.571Z"
+          "syncedAt": "2026-07-25T21:45:14.589Z"
         },
         "30": {
           "period": 30,
@@ -579,7 +583,7 @@
           "newCust": 33,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 53,
+          "avgLTV": 52,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -685,10 +689,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 154,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 42,
-          "abandonRate": 19,
-          "abandonedValue": 440,
+          "abandonedCheckouts": 9,
+          "totalCheckouts": 43,
+          "abandonRate": 21,
+          "abandonedValue": 495,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
@@ -711,10 +715,10 @@
               "count": 1
             }
           ],
-          "sessions": 525,
-          "conversionRate": 6.3,
+          "sessions": 538,
+          "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:18.753Z"
+          "syncedAt": "2026-07-25T21:45:15.182Z"
         },
         "90": {
           "period": 90,
@@ -733,7 +737,7 @@
           "newCust": 89,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
-          "avgLTV": 48,
+          "avgLTV": 47,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -841,10 +845,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 161,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 115,
-          "abandonRate": 20,
-          "abandonedValue": 1321,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 116,
+          "abandonRate": 21,
+          "abandonedValue": 1376,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -867,10 +871,10 @@
               "count": 1
             }
           ],
-          "sessions": 1438,
+          "sessions": 1450,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:19.632Z"
+          "syncedAt": "2026-07-25T21:45:15.827Z"
         },
         "365": {
           "period": 365,
@@ -998,10 +1002,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 142,
-          "abandonRate": 16,
-          "abandonedValue": 1321,
+          "abandonedCheckouts": 24,
+          "totalCheckouts": 143,
+          "abandonRate": 17,
+          "abandonedValue": 1376,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -1024,10 +1028,10 @@
               "count": 1
             }
           ],
-          "sessions": 1775,
+          "sessions": 1788,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-25T20:41:20.465Z"
+          "syncedAt": "2026-07-25T21:45:16.710Z"
         }
       }
     }
