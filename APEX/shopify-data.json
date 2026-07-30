@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-29T23:54:44.497Z",
+  "lastUpdated": "2026-07-30T01:44:23.585Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 230,
         "orders": 3,
         "currency": "EUR",
-        "syncedAt": "2026-07-29T23:54:46.202Z",
+        "syncedAt": "2026-07-30T01:44:25.354Z",
         "allTime": {
           "revenue": 12377,
           "orders": 201
@@ -83,7 +83,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:48.302Z"
+          "syncedAt": "2026-07-30T01:44:27.269Z"
         },
         "30": {
           "period": 30,
@@ -178,7 +178,7 @@
           "sessions": 50,
           "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:49.078Z"
+          "syncedAt": "2026-07-30T01:44:28.029Z"
         },
         "90": {
           "period": 90,
@@ -316,7 +316,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:49.852Z"
+          "syncedAt": "2026-07-30T01:44:28.841Z"
         },
         "365": {
           "period": 365,
@@ -468,16 +468,16 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:50.866Z"
+          "syncedAt": "2026-07-30T01:44:29.845Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1987,
-        "orders": 29,
+        "revenue": 1877,
+        "orders": 27,
         "currency": "EUR",
-        "syncedAt": "2026-07-29T23:54:52.225Z",
+        "syncedAt": "2026-07-30T01:44:31.107Z",
         "allTime": {
           "revenue": 8137,
           "orders": 119
@@ -486,22 +486,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 164,
-          "orders": 3,
-          "aov": 55,
+          "revenue": 131,
+          "orders": 2,
+          "aov": 65,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 83,
+          "revenueHalf1": 50,
           "revenueHalf2": 81,
           "discountOrders": 1,
-          "discountRate": 33,
-          "discountShare": 5,
+          "discountRate": 50,
+          "discountShare": 7,
           "totalDiscounts": 9,
-          "newCust": 3,
+          "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 27,
+          "avgLTV": 33,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -513,22 +513,15 @@
               "name": "Kimono Long Femme Plage",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Tunique De Plage Robe Kimono Blanc",
-              "qty": 1,
-              "revenue": 25
             }
           ],
-          "top3RevenueShare": 101,
+          "top3RevenueShare": 107,
           "hourly": {
             "12": 1,
-            "18": 1,
-            "22": 1
+            "18": 1
           },
           "daily": {
             "1": 1,
-            "3": 1,
             "6": 1
           },
           "totalProducts": 250,
@@ -555,40 +548,36 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 5,
-          "abandonRate": 40,
-          "abandonedValue": 118,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 3,
+          "abandonRate": 33,
+          "abandonedValue": 55,
           "topAbandoned": [
-            {
-              "name": "Chemise Kimono Grande Taille",
-              "count": 1
-            },
             {
               "name": "Kimono À Fleur Long",
               "count": 1
             }
           ],
-          "sessions": 63,
-          "conversionRate": 4.8,
+          "sessions": 38,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:53.705Z"
+          "syncedAt": "2026-07-30T01:44:32.623Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1987,
-          "orders": 29,
-          "aov": 69,
+          "revenue": 1877,
+          "orders": 27,
+          "aov": 70,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1369,
+          "revenueHalf1": 1260,
           "revenueHalf2": 617,
-          "discountOrders": 18,
-          "discountRate": 62,
+          "discountOrders": 17,
+          "discountRate": 63,
           "discountShare": 9,
-          "totalDiscounts": 179,
-          "newCust": 29,
+          "totalDiscounts": 174,
+          "newCust": 27,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 49,
@@ -645,10 +634,10 @@
               "revenue": 70
             }
           ],
-          "top3RevenueShare": 33,
+          "top3RevenueShare": 35,
           "hourly": {
             "5": 2,
-            "6": 2,
+            "6": 1,
             "7": 2,
             "8": 2,
             "9": 1,
@@ -658,12 +647,12 @@
             "14": 2,
             "16": 1,
             "18": 2,
-            "19": 3,
+            "19": 2,
             "22": 2
           },
           "daily": {
             "0": 4,
-            "1": 4,
+            "1": 2,
             "2": 5,
             "3": 5,
             "4": 6,
@@ -695,8 +684,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 8,
-          "totalCheckouts": 37,
-          "abandonRate": 22,
+          "totalCheckouts": 35,
+          "abandonRate": 23,
           "abandonedValue": 440,
           "topAbandoned": [
             {
@@ -720,10 +709,10 @@
               "count": 1
             }
           ],
-          "sessions": 463,
-          "conversionRate": 6.3,
+          "sessions": 438,
+          "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:54.418Z"
+          "syncedAt": "2026-07-30T01:44:33.380Z"
         },
         "90": {
           "period": 90,
@@ -879,7 +868,7 @@
           "sessions": 1400,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:55.185Z"
+          "syncedAt": "2026-07-30T01:44:34.114Z"
         },
         "365": {
           "period": 365,
@@ -1036,7 +1025,7 @@
           "sessions": 1800,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-29T23:54:55.924Z"
+          "syncedAt": "2026-07-30T01:44:35.008Z"
         }
       }
     }
