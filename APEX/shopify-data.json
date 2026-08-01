@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-31T23:00:36.512Z",
+  "lastUpdated": "2026-08-01T02:02:46.476Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
-        "revenue": 230,
-        "orders": 3,
+        "revenue": 195,
+        "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-07-31T23:00:38.312Z",
+        "syncedAt": "2026-08-01T02:02:48.136Z",
         "allTime": {
           "revenue": 12377,
           "orders": 201
@@ -21,8 +21,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 145,
+          "revenueHalf1": 145,
+          "revenueHalf2": 0,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
@@ -83,26 +83,26 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:40.562Z"
+          "syncedAt": "2026-08-01T02:02:49.778Z"
         },
         "30": {
           "period": 30,
-          "revenue": 230,
-          "orders": 3,
-          "aov": 77,
+          "revenue": 195,
+          "orders": 2,
+          "aov": 97,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 85,
+          "revenueHalf1": 50,
           "revenueHalf2": 145,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 3,
+          "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 46,
+          "avgLTV": 49,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -119,22 +119,15 @@
               "name": "Peignoir Femme Coton Chic",
               "qty": 1,
               "revenue": 50
-            },
-            {
-              "name": "Ensemble de Nuit 4 Pièces – Femme",
-              "qty": 1,
-              "revenue": 35
             }
           ],
-          "top3RevenueShare": 85,
+          "top3RevenueShare": 100,
           "hourly": {
             "10": 1,
-            "11": 1,
-            "20": 1
+            "11": 1
           },
           "daily": {
             "2": 1,
-            "3": 1,
             "5": 1
           },
           "totalProducts": 178,
@@ -149,6 +142,7 @@
             "Cape de Bain Gaufré",
             "Chaussons d’intérieur — Gris",
             "Chaussons d’intérieur — Rose",
+            "Ensemble de Nuit 4 Pièces – Femme",
             "Ensemble de Nuit Satin Dentelle Rouge – Femme",
             "Ensemble de Nuit Satin – Femme",
             "Ensemble Peignoir Et Robe De Chambre Femme",
@@ -157,13 +151,12 @@
             "Garantie de Livraison",
             "Kimono Perle Femme",
             "Peignoir À Capuche Femme Doux",
-            "Peignoir Absorbant Homme",
-            "Peignoir Baroque - Femme"
+            "Peignoir Absorbant Homme"
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 1,
-          "totalCheckouts": 4,
-          "abandonRate": 25,
+          "totalCheckouts": 3,
+          "abandonRate": 33,
           "abandonedValue": 90,
           "topAbandoned": [
             {
@@ -175,10 +168,10 @@
               "count": 1
             }
           ],
-          "sessions": 50,
-          "conversionRate": 6,
+          "sessions": 38,
+          "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:41.343Z"
+          "syncedAt": "2026-08-01T02:02:50.805Z"
         },
         "90": {
           "period": 90,
@@ -316,7 +309,7 @@
           "sessions": 175,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:42.180Z"
+          "syncedAt": "2026-08-01T02:02:51.401Z"
         },
         "365": {
           "period": 365,
@@ -468,16 +461,16 @@
           "sessions": 2575,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:43.281Z"
+          "syncedAt": "2026-08-01T02:02:52.014Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1704,
-        "orders": 27,
+        "revenue": 1641,
+        "orders": 26,
         "currency": "EUR",
-        "syncedAt": "2026-07-31T23:00:44.574Z",
+        "syncedAt": "2026-08-01T02:02:53.418Z",
         "allTime": {
           "revenue": 8283,
           "orders": 121
@@ -573,23 +566,23 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:46.327Z"
+          "syncedAt": "2026-08-01T02:02:54.870Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1704,
-          "orders": 27,
+          "revenue": 1641,
+          "orders": 26,
           "aov": 63,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 1116,
+          "revenueHalf1": 1053,
           "revenueHalf2": 588,
-          "discountOrders": 18,
-          "discountRate": 67,
+          "discountOrders": 17,
+          "discountRate": 65,
           "discountShare": 9,
-          "totalDiscounts": 153,
-          "newCust": 27,
+          "totalDiscounts": 146,
+          "newCust": 26,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 44,
@@ -602,11 +595,6 @@
             },
             {
               "name": "Peignoir Kimono Homme Dragon",
-              "qty": 2,
-              "revenue": 140
-            },
-            {
-              "name": "Chemise Kimono Grande Taille",
               "qty": 2,
               "revenue": 140
             },
@@ -641,6 +629,11 @@
               "revenue": 80
             },
             {
+              "name": "Chemise Kimono Grande Taille",
+              "qty": 1,
+              "revenue": 70
+            },
+            {
               "name": "Ensemble Kimono Enfant",
               "qty": 1,
               "revenue": 70
@@ -659,14 +652,14 @@
             "14": 2,
             "16": 1,
             "18": 3,
-            "19": 2,
+            "19": 1,
             "22": 2
           },
           "daily": {
             "0": 4,
             "1": 2,
             "2": 3,
-            "3": 5,
+            "3": 4,
             "4": 8,
             "5": 2,
             "6": 3
@@ -695,18 +688,14 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 8,
-          "totalCheckouts": 35,
-          "abandonRate": 23,
-          "abandonedValue": 440,
+          "abandonedCheckouts": 7,
+          "totalCheckouts": 33,
+          "abandonRate": 21,
+          "abandonedValue": 380,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 2
-            },
-            {
-              "name": "Kimono Rouge Enfant",
-              "count": 1
             },
             {
               "name": "Tunique De Plage Robe Kimono Blanc",
@@ -719,12 +708,16 @@
             {
               "name": "Peignoir Kimono Homme Dragon",
               "count": 1
+            },
+            {
+              "name": "Chemise Kimono Lin",
+              "count": 1
             }
           ],
-          "sessions": 438,
-          "conversionRate": 6.2,
+          "sessions": 413,
+          "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:47.089Z"
+          "syncedAt": "2026-08-01T02:02:55.463Z"
         },
         "90": {
           "period": 90,
@@ -880,7 +873,7 @@
           "sessions": 1425,
           "conversionRate": 6.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:47.923Z"
+          "syncedAt": "2026-08-01T02:02:56.066Z"
         },
         "365": {
           "period": 365,
@@ -1037,7 +1030,7 @@
           "sessions": 1825,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-07-31T23:00:48.738Z"
+          "syncedAt": "2026-08-01T02:02:57.072Z"
         }
       }
     }
