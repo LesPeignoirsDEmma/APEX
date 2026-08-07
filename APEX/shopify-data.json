@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-07T06:05:20.903Z",
+  "lastUpdated": "2026-08-07T08:07:52.772Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-07T06:05:23.319Z",
+        "syncedAt": "2026-08-07T08:07:55.048Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:25.652Z"
+          "syncedAt": "2026-08-07T08:07:57.520Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:26.781Z"
+          "syncedAt": "2026-08-07T08:07:58.322Z"
         },
         "90": {
           "period": 90,
@@ -295,7 +295,7 @@
           "sessions": 163,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:27.635Z"
+          "syncedAt": "2026-08-07T08:07:59.106Z"
         },
         "365": {
           "period": 365,
@@ -447,37 +447,37 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:28.403Z"
+          "syncedAt": "2026-08-07T08:08:00.099Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1348,
-        "orders": 23,
+        "revenue": 1398,
+        "orders": 24,
         "currency": "EUR",
-        "syncedAt": "2026-08-07T06:05:30.783Z",
+        "syncedAt": "2026-08-07T08:08:01.752Z",
         "allTime": {
-          "revenue": 8543,
-          "orders": 126
+          "revenue": 8593,
+          "orders": 127
         }
       },
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 260,
-          "orders": 5,
+          "revenue": 310,
+          "orders": 6,
           "aov": 52,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 40,
-          "revenueHalf2": 220,
+          "revenueHalf1": 62,
+          "revenueHalf2": 248,
           "discountOrders": 2,
-          "discountRate": 40,
-          "discountShare": 4,
+          "discountRate": 33,
+          "discountShare": 3,
           "totalDiscounts": 9,
-          "newCust": 5,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 52,
@@ -499,6 +499,11 @@
               "revenue": 55
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 1,
+              "revenue": 50
+            },
+            {
               "name": "Robe De Chambre Kimono Satin",
               "qty": 1,
               "revenue": 40
@@ -509,8 +514,9 @@
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 79,
+          "top3RevenueShare": 66,
           "hourly": {
+            "7": 1,
             "11": 1,
             "13": 1,
             "14": 1,
@@ -521,6 +527,7 @@
             "2": 1,
             "3": 1,
             "4": 1,
+            "5": 1,
             "6": 1
           },
           "totalProducts": 250,
@@ -548,30 +555,30 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 5,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 63,
-          "conversionRate": 7.9,
+          "sessions": 75,
+          "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:32.844Z"
+          "syncedAt": "2026-08-07T08:08:03.636Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1348,
-          "orders": 23,
-          "aov": 59,
+          "revenue": 1398,
+          "orders": 24,
+          "aov": 58,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
           "revenueHalf1": 811,
-          "revenueHalf2": 537,
+          "revenueHalf2": 587,
           "discountOrders": 16,
-          "discountRate": 70,
+          "discountRate": 67,
           "discountShare": 8,
           "totalDiscounts": 109,
-          "newCust": 23,
+          "newCust": 24,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 44,
@@ -588,14 +595,14 @@
               "revenue": 160
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 3,
+              "revenue": 150
+            },
+            {
               "name": "Robe Chinoise Kimono Enfant",
               "qty": 2,
               "revenue": 110
-            },
-            {
-              "name": "Kimono Long Femme Plage",
-              "qty": 2,
-              "revenue": 100
             },
             {
               "name": "Kimono Long De Printemps À Imprimé Floral",
@@ -628,11 +635,11 @@
               "revenue": 65
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 37,
           "hourly": {
             "5": 2,
             "6": 1,
-            "7": 1,
+            "7": 2,
             "8": 1,
             "9": 1,
             "11": 1,
@@ -649,7 +656,7 @@
             "2": 3,
             "3": 5,
             "4": 7,
-            "5": 1,
+            "5": 2,
             "6": 2
           },
           "totalProducts": 250,
@@ -677,8 +684,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 5,
-          "totalCheckouts": 28,
-          "abandonRate": 18,
+          "totalCheckouts": 29,
+          "abandonRate": 17,
           "abandonedValue": 278,
           "topAbandoned": [
             {
@@ -702,26 +709,26 @@
               "count": 1
             }
           ],
-          "sessions": 350,
+          "sessions": 363,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:33.714Z"
+          "syncedAt": "2026-08-07T08:08:04.468Z"
         },
         "90": {
           "period": 90,
-          "revenue": 6420,
-          "orders": 86,
-          "aov": 75,
+          "revenue": 6470,
+          "orders": 87,
+          "aov": 74,
           "currency": "EUR",
           "refunds": 5,
           "refundRate": 5,
           "revenueHalf1": 3392,
-          "revenueHalf2": 3028,
+          "revenueHalf2": 3078,
           "discountOrders": 41,
-          "discountRate": 48,
+          "discountRate": 47,
           "discountShare": 9,
           "totalDiscounts": 564,
-          "newCust": 86,
+          "newCust": 87,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 50,
@@ -748,6 +755,11 @@
               "revenue": 519
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 6,
+              "revenue": 299
+            },
+            {
               "name": "Veste Kimono Denim Homme",
               "qty": 3,
               "revenue": 285
@@ -756,11 +768,6 @@
               "name": "Peignoir Kimono Homme Dragon",
               "qty": 4,
               "revenue": 280
-            },
-            {
-              "name": "Kimono Long Femme Plage",
-              "qty": 5,
-              "revenue": 250
             },
             {
               "name": "Ensemble Kimono Et Pantalon Femme",
@@ -778,11 +785,11 @@
               "revenue": 200
             }
           ],
-          "top3RevenueShare": 29,
+          "top3RevenueShare": 28,
           "hourly": {
             "5": 2,
             "6": 3,
-            "7": 5,
+            "7": 6,
             "8": 4,
             "9": 2,
             "10": 4,
@@ -805,7 +812,7 @@
             "2": 13,
             "3": 13,
             "4": 19,
-            "5": 6,
+            "5": 7,
             "6": 11
           },
           "totalProducts": 250,
@@ -833,7 +840,7 @@
           ],
           "newProductsAdded": 161,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 110,
+          "totalCheckouts": 111,
           "abandonRate": 21,
           "abandonedValue": 1331,
           "topAbandoned": [
@@ -858,26 +865,26 @@
               "count": 1
             }
           ],
-          "sessions": 1375,
+          "sessions": 1388,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:34.565Z"
+          "syncedAt": "2026-08-07T08:08:05.219Z"
         },
         "365": {
           "period": 365,
-          "revenue": 8543,
-          "orders": 126,
+          "revenue": 8593,
+          "orders": 127,
           "aov": 68,
           "currency": "EUR",
           "refunds": 6,
           "refundRate": 5,
           "revenueHalf1": 0,
-          "revenueHalf2": 8543,
+          "revenueHalf2": 8593,
           "discountOrders": 55,
-          "discountRate": 44,
+          "discountRate": 43,
           "discountShare": 7,
           "totalDiscounts": 631,
-          "newCust": 124,
+          "newCust": 125,
           "returning": 1,
           "avgOrdersPerRepeat": "2.0",
           "avgLTV": 42,
@@ -899,14 +906,14 @@
               "revenue": 584
             },
             {
+              "name": "Kimono Long Femme Plage",
+              "qty": 11,
+              "revenue": 549
+            },
+            {
               "name": "Robe De Chambre Kimono Satin",
               "qty": 13,
               "revenue": 519
-            },
-            {
-              "name": "Kimono Long Femme Plage",
-              "qty": 10,
-              "revenue": 499
             },
             {
               "name": "Veste Kimono Noir Homme",
@@ -939,7 +946,7 @@
             "1": 1,
             "5": 4,
             "6": 3,
-            "7": 8,
+            "7": 9,
             "8": 6,
             "9": 3,
             "10": 6,
@@ -962,7 +969,7 @@
             "2": 15,
             "3": 21,
             "4": 24,
-            "5": 10,
+            "5": 11,
             "6": 15
           },
           "totalProducts": 250,
@@ -990,7 +997,7 @@
           ],
           "newProductsAdded": 250,
           "abandonedCheckouts": 23,
-          "totalCheckouts": 150,
+          "totalCheckouts": 151,
           "abandonRate": 15,
           "abandonedValue": 1331,
           "topAbandoned": [
@@ -1015,10 +1022,10 @@
               "count": 1
             }
           ],
-          "sessions": 1875,
+          "sessions": 1888,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-07T06:05:35.444Z"
+          "syncedAt": "2026-08-07T08:08:06.107Z"
         }
       }
     }
