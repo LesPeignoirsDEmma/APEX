@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-08T23:19:47.500Z",
+  "lastUpdated": "2026-08-09T01:04:29.873Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-08T23:19:49.474Z",
+        "syncedAt": "2026-08-09T01:04:31.680Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -78,7 +78,7 @@
           "sessions": 13,
           "conversionRate": 7.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:51.094Z"
+          "syncedAt": "2026-08-09T01:04:33.430Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:51.705Z"
+          "syncedAt": "2026-08-09T01:04:34.181Z"
         },
         "90": {
           "period": 90,
@@ -295,7 +295,7 @@
           "sessions": 163,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:52.312Z"
+          "syncedAt": "2026-08-09T01:04:34.918Z"
         },
         "365": {
           "period": 365,
@@ -305,8 +305,8 @@
           "currency": "EUR",
           "refunds": 48,
           "refundRate": 19,
-          "revenueHalf1": 7649,
-          "revenueHalf2": 4784,
+          "revenueHalf1": 7730,
+          "revenueHalf2": 4703,
           "discountOrders": 126,
           "discountRate": 62,
           "discountShare": 9,
@@ -447,16 +447,16 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:52.934Z"
+          "syncedAt": "2026-08-09T01:04:35.925Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1268,
-        "orders": 22,
+        "revenue": 1232,
+        "orders": 21,
         "currency": "EUR",
-        "syncedAt": "2026-08-08T23:19:54.236Z",
+        "syncedAt": "2026-08-09T01:04:37.300Z",
         "allTime": {
           "revenue": 8656,
           "orders": 128
@@ -465,22 +465,22 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 373,
-          "orders": 7,
-          "aov": 53,
+          "revenue": 333,
+          "orders": 6,
+          "aov": 55,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 125,
-          "revenueHalf2": 248,
+          "revenueHalf1": 140,
+          "revenueHalf2": 193,
           "discountOrders": 3,
-          "discountRate": 43,
-          "discountShare": 4,
+          "discountRate": 50,
+          "discountShare": 5,
           "totalDiscounts": 16,
-          "newCust": 7,
+          "newCust": 6,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 53,
+          "avgLTV": 55,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -509,22 +509,17 @@
               "revenue": 50
             },
             {
-              "name": "Robe De Chambre Kimono Satin",
-              "qty": 1,
-              "revenue": 40
-            },
-            {
               "name": "Kimono Haori Homme",
               "qty": 1,
               "revenue": 25
             }
           ],
-          "top3RevenueShare": 59,
+          "top3RevenueShare": 66,
           "hourly": {
             "7": 1,
             "11": 1,
             "13": 1,
-            "14": 2,
+            "14": 1,
             "19": 2
           },
           "daily": {
@@ -532,8 +527,7 @@
             "2": 1,
             "3": 1,
             "4": 1,
-            "5": 2,
-            "6": 1
+            "5": 2
           },
           "totalProducts": 250,
           "zeroSaleProducts": [
@@ -560,33 +554,33 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 7,
+          "totalCheckouts": 6,
           "abandonRate": 0,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 88,
+          "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:55.702Z"
+          "syncedAt": "2026-08-09T01:04:38.962Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1268,
-          "orders": 22,
-          "aov": 58,
+          "revenue": 1232,
+          "orders": 21,
+          "aov": 59,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 618,
+          "revenueHalf1": 582,
           "revenueHalf2": 650,
-          "discountOrders": 14,
-          "discountRate": 64,
+          "discountOrders": 13,
+          "discountRate": 62,
           "discountShare": 7,
-          "totalDiscounts": 94,
-          "newCust": 22,
+          "totalDiscounts": 90,
+          "newCust": 21,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 44,
+          "avgLTV": 46,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -620,11 +614,6 @@
               "revenue": 90
             },
             {
-              "name": "Robe De Chambre Kimono Satin",
-              "qty": 2,
-              "revenue": 80
-            },
-            {
               "name": "Pyjama Kimono Homme Coton",
               "qty": 1,
               "revenue": 70
@@ -638,11 +627,16 @@
               "name": "Chemise Col Kimono Homme",
               "qty": 1,
               "revenue": 65
+            },
+            {
+              "name": "Kimono Homme Été Style Japonais Noir",
+              "qty": 1,
+              "revenue": 60
             }
           ],
-          "top3RevenueShare": 35,
+          "top3RevenueShare": 37,
           "hourly": {
-            "5": 2,
+            "5": 1,
             "6": 1,
             "7": 2,
             "8": 1,
@@ -660,7 +654,7 @@
             "1": 3,
             "2": 3,
             "3": 2,
-            "4": 7,
+            "4": 6,
             "5": 3,
             "6": 2
           },
@@ -688,15 +682,11 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 5,
-          "totalCheckouts": 27,
-          "abandonRate": 19,
-          "abandonedValue": 278,
+          "abandonedCheckouts": 4,
+          "totalCheckouts": 25,
+          "abandonRate": 16,
+          "abandonedValue": 233,
           "topAbandoned": [
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "count": 1
-            },
             {
               "name": "Peignoir Kimono Homme Dragon",
               "count": 1
@@ -714,10 +704,10 @@
               "count": 1
             }
           ],
-          "sessions": 338,
-          "conversionRate": 6.5,
+          "sessions": 313,
+          "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:56.369Z"
+          "syncedAt": "2026-08-09T01:04:39.743Z"
         },
         "90": {
           "period": 90,
@@ -844,10 +834,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 161,
-          "abandonedCheckouts": 23,
-          "totalCheckouts": 111,
-          "abandonRate": 21,
-          "abandonedValue": 1331,
+          "abandonedCheckouts": 22,
+          "totalCheckouts": 110,
+          "abandonRate": 20,
+          "abandonedValue": 1271,
           "topAbandoned": [
             {
               "name": "Peignoir Kimono Femme En Satin Long",
@@ -862,18 +852,18 @@
               "count": 2
             },
             {
-              "name": "Robe Kimono Manches Longues",
+              "name": "Kimono Paon Vert",
               "count": 1
             },
             {
-              "name": "Kimono Paon Vert",
+              "name": "Ensemble Pyjama Style Kimono",
               "count": 1
             }
           ],
-          "sessions": 1388,
+          "sessions": 1375,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:57.031Z"
+          "syncedAt": "2026-08-09T01:04:40.507Z"
         },
         "365": {
           "period": 365,
@@ -1030,7 +1020,7 @@
           "sessions": 1900,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-08T23:19:57.992Z"
+          "syncedAt": "2026-08-09T01:04:41.368Z"
         }
       }
     }
