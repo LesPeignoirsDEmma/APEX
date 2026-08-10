@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-10T10:59:41.085Z",
+  "lastUpdated": "2026-08-10T11:50:21.774Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-10T10:59:43.681Z",
+        "syncedAt": "2026-08-10T11:50:23.830Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:45.437Z"
+          "syncedAt": "2026-08-10T11:50:25.531Z"
         },
         "30": {
           "period": 30,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:46.118Z"
+          "syncedAt": "2026-08-10T11:50:26.242Z"
         },
         "90": {
           "period": 90,
@@ -285,7 +285,7 @@
           "sessions": 163,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:46.778Z"
+          "syncedAt": "2026-08-10T11:50:26.923Z"
         },
         "365": {
           "period": 365,
@@ -437,7 +437,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:47.457Z"
+          "syncedAt": "2026-08-10T11:50:27.490Z"
         }
       }
     },
@@ -446,7 +446,7 @@
         "revenue": 1290,
         "orders": 22,
         "currency": "EUR",
-        "syncedAt": "2026-08-10T10:59:50.743Z",
+        "syncedAt": "2026-08-10T11:50:28.995Z",
         "allTime": {
           "revenue": 8714,
           "orders": 129
@@ -557,7 +557,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:52.654Z"
+          "syncedAt": "2026-08-10T11:50:30.836Z"
         },
         "30": {
           "period": 30,
@@ -703,7 +703,7 @@
           "sessions": 325,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:53.371Z"
+          "syncedAt": "2026-08-10T11:50:31.595Z"
         },
         "90": {
           "period": 90,
@@ -859,7 +859,7 @@
           "sessions": 1338,
           "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:54.176Z"
+          "syncedAt": "2026-08-10T11:50:32.232Z"
         },
         "365": {
           "period": 365,
@@ -1016,7 +1016,7 @@
           "sessions": 1913,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-10T10:59:55.081Z"
+          "syncedAt": "2026-08-10T11:50:33.026Z"
         }
       }
     }
