@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-09T23:22:20.565Z",
+  "lastUpdated": "2026-08-10T01:06:16.930Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-09T23:22:22.348Z",
+        "syncedAt": "2026-08-10T01:06:18.714Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -15,37 +15,27 @@
       "cro": {
         "7": {
           "period": 7,
-          "revenue": 55,
-          "orders": 1,
-          "aov": 55,
+          "revenue": 0,
+          "orders": 0,
+          "aov": 0,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 55,
+          "revenueHalf1": 0,
           "revenueHalf2": 0,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 1,
+          "newCust": 0,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 55,
+          "avgLTV": 0,
           "vipCustomers": 0,
-          "topProducts": [
-            {
-              "name": "Peignoir Femme Satin Long",
-              "qty": 1,
-              "revenue": 55
-            }
-          ],
-          "top3RevenueShare": 100,
-          "hourly": {
-            "13": 1
-          },
-          "daily": {
-            "0": 1
-          },
+          "topProducts": [],
+          "top3RevenueShare": 0,
+          "hourly": {},
+          "daily": {},
           "totalProducts": 178,
           "zeroSaleProducts": [
             "Cape de Bain Bébé Cerf",
@@ -71,14 +61,14 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 0,
-          "totalCheckouts": 1,
-          "abandonRate": 0,
+          "totalCheckouts": 0,
+          "abandonRate": null,
           "abandonedValue": 0,
           "topAbandoned": [],
-          "sessions": 13,
-          "conversionRate": 7.7,
+          "sessions": null,
+          "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:24.204Z"
+          "syncedAt": "2026-08-10T01:06:20.423Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:24.855Z"
+          "syncedAt": "2026-08-10T01:06:21.153Z"
         },
         "90": {
           "period": 90,
@@ -295,7 +285,7 @@
           "sessions": 163,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:25.501Z"
+          "syncedAt": "2026-08-10T01:06:21.858Z"
         },
         "365": {
           "period": 365,
@@ -305,8 +295,8 @@
           "currency": "EUR",
           "refunds": 48,
           "refundRate": 19,
-          "revenueHalf1": 7730,
-          "revenueHalf2": 4703,
+          "revenueHalf1": 7809,
+          "revenueHalf2": 4623,
           "discountOrders": 126,
           "discountRate": 62,
           "discountShare": 9,
@@ -447,7 +437,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:26.116Z"
+          "syncedAt": "2026-08-10T01:06:22.946Z"
         }
       }
     },
@@ -456,7 +446,7 @@
         "revenue": 1290,
         "orders": 22,
         "currency": "EUR",
-        "syncedAt": "2026-08-09T23:22:27.453Z",
+        "syncedAt": "2026-08-10T01:06:24.318Z",
         "allTime": {
           "revenue": 8714,
           "orders": 129
@@ -567,7 +557,7 @@
           "sessions": 88,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:29.091Z"
+          "syncedAt": "2026-08-10T01:06:25.963Z"
         },
         "30": {
           "period": 30,
@@ -713,26 +703,26 @@
           "sessions": 325,
           "conversionRate": 6.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:29.950Z"
+          "syncedAt": "2026-08-10T01:06:26.716Z"
         },
         "90": {
           "period": 90,
-          "revenue": 6533,
-          "orders": 88,
-          "aov": 74,
+          "revenue": 6433,
+          "orders": 86,
+          "aov": 75,
           "currency": "EUR",
           "refunds": 5,
           "refundRate": 5,
-          "revenueHalf1": 3854,
+          "revenueHalf1": 3754,
           "revenueHalf2": 2679,
-          "discountOrders": 42,
+          "discountOrders": 41,
           "discountRate": 48,
           "discountShare": 9,
-          "totalDiscounts": 571,
-          "newCust": 88,
+          "totalDiscounts": 566,
+          "newCust": 86,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 51,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -777,16 +767,16 @@
             },
             {
               "name": "Robe Chinoise Kimono Enfant",
-              "qty": 4,
-              "revenue": 220
+              "qty": 3,
+              "revenue": 165
             },
             {
-              "name": "Veste Kimono Noir Homme",
-              "qty": 4,
-              "revenue": 200
+              "name": "Kimono Femme Veste Long Beige",
+              "qty": 2,
+              "revenue": 160
             }
           ],
-          "top3RevenueShare": 28,
+          "top3RevenueShare": 29,
           "hourly": {
             "5": 2,
             "6": 3,
@@ -800,16 +790,16 @@
             "14": 8,
             "15": 3,
             "16": 5,
-            "17": 3,
+            "17": 2,
             "18": 13,
             "19": 8,
             "20": 2,
             "21": 3,
-            "22": 3
+            "22": 2
           },
           "daily": {
             "0": 15,
-            "1": 10,
+            "1": 8,
             "2": 13,
             "3": 13,
             "4": 19,
@@ -840,36 +830,36 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 161,
-          "abandonedCheckouts": 22,
-          "totalCheckouts": 111,
-          "abandonRate": 20,
-          "abandonedValue": 1271,
+          "abandonedCheckouts": 20,
+          "totalCheckouts": 107,
+          "abandonRate": 19,
+          "abandonedValue": 1069,
           "topAbandoned": [
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "count": 2
-            },
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "count": 2
-            },
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 2
             },
             {
-              "name": "Kimono Paon Vert",
+              "name": "Kimono Japonais Enfant Fille",
               "count": 1
             },
             {
-              "name": "Ensemble Pyjama Style Kimono",
+              "name": "Ensemble Kimono Enfant",
+              "count": 1
+            },
+            {
+              "name": "Kimono De Plage Femme Long",
+              "count": 1
+            },
+            {
+              "name": "Floral Kimono Top",
               "count": 1
             }
           ],
-          "sessions": 1388,
-          "conversionRate": 6.3,
+          "sessions": 1338,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:30.790Z"
+          "syncedAt": "2026-08-10T01:06:27.465Z"
         },
         "365": {
           "period": 365,
@@ -1026,7 +1016,7 @@
           "sessions": 1913,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-09T23:22:31.510Z"
+          "syncedAt": "2026-08-10T01:06:28.184Z"
         }
       }
     }
