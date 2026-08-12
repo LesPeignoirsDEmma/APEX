@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-12T10:53:22.494Z",
+  "lastUpdated": "2026-08-12T11:40:08.534Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-12T10:53:24.679Z",
+        "syncedAt": "2026-08-12T11:40:10.521Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:26.723Z"
+          "syncedAt": "2026-08-12T11:40:12.609Z"
         },
         "30": {
           "period": 30,
@@ -78,8 +78,8 @@
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 0,
-          "revenueHalf2": 200,
+          "revenueHalf1": 145,
+          "revenueHalf2": 55,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:27.496Z"
+          "syncedAt": "2026-08-12T11:40:13.459Z"
         },
         "90": {
           "period": 90,
@@ -284,7 +284,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:28.333Z"
+          "syncedAt": "2026-08-12T11:40:14.280Z"
         },
         "365": {
           "period": 365,
@@ -436,7 +436,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:29.594Z"
+          "syncedAt": "2026-08-12T11:40:15.159Z"
         }
       }
     },
@@ -445,7 +445,7 @@
         "revenue": 1282,
         "orders": 22,
         "currency": "EUR",
-        "syncedAt": "2026-08-12T10:53:32.248Z",
+        "syncedAt": "2026-08-12T11:40:17.402Z",
         "allTime": {
           "revenue": 8769,
           "orders": 130
@@ -549,7 +549,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:34.326Z"
+          "syncedAt": "2026-08-12T11:40:19.249Z"
         },
         "30": {
           "period": 30,
@@ -687,7 +687,7 @@
           "sessions": 300,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:35.447Z"
+          "syncedAt": "2026-08-12T11:40:20.078Z"
         },
         "90": {
           "period": 90,
@@ -843,7 +843,7 @@
           "sessions": 1275,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:36.266Z"
+          "syncedAt": "2026-08-12T11:40:20.916Z"
         },
         "365": {
           "period": 365,
@@ -971,36 +971,36 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 21,
-          "totalCheckouts": 152,
-          "abandonRate": 14,
-          "abandonedValue": 1216,
+          "abandonedCheckouts": 19,
+          "totalCheckouts": 150,
+          "abandonRate": 13,
+          "abandonedValue": 1014,
           "topAbandoned": [
-            {
-              "name": "Peignoir Kimono Femme En Satin Long",
-              "count": 2
-            },
-            {
-              "name": "Robe Kimono Longue Grande Taille",
-              "count": 2
-            },
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 2
             },
             {
-              "name": "Kimono Paon Vert",
+              "name": "Kimono Japonais Enfant Fille",
               "count": 1
             },
             {
-              "name": "Ensemble Pyjama Style Kimono",
+              "name": "Ensemble Kimono Enfant",
+              "count": 1
+            },
+            {
+              "name": "Kimono De Plage Femme Long",
+              "count": 1
+            },
+            {
+              "name": "Floral Kimono Top",
               "count": 1
             }
           ],
-          "sessions": 1900,
-          "conversionRate": 6.8,
+          "sessions": 1875,
+          "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-12T10:53:37.358Z"
+          "syncedAt": "2026-08-12T11:40:21.791Z"
         }
       }
     }
