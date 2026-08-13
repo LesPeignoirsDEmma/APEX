@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-13T08:12:26.377Z",
+  "lastUpdated": "2026-08-13T09:54:47.987Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-13T08:12:28.086Z",
+        "syncedAt": "2026-08-13T09:54:49.552Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:29.740Z"
+          "syncedAt": "2026-08-13T09:54:51.433Z"
         },
         "30": {
           "period": 30,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:30.421Z"
+          "syncedAt": "2026-08-13T09:54:52.118Z"
         },
         "90": {
           "period": 90,
@@ -284,7 +284,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:31.169Z"
+          "syncedAt": "2026-08-13T09:54:52.787Z"
         },
         "365": {
           "period": 365,
@@ -436,7 +436,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:31.852Z"
+          "syncedAt": "2026-08-13T09:54:53.890Z"
         }
       }
     },
@@ -445,7 +445,7 @@
         "revenue": 1402,
         "orders": 23,
         "currency": "EUR",
-        "syncedAt": "2026-08-13T08:12:33.287Z",
+        "syncedAt": "2026-08-13T09:54:55.411Z",
         "allTime": {
           "revenue": 8889,
           "orders": 131
@@ -549,7 +549,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:34.960Z"
+          "syncedAt": "2026-08-13T09:54:57.141Z"
         },
         "30": {
           "period": 30,
@@ -688,7 +688,7 @@
           "sessions": 313,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:35.727Z"
+          "syncedAt": "2026-08-13T09:54:57.827Z"
         },
         "90": {
           "period": 90,
@@ -814,7 +814,7 @@
             "Asia & Pacific Islands Clothing Summer Breathable Japanese Style Men Haori Cotton Linen 3/4 Short Sleeve Kimono Men",
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
-          "newProductsAdded": 161,
+          "newProductsAdded": 154,
           "abandonedCheckouts": 17,
           "totalCheckouts": 102,
           "abandonRate": 17,
@@ -844,7 +844,7 @@
           "sessions": 1275,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:36.464Z"
+          "syncedAt": "2026-08-13T09:54:58.546Z"
         },
         "365": {
           "period": 365,
@@ -1001,7 +1001,7 @@
           "sessions": 1888,
           "conversionRate": 6.9,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T08:12:37.191Z"
+          "syncedAt": "2026-08-13T09:54:59.240Z"
         }
       }
     }
