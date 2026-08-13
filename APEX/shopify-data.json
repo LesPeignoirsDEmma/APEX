@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-13T10:54:32.528Z",
+  "lastUpdated": "2026-08-13T11:40:26.942Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-13T10:54:34.685Z",
+        "syncedAt": "2026-08-13T11:40:29.127Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:36.454Z"
+          "syncedAt": "2026-08-13T11:40:31.062Z"
         },
         "30": {
           "period": 30,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:37.094Z"
+          "syncedAt": "2026-08-13T11:40:31.872Z"
         },
         "90": {
           "period": 90,
@@ -284,7 +284,7 @@
           "sessions": 150,
           "conversionRate": 6.7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:37.732Z"
+          "syncedAt": "2026-08-13T11:40:32.670Z"
         },
         "365": {
           "period": 365,
@@ -436,7 +436,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:38.854Z"
+          "syncedAt": "2026-08-13T11:40:33.720Z"
         }
       }
     },
@@ -445,7 +445,7 @@
         "revenue": 1402,
         "orders": 23,
         "currency": "EUR",
-        "syncedAt": "2026-08-13T10:54:41.654Z",
+        "syncedAt": "2026-08-13T11:40:35.779Z",
         "allTime": {
           "revenue": 8889,
           "orders": 131
@@ -549,7 +549,7 @@
           "sessions": 75,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:43.296Z"
+          "syncedAt": "2026-08-13T11:40:37.678Z"
         },
         "30": {
           "period": 30,
@@ -688,7 +688,7 @@
           "sessions": 313,
           "conversionRate": 7.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:43.940Z"
+          "syncedAt": "2026-08-13T11:40:38.486Z"
         },
         "90": {
           "period": 90,
@@ -844,7 +844,7 @@
           "sessions": 1275,
           "conversionRate": 6.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:44.599Z"
+          "syncedAt": "2026-08-13T11:40:39.312Z"
         },
         "365": {
           "period": 365,
@@ -972,22 +972,14 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 19,
-          "totalCheckouts": 151,
-          "abandonRate": 13,
-          "abandonedValue": 1014,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 149,
+          "abandonRate": 11,
+          "abandonedValue": 881,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 2
-            },
-            {
-              "name": "Kimono Japonais Enfant Fille",
-              "count": 1
-            },
-            {
-              "name": "Ensemble Kimono Enfant",
-              "count": 1
             },
             {
               "name": "Kimono De Plage Femme Long",
@@ -996,12 +988,20 @@
             {
               "name": "Floral Kimono Top",
               "count": 1
+            },
+            {
+              "name": "Kimono Japonais Sakura",
+              "count": 1
+            },
+            {
+              "name": "Robe De Chambre Kimono Satin",
+              "count": 1
             }
           ],
-          "sessions": 1888,
-          "conversionRate": 6.9,
+          "sessions": 1863,
+          "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-13T10:54:45.295Z"
+          "syncedAt": "2026-08-13T11:40:40.443Z"
         }
       }
     }
