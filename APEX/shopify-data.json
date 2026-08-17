@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-17T02:14:58.423Z",
+  "lastUpdated": "2026-08-17T03:41:38.016Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-17T02:14:59.977Z",
+        "syncedAt": "2026-08-17T03:41:39.495Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:01.819Z"
+          "syncedAt": "2026-08-17T03:41:41.068Z"
         },
         "30": {
           "period": 30,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:02.600Z"
+          "syncedAt": "2026-08-17T03:41:41.626Z"
         },
         "90": {
           "period": 90,
@@ -283,7 +283,7 @@
           "sessions": 138,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:03.385Z"
+          "syncedAt": "2026-08-17T03:41:42.226Z"
         },
         "365": {
           "period": 365,
@@ -408,7 +408,7 @@
             "Peignoir Bébé Blanc",
             "Peignoir Bébé Gris",
             "Peignoir Bébé Rose",
-            "Peignoir Béb�� Violet",
+            "Peignoir Bébé Violet",
             "Peignoir Capuche - Femme",
             "Peignoir Chaud Hiver Femme",
             "Peignoir Chic Satin Homme"
@@ -435,7 +435,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:04.138Z"
+          "syncedAt": "2026-08-17T03:41:42.805Z"
         }
       }
     },
@@ -444,7 +444,7 @@
         "revenue": 1145,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-08-17T02:15:05.546Z",
+        "syncedAt": "2026-08-17T03:41:44.041Z",
         "allTime": {
           "revenue": 8889,
           "orders": 131
@@ -523,7 +523,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:07.057Z"
+          "syncedAt": "2026-08-17T03:41:45.336Z"
         },
         "30": {
           "period": 30,
@@ -655,7 +655,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:07.803Z"
+          "syncedAt": "2026-08-17T03:41:45.922Z"
         },
         "90": {
           "period": 90,
@@ -811,7 +811,7 @@
           "sessions": 1188,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:08.545Z"
+          "syncedAt": "2026-08-17T03:41:46.508Z"
         },
         "365": {
           "period": 365,
@@ -968,7 +968,7 @@
           "sessions": 1863,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T02:15:09.486Z"
+          "syncedAt": "2026-08-17T03:41:47.151Z"
         }
       }
     }
