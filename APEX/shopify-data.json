@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-17T09:32:11.900Z",
+  "lastUpdated": "2026-08-17T10:23:11.653Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-17T09:32:13.695Z",
+        "syncedAt": "2026-08-17T10:23:13.264Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:15.453Z"
+          "syncedAt": "2026-08-17T10:23:15.060Z"
         },
         "30": {
           "period": 30,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:16.158Z"
+          "syncedAt": "2026-08-17T10:23:15.727Z"
         },
         "90": {
           "period": 90,
@@ -283,7 +283,7 @@
           "sessions": 138,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:16.863Z"
+          "syncedAt": "2026-08-17T10:23:16.414Z"
         },
         "365": {
           "period": 365,
@@ -341,6 +341,11 @@
               "revenue": 304
             },
             {
+              "name": "Peignoir Long d’Hiver - Homme",
+              "qty": 3,
+              "revenue": 285
+            },
+            {
               "name": "Peignoir Elégant Flanelle",
               "qty": 4,
               "revenue": 280
@@ -349,11 +354,6 @@
               "name": "Peignoir Polaire Couple",
               "qty": 4,
               "revenue": 280
-            },
-            {
-              "name": "Peignoir Rayé Coloré - Unisexe",
-              "qty": 3,
-              "revenue": 270
             }
           ],
           "top3RevenueShare": 40,
@@ -435,7 +435,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:17.605Z"
+          "syncedAt": "2026-08-17T10:23:17.063Z"
         }
       }
     },
@@ -444,7 +444,7 @@
         "revenue": 1145,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-08-17T09:32:19.195Z",
+        "syncedAt": "2026-08-17T10:23:18.416Z",
         "allTime": {
           "revenue": 8889,
           "orders": 131
@@ -523,7 +523,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:20.883Z"
+          "syncedAt": "2026-08-17T10:23:19.871Z"
         },
         "30": {
           "period": 30,
@@ -655,7 +655,7 @@
           "sessions": 238,
           "conversionRate": 7.6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:21.634Z"
+          "syncedAt": "2026-08-17T10:23:20.644Z"
         },
         "90": {
           "period": 90,
@@ -811,7 +811,7 @@
           "sessions": 1188,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:22.321Z"
+          "syncedAt": "2026-08-17T10:23:21.371Z"
         },
         "365": {
           "period": 365,
@@ -968,7 +968,7 @@
           "sessions": 1863,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-17T09:32:23.116Z"
+          "syncedAt": "2026-08-17T10:23:22.030Z"
         }
       }
     }
