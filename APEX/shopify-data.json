@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-18T09:23:08.734Z",
+  "lastUpdated": "2026-08-18T10:19:03.120Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-18T09:23:10.369Z",
+        "syncedAt": "2026-08-18T10:19:04.744Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -68,7 +68,7 @@
           "sessions": null,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:12.190Z"
+          "syncedAt": "2026-08-18T10:19:06.750Z"
         },
         "30": {
           "period": 30,
@@ -147,7 +147,7 @@
           "sessions": 25,
           "conversionRate": 8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:12.897Z"
+          "syncedAt": "2026-08-18T10:19:07.557Z"
         },
         "90": {
           "period": 90,
@@ -283,7 +283,7 @@
           "sessions": 138,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:13.613Z"
+          "syncedAt": "2026-08-18T10:19:08.373Z"
         },
         "365": {
           "period": 365,
@@ -435,7 +435,7 @@
           "sessions": 2588,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:14.312Z"
+          "syncedAt": "2026-08-18T10:19:09.510Z"
         }
       }
     },
@@ -444,7 +444,7 @@
         "revenue": 1145,
         "orders": 18,
         "currency": "EUR",
-        "syncedAt": "2026-08-18T09:23:15.567Z",
+        "syncedAt": "2026-08-18T10:19:11.034Z",
         "allTime": {
           "revenue": 8889,
           "orders": 131
@@ -468,7 +468,7 @@
           "newCust": 1,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 60,
+          "avgLTV": 40,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -508,15 +508,20 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 0,
-          "totalCheckouts": 1,
-          "abandonRate": 0,
-          "abandonedValue": 0,
-          "topAbandoned": [],
-          "sessions": 13,
-          "conversionRate": 7.7,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 2,
+          "abandonRate": 50,
+          "abandonedValue": 53,
+          "topAbandoned": [
+            {
+              "name": "Chemise Kimono Lin",
+              "count": 1
+            }
+          ],
+          "sessions": 25,
+          "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:17.251Z"
+          "syncedAt": "2026-08-18T10:19:12.909Z"
         },
         "30": {
           "period": 30,
@@ -535,7 +540,7 @@
           "newCust": 18,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 55,
+          "avgLTV": 52,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -635,20 +640,24 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 1,
-          "totalCheckouts": 19,
-          "abandonRate": 5,
-          "abandonedValue": 63,
+          "abandonedCheckouts": 2,
+          "totalCheckouts": 20,
+          "abandonRate": 10,
+          "abandonedValue": 116,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
               "count": 1
+            },
+            {
+              "name": "Chemise Kimono Lin",
+              "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 7.6,
+          "sessions": 250,
+          "conversionRate": 7.2,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:17.963Z"
+          "syncedAt": "2026-08-18T10:19:13.761Z"
         },
         "90": {
           "period": 90,
@@ -667,7 +676,7 @@
           "newCust": 75,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 53,
+          "avgLTV": 52,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -775,13 +784,17 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 154,
-          "abandonedCheckouts": 16,
-          "totalCheckouts": 92,
-          "abandonRate": 17,
-          "abandonedValue": 836,
+          "abandonedCheckouts": 17,
+          "totalCheckouts": 93,
+          "abandonRate": 18,
+          "abandonedValue": 889,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
+              "count": 2
+            },
+            {
+              "name": "Chemise Kimono Lin",
               "count": 2
             },
             {
@@ -795,16 +808,12 @@
             {
               "name": "Robe De Chambre Kimono Satin",
               "count": 1
-            },
-            {
-              "name": "Kimono Japonais Traditionnel Rouge",
-              "count": 1
             }
           ],
-          "sessions": 1150,
-          "conversionRate": 6.5,
+          "sessions": 1163,
+          "conversionRate": 6.4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:18.654Z"
+          "syncedAt": "2026-08-18T10:19:14.599Z"
         },
         "365": {
           "period": 365,
@@ -932,13 +941,17 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 17,
-          "totalCheckouts": 149,
-          "abandonRate": 11,
-          "abandonedValue": 881,
+          "abandonedCheckouts": 18,
+          "totalCheckouts": 150,
+          "abandonRate": 12,
+          "abandonedValue": 934,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
+              "count": 2
+            },
+            {
+              "name": "Chemise Kimono Lin",
               "count": 2
             },
             {
@@ -952,16 +965,12 @@
             {
               "name": "Kimono Japonais Sakura",
               "count": 1
-            },
-            {
-              "name": "Robe De Chambre Kimono Satin",
-              "count": 1
             }
           ],
-          "sessions": 1863,
+          "sessions": 1875,
           "conversionRate": 7,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-18T09:23:19.322Z"
+          "syncedAt": "2026-08-18T10:19:15.493Z"
         }
       }
     }
