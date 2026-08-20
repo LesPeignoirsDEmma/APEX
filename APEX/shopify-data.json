@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-20T10:20:52.294Z",
+  "lastUpdated": "2026-08-20T11:18:22.290Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 200,
         "orders": 2,
         "currency": "EUR",
-        "syncedAt": "2026-08-20T10:20:53.117Z",
+        "syncedAt": "2026-08-20T11:18:23.192Z",
         "allTime": {
           "revenue": 12432,
           "orders": 202
@@ -73,7 +73,7 @@
           "sessions": 13,
           "conversionRate": null,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:54.770Z"
+          "syncedAt": "2026-08-20T11:18:24.870Z"
         },
         "30": {
           "period": 30,
@@ -157,7 +157,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:55.241Z"
+          "syncedAt": "2026-08-20T11:18:25.593Z"
         },
         "90": {
           "period": 90,
@@ -292,7 +292,7 @@
           "sessions": 138,
           "conversionRate": 5.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:55.714Z"
+          "syncedAt": "2026-08-20T11:18:26.333Z"
         },
         "365": {
           "period": 365,
@@ -448,7 +448,7 @@
           "sessions": 2600,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:56.863Z"
+          "syncedAt": "2026-08-20T11:18:26.995Z"
         }
       }
     },
@@ -457,7 +457,7 @@
         "revenue": 1112,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-08-20T10:20:57.607Z",
+        "syncedAt": "2026-08-20T11:18:27.746Z",
         "allTime": {
           "revenue": 8905,
           "orders": 131
@@ -534,7 +534,7 @@
           "sessions": 25,
           "conversionRate": 4,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:58.855Z"
+          "syncedAt": "2026-08-20T11:18:29.505Z"
         },
         "30": {
           "period": 30,
@@ -670,7 +670,7 @@
           "sessions": 238,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:59.264Z"
+          "syncedAt": "2026-08-20T11:18:30.092Z"
         },
         "90": {
           "period": 90,
@@ -826,7 +826,7 @@
           "sessions": 1138,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:20:59.834Z"
+          "syncedAt": "2026-08-20T11:18:30.722Z"
         },
         "365": {
           "period": 365,
@@ -954,10 +954,10 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 250,
-          "abandonedCheckouts": 18,
-          "totalCheckouts": 150,
-          "abandonRate": 12,
-          "abandonedValue": 934,
+          "abandonedCheckouts": 16,
+          "totalCheckouts": 148,
+          "abandonRate": 11,
+          "abandonedValue": 831,
           "topAbandoned": [
             {
               "name": "Chemise Kimono Grande Taille",
@@ -972,18 +972,18 @@
               "count": 1
             },
             {
-              "name": "Floral Kimono Top",
+              "name": "Robe De Chambre Kimono Satin",
               "count": 1
             },
             {
-              "name": "Kimono Japonais Sakura",
+              "name": "Kimono Japonais Traditionnel Rouge",
               "count": 1
             }
           ],
-          "sessions": 1875,
-          "conversionRate": 7,
+          "sessions": 1850,
+          "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-20T10:21:00.345Z"
+          "syncedAt": "2026-08-20T11:18:31.554Z"
         }
       }
     }
