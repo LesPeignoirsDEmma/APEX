@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-21T17:20:28.560Z",
+  "lastUpdated": "2026-08-21T18:24:05.648Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 304,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-08-21T17:20:29.350Z",
+        "syncedAt": "2026-08-21T18:24:06.573Z",
         "allTime": {
           "revenue": 12483,
           "orders": 203
@@ -54,7 +54,7 @@
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
-            "Cape de Bain Bébé Cerf",
+            "Cape de Bain Béb�� Cerf",
             "Cape de Bain Bébé Dinosaure",
             "Cape de Bain Bébé Éponge",
             "Cape de Bain Bébé Koala",
@@ -89,7 +89,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:30.940Z"
+          "syncedAt": "2026-08-21T18:24:08.444Z"
         },
         "30": {
           "period": 30,
@@ -186,7 +186,7 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:31.592Z"
+          "syncedAt": "2026-08-21T18:24:09.096Z"
         },
         "90": {
           "period": 90,
@@ -328,7 +328,7 @@
           "sessions": 163,
           "conversionRate": 6.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:32.081Z"
+          "syncedAt": "2026-08-21T18:24:09.813Z"
         },
         "365": {
           "period": 365,
@@ -484,7 +484,7 @@
           "sessions": 2613,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:33.136Z"
+          "syncedAt": "2026-08-21T18:24:10.549Z"
         }
       }
     },
@@ -493,7 +493,7 @@
         "revenue": 1046,
         "orders": 17,
         "currency": "EUR",
-        "syncedAt": "2026-08-21T17:20:33.856Z",
+        "syncedAt": "2026-08-21T18:24:11.318Z",
         "allTime": {
           "revenue": 8965,
           "orders": 132
@@ -577,7 +577,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:35.081Z"
+          "syncedAt": "2026-08-21T18:24:12.748Z"
         },
         "30": {
           "period": 30,
@@ -713,7 +713,7 @@
           "sessions": 238,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:35.452Z"
+          "syncedAt": "2026-08-21T18:24:13.317Z"
         },
         "90": {
           "period": 90,
@@ -869,7 +869,7 @@
           "sessions": 1150,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:36.022Z"
+          "syncedAt": "2026-08-21T18:24:14.029Z"
         },
         "365": {
           "period": 365,
@@ -1026,7 +1026,7 @@
           "sessions": 1863,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T17:20:36.711Z"
+          "syncedAt": "2026-08-21T18:24:14.822Z"
         }
       }
     }
