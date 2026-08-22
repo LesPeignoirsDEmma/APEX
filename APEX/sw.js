@@ -2,7 +2,7 @@
 // Network-first pour index.html (mises Ã  jour instantanÃ©es)
 // Cache-first pour les assets statiques (icÃ´nes, manifest)
 
-const CACHE = 'apex-v10';
+const CACHE = 'apex-v11';
 const STATIC = ['./manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
