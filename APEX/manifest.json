@@ -1,7 +1,7 @@
 {
   "name": "APEX IA",
   "short_name": "APEX",
-  "description": "Ton second cerveau — focus, finances, habitudes, objectifs",
+  "description": "Ton second cerveau — focus, habitudes, tâches, discipline",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#080810",
