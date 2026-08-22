@@ -1068,6 +1068,12 @@ html[data-theme="light"]{
 .tg-status.err{color:#ef4444}
 .tg-status.warn{color:#f59e0b}
 .tg-btn-row{display:flex;gap:8px;margin-top:9px}
+.dp-blk{margin-bottom:11px}
+.dp-blk-lbl{font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--t3);margin-bottom:5px;display:block}
+.dpb-del{background:none;border:none;color:var(--t3);font-size:19px;line-height:1;cursor:pointer;padding:0 4px;flex-shrink:0}
+.dpb-del:hover{color:#ef4444}
+.dp-add{background:none;border:1px dashed var(--border2);border-radius:var(--rsm);color:var(--t2);font-size:12.5px;padding:9px 14px;cursor:pointer;width:100%;margin-top:2px}
+.dp-add:hover{border-color:var(--pl);color:var(--pl)}
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
@@ -1788,22 +1794,12 @@ html[data-theme="light"]{
     <div class="modal-title" id="dp-modal-title">Préparer demain</div>
     <div class="modal-sub">Une priorité, deux blocs. Rien de plus — c'est ce qui rend la chose tenable.</div>
 
-    <label class="flbl">La seule chose qui compte demain</label>
+    <label class="flbl" id="dp-prio-lbl">La seule chose qui compte demain</label>
     <input class="finput" id="dp-prio" placeholder="Ex : Rédiger les 3 articles SEO santiag" onkeypress="if(event.key==='Enter')saveDayPlan()">
 
     <div class="sep"></div>
-    <label class="flbl">Bloc 1</label>
-    <div class="dp-block-row">
-      <input class="finput" type="time" id="dp-b0-start" value="08:00">
-      <input class="finput" type="time" id="dp-b0-end" value="10:00">
-      <input class="finput" id="dp-b0-label" placeholder="Sur quoi ?" style="flex:1">
-    </div>
-    <label class="flbl">Bloc 2</label>
-    <div class="dp-block-row">
-      <input class="finput" type="time" id="dp-b1-start" value="10:15">
-      <input class="finput" type="time" id="dp-b1-end" value="12:15">
-      <input class="finput" id="dp-b1-label" placeholder="Sur quoi ?" style="flex:1">
-    </div>
+    <div id="dp-blocks"></div>
+    <button class="dp-add" onclick="dpAddBlock()">+ Ajouter un bloc</button>
 
     <div class="dp-err" id="dp-error"></div>
     <div class="form-row mt-8">
@@ -3198,7 +3194,7 @@ function planIsValid(p){
   if(!p) return false;
   if(!p.prio||!p.prio.trim()) return false;
   const b=(p.blocks||[]).filter(x=>x.label&&x.label.trim());
-  return b.length>=2;
+  return b.length>=1;
 }
 
 // ── Bouton "Je suis debout" ─────────────────────────────────────
@@ -3305,21 +3301,82 @@ function toggleDayBlock(dateStr,i){
 }
 
 // ── Modal de planification ──────────────────────────────────────
-let _dpDate=null;
+let _dpDate=null, _dpBlocks=[];
+
+function dpReadBlocks(){
+  const out=[];
+  document.querySelectorAll('#dp-blocks .dp-blk').forEach(row=>{
+    out.push({
+      start:row.querySelector('.dpb-start').value||'08:00',
+      end:row.querySelector('.dpb-end').value||'10:00',
+      label:row.querySelector('.dpb-label').value,
+      done:row.dataset.done==='1'
+    });
+  });
+  return out;
+}
+
+function dpRenderBlocks(){
+  const el=document.getElementById('dp-blocks'); if(!el) return;
+  const many=_dpBlocks.length>1;
+  el.innerHTML=_dpBlocks.map((b,i)=>
+    '<div class="dp-blk" data-done="'+(b.done?1:0)+'">'
+    +'<span class="dp-blk-lbl">Bloc '+(i+1)+'</span>'
+    +'<div class="dp-block-row">'
+      +'<input class="finput dpb-start" type="time" value="'+(b.start||'')+'">'
+      +'<input class="finput dpb-end" type="time" value="'+(b.end||'')+'">'
+      +'<input class="finput dpb-label" placeholder="Sur quoi ?" value="'+esc(b.label||'').replace(/"/g,'&quot;')+'" style="flex:1">'
+      +(many?'<button class="dpb-del" onclick="dpRemoveBlock('+i+')" title="Retirer ce bloc">&times;</button>':'')
+    +'</div></div>').join('');
+}
+
+function dpAddBlock(){
+  _dpBlocks=dpReadBlocks();
+  const last=_dpBlocks[_dpBlocks.length-1];
+  let start='14:00', end='16:00';
+  if(last&&last.end){
+    const [h,m]=last.end.split(':').map(Number);
+    let sm=h*60+m+15, em=sm+120;
+    const pad=n=>String(Math.floor(n/60)%24).padStart(2,'0')+':'+String(n%60).padStart(2,'0');
+    start=pad(sm); end=pad(em);
+  }
+  _dpBlocks.push({start,end,label:'',done:false});
+  dpRenderBlocks();
+  const inputs=document.querySelectorAll('#dp-blocks .dpb-label');
+  if(inputs.length) inputs[inputs.length-1].focus();
+}
+
+function dpRemoveBlock(i){
+  _dpBlocks=dpReadBlocks();
+  if(_dpBlocks.length<=1) return;
+  _dpBlocks.splice(i,1);
+  dpRenderBlocks();
+}
+
 function openDayPlanModal(dateStr){
   _dpDate=dateStr;
-  const p=getDayPlan(dateStr)||{prio:'',blocks:DEFAULT_BLOCKS.map(b=>({...b,label:'',done:false}))};
+  const p=getDayPlan(dateStr);
   const isToday=dateStr===today();
   const d=parseDate(dateStr);
   document.getElementById('dp-modal-title').textContent=
     isToday?'Planifier aujourd\'hui':'Préparer '+DAYS[d.getDay()]+' '+d.getDate()+' '+MONTHS[d.getMonth()];
-  document.getElementById('dp-prio').value=p.prio||'';
-  const bl=p.blocks&&p.blocks.length>=2?p.blocks:DEFAULT_BLOCKS.map(b=>({...b,label:''}));
-  for(let i=0;i<2;i++){
-    document.getElementById('dp-b'+i+'-start').value=bl[i]?.start||DEFAULT_BLOCKS[i].start;
-    document.getElementById('dp-b'+i+'-end').value=bl[i]?.end||DEFAULT_BLOCKS[i].end;
-    document.getElementById('dp-b'+i+'-label').value=bl[i]?.label||'';
+  document.getElementById('dp-prio').value=p&&p.prio?p.prio:'';
+  document.getElementById('dp-prio-lbl').textContent=
+    isToday?'La seule chose qui compte aujourd\'hui':'La seule chose qui compte demain';
+
+  if(p&&p.blocks&&p.blocks.length){
+    _dpBlocks=p.blocks.map(b=>({...b}));
+  } else if(isToday){
+    // planification en cours de journée : un bloc qui démarre bientôt
+    const now=new Date();
+    let sm=now.getHours()*60+now.getMinutes()+10;
+    sm=Math.ceil(sm/15)*15;
+    const pad=n=>String(Math.floor(n/60)%24).padStart(2,'0')+':'+String(n%60).padStart(2,'0');
+    _dpBlocks=[{start:pad(sm),end:pad(sm+120),label:'',done:false}];
+  } else {
+    _dpBlocks=DEFAULT_BLOCKS.map(b=>({...b,label:'',done:false}));
   }
+  dpRenderBlocks();
   document.getElementById('dp-error').textContent='';
   openModal('dp-modal');
   setTimeout(()=>document.getElementById('dp-prio').focus(),250);
@@ -3327,29 +3384,19 @@ function openDayPlanModal(dateStr){
 
 function saveDayPlan(){
   const prio=document.getElementById('dp-prio').value.trim();
-  const blocks=[];
-  for(let i=0;i<2;i++){
-    blocks.push({
-      start:document.getElementById('dp-b'+i+'-start').value||DEFAULT_BLOCKS[i].start,
-      end:document.getElementById('dp-b'+i+'-end').value||DEFAULT_BLOCKS[i].end,
-      label:document.getElementById('dp-b'+i+'-label').value.trim(),
-      done:false
-    });
-  }
+  const blocks=dpReadBlocks().map(b=>({...b,label:(b.label||'').trim()})).filter(b=>b.label);
   const err=document.getElementById('dp-error');
   if(!prio){ err.textContent='Il faut une priorité — une seule chose qui compte vraiment.'; return; }
-  if(blocks.filter(b=>b.label).length<2){ err.textContent='Il faut remplir les deux blocs. C\'est le minimum.'; return; }
+  if(!blocks.length){ err.textContent='Il faut au moins un bloc, avec ce que tu y fais.'; return; }
 
   const existing=getDayPlan(_dpDate);
   D.dayPlans=D.dayPlans||{};
   D.dayPlans[_dpDate]={
     prio,
     prioDone:existing?existing.prioDone:false,
-    blocks:blocks.map((b,i)=>({...b,done:existing&&existing.blocks&&existing.blocks[i]?existing.blocks[i].done:false})),
+    blocks,
     createdAt:existing?existing.createdAt:Date.now()
   };
-
-  // crée la tâche correspondante si elle n'existe pas déjà
   const already=(D.tasks||[]).some(x=>x.date===_dpDate&&x.title===prio);
   if(!already){
     D.tasks.push({id:uid(),title:prio,priority:'high',domain:'business',
@@ -3360,6 +3407,7 @@ function saveDayPlan(){
   render(curPage);
   showToast(_dpDate===today()?'Journée planifiée. Exécute.':'Demain est prêt. Bonne soirée.');
 }
+
 
 // ── Rappel visuel si demain n'est pas planifié (soir) ────────────
 function renderTomorrowNudge(){
@@ -3508,14 +3556,14 @@ async function tgHandle(text){
       blocks.push({start:d.start,end:d.end,label:line,done:false});
     }
   }
-  if(blocks.length<2){
-    await tgSend('⚠️ Il faut <b>deux blocs</b>, pas '+blocks.length+'. C\'est le minimum pour que la journée tienne.\n\n<code>/demain\n'+escTg(prio)+'\n8h-10h premier bloc\n10h15-12h15 second bloc</code>');
+  if(!blocks.length){
+    await tgSend('⚠️ Il manque les blocs. Ajoute au moins une ligne :\n\n<code>/demain\n'+escTg(prio)+'\n8h-10h premier bloc</code>');
     return;
   }
 
   const ex=getDayPlan(dateStr);
   D.dayPlans=D.dayPlans||{};
-  D.dayPlans[dateStr]={prio,prioDone:ex?ex.prioDone:false,blocks:blocks.slice(0,4),createdAt:ex?ex.createdAt:Date.now(),via:'telegram'};
+  D.dayPlans[dateStr]={prio,prioDone:ex?ex.prioDone:false,blocks:blocks,createdAt:ex?ex.createdAt:Date.now(),via:'telegram'};
   if(!(D.tasks||[]).some(x=>x.date===dateStr&&x.title===prio)){
     D.tasks.push({id:uid(),title:prio,priority:'high',domain:'business',done:false,date:dateStr,subtasks:[],createdAt:Date.now()});
   }
@@ -3525,7 +3573,7 @@ async function tgHandle(text){
 
   const quand=dateStr===today()?'Aujourd\'hui':'Demain';
   await tgSend('✅ <b>'+quand+' est planifié.</b>\n\n🎯 '+escTg(prio)+'\n'
-    +blocks.slice(0,4).map(b=>'· '+b.start+'–'+b.end+' '+escTg(b.label)).join('\n')
+    +blocks.map(b=>'· '+b.start+'–'+b.end+' '+escTg(b.label)).join('\n')
     +'\n\nÇa t\'attend dans APEX.');
 }
 
