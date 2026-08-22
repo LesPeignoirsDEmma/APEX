@@ -1084,7 +1084,6 @@ html[data-theme="light"]{
   <button class="snav" onclick="goPage('calendar',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-calendar"/></svg></span>Calendrier</button>
   <button class="snav" onclick="goPage('tasks',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-check-square"/></svg></span>Tâches</button>
   <button class="snav" onclick="goPage('habits',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-flame"/></svg></span>Habitudes</button>
-  <button class="snav" onclick="goPage('routine',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>Routine 21J</button>
     <button class="snav" onclick="goPage('focus',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></span>Focus</button>
   <button class="snav" onclick="openSettings()"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></span>Réglages</button>
   <div class="sb-bottom mt-20">
@@ -1167,17 +1166,6 @@ html[data-theme="light"]{
 
   <!-- OBJECTIF 90J -->
 
-  <!-- ROUTINE DU JOUR (widget compact) -->
-  <div class="today-routine-wrap" id="today-routine-widget">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <div>
-        <div class="slbl" style="margin-bottom:2px">Routine du jour</div>
-        <div style="font-size:11px;color:var(--t2)" id="today-routine-pct-label">0 / 10 habitudes</div>
-      </div>
-      <button onclick="goPage('routine',null)" style="background:var(--pd);border:1px solid rgba(123,104,238,.3);border-radius:var(--rsm);padding:5px 10px;font-size:10px;font-weight:700;color:var(--pl);cursor:pointer">Voir tout →</button>
-    </div>
-    <div class="today-routine-grid" id="today-routine-grid"></div>
-  </div>
 
   
 
@@ -1468,82 +1456,6 @@ html[data-theme="light"]{
 
 <!-- ═══ PAGE DIAGNOSTIC ═══ -->
 
-<!-- ═══ PAGE ROUTINE 21J ═══ -->
-<div class="page" id="page-routine">
-  <div class="page-hdr">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
-      <div>
-        <h2>Routine 21 Jours</h2>
-        <p>La constance crée l'identité. Pas la motivation.</p>
-      </div>
-      <div id="routine-day-badge" style="flex-shrink:0;background:var(--pd);border:1px solid rgba(123,104,238,.3);border-radius:var(--rsm);padding:8px 14px;text-align:center">
-        <div style="font-family:var(--font2);font-size:22px;font-weight:800;color:var(--pl);line-height:1" id="routine-day-num">J1</div>
-        <div style="font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-top:2px">/21 jours</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STATS ROW -->
-  <div class="analytics-strip" style="margin-bottom:16px">
-    <div class="an-card">
-      <div class="an-val" id="r-streak" style="color:var(--gold)">0🔥</div>
-      <div class="an-lbl">Streak</div>
-    </div>
-    <div class="an-card">
-      <div class="an-val" id="r-today-pct" style="color:var(--green)">0%</div>
-      <div class="an-lbl">Aujourd'hui</div>
-    </div>
-    <div class="an-card">
-      <div class="an-val" id="r-global-pct" style="color:var(--pl)">0%</div>
-      <div class="an-lbl">Global</div>
-    </div>
-  </div>
-
-  <!-- PROGRESS BAR 21J -->
-  <div class="card" style="margin-bottom:13px;padding:14px 16px">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-      <div class="slbl" style="margin:0">Progression 21 jours</div>
-      <div style="font-size:11px;color:var(--t3)" id="r-days-label">Jour 1 sur 21</div>
-    </div>
-    <div class="pbar" style="margin:0"><div class="pfill" id="r-prog-fill" style="width:0%"></div></div>
-    <!-- JOURS GRID -->
-    <div style="display:grid;grid-template-columns:repeat(21,1fr);gap:3px;margin-top:10px" id="r-days-grid"></div>
-  </div>
-
-  <!-- HABITS DU JOUR -->
-  <div class="card" style="margin-bottom:13px">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
-      <div>
-        <div class="slbl" style="margin-bottom:2px">Check du jour</div>
-        <div style="font-size:12px;color:var(--t2)" id="r-date-label">Chargement...</div>
-      </div>
-      <button class="btn btn-sm" onclick="resetRoutineDay()" style="background:transparent;border:1px solid var(--border2);color:var(--t3);font-size:10px">Reset jour</button>
-    </div>
-    <div id="r-habits-list"></div>
-  </div>
-
-  <!-- TRACKER 10x21 -->
-  <div class="card" style="margin-bottom:13px;padding:14px 16px;overflow-x:auto">
-    <div class="slbl" style="margin-bottom:12px">Tableau de suivi complet</div>
-    <div id="r-full-tracker" style="min-width:500px"></div>
-  </div>
-
-  <!-- RÈGLES -->
-  <div class="card" style="margin-bottom:13px">
-    <div class="slbl" style="margin-bottom:12px">Les 7 règles non-négociables</div>
-    <div id="r-rules-list"></div>
-  </div>
-
-  <!-- DATE DE DÉBUT -->
-  <div class="card-sm" style="margin-bottom:13px">
-    <div class="slbl" style="margin-bottom:8px">Date de début du programme</div>
-    <div style="display:flex;gap:8px;align-items:center">
-      <input type="date" class="finput" id="r-start-date" style="flex:1" onchange="setRoutineStartDate(this.value)">
-      <button class="btn btn-sm" onclick="startRoutineToday()">Commencer aujourd'hui</button>
-    </div>
-  </div>
-
-</div>
 
 <!-- ═══ PAGE MINDSET ═══ -->
 
@@ -1562,7 +1474,6 @@ html[data-theme="light"]{
 <div id="more-overlay" onclick="closeMoreMenu()"></div>
 <div id="more-menu">
   <button class="more-item" id="more-habits" onclick="moreNav('habits')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-flame"/></svg></span>Habitudes</button>
-  <button class="more-item" id="more-routine" onclick="moreNav('routine')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>Routine 21J</button>
     <button class="more-item" id="more-focus" onclick="moreNav('focus')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></span>Focus</button>
   <div style="border-top:1px solid var(--border);margin:4px 0"></div>
   <button class="more-item" onclick="closeMoreMenu();openSettings()"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></span>Réglages</button>
@@ -2204,7 +2115,7 @@ let curPage='today';
 let selDay=today();
 let weekOffset=0;
 
-const MORE_PAGES=['habits','routine','focus'];
+const MORE_PAGES=['habits','focus'];
 function goPage(name,el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const pg=document.getElementById('page-'+name);
@@ -2232,7 +2143,6 @@ function render(p){
     case'notes':    renderNotes();    break;
     case'calendar': renderCalendar(); break;
     case'focus':     renderFocus();     break;
-    case'routine':    renderRoutine();    break;
   }
 }
 function goPageAndAdd(){
@@ -2289,7 +2199,7 @@ function renderToday(){
   document.getElementById('s-streak').textContent=calcMaxStreak();
   document.getElementById('s-week').textContent=calcWeekDone();
   document.getElementById('s-habits').textContent=calcTodayHabits()+'%';
-  renderAnalytics();  renderTodayExtras();
+  renderAnalytics();
 
   // Deep Work schedule section
   const schSec=document.getElementById('today-schedule-section');
@@ -5085,273 +4995,6 @@ function initAuth(){
 
 setTimeout(initAuth,0);
 
-
-
-// ═══════════════════════════════════════════════════════════════
-// TODAY — WIDGET ROUTINE + OBJECTIF 90J
-// ═══════════════════════════════════════════════════════════════
-
-function renderTodayExtras(){
-  // Routine widget compact
-  const todayStr = new Date().toISOString().split('T')[0];
-  const r = getRoutineData();
-  const todayChecks = (r.checks && r.checks[todayStr]) || {};
-  const doneCount = ROUTINE_HABITS.filter(h => todayChecks[h.id]).length;
-
-  const pctLbl = document.getElementById('today-routine-pct-label');
-  if(pctLbl) pctLbl.textContent = doneCount + ' / ' + ROUTINE_HABITS.length + ' habitudes cochées';
-
-  const grid = document.getElementById('today-routine-grid');
-  if(grid){
-    grid.innerHTML = ROUTINE_HABITS.map(h => {
-      const done = !!(todayChecks[h.id]);
-      return `<div class="trh-item${done?' done':''}" onclick="toggleRoutineHabit('${h.id}','${todayStr}');renderTodayExtras()">
-        <div class="trh-chk${done?' done':''}">${done?'✓':''}</div>
-        <span class="trh-txt">${h.emoji} ${h.label}</span>
-      </div>`;
-    }).join('');
-  }
-}
-
-// ═══════════════════════════════════════════════════════════════
-// ROUTINE 21 JOURS
-// ═══════════════════════════════════════════════════════════════
-const ROUTINE_HABITS = [
-  { id:'wake',    emoji:'🌅', label:'Réveil avant 5h30' },
-  { id:'noscreen',emoji:'📵', label:'15 min sans écran au réveil' },
-  { id:'read',    emoji:'📖', label:'Lecture 10 min' },
-  { id:'visual',  emoji:'🎯', label:'Visualisation 3 min' },
-  { id:'dw1',     emoji:'⚡', label:'Deep Work #1 (5h30–7h)' },
-  { id:'dw2',     emoji:'🔥', label:'Deep Work #2 (9h–12h30)' },
-  { id:'copine',  emoji:'🚫', label:'Pas réveillé copine av. 7h' },
-  { id:'sport',   emoji:'🏋️', label:'Sport (salle ou marche)' },
-  { id:'journal', emoji:'📓', label:'Journal intégrité 5 min' },
-  { id:'sleep',   emoji:'😴', label:'Coucher avant 22h30' },
-];
-
-const ROUTINE_RULES = [
-  'Tu ne réveilles plus ta copine avant 7h. Aucune exception.',
-  'Tu te couches à 22h30 maximum. Pas "juste un épisode".',
-  'Les 15 premières minutes après le réveil sont sans écran.',
-  'Le créneau 9h–12h30 est sacré. Téléphone en avion.',
-  'Les jours sans salle, tu marches 30 min minimum dehors.',
-  'La lecture se fait le matin, pas le soir.',
-  'Chaque dimanche soir, tu planifies ta semaine entière.',
-];
-
-function getRoutineData(){
-  if(!D.routine21) D.routine21 = { startDate: null, checks: {} };
-  return D.routine21;
-}
-
-function getRoutineDateKey(date){
-  return date.toISOString().split('T')[0];
-}
-
-function getRoutineDayIndex(dateStr){
-  const r = getRoutineData();
-  if(!r.startDate) return -1;
-  const start = new Date(r.startDate);
-  const target = new Date(dateStr);
-  const diff = Math.floor((target - start) / 86400000);
-  return diff; // 0-based
-}
-
-function setRoutineStartDate(val){
-  const r = getRoutineData();
-  r.startDate = val;
-  save();
-  renderRoutine();
-}
-
-function startRoutineToday(){
-  const today = getRoutineDateKey(new Date());
-  document.getElementById('r-start-date').value = today;
-  setRoutineStartDate(today);
-  apexNotif('success','Routine démarrée !','Aujourd\'hui = Jour 1. Sans exception.');
-}
-
-function toggleRoutineHabit(habitId, dateStr){
-  const r = getRoutineData();
-  if(!r.checks[dateStr]) r.checks[dateStr] = {};
-  r.checks[dateStr][habitId] = !r.checks[dateStr][habitId];
-  save();
-  renderRoutine();
-}
-
-function resetRoutineDay(){
-  const r = getRoutineData();
-  const today = getRoutineDateKey(new Date());
-  r.checks[today] = {};
-  save();
-  renderRoutine();
-}
-
-function getRoutineStreak(){
-  const r = getRoutineData();
-  if(!r.startDate) return 0;
-  let streak = 0;
-  const today = new Date();
-  for(let i=0; i<21; i++){
-    const d = new Date(today);
-    d.setDate(d.getDate() - i);
-    const key = getRoutineDateKey(d);
-    const checks = r.checks[key] || {};
-    const count = ROUTINE_HABITS.filter(h => checks[h.id]).length;
-    if(count >= 7) streak++;
-    else if(i > 0) break;
-  }
-  return streak;
-}
-
-function renderRoutine(){
-  const r = getRoutineData();
-  const today = new Date();
-  const todayStr = getRoutineDateKey(today);
-
-  // Date de début
-  const startInput = document.getElementById('r-start-date');
-  if(startInput && r.startDate) startInput.value = r.startDate;
-
-  // Jour actuel dans le programme
-  const dayIdx = r.startDate ? getRoutineDayIndex(todayStr) : -1;
-  const dayNum = dayIdx >= 0 && dayIdx < 21 ? dayIdx + 1 : (dayIdx >= 21 ? 21 : 1);
-  const el = document.getElementById('routine-day-num');
-  if(el) el.textContent = 'J' + (r.startDate ? Math.max(1, Math.min(21, dayNum)) : '?');
-
-  // Stats
-  const todayChecks = r.checks[todayStr] || {};
-  const todayCount = ROUTINE_HABITS.filter(h => todayChecks[h.id]).length;
-  const todayPct = Math.round(todayCount / ROUTINE_HABITS.length * 100);
-
-  let totalChecks = 0, totalPossible = 0;
-  if(r.startDate){
-    const start = new Date(r.startDate);
-    for(let i=0; i<21; i++){
-      const d = new Date(start);
-      d.setDate(d.getDate() + i);
-      if(d > today) break;
-      const key = getRoutineDateKey(d);
-      const checks = r.checks[key] || {};
-      totalChecks += ROUTINE_HABITS.filter(h => checks[h.id]).length;
-      totalPossible += ROUTINE_HABITS.length;
-    }
-  }
-  const globalPct = totalPossible > 0 ? Math.round(totalChecks / totalPossible * 100) : 0;
-  const streak = getRoutineStreak();
-
-  document.getElementById('r-streak').textContent = streak + (streak >= 3 ? '🔥' : '');
-  document.getElementById('r-today-pct').textContent = todayPct + '%';
-  document.getElementById('r-global-pct').textContent = globalPct + '%';
-
-  // Progress bar
-  const progPct = r.startDate ? Math.min(100, Math.max(0, (dayIdx+1)/21*100)) : 0;
-  document.getElementById('r-prog-fill').style.width = progPct + '%';
-  document.getElementById('r-days-label').textContent = r.startDate ? 'Jour '+ Math.min(21, Math.max(1, dayIdx+1)) +' sur 21' : 'Programme non démarré';
-
-  // Days grid (21 cells)
-  const daysGrid = document.getElementById('r-days-grid');
-  if(daysGrid){
-    daysGrid.innerHTML = '';
-    for(let i=0; i<21; i++){
-      const cell = document.createElement('div');
-      cell.className = 'r-day-cell';
-      cell.textContent = i+1;
-      if(r.startDate){
-        const d = new Date(r.startDate);
-        d.setDate(d.getDate() + i);
-        const key = getRoutineDateKey(d);
-        const checks = r.checks[key] || {};
-        const count = ROUTINE_HABITS.filter(h => checks[h.id]).length;
-        const isToday = key === todayStr;
-        const isPast = d < today && !isToday;
-        if(isToday) cell.classList.add('r-today');
-        if(count === ROUTINE_HABITS.length) cell.classList.add('r-full');
-        else if(count > 0) cell.classList.add('r-partial');
-        else if(isPast) cell.classList.add('r-past-empty');
-        cell.title = 'J'+(i+1)+' — '+count+'/'+ROUTINE_HABITS.length+' habitudes';
-      }
-      daysGrid.appendChild(cell);
-    }
-  }
-
-  // Date label
-  const days=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
-  const months=['jan','fév','mar','avr','mai','jun','jul','aoû','sep','oct','nov','déc'];
-  document.getElementById('r-date-label').textContent = days[today.getDay()]+' '+today.getDate()+' '+months[today.getMonth()];
-
-  // Habits list
-  const habitsList = document.getElementById('r-habits-list');
-  if(habitsList){
-    habitsList.innerHTML = '';
-    ROUTINE_HABITS.forEach(h => {
-      const done = !!(todayChecks[h.id]);
-      const row = document.createElement('div');
-      row.className = 'r-habit-row';
-      row.innerHTML = `
-        <button class="r-habit-chk${done?' done':''}" onclick="toggleRoutineHabit('${h.id}','${todayStr}')"></button>
-        <span class="r-habit-emoji">${h.emoji}</span>
-        <span class="r-habit-label${done?' done':''}">${h.label}</span>
-      `;
-      habitsList.appendChild(row);
-    });
-  }
-
-  // Full tracker 10x21
-  const tracker = document.getElementById('r-full-tracker');
-  if(tracker){
-    tracker.innerHTML = '';
-    // Header row (day numbers)
-    const headerRow = document.createElement('div');
-    headerRow.style.cssText = 'display:grid;grid-template-columns:110px repeat(21,1fr);gap:3px;margin-bottom:6px';
-    headerRow.innerHTML = '<div></div>';
-    for(let i=0; i<21; i++){
-      const cell = document.createElement('div');
-      cell.style.cssText = 'text-align:center;font-size:8px;color:var(--t3);font-weight:700;font-family:var(--font2)';
-      cell.textContent = i+1;
-      headerRow.appendChild(cell);
-    }
-    tracker.appendChild(headerRow);
-
-    ROUTINE_HABITS.forEach(h => {
-      const row = document.createElement('div');
-      row.className = 'r-tracker-row';
-      row.style.gridTemplateColumns = '110px repeat(21,1fr)';
-      const label = document.createElement('div');
-      label.className = 'r-tracker-label';
-      label.textContent = h.emoji + ' ' + h.label;
-      row.appendChild(label);
-      for(let i=0; i<21; i++){
-        const cell = document.createElement('div');
-        cell.className = 'r-tracker-cell';
-        if(r.startDate){
-          const d = new Date(r.startDate);
-          d.setDate(d.getDate() + i);
-          const key = getRoutineDateKey(d);
-          const checks = r.checks[key] || {};
-          if(checks[h.id]) cell.classList.add('done');
-          if(key === todayStr) cell.classList.add('today-col');
-          cell.onclick = () => { toggleRoutineHabit(h.id, key); };
-          cell.title = 'J'+(i+1)+' — '+h.label;
-        }
-        row.appendChild(cell);
-      }
-      tracker.appendChild(row);
-    });
-  }
-
-  // Règles
-  const rulesList = document.getElementById('r-rules-list');
-  if(rulesList){
-    rulesList.innerHTML = '';
-    ROUTINE_RULES.forEach((rule, i) => {
-      const item = document.createElement('div');
-      item.className = 'r-rule-item';
-      item.innerHTML = `<span class="r-rule-num">0${i+1}</span><span>${rule}</span>`;
-      rulesList.appendChild(item);
-    });
-  }
-}
 
 </script>
 
