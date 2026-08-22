@@ -1013,6 +1013,61 @@ html[data-theme="light"]{
 .r-day-cell{width:100%;aspect-ratio:1;border-radius:3px;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:var(--t3);cursor:default;transition:background .15s;position:relative}.r-day-cell.r-today{outline:1.5px solid var(--purple);outline-offset:-1px;color:var(--pl)}.r-day-cell.r-full{background:var(--purple);color:#fff}.r-day-cell.r-partial{background:rgba(123,104,238,.35);color:var(--pl)}.r-day-cell.r-past-empty{background:var(--cd);opacity:.5}
 .r-habit-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}.r-habit-row:last-child{border-bottom:none}.r-habit-chk{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--border2);background:none;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .18s;font-size:12px}.r-habit-chk.done{background:var(--green);border-color:var(--green)}.r-habit-chk.done::after{content:'✓';color:#000;font-size:11px;font-weight:800}
 .r-habit-emoji{font-size:18px;flex-shrink:0;width:24px;text-align:center}.r-habit-label{flex:1;font-size:13px;font-weight:500;color:var(--text)}.r-habit-label.done{text-decoration:line-through;color:var(--t3)}.r-tracker-row{display:grid;align-items:center;gap:3px;margin-bottom:3px}.r-tracker-label{font-size:10px;color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.r-tracker-cell{width:100%;aspect-ratio:1;border-radius:2px;background:var(--card2);border:1px solid transparent;transition:background .15s;cursor:pointer}.r-tracker-cell.done{background:var(--green)}.r-tracker-cell.today-col{border-color:var(--purple)}.r-rule-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:12.5px;color:var(--t2);line-height:1.5}.r-rule-item:last-child{border-bottom:none}.r-rule-num{font-family:var(--font2);font-size:10px;font-weight:800;color:var(--gold);min-width:18px;padding-top:1px}
+
+/* ═══ BOUCLE SOIR → MATIN ═══ */
+.wake-btn{width:100%;display:flex;align-items:center;gap:13px;background:linear-gradient(135deg,rgba(247,201,72,.13),rgba(123,104,238,.07));border:1px solid rgba(247,201,72,.3);border-radius:var(--r);padding:15px 17px;margin-bottom:13px;cursor:pointer;text-align:left;transition:border-color .2s,transform .1s}
+.wake-btn:hover{border-color:rgba(247,201,72,.55)}
+.wake-btn:active{transform:scale(.99)}
+.wake-emoji{font-size:25px;flex-shrink:0}
+.wake-t{display:block;font-size:14px;font-weight:700;color:var(--text)}
+.wake-s{display:block;font-size:12px;color:var(--t2);margin-top:2px}
+.wake-done{font-size:12px;color:var(--t2);margin-bottom:12px;padding:9px 14px;background:var(--card2);border-radius:var(--rsm);border:1px solid var(--border)}
+.wake-done b{color:var(--text);font-family:var(--font2)}
+.wake-ok{color:#22c55e;font-weight:600}
+.wake-late{color:#f59e0b;font-weight:600}
+
+.gate{background:var(--card);border:1px solid rgba(123,104,238,.35);border-radius:var(--r);padding:32px 26px;text-align:center;margin-bottom:14px}
+.gate-ico{font-size:38px;margin-bottom:12px}
+.gate-t{font-size:19px;font-weight:800;color:var(--text);font-family:var(--font2);margin-bottom:9px}
+.gate-s{font-size:13px;color:var(--t2);line-height:1.65;max-width:430px;margin:0 auto 18px}
+.gate-warn{font-size:12.5px;color:#f59e0b;background:rgba(245,158,11,.09);border:1px solid rgba(245,158,11,.25);border-radius:var(--rsm);padding:10px 14px;margin:0 auto 18px;max-width:430px}
+.gate-btn{background:var(--pl);color:#fff;border:none;border-radius:var(--rsm);padding:13px 30px;font-size:14px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .1s}
+.gate-btn:hover{opacity:.88}
+.gate-btn:active{transform:scale(.98)}
+
+.dplan{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;margin-bottom:13px}
+.dplan-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.dplan-lbl{font-size:10px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--pl)}
+.dplan-edit{background:none;border:none;color:var(--t3);font-size:11.5px;cursor:pointer;padding:2px 4px}
+.dplan-edit:hover{color:var(--t2)}
+.dplan-prio{display:flex;align-items:flex-start;gap:11px;cursor:pointer;padding:4px 0 13px}
+.dplan-prio-txt{font-size:17px;font-weight:700;color:var(--text);line-height:1.35}
+.dplan-prio.done .dplan-prio-txt{text-decoration:line-through;color:var(--t3)}
+.dplan-chk{width:21px;height:21px;min-width:21px;border-radius:6px;border:1.5px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;margin-top:2px;transition:background .15s}
+.dplan-chk.done{background:var(--pl);border-color:var(--pl)}
+.dplan-blocks{display:flex;flex-direction:column;gap:7px;border-top:1px solid var(--border);padding-top:12px}
+.dblock{display:flex;align-items:center;gap:11px;cursor:pointer;padding:7px 10px;border-radius:var(--rsm);background:var(--card2);transition:opacity .15s}
+.dblock.done{opacity:.5}
+.dblock.done .dblock-lbl{text-decoration:line-through}
+.dblock-time{font-family:var(--font2);font-size:11.5px;font-weight:700;color:var(--pl);white-space:nowrap}
+.dblock-lbl{font-size:13px;color:var(--text);flex:1;min-width:0}
+
+.nudge{width:100%;display:flex;align-items:center;gap:13px;background:linear-gradient(135deg,rgba(123,104,238,.15),rgba(45,212,191,.07));border:1px solid rgba(123,104,238,.32);border-radius:var(--r);padding:14px 17px;margin-bottom:13px;cursor:pointer;text-align:left}
+.nudge:hover{border-color:rgba(123,104,238,.55)}
+.nudge-ico{font-size:22px;flex-shrink:0}
+.nudge-t{display:block;font-size:13.5px;font-weight:700;color:var(--text)}
+.nudge-s{display:block;font-size:12px;color:var(--t2);margin-top:2px}
+.nudge-arrow{margin-left:auto;color:var(--pl);font-size:17px;flex-shrink:0}
+
+.dp-block-row{display:flex;gap:8px;align-items:center;margin-bottom:9px}
+.dp-block-row .finput[type=time]{max-width:96px;flex-shrink:0}
+.dp-err{color:#ef4444;font-size:12.5px;min-height:17px;margin-top:9px}
+
+.tg-status{font-size:12px;color:var(--t2);margin-top:7px;min-height:16px;line-height:1.5}
+.tg-status.ok{color:#22c55e}
+.tg-status.err{color:#ef4444}
+.tg-status.warn{color:#f59e0b}
+.tg-btn-row{display:flex;gap:8px;margin-top:9px}
 </style>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
@@ -1084,7 +1139,6 @@ html[data-theme="light"]{
   <button class="snav" onclick="goPage('calendar',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-calendar"/></svg></span>Calendrier</button>
   <button class="snav" onclick="goPage('tasks',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-check-square"/></svg></span>Tâches</button>
   <button class="snav" onclick="goPage('habits',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-flame"/></svg></span>Habitudes</button>
-  <button class="snav" onclick="goPage('routine',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>Routine 21J</button>
     <button class="snav" onclick="goPage('focus',this)"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></span>Focus</button>
   <button class="snav" onclick="openSettings()"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></span>Réglages</button>
   <div class="sb-bottom mt-20">
@@ -1113,13 +1167,14 @@ html[data-theme="light"]{
     </div>
   </div>
 
-  <div class="why-banner" id="why-banner" onclick="openWhy()">
-    <div class="why-lbl"> Mon Pourquoi</div>
-    <div class="why-txt" id="why-text-today">Appuyez ici pour définir votre raison profonde...</div>
-    <div class="why-edit"><svg class="apex-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-pencil"/></svg> Modifier</div>
-  </div>
+  <!-- LEVER + GATE (boucle soir→matin) -->
+  <div id="wake-card"></div>
+  <div id="day-gate"></div>
+  <div id="day-plan"></div>
 
-  <div class="quote-card" id="quote-card"></div>
+  <div id="today-body">
+
+
 
   <div class="ring-wrap">
     <svg width="68" height="68" viewBox="0 0 68 68">
@@ -1139,11 +1194,6 @@ html[data-theme="light"]{
     </div>
   </div>
 
-  <div class="stats-row">
-    <div class="stat-card"><div class="stat-val" id="s-streak">0</div><div class="stat-lbl">Série</div></div>
-    <div class="stat-card"><div class="stat-val" id="s-week">0</div><div class="stat-lbl">Tâches</div></div>
-    <div class="stat-card"><div class="stat-val" id="s-habits">0%</div><div class="stat-lbl">Habitudes</div></div>
-  </div>
 
   <!-- Banner bilan du soir (affiché après 20h) -->
   <div id="evening-banner" style="display:none;background:linear-gradient(135deg,rgba(123,104,238,0.15),rgba(45,212,191,0.1));border:1px solid rgba(123,104,238,0.3);border-radius:var(--r);padding:14px 16px;margin-bottom:12px;cursor:pointer;display:none;align-items:center;gap:12px" onclick="openEveningRecap()">
@@ -1156,28 +1206,18 @@ html[data-theme="light"]{
   </div>
 
   <!-- Plan tomorrow button -->
-  <button class="plan-btn" onclick="openPlanModal(tomorrowDate())">
+  <div id="tomorrow-nudge"></div>
+  <button class="plan-btn" onclick="openDayPlanModal(tomorrowDate())">
     <div class="plan-btn-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg class="apex-ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-calendar-check"/></svg></div>
     <div class="plan-btn-txt">
       <div class="plan-btn-title">Préparer demain</div>
-      <div class="plan-btn-sub">Planifiez votre journée & générez votre Deep Work</div>
+      <div class="plan-btn-sub">Ta priorité + 2 blocs · 2 minutes</div>
     </div>
     <div class="plan-btn-arrow"></div>
   </button>
 
   <!-- OBJECTIF 90J -->
 
-  <!-- ROUTINE DU JOUR (widget compact) -->
-  <div class="today-routine-wrap" id="today-routine-widget">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <div>
-        <div class="slbl" style="margin-bottom:2px">Routine du jour</div>
-        <div style="font-size:11px;color:var(--t2)" id="today-routine-pct-label">0 / 10 habitudes</div>
-      </div>
-      <button onclick="goPage('routine',null)" style="background:var(--pd);border:1px solid rgba(123,104,238,.3);border-radius:var(--rsm);padding:5px 10px;font-size:10px;font-weight:700;color:var(--pl);cursor:pointer">Voir tout →</button>
-    </div>
-    <div class="today-routine-grid" id="today-routine-grid"></div>
-  </div>
 
   
 
@@ -1468,82 +1508,6 @@ html[data-theme="light"]{
 
 <!-- ═══ PAGE DIAGNOSTIC ═══ -->
 
-<!-- ═══ PAGE ROUTINE 21J ═══ -->
-<div class="page" id="page-routine">
-  <div class="page-hdr">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
-      <div>
-        <h2>Routine 21 Jours</h2>
-        <p>La constance crée l'identité. Pas la motivation.</p>
-      </div>
-      <div id="routine-day-badge" style="flex-shrink:0;background:var(--pd);border:1px solid rgba(123,104,238,.3);border-radius:var(--rsm);padding:8px 14px;text-align:center">
-        <div style="font-family:var(--font2);font-size:22px;font-weight:800;color:var(--pl);line-height:1" id="routine-day-num">J1</div>
-        <div style="font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-top:2px">/21 jours</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STATS ROW -->
-  <div class="analytics-strip" style="margin-bottom:16px">
-    <div class="an-card">
-      <div class="an-val" id="r-streak" style="color:var(--gold)">0🔥</div>
-      <div class="an-lbl">Streak</div>
-    </div>
-    <div class="an-card">
-      <div class="an-val" id="r-today-pct" style="color:var(--green)">0%</div>
-      <div class="an-lbl">Aujourd'hui</div>
-    </div>
-    <div class="an-card">
-      <div class="an-val" id="r-global-pct" style="color:var(--pl)">0%</div>
-      <div class="an-lbl">Global</div>
-    </div>
-  </div>
-
-  <!-- PROGRESS BAR 21J -->
-  <div class="card" style="margin-bottom:13px;padding:14px 16px">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-      <div class="slbl" style="margin:0">Progression 21 jours</div>
-      <div style="font-size:11px;color:var(--t3)" id="r-days-label">Jour 1 sur 21</div>
-    </div>
-    <div class="pbar" style="margin:0"><div class="pfill" id="r-prog-fill" style="width:0%"></div></div>
-    <!-- JOURS GRID -->
-    <div style="display:grid;grid-template-columns:repeat(21,1fr);gap:3px;margin-top:10px" id="r-days-grid"></div>
-  </div>
-
-  <!-- HABITS DU JOUR -->
-  <div class="card" style="margin-bottom:13px">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
-      <div>
-        <div class="slbl" style="margin-bottom:2px">Check du jour</div>
-        <div style="font-size:12px;color:var(--t2)" id="r-date-label">Chargement...</div>
-      </div>
-      <button class="btn btn-sm" onclick="resetRoutineDay()" style="background:transparent;border:1px solid var(--border2);color:var(--t3);font-size:10px">Reset jour</button>
-    </div>
-    <div id="r-habits-list"></div>
-  </div>
-
-  <!-- TRACKER 10x21 -->
-  <div class="card" style="margin-bottom:13px;padding:14px 16px;overflow-x:auto">
-    <div class="slbl" style="margin-bottom:12px">Tableau de suivi complet</div>
-    <div id="r-full-tracker" style="min-width:500px"></div>
-  </div>
-
-  <!-- RÈGLES -->
-  <div class="card" style="margin-bottom:13px">
-    <div class="slbl" style="margin-bottom:12px">Les 7 règles non-négociables</div>
-    <div id="r-rules-list"></div>
-  </div>
-
-  <!-- DATE DE DÉBUT -->
-  <div class="card-sm" style="margin-bottom:13px">
-    <div class="slbl" style="margin-bottom:8px">Date de début du programme</div>
-    <div style="display:flex;gap:8px;align-items:center">
-      <input type="date" class="finput" id="r-start-date" style="flex:1" onchange="setRoutineStartDate(this.value)">
-      <button class="btn btn-sm" onclick="startRoutineToday()">Commencer aujourd'hui</button>
-    </div>
-  </div>
-
-</div>
 
 <!-- ═══ PAGE MINDSET ═══ -->
 
@@ -1562,11 +1526,11 @@ html[data-theme="light"]{
 <div id="more-overlay" onclick="closeMoreMenu()"></div>
 <div id="more-menu">
   <button class="more-item" id="more-habits" onclick="moreNav('habits')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-flame"/></svg></span>Habitudes</button>
-  <button class="more-item" id="more-routine" onclick="moreNav('routine')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>Routine 21J</button>
     <button class="more-item" id="more-focus" onclick="moreNav('focus')"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-timer"/></svg></span>Focus</button>
   <div style="border-top:1px solid var(--border);margin:4px 0"></div>
   <button class="more-item" onclick="closeMoreMenu();openSettings()"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ico-sliders"/></svg></span>Réglages</button>
 </div>
+  </div><!-- /today-body -->
 </div>
 
 <!--  AD ENTRY MODAL  -->
@@ -1779,6 +1743,29 @@ html[data-theme="light"]{
     </div>
 
     <div class="setting-group" style="margin-top:14px">
+      <div class="sep"></div>
+      <div class="slbl mb-8">📲 Telegram — planifier à distance</div>
+      <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:6px">
+        <div class="setting-desc">Crée un bot avec <strong>@BotFather</strong> sur Telegram, colle son token ici, envoie <strong>/start</strong> à ton bot, puis clique sur Détecter.</div>
+        <input class="finput" id="s-tg-token" type="password" placeholder="123456789:AAE..." style="width:100%;box-sizing:border-box">
+        <input class="finput" id="s-tg-chat" placeholder="Chat ID (détecté automatiquement)" style="width:100%;box-sizing:border-box">
+        <div class="tg-btn-row">
+          <button class="btn btn-sm btn-ghost" onclick="tgDetectChat()">Détecter</button>
+          <button class="btn btn-sm btn-ghost" onclick="tgTest()">Envoyer un test</button>
+        </div>
+        <div class="tg-status" id="tg-status"></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Activer Telegram</div>
+        <div class="setting-desc">Lit tes messages à l'ouverture de l'app et envoie les rappels</div></div>
+        <label class="switch"><input type="checkbox" id="s-tg-on" checked><span class="slider"></span></label>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Heure de lever visée</div>
+        <div class="setting-desc">Sert de repère pour le bouton « Je suis debout »</div></div>
+        <input class="finput" type="time" id="s-wake-target" value="07:00" style="max-width:110px">
+      </div>
+
       <div class="slbl mb-8"><svg class="apex-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0"><use href="#ico-sparkles"/></svg> APEX IA (Claude API)</div>
       <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:6px">
         <div class="setting-label">Clé API Anthropic</div>
@@ -1794,6 +1781,37 @@ html[data-theme="light"]{
 </div>
 
 <!--  PLANNING MODAL  -->
+<!--  DAY PLAN MODAL (boucle soir→matin)  -->
+<div class="modal-ov" id="dp-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('dp-modal')">&times;</button>
+    <div class="modal-title" id="dp-modal-title">Préparer demain</div>
+    <div class="modal-sub">Une priorité, deux blocs. Rien de plus — c'est ce qui rend la chose tenable.</div>
+
+    <label class="flbl">La seule chose qui compte demain</label>
+    <input class="finput" id="dp-prio" placeholder="Ex : Rédiger les 3 articles SEO santiag" onkeypress="if(event.key==='Enter')saveDayPlan()">
+
+    <div class="sep"></div>
+    <label class="flbl">Bloc 1</label>
+    <div class="dp-block-row">
+      <input class="finput" type="time" id="dp-b0-start" value="08:00">
+      <input class="finput" type="time" id="dp-b0-end" value="10:00">
+      <input class="finput" id="dp-b0-label" placeholder="Sur quoi ?" style="flex:1">
+    </div>
+    <label class="flbl">Bloc 2</label>
+    <div class="dp-block-row">
+      <input class="finput" type="time" id="dp-b1-start" value="10:15">
+      <input class="finput" type="time" id="dp-b1-end" value="12:15">
+      <input class="finput" id="dp-b1-label" placeholder="Sur quoi ?" style="flex:1">
+    </div>
+
+    <div class="dp-err" id="dp-error"></div>
+    <div class="form-row mt-8">
+      <button class="btn" onclick="saveDayPlan()" style="flex:1">Enregistrer le plan</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-ov" id="plan-modal">
   <div class="modal">
     <button class="modal-close" onclick="closeModal('plan-modal')">×</button>
@@ -1902,12 +1920,15 @@ const DEFAULTS = {
   hc:{},         // {habitId: {dateStr: bool}}
   schedules:{},  // {dateStr: [block,...]}
   planOrders:{}, // {dateStr: [taskId,...]}
+  dayPlans:{},   // {dateStr:{prio,prioDone,blocks:[{start,end,label,done}],createdAt}}
+  wakeLog:{},    // {dateStr:'HH:MM'}
   settings:{
-    name:'Léo', workStart:'09:00', workEnd:'18:30',
+    name:'Léo', wakeTarget:'07:00', workStart:'09:00', workEnd:'18:30',
     dwDuration:90, restDuration:20, minDW:2,
     warmup:20, lunchDuration:60,
     notifDW:true, notifEnd:true, notifHabit:true, notifPlan:true,
-    habitReminderTime:'19:00', planReminderTime:'20:00',
+    habitReminderTime:'19:00', planReminderTime:'21:00',
+    tgToken:'', tgChatId:'', tgEnabled:true, tgOffset:0,
     claudeApiKey:'',
     firebaseConfig:'',
     syncDocId:'',
@@ -2135,67 +2156,6 @@ function durFmt(min){
 // Day of year
 function dayOfYear(d){ const s=new Date(d.getFullYear(),0,0); return Math.floor((d-s)/86400000); }
 
-// 
-// QUOTES  50 citations, une différente chaque jour
-// 
-const QUOTES=[
-  {t:'Votre vision de là où vous voulez aller est votre plus grand actif.',a:'Robin Sharma'},
-  {t:'La discipline est le pont entre les objectifs et les accomplissements.',a:'Jim Rohn'},
-  {t:'Le succès n\'est pas final, l\'échec n\'est pas fatal : c\'est le courage de continuer qui compte.',a:'Winston Churchill'},
-  {t:'Ce que vous faites chaque jour compte plus que ce que vous faites de temps en temps.',a:'Gretchen Rubin'},
-  {t:'Les gens n\'achètent pas ce que vous faites, ils achètent pourquoi vous le faites.',a:'Simon Sinek'},
-  {t:'Un objectif sans plan n\'est qu\'un souhait.',a:'Antoine de Saint-Exupéry'},
-  {t:'La productivité n\'est jamais un accident. C\'est toujours le résultat d\'un engagement envers l\'excellence.',a:'Paul J. Meyer'},
-  {t:'Commencez par la fin en tête.',a:'Stephen Covey'},
-  {t:'Chaque action est un vote pour le type de personne que vous voulez devenir.',a:'James Clear'},
-  {t:'La motivation vous met en route. L\'habitude vous maintient en mouvement.',a:'Jim Ryun'},
-  {t:'Ce n\'est pas ce que nous faisons parfois qui façonne notre vie  c\'est ce que nous faisons constamment.',a:'Tony Robbins'},
-  {t:'Travaillez en profondeur ou devenez obsolète.',a:'Cal Newport'},
-  {t:'Vous ne montez pas un montagne pour que le monde vous voit. Vous montez pour voir le monde.',a:'David McCullough Jr.'},
-  {t:'Le secret du changement est de concentrer toute votre énergie non pas à combattre l\'ancien, mais à construire le nouveau.',a:'Socrate'},
-  {t:'L\'excellence est un art gagné par l\'entraînement et l\'habitude.',a:'Aristote'},
-  {t:'Les grandes choses ne sont jamais faites par impulsion, mais par une série de petites choses réunies.',a:'Vincent Van Gogh'},
-  {t:'Faites ce qui est difficile pendant que c\'est facile.',a:'Lao Tseu'},
-  {t:'Votre temps est limité. Ne le gaspillez pas à vivre la vie de quelqu\'un d\'autre.',a:'Steve Jobs'},
-  {t:'Si vous ne construisez pas votre rêve, quelqu\'un vous emploiera pour construire le sien.',a:'Tony Gaskins'},
-  {t:'Le moment présent était autrefois l\'avenir que vous espériez.',a:'Unknown'},
-  {t:'Le succès c\'est aller d\'échec en échec sans perdre son enthousiasme.',a:'Winston Churchill'},
-  {t:'Votre cerveau est pour avoir des idées, pas pour les retenir.',a:'David Allen'},
-  {t:'Concentrez-vous sur ce que vous contrôlez et laissez aller le reste.',a:'Marc Aurèle'},
-  {t:'La peur de souffrir est pire que la souffrance elle-même.',a:'Paulo Coelho'},
-  {t:'N\'attendez pas. Le temps ne sera jamais parfaitement opportun.',a:'Napoleon Hill'},
-  {t:'Chaque maître a d\'abord été un débutant.',a:'Robin Sharma'},
-  {t:'Visualisez vos priorités de manière si claire qu\'elles deviennent incontournables.',a:'Gary Keller'},
-  {t:'La vitesse est inutile si vous courez dans la mauvaise direction.',a:'Gandhi'},
-  {t:'Dormez suffisamment. La performance cognitive commence là.',a:'Matthew Walker'},
-  {t:'Le Deep Work est la capacité de se concentrer sans distraction sur une tâche cognitivement exigeante.',a:'Cal Newport'},
-  {t:'Votre calendrier est votre autobiographie.',a:'Unknown'},
-  {t:'Faire plus n\'est pas toujours la réponse. Faire mieux l\'est souvent.',a:'Unknown'},
-  {t:'Les limites sont source de créativité.',a:'T.S. Eliot'},
-  {t:'Dites non à presque tout pour pouvoir dire oui à ce qui compte vraiment.',a:'Warren Buffett'},
-  {t:'Le flux naît quand le défi rencontre la compétence.',a:'Mihaly Csikszentmihalyi'},
-  {t:'La clarté est la forme la plus haute de la productivité.',a:'Unknown'},
-  {t:'Agissez comme si ce que vous faites faisait une différence. Ça en fait une.',a:'William James'},
-  {t:'Toute grande réalisation a nécessité du temps.',a:'Maya Angelou'},
-  {t:'Ce n\'est pas ce que vous portez, c\'est ce que vous accomplissez.',a:'Unknown'},
-  {t:'La première heure de la journée est la gouvernante du reste.',a:'H.W. Beecher'},
-  {t:'Vous êtes la somme de vos cinq habitudes les plus fréquentes.',a:'James Clear'},
-  {t:'Un plan simple exécuté avec vigueur vaut mieux qu\'un plan brillant inexécuté.',a:'George Patton'},
-  {t:'Le talent est courant. L\'engagement envers votre art ne l\'est pas.',a:'Stephen King'},
-  {t:'Chaque soir, réfléchissez à ce que vous avez accompli. Chaque matin, décidez à quoi vous vous engagez.',a:'Unknown'},
-  {t:'La procrastination est le voleur du temps, le tueur des rêves.',a:'Victor Hugo'},
-  {t:'La force ne vient pas de la capacité physique mais d\'une volonté indomptable.',a:'Gandhi'},
-  {t:'Faites de chaque journée votre chef-d\'uvre.',a:'John Wooden'},
-  {t:'Ce qui se mesure s\'améliore.',a:'Peter Drucker'},
-  {t:'Investissez les trois premières heures de votre journée dans vous-même.',a:'Robin Sharma'},
-  {t:'L\'inaction engendre le doute et la peur. L\'action engendre confiance et courage.',a:'Dale Carnegie'},
-];
-function dayQuote(){
-  const now=new Date();
-  // Seed unique par jour : combinaison de l'année, du mois et du jour
-  const seed=(now.getFullYear()*366+dayOfYear(now)+now.getDate()*13+now.getMonth()*7);
-  return QUOTES[seed%QUOTES.length];
-}
 
 // 
 // NAVIGATION
@@ -2204,7 +2164,7 @@ let curPage='today';
 let selDay=today();
 let weekOffset=0;
 
-const MORE_PAGES=['habits','routine','focus'];
+const MORE_PAGES=['habits','focus'];
 function goPage(name,el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const pg=document.getElementById('page-'+name);
@@ -2232,7 +2192,6 @@ function render(p){
     case'notes':    renderNotes();    break;
     case'calendar': renderCalendar(); break;
     case'focus':     renderFocus();     break;
-    case'routine':    renderRoutine();    break;
   }
 }
 function goPageAndAdd(){
@@ -2269,13 +2228,6 @@ function renderToday(){
   document.getElementById('today-date').textContent=
     `${DAYS[now.getDay()]} ${now.getDate()} ${MONTHS[now.getMonth()]} ${now.getFullYear()}`;
 
-  const w=D.why||'Appuyez ici pour définir votre raison profonde...';
-  document.getElementById('why-text-today').textContent=w;
-
-  const q=dayQuote();
-  document.getElementById('quote-card').innerHTML=
-    `<div class="quote-txt">"${esc(q.t)}"</div><div class="quote-auth"> ${esc(q.a)}</div>`;
-
   const t=today();
   const todayTasks=D.tasks.filter(x=>x.date===t);
   const done=todayTasks.filter(x=>x.done).length;
@@ -2286,10 +2238,10 @@ function renderToday(){
   const circ=169.65;
   document.getElementById('prog-circle').style.strokeDashoffset=circ-(pct/100)*circ;
 
-  document.getElementById('s-streak').textContent=calcMaxStreak();
-  document.getElementById('s-week').textContent=calcWeekDone();
-  document.getElementById('s-habits').textContent=calcTodayHabits()+'%';
-  renderAnalytics();  renderTodayExtras();
+  renderAnalytics();
+  renderWakeCard();
+  renderTomorrowNudge();
+  renderDayGate();
 
   // Deep Work schedule section
   const schSec=document.getElementById('today-schedule-section');
@@ -2758,6 +2710,11 @@ function openSettings(){
   const s=D.settings;
   const thEl=document.getElementById('s-theme'); if(thEl) thEl.value=s.theme||'dark';
   document.getElementById('s-name').value=s.name||'Léo';
+  document.getElementById('s-tg-token').value=s.tgToken||'';
+  document.getElementById('s-tg-chat').value=s.tgChatId||'';
+  document.getElementById('s-tg-on').checked=s.tgEnabled!==false;
+  document.getElementById('s-wake-target').value=s.wakeTarget||'07:00';
+  const tgs=document.getElementById('tg-status'); if(tgs){tgs.textContent='';tgs.className='tg-status';}
   document.getElementById('s-start').value=s.workStart||'09:00';
   document.getElementById('s-end').value=s.workEnd||'18:30';
   document.getElementById('s-dw-dur').value=s.dwDuration||90;
@@ -2848,6 +2805,11 @@ function saveSettings(){
     notifPlan:document.getElementById('s-notif-plan').checked,
     habitReminderTime:document.getElementById('s-habit-time').value,
     planReminderTime:document.getElementById('s-plan-time').value,
+    tgToken:(document.getElementById('s-tg-token').value||'').trim(),
+    tgChatId:(document.getElementById('s-tg-chat').value||'').trim(),
+    tgEnabled:document.getElementById('s-tg-on').checked,
+    tgOffset:D.settings.tgOffset||0,
+    wakeTarget:document.getElementById('s-wake-target').value||'07:00',
     claudeApiKey:(document.getElementById('s-claude-key').value||'').replace(/[\s\u200B-\u200D\uFEFF]/g,'')||D.settings.claudeApiKey||'',
     theme:document.getElementById('s-theme')?.value||D.settings.theme||'dark',
     firebaseConfig:D.settings.firebaseConfig||'',
@@ -3166,9 +3128,10 @@ function pollNotifications(){
     if(curMin===hh*60+mm2&&curSec<35&&!hasFiredn(tag)){
       const tmr=new Date(now); tmr.setDate(tmr.getDate()+1);
       const tmrStr=ds(tmr);
-      if(!(D.schedules||{})[tmrStr]?.length){
+      if(!planIsValid((D.dayPlans||{})[tmrStr])){
         markFired(tag);
-        fireNotif('','Planifier demain','Prenez 5 minutes pour organiser votre journée de demain.',tag);
+        fireNotif('','Planifie demain','2 minutes : ta priorité + 2 blocs. Sans ça, demain part en vrille.',tag);
+        tgEveningReminder();
       }
     }
   }
@@ -3221,6 +3184,364 @@ function seedData(){
 // 
 // INIT
 // 
+// ═══════════════════════════════════════════════════════════════
+// BOUCLE SOIR → MATIN
+// ═══════════════════════════════════════════════════════════════
+const DEFAULT_BLOCKS = [
+  { start:'08:00', end:'10:00' },
+  { start:'10:15', end:'12:15' }
+];
+
+function getDayPlan(dateStr){ return (D.dayPlans||{})[dateStr]||null; }
+
+function planIsValid(p){
+  if(!p) return false;
+  if(!p.prio||!p.prio.trim()) return false;
+  const b=(p.blocks||[]).filter(x=>x.label&&x.label.trim());
+  return b.length>=2;
+}
+
+// ── Bouton "Je suis debout" ─────────────────────────────────────
+function markWakeUp(){
+  const now=new Date();
+  const hh=String(now.getHours()).padStart(2,'0');
+  const mm=String(now.getMinutes()).padStart(2,'0');
+  D.wakeLog=D.wakeLog||{};
+  D.wakeLog[today()]=hh+':'+mm;
+  save();
+  renderToday();
+  showToast('Debout à '+hh+':'+mm+' — la journée commence.');
+}
+
+function renderWakeCard(){
+  const el=document.getElementById('wake-card'); if(!el) return;
+  const t=today();
+  const logged=(D.wakeLog||{})[t];
+  const h=new Date().getHours();
+  if(logged){
+    el.innerHTML='<div class="wake-done">Debout à <b>'+logged+'</b>'+wakeCompare(logged)+'</div>';
+    return;
+  }
+  if(h>=12){ el.innerHTML=''; return; }   // plus pertinent l'après-midi
+  el.innerHTML='<button class="wake-btn" onclick="markWakeUp()">'
+    +'<span class="wake-emoji">☀️</span>'
+    +'<span><span class="wake-t">Je suis debout</span>'
+    +'<span class="wake-s">Enregistre ton heure de lever réelle</span></span></button>';
+}
+
+function wakeCompare(logged){
+  const target=(D.settings.wakeTarget||'07:00');
+  const toMin=s=>{const[a,b]=s.split(':').map(Number);return a*60+b;};
+  const diff=toMin(logged)-toMin(target);
+  if(diff<=0) return ' <span class="wake-ok">à l\'heure</span>';
+  if(diff<=15) return ' <span class="wake-ok">+'+diff+' min</span>';
+  return ' <span class="wake-late">+'+diff+' min sur l\'objectif ('+target+')</span>';
+}
+
+// ── Écran bloquant si pas de plan ───────────────────────────────
+function renderDayGate(){
+  const gate=document.getElementById('day-gate');
+  const body=document.getElementById('today-body');
+  const planEl=document.getElementById('day-plan');
+  if(!gate||!body) return;
+  const t=today();
+  const plan=getDayPlan(t);
+
+  if(planIsValid(plan)){
+    gate.innerHTML='';
+    body.style.display='';
+    renderDayPlan(plan,t);
+    return;
+  }
+
+  body.style.display='none';
+  planEl.innerHTML='';
+  const yPlan=getDayPlan(ds(new Date(Date.now()-86400000)));
+  const missedYesterday=yPlan&&!dayWasValidated(yPlan);
+  gate.innerHTML='<div class="gate">'
+    +'<div class="gate-ico">🎯</div>'
+    +'<div class="gate-t">Tu n\'as pas planifié cette journée</div>'
+    +'<div class="gate-s">Deux minutes maintenant : ta priorité et deux blocs. '
+    +'Sans plan, la journée se décide à la minute — et ce n\'est jamais toi qui gagnes.</div>'
+    +(missedYesterday?'<div class="gate-warn">⚠️ Hier n\'a pas été validé. Deux jours de suite, c\'est comme ça que ça décroche.</div>':'')
+    +'<button class="gate-btn" onclick="openDayPlanModal(today())">Planifier maintenant</button>'
+    +'</div>';
+}
+
+function dayWasValidated(p){
+  if(!p) return false;
+  return !!p.prioDone && (p.blocks||[]).filter(b=>b.done).length>=2;
+}
+
+// ── Affichage du plan du jour ───────────────────────────────────
+function renderDayPlan(plan,dateStr){
+  const el=document.getElementById('day-plan'); if(!el) return;
+  const blocks=(plan.blocks||[]).filter(b=>b.label&&b.label.trim());
+  el.innerHTML='<div class="dplan">'
+    +'<div class="dplan-hdr">'
+      +'<span class="dplan-lbl">La priorité du jour</span>'
+      +'<button class="dplan-edit" onclick="openDayPlanModal(\''+dateStr+'\')">Modifier</button>'
+    +'</div>'
+    +'<div class="dplan-prio'+(plan.prioDone?' done':'')+'" onclick="toggleDayPrio(\''+dateStr+'\')">'
+      +'<span class="dplan-chk'+(plan.prioDone?' done':'')+'">'+(plan.prioDone?'✓':'')+'</span>'
+      +'<span class="dplan-prio-txt">'+esc(plan.prio)+'</span>'
+    +'</div>'
+    +'<div class="dplan-blocks">'
+    +blocks.map((b,i)=>'<div class="dblock'+(b.done?' done':'')+'" onclick="toggleDayBlock(\''+dateStr+'\','+i+')">'
+        +'<span class="dplan-chk'+(b.done?' done':'')+'">'+(b.done?'✓':'')+'</span>'
+        +'<span class="dblock-time">'+esc(b.start)+' – '+esc(b.end)+'</span>'
+        +'<span class="dblock-lbl">'+esc(b.label)+'</span>'
+      +'</div>').join('')
+    +'</div></div>';
+}
+
+function toggleDayPrio(dateStr){
+  const p=getDayPlan(dateStr); if(!p) return;
+  p.prioDone=!p.prioDone; save(); renderToday();
+}
+function toggleDayBlock(dateStr,i){
+  const p=getDayPlan(dateStr); if(!p||!p.blocks[i]) return;
+  p.blocks[i].done=!p.blocks[i].done; save(); renderToday();
+}
+
+// ── Modal de planification ──────────────────────────────────────
+let _dpDate=null;
+function openDayPlanModal(dateStr){
+  _dpDate=dateStr;
+  const p=getDayPlan(dateStr)||{prio:'',blocks:DEFAULT_BLOCKS.map(b=>({...b,label:'',done:false}))};
+  const isToday=dateStr===today();
+  const d=parseDate(dateStr);
+  document.getElementById('dp-modal-title').textContent=
+    isToday?'Planifier aujourd\'hui':'Préparer '+DAYS[d.getDay()]+' '+d.getDate()+' '+MONTHS[d.getMonth()];
+  document.getElementById('dp-prio').value=p.prio||'';
+  const bl=p.blocks&&p.blocks.length>=2?p.blocks:DEFAULT_BLOCKS.map(b=>({...b,label:''}));
+  for(let i=0;i<2;i++){
+    document.getElementById('dp-b'+i+'-start').value=bl[i]?.start||DEFAULT_BLOCKS[i].start;
+    document.getElementById('dp-b'+i+'-end').value=bl[i]?.end||DEFAULT_BLOCKS[i].end;
+    document.getElementById('dp-b'+i+'-label').value=bl[i]?.label||'';
+  }
+  document.getElementById('dp-error').textContent='';
+  openModal('dp-modal');
+  setTimeout(()=>document.getElementById('dp-prio').focus(),250);
+}
+
+function saveDayPlan(){
+  const prio=document.getElementById('dp-prio').value.trim();
+  const blocks=[];
+  for(let i=0;i<2;i++){
+    blocks.push({
+      start:document.getElementById('dp-b'+i+'-start').value||DEFAULT_BLOCKS[i].start,
+      end:document.getElementById('dp-b'+i+'-end').value||DEFAULT_BLOCKS[i].end,
+      label:document.getElementById('dp-b'+i+'-label').value.trim(),
+      done:false
+    });
+  }
+  const err=document.getElementById('dp-error');
+  if(!prio){ err.textContent='Il faut une priorité — une seule chose qui compte vraiment.'; return; }
+  if(blocks.filter(b=>b.label).length<2){ err.textContent='Il faut remplir les deux blocs. C\'est le minimum.'; return; }
+
+  const existing=getDayPlan(_dpDate);
+  D.dayPlans=D.dayPlans||{};
+  D.dayPlans[_dpDate]={
+    prio,
+    prioDone:existing?existing.prioDone:false,
+    blocks:blocks.map((b,i)=>({...b,done:existing&&existing.blocks&&existing.blocks[i]?existing.blocks[i].done:false})),
+    createdAt:existing?existing.createdAt:Date.now()
+  };
+
+  // crée la tâche correspondante si elle n'existe pas déjà
+  const already=(D.tasks||[]).some(x=>x.date===_dpDate&&x.title===prio);
+  if(!already){
+    D.tasks.push({id:uid(),title:prio,priority:'high',domain:'business',
+      done:false,date:_dpDate,subtasks:[],createdAt:Date.now()});
+  }
+  save();
+  closeModal('dp-modal');
+  render(curPage);
+  showToast(_dpDate===today()?'Journée planifiée. Exécute.':'Demain est prêt. Bonne soirée.');
+}
+
+// ── Rappel visuel si demain n'est pas planifié (soir) ────────────
+function renderTomorrowNudge(){
+  const el=document.getElementById('tomorrow-nudge'); if(!el) return;
+  const h=new Date().getHours();
+  const tmr=tomorrowDate();
+  if(h<17||planIsValid(getDayPlan(tmr))){ el.innerHTML=''; return; }
+  el.innerHTML='<button class="nudge" onclick="openDayPlanModal(\''+tmr+'\')">'
+    +'<span class="nudge-ico">🌙</span>'
+    +'<span><span class="nudge-t">Demain n\'est pas planifié</span>'
+    +'<span class="nudge-s">2 minutes maintenant — ou tu improviseras demain matin</span></span>'
+    +'<span class="nudge-arrow">→</span></button>';
+}
+
+
+// ═══════════════════════════════════════════════════════════════
+// TELEGRAM — planifier à distance + rappels
+// ═══════════════════════════════════════════════════════════════
+function tgCfg(){
+  const s=D.settings||{};
+  return { token:(s.tgToken||'').trim(), chat:(s.tgChatId||'').trim(), on:s.tgEnabled!==false };
+}
+function tgReady(){ const c=tgCfg(); return !!(c.token&&c.chat&&c.on); }
+
+async function tgApi(method,params){
+  const c=tgCfg();
+  if(!c.token) throw new Error('Token Telegram manquant');
+  const r=await fetch('https://api.telegram.org/bot'+c.token+'/'+method,{
+    method:'POST',headers:{'content-type':'application/json'},
+    body:JSON.stringify(params||{})
+  });
+  const j=await r.json();
+  if(!j.ok) throw new Error(j.description||'Erreur Telegram');
+  return j.result;
+}
+
+async function tgSend(text){
+  if(!tgReady()) return false;
+  try{ await tgApi('sendMessage',{chat_id:tgCfg().chat,text,parse_mode:'HTML'}); return true; }
+  catch(e){ console.warn('[TG] envoi échoué',e.message); return false; }
+}
+
+// ── Réglages : détecter le chat id ──────────────────────────────
+async function tgDetectChat(){
+  const st=document.getElementById('tg-status');
+  const token=document.getElementById('s-tg-token').value.trim();
+  if(!token){ st.textContent='Colle d\'abord le token du bot.'; st.className='tg-status err'; return; }
+  D.settings.tgToken=token;
+  st.textContent='Recherche…'; st.className='tg-status';
+  try{
+    const me=await tgApi('getMe');
+    const ups=await tgApi('getUpdates',{limit:20,timeout:0});
+    const last=[...ups].reverse().find(u=>u.message&&u.message.chat);
+    if(!last){
+      st.innerHTML='Bot <b>@'+me.username+'</b> trouvé. Maintenant envoie-lui <b>/start</b> depuis Telegram, puis reclique ici.';
+      st.className='tg-status warn'; return;
+    }
+    document.getElementById('s-tg-chat').value=String(last.message.chat.id);
+    D.settings.tgChatId=String(last.message.chat.id);
+    st.innerHTML='Connecté à <b>@'+me.username+'</b> · chat '+last.message.chat.id;
+    st.className='tg-status ok';
+  }catch(e){ st.textContent='Échec : '+e.message; st.className='tg-status err'; }
+}
+
+async function tgTest(){
+  const st=document.getElementById('tg-status');
+  D.settings.tgToken=document.getElementById('s-tg-token').value.trim();
+  D.settings.tgChatId=document.getElementById('s-tg-chat').value.trim();
+  D.settings.tgEnabled=true;
+  st.textContent='Envoi…'; st.className='tg-status';
+  const ok=await tgSend('✅ <b>APEX est connecté.</b>\n\nPour planifier depuis ton téléphone, envoie :\n\n<code>/demain\nMa priorité\n8h-10h Premier bloc\n10h15-12h15 Second bloc</code>');
+  st.textContent=ok?'Message envoyé — vérifie Telegram.':'Échec de l\'envoi. Vérifie le token et le chat id.';
+  st.className='tg-status '+(ok?'ok':'err');
+}
+
+// ── Lecture des messages entrants ───────────────────────────────
+let _tgPolling=false;
+async function tgPoll(silent){
+  if(!tgReady()||_tgPolling) return;
+  _tgPolling=true;
+  try{
+    const offset=D.settings.tgOffset||0;
+    const ups=await tgApi('getUpdates',{offset,limit:30,timeout:0});
+    let maxId=offset;
+    for(const u of ups){
+      maxId=Math.max(maxId,u.update_id+1);
+      const m=u.message; if(!m||!m.text) continue;
+      if(String(m.chat.id)!==tgCfg().chat) continue;
+      await tgHandle(m.text);
+    }
+    if(maxId!==offset){ D.settings.tgOffset=maxId; save(); }
+  }catch(e){ if(!silent) console.warn('[TG] poll',e.message); }
+  _tgPolling=false;
+}
+
+async function tgHandle(text){
+  const raw=text.trim();
+  const lines=raw.split('\n').map(l=>l.trim()).filter(Boolean);
+  const cmd=(lines[0]||'').toLowerCase().replace(/^\//,'').split(/[\s@]/)[0];
+
+  if(cmd==='aide'||cmd==='help'||cmd==='start'){
+    await tgSend('<b>APEX — commandes</b>\n\n'
+      +'<code>/demain</code> puis, ligne par ligne :\n'
+      +'ta priorité\npuis un bloc par ligne\n\n'
+      +'<b>Exemple :</b>\n<code>/demain\nRédiger 3 articles santiag\n8h-10h Rédaction\n10h15-12h15 Relecture</code>\n\n'
+      +'<code>/aujourdhui</code> — même chose pour aujourd\'hui\n'
+      +'<code>/etat</code> — où j\'en suis');
+    return;
+  }
+
+  if(cmd==='etat'||cmd==='état'||cmd==='status'){
+    const t=today(), p=getDayPlan(t);
+    const tmr=getDayPlan(tomorrowDate());
+    let msg='<b>État APEX</b>\n\n';
+    if(planIsValid(p)){
+      msg+='Aujourd\'hui : '+(p.prioDone?'✅':'⬜')+' '+escTg(p.prio)+'\n';
+      p.blocks.forEach(b=>{ if(b.label) msg+='  '+(b.done?'✅':'⬜')+' '+b.start+'–'+b.end+' '+escTg(b.label)+'\n'; });
+    } else msg+='Aujourd\'hui : <i>pas de plan</i>\n';
+    msg+='\nDemain : '+(planIsValid(tmr)?'✅ '+escTg(tmr.prio):'<i>pas encore planifié</i>');
+    const w=(D.wakeLog||{})[t];
+    if(w) msg+='\n\nLevé à '+w;
+    await tgSend(msg);
+    return;
+  }
+
+  if(cmd!=='demain'&&cmd!=='plan'&&cmd!=='aujourdhui'&&cmd!=="aujourd'hui"&&cmd!=='today') return;
+
+  const dateStr=(cmd==='aujourdhui'||cmd==="aujourd'hui"||cmd==='today')?today():tomorrowDate();
+  const body=lines.slice(1);
+  if(!body.length){
+    await tgSend('Il manque le contenu. Envoie :\n<code>/demain\nta priorité\n8h-10h bloc 1\n10h15-12h15 bloc 2</code>');
+    return;
+  }
+
+  const prio=body[0];
+  const blocks=[];
+  const rx=/^(\d{1,2})\s*[h:]\s*(\d{2})?\s*[-–—à]\s*(\d{1,2})\s*[h:]\s*(\d{2})?\s*(.*)$/i;
+  for(const line of body.slice(1)){
+    const m=line.match(rx);
+    if(m&&m[5]&&m[5].trim()){
+      const pad=n=>String(n).padStart(2,'0');
+      blocks.push({start:pad(m[1])+':'+(m[2]||'00'),end:pad(m[3])+':'+(m[4]||'00'),label:m[5].trim(),done:false});
+    } else if(line.length>2){
+      const i=blocks.length;
+      const d=DEFAULT_BLOCKS[i]||DEFAULT_BLOCKS[DEFAULT_BLOCKS.length-1];
+      blocks.push({start:d.start,end:d.end,label:line,done:false});
+    }
+  }
+  if(blocks.length<2){
+    await tgSend('⚠️ Il faut <b>deux blocs</b>, pas '+blocks.length+'. C\'est le minimum pour que la journée tienne.\n\n<code>/demain\n'+escTg(prio)+'\n8h-10h premier bloc\n10h15-12h15 second bloc</code>');
+    return;
+  }
+
+  const ex=getDayPlan(dateStr);
+  D.dayPlans=D.dayPlans||{};
+  D.dayPlans[dateStr]={prio,prioDone:ex?ex.prioDone:false,blocks:blocks.slice(0,4),createdAt:ex?ex.createdAt:Date.now(),via:'telegram'};
+  if(!(D.tasks||[]).some(x=>x.date===dateStr&&x.title===prio)){
+    D.tasks.push({id:uid(),title:prio,priority:'high',domain:'business',done:false,date:dateStr,subtasks:[],createdAt:Date.now()});
+  }
+  save();
+  if(typeof curPage!=='undefined'&&curPage==='today') renderToday();
+  showToast('Plan reçu par Telegram');
+
+  const quand=dateStr===today()?'Aujourd\'hui':'Demain';
+  await tgSend('✅ <b>'+quand+' est planifié.</b>\n\n🎯 '+escTg(prio)+'\n'
+    +blocks.slice(0,4).map(b=>'· '+b.start+'–'+b.end+' '+escTg(b.label)).join('\n')
+    +'\n\nÇa t\'attend dans APEX.');
+}
+
+function escTg(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// ── Rappel du soir par Telegram ─────────────────────────────────
+async function tgEveningReminder(){
+  if(!tgReady()) return;
+  const tmr=tomorrowDate();
+  if(planIsValid(getDayPlan(tmr))) return;
+  await tgSend('🌙 <b>Demain n\'est pas planifié.</b>\n\n'
+    +'Deux minutes, ici même :\n\n'
+    +'<code>/demain\nta priorité\n8h-10h bloc 1\n10h15-12h15 bloc 2</code>');
+}
+
+
 function init(){
   if(!D.tasks.length&&!D.habits.length&&!D.goals.length) seedData();
   if(!D.projects||D.projects.length===0) D.projects=[...DEFAULT_PROJECTS];
@@ -3234,6 +3555,9 @@ function init(){
   setInterval(()=>{ if(curPage==='today') renderToday(); updateSidebarDate(); },60000);
   setInterval(tickDWTimer,5000); tickDWTimer();
   setInterval(pollNotifications,30000); pollNotifications();
+  setTimeout(()=>tgPoll(true),1200);
+  setInterval(()=>tgPoll(true),60000);
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) tgPoll(true); });
 
   // PWA  Service Worker
   if('serviceWorker' in navigator){
@@ -5085,273 +5409,6 @@ function initAuth(){
 
 setTimeout(initAuth,0);
 
-
-
-// ═══════════════════════════════════════════════════════════════
-// TODAY — WIDGET ROUTINE + OBJECTIF 90J
-// ═══════════════════════════════════════════════════════════════
-
-function renderTodayExtras(){
-  // Routine widget compact
-  const todayStr = new Date().toISOString().split('T')[0];
-  const r = getRoutineData();
-  const todayChecks = (r.checks && r.checks[todayStr]) || {};
-  const doneCount = ROUTINE_HABITS.filter(h => todayChecks[h.id]).length;
-
-  const pctLbl = document.getElementById('today-routine-pct-label');
-  if(pctLbl) pctLbl.textContent = doneCount + ' / ' + ROUTINE_HABITS.length + ' habitudes cochées';
-
-  const grid = document.getElementById('today-routine-grid');
-  if(grid){
-    grid.innerHTML = ROUTINE_HABITS.map(h => {
-      const done = !!(todayChecks[h.id]);
-      return `<div class="trh-item${done?' done':''}" onclick="toggleRoutineHabit('${h.id}','${todayStr}');renderTodayExtras()">
-        <div class="trh-chk${done?' done':''}">${done?'✓':''}</div>
-        <span class="trh-txt">${h.emoji} ${h.label}</span>
-      </div>`;
-    }).join('');
-  }
-}
-
-// ═══════════════════════════════════════════════════════════════
-// ROUTINE 21 JOURS
-// ═══════════════════════════════════════════════════════════════
-const ROUTINE_HABITS = [
-  { id:'wake',    emoji:'🌅', label:'Réveil avant 5h30' },
-  { id:'noscreen',emoji:'📵', label:'15 min sans écran au réveil' },
-  { id:'read',    emoji:'📖', label:'Lecture 10 min' },
-  { id:'visual',  emoji:'🎯', label:'Visualisation 3 min' },
-  { id:'dw1',     emoji:'⚡', label:'Deep Work #1 (5h30–7h)' },
-  { id:'dw2',     emoji:'🔥', label:'Deep Work #2 (9h–12h30)' },
-  { id:'copine',  emoji:'🚫', label:'Pas réveillé copine av. 7h' },
-  { id:'sport',   emoji:'🏋️', label:'Sport (salle ou marche)' },
-  { id:'journal', emoji:'📓', label:'Journal intégrité 5 min' },
-  { id:'sleep',   emoji:'😴', label:'Coucher avant 22h30' },
-];
-
-const ROUTINE_RULES = [
-  'Tu ne réveilles plus ta copine avant 7h. Aucune exception.',
-  'Tu te couches à 22h30 maximum. Pas "juste un épisode".',
-  'Les 15 premières minutes après le réveil sont sans écran.',
-  'Le créneau 9h–12h30 est sacré. Téléphone en avion.',
-  'Les jours sans salle, tu marches 30 min minimum dehors.',
-  'La lecture se fait le matin, pas le soir.',
-  'Chaque dimanche soir, tu planifies ta semaine entière.',
-];
-
-function getRoutineData(){
-  if(!D.routine21) D.routine21 = { startDate: null, checks: {} };
-  return D.routine21;
-}
-
-function getRoutineDateKey(date){
-  return date.toISOString().split('T')[0];
-}
-
-function getRoutineDayIndex(dateStr){
-  const r = getRoutineData();
-  if(!r.startDate) return -1;
-  const start = new Date(r.startDate);
-  const target = new Date(dateStr);
-  const diff = Math.floor((target - start) / 86400000);
-  return diff; // 0-based
-}
-
-function setRoutineStartDate(val){
-  const r = getRoutineData();
-  r.startDate = val;
-  save();
-  renderRoutine();
-}
-
-function startRoutineToday(){
-  const today = getRoutineDateKey(new Date());
-  document.getElementById('r-start-date').value = today;
-  setRoutineStartDate(today);
-  apexNotif('success','Routine démarrée !','Aujourd\'hui = Jour 1. Sans exception.');
-}
-
-function toggleRoutineHabit(habitId, dateStr){
-  const r = getRoutineData();
-  if(!r.checks[dateStr]) r.checks[dateStr] = {};
-  r.checks[dateStr][habitId] = !r.checks[dateStr][habitId];
-  save();
-  renderRoutine();
-}
-
-function resetRoutineDay(){
-  const r = getRoutineData();
-  const today = getRoutineDateKey(new Date());
-  r.checks[today] = {};
-  save();
-  renderRoutine();
-}
-
-function getRoutineStreak(){
-  const r = getRoutineData();
-  if(!r.startDate) return 0;
-  let streak = 0;
-  const today = new Date();
-  for(let i=0; i<21; i++){
-    const d = new Date(today);
-    d.setDate(d.getDate() - i);
-    const key = getRoutineDateKey(d);
-    const checks = r.checks[key] || {};
-    const count = ROUTINE_HABITS.filter(h => checks[h.id]).length;
-    if(count >= 7) streak++;
-    else if(i > 0) break;
-  }
-  return streak;
-}
-
-function renderRoutine(){
-  const r = getRoutineData();
-  const today = new Date();
-  const todayStr = getRoutineDateKey(today);
-
-  // Date de début
-  const startInput = document.getElementById('r-start-date');
-  if(startInput && r.startDate) startInput.value = r.startDate;
-
-  // Jour actuel dans le programme
-  const dayIdx = r.startDate ? getRoutineDayIndex(todayStr) : -1;
-  const dayNum = dayIdx >= 0 && dayIdx < 21 ? dayIdx + 1 : (dayIdx >= 21 ? 21 : 1);
-  const el = document.getElementById('routine-day-num');
-  if(el) el.textContent = 'J' + (r.startDate ? Math.max(1, Math.min(21, dayNum)) : '?');
-
-  // Stats
-  const todayChecks = r.checks[todayStr] || {};
-  const todayCount = ROUTINE_HABITS.filter(h => todayChecks[h.id]).length;
-  const todayPct = Math.round(todayCount / ROUTINE_HABITS.length * 100);
-
-  let totalChecks = 0, totalPossible = 0;
-  if(r.startDate){
-    const start = new Date(r.startDate);
-    for(let i=0; i<21; i++){
-      const d = new Date(start);
-      d.setDate(d.getDate() + i);
-      if(d > today) break;
-      const key = getRoutineDateKey(d);
-      const checks = r.checks[key] || {};
-      totalChecks += ROUTINE_HABITS.filter(h => checks[h.id]).length;
-      totalPossible += ROUTINE_HABITS.length;
-    }
-  }
-  const globalPct = totalPossible > 0 ? Math.round(totalChecks / totalPossible * 100) : 0;
-  const streak = getRoutineStreak();
-
-  document.getElementById('r-streak').textContent = streak + (streak >= 3 ? '🔥' : '');
-  document.getElementById('r-today-pct').textContent = todayPct + '%';
-  document.getElementById('r-global-pct').textContent = globalPct + '%';
-
-  // Progress bar
-  const progPct = r.startDate ? Math.min(100, Math.max(0, (dayIdx+1)/21*100)) : 0;
-  document.getElementById('r-prog-fill').style.width = progPct + '%';
-  document.getElementById('r-days-label').textContent = r.startDate ? 'Jour '+ Math.min(21, Math.max(1, dayIdx+1)) +' sur 21' : 'Programme non démarré';
-
-  // Days grid (21 cells)
-  const daysGrid = document.getElementById('r-days-grid');
-  if(daysGrid){
-    daysGrid.innerHTML = '';
-    for(let i=0; i<21; i++){
-      const cell = document.createElement('div');
-      cell.className = 'r-day-cell';
-      cell.textContent = i+1;
-      if(r.startDate){
-        const d = new Date(r.startDate);
-        d.setDate(d.getDate() + i);
-        const key = getRoutineDateKey(d);
-        const checks = r.checks[key] || {};
-        const count = ROUTINE_HABITS.filter(h => checks[h.id]).length;
-        const isToday = key === todayStr;
-        const isPast = d < today && !isToday;
-        if(isToday) cell.classList.add('r-today');
-        if(count === ROUTINE_HABITS.length) cell.classList.add('r-full');
-        else if(count > 0) cell.classList.add('r-partial');
-        else if(isPast) cell.classList.add('r-past-empty');
-        cell.title = 'J'+(i+1)+' — '+count+'/'+ROUTINE_HABITS.length+' habitudes';
-      }
-      daysGrid.appendChild(cell);
-    }
-  }
-
-  // Date label
-  const days=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
-  const months=['jan','fév','mar','avr','mai','jun','jul','aoû','sep','oct','nov','déc'];
-  document.getElementById('r-date-label').textContent = days[today.getDay()]+' '+today.getDate()+' '+months[today.getMonth()];
-
-  // Habits list
-  const habitsList = document.getElementById('r-habits-list');
-  if(habitsList){
-    habitsList.innerHTML = '';
-    ROUTINE_HABITS.forEach(h => {
-      const done = !!(todayChecks[h.id]);
-      const row = document.createElement('div');
-      row.className = 'r-habit-row';
-      row.innerHTML = `
-        <button class="r-habit-chk${done?' done':''}" onclick="toggleRoutineHabit('${h.id}','${todayStr}')"></button>
-        <span class="r-habit-emoji">${h.emoji}</span>
-        <span class="r-habit-label${done?' done':''}">${h.label}</span>
-      `;
-      habitsList.appendChild(row);
-    });
-  }
-
-  // Full tracker 10x21
-  const tracker = document.getElementById('r-full-tracker');
-  if(tracker){
-    tracker.innerHTML = '';
-    // Header row (day numbers)
-    const headerRow = document.createElement('div');
-    headerRow.style.cssText = 'display:grid;grid-template-columns:110px repeat(21,1fr);gap:3px;margin-bottom:6px';
-    headerRow.innerHTML = '<div></div>';
-    for(let i=0; i<21; i++){
-      const cell = document.createElement('div');
-      cell.style.cssText = 'text-align:center;font-size:8px;color:var(--t3);font-weight:700;font-family:var(--font2)';
-      cell.textContent = i+1;
-      headerRow.appendChild(cell);
-    }
-    tracker.appendChild(headerRow);
-
-    ROUTINE_HABITS.forEach(h => {
-      const row = document.createElement('div');
-      row.className = 'r-tracker-row';
-      row.style.gridTemplateColumns = '110px repeat(21,1fr)';
-      const label = document.createElement('div');
-      label.className = 'r-tracker-label';
-      label.textContent = h.emoji + ' ' + h.label;
-      row.appendChild(label);
-      for(let i=0; i<21; i++){
-        const cell = document.createElement('div');
-        cell.className = 'r-tracker-cell';
-        if(r.startDate){
-          const d = new Date(r.startDate);
-          d.setDate(d.getDate() + i);
-          const key = getRoutineDateKey(d);
-          const checks = r.checks[key] || {};
-          if(checks[h.id]) cell.classList.add('done');
-          if(key === todayStr) cell.classList.add('today-col');
-          cell.onclick = () => { toggleRoutineHabit(h.id, key); };
-          cell.title = 'J'+(i+1)+' — '+h.label;
-        }
-        row.appendChild(cell);
-      }
-      tracker.appendChild(row);
-    });
-  }
-
-  // Règles
-  const rulesList = document.getElementById('r-rules-list');
-  if(rulesList){
-    rulesList.innerHTML = '';
-    ROUTINE_RULES.forEach((rule, i) => {
-      const item = document.createElement('div');
-      item.className = 'r-rule-item';
-      item.innerHTML = `<span class="r-rule-num">0${i+1}</span><span>${rule}</span>`;
-      rulesList.appendChild(item);
-    });
-  }
-}
 
 </script>
 
