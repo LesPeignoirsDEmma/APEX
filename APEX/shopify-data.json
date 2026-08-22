@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-21T23:15:24.379Z",
+  "lastUpdated": "2026-08-22T00:44:49.985Z",
   "boutiques": {
     "proj_mmwj8c4e": {
       "finance": {
         "revenue": 304,
         "orders": 4,
         "currency": "EUR",
-        "syncedAt": "2026-08-21T23:15:25.227Z",
+        "syncedAt": "2026-08-22T00:44:50.793Z",
         "allTime": {
           "revenue": 12483,
           "orders": 203
@@ -89,7 +89,7 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:26.847Z"
+          "syncedAt": "2026-08-22T00:44:52.638Z"
         },
         "30": {
           "period": 30,
@@ -186,23 +186,23 @@
           "sessions": 63,
           "conversionRate": 6.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:27.505Z"
+          "syncedAt": "2026-08-22T00:44:53.201Z"
         },
         "90": {
           "period": 90,
-          "revenue": 599,
-          "orders": 10,
-          "aov": 60,
+          "revenue": 549,
+          "orders": 9,
+          "aov": 61,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 294,
+          "revenueHalf1": 245,
           "revenueHalf2": 304,
           "discountOrders": 0,
           "discountRate": 0,
           "discountShare": 0,
           "totalDiscounts": 0,
-          "newCust": 10,
+          "newCust": 9,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
           "avgLTV": 46,
@@ -244,11 +244,6 @@
               "revenue": 50
             },
             {
-              "name": "Peignoir Léopard Homme",
-              "qty": 1,
-              "revenue": 50
-            },
-            {
               "name": "Peignoir Satiné Dentelle",
               "qty": 1,
               "revenue": 45
@@ -257,11 +252,15 @@
               "name": "Cape de Bain Bébé Cerf",
               "qty": 1,
               "revenue": 40
+            },
+            {
+              "name": "Ensemble de Nuit 4 Pièces – Femme",
+              "qty": 1,
+              "revenue": 35
             }
           ],
-          "top3RevenueShare": 35,
+          "top3RevenueShare": 38,
           "hourly": {
-            "9": 1,
             "10": 1,
             "11": 1,
             "13": 2,
@@ -277,7 +276,7 @@
             "3": 2,
             "4": 1,
             "5": 3,
-            "6": 2
+            "6": 1
           },
           "totalProducts": 178,
           "zeroSaleProducts": [
@@ -304,8 +303,8 @@
           ],
           "newProductsAdded": 0,
           "abandonedCheckouts": 3,
-          "totalCheckouts": 13,
-          "abandonRate": 23,
+          "totalCheckouts": 12,
+          "abandonRate": 25,
           "abandonedValue": 200,
           "topAbandoned": [
             {
@@ -325,10 +324,10 @@
               "count": 1
             }
           ],
-          "sessions": 163,
-          "conversionRate": 6.1,
+          "sessions": 150,
+          "conversionRate": 6,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:28.151Z"
+          "syncedAt": "2026-08-22T00:44:53.743Z"
         },
         "365": {
           "period": 365,
@@ -484,16 +483,16 @@
           "sessions": 2613,
           "conversionRate": 7.8,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:28.806Z"
+          "syncedAt": "2026-08-22T00:44:54.776Z"
         }
       }
     },
     "proj_mmwj8je8": {
       "finance": {
-        "revenue": 1046,
-        "orders": 17,
+        "revenue": 1014,
+        "orders": 16,
         "currency": "EUR",
-        "syncedAt": "2026-08-21T23:15:29.562Z",
+        "syncedAt": "2026-08-22T00:44:55.563Z",
         "allTime": {
           "revenue": 8965,
           "orders": 132
@@ -517,7 +516,7 @@
           "newCust": 2,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 33,
+          "avgLTV": 44,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -577,26 +576,26 @@
           "sessions": 38,
           "conversionRate": 5.3,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:30.942Z"
+          "syncedAt": "2026-08-22T00:44:56.874Z"
         },
         "30": {
           "period": 30,
-          "revenue": 1046,
-          "orders": 17,
-          "aov": 62,
+          "revenue": 1014,
+          "orders": 16,
+          "aov": 63,
           "currency": "EUR",
           "refunds": 0,
           "refundRate": 0,
-          "revenueHalf1": 570,
+          "revenueHalf1": 537,
           "revenueHalf2": 477,
           "discountOrders": 8,
-          "discountRate": 47,
+          "discountRate": 50,
           "discountShare": 5,
           "totalDiscounts": 53,
-          "newCust": 17,
+          "newCust": 16,
           "returning": 0,
           "avgOrdersPerRepeat": 0,
-          "avgLTV": 50,
+          "avgLTV": 53,
           "vipCustomers": 0,
           "topProducts": [
             {
@@ -650,7 +649,7 @@
               "revenue": 60
             }
           ],
-          "top3RevenueShare": 36,
+          "top3RevenueShare": 37,
           "hourly": {
             "7": 2,
             "11": 1,
@@ -660,14 +659,13 @@
             "15": 1,
             "18": 2,
             "19": 3,
-            "20": 1,
-            "22": 1
+            "20": 1
           },
           "daily": {
             "0": 1,
             "1": 3,
             "2": 2,
-            "3": 3,
+            "3": 2,
             "4": 3,
             "5": 3,
             "6": 2
@@ -696,24 +694,20 @@
             "Beach Boho Kimono Cover up over sized Women's geometry Print Rayon kimonos with belt for Summer"
           ],
           "newProductsAdded": 0,
-          "abandonedCheckouts": 2,
-          "totalCheckouts": 19,
-          "abandonRate": 11,
-          "abandonedValue": 116,
+          "abandonedCheckouts": 1,
+          "totalCheckouts": 17,
+          "abandonRate": 6,
+          "abandonedValue": 53,
           "topAbandoned": [
-            {
-              "name": "Chemise Kimono Grande Taille",
-              "count": 1
-            },
             {
               "name": "Chemise Kimono Lin",
               "count": 1
             }
           ],
-          "sessions": 238,
-          "conversionRate": 7.1,
+          "sessions": 213,
+          "conversionRate": 7.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:31.467Z"
+          "syncedAt": "2026-08-22T00:44:57.404Z"
         },
         "90": {
           "period": 90,
@@ -869,7 +863,7 @@
           "sessions": 1150,
           "conversionRate": 6.5,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:32.050Z"
+          "syncedAt": "2026-08-22T00:44:58.092Z"
         },
         "365": {
           "period": 365,
@@ -1026,7 +1020,7 @@
           "sessions": 1863,
           "conversionRate": 7.1,
           "sessionsSource": "estimated",
-          "syncedAt": "2026-08-21T23:15:32.602Z"
+          "syncedAt": "2026-08-22T00:44:58.655Z"
         }
       }
     }
